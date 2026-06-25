@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, Shield, Menu, X, ChevronRight } from "lucide-react";
+import { Phone, Shield, Menu, X, ChevronRight, ChevronDown, Leaf, Sun, ShieldCheck, FileText, Download, HelpCircle, LayoutGrid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -11,7 +11,6 @@ const navLinks = [
   { href: "/projects", label: "Projects" },
   { href: "/reviews", label: "Reviews" },
   { href: "/faq", label: "FAQ" },
-  { href: "/products", label: "Products" },
   { href: "/factory", label: "Factory" },
   { href: "/commercial-roofs", label: "Commercial Roofs" },
   { href: "/blog", label: "Blog" },
@@ -19,12 +18,58 @@ const navLinks = [
   { href: "/distributorships", label: "Distributorships" },
 ];
 
+const productDropdown = {
+  label: "Products",
+  href: "/products",
+  items: [
+    {
+      group: "Product Lines",
+      links: [
+        { href: "/products", label: "All Products", icon: LayoutGrid, desc: "Overview of all three systems" },
+        { href: "/products/fungalshield", label: "FungalShield (RP1)", icon: Leaf, desc: "Anti-fungal & anti-algae coating" },
+        { href: "/products/smartshield", label: "SmartShield (RP2)", icon: Sun, desc: "Energy-reflective cool pigment coating" },
+        { href: "/products/roofshield", label: "RoofShield (RP3)", icon: ShieldCheck, desc: "Hurricane-proof waterproofing system" },
+      ],
+    },
+    {
+      group: "Resources",
+      links: [
+        { href: "/questions", label: "Questions to Ask", icon: HelpCircle, desc: "What every buyer should know" },
+      ],
+    },
+    {
+      group: "Downloads",
+      links: [
+        {
+          href: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+          label: "SmartShield (RP2) PDF",
+          icon: FileText,
+          desc: "Technical data sheet",
+          external: true,
+        },
+        {
+          href: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
+          label: "RoofShield (RP3) PDF",
+          icon: FileText,
+          desc: "System technical data",
+          external: true,
+        },
+      ],
+    },
+  ],
+};
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [location] = useLocation();
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setOpen(false);
+    setDropdownOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -35,6 +80,17 @@ export function Navbar() {
     }
     return () => { document.body.style.overflow = ""; };
   }, [open]);
+
+  const handleMouseEnter = () => {
+    if (dropdownTimerRef.current) clearTimeout(dropdownTimerRef.current);
+    setDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    dropdownTimerRef.current = setTimeout(() => setDropdownOpen(false), 120);
+  };
+
+  const isProductsActive = location.startsWith("/products") || location === "/questions";
 
   return (
     <>
@@ -49,6 +105,73 @@ export function Navbar() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-foreground">
+            {/* Products dropdown */}
+            <div
+              ref={dropdownRef}
+              className="relative"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button
+                className={`flex items-center gap-1 hover:text-accent transition-colors whitespace-nowrap ${isProductsActive ? "text-accent font-semibold" : ""}`}
+              >
+                Products
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {dropdownOpen && (
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <div className="bg-white rounded-2xl shadow-xl border min-w-[340px] overflow-hidden">
+                    {productDropdown.items.map((group, gi) => (
+                      <div key={gi}>
+                        {gi > 0 && <div className="border-t mx-3" />}
+                        <div className="px-3 pt-3 pb-1">
+                          <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-2 mb-1">{group.group}</div>
+                          {group.links.map((item, ii) => {
+                            const isExt = "external" in item && item.external;
+                            const content = (
+                              <div className="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-muted transition-colors group cursor-pointer">
+                                <div className="h-8 w-8 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors">
+                                  <item.icon className="h-4 w-4 text-accent" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="font-bold text-sm text-foreground group-hover:text-accent transition-colors leading-tight">{item.label}</div>
+                                  <div className="text-xs text-muted-foreground truncate">{item.desc}</div>
+                                </div>
+                                {isExt && <Download className="h-3.5 w-3.5 text-muted-foreground shrink-0" />}
+                              </div>
+                            );
+                            if (isExt) {
+                              return (
+                                <a key={ii} href={item.href} target="_blank" rel="noopener noreferrer" className="block">
+                                  {content}
+                                </a>
+                              );
+                            }
+                            return (
+                              <Link key={ii} href={item.href} className="block" onClick={() => setDropdownOpen(false)}>
+                                {content}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                    <div className="px-3 pb-3 pt-1 border-t mx-0 bg-muted/40 mt-1">
+                      <p className="text-[10px] text-muted-foreground px-3 py-1">
+                        MSDS · TAS-106 tech data · brochure available on request — call 954-210-9614
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Regular nav links */}
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -106,6 +229,52 @@ export function Navbar() {
         </div>
 
         <nav className="flex flex-col flex-1 overflow-y-auto py-2">
+          {/* Products expandable in mobile */}
+          <div className="border-b border-border/40">
+            <button
+              className={`w-full flex items-center justify-between px-6 py-4 text-base font-medium hover:bg-muted hover:text-accent transition-colors ${isProductsActive ? "text-accent bg-accent/5" : "text-foreground"}`}
+              onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+            >
+              Products
+              <ChevronDown className={`h-4 w-4 opacity-60 transition-transform duration-200 ${mobileProductsOpen ? "rotate-180" : ""}`} />
+            </button>
+
+            {mobileProductsOpen && (
+              <div className="bg-muted/40 border-t border-border/30">
+                {productDropdown.items.map((group, gi) => (
+                  <div key={gi}>
+                    <div className="px-6 pt-3 pb-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{group.group}</div>
+                    {group.links.map((item, ii) => {
+                      const isExt = "external" in item && item.external;
+                      const inner = (
+                        <div className="flex items-center gap-3 px-6 py-3 hover:bg-muted transition-colors">
+                          <item.icon className="h-4 w-4 text-accent shrink-0" />
+                          <div>
+                            <div className="text-sm font-medium text-foreground">{item.label}</div>
+                            <div className="text-xs text-muted-foreground">{item.desc}</div>
+                          </div>
+                          {isExt && <Download className="h-3.5 w-3.5 text-muted-foreground ml-auto shrink-0" />}
+                        </div>
+                      );
+                      if (isExt) {
+                        return (
+                          <a key={ii} href={item.href} target="_blank" rel="noopener noreferrer" className="block">
+                            {inner}
+                          </a>
+                        );
+                      }
+                      return (
+                        <Link key={ii} href={item.href} className="block" onClick={() => setOpen(false)}>
+                          {inner}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
           {navLinks.map((link) => (
             <Link
               key={link.href}

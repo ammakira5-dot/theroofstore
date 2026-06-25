@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <SEO
-        title="The Roof Store | Rubber Roof Coating Florida — Storm Shield Paint Systems"
+        title="The Roof Store | Rubber Roof Coating Florida — FungalShield, SmartShield & RoofShield"
         description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
       />
@@ -87,7 +87,7 @@ export default function Home() {
             {[
               { title: "Roof Tile Restoration", desc: "Complete cleaning, repair, and sealing of aging terracotta and concrete tiles.", icon: <Wrench className="h-6 w-6" /> },
               { title: "Flat Deck Rubber Paint", desc: "Seamless liquid rubber membranes that eliminate leaks on flat roofs permanently.", icon: <Droplets className="h-6 w-6" /> },
-              { title: "Elastomeric Coatings", desc: "Storm Shield elastomeric systems that expand and contract with temperature changes.", icon: <ShieldCheck className="h-6 w-6" /> }
+              { title: "FungalShield · SmartShield · RoofShield", desc: "Our three branded coating systems tackle algae, heat, and waterproofing — choose the right shield for your roof.", icon: <ShieldCheck className="h-6 w-6" /> }
             ].map((s, i) => (
               <motion.div 
                 key={i}
@@ -102,7 +102,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold font-serif mb-3 text-foreground">{s.title}</h3>
                 <p className="text-muted-foreground mb-6">{s.desc}</p>
-                <Link href="/roof-services" className="text-primary font-bold flex items-center gap-2 hover:text-accent transition-colors">
+                <Link href="/roof-systems" className="text-primary font-bold flex items-center gap-2 hover:text-accent transition-colors">
                   Learn more <ArrowRight className="h-4 w-4" />
                 </Link>
               </motion.div>

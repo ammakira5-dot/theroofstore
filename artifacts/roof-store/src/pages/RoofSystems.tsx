@@ -1,67 +1,52 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Droplets, Wind, ShieldCheck, Zap, Sun, ThumbsUp } from "lucide-react";
+import { Droplets, ShieldCheck, Zap, Sun, ThumbsUp, Leaf } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const systems = [
   {
-    icon: ShieldCheck,
-    name: "Storm Shield Elastomeric Coating",
-    tagline: "The Original Liquid Rubber Roof Shield System",
+    icon: Leaf,
+    name: "FungalShield",
+    tagline: "Florida's Anti-Fungal Roof Coating System",
     description:
-      "Our flagship elastomeric coating system is the most advanced weatherproofing solution available for Florida roofs. It creates a seamless, flexible membrane that expands and contracts with temperature fluctuations — making it ideal for Florida's extreme climate.",
+      "Engineered specifically for Florida's humid climate, FungalShield is a high-performance anti-fungal, anti-algae roof coating that eliminates and prevents the black streaks and biological growth that plague South Florida roofs. Its active biocide formula bonds to the roof surface, creating a long-lasting barrier against mold, mildew, algae, and fungus — restoring appearance while protecting structural integrity.",
     features: [
-      "100% waterproof seamless membrane",
-      "UV reflective to reduce energy costs",
-      "Expands and contracts with temperature changes",
-      "Guaranteed against hurricane force winds",
-      "Extends roof life by 10–20 years",
+      "Active biocide formula inhibits algae, mold, and fungal growth",
+      "Eliminates black streaking caused by biological organisms",
+      "Bonds seamlessly to tile, metal, and flat roof surfaces",
+      "UV-stable formula maintains protection through Florida heat",
+      "Extends roof life by halting biological deterioration",
     ],
-    color: "bg-accent/10 text-accent",
-  },
-  {
-    icon: Droplets,
-    name: "Liquid Rubber Flat Deck System",
-    tagline: "Permanent Solution for Flat and Low-Slope Roofs",
-    description:
-      "Flat roofs present unique waterproofing challenges — our liquid-applied rubber system eliminates every seam and penetration point that could allow water intrusion. Applied as a liquid and cured to a seamless solid membrane.",
-    features: [
-      "Seamless application — no joints or seams",
-      "Handles standing water and ponding",
-      "Ideal for commercial and residential flat roofs",
-      "Self-flashing around penetrations",
-      "Highly resistant to chemicals and weathering",
-    ],
-    color: "bg-primary/10 text-primary",
+    color: "bg-green-100 text-green-700",
   },
   {
     icon: Sun,
-    name: "Silicone Roof Coating System",
-    tagline: "Superior UV and Moisture Resistance",
+    name: "SmartShield",
+    tagline: "Energy-Reflective Smart Coating System",
     description:
-      "Our silicone-based coating system provides unmatched UV resistance and long-term flexibility. Silicone does not degrade from UV exposure and maintains its watertight seal even when ponding water is present on the roof surface.",
+      "SmartShield is our advanced energy-reflective roof coating engineered to dramatically reduce heat transfer into your home. Its proprietary heat-reflective technology bounces solar radiation away from the roof surface, lowering attic temperatures significantly and reducing cooling costs year-round. Ideal for Florida homeowners looking to cut energy bills while extending the life of their roof.",
     features: [
-      "Does not degrade from UV or ozone",
-      "Maintains elasticity at extreme temperatures",
-      "Excellent ponding water resistance",
-      "Highly reflective — cool roof qualified",
-      "Low VOC, environmentally responsible",
+      "Reflects up to 90% of solar radiation",
+      "Reduces attic temperatures by up to 40°F",
+      "Lowers cooling costs by 20–30% annually",
+      "ENERGY STAR cool roof qualified",
+      "Compatible with tile, metal, and flat roof surfaces",
     ],
     color: "bg-accent/10 text-accent",
   },
   {
-    icon: Wind,
-    name: "Hurricane-Grade Tile Restoration",
-    tagline: "Protect and Beautify Your Tile Roof",
+    icon: ShieldCheck,
+    name: "RoofShield",
+    tagline: "Flagship All-Weather Waterproofing System",
     description:
-      "Our tile restoration system combines structural reinforcement with full weatherproofing. We reglaze, reseal, and coat existing tile roofs — restoring their appearance and bringing them up to hurricane standards without the cost of full replacement.",
+      "RoofShield is our flagship all-weather roof membrane system — the result of over 30 years of Florida roofing expertise. It creates a 100% seamless, waterproof membrane that withstands hurricane-force winds, tropical storms, and the relentless Florida sun. Whether your roof is flat, low-slope, tile, or metal, RoofShield delivers the ultimate in permanent waterproofing protection.",
     features: [
-      "Ridge cap resealing and reinforcement",
-      "Full tile cleaning and preparation",
-      "Color-matched glazing coat application",
-      "Seals hairline cracks and fractures",
-      "Restores like-new appearance",
+      "100% seamless waterproof membrane — no joints or seams",
+      "Guaranteed against hurricane-force winds",
+      "Expands and contracts with temperature fluctuations",
+      "Extends roof life by 15–20 years",
+      "Suitable for all Florida roof types",
     ],
     color: "bg-primary/10 text-primary",
   },
@@ -71,8 +56,8 @@ export default function RoofSystems() {
   return (
     <div className="w-full">
       <SEO
-        title="Rubber Roof Systems — Elastomeric, Liquid Rubber & Silicone Coatings"
-        description="Explore our Storm Shield roof systems: elastomeric coatings, liquid rubber membranes, silicone systems, and tile restoration — engineered for Florida's climate."
+        title="FungalShield, SmartShield & RoofShield — Roof Systems for Florida"
+        description="Explore our three branded roof systems: FungalShield anti-fungal coating, SmartShield energy-reflective system, and RoofShield all-weather waterproofing membrane — engineered for Florida's climate."
         canonical="/roof-systems"
       />
       <section className="bg-primary text-white py-24">

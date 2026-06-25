@@ -1,61 +1,52 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Droplets, Sun, Wind, Package, ArrowRight } from "lucide-react";
+import { ShieldCheck, Droplets, Sun, Package, ArrowRight, Leaf } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const products = [
   {
-    icon: ShieldCheck,
-    name: "Storm Shield Premium Elastomeric",
-    category: "Elastomeric Coating",
+    icon: Leaf,
+    name: "FungalShield",
+    category: "Anti-Fungal Roof Coating System",
     description:
-      "Our flagship elastomeric roof coating. High-build, 100% acrylic formula that creates a seamless, flexible membrane over your existing roof. Designed specifically for Florida's climate extremes — from hurricane force winds to intense UV exposure.",
-    specs: ["Tensile Strength: 350+ PSI", "Elongation: 450%", "Reflectivity: 87%", "Coverage: 1–2 gallons per 100 sq ft", "Colors: White, Tan, Gray"],
-    bestFor: "Tile roofs, concrete roofs, metal roofs",
-  },
-  {
-    icon: Droplets,
-    name: "Storm Shield Liquid Rubber",
-    category: "Liquid Rubber Membrane",
-    description:
-      "The original liquid-applied rubber roof shield system. Creates an impenetrable seamless membrane ideal for flat and low-slope roofs. No seams, no joints, no weak points. Bonds directly to the existing substrate for complete waterproofing.",
-    specs: ["Tensile Strength: 400+ PSI", "Elongation: 600%", "Ponding Water Resistant", "Coverage: 1.5–2 gallons per 100 sq ft", "Color: White"],
-    bestFor: "Flat roofs, low-slope roofs, foam roofs",
+      "Florida's premier anti-fungal, anti-algae roof coating. FungalShield's active biocide formula bonds to the roof surface, eliminating existing biological growth and preventing future mold, mildew, algae, and fungal infestations. Engineered for South Florida's year-round humidity.",
+    specs: ["Active Biocide Formula", "Mold & Algae Growth Inhibitor", "UV-Stable — no degradation in Florida heat", "Compatible with tile, metal, and flat roofs", "Long-lasting biological barrier"],
+    bestFor: "Florida homes with algae streaking, humid climates, tile and flat roofs",
   },
   {
     icon: Sun,
-    name: "Storm Shield Silicone System",
-    category: "Silicone Coating",
+    name: "SmartShield",
+    category: "Energy-Reflective Smart Coating System",
     description:
-      "Premium silicone-based coating that does not degrade from UV exposure over time. Maintains its elastic properties in extreme temperatures and provides superior ponding water resistance. The ultimate long-term solution.",
-    specs: ["UV Resistant — no degradation", "Elongation: 500%", "Ponding Water Rated", "Coverage: 1–1.5 gallons per 100 sq ft", "Colors: White, Tan"],
-    bestFor: "Long-term applications, ponding water areas",
-  },
-  {
-    icon: Wind,
-    name: "Storm Shield Tile Glaze",
-    category: "Tile Restoration Product",
-    description:
-      "Professional-grade ceramic and concrete tile glaze designed to restore the protective finish on aging roof tiles. Seals porosity, restores original color depth, and protects against UV degradation, algae, and weathering.",
-    specs: ["UV Stabilized Formula", "Penetrating Seal", "Mold and Mildew Resistant", "Coverage: 100–150 sq ft per gallon", "Available in Multiple Colors"],
-    bestFor: "Clay tile, concrete tile, slate tile",
-  },
-  {
-    icon: Package,
-    name: "Storm Shield Primer System",
-    category: "Surface Primer",
-    description:
-      "The critical foundation layer for any Storm Shield coating system. Ensures maximum adhesion between the existing roof substrate and the topcoat. Penetrates and seals porous surfaces for a unified, bonded application.",
-    specs: ["Water-Based Formula", "Penetrating Adhesion Promoter", "Solvent-Free", "Coverage: 200–300 sq ft per gallon", "Compatible with all Storm Shield coatings"],
-    bestFor: "All applications before topcoat systems",
+      "Our advanced energy-reflective coating that dramatically cuts heat transfer into your home. SmartShield's proprietary solar-reflective technology bounces radiation away from the roof surface, lowering attic temperatures and reducing cooling costs year-round — paying for itself through energy savings.",
+    specs: ["Solar Reflectivity: up to 90%", "Attic Temp Reduction: up to 40°F", "Cooling Cost Reduction: 20–30%", "ENERGY STAR Cool Roof Qualified", "Compatible with tile, metal, and flat roofs"],
+    bestFor: "Energy-conscious homeowners, high-cooling-cost properties, sun-exposed roofs",
   },
   {
     icon: ShieldCheck,
-    name: "Storm Shield Sealant",
+    name: "RoofShield",
+    category: "Flagship All-Weather Waterproofing System",
+    description:
+      "Our flagship all-weather roof membrane system — the result of over 30 years of Florida roofing expertise. RoofShield creates a 100% seamless, waterproof membrane that withstands hurricane-force winds, tropical storms, and intense UV exposure. The definitive solution for permanent roof protection.",
+    specs: ["100% Seamless Waterproof Membrane", "Hurricane-Force Wind Rated", "Elongation: 500%+", "Extends Roof Life: 15–20 Years", "Suitable for all Florida roof types"],
+    bestFor: "Flat roofs, low-slope roofs, tile, metal, and concrete substrates",
+  },
+  {
+    icon: Package,
+    name: "Primer System",
+    category: "Surface Primer",
+    description:
+      "The critical foundation layer for any roof coating system. Our primer ensures maximum adhesion between the existing roof substrate and the topcoat. It penetrates and seals porous surfaces for a unified, bonded application that maximizes the performance of FungalShield, SmartShield, or RoofShield.",
+    specs: ["Water-Based Formula", "Penetrating Adhesion Promoter", "Solvent-Free", "Coverage: 200–300 sq ft per gallon", "Compatible with all roof coating systems"],
+    bestFor: "All applications before topcoat systems",
+  },
+  {
+    icon: Droplets,
+    name: "Sealant",
     category: "Sealant & Detail Product",
     description:
-      "Elastomeric sealant for ridge caps, penetrations, eave edges, and detail work. Maintains flexibility through thermal cycling and adheres to virtually any roofing substrate. The perfect complement to any Storm Shield coating system.",
+      "Elastomeric sealant for ridge caps, penetrations, eave edges, and detail work. Maintains flexibility through thermal cycling and adheres to virtually any roofing substrate. The perfect complement to any of our roof coating systems.",
     specs: ["Elastomeric — Permanent Flex", "Paintable Surface", "30-Year Formulation", "Color: White", "Bonds to: Metal, Tile, Concrete, Wood"],
     bestFor: "Ridge caps, penetrations, flashing details",
   },
@@ -65,15 +56,15 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Storm Shield Roof Coating Products — Elastomeric, Silicone, Liquid Rubber"
-        description="Professional-grade Storm Shield roof coating products: elastomeric, liquid rubber, silicone systems, tile glaze, primer, and sealant — engineered for Florida's climate."
+        title="FungalShield, SmartShield & RoofShield Products — The Roof Store"
+        description="Professional-grade roof coating products: FungalShield anti-fungal system, SmartShield energy-reflective coating, and RoofShield all-weather waterproofing membrane — engineered for Florida's climate."
         canonical="/products"
       />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
-              Storm Shield Product Line
+              FungalShield · SmartShield · RoofShield
             </div>
             <h1 className="text-5xl font-serif font-bold mb-6">Our Products</h1>
             <p className="text-xl text-white/80">
@@ -131,7 +122,7 @@ export default function Products() {
         <div className="container px-4 max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-serif font-bold text-primary mb-6">Interested in Distributorship?</h2>
           <p className="text-xl text-muted-foreground mb-10">
-            Storm Shield products are available for licensed contractors and distributors throughout Florida and beyond. Contact us to learn about our distributor program.
+            Our products are available for licensed contractors and distributors throughout Florida and beyond. Contact us to learn about our distributor program.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white h-14 px-10 text-lg">
             <Link href="/contact">

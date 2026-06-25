@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "wouter";
-import { X, ShieldCheck, Phone } from "lucide-react";
+import { X, ShieldCheck, Phone, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,6 +10,8 @@ const DELAY_MS = 30_000;
 export function QuoteModal() {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
 
   useEffect(() => {
@@ -28,10 +29,24 @@ export function QuoteModal() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
-    sessionStorage.setItem(STORAGE_KEY, "1");
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, source: "quote-modal" }),
+      });
+      if (!res.ok) throw new Error("Server error");
+      setSubmitted(true);
+      sessionStorage.setItem(STORAGE_KEY, "1");
+    } catch {
+      setError("Something went wrong. Please try calling us at 954-210-9614.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (!open) return null;
@@ -126,8 +141,14 @@ export function QuoteModal() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-12 text-base mt-2">
-                  Request My Free Inspection
+                {error && (
+                  <div className="bg-destructive/10 border border-destructive/30 text-destructive text-sm rounded-lg px-4 py-3">
+                    {error}
+                  </div>
+                )}
+
+                <Button type="submit" size="lg" disabled={loading} className="w-full bg-accent hover:bg-accent/90 text-white h-12 text-base mt-2">
+                  {loading ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Sending…</> : "Request My Free Inspection"}
                 </Button>
 
                 <div className="flex items-center justify-center gap-2 pt-1">

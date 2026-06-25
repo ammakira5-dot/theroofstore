@@ -5,19 +5,37 @@ import { SEO } from "@/components/SEO";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle2, Loader2 } from "lucide-react";
+
+const initialForm = { name: "", email: "", phone: "", address: "", roofType: "", message: "" };
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", phone: "", address: "", roofType: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [form, setForm] = useState(initialForm);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, source: "contact-form" }),
+      });
+      if (!res.ok) throw new Error("Server error");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please call us directly at 954-210-9614.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -179,8 +197,14 @@ export default function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg">
-                    Request Free Consultation
+                  {error && (
+                    <div className="bg-destructive/10 border border-destructive/30 text-destructive text-sm rounded-lg px-4 py-3">
+                      {error}
+                    </div>
+                  )}
+
+                  <Button type="submit" size="lg" disabled={loading} className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg">
+                    {loading ? <><Loader2 className="h-5 w-5 mr-2 animate-spin" />Sending…</> : "Request Free Consultation"}
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">
                     By submitting this form, you agree to be contacted by The Roof Store regarding your roofing inquiry.

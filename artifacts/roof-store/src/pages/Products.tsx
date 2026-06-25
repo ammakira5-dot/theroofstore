@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Droplets, Sun, Package, ArrowRight, Leaf } from "lucide-react";
+import { ShieldCheck, Droplets, Sun, Package, ArrowRight, Leaf, ExternalLink } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const products = [
   {
     icon: Leaf,
     name: "FungalShield",
+    slug: "fungalshield",
     category: "Anti-Fungal Roof Coating System",
     description:
       "Florida's premier anti-fungal, anti-algae roof coating. FungalShield's active biocide formula bonds to the roof surface, eliminating existing biological growth and preventing future mold, mildew, algae, and fungal infestations. Engineered for South Florida's year-round humidity.",
@@ -17,6 +18,7 @@ const products = [
   {
     icon: Sun,
     name: "SmartShield",
+    slug: "smartshield",
     category: "Energy-Reflective Smart Coating System",
     description:
       "Our advanced energy-reflective coating that dramatically cuts heat transfer into your home. SmartShield's proprietary solar-reflective technology bounces radiation away from the roof surface, lowering attic temperatures and reducing cooling costs year-round — paying for itself through energy savings.",
@@ -26,6 +28,7 @@ const products = [
   {
     icon: ShieldCheck,
     name: "RoofShield",
+    slug: "roofshield",
     category: "Flagship All-Weather Waterproofing System",
     description:
       "Our flagship all-weather roof membrane system — the result of over 30 years of Florida roofing expertise. RoofShield creates a 100% seamless, waterproof membrane that withstands hurricane-force winds, tropical storms, and intense UV exposure. The definitive solution for permanent roof protection.",
@@ -108,10 +111,19 @@ export default function Products() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-muted rounded-lg p-4">
+                <div className="bg-muted rounded-lg p-4 mb-5">
                   <span className="text-xs font-bold text-muted-foreground uppercase tracking-wide">Best For: </span>
                   <span className="text-sm text-foreground">{product.bestFor}</span>
                 </div>
+                {"slug" in product && product.slug && (
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:underline"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Full Product Details
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>

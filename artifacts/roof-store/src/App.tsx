@@ -16,6 +16,9 @@ import Projects from "@/pages/Projects";
 import Products from "@/pages/Products";
 import Contact from "@/pages/Contact";
 import Admin from "@/pages/Admin";
+import Factory from "@/pages/Factory";
+import { ProductDetail } from "@/pages/products/ProductDetail";
+import { productMap } from "@/pages/products/data";
 
 import { CountyPage } from "@/pages/service-areas/CountyPage";
 import { CityPage } from "@/pages/service-areas/CityPage";
@@ -57,6 +60,12 @@ function Router() {
       <Route path="/projects" component={Projects} />
       <Route path="/products" component={Products} />
       <Route path="/contact" component={Contact} />
+      <Route path="/factory" component={Factory} />
+      <Route path="/products/:slug" component={({ params }) => {
+        const product = productMap[params.slug];
+        if (!product) return <NotFound />;
+        return <ProductDetail product={product} />;
+      }} />
       <Route path="/admin" component={Admin} />
       <Route component={NotFound} />
     </Switch>

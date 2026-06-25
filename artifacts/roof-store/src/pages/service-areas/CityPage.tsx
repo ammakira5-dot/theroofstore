@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import { MapPin, Phone, ShieldCheck, Star } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
 interface CityPageProps {
   city: string;
@@ -120,12 +120,9 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
 
             <div className="space-y-6">
               <div className="bg-primary text-white rounded-xl p-8">
-                <h3 className="text-xl font-serif font-bold mb-2">Free Roof Inspection</h3>
-                <p className="text-white/70 text-sm mb-2">Serving {city}, FL</p>
-                <p className="text-white/80 mb-6 text-sm">Our expert will come to your property, inspect your roof, and give you an honest assessment — at no cost.</p>
-                <Button asChild className="w-full bg-accent hover:bg-accent/90 text-white" size="lg">
-                  <Link href="/contact">Request Free Inspection</Link>
-                </Button>
+                <h3 className="text-xl font-serif font-bold mb-1">Free Roof Inspection</h3>
+                <p className="text-white/60 text-xs mb-5">Serving {city}, FL — no cost, no obligation</p>
+                <LocalQuoteForm location={`${city}, FL`} source="city-page-form" />
               </div>
 
               <div className="bg-muted rounded-xl p-6 space-y-4">

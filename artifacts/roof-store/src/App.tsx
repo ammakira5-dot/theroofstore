@@ -17,6 +17,8 @@ import Products from "@/pages/Products";
 import Contact from "@/pages/Contact";
 import Admin from "@/pages/Admin";
 import Factory from "@/pages/Factory";
+import Videos from "@/pages/Videos";
+import Distributorships from "@/pages/Distributorships";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
 
@@ -61,6 +63,8 @@ function Router() {
       <Route path="/products" component={Products} />
       <Route path="/contact" component={Contact} />
       <Route path="/factory" component={Factory} />
+      <Route path="/videos" component={Videos} />
+      <Route path="/distributorships" component={Distributorships} />
       <Route path="/products/:slug" component={({ params }) => {
         const product = productMap[params.slug];
         if (!product) return <NotFound />;

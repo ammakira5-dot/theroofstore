@@ -6,18 +6,37 @@ import { Play, ShieldCheck, FileCheck } from "lucide-react";
 
 const videos = [
   {
+    id: "dYKcWoDVPns",
+    title: "Don Godshall — Hurricane Wilma Survivor",
+    tag: "Customer Testimonial",
+    icon: Play,
+    testimonialImage: "https://www.theroofstore.net/images/Don-Godshall-Testimonial.gif",
+    customer: "Don Godshall",
+    location: "5651 Thornbluff Ave., Davie FL",
+    quote: "During Hurricane Wilma my neighbors' tiles were hitting my house. The next morning after the storm passed we went outside to see what happened — our roof was still perfect.",
+    desc: "Don Godshall faced a choice: replace the roof or seal it with RoofShield. He chose RoofShield. When Hurricane Wilma hit, neighbor tiles were flying across his yard. His roof didn't lose a single tile. Watch his full story.",
+  },
+  {
     id: "RrcGPZg7s6I",
     title: "Customer Testimonial — RoofShield System",
-    desc: "A real homeowner describes their experience with The Roof Store's RoofShield liquid rubber membrane system — including performance through storm season.",
-    icon: Play,
     tag: "Customer Testimonial",
+    icon: Play,
+    testimonialImage: null,
+    customer: null,
+    location: null,
+    quote: null,
+    desc: "A real homeowner describes their experience with The Roof Store's RoofShield liquid rubber membrane system — including performance through storm season.",
   },
   {
     id: "j33btx-TGXo",
     title: "TAS-106 Dade County Uplift Test",
-    desc: "Watch the independent Dade County TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Certified, documented, and still standing 16 years later.",
-    icon: FileCheck,
     tag: "Certification Test",
+    icon: FileCheck,
+    testimonialImage: null,
+    customer: null,
+    location: null,
+    quote: null,
+    desc: "Watch the independent Dade County TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Certified, documented, and still standing 16 years later.",
   },
 ];
 
@@ -88,6 +107,13 @@ export default function Videos() {
                       className="absolute inset-0 w-full h-full"
                     />
                   </div>
+                  {video.testimonialImage && (
+                    <img
+                      src={video.testimonialImage}
+                      alt={`${video.customer} testimonial`}
+                      className="mt-4 rounded-xl w-full max-w-sm"
+                    />
+                  )}
                 </div>
                 <div className="lg:col-span-2 flex flex-col justify-center">
                   <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4 w-fit">
@@ -95,7 +121,18 @@ export default function Videos() {
                     {video.tag}
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-primary mb-4">{video.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed">{video.desc}</p>
+                  {video.quote && (
+                    <blockquote className="text-foreground italic leading-relaxed mb-4 border-l-4 border-accent pl-4">
+                      "{video.quote}"
+                    </blockquote>
+                  )}
+                  <p className="text-muted-foreground leading-relaxed mb-3">{video.desc}</p>
+                  {video.customer && (
+                    <div className="text-sm font-bold text-primary">{video.customer}</div>
+                  )}
+                  {video.location && (
+                    <div className="text-xs text-muted-foreground">{video.location}</div>
+                  )}
                 </div>
               </motion.div>
             ))}

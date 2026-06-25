@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "Han0T96O1fE4FL_EQ-C8K"
+uri = "file://artifacts/roof-store/public/images/hero-bg.png"
+type = "image"
+title = "Florida roof aerial view"
+
+[[generated]]
+id = "HwSQUqWy7vRtLhQmiA-Cm"
+uri = "file://artifacts/roof-store/public/images/project-before-1.png"
+type = "image"
+title = "Dirty old tile roof"
+
+[[generated]]
+id = "xjk-RsxoMch7aaPea_q5j"
+uri = "file://artifacts/roof-store/public/images/project-after-1.png"
+type = "image"
+title = "Clean restored tile roof"
+
+[[generated]]
+id = "fRZz_ZlL8h1ZV7LhGzRKE"
+uri = "file://artifacts/roof-store/public/images/project-before-2.png"
+type = "image"
+title = "Old flat roof needing repair"
+
+[[generated]]
+id = "CIm852CdUVkmJAy5xa3Pj"
+uri = "file://artifacts/roof-store/public/images/project-after-2.png"
+type = "image"
+title = "Restored flat rubber roof"
+
+[[generated]]
+id = "8QCKTKseF3DEXXD8zo77w"
+uri = "file://artifacts/roof-store/public/images/product-coating.png"
+type = "image"
+title = "Roof coating bucket"

@@ -1,12 +1,17 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wind, Wrench, Award, ArrowRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 export default function Home() {
   return (
     <div className="w-full">
+      <SEO
+        title="The Roof Store | Rubber Roof Coating Florida — Storm Shield Paint Systems"
+        description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
+        canonical="/"
+      />
       {/* Hero Section */}
       <section className="relative h-[85dvh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

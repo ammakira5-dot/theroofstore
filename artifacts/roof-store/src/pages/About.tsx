@@ -2,10 +2,16 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Award, Shield, Users, Clock, CheckCircle2, Star } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="w-full">
+      <SEO
+        title="About Us — Storm Shield Paint Systems Inc."
+        description="Nearly 30 years protecting Florida homes. Storm Shield Paint Systems Inc. — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
+        canonical="/about"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

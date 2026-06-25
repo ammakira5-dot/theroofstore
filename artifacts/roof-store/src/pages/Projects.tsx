@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const projects = [
   {
@@ -51,6 +52,11 @@ const projects = [
 export default function Projects() {
   return (
     <div className="w-full">
+      <SEO
+        title="Roof Coating Projects — South Florida Case Studies"
+        description="Real rubber roof coating and tile restoration projects across South Florida. See how homeowners saved thousands vs. full roof replacement with Storm Shield systems."
+        canonical="/projects"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

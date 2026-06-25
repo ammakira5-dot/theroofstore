@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Star, Award } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const reviews = [
   {
@@ -51,6 +52,11 @@ const reviews = [
 export default function Reviews() {
   return (
     <div className="w-full">
+      <SEO
+        title="Customer Reviews — The Roof Store"
+        description="Read what South Florida homeowners say about The Roof Store's rubber roof coating and tile restoration services. A+ BBB rated. Hundreds of 5-star reviews."
+        canonical="/reviews"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

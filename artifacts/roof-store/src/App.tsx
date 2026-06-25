@@ -9,14 +9,37 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import RoofSystems from "@/pages/RoofSystems";
 import RoofServices from "@/pages/RoofServices";
-import ServiceAreas from "@/pages/ServiceAreas";
+import ServiceAreas from "@/pages/service-areas/index";
 import Reviews from "@/pages/Reviews";
 import Faq from "@/pages/Faq";
 import Projects from "@/pages/Projects";
 import Products from "@/pages/Products";
 import Contact from "@/pages/Contact";
 
+import { CountyPage } from "@/pages/service-areas/CountyPage";
+import { CityPage } from "@/pages/service-areas/CityPage";
+import { findCounty, findCity } from "@/pages/service-areas/data";
+
 const queryClient = new QueryClient();
+
+function CountyRoute({ params }: { params: { county: string } }) {
+  const county = findCounty(params.county);
+  if (!county) return <NotFound />;
+  return <CountyPage county={county.name} slug={county.slug} description={county.description} cities={county.cities} />;
+}
+
+function CityRoute({ params }: { params: { county: string; city: string } }) {
+  const result = findCity(params.county, params.city);
+  if (!result) return <NotFound />;
+  return (
+    <CityPage
+      city={result.city.name}
+      county={result.county.name}
+      countySlug={result.county.slug}
+      citySlug={result.city.slug}
+    />
+  );
+}
 
 function Router() {
   return (
@@ -26,6 +49,8 @@ function Router() {
       <Route path="/roof-systems" component={RoofSystems} />
       <Route path="/roof-services" component={RoofServices} />
       <Route path="/service-areas" component={ServiceAreas} />
+      <Route path="/service-areas/:county" component={CountyRoute} />
+      <Route path="/service-areas/:county/:city" component={CityRoute} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/faq" component={Faq} />
       <Route path="/projects" component={Projects} />

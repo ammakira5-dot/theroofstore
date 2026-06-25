@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const services = [
   {
@@ -51,6 +52,11 @@ const services = [
 export default function RoofServices() {
   return (
     <div className="w-full">
+      <SEO
+        title="Roof Services — Tile Restoration, Flat Deck, Hurricane Coating"
+        description="Professional roof services in South Florida: tile reglazing, tile restoration, flat deck rubber coating, elastomeric systems, hurricane protection, and emergency repairs."
+        canonical="/roof-services"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -21,6 +22,12 @@ export default function Contact() {
 
   return (
     <div className="w-full">
+      <SEO
+        title="Contact Us — Free Roof Inspection & Consultation"
+        description="Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
+        canonical="/contact"
+      />
+
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
@@ -45,7 +52,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-bold text-foreground mb-1">Call Us Directly</div>
-                    <a href="tel:954-210-9614" className="text-accent font-bold text-xl hover:underline" data-testid="link-phone">
+                    <a href="tel:954-210-9614" className="text-accent font-bold text-xl hover:underline">
                       954-210-9614
                     </a>
                     <div className="text-sm text-muted-foreground mt-1">Press Option 1 for Roof Shield System</div>
@@ -58,7 +65,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-bold text-foreground mb-1">Email Us</div>
-                    <a href="mailto:info@theroofstore.net" className="text-accent font-bold hover:underline" data-testid="link-email">
+                    <a href="mailto:info@theroofstore.net" className="text-accent font-bold hover:underline">
                       info@theroofstore.net
                     </a>
                   </div>
@@ -123,22 +130,22 @@ export default function Contact() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Full Name *</Label>
-                      <Input id="name" name="name" required value={form.name} onChange={handleChange} placeholder="John Smith" data-testid="input-name" />
+                      <Input id="name" name="name" required value={form.name} onChange={handleChange} placeholder="John Smith" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="phone">Phone Number *</Label>
-                      <Input id="phone" name="phone" type="tel" required value={form.phone} onChange={handleChange} placeholder="(954) 555-0100" data-testid="input-phone" />
+                      <Input id="phone" name="phone" type="tel" required value={form.phone} onChange={handleChange} placeholder="(954) 555-0100" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address *</Label>
-                    <Input id="email" name="email" type="email" required value={form.email} onChange={handleChange} placeholder="john@email.com" data-testid="input-email" />
+                    <Input id="email" name="email" type="email" required value={form.email} onChange={handleChange} placeholder="john@email.com" />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="address">Property Address</Label>
-                    <Input id="address" name="address" value={form.address} onChange={handleChange} placeholder="123 Main St, Fort Lauderdale, FL" data-testid="input-address" />
+                    <Input id="address" name="address" value={form.address} onChange={handleChange} placeholder="123 Main St, Fort Lauderdale, FL" />
                   </div>
 
                   <div className="space-y-2">
@@ -149,7 +156,6 @@ export default function Contact() {
                       value={form.roofType}
                       onChange={handleChange}
                       className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                      data-testid="select-roofType"
                     >
                       <option value="">Select roof type...</option>
                       <option value="tile">Tile (Clay/Concrete)</option>
@@ -170,11 +176,10 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder="Describe any issues you're experiencing — leaks, damaged tiles, age of roof, etc."
                       className="min-h-[120px]"
-                      data-testid="textarea-message"
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg" data-testid="button-submit">
+                  <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg">
                     Request Free Consultation
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">

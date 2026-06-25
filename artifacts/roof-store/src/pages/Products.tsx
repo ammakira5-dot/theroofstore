@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Sun, Wind, Package, ArrowRight } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const products = [
   {
@@ -63,6 +64,11 @@ const products = [
 export default function Products() {
   return (
     <div className="w-full">
+      <SEO
+        title="Storm Shield Roof Coating Products — Elastomeric, Silicone, Liquid Rubber"
+        description="Professional-grade Storm Shield roof coating products: elastomeric, liquid rubber, silicone systems, tile glaze, primer, and sealant — engineered for Florida's climate."
+        canonical="/products"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

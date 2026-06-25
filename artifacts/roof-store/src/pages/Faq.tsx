@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { SEO } from "@/components/SEO";
 
 const faqs = [
   {
@@ -49,6 +50,11 @@ const faqs = [
 export default function Faq() {
   return (
     <div className="w-full">
+      <SEO
+        title="FAQ — Rubber Roof Coating Questions Answered"
+        description="Answers to common questions about rubber roof coatings, tile restoration, hurricane performance, warranties, and how roof coating compares to full replacement."
+        canonical="/faq"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

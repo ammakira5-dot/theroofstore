@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Droplets, Wind, ShieldCheck, Zap, Sun, ThumbsUp } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const systems = [
   {
@@ -69,6 +70,11 @@ const systems = [
 export default function RoofSystems() {
   return (
     <div className="w-full">
+      <SEO
+        title="Rubber Roof Systems — Elastomeric, Liquid Rubber & Silicone Coatings"
+        description="Explore our Storm Shield roof systems: elastomeric coatings, liquid rubber membranes, silicone systems, and tile restoration — engineered for Florida's climate."
+        canonical="/roof-systems"
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

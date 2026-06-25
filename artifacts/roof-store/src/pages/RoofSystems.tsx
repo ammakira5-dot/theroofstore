@@ -7,6 +7,8 @@ import { SEO } from "@/components/SEO";
 const systems = [
   {
     icon: Leaf,
+    image: "/images/fungalshield-product.png",
+    imageAlt: "FungalShield anti-fungal roof coating being applied to a Florida tile roof",
     name: "FungalShield",
     tagline: "Florida's Anti-Fungal Roof Coating System",
     description:
@@ -22,6 +24,8 @@ const systems = [
   },
   {
     icon: Sun,
+    image: "/images/smartshield-product.png",
+    imageAlt: "Aerial view of a Florida home with SmartShield energy-reflective cool roof coating",
     name: "SmartShield",
     tagline: "Energy-Reflective Smart Coating System",
     description:
@@ -37,6 +41,8 @@ const systems = [
   },
   {
     icon: ShieldCheck,
+    image: "/images/roofshield-product.png",
+    imageAlt: "RoofShield seamless waterproof membrane being applied to a flat roof",
     name: "RoofShield",
     tagline: "Flagship All-Weather Waterproofing System",
     description:
@@ -105,9 +111,17 @@ export default function RoofSystems() {
                     <Link href="/contact">Get a Free Quote</Link>
                   </Button>
                 </div>
-                <div className={`bg-muted rounded-2xl p-16 flex flex-col items-center justify-center text-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <system.icon className="h-24 w-24 text-primary mb-6 opacity-20" />
-                  <h3 className="text-2xl font-serif font-bold text-primary">{system.name}</h3>
+                <div className={`rounded-2xl overflow-hidden shadow-lg ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <picture>
+                    <source srcSet={system.image.replace(".png", ".webp")} type="image/webp" />
+                    <img
+                      src={system.image}
+                      alt={system.imageAlt}
+                      className="w-full h-72 lg:h-96 object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </div>
               </motion.div>
             ))}

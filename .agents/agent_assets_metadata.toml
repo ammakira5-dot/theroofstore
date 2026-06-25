@@ -36,3 +36,21 @@ id = "8QCKTKseF3DEXXD8zo77w"
 uri = "file://artifacts/roof-store/public/images/product-coating.png"
 type = "image"
 title = "Roof coating bucket"
+
+[[generated]]
+id = "rTrBGXCNdzUtM9yZWWu4x"
+uri = "file://artifacts/roof-store/public/images/fungalshield-product.png"
+type = "image"
+title = "fungalshield anti-fungal roof coating"
+
+[[generated]]
+id = "5ChYEO_7HEAcXO0OMaCmC"
+uri = "file://artifacts/roof-store/public/images/smartshield-product.png"
+type = "image"
+title = "smartshield energy reflective roof"
+
+[[generated]]
+id = "roZLia70peIKEeucoQ4oW"
+uri = "file://artifacts/roof-store/public/images/roofshield-product.png"
+type = "image"
+title = "roofshield waterproof membrane application"

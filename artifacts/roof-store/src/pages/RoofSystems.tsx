@@ -46,7 +46,7 @@ const systems = [
     name: "RoofShield",
     tagline: "World's Only TAS-106 Dade County Uplift Rated Coating",
     description:
-      "RoofShield (RP3) is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
+      "RoofShield (RP3) is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. Works on flat cement decks, shingle roofs, barrel tile, S-tile, metal, gravel, and foam — any Florida roof type. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
     features: [
       "World's ONLY TAS-106 Dade County Uplift Pull Test certified roof coating",
       "Tested on real Spanish & concrete tile — adds true tile attachment to substrate",

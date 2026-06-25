@@ -33,7 +33,7 @@ export default function About() {
                 Storm Shield Paint Systems Inc. (Contracting &amp; Product Installation Division) is A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. We also sell our products direct — you can buy them online and apply them yourself, or use any licensed installer you choose.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                We pioneered the liquid-applied rubber roof shield system and hold the world's only independent Dade County <strong className="text-foreground">TAS-106 Uplift Pull Test certification</strong> for a liquid roof coating — tested on real Spanish tile roofs. This means our RoofShield system delivers provable tile attachment strength that withstands real hurricane-force winds and water damage without exception.
+                We pioneered the liquid-applied rubber roof shield system and hold the world's only independent Dade County <strong className="text-foreground">TAS-106 Uplift Pull Test certification</strong> for a liquid roof coating — tested on real Spanish tile roofs. This means our RoofShield system delivers provable tile attachment strength that withstands real hurricane-force winds and water damage without exception. Our systems work equally well on <strong className="text-foreground">flat roofs, cement tile, shingle, barrel tile, S-tile, metal, gravel, and foam</strong> — any Florida roof type.
               </p>
               <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
                 <Link href="/contact">Schedule Your Free Consultation</Link>

@@ -191,7 +191,7 @@ export const roofShield: ProductData = {
     { label: "Wind Strength", value: "5× stronger than a new tile roof in uplift resistance" },
     { label: "Warranty", value: "Lifetime — Maintenance Free, Transferable & Renewable" },
     { label: "Roof Life Extension", value: "Up to 10 additional years certification (State of Florida / Citizens recognized)" },
-    { label: "Compatible Substrates", value: "Concrete tile, barrel tile, S-tile, flat, metal, gravel, foam" },
+    { label: "Compatible Substrates", value: "Flat cement deck, shingle, concrete tile, barrel tile, S-tile, metal, gravel, foam — any Florida roof type" },
     { label: "Manufactured", value: "Davie, Florida — Storm Shield Paint Systems Inc." },
   ],
   applications: [

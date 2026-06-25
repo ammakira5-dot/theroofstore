@@ -38,7 +38,7 @@ export default function Home() {
               <span className="text-accent">Weatherproof</span> at 1/2 the Cost.
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-10 font-medium">
-              The Original Liquid Applied Rubber Roof Shield System. Designed for Florida's Hurricane Force Winds and Water Damage.
+              The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal &amp; Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">

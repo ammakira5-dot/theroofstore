@@ -5,50 +5,45 @@ import { MapPin, DollarSign, ShieldCheck, Zap } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
-const ROOF_AFTER = "/images/hero-bg.png";
-
 const beforeAfterProjects = [
   {
-    title: "Tile Roof Restoration — Boca Raton Estate",
-    type: "Elastomeric Coating + Reglazing",
-    location: "Boca Raton, FL",
-    size: "3,200 sq ft",
-    saved: "$28,000",
+    title: "Cement Tile Roof Restoration",
+    type: "RoofShield Liquid Rubber Membrane System",
+    location: "Davie, FL",
+    size: "Residential",
+    saved: "$22,000+",
     description:
-      "This 20-year-old barrel tile roof had significant algae staining, faded glaze, and hairline cracks at the ridge caps. After a full Storm Shield restoration — cleaning, crack repair, repointing, and multi-coat elastomeric application — the roof looks new and is fully weatherproofed.",
-    beforeStyle: {
-      filter: "grayscale(0.55) sepia(0.35) contrast(0.85) brightness(0.75) saturate(0.6)",
-    },
+      "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat RoofShield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
+    beforeSrc: "https://www.theroofstore.net/images/Cement-tile-before.webp",
+    afterSrc: "https://www.theroofstore.net/images/Cement-Tile-After.webp",
     beforeLabel: "Before — Worn & Faded",
-    afterLabel: "After — Storm Shield Applied",
+    afterLabel: "After — RoofShield Applied",
   },
   {
-    title: "Flat Deck Waterproofing — Fort Lauderdale Office",
-    type: "Liquid Rubber Membrane",
-    location: "Fort Lauderdale, FL",
-    size: "5,800 sq ft",
-    saved: "$65,000",
+    title: "Flat Deck Rubber Roof Installation",
+    type: "Liquid Rubber Membrane — Full Flat Deck",
+    location: "South Florida",
+    size: "Residential Flat Deck",
+    saved: "$18,000+",
     description:
-      "A chronic leaking flat roof on a commercial building had cost the owner tens of thousands in interior repairs. After our liquid rubber membrane system was applied seamlessly over the existing substrate, leaks were eliminated permanently — no seams, no joints, no weak points.",
-    beforeStyle: {
-      filter: "grayscale(0.6) sepia(0.4) contrast(0.8) brightness(0.7) hue-rotate(10deg)",
-    },
-    beforeLabel: "Before — Chronic Leaks",
+      "Flat roofs are the most leak-prone in Florida. This flat deck received a complete liquid rubber membrane system — no tear-off, no replacement. The seamless application eliminates every joint and seam, permanently stopping leaks through ponding water, UV, and storm rain.",
+    beforeSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-Before.webp",
+    afterSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-After.webp",
+    beforeLabel: "Before — Bare Deck",
     afterLabel: "After — Sealed Membrane",
   },
   {
-    title: "Spanish Tile Reglazing — Coral Springs",
-    type: "Tile Reglazing + Storm Shield",
-    location: "Coral Springs, FL",
-    size: "4,500 sq ft",
-    saved: "$42,000",
+    title: "Cement Tile Waterproofing System",
+    type: "FungalShield + RoofShield Two-Coat System",
+    location: "Broward County, FL",
+    size: "Residential",
+    saved: "$30,000+",
     description:
-      "This Spanish clay tile roof had completely lost its protective glaze. Extensive algae growth had discolored the entire surface. After deep cleaning, individual tile repairs, and our full reglaze + Storm Shield coating application, the color and protection were fully restored.",
-    beforeStyle: {
-      filter: "grayscale(0.7) sepia(0.5) contrast(0.75) brightness(0.65) saturate(0.4)",
-    },
-    beforeLabel: "Before — Algae & Discoloration",
-    afterLabel: "After — Restored & Sealed",
+      "A two-coat system starting with FungalShield (RP1) to kill mold and prevent regrowth, followed by RoofShield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
+    beforeSrc: "https://www.theroofstore.net/images/cement-tile-waterproofing.webp",
+    afterSrc: "https://www.theroofstore.net/images/water-proof-roof.webp",
+    beforeLabel: "Before — Porous Tile",
+    afterLabel: "After — Waterproofed",
   },
 ];
 
@@ -113,9 +108,8 @@ export default function Projects() {
               >
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                   <BeforeAfterSlider
-                    beforeSrc={ROOF_AFTER}
-                    afterSrc={ROOF_AFTER}
-                    beforeStyle={project.beforeStyle}
+                    beforeSrc={project.beforeSrc}
+                    afterSrc={project.afterSrc}
                     beforeLabel={project.beforeLabel}
                     afterLabel={project.afterLabel}
                     beforeAlt={`${project.title} — Before`}

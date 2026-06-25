@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { CheckCircle2, ArrowRight, Phone } from "lucide-react";
+import { CheckCircle2, ArrowRight, Phone, ShoppingCart, ExternalLink } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
@@ -24,6 +24,9 @@ export interface ProductData {
   applications: string[];
   faq: { q: string; a: string }[];
   relatedProducts: { name: string; href: string; desc: string; icon: LucideIcon }[];
+  shopUrl?: string;
+  price?: string;
+  shopAvailable?: boolean;
 }
 
 export function ProductDetail({ product }: { product: ProductData }) {
@@ -58,15 +61,30 @@ export function ProductDetail({ product }: { product: ProductData }) {
             <h1 className="text-6xl font-serif font-bold mb-4">{product.name}</h1>
             <p className="text-2xl text-white/75 font-light mb-8 max-w-2xl">{product.tagline}</p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-12 px-8">
-                <Link href="/contact">Get a Free Quote</Link>
-              </Button>
+              {product.shopUrl && product.shopAvailable !== false ? (
+                <a href={product.shopUrl} target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white h-12 px-8">
+                    <ShoppingCart className="h-4 w-4 mr-2" />
+                    Buy Online{product.price ? ` — ${product.price}` : ""}
+                    <ExternalLink className="h-3.5 w-3.5 ml-2 opacity-70" />
+                  </Button>
+                </a>
+              ) : (
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-12 px-8">
+                  <Link href="/contact">Get a Free Quote</Link>
+                </Button>
+              )}
               <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
                 <a href="tel:954-210-9614">
                   <Phone className="h-4 w-4 mr-2" />
                   954-210-9614
                 </a>
               </Button>
+              {product.shopUrl && product.shopAvailable !== false && (
+                <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
+                  <Link href="/contact">Get a Free Quote</Link>
+                </Button>
+              )}
             </div>
           </motion.div>
         </div>

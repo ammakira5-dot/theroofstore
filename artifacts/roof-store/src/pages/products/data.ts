@@ -75,6 +75,9 @@ export const fungalShield: ProductData = {
     { name: "SmartShield", href: "/products/smartshield", desc: "Energy-reflective smart coating — our most popular system.", icon: Sun },
     { name: "RoofShield", href: "/products/roofshield", desc: "Flagship all-weather waterproofing membrane — lifetime warranty.", icon: ShieldCheck },
   ],
+  shopUrl: "https://www.roofprotectproducts.com/product/RP1FungalShield",
+  price: "$190",
+  shopAvailable: false,
 };
 
 export const smartShield: ProductData = {
@@ -149,6 +152,9 @@ export const smartShield: ProductData = {
     { name: "FungalShield", href: "/products/fungalshield", desc: "Anti-fungal & anti-algae coating — eliminate black streaking.", icon: Leaf },
     { name: "RoofShield", href: "/products/roofshield", desc: "Flagship all-weather waterproofing membrane — lifetime warranty.", icon: ShieldCheck },
   ],
+  shopUrl: "https://www.roofprotectproducts.com/product/RP2SmartShield",
+  price: "$285",
+  shopAvailable: true,
 };
 
 export const roofShield: ProductData = {
@@ -224,6 +230,9 @@ export const roofShield: ProductData = {
     { name: "FungalShield", href: "/products/fungalshield", desc: "Anti-fungal & anti-algae coating — eliminate black streaking.", icon: Leaf },
     { name: "SmartShield", href: "/products/smartshield", desc: "Energy-reflective smart coating — FP&L confirmed savings.", icon: Sun },
   ],
+  shopUrl: "https://www.roofprotectproducts.com/product/RP3RoofShield",
+  price: "$325",
+  shopAvailable: true,
 };
 
 export const productMap: Record<string, ProductData> = {

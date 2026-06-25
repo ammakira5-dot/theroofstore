@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, Shield, Menu, X, ChevronRight, ChevronDown, Leaf, Sun, ShieldCheck, FileText, Download, HelpCircle, LayoutGrid } from "lucide-react";
+import { Phone, Shield, Menu, X, ChevronRight, ChevronDown, Leaf, Sun, ShieldCheck, FileText, Download, HelpCircle, LayoutGrid, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -35,6 +35,7 @@ const productDropdown = {
       group: "Resources",
       links: [
         { href: "/questions", label: "Questions to Ask", icon: HelpCircle, desc: "What every buyer should know" },
+        { href: "/shop", label: "Buy Online", icon: ShoppingCart, desc: "Order direct — RP1 · RP2 · RP3" },
       ],
     },
     {

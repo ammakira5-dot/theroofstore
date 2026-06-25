@@ -17,6 +17,7 @@ export interface ProductData {
   seoTitle: string;
   seoDescription: string;
   heroDesc: string;
+  heroImage?: string;
   overview: string[];
   features: { title: string; desc: string }[];
   specs: { label: string; value: string }[];
@@ -36,8 +37,14 @@ export function ProductDetail({ product }: { product: ProductData }) {
         canonical={`/products/${product.slug}`}
       />
 
-      <section className="bg-primary text-white py-24">
-        <div className="container px-4 max-w-5xl mx-auto">
+      <section className="relative bg-primary text-white overflow-hidden">
+        {product.heroImage && (
+          <div className="absolute inset-0">
+            <img src={product.heroImage} alt={product.name} className="w-full h-full object-cover opacity-20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
+          </div>
+        )}
+        <div className="relative container px-4 max-w-5xl mx-auto py-24">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <nav className="flex items-center gap-2 text-white/50 text-sm mb-8">
               <Link href="/products" className="hover:text-white transition-colors">Products</Link>

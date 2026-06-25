@@ -44,17 +44,19 @@ const systems = [
     image: "/images/roofshield-product.png",
     imageAlt: "RoofShield seamless waterproof membrane being applied to a flat roof",
     name: "RoofShield",
-    tagline: "Flagship All-Weather Waterproofing System",
+    tagline: "World's Only TAS-106 Dade County Uplift Rated Coating",
     description:
-      "RoofShield is our flagship all-weather roof membrane system — the result of over 30 years of Florida roofing expertise. It creates a 100% seamless, waterproof membrane that withstands hurricane-force winds, tropical storms, and the relentless Florida sun. Whether your roof is flat, low-slope, tile, or metal, RoofShield delivers the ultimate in permanent waterproofing protection.",
+      "RoofShield (RP3) is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
     features: [
-      "100% seamless waterproof membrane — no joints or seams",
-      "Guaranteed against hurricane-force winds",
-      "Expands and contracts with temperature fluctuations",
-      "Extends roof life by 15–20 years",
-      "Suitable for all Florida roof types",
+      "World's ONLY TAS-106 Dade County Uplift Pull Test certified roof coating",
+      "Tested on real Spanish & concrete tile — adds true tile attachment to substrate",
+      "5× stronger in wind uplift than a new tile roof installation",
+      "135+ MPH documented — zero tiles lost on treated roofs in real hurricane events",
+      "100% seamless waterproof rubber membrane — stops leaks permanently",
+      "Lifetime Warranty — maintenance-free, transferable & renewable",
     ],
     color: "bg-primary/10 text-primary",
+    worldsOnly: true,
   },
 ];
 
@@ -93,6 +95,11 @@ export default function RoofSystems() {
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
               >
                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                  {system.name === "RoofShield" && (
+                    <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+                      ★ World's Only TAS-106 Dade County Rated Coating
+                    </div>
+                  )}
                   <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full text-sm font-bold mb-6 ${system.color}`}>
                     <system.icon className="h-4 w-4" />
                     {system.tagline}

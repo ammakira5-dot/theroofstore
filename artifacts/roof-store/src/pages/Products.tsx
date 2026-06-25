@@ -395,6 +395,67 @@ export default function Products() {
         </div>
       </section>
 
+      {/* THREE WAYS TO GET OUR PRODUCTS */}
+      <section className="py-20 bg-muted">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Flexible — Your Way</div>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-3">We Are Both Manufacturer &amp; Contractor</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              The Roof Store manufactures these coatings at our own facility in Davie, FL and installs them with our own licensed crew. But you're not locked into hiring us — you can source the products and use any installer you trust.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                Icon: Hammer,
+                step: "Option 1",
+                title: "Hire Us — Full Installation",
+                desc: "Our licensed crew handles everything: inspection, surface prep, full application, and warranty documentation. The most common path — and the one we guarantee end-to-end.",
+                cta: "Get a Free Quote",
+                href: "/contact",
+                dark: true,
+              },
+              {
+                Icon: ShoppingCart,
+                step: "Option 2",
+                title: "Buy Direct — Apply Yourself",
+                desc: "Order RP1, RP2, or RP3 from our online store and apply it yourself. Call us at 954-210-9614 — our team walks you through the process at no extra charge.",
+                cta: "Buy Online",
+                href: "/shop",
+                dark: false,
+              },
+              {
+                Icon: UserCheck,
+                step: "Option 3",
+                title: "Buy &amp; Use Your Own Contractor",
+                desc: "Source our product and hand it to any licensed roofing contractor of your choice. We provide the technical specifications and support so the job is done right.",
+                cta: "Browse Products",
+                href: "/products/roofshield",
+                dark: false,
+              },
+            ].map(({ Icon, step, title, desc, cta, href, dark }, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`rounded-2xl p-8 border-2 flex flex-col ${dark ? "bg-primary text-white border-primary" : "bg-card border-border"}`}
+              >
+                <div className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full w-fit mb-5 ${dark ? "bg-accent text-white" : "bg-muted text-muted-foreground"}`}>{step}</div>
+                <Icon className="h-7 w-7 text-accent mb-4" />
+                <h3 className={`text-lg font-serif font-bold mb-3 ${dark ? "text-white" : "text-foreground"}`}>{title}</h3>
+                <p className={`text-sm leading-relaxed mb-6 flex-1 ${dark ? "text-white/80" : "text-muted-foreground"}`}>{desc}</p>
+                <Button asChild size="sm" className={dark ? "bg-accent hover:bg-accent/90 text-white" : "bg-primary hover:bg-primary/90 text-white"}>
+                  <Link href={href}>{cta}</Link>
+                </Button>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* READ A LABEL LIKE A PRO — comparison section */}
       <section className="py-24 bg-muted">
         <div className="container px-4 max-w-5xl mx-auto">

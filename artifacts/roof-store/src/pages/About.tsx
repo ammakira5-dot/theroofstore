@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Award, Shield, Users, Clock, CheckCircle2, Star } from "lucide-react";
+import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 export default function About() {
@@ -27,13 +27,13 @@ export default function About() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <h2 className="text-4xl font-serif font-bold text-primary mb-6">Our Story</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Welcome to Theroofstore.net. For nearly 30 years, we have been at the forefront of Research, Development, and Installation of High Strength Windproof, Waterproof, Weatherproof Roof Paints and Advanced Rubber Roof Coating Systems and Products.
+                Welcome to Theroofstore.net. For nearly 30 years, Storm Shield Paint Systems Inc. has operated as Florida's only licensed roofing <strong className="text-foreground">manufacturer and contractor</strong> — we formulate and produce our own coatings in Davie, Florida, and install them with our own licensed crew. No middlemen. No third-party products. Straight from our factory to your roof.
               </p>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Storm Shield Paint Systems Inc. (Contracting, Product Installation Division) is A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun.
+                Storm Shield Paint Systems Inc. (Contracting &amp; Product Installation Division) is A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. We also sell our products direct — you can buy them online and apply them yourself, or use any licensed installer you choose.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                We pioneered the liquid-applied rubber roof shield system — a revolutionary alternative to costly roof replacement. Our systems are specifically designed to restore, preserve, and protect Roof Tiles and Flat roofs against weathering as well as Hurricane Force Winds and Water damage.
+                We pioneered the liquid-applied rubber roof shield system and hold the world's only independent Dade County <strong className="text-foreground">TAS-106 Uplift Pull Test certification</strong> for a liquid roof coating — tested on real Spanish tile roofs. This means our RoofShield system delivers provable tile attachment strength that withstands real hurricane-force winds and water damage without exception.
               </p>
               <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
                 <Link href="/contact">Schedule Your Free Consultation</Link>
@@ -104,6 +104,70 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-3 text-foreground">{item.title}</h3>
                 <p className="text-muted-foreground">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Manufacturer + Contractor + Three Paths */}
+      <section className="py-24 bg-background border-y">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
+              <Factory className="h-3.5 w-3.5" />
+              Manufacturer · Contractor · Direct Seller
+            </div>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Three Ways to Work With Us</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Because we make our own products and run our own installation crews, you're never boxed into a single option. Pick whichever path fits your project.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                Icon: Hammer,
+                step: "Option 1",
+                title: "Hire Us — Full Installation",
+                desc: "Our licensed crew handles everything end-to-end: roof inspection, surface prep, full product application, and warranty documentation. This is the path we guarantee.",
+                cta: "Get a Free Quote",
+                href: "/contact",
+                dark: true,
+              },
+              {
+                Icon: ShoppingCart,
+                step: "Option 2",
+                title: "Buy Direct — Apply Yourself",
+                desc: "Order RP1, RP2, or RP3 directly from roofprotectproducts.com and apply it yourself. Our team is available by phone at 954-210-9614 to guide you through the application at no charge.",
+                cta: "Buy Online",
+                href: "/shop",
+                dark: false,
+              },
+              {
+                Icon: UserCheck,
+                step: "Option 3",
+                title: "Buy & Use Your Own Installer",
+                desc: "Purchase our products and use any licensed roofing contractor you prefer. We supply the product, the technical data sheets, and phone support to ensure it's applied correctly.",
+                cta: "Browse Products",
+                href: "/products",
+                dark: false,
+              },
+            ].map(({ Icon, step, title, desc, cta, href, dark }, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className={`rounded-2xl p-8 border-2 flex flex-col ${dark ? "bg-primary text-white border-primary" : "bg-card border-border"}`}
+              >
+                <div className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full w-fit mb-5 ${dark ? "bg-accent text-white" : "bg-muted text-muted-foreground"}`}>{step}</div>
+                <Icon className="h-7 w-7 text-accent mb-4" />
+                <h3 className={`text-lg font-serif font-bold mb-3 ${dark ? "text-white" : "text-foreground"}`}>{title}</h3>
+                <p className={`text-sm leading-relaxed mb-6 flex-1 ${dark ? "text-white/80" : "text-muted-foreground"}`}>{desc}</p>
+                <Button asChild size="sm" className={dark ? "bg-accent hover:bg-accent/90 text-white" : "bg-primary hover:bg-primary/90 text-white"}>
+                  <Link href={href}>{cta}</Link>
+                </Button>
               </motion.div>
             ))}
           </div>

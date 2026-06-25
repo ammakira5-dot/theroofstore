@@ -15,6 +15,7 @@ import Faq from "@/pages/Faq";
 import Projects from "@/pages/Projects";
 import Products from "@/pages/Products";
 import Contact from "@/pages/Contact";
+import Admin from "@/pages/Admin";
 
 import { CountyPage } from "@/pages/service-areas/CountyPage";
 import { CityPage } from "@/pages/service-areas/CityPage";
@@ -56,6 +57,7 @@ function Router() {
       <Route path="/projects" component={Projects} />
       <Route path="/products" component={Products} />
       <Route path="/contact" component={Contact} />
+      <Route path="/admin" component={Admin} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -11,13 +11,67 @@ interface CityPageProps {
   citySlug: string;
 }
 
+const BASE = "https://www.theroofstore.net";
+
 export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) {
+  const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
+
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      name: "The Roof Store",
+      url: BASE,
+      telephone: "+19542109614",
+      email: "info@theroofstore.net",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Davie",
+        addressRegion: "FL",
+        postalCode: "33314",
+        addressCountry: "US",
+      },
+      areaServed: {
+        "@type": "City",
+        name: city,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: `${county}, Florida`,
+        },
+      },
+      priceRange: "$$",
+      description: `Professional roof coating, tile restoration, and weatherproofing in ${city}, FL. A+ BBB Rated since 1994.`,
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Roof Coating Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
+        ],
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Service Areas", item: `${BASE}/service-areas` },
+        { "@type": "ListItem", position: 3, name: county, item: `${BASE}/service-areas/${countySlug}` },
+        { "@type": "ListItem", position: 4, name: city, item: cityUrl },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title={`Rubber Roof Coating in ${city}, FL — The Roof Store`}
         description={`The Roof Store provides rubber roof coating, tile restoration, and weatherproofing in ${city}, ${county}, FL. A+ BBB rated since 1994. Free consultation — call 954-210-9614.`}
         canonical={`/service-areas/${countySlug}/${citySlug}`}
+        schema={schema}
+        geo={{ region: "US-FL", placename: `${city}, FL` }}
       />
 
       <section className="bg-primary text-white py-24">

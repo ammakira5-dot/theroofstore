@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wrench, Building2, Wind, CheckCircle2 } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { Lightbox, useLightbox } from "@/components/Lightbox";
 
 const roofTypes = [
   {
@@ -120,6 +121,7 @@ const realJobs = [
 const BASE = "https://www.theroofstore.net";
 
 export default function CommercialRoofs() {
+  const lb = useLightbox(galleryImages.map(img => ({ src: img.src, alt: img.caption, caption: img.caption })));
   const schema = [
     {
       "@context": "https://schema.org",
@@ -158,6 +160,7 @@ export default function CommercialRoofs() {
   ];
 
   return (
+    <>
     <div className="w-full">
       <SEO
         title="Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida"
@@ -305,7 +308,8 @@ export default function CommercialRoofs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (i % 4) * 0.08 }}
-                className="group relative overflow-hidden rounded-xl shadow-sm bg-card"
+                className="group relative overflow-hidden rounded-xl shadow-sm bg-card cursor-zoom-in"
+                onClick={() => lb.open(i)}
               >
                 <img
                   src={img.src}
@@ -398,5 +402,13 @@ export default function CommercialRoofs() {
         </div>
       </section>
     </div>
+    <Lightbox
+      images={galleryImages.map(img => ({ src: img.src, alt: img.caption, caption: img.caption }))}
+      index={lb.activeIndex}
+      onClose={lb.close}
+      onPrev={lb.prev}
+      onNext={lb.next}
+    />
+    </>
   );
 }

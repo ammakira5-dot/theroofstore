@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, DollarSign, ShieldCheck, Zap } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { Lightbox, useLightbox, type LightboxImage } from "@/components/Lightbox";
 
 const beforeAfterProjects = [
   {
@@ -88,7 +89,20 @@ const caseStudies = [
 
 const BASE = "https://www.theroofstore.net";
 
+const allGalleryImages: LightboxImage[] = beforeAfterProjects.flatMap(
+  (p) => (p.gallery ?? []).map((img) => ({ src: img.src, alt: img.alt }))
+);
+
+function galleryOffset(projectIndex: number): number {
+  let offset = 0;
+  for (let i = 0; i < projectIndex; i++) {
+    offset += beforeAfterProjects[i].gallery?.length ?? 0;
+  }
+  return offset;
+}
+
 export default function Projects() {
+  const lb = useLightbox(allGalleryImages);
   const schema = [
     {
       "@context": "https://schema.org",
@@ -127,6 +141,7 @@ export default function Projects() {
   ];
 
   return (
+    <>
     <div className="w-full">
       <SEO
         title="Roof Coating Projects — Before & After South Florida"
@@ -207,14 +222,21 @@ export default function Projects() {
                     <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {project.title}</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                       {project.gallery.map((img, gi) => (
-                        <div key={gi} className="overflow-hidden rounded-lg shadow-sm aspect-[4/3] bg-muted">
+                        <div
+                          key={gi}
+                          className="overflow-hidden rounded-lg shadow-sm aspect-[4/3] bg-muted relative group cursor-zoom-in"
+                          onClick={() => lb.open(galleryOffset(i) + gi)}
+                        >
                           <img
                             src={img.src}
                             alt={img.alt}
                             title={`${img.alt} — ${project.title} | The Roof Store`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
+                            <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -274,5 +296,7 @@ export default function Projects() {
         </div>
       </section>
     </div>
+    <Lightbox images={allGalleryImages} index={lb.activeIndex} onClose={lb.close} onPrev={lb.prev} onNext={lb.next} />
+    </>
   );
 }

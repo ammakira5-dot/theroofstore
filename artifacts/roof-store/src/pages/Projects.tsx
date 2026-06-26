@@ -140,48 +140,50 @@ export default function Projects() {
 
       <section className="py-24 bg-background">
         <div className="container px-4">
-          <div className="space-y-20">
+          <div className="space-y-24">
             {beforeAfterProjects.map((project, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
-              >
-                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                  <BeforeAfterSlider
-                    beforeSrc={project.beforeSrc}
-                    afterSrc={project.afterSrc}
-                    beforeLabel={project.beforeLabel}
-                    afterLabel={project.afterLabel}
-                    beforeAlt={`${project.title} — Before`}
-                    afterAlt={`${project.title} — After`}
-                  />
-                </div>
-
-                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
-                    <MapPin className="h-3.5 w-3.5" />
-                    {project.location} · {project.size}
+              <div key={i}>
+                {i > 0 && <div className="border-t border-border mb-24" />}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+                >
+                  <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                    <BeforeAfterSlider
+                      beforeSrc={project.beforeSrc}
+                      afterSrc={project.afterSrc}
+                      beforeLabel={project.beforeLabel}
+                      afterLabel={project.afterLabel}
+                      beforeAlt={`${project.title} — Before`}
+                      afterAlt={`${project.title} — After`}
+                    />
                   </div>
-                  <h2 className="text-3xl font-serif font-bold text-primary mb-2">{project.title}</h2>
-                  <div className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wide">{project.type}</div>
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-lg">{project.description}</p>
 
-                  <div className="bg-accent/10 border border-accent/20 rounded-xl p-5">
-                    <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-full bg-accent flex items-center justify-center shrink-0">
-                        <DollarSign className="h-5 w-5 text-white" />
-                      </div>
-                      <div>
-                        <div className="text-xs font-bold text-accent uppercase tracking-wide">Owner Saved vs. Replacement</div>
-                        <div className="text-2xl font-serif font-bold text-primary">{project.saved}</div>
+                  <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                    <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
+                      <MapPin className="h-3.5 w-3.5" />
+                      {project.location} · {project.size}
+                    </div>
+                    <h2 className="text-3xl font-serif font-bold text-primary mb-2">{project.title}</h2>
+                    <div className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wide">{project.type}</div>
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">{project.description}</p>
+
+                    <div className="bg-accent/10 border border-accent/20 rounded-xl p-5">
+                      <div className="flex items-center gap-3">
+                        <div className="h-10 w-10 rounded-full bg-accent flex items-center justify-center shrink-0">
+                          <DollarSign className="h-5 w-5 text-white" />
+                        </div>
+                        <div>
+                          <div className="text-xs font-bold text-accent uppercase tracking-wide">Owner Saved vs. Replacement</div>
+                          <div className="text-2xl font-serif font-bold text-primary">{project.saved}</div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 {project.gallery && (
                   <motion.div
@@ -189,7 +191,7 @@ export default function Projects() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mt-10 lg:col-span-2"
+                    className="mt-12"
                   >
                     <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {project.title}</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -206,7 +208,7 @@ export default function Projects() {
                     </div>
                   </motion.div>
                 )}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

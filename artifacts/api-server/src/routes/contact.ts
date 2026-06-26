@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
-import { sendLeadEmail } from "../lib/email";
+import { sendLeadEmail, sendAutoResponse } from "../lib/email";
 import { db, submissionsTable } from "@workspace/db";
 
 const router = Router();
@@ -42,8 +42,14 @@ router.post("/contact", async (req, res) => {
   }
 
   try {
-    await sendLeadEmail({ ...data, email: data.email || undefined });
+    const submission = { ...data, email: data.email || undefined };
+    await sendLeadEmail(submission);
     req.log.info({ name: data.name }, "lead email sent");
+    if (data.email) {
+      sendAutoResponse(submission).catch((err) =>
+        req.log.error({ err }, "auto-response email failed (non-blocking)")
+      );
+    }
     res.json({ ok: true });
   } catch (err) {
     req.log.error({ err }, "failed to send lead email");

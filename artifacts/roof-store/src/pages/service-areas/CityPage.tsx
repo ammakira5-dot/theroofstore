@@ -9,11 +9,12 @@ interface CityPageProps {
   county: string;
   countySlug: string;
   citySlug: string;
+  image: string;
 }
 
 const BASE = "https://www.theroofstore.net";
 
-export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) {
+export function CityPage({ city, county, countySlug, citySlug, image }: CityPageProps) {
   const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
 
   const schema = [
@@ -24,6 +25,7 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
       url: BASE,
       telephone: "+19542109614",
       email: "info@theroofstore.net",
+      image,
       address: {
         "@type": "PostalAddress",
         addressLocality: "Davie",
@@ -70,12 +72,24 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
         title={`Rubber Roof Coating in ${city}, FL — The Roof Store`}
         description={`The Roof Store provides rubber roof coating, tile restoration, and weatherproofing in ${city}, ${county}, FL. A+ BBB rated since 1994. Free consultation — call 954-210-9614.`}
         canonical={`/service-areas/${countySlug}/${citySlug}`}
+        ogImage={image}
         schema={schema}
         geo={{ region: "US-FL", placename: `${city}, FL` }}
       />
 
-      <section className="bg-primary text-white py-24">
-        <div className="container px-4 max-w-4xl mx-auto">
+      {/* Hero with city photo */}
+      <section className="relative min-h-[420px] flex items-center overflow-hidden">
+        {/* City photo */}
+        <img
+          src={image}
+          alt={`${city}, Florida — The Roof Store service area`}
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+        />
+        {/* Dark overlay so text is readable */}
+        <div className="absolute inset-0 bg-primary/75" />
+
+        <div className="relative z-10 container px-4 max-w-4xl mx-auto py-24">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <nav className="flex items-center gap-2 text-white/60 text-sm mb-6 flex-wrap">
               <Link href="/service-areas" className="hover:text-white transition-colors">Service Areas</Link>
@@ -84,8 +98,8 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
               <span>/</span>
               <span className="text-white">{city}</span>
             </nav>
-            <h1 className="text-5xl font-serif font-bold mb-6">Rubber Roof Coating in {city}, FL</h1>
-            <p className="text-xl text-white/80">
+            <h1 className="text-5xl font-serif font-bold mb-6 text-white">Rubber Roof Coating in {city}, FL</h1>
+            <p className="text-xl text-white/85">
               Professional roof restoration and weatherproofing for {city} homeowners and businesses. A+ BBB Rated since 1994.
             </p>
           </motion.div>
@@ -142,13 +156,13 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
                     { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
                     { title: "Save Up to 50%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
                     { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },
-                    { title: "Free Roof Inspection", desc: "No-cost, no-obligation assessment by a certified technician — we come to your {city} property." },
+                    { title: "Free Roof Inspection", desc: `No-cost, no-obligation assessment by a certified technician — we come to your ${city} property.` },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4 p-4 bg-muted rounded-lg">
                       <Star className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                       <div>
                         <div className="font-bold text-foreground mb-1">{item.title}</div>
-                        <div className="text-muted-foreground text-sm">{item.desc.replace("{city}", city)}</div>
+                        <div className="text-muted-foreground text-sm">{item.desc}</div>
                       </div>
                     </div>
                   ))}
@@ -200,6 +214,19 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
                 <div className="text-3xl font-serif font-bold text-accent mb-1">A+</div>
                 <div className="text-sm font-bold text-foreground">BBB Accredited Business</div>
                 <div className="text-xs text-muted-foreground">Serving {city} since 1994</div>
+              </div>
+
+              {/* City photo thumbnail */}
+              <div className="rounded-xl overflow-hidden shadow-md">
+                <img
+                  src={image}
+                  alt={`Aerial view of ${city}, Florida`}
+                  className="w-full h-40 object-cover"
+                  loading="lazy"
+                />
+                <div className="bg-muted px-4 py-2 text-xs text-muted-foreground text-center">
+                  {city}, {county}, Florida
+                </div>
               </div>
             </div>
           </div>

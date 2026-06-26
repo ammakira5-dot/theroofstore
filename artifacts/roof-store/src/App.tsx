@@ -28,6 +28,7 @@ import { productMap } from "@/pages/products/data";
 
 import { CountyPage } from "@/pages/service-areas/CountyPage";
 import { CityPage } from "@/pages/service-areas/CityPage";
+import { getCityImage } from "@/pages/service-areas/data";
 import { findCounty, findCity } from "@/pages/service-areas/data";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ function CityRoute({ params }: { params: { county: string; city: string } }) {
       county={result.county.name}
       countySlug={result.county.slug}
       citySlug={result.city.slug}
+      image={getCityImage(result.county, result.city)}
     />
   );
 }

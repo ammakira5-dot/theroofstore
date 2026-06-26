@@ -18,6 +18,12 @@ const beforeAfterProjects = [
     afterSrc: "/images/projects/clay-tile-after.png",
     beforeLabel: "Before",
     afterLabel: "After",
+    gallery: [
+      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after comparison" },
+      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Restored Spanish tile roof close-up" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof home exterior after restoration" },
+    ],
   },
   {
     title: "Flat Deck Rubber Roof Installation",
@@ -166,6 +172,30 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
+
+                {project.gallery && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mt-10 lg:col-span-2"
+                  >
+                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {project.title}</div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      {project.gallery.map((img, gi) => (
+                        <div key={gi} className="overflow-hidden rounded-lg shadow-sm aspect-[4/3] bg-muted">
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
               </motion.div>
             ))}
           </div>

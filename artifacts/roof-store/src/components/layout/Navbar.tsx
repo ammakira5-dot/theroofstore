@@ -11,6 +11,9 @@ const navLinks = [
   { href: "/projects", label: "Projects" },
   { href: "/reviews", label: "Reviews" },
   { href: "/faq", label: "FAQ" },
+];
+
+const moreLinks = [
   { href: "/factory", label: "Factory" },
   { href: "/commercial-roofs", label: "Commercial Roofs" },
   { href: "/blog", label: "Blog" },
@@ -63,7 +66,10 @@ const productDropdown = {
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
+  const moreTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [location] = useLocation();
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dropdownTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -71,6 +77,7 @@ export function Navbar() {
   useEffect(() => {
     setOpen(false);
     setDropdownOpen(false);
+    setMoreOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -91,6 +98,16 @@ export function Navbar() {
     dropdownTimerRef.current = setTimeout(() => setDropdownOpen(false), 120);
   };
 
+  const handleMoreEnter = () => {
+    if (moreTimerRef.current) clearTimeout(moreTimerRef.current);
+    setMoreOpen(true);
+  };
+
+  const handleMoreLeave = () => {
+    moreTimerRef.current = setTimeout(() => setMoreOpen(false), 120);
+  };
+
+  const isMoreActive = moreLinks.some((l) => location === l.href);
   const isProductsActive = location.startsWith("/products") || location === "/questions";
 
   return (
@@ -182,6 +199,40 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+
+            {/* More dropdown */}
+            <div
+              ref={moreRef}
+              className="relative"
+              onMouseEnter={handleMoreEnter}
+              onMouseLeave={handleMoreLeave}
+            >
+              <button
+                className={`flex items-center gap-1 hover:text-accent transition-colors whitespace-nowrap ${isMoreActive ? "text-accent font-semibold" : ""}`}
+              >
+                More
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${moreOpen ? "rotate-180" : ""}`} />
+              </button>
+              {moreOpen && (
+                <div
+                  className="absolute top-full right-0 pt-2 z-50"
+                  onMouseEnter={handleMoreEnter}
+                  onMouseLeave={handleMoreLeave}
+                >
+                  <div className="bg-white rounded-2xl shadow-xl border min-w-[200px] overflow-hidden py-2">
+                    {moreLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className={`block px-4 py-2.5 text-sm hover:bg-muted hover:text-accent transition-colors ${location === link.href ? "text-accent font-semibold bg-muted" : ""}`}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="hidden lg:flex items-center gap-4 ml-4 pl-6 border-l shrink-0">

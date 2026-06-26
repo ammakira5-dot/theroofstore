@@ -14,8 +14,8 @@ const beforeAfterProjects = [
     saved: "$22,000+",
     description:
       "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat RoofShield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
-    beforeSrc: "https://www.theroofstore.net/images/Cement-tile-before.webp",
-    afterSrc: "https://www.theroofstore.net/images/Cement-Tile-After.webp",
+    beforeSrc: "https://www.theroofstore.net/images/Cement-Tile-After.webp",
+    afterSrc: "https://www.theroofstore.net/images/Cement-tile-before.webp",
     beforeLabel: "Before — Worn & Faded",
     afterLabel: "After — RoofShield Applied",
   },
@@ -27,8 +27,8 @@ const beforeAfterProjects = [
     saved: "$18,000+",
     description:
       "Flat roofs are the most leak-prone in Florida. This flat deck received a complete liquid rubber membrane system — no tear-off, no replacement. The seamless application eliminates every joint and seam, permanently stopping leaks through ponding water, UV, and storm rain.",
-    beforeSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-Before.webp",
-    afterSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-After.webp",
+    beforeSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-After.webp",
+    afterSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-Before.webp",
     beforeLabel: "Before — Bare Deck",
     afterLabel: "After — Sealed Membrane",
   },
@@ -40,8 +40,8 @@ const beforeAfterProjects = [
     saved: "$30,000+",
     description:
       "A two-coat system starting with FungalShield (RP1) to kill mold and prevent regrowth, followed by RoofShield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
-    beforeSrc: "https://www.theroofstore.net/images/cement-tile-waterproofing.webp",
-    afterSrc: "https://www.theroofstore.net/images/water-proof-roof.webp",
+    beforeSrc: "https://www.theroofstore.net/images/water-proof-roof.webp",
+    afterSrc: "https://www.theroofstore.net/images/cement-tile-waterproofing.webp",
     beforeLabel: "Before — Porous Tile",
     afterLabel: "After — Waterproofed",
   },

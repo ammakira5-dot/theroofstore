@@ -27,8 +27,8 @@ const beforeAfterProjects = [
     saved: "$18,000+",
     description:
       "Flat roofs are the most leak-prone in Florida. This flat deck received a complete liquid rubber membrane system — no tear-off, no replacement. The seamless application eliminates every joint and seam, permanently stopping leaks through ponding water, UV, and storm rain.",
-    beforeSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-After.webp",
-    afterSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-Before.webp",
+    beforeSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-Before.webp",
+    afterSrc: "https://www.theroofstore.net/images/Roof-Installation-Flat-Roof-After.webp",
     beforeLabel: "Before",
     afterLabel: "After",
   },

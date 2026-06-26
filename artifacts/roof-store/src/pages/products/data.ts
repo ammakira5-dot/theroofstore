@@ -254,6 +254,22 @@ export const roofShield: ProductData = {
   shopAvailable: true,
   pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
   pdfLabel: "RoofShield Product Sheet (PDF)",
+  beforeAfterImages: [
+    {
+      label: "Cement Tile Roof",
+      before: "https://www.theroofstore.net/assets/images/imagebefore.png",
+      beforeAlt: "Cement tile roof before RoofShield — visible gaps and voids between tiles",
+      after: "https://www.theroofstore.net/assets/images/imageafter.png",
+      afterAlt: "Cement tile roof after RoofShield — all gaps sealed, monolithic surface",
+    },
+    {
+      label: "Barrel Tile Roof",
+      before: "https://www.theroofstore.net/assets/images/1.jpg",
+      beforeAlt: "Barrel tile roof before RoofShield — open spaces between tile ribs",
+      after: "https://www.theroofstore.net/assets/images/2-min.jpeg",
+      afterAlt: "Barrel tile roof after RoofShield — every space between tiles sealed solid",
+    },
+  ],
 };
 
 export const productMap: Record<string, ProductData> = {

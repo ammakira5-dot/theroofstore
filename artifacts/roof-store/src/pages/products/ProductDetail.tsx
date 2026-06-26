@@ -29,6 +29,7 @@ export interface ProductData {
   shopAvailable?: boolean;
   pdfUrl?: string;
   pdfLabel?: string;
+  beforeAfterImages?: { before: string; beforeAlt: string; after: string; afterAlt: string; label: string }[];
 }
 
 export function ProductDetail({ product }: { product: ProductData }) {
@@ -110,6 +111,41 @@ export function ProductDetail({ product }: { product: ProductData }) {
                   <p key={i} className="text-muted-foreground text-lg leading-relaxed mb-4">{p}</p>
                 ))}
               </motion.div>
+
+              {product.beforeAfterImages && product.beforeAfterImages.length > 0 && (
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <div className="mb-4">
+                    <div className="inline-block bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                      See the Transformation
+                    </div>
+                    <h2 className="text-3xl font-serif font-bold text-primary mb-2">Before &amp; After</h2>
+                    <p className="text-muted-foreground">
+                      Each pair shows the same roof section — before the system fills the tile gaps, and after the monolithic seal is complete.
+                    </p>
+                  </div>
+                  <div className="space-y-8">
+                    {product.beforeAfterImages.map((pair, i) => (
+                      <div key={i}>
+                        <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-3">{pair.label}</div>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="relative rounded-xl overflow-hidden border shadow-sm">
+                            <img src={pair.before} alt={pair.beforeAlt} className="w-full h-52 object-cover" />
+                            <div className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                              Before
+                            </div>
+                          </div>
+                          <div className="relative rounded-xl overflow-hidden border shadow-sm">
+                            <img src={pair.after} alt={pair.afterAlt} className="w-full h-52 object-cover" />
+                            <div className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                              After
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">Key Benefits</h2>

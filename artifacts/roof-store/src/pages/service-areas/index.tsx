@@ -4,23 +4,13 @@ import { Button } from "@/components/ui/button";
 import { MapPin, ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
-const counties = [
-  {
-    name: "Broward County",
-    slug: "broward-county",
-    cities: ["Fort Lauderdale", "Hollywood", "Pompano Beach", "Coral Springs", "Pembroke Pines", "Miramar", "Sunrise", "Plantation", "Deerfield Beach", "Hallandale Beach", "Davie", "Weston", "Cooper City", "Tamarac", "Margate", "Coconut Creek"],
-  },
-  {
-    name: "Miami-Dade County",
-    slug: "miami-dade-county",
-    cities: ["Miami", "Hialeah", "Miami Beach", "Aventura", "North Miami", "Coral Gables", "Homestead", "Miami Gardens", "Doral", "Kendall", "Pinecrest", "South Miami"],
-  },
-  {
-    name: "Palm Beach County",
-    slug: "palm-beach-county",
-    cities: ["West Palm Beach", "Boca Raton", "Delray Beach", "Boynton Beach", "Lake Worth", "Wellington", "Palm Beach Gardens", "Jupiter", "Greenacres", "Royal Palm Beach"],
-  },
-];
+import { counties as countiesData } from "./data";
+
+const counties = countiesData.map((c) => ({
+  name: c.name,
+  slug: c.slug,
+  cities: c.cities.map((city) => city.name),
+}));
 
 export default function ServiceAreas() {
   return (

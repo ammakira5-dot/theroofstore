@@ -7,10 +7,14 @@
     "hello": "tsx ./src/hello.ts",
     "generate-sitemap": "tsx ./src/generate-sitemap.ts",
     "refresh-city-images": "tsx ./src/refresh-city-images.ts",
+    "upload-city-images-to-storage": "tsx ./src/upload-city-images-to-storage.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "devDependencies": {
     "@types/node": "catalog:",
     "tsx": "catalog:"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.21.0"
   }
 }

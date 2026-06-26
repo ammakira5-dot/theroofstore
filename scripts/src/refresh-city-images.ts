@@ -1,30 +1,70 @@
 /**
  * refresh-city-images.ts
  *
- * Re-downloads all city/county images from Unsplash into
- * artifacts/roof-store/public/images/cities/
+ * Re-downloads all city/county images from Unsplash and uploads them to
+ * App Storage (GCS), where they are served via the CDN at:
+ *   GET /api/storage/public-objects/cities/<id>.jpg
  *
  * Usage:
  *   pnpm --filter @workspace/scripts run refresh-city-images
  *
- * Pass --force to re-download images that already exist locally.
- * Pass --verify to validate JPEG magic bytes on all existing files without downloading.
+ * Pass --force to re-download and re-upload images that already exist.
+ * Pass --verify to validate that all images exist in storage without downloading.
  */
 
 import { createWriteStream, existsSync, mkdirSync, unlinkSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { tmpdir } from "node:os";
 import https from "node:https";
 import http from "node:http";
+import { Storage } from "@google-cloud/storage";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const DEST_DIR = join(
-  __dirname,
-  "../../artifacts/roof-store/public/images/cities"
-);
+const TMP_DIR = join(tmpdir(), "roof-store-city-images");
 
 const UNSPLASH_PARAMS = "?auto=format&fit=crop&w=1400&q=80";
+
+const REPLIT_SIDECAR_ENDPOINT = "http://127.0.0.1:1106";
+
+const storageClient = new Storage({
+  credentials: {
+    audience: "replit",
+    subject_token_type: "access_token",
+    token_url: `${REPLIT_SIDECAR_ENDPOINT}/token`,
+    type: "external_account",
+    credential_source: {
+      url: `${REPLIT_SIDECAR_ENDPOINT}/credential`,
+      format: {
+        type: "json",
+        subject_token_field_name: "access_token",
+      },
+    },
+    universe_domain: "googleapis.com",
+  },
+  projectId: "",
+});
+
+function parseGcsPath(path: string): { bucketName: string; prefix: string } {
+  if (!path.startsWith("/")) path = `/${path}`;
+  const parts = path.split("/");
+  return {
+    bucketName: parts[1],
+    prefix: parts.slice(2).join("/"),
+  };
+}
+
+function getPublicSearchPath(): { bucketName: string; prefix: string } {
+  const pathsStr = process.env.PUBLIC_OBJECT_SEARCH_PATHS ?? "";
+  const first = pathsStr.split(",").map((p) => p.trim()).filter(Boolean)[0];
+  if (!first) {
+    throw new Error(
+      "PUBLIC_OBJECT_SEARCH_PATHS is not set. Run setupObjectStorage() first."
+    );
+  }
+  return parseGcsPath(first);
+}
 
 const IMAGES: Array<{ id: string; description: string }> = [
   { id: "1416339306562-f3d12fefd36f", description: "Green park landscape" },
@@ -172,55 +212,91 @@ function downloadFile(url: string, dest: string): Promise<void> {
   });
 }
 
-async function verifyAll() {
-  mkdirSync(DEST_DIR, { recursive: true });
+async function uploadToStorage(
+  localPath: string,
+  id: string,
+  bucketName: string,
+  prefix: string,
+  force: boolean
+): Promise<void> {
+  const bucket = storageClient.bucket(bucketName);
+  const objectName = prefix ? `${prefix}/cities/${id}.jpg` : `cities/${id}.jpg`;
+  const file = bucket.file(objectName);
+
+  if (!force) {
+    const [exists] = await file.exists();
+    if (exists) {
+      return;
+    }
+  }
+
+  await bucket.upload(localPath, {
+    destination: objectName,
+    metadata: {
+      contentType: "image/jpeg",
+      cacheControl: "public, max-age=31536000",
+    },
+  });
+}
+
+async function verifyAll(bucketName: string, prefix: string) {
+  const bucket = storageClient.bucket(bucketName);
   let bad = 0;
   for (const { id } of IMAGES) {
-    const dest = join(DEST_DIR, `${id}.jpg`);
-    if (!existsSync(dest)) {
-      console.error(`  MISSING  ${id}.jpg`);
-      bad++;
-    } else if (!isValidJpeg(dest)) {
-      console.error(`  INVALID  ${id}.jpg  (not a valid JPEG)`);
+    const objectName = prefix ? `${prefix}/cities/${id}.jpg` : `cities/${id}.jpg`;
+    const file = bucket.file(objectName);
+    const [exists] = await file.exists();
+    if (!exists) {
+      console.error(`  MISSING  ${id}.jpg (not in storage)`);
       bad++;
     } else {
       console.log(`      ok   ${id}.jpg`);
     }
   }
   if (bad > 0) {
-    console.error(`\n${bad} file(s) are missing or invalid. Run without --verify to fix.`);
+    console.error(`\n${bad} file(s) are missing from storage. Run without --verify to fix.`);
     process.exit(1);
   } else {
-    console.log(`\nAll ${IMAGES.length} images are valid JPEGs.`);
+    console.log(`\nAll ${IMAGES.length} images are present in storage.`);
   }
 }
 
 async function main() {
+  const { bucketName, prefix } = getPublicSearchPath();
+
   if (process.argv.includes("--verify")) {
-    await verifyAll();
+    await verifyAll(bucketName, prefix);
     return;
   }
 
-  mkdirSync(DEST_DIR, { recursive: true });
+  mkdirSync(TMP_DIR, { recursive: true });
 
   const force = process.argv.includes("--force");
 
   const tasks = IMAGES.map(async ({ id, description }) => {
     const url = `https://images.unsplash.com/photo-${id}${UNSPLASH_PARAMS}`;
-    const dest = join(DEST_DIR, `${id}.jpg`);
-
-    if (!force && existsSync(dest) && isValidJpeg(dest)) {
-      console.log(`  skip  ${id}.jpg (already exists)`);
-      return { id, status: "skipped" as const };
-    }
+    const tmpPath = join(TMP_DIR, `${id}.jpg`);
+    const objectName = prefix ? `${prefix}/cities/${id}.jpg` : `cities/${id}.jpg`;
 
     try {
-      await downloadFile(url, dest);
+      if (!force) {
+        const bucket = storageClient.bucket(bucketName);
+        const [exists] = await bucket.file(objectName).exists();
+        if (exists) {
+          console.log(`  skip  ${id}.jpg (already in storage)`);
+          return { id, status: "skipped" as const };
+        }
+      }
+
+      await downloadFile(url, tmpPath);
+      await uploadToStorage(tmpPath, id, bucketName, prefix, force);
+      if (existsSync(tmpPath)) unlinkSync(tmpPath);
       console.log(`    ok  ${id}.jpg  — ${description}`);
       return { id, status: "ok" as const };
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
       console.error(`  FAIL  ${id}.jpg  — ${msg}`);
+      if (existsSync(tmpPath)) unlinkSync(tmpPath);
       return { id, status: "failed" as const, error: msg };
     }
   });
@@ -232,7 +308,7 @@ async function main() {
   const failed = results.filter((r) => r.status === "failed");
 
   console.log(
-    `\nDone. ${ok} downloaded, ${skipped} skipped, ${failed.length} failed.`
+    `\nDone. ${ok} downloaded and uploaded, ${skipped} skipped, ${failed.length} failed.`
   );
 
   if (failed.length > 0) {

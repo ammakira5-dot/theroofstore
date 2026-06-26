@@ -7,7 +7,7 @@ import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 const beforeAfterProjects = [
   {
-    title: "Cement Tile Roof Restoration",
+    title: "Spanish Tile Roof Restoration",
     type: "RoofShield Liquid Rubber Membrane System",
     location: "Davie, FL",
     size: "Residential",

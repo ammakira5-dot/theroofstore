@@ -1,0 +1,79 @@
+name: Refresh City Images
+
+on:
+  schedule:
+    # Run on the 1st of every month at 03:00 UTC
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-download images that already exist in storage (--force)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    name: Download & upload city images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "10"
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Refresh city images
+        # Scheduled runs always use --force to re-download and re-upload every
+        # image so the CDN copy stays fresh. Manual dispatch can opt out by
+        # leaving the force checkbox unchecked (defaults to false).
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          pnpm --filter @workspace/scripts run refresh-city-images -- $FORCE_FLAG
+        env:
+          # Path(s) in App Storage where public images are stored.
+          # Example: /my-bucket/public
+          # Set this secret in: GitHub → Settings → Secrets and variables → Actions
+          PUBLIC_OBJECT_SEARCH_PATHS: ${{ secrets.PUBLIC_OBJECT_SEARCH_PATHS }}
+
+          # GCS service account credentials (JSON key file contents).
+          # The script normally uses the Replit sidecar for auth; in CI you need
+          # a GCS service account key with Storage Object Admin on the bucket.
+          # Set this secret in: GitHub → Settings → Secrets and variables → Actions
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GCS_SERVICE_ACCOUNT_KEY }}
+
+      - name: Verify all images present in storage
+        run: pnpm --filter @workspace/scripts run refresh-city-images -- --verify
+        env:
+          PUBLIC_OBJECT_SEARCH_PATHS: ${{ secrets.PUBLIC_OBJECT_SEARCH_PATHS }}
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GCS_SERVICE_ACCOUNT_KEY }}
+
+      - name: Commit updated manifest back to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/data/city-images-manifest.json
+          if git diff --cached --quiet; then
+            echo "No manifest changes to commit."
+          else
+            git commit -m "chore: update city images manifest [skip ci]"
+            git push
+          fi

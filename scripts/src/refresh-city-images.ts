@@ -12,7 +12,7 @@
  * Pass --verify to validate that all images exist in storage without downloading.
  */
 
-import { createWriteStream, existsSync, mkdirSync, unlinkSync, readFileSync } from "node:fs";
+import { createWriteStream, existsSync, mkdirSync, unlinkSync, readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
@@ -28,23 +28,36 @@ const UNSPLASH_PARAMS = "?auto=format&fit=crop&w=1400&q=80";
 
 const REPLIT_SIDECAR_ENDPOINT = "http://127.0.0.1:1106";
 
-const storageClient = new Storage({
-  credentials: {
-    audience: "replit",
-    subject_token_type: "access_token",
-    token_url: `${REPLIT_SIDECAR_ENDPOINT}/token`,
-    type: "external_account",
-    credential_source: {
-      url: `${REPLIT_SIDECAR_ENDPOINT}/credential`,
-      format: {
-        type: "json",
-        subject_token_field_name: "access_token",
+function buildStorageClient(): Storage {
+  // When running in CI / GitHub Actions, fall back to standard GCS credentials.
+  // Set the GCS_SERVICE_ACCOUNT_KEY secret (JSON key file contents) in GitHub.
+  const saKeyJson = process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON;
+  if (saKeyJson) {
+    const credentials = JSON.parse(saKeyJson);
+    return new Storage({ credentials });
+  }
+
+  // Default: use the Replit sidecar for credential exchange (local / Replit env).
+  return new Storage({
+    credentials: {
+      audience: "replit",
+      subject_token_type: "access_token",
+      token_url: `${REPLIT_SIDECAR_ENDPOINT}/token`,
+      type: "external_account",
+      credential_source: {
+        url: `${REPLIT_SIDECAR_ENDPOINT}/credential`,
+        format: {
+          type: "json",
+          subject_token_field_name: "access_token",
+        },
       },
+      universe_domain: "googleapis.com",
     },
-    universe_domain: "googleapis.com",
-  },
-  projectId: "",
-});
+    projectId: "",
+  });
+}
+
+const storageClient = buildStorageClient();
 
 function parseGcsPath(path: string): { bucketName: string; prefix: string } {
   if (!path.startsWith("/")) path = `/${path}`;
@@ -318,6 +331,50 @@ async function main() {
     }
     process.exit(1);
   }
+
+  writeManifest(results, bucketName, prefix);
+}
+
+interface ManifestEntry {
+  id: string;
+  description: string;
+  storageUrl: string;
+  refreshedAt: string;
+}
+
+function writeManifest(
+  results: Array<{ id: string; status: "ok" | "skipped" | "failed" }>,
+  bucketName: string,
+  prefix: string
+): void {
+  const MANIFEST_PATH = join(__dirname, "../data/city-images-manifest.json");
+  const runAt = new Date().toISOString();
+
+  let existing: Record<string, ManifestEntry> = {};
+  if (existsSync(MANIFEST_PATH)) {
+    try {
+      existing = JSON.parse(readFileSync(MANIFEST_PATH, "utf-8"));
+    } catch {
+      existing = {};
+    }
+  }
+
+  for (const result of results) {
+    if (result.status === "failed") continue;
+    const img = IMAGES.find((i) => i.id === result.id);
+    if (!img) continue;
+    const objectPath = prefix ? `${prefix}/cities/${img.id}.jpg` : `cities/${img.id}.jpg`;
+    existing[img.id] = {
+      id: img.id,
+      description: img.description,
+      storageUrl: `gs://${bucketName}/${objectPath}`,
+      refreshedAt: result.status === "ok" ? runAt : (existing[img.id]?.refreshedAt ?? runAt),
+    };
+  }
+
+  mkdirSync(dirname(MANIFEST_PATH), { recursive: true });
+  writeFileSync(MANIFEST_PATH, JSON.stringify(existing, null, 2) + "\n", "utf-8");
+  console.log(`\nManifest written to ${MANIFEST_PATH}`);
 }
 
 main();

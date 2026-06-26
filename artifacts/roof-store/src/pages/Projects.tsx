@@ -40,6 +40,7 @@ const beforeAfterProjects = [
     gallery: [
       { src: "/images/projects/flat-deck-extra-1.png", alt: "Large commercial flat deck rubber roof coating" },
       { src: "/images/projects/flat-deck-extra-2.png", alt: "Commercial flat roof with HVAC units after coating" },
+      { src: "/images/projects/flat-deck-extra-3.jpg", alt: "Flat roof seam sealing in progress with paint buckets" },
     ],
   },
   {

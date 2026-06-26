@@ -89,13 +89,9 @@ export async function sendLeadEmail(data: ContactSubmission): Promise<void> {
   });
 }
 
-export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
-  if (!data.email) return;
-  const resend = getResend();
-
-  const firstName = data.name.split(" ")[0];
-
-  const html = `
+export function buildAutoResponseHtml(name: string): string {
+  const firstName = name.split(" ")[0];
+  return `
 <!DOCTYPE html>
 <html>
 <body style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1a1a1a; background: #f4f4f0;">
@@ -309,6 +305,13 @@ export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
 
 </body>
 </html>`;
+}
+
+export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
+  if (!data.email) return;
+  const resend = getResend();
+  const firstName = data.name.split(" ")[0];
+  const html = buildAutoResponseHtml(data.name);
 
   await resend.emails.send({
     from: "The Roof Store <info@theroofstore.net>",

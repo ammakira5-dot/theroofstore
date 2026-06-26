@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
-import { sendLeadEmail, sendAutoResponse } from "../lib/email";
+import { sendLeadEmail, sendAutoResponse, buildAutoResponseHtml } from "../lib/email";
 import { db, submissionsTable } from "@workspace/db";
 
 const router = Router();
@@ -55,6 +55,13 @@ router.post("/contact", async (req, res) => {
     req.log.error({ err }, "failed to send lead email");
     res.status(500).json({ ok: false, error: "Failed to send email" });
   }
+});
+
+router.get("/email-preview", (req, res) => {
+  const name = typeof req.query.name === "string" ? req.query.name : "John";
+  const html = buildAutoResponseHtml(name);
+  res.setHeader("Content-Type", "text/html");
+  res.send(html);
 });
 
 export default router;

@@ -68,19 +68,21 @@ export default function ServiceAreas() {
                   View full {county.name} page <ArrowRight className="h-4 w-4" />
                 </Link>
 
-                <ul className="space-y-2">
-                  {county.cities.map((city, j) => (
-                    <li key={j}>
-                      <Link
-                        href={`/service-areas/${county.slug}/${city.slug}`}
-                        className="flex items-center gap-2 py-1.5 text-foreground hover:text-accent transition-colors group"
-                      >
-                        <div className="h-1.5 w-1.5 rounded-full bg-accent shrink-0 group-hover:scale-125 transition-transform" />
-                        {city.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <div className="overflow-y-auto h-60 pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-accent/40 hover:[&::-webkit-scrollbar-thumb]:bg-accent/70">
+                  <ul className="space-y-2">
+                    {county.cities.map((city, j) => (
+                      <li key={j}>
+                        <Link
+                          href={`/service-areas/${county.slug}/${city.slug}`}
+                          className="flex items-center gap-2 py-1.5 text-foreground hover:text-accent transition-colors group"
+                        >
+                          <div className="h-1.5 w-1.5 rounded-full bg-accent shrink-0 group-hover:scale-125 transition-transform" />
+                          {city.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 </div>
               </motion.div>
             ))}

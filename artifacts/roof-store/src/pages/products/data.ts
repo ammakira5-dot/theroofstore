@@ -164,6 +164,38 @@ export const smartShield: ProductData = {
   shopAvailable: true,
   pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
   pdfLabel: "SmartShield Product Sheet (PDF)",
+  galleryImages: [
+    {
+      src: "https://www.theroofstore.net/assets/images/making-color.jpeg",
+      alt: "Mixing custom SmartShield roof paint colors at the factory",
+      caption: "Custom color mixing at our Davie, FL factory",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/custom-colors-2.png",
+      alt: "SmartShield color palette — over 3,000 custom options",
+      caption: "3,000+ color options — any shade, any HOA",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-1.png",
+      alt: "SmartShield prep — filling valleys and low spots with coating",
+      caption: "Step 1: Prep — filling valleys with base coat",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-2.jpeg",
+      alt: "SmartShield application in progress on tile roof",
+      caption: "Step 2: Coating applied across tile surface",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/smart-sheild-top-coated.jpeg",
+      alt: "SmartShield top coat — final job completed on tile roof",
+      caption: "Finished: top coat complete, color locked in",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/Refelctive-smart-shield-prep-1.jpeg",
+      alt: "Reflective SmartShield installation — prep phase",
+      caption: "Cool Pigment coat — reflects heat even at dark colors",
+    },
+  ],
 };
 
 export const roofShield: ProductData = {

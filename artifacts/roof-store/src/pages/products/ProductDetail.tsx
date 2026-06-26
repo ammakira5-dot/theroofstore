@@ -30,6 +30,7 @@ export interface ProductData {
   pdfUrl?: string;
   pdfLabel?: string;
   beforeAfterImages?: { before: string; beforeAlt: string; after: string; afterAlt: string; label: string }[];
+  galleryImages?: { src: string; alt: string; caption: string }[];
 }
 
 export function ProductDetail({ product }: { product: ProductData }) {
@@ -140,6 +141,27 @@ export function ProductDetail({ product }: { product: ProductData }) {
                               After
                             </div>
                           </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+
+              {product.galleryImages && product.galleryImages.length > 0 && (
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <h2 className="text-3xl font-serif font-bold text-primary mb-2">See It In Action</h2>
+                  <p className="text-muted-foreground mb-6">Real installations and our manufacturing process — straight from our team in Davie, FL.</p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {product.galleryImages.map((img, i) => (
+                      <div key={i} className="group relative rounded-xl overflow-hidden border shadow-sm bg-muted">
+                        <img
+                          src={img.src}
+                          alt={img.alt}
+                          className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="px-3 py-2">
+                          <p className="text-xs text-muted-foreground leading-snug">{img.caption}</p>
                         </div>
                       </div>
                     ))}

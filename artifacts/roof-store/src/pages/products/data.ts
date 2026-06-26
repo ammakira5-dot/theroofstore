@@ -166,34 +166,44 @@ export const smartShield: ProductData = {
   pdfLabel: "SmartShield Product Sheet (PDF)",
   galleryImages: [
     {
-      src: "https://www.theroofstore.net/assets/images/making-color.jpeg",
-      alt: "Mixing custom SmartShield roof paint colors at the factory",
-      caption: "Custom color mixing at our Davie, FL factory",
-    },
-    {
-      src: "https://www.theroofstore.net/assets/images/custom-colors-2.png",
-      alt: "SmartShield color palette — over 3,000 custom options",
-      caption: "3,000+ color options — any shade, any HOA",
-    },
-    {
       src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-1.png",
-      alt: "SmartShield prep — filling valleys and low spots with coating",
-      caption: "Step 1: Prep — filling valleys with base coat",
+      alt: "SmartShield Step 1 — open valleys waterproofed",
+      caption: "Step 1 — Open valleys waterproofed",
     },
     {
       src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-2.jpeg",
-      alt: "SmartShield application in progress on tile roof",
-      caption: "Step 2: Coating applied across tile surface",
+      alt: "SmartShield Step 2 — ridge caps polyurethaned and pointings fiber coated",
+      caption: "Step 2 — Ridge caps polyurethaned & pointings fiber coated",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-3.jpeg",
+      alt: "SmartShield Step 3 — primer sealer applied",
+      caption: "Step 3 — Primer sealer applied",
     },
     {
       src: "https://www.theroofstore.net/assets/images/smart-sheild-top-coated.jpeg",
-      alt: "SmartShield top coat — final job completed on tile roof",
-      caption: "Finished: top coat complete, color locked in",
+      alt: "SmartShield Step 4 — final top coat with color applied",
+      caption: "Step 4 — Final top coat with color",
     },
     {
       src: "https://www.theroofstore.net/assets/images/Refelctive-smart-shield-prep-1.jpeg",
-      alt: "Reflective SmartShield installation — prep phase",
-      caption: "Cool Pigment coat — reflects heat even at dark colors",
+      alt: "Reflective SmartShield — darker colors reflect more heat",
+      caption: "Darker colors reflect MORE heat — BASF Cool Pigment",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/Refelctive-smart-shield-prep-3.jpeg",
+      alt: "Reflective SmartShield completed installation",
+      caption: "Completed SmartShield installation — heat reflecting",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/making-color.jpeg",
+      alt: "Mixing custom SmartShield colors at our Davie FL factory",
+      caption: "Factory-mixed custom colors — Davie, FL",
+    },
+    {
+      src: "https://www.theroofstore.net/assets/images/custom-colors-2.png",
+      alt: "SmartShield hard-copy color code samples — 3,000+ options",
+      caption: "3,000 color options — hard-copy samples available",
     },
   ],
 };

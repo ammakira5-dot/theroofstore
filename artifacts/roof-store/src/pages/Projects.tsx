@@ -50,6 +50,10 @@ const beforeAfterProjects = [
     afterSrc: "/images/projects/flat-cement-after.png",
     beforeLabel: "Before",
     afterLabel: "After",
+    gallery: [
+      { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile waterproofing project exterior" },
+      { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
+    ],
   },
 ];
 

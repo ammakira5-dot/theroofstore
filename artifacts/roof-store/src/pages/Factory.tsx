@@ -122,7 +122,7 @@ export default function Factory() {
               {
                 icon: Users,
                 title: "Contractor + Manufacturer = Accountability",
-                desc: "We don't just make it — we install it. Storm Shield Paint Systems Inc. is our exclusive contracting division, A+ BBB Rated since 1994. The same company that formulated your product applies it to your roof. Full accountability, zero gap.",
+                desc: "We don't just make it — we install it. The Roof Store is our exclusive contracting division, A+ BBB Rated since 1994. The same company that formulated your product applies it to your roof. Full accountability, zero gap.",
               },
             ].map((item, i) => (
               <motion.div

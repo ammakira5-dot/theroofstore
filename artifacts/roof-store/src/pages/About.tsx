@@ -8,8 +8,8 @@ export default function About() {
   return (
     <div className="w-full">
       <SEO
-        title="About Us — Storm Shield Paint Systems Inc."
-        description="Nearly 30 years protecting Florida homes. Storm Shield Paint Systems Inc. — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
+        title="About Us — The Roof Store"
+        description="Nearly 30 years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
         canonical="/about"
       />
       <section className="bg-primary text-white py-24">
@@ -27,10 +27,10 @@ export default function About() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <h2 className="text-4xl font-serif font-bold text-primary mb-6">Our Story</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Welcome to Theroofstore.net. For nearly 30 years, Storm Shield Paint Systems Inc. has operated as Florida's only licensed roofing <strong className="text-foreground">manufacturer and contractor</strong> — we formulate and produce our own coatings in Davie, Florida, and install them with our own licensed crew. No middlemen. No third-party products. Straight from our factory to your roof.
+                Welcome to Theroofstore.net. For nearly 30 years, The Roof Store has operated as Florida's only licensed roofing <strong className="text-foreground">manufacturer and contractor</strong> — we formulate and produce our own coatings in Davie, Florida, and install them with our own licensed crew. No middlemen. No third-party products. Straight from our factory to your roof.
               </p>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Storm Shield Paint Systems Inc. (Contracting &amp; Product Installation Division) is A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. We also sell our products direct — you can buy them online and apply them yourself, or use any licensed installer you choose.
+                The Roof Store (Contracting &amp; Product Installation Division) is A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. We also sell our products direct — you can buy them online and apply them yourself, or use any licensed installer you choose.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 We pioneered the liquid-applied rubber roof shield system and hold the world's only independent Dade County <strong className="text-foreground">TAS-106 Uplift Pull Test certification</strong> for a liquid roof coating — tested on real Spanish tile roofs. This means our RoofShield system delivers provable tile attachment strength that withstands real hurricane-force winds and water damage without exception. Our systems work equally well on <strong className="text-foreground">flat roofs, cement tile, shingle, barrel tile, S-tile, metal, gravel, and foam</strong> — any Florida roof type.

@@ -37,7 +37,7 @@ export const fungalShield: ProductData = {
     { label: "UV Resistance", value: "UV-stable — no degradation in Florida heat" },
     { label: "Compatible Substrates", value: "Clay tile, concrete tile, metal, flat deck" },
     { label: "Product Warranty", value: "5 Years" },
-    { label: "Manufactured", value: "Davie, Florida — Storm Shield Paint Systems Inc." },
+    { label: "Manufactured", value: "Davie, Florida — The Roof Store" },
   ],
   applications: [
     "Tile roofs with black streaking and algae growth",
@@ -117,7 +117,7 @@ export const smartShield: ProductData = {
     { label: "Mildew Resistance", value: "Guaranteed" },
     { label: "Availability", value: "Exclusive — not available in any retail store" },
     { label: "Compatible Substrates", value: "Cement tile, clay tile, S-tile, flat tile, shingle, metal" },
-    { label: "Manufactured", value: "Davie, Florida — Storm Shield Paint Systems Inc." },
+    { label: "Manufactured", value: "Davie, Florida — The Roof Store" },
   ],
   applications: [
     "Tile roofs needing waterproofing and weatherproofing protection — primary use case",
@@ -249,7 +249,7 @@ export const roofShield: ProductData = {
     { label: "Warranty", value: "Lifetime — Maintenance-Free, Transferable & Renewable" },
     { label: "Roof Life Extension", value: "Up to 10 additional years certification (State of Florida / Citizens recognized)" },
     { label: "Compatible Substrates", value: "Concrete tile, barrel tile, S-tile, flat deck, metal, gravel, foam — any Florida roof" },
-    { label: "Manufactured", value: "Davie, Florida — Storm Shield Paint Systems Inc." },
+    { label: "Manufactured", value: "Davie, Florida — The Roof Store" },
   ],
   applications: [
     "Tile roofs where individual tiles are at risk of wind uplift in hurricane conditions",

@@ -234,7 +234,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
 
               <div className="bg-muted rounded-xl p-6">
                 <div className="text-sm font-bold text-foreground mb-4 uppercase tracking-wide">Manufactured By</div>
-                <div className="font-bold text-primary mb-1">Storm Shield Paint Systems Inc.</div>
+                <div className="font-bold text-primary mb-1">The Roof Store</div>
                 <div className="text-sm text-muted-foreground mb-4">Made in South Florida since 1994</div>
                 <Link href="/factory" className="text-sm text-accent font-semibold flex items-center gap-1 hover:underline">
                   See our factory <ArrowRight className="h-3.5 w-3.5" />

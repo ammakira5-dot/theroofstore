@@ -43,13 +43,13 @@ export function CountyPage({ county, slug, description, cities }: CountyPageProp
                   The Roof Store in {county}
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  Storm Shield Paint Systems Inc. (The Roof Store) has been protecting homes and commercial properties throughout {county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.
+                  The Roof Store has been protecting homes and commercial properties throughout {county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
                   We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to half the cost of replacement. All work is backed by our A+ BBB rating and comprehensive performance warranties.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right Storm Shield system for your specific needs.
+                  Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right roof coating system for your specific needs.
                 </p>
               </motion.div>
 

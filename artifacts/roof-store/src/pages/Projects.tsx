@@ -51,8 +51,8 @@ const caseStudies = [
   {
     title: "Hurricane Recovery Coating",
     location: "Hollywood, FL",
-    type: "Storm Shield Premium System",
-    description: "Post-hurricane assessment and full Storm Shield premium system application. Multiple cracked tiles replaced, all ridge caps reseated and sealed.",
+    type: "RoofShield Premium System",
+    description: "Post-hurricane assessment and full RoofShield premium system application. Multiple cracked tiles replaced, all ridge caps reseated and sealed.",
     result: "Insurance-approved restoration. Passed wind mitigation inspection at highest rating.",
     icon: ShieldCheck,
   },
@@ -113,7 +113,7 @@ export default function Projects() {
                     beforeLabel={project.beforeLabel}
                     afterLabel={project.afterLabel}
                     beforeAlt={`${project.title} — Before`}
-                    afterAlt={`${project.title} — After Storm Shield`}
+                    afterAlt={`${project.title} — After`}
                   />
                 </div>
 

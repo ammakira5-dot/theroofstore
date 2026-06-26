@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Will a roof coating hold up to Florida hurricanes?",
-    a: "Our Storm Shield systems are specifically engineered for Florida's severe weather environment. The elastomeric formulation flexes and stretches under wind loads rather than cracking or separating. Our systems are tested and guaranteed against hurricane force winds. We have thousands of installations that have survived multiple hurricane seasons with zero failures.",
+    a: "Our roof coating systems are specifically engineered for Florida's severe weather environment. The elastomeric formulation flexes and stretches under wind loads rather than cracking or separating. Our systems are tested and guaranteed against hurricane force winds. We have thousands of installations that have survived multiple hurricane seasons with zero failures.",
   },
   {
     q: "How long does the coating last?",

@@ -47,10 +47,10 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
                   Roof Coating Services in {city}
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  The Roof Store (Storm Shield Paint Systems Inc.) has been serving {city}, {county} homeowners and commercial property owners for nearly 30 years. Our certified technicians provide professional rubber roof coating, tile restoration, and weatherproofing services throughout the {city} area.
+                  The Roof Store has been serving {city}, {county} homeowners and commercial property owners for nearly 30 years. Our certified technicians provide professional rubber roof coating, tile restoration, and weatherproofing services throughout the {city} area.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  Living in {city}, FL means dealing with intense UV exposure, heavy rainfall, high humidity, and the constant threat of hurricanes. Our Storm Shield systems are specifically engineered for South Florida's demanding climate — protecting your home without the cost of a full roof replacement.
+                  Living in {city}, FL means dealing with intense UV exposure, heavy rainfall, high humidity, and the constant threat of hurricanes. Our roof coating systems are specifically engineered for South Florida's demanding climate — protecting your home without the cost of a full roof replacement.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Most homeowners in {city} save 40–60% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.
@@ -67,7 +67,7 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
                     "Tile Roof Restoration",
                     "Tile Reglazing & Reseal",
                     "Flat Deck Waterproofing",
-                    "Storm Shield Elastomeric",
+                    "Elastomeric Coating",
                     "Hurricane Protection Coating",
                     "Silicone Roof System",
                     "Emergency Roof Repair",
@@ -87,7 +87,7 @@ export function CityPage({ city, county, countySlug, citySlug }: CityPageProps) 
                     { title: "Nearly 30 Years in South Florida", desc: "Established in 1994, we understand Florida's climate and building codes better than anyone." },
                     { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
                     { title: "Save Up to 50%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
-                    { title: "Hurricane Guaranteed", desc: "Our Storm Shield systems are tested and guaranteed to perform under Florida hurricane conditions." },
+                    { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },
                     { title: "Free Roof Inspection", desc: "No-cost, no-obligation assessment by a certified technician — we come to your {city} property." },
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-4 p-4 bg-muted rounded-lg">

@@ -7,7 +7,7 @@ interface SEOProps {
 }
 
 export function SEO({ title, description, canonical }: SEOProps) {
-  const siteTitle = "The Roof Store | Storm Shield Paint Systems Inc.";
+  const siteTitle = "The Roof Store";
   const fullTitle = title === siteTitle ? siteTitle : `${title} | The Roof Store`;
   const base = "https://www.theroofstore.net";
 

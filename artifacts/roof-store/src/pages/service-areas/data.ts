@@ -15,7 +15,7 @@ export const counties: CountyEntry[] = [
     name: "Broward County",
     slug: "broward-county",
     description:
-      "Storm Shield Paint Systems Inc. serves all of Broward County, FL — from Fort Lauderdale to Coral Springs. Our rubber roof coating and tile restoration systems protect Broward homes from hurricanes, tropical storms, and intense UV exposure.",
+      "The Roof Store serves all of Broward County, FL — from Fort Lauderdale to Coral Springs. Our rubber roof coating and tile restoration systems protect Broward homes from hurricanes, tropical storms, and intense UV exposure.",
     cities: [
       { name: "Fort Lauderdale", slug: "fort-lauderdale" },
       { name: "Hollywood", slug: "hollywood" },
@@ -59,7 +59,7 @@ export const counties: CountyEntry[] = [
     name: "Palm Beach County",
     slug: "palm-beach-county",
     description:
-      "From Boca Raton to Jupiter, The Roof Store serves all of Palm Beach County with Storm Shield rubber roof coating and tile restoration systems. Protecting Palm Beach County homes from Florida's harsh climate since 1994.",
+      "From Boca Raton to Jupiter, The Roof Store serves all of Palm Beach County with our rubber roof coating and tile restoration systems. Protecting Palm Beach County homes from Florida's harsh climate since 1994.",
     cities: [
       { name: "West Palm Beach", slug: "west-palm-beach" },
       { name: "Boca Raton", slug: "boca-raton" },

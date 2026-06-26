@@ -54,3 +54,15 @@ id = "roZLia70peIKEeucoQ4oW"
 uri = "file://artifacts/roof-store/public/images/roofshield-product.png"
 type = "image"
 title = "roofshield waterproof membrane application"
+
+[[generated]]
+id = "2-DstB-7jHraBf63M3U7Z"
+uri = "file://artifacts/roof-store-mobile/assets/images/icon.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "6b1luLHnY02BODKOWacHf"
+uri = "file://artifacts/roof-store-mobile/assets/images/hero-home.png"
+type = "image"
+title = "generated_image"

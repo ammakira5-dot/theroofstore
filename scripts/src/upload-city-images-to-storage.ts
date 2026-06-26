@@ -1,13 +1,19 @@
 /**
  * upload-city-images-to-storage.ts
  *
- * One-time upload of locally cached city images into App Storage (GCS).
+ * Uploads locally cached city images into App Storage (GCS).
  * Images are uploaded to the first PUBLIC_OBJECT_SEARCH_PATHS prefix under
  * the sub-path `cities/<id>.jpg`, so they are served at:
  *   GET /api/storage/public-objects/cities/<id>.jpg
  *
+ * NOTE: The local city image files (`artifacts/roof-store/public/images/cities/`)
+ * have been removed from the repo — they are now served exclusively from the CDN
+ * via App Storage. To re-upload images, first run `refresh-city-images` to
+ * re-download them locally, then run this script.
+ *
  * Usage:
- *   pnpm --filter @workspace/scripts run upload-city-images-to-storage
+ *   pnpm --filter @workspace/scripts run refresh-city-images   # download from Unsplash
+ *   pnpm --filter @workspace/scripts run upload-city-images-to-storage  # upload to GCS
  *
  * Pass --force to re-upload images that already exist in storage.
  */
@@ -104,7 +110,11 @@ async function main() {
 
   if (!existsSync(LOCAL_DIR)) {
     console.error(`Local image directory not found: ${LOCAL_DIR}`);
-    console.error("Run refresh-city-images first to download images locally.");
+    console.error(
+      "The local city images are no longer stored in the repo. " +
+      "Run `pnpm --filter @workspace/scripts run refresh-city-images` first to re-download them locally, " +
+      "then re-run this script."
+    );
     process.exit(1);
   }
 

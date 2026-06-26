@@ -216,20 +216,33 @@ export default function Distributorships() {
               transition={{ duration: 0.6 }}
               className="space-y-4"
             >
-              {[
-                { label: "Cement Tile", quote: "Your process to extend the life of the roof is great." },
-                { label: "Barrel Tile", quote: "The coating really stopped all my roof leaks." },
-              ].map((item, i) => (
-                <div key={i} className="bg-muted rounded-2xl p-6 border border-border">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="h-2 w-2 rounded-full bg-accent" />
-                    <span className="text-xs font-bold text-accent uppercase tracking-widest">{item.label} Customer</span>
+              {/* Cement Tile Before / After */}
+              <div className="bg-muted rounded-2xl overflow-hidden border border-border">
+                <div className="grid grid-cols-2">
+                  <div className="relative">
+                    <img src="/images/distributorships/Cement-tile-before.jpg" alt="Cement tile roof before RoofShield coating" className="w-full h-44 object-cover" />
+                    <span className="absolute top-2 left-2 bg-black/60 text-white text-xs font-bold px-2 py-0.5 rounded">BEFORE</span>
                   </div>
-                  <blockquote className="text-muted-foreground italic text-base leading-relaxed">
-                    "{item.quote}"
-                  </blockquote>
+                  <div className="relative">
+                    <img src="/images/distributorships/Cement-Tile-After.jpg" alt="Cement tile roof after RoofShield coating" className="w-full h-44 object-cover" />
+                    <span className="absolute top-2 left-2 bg-accent/90 text-white text-xs font-bold px-2 py-0.5 rounded">AFTER</span>
+                  </div>
                 </div>
-              ))}
+                <div className="p-4">
+                  <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">Cement Tile — Customer Testimonial</div>
+                  <p className="text-muted-foreground italic text-sm">"Your process to extend the life of the roof is great."</p>
+                </div>
+              </div>
+
+              {/* Barrel Tile Weatherproof */}
+              <div className="bg-muted rounded-2xl overflow-hidden border border-border">
+                <img src="/images/distributorships/barrel-tile-after-weatherproof.jpg" alt="Barrel tile roof after weatherproofing with RoofShield" className="w-full h-48 object-cover" />
+                <div className="p-4">
+                  <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">Barrel Tile — Customer Testimonial</div>
+                  <p className="text-muted-foreground italic text-sm">"The coating really stopped all my roof leaks."</p>
+                </div>
+              </div>
+
               <div className="bg-primary text-white rounded-2xl p-6 text-center">
                 <div className="text-sm font-semibold text-white/70 mb-1 uppercase tracking-wide">County, State & National</div>
                 <div className="text-2xl font-serif font-bold">Territories Available</div>

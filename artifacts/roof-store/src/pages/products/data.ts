@@ -162,6 +162,8 @@ export const smartShield: ProductData = {
   shopUrl: "https://www.roofprotectproducts.com/product/RP2SmartShield",
   price: "$285",
   shopAvailable: true,
+  pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+  pdfLabel: "SmartShield Product Sheet (PDF)",
 };
 
 export const roofShield: ProductData = {
@@ -240,6 +242,8 @@ export const roofShield: ProductData = {
   shopUrl: "https://www.roofprotectproducts.com/product/RP3RoofShield",
   price: "$325",
   shopAvailable: true,
+  pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
+  pdfLabel: "RoofShield Product Sheet (PDF)",
 };
 
 export const productMap: Record<string, ProductData> = {

@@ -3,7 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import {
   ShieldCheck, Sun, Leaf, ArrowRight, ExternalLink,
-  CheckCircle, XCircle, AlertTriangle, Phone, ChevronDown, ChevronUp,
+  CheckCircle, XCircle, AlertTriangle, Phone, ChevronDown, ChevronUp, Download,
+  Hammer, ShoppingCart, UserCheck,
 } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { useState } from "react";
@@ -77,6 +78,8 @@ const products = [
     ],
     bestFor: "Any homeowner who wants a dark-colored roof (charcoal, brown, slate, terracotta) AND lower energy bills — the only coating that delivers both.",
     extra: "BASF — the world's largest chemical producer — re-engineered our base resins and infused proprietary cool pigment chemistry in 2018. The result passed full tensile tests, flexural tests, DSC, TGA, and viscosity testing. Recognized worldwide as one of the most innovative reflective coatings of its kind — and available exclusively through The Roof Store.",
+    pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+    pdfLabel: "SmartShield Product Sheet",
   },
   {
     code: "RP3",
@@ -114,6 +117,8 @@ const products = [
     ],
     bestFor: "Any Florida roof approaching replacement age, after hurricane damage, or needing insurance certification.",
     featured: true,
+    pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
+    pdfLabel: "RoofShield Product Sheet",
   },
 ];
 
@@ -388,6 +393,18 @@ export default function Products() {
                           </a>
                         </Button>
                       </div>
+                      {product.pdfUrl && (
+                        <a
+                          href={product.pdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-3 flex items-center gap-2 text-sm text-accent font-bold hover:underline"
+                        >
+                          <Download className="h-4 w-4" />
+                          {product.pdfLabel ?? "Download Product Sheet (PDF)"}
+                          <ExternalLink className="h-3 w-3 opacity-60" />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { CheckCircle2, ArrowRight, Phone, ShoppingCart, ExternalLink } from "lucide-react";
+import { CheckCircle2, ArrowRight, Phone, ShoppingCart, ExternalLink, Download } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
@@ -27,6 +27,8 @@ export interface ProductData {
   shopUrl?: string;
   price?: string;
   shopAvailable?: boolean;
+  pdfUrl?: string;
+  pdfLabel?: string;
 }
 
 export function ProductDetail({ product }: { product: ProductData }) {
@@ -84,6 +86,14 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
                   <Link href="/contact">Get a Free Quote</Link>
                 </Button>
+              )}
+              {product.pdfUrl && (
+                <a href={product.pdfUrl} target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
+                    <Download className="h-4 w-4 mr-2" />
+                    {product.pdfLabel ?? "Product Sheet (PDF)"}
+                  </Button>
+                </a>
               )}
             </div>
           </motion.div>

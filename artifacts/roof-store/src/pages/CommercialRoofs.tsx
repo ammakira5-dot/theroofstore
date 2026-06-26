@@ -70,6 +70,30 @@ const processSteps = [
   { step: "06", title: "Inspection & Documentation", desc: "Our supervisors confirm installation quality. You receive documentation and warranty paperwork at project completion." },
 ];
 
+const galleryImages = [
+  { src: "/images/commercial/commercial-flat-roof-dania-florida.jpg", caption: "Dania Boat Yard — 17,000 sq ft Metal Roof", tag: "Metal Roof" },
+  { src: "/images/commercial/commercial-flat-roof-waterproofing.jpg", caption: "Flat Deck Waterproofing — South Florida", tag: "Flat Deck" },
+  { src: "/images/commercial/commercial-flat-roof.jpg", caption: "Commercial Flat Roof Coating", tag: "Flat Deck" },
+  { src: "/images/commercial/Omar-Mart-Metal-Roof.jpg", caption: "Omar Mart — Metal Roof System", tag: "Metal Roof" },
+  { src: "/images/commercial/commercial-flat-roof-sunrise-florida.jpg", caption: "Flat Roof Restoration — Sunrise, FL", tag: "Flat Deck" },
+  { src: "/images/commercial/metal-roof-system-ft-lauderdale.jpg", caption: "Metal Roof System — Fort Lauderdale", tag: "Metal Roof" },
+  { src: "/images/commercial/commercial-roof-reroof-broward-fl.jpg", caption: "Commercial Roof Coating — Broward County", tag: "BUR / Mod-Bit" },
+  { src: "/images/commercial/industrial-roof-coating-broward-florida-big.jpg", caption: "Industrial Roof Coating — Broward, FL", tag: "Industrial" },
+  { src: "/images/commercial/commercial-roof-coating-parkland-florida-big.jpg", caption: "Commercial Coating — Parkland, FL", tag: "Flat Deck" },
+  { src: "/images/commercial/commercial-flat-roof-replacement-broward-fl.jpg", caption: "Flat Roof Restoration — Broward County", tag: "Flat Deck" },
+  { src: "/images/commercial/commercial-metal-roof-system.jpg", caption: "Commercial Metal Roof System", tag: "Metal Roof" },
+  { src: "/images/commercial/Avres-Nursery-Davie-Florida.jpg", caption: "Avres Nursery — Davie, FL", tag: "Industrial" },
+  { src: "/images/commercial/commercial-metal-roof.jpg", caption: "Commercial Metal Roof Waterproofing", tag: "Metal Roof" },
+  { src: "/images/commercial/commercial-flat-roof-insulation.jpg", caption: "Flat Roof Insulation & Coating", tag: "Flat Deck" },
+];
+
+const tagColors: Record<string, string> = {
+  "Flat Deck": "bg-blue-100 text-blue-800",
+  "Metal Roof": "bg-slate-100 text-slate-700",
+  "BUR / Mod-Bit": "bg-amber-100 text-amber-800",
+  "Industrial": "bg-green-100 text-green-800",
+};
+
 const realJobs = [
   {
     name: "Ralph Puopolo — La Costa",
@@ -261,6 +285,40 @@ export default function CommercialRoofs() {
                 <div className="text-4xl font-serif font-bold text-accent/80 mb-3">{step.step}</div>
                 <div className="font-bold text-white mb-2">{step.title}</div>
                 <div className="text-white/70 text-sm leading-relaxed">{step.desc}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-muted">
+        <div className="container px-4 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-3">Commercial Project Gallery</h2>
+            <p className="text-muted-foreground text-lg">Flat decks, metal roofs, and industrial coatings across South Florida — real jobs, real results.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.map((img, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: (i % 4) * 0.08 }}
+                className="group relative overflow-hidden rounded-xl shadow-sm bg-card"
+              >
+                <img
+                  src={img.src}
+                  alt={img.caption}
+                  title={img.caption}
+                  className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+                  <p className="text-white text-xs font-medium leading-snug">{img.caption}</p>
+                </div>
+                <div className="p-2">
+                  <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${tagColors[img.tag]}`}>{img.tag}</span>
+                </div>
               </motion.div>
             ))}
           </div>

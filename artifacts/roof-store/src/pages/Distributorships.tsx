@@ -2,55 +2,111 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { CheckCircle2, Globe, TrendingUp, Wrench, BarChart3, Users, Phone } from "lucide-react";
+import {
+  CheckCircle2,
+  MapPin,
+  DollarSign,
+  Tv,
+  Globe,
+  ShieldCheck,
+  Wrench,
+  TrendingUp,
+  Users,
+  Package,
+  Phone,
+  CreditCard,
+} from "lucide-react";
 
-const benefits = [
-  { icon: Globe, title: "Established Online Presence & Identity", desc: "Join a brand with nearly 30 years of documented performance and an existing customer base in South Florida and beyond." },
-  { icon: TrendingUp, title: "Complete Turn-Key Startup Package", desc: "Executive-level entry package includes comprehensive marketing demographics, territory analysis, and full business operations setup." },
-  { icon: Wrench, title: "Full Sales Training & Support", desc: "We train you on our products, application process, sales approach, and customer evaluation methodology. You never go in cold." },
-  { icon: BarChart3, title: "Comprehensive Marketing Demographics", desc: "Access to our South Florida market data, lead generation systems, and documented testimonials to accelerate your territory launch." },
-  { icon: Users, title: "Documented Testimonials", desc: "Decades of customer testimonials, real project case studies, and documented hurricane performance results you can share with prospects." },
-  { icon: CheckCircle2, title: "Proven 30-Year Process", desc: "The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH documented. The process is proven — you execute it." },
+const BASE = "https://www.theroofstore.net";
+
+const systemBenefits = [
+  "Upgrades, Protects & Insulates in one system",
+  "FPL-documented up to 23% annual electric bill savings",
+  "Pays for itself over time",
+  "Easy to install — complete on-site training provided",
+  "Half the cost of roof replacement",
+  "Stronger than a new roof",
+  "Virtually sells itself",
 ];
 
-const markets = [
-  { region: "Florida", desc: "South, Central, and North Florida residential and commercial markets" },
-  { region: "Southeast US", desc: "Georgia, South Carolina, and coastal Gulf markets" },
-  { region: "National", desc: "High-humidity and hurricane-prone markets across the continental US" },
-  { region: "International", desc: "Tropical and coastal international markets — Caribbean, Central America, and beyond" },
+const whatYouGet = [
+  {
+    icon: Package,
+    title: "38 Proprietary Products at Wholesale",
+    desc: "Purchase our full line of 100% resin liquid rubber products — no fillers — at 8–10% below retail price. Suitable for ponding water and below-grade projects.",
+  },
+  {
+    icon: Wrench,
+    title: "Complete On-Site Training",
+    desc: "Full application training for all phases of the process. Installer, distributor, and sales manager tracks all included.",
+  },
+  {
+    icon: Tv,
+    title: "In-House Advertising Package",
+    desc: "15 & 30-second TV commercials, testimonial video, installation video, 30-second radio spot, brochures, presentation folders, business cards, and branded shirts.",
+  },
+  {
+    icon: Globe,
+    title: "Dedicated Website & Online Branding",
+    desc: "A dedicated website with product credentials, verifiable references over 5 years old, Google My Business account, and full content management.",
+  },
+  {
+    icon: CreditCard,
+    title: "V-Terminal Merchant Account",
+    desc: "No-touch merchant account accepting all major credit cards — great for same-day repair servicing and on-the-spot payments.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Proven 9-Minute Sales Video",
+    desc: "A step-by-step sales concept plus a nine-minute presentation video demonstrating installations in progress on all types of roof surfaces.",
+  },
+  {
+    icon: MapPin,
+    title: "Exclusive County Territories",
+    desc: "Authorized distributors can receive exclusive county-assigned territories within Florida — plus state and national territory options.",
+  },
+  {
+    icon: Users,
+    title: "In-House Contractors & Licensing",
+    desc: "Access to licensed, insured, and seasoned professional installers. Contractor and manufacturer's licensed qualifier included.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Contractually Secured & Proven Profitable",
+    desc: "A complete, contractually-backed business support model. Turn-key for sales managers. Financing available for those who qualify.",
+  },
+];
+
+const credentials = [
+  "Dade County Tested Rubber Roof Products",
+  "Contractor & Manufacturer Licensed Qualifier",
+  "State-of-the-Art Roof Waterproofing System",
+  "Online References with Verifiable Phone Numbers",
+  "A+ BBB Rated Since 1994",
+  "TAS-106 Uplift Pull Test Certified",
 ];
 
 const steps = [
-  { n: "01", label: "Initial Contact", desc: "Call or submit an inquiry. We'll schedule a free over-the-phone consultation to discuss your market and background." },
-  { n: "02", label: "Confidentiality Agreement", desc: "We require a confidentiality agreement before discussing business specifics — this protects both parties during the evaluation process." },
-  { n: "03", label: "Territory & Opportunity Review", desc: "We walk through the market opportunity, profitability model, product line, and what a turn-key startup looks like for your specific region." },
-  { n: "04", label: "Training & Launch", desc: "Once approved, you receive full sales training, product training, application support, and marketing resources to launch your territory." },
+  { n: "01", label: "Call or Inquire", desc: "Call 954-210-9614 Option 1 or submit a contact form for a FREE over-the-phone consultation and price sheet." },
+  { n: "02", label: "Territory Review", desc: "We walk through available territories — county, state, and national — and review the market opportunity for your area." },
+  { n: "03", label: "Product & Sales Training", desc: "Complete on-site training for application, sales, and business operations. Installer and sales manager tracks available." },
+  { n: "04", label: "Launch Your Territory", desc: "Go live with your exclusive territory, full advertising package, dedicated website, and ongoing business support." },
 ];
-
-const BASE = "https://www.theroofstore.net";
 
 export default function Distributorships() {
   const schema = [
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      name: "Distributorships & Franchise Opportunities — The Roof Store",
+      "@type": "WebPage",
+      name: "Roof Coating Distributorship Opportunities — The Roof Store Florida",
       url: `${BASE}/distributorships`,
+      description:
+        "Become an authorized distributor of FungalShield, SmartShield, and RoofShield roof coating systems. Exclusive county territories, full training, advertising support, and proven sales system. Call 954-210-9614.",
       provider: {
         "@type": "Organization",
-        name: "The Roof Store",
+        name: "The Roof Store — Storm Shield Paint Systems Inc.",
         url: BASE,
         telephone: "+19542109614",
-        email: "info@theroofstore.net",
-        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
-      },
-      description: "Become a licensed distributor or contractor for FungalShield, SmartShield, and RoofShield — the only TAS-106 Dade County rated roof coating system worldwide. Florida, national, and international opportunities available.",
-      areaServed: "Worldwide",
-      offers: {
-        "@type": "Offer",
-        name: "Licensed Distributor / Contractor Program",
-        description: "Exclusive territory licensing for The Roof Store's proprietary roof coating systems.",
-        seller: { "@type": "Organization", name: "The Roof Store", url: BASE },
       },
     },
     {
@@ -66,148 +122,244 @@ export default function Distributorships() {
   return (
     <div className="w-full">
       <SEO
-        title="Distributorships & Franchise Opportunities — The Roof Store"
-        description="Become a licensed distributor or contractor for FungalShield, SmartShield, and RoofShield — the only TAS-106 Dade County rated roof coating system worldwide. Florida, national, and international opportunities available."
+        title="Roof Coating Distributorship Opportunities — The Roof Store Florida"
+        description="Become an authorized distributor of FungalShield, SmartShield & RoofShield. Exclusive county territories, full training, complete advertising support, and proven sales system. Call 954-210-9614."
         canonical="/distributorships"
         schema={schema}
       />
 
-      <section className="bg-primary text-white py-24">
-        <div className="container px-4 max-w-4xl mx-auto text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
-              Contractor & Investor Opportunities
+      {/* Hero */}
+      <section className="bg-primary text-white py-28 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_#28A74520,_transparent_70%)]" />
+        <div className="container px-4 max-w-4xl mx-auto text-center relative">
+          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+              Opportunities Now Available
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Distributorships</h1>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Construction and manufacturing of reflective, high-performance roof coating systems is one of the fastest-growing and most profitable businesses in the world today. Join the original.
+            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight">
+              Distributorship<br />
+              <span className="text-accent">Opportunities</span>
+            </h1>
+            <p className="text-xl text-white/80 mb-3 max-w-2xl mx-auto italic">
+              "The Amazing Proven Liquid Applied Rubber Roof System"
             </p>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-muted">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: "30+", label: "Years in Business" },
-              { value: "5×", label: "Stronger Than a New Roof" },
-              { value: "135+ MPH", label: "Documented Wind Rating" },
-              { value: "A+", label: "BBB Rating Since 1994" },
-            ].map((s, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
-                <div className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">{s.value}</div>
-                <div className="text-muted-foreground text-sm font-medium">{s.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-background">
-        <div className="container px-4">
-          <div className="max-w-3xl mx-auto text-center mb-14">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">The Opportunity</h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              The Roof Store is taking its proven process and premium product line into national and international markets. We bring an established brand and loyal customer base — a leader in the roof weatherproofing technology niche in South Florida for nearly 30 years. Our proprietary concept has consistently provided 5× the strength and longevity of existing roofs at a fraction of the cost and production time of traditional replacement.
+            <p className="text-2xl font-bold text-white mb-10">
+              Don't Re-Roof It — Weatherproof It!
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
-            {benefits.map((b, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.07 }}
-                className="flex items-start gap-4 p-6 bg-card border rounded-xl shadow-sm"
-              >
-                <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
-                  <b.icon className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-1">{b.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{b.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-primary text-center mb-10">Available Markets</h2>
-            <div className="space-y-4">
-              {markets.map((m, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex items-start gap-5 p-5 bg-muted rounded-xl"
-                >
-                  <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center shrink-0">
-                    <Globe className="h-4 w-4 text-white" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-primary mb-0.5">{m.region}</div>
-                    <div className="text-muted-foreground text-sm">{m.desc}</div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-muted">
-        <div className="container px-4 max-w-3xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold text-primary text-center mb-12">How It Works</h2>
-          <div className="space-y-6">
-            {steps.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="flex items-start gap-6 bg-card border rounded-xl p-6 shadow-sm"
-              >
-                <div className="text-3xl font-serif font-bold text-primary/20 shrink-0 leading-none w-10 text-center">{s.n}</div>
-                <div>
-                  <h3 className="font-bold text-foreground text-lg mb-1">{s.label}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{s.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-primary text-white">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-            <div>
-              <h2 className="text-4xl font-serif font-bold mb-4">Ready to Talk?</h2>
-              <p className="text-white/75 text-lg leading-relaxed mb-4">
-                Contact Raymond J. Meurer Jr., Director of Investor Relations, for a confidential consultation about available territories and the business opportunity.
-              </p>
-              <p className="text-white/60 text-sm">
-                All discussions are confidential. A confidentiality agreement is required before substantive business specifics are shared.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg">
-                <Link href="/contact">Submit an Inquiry</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="w-full border-white/30 text-white hover:bg-white/10 h-14 text-lg">
-                <a href="tel:954-210-9614">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
+                <a href="tel:9542109614">
                   <Phone className="h-5 w-5 mr-2" />
                   Call 954-210-9614 Option 1
                 </a>
               </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 h-14 px-10 text-lg">
+                <Link href="/contact">Request Information</Link>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Stats bar */}
+      <section className="py-10 bg-muted border-b border-border">
+        <div className="container px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-3xl mx-auto">
+            {[
+              { value: "30+", label: "Years in Business" },
+              { value: "38", label: "Proprietary Products" },
+              { value: "135+ MPH", label: "Documented Wind Rating" },
+              { value: "A+", label: "BBB Rated Since 1994" },
+            ].map((s, i) => (
+              <motion.div key={i} initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}>
+                <div className="text-3xl font-serif font-bold text-primary mb-1">{s.value}</div>
+                <div className="text-muted-foreground text-xs font-medium uppercase tracking-wide">{s.label}</div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RoofShield System Overview */}
+      <section className="py-24 bg-background">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">
+                The 5-Step Seamless Roof Coating System
+              </div>
+              <h2 className="text-4xl font-serif font-bold text-primary mb-6">
+                RoofShield™ — A Product That Virtually Sells Itself
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                FungalShield, SmartShield, and RoofShield are the most advanced roof coating, waterproofing, and painting products available today. Our proprietary liquid rubber formulas are 100% resin — no fillers — and are suitable for ponding water and below-grade projects.
+              </p>
+              <ul className="space-y-3">
+                {systemBenefits.map((b, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                    <span className="text-foreground">{b}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-4"
+            >
+              {[
+                { label: "Cement Tile", quote: "Your process to extend the life of the roof is great." },
+                { label: "Barrel Tile", quote: "The coating really stopped all my roof leaks." },
+              ].map((item, i) => (
+                <div key={i} className="bg-muted rounded-2xl p-6 border border-border">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="h-2 w-2 rounded-full bg-accent" />
+                    <span className="text-xs font-bold text-accent uppercase tracking-widest">{item.label} Customer</span>
+                  </div>
+                  <blockquote className="text-muted-foreground italic text-base leading-relaxed">
+                    "{item.quote}"
+                  </blockquote>
+                </div>
+              ))}
+              <div className="bg-primary text-white rounded-2xl p-6 text-center">
+                <div className="text-sm font-semibold text-white/70 mb-1 uppercase tracking-wide">County, State & National</div>
+                <div className="text-2xl font-serif font-bold">Territories Available</div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get */}
+      <section className="py-24 bg-muted">
+        <div className="container px-4 max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">What You Get as a Distributor</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              We've established the relationships and the credibility. You get a complete, proven business from day one — not a concept.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {whatYouGet.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: (i % 3) * 0.08 }}
+                className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div className="h-11 w-11 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-4">
+                  <item.icon className="h-5 w-5" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Investment & How It Works */}
+      <section className="py-24 bg-background">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Investment */}
+            <div>
+              <h2 className="text-4xl font-serif font-bold text-primary mb-8">The Numbers</h2>
+              <div className="space-y-5 mb-8">
+                <div className="rounded-2xl border-2 border-border bg-card p-7">
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">Distributor Installer</div>
+                  <div className="flex items-end gap-1 mb-3">
+                    <DollarSign className="h-6 w-6 text-accent mb-1" />
+                    <span className="text-4xl font-serif font-bold text-foreground">25,000</span>
+                    <span className="text-muted-foreground text-sm mb-1">minimum</span>
+                  </div>
+                  <p className="text-muted-foreground text-sm">Full product line, exclusive territory, on-site training, and complete advertising package included.</p>
+                </div>
+                <div className="rounded-2xl border-2 border-accent bg-accent/5 p-7">
+                  <div className="inline-flex items-center gap-1.5 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Turn-Key Option</div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">Sales Manager</div>
+                  <div className="text-3xl font-serif font-bold text-foreground mb-3">Negotiable</div>
+                  <p className="text-muted-foreground text-sm">Financing available for those who qualify. Complete business support included.</p>
+                </div>
+              </div>
+              <div className="bg-muted rounded-2xl p-6 border border-border">
+                <div className="text-sm font-bold text-primary mb-4">Included Credentials</div>
+                <div className="space-y-2.5">
+                  {credentials.map((c, i) => (
+                    <div key={i} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">{c}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* How It Works */}
+            <div>
+              <h2 className="text-4xl font-serif font-bold text-primary mb-8">How It Works</h2>
+              <div className="space-y-5">
+                {steps.map((s, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex items-start gap-5 bg-card border border-border rounded-xl p-5 shadow-sm"
+                  >
+                    <div className="text-3xl font-serif font-bold text-primary/20 shrink-0 leading-none w-10 text-center">{s.n}</div>
+                    <div>
+                      <h3 className="font-bold text-foreground mb-1">{s.label}</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 bg-primary text-white text-center">
+        <div className="container px-4 max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-serif font-bold mb-4">Ready to Get Started?</h2>
+            <p className="text-xl text-white/80 mb-2">
+              Call for a FREE over-the-phone consultation and price sheet.
+            </p>
+            <p className="text-white/50 text-sm mb-10">
+              Only serious inquiries, please. Cleaning and coating systems available.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
+                <a href="tel:9542109614">
+                  <Phone className="h-5 w-5 mr-2" />
+                  954-210-9614 Option 1
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 h-14 px-10 text-lg">
+                <Link href="/contact">Send a Message</Link>
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>

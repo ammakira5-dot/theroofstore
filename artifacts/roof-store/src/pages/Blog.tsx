@@ -58,13 +58,49 @@ const topics = [
   "Energy Savings",
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Blog() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      name: "The Roof Store Blog",
+      url: `${BASE}/blog`,
+      description: "Expert articles on Florida roof coating, homeowners insurance laws, hurricane protection, and roof life certification.",
+      publisher: {
+        "@type": "Organization",
+        name: "The Roof Store",
+        url: BASE,
+        logo: { "@type": "ImageObject", url: `${BASE}/assets/images/logo.png` },
+      },
+      blogPost: posts.map((p) => ({
+        "@type": "BlogPosting",
+        headline: p.title,
+        url: p.url,
+        datePublished: p.date,
+        description: p.excerpt,
+        author: { "@type": "Organization", name: "The Roof Store" },
+        publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/blog` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Blog — Roof Coating, Florida Insurance Laws & Storm Protection | The Roof Store"
         description="Expert articles on Florida roof coating, homeowners insurance laws, hurricane protection, and Additional Roof Life Certification. The Roof Store — Davie, FL — 954-210-9614."
         canonical="/blog"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

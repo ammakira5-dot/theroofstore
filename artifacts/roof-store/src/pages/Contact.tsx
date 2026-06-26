@@ -38,12 +38,47 @@ export default function Contact() {
     }
   }
 
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      name: "Contact The Roof Store — Free Roof Inspection",
+      url: "https://www.theroofstore.net/contact",
+      description: "Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida.",
+      mainEntity: {
+        "@type": "RoofingContractor",
+        name: "The Roof Store",
+        url: "https://www.theroofstore.net",
+        telephone: "+19542109614",
+        email: "info@theroofstore.net",
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+19542109614",
+          contactType: "customer service",
+          areaServed: "US-FL",
+          availableLanguage: "English",
+        },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.theroofstore.net" },
+        { "@type": "ListItem", position: 2, name: "Contact", item: "https://www.theroofstore.net/contact" },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Contact Us — Free Roof Inspection & Consultation"
         description="Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
         canonical="/contact"
+        schema={schema}
+        geo={{ region: "US-FL", placename: "Davie, FL" }}
       />
 
       <section className="bg-primary text-white py-24">

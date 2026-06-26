@@ -27,13 +27,49 @@ const steps = [
   { n: "04", label: "Training & Launch", desc: "Once approved, you receive full sales training, product training, application support, and marketing resources to launch your territory." },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Distributorships() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Distributorships & Franchise Opportunities — The Roof Store",
+      url: `${BASE}/distributorships`,
+      provider: {
+        "@type": "Organization",
+        name: "The Roof Store",
+        url: BASE,
+        telephone: "+19542109614",
+        email: "info@theroofstore.net",
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+      },
+      description: "Become a licensed distributor or contractor for FungalShield, SmartShield, and RoofShield — the only TAS-106 Dade County rated roof coating system worldwide. Florida, national, and international opportunities available.",
+      areaServed: "Worldwide",
+      offers: {
+        "@type": "Offer",
+        name: "Licensed Distributor / Contractor Program",
+        description: "Exclusive territory licensing for The Roof Store's proprietary roof coating systems.",
+        seller: { "@type": "Organization", name: "The Roof Store", url: BASE },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Distributorships", item: `${BASE}/distributorships` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Distributorships & Franchise Opportunities — The Roof Store"
         description="Become a licensed distributor or contractor for FungalShield, SmartShield, and RoofShield — the only TAS-106 Dade County rated roof coating system worldwide. Florida, national, and international opportunities available."
         canonical="/distributorships"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

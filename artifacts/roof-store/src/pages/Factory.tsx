@@ -33,12 +33,45 @@ const stats = [
 ];
 
 export default function Factory() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "The Roof Store — Manufacturing Facility",
+      url: `${BASE}/factory`,
+      telephone: "+19542109614",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Davie",
+        addressRegion: "FL",
+        postalCode: "33314",
+        addressCountry: "US",
+      },
+      description: "The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      makesOffer: [
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "FungalShield (RP1)", description: "Anti-fungal roof coating — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "SmartShield (RP2)", description: "Tintable waterproof tile roof coating — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "RoofShield (RP3)", description: "Monolithic hurricane protection roof system — manufactured in Davie, FL" } },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Factory", item: `${BASE}/factory` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Our Factory — Manufactured in Davie, Florida Since 1994"
         description="The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
         canonical="/factory"
+        schema={schema}
+        geo={{ region: "US-FL", placename: "Davie, FL", position: "26.0765;-80.2521" }}
       />
 
       <section className="bg-primary text-white py-24">

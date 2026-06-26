@@ -33,8 +33,48 @@ export interface ProductData {
   galleryImages?: { src: string; alt: string; caption: string }[];
 }
 
+const BASE = "https://www.theroofstore.net";
+
 export function ProductDetail({ product }: { product: ProductData }) {
   const Icon = product.icon;
+
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      description: product.seoDescription,
+      url: `${BASE}/products/${product.slug}`,
+      brand: { "@type": "Brand", name: "The Roof Store" },
+      manufacturer: {
+        "@type": "Organization",
+        name: "The Roof Store",
+        url: BASE,
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+      },
+      ...(product.shopAvailable && product.price
+        ? {
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: product.price.replace(/[^0-9.]/g, ""),
+              availability: "https://schema.org/InStock",
+              url: product.shopUrl ?? `${BASE}/products/${product.slug}`,
+              seller: { "@type": "Organization", name: "The Roof Store", url: BASE },
+            },
+          }
+        : {}),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Products", item: `${BASE}/products` },
+        { "@type": "ListItem", position: 3, name: product.name, item: `${BASE}/products/${product.slug}` },
+      ],
+    },
+  ];
 
   return (
     <div className="w-full">
@@ -42,6 +82,8 @@ export function ProductDetail({ product }: { product: ProductData }) {
         title={product.seoTitle}
         description={product.seoDescription}
         canonical={`/products/${product.slug}`}
+        ogImage={product.heroImage}
+        schema={schema}
       />
 
       <section className="relative bg-primary text-white overflow-hidden">

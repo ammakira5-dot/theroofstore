@@ -74,13 +74,41 @@ const caseStudies = [
   },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Projects() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Roof Coating Projects — Before & After | The Roof Store",
+      url: `${BASE}/projects`,
+      description: "Real before and after roof coating results from South Florida homeowners. Tile restoration, flat deck waterproofing, and rubber roof coating projects.",
+      provider: {
+        "@type": "RoofingContractor",
+        name: "The Roof Store",
+        url: BASE,
+        telephone: "+19542109614",
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Projects", item: `${BASE}/projects` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Roof Coating Projects — Before & After South Florida"
         description="See real before & after results from The Roof Store's rubber roof coating and tile restoration projects across South Florida. Real savings vs. replacement."
         canonical="/projects"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

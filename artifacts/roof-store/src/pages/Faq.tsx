@@ -47,12 +47,35 @@ const faqs = [
   },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Faq() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: { "@type": "Answer", text: faq.a },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "FAQ", item: `${BASE}/faq` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="FAQ — Rubber Roof Coating Questions Answered"
         description="Answers to common questions about rubber roof coatings, tile restoration, hurricane performance, warranties, and how roof coating compares to full replacement."
+        schema={schema}
         canonical="/faq"
       />
       <section className="bg-primary text-white py-24">

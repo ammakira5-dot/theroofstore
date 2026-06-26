@@ -4,13 +4,64 @@ import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wind, Wrench, Award, ArrowRight, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
+const BASE = "https://www.theroofstore.net";
+
+const BUSINESS_CORE = {
+  "@type": "RoofingContractor",
+  name: "The Roof Store",
+  url: BASE,
+  telephone: "+19542109614",
+  email: "info@theroofstore.net",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Davie",
+    addressRegion: "FL",
+    postalCode: "33314",
+    addressCountry: "US",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
+  priceRange: "$$",
+  image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
+  logo: `${BASE}/assets/images/logo.png`,
+  foundingDate: "1994",
+  description: "Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. full replacement. A+ BBB rated since 1994.",
+  areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Roof Coating Systems",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "FungalShield (RP1) — Anti-Fungal Roof Coating" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SmartShield (RP2) — Tintable Waterproof Tile Roof Coating" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "RoofShield (RP3) — Full Monolithic Hurricane Protection System" } },
+    ],
+  },
+  sameAs: ["https://www.theroofstore.net"],
+};
+
 export default function Home() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "The Roof Store",
+      url: BASE,
+      potentialAction: {
+        "@type": "SearchAction",
+        target: { "@type": "EntryPoint", urlTemplate: `${BASE}/search?q={search_term_string}` },
+        "query-input": "required name=search_term_string",
+      },
+    },
+    { "@context": "https://schema.org", ...BUSINESS_CORE },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="The Roof Store | Rubber Roof Coating Florida — FungalShield, SmartShield & RoofShield"
         description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
+        schema={schema}
+        geo={{ region: "US-FL", placename: "Davie, FL", position: "26.0765;-80.2521" }}
       />
       {/* Hero Section */}
       <section className="relative h-[85dvh] flex items-center justify-center overflow-hidden">

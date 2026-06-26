@@ -4,13 +4,53 @@ import { Button } from "@/components/ui/button";
 import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
+const BASE = "https://www.theroofstore.net";
+
 export default function About() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      name: "About The Roof Store",
+      url: `${BASE}/about`,
+      description: "Nearly 30 years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994.",
+      mainEntity: {
+        "@context": "https://schema.org",
+        "@type": "RoofingContractor",
+        name: "The Roof Store",
+        url: BASE,
+        telephone: "+19542109614",
+        email: "info@theroofstore.net",
+        foundingDate: "1994",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Davie",
+          addressRegion: "FL",
+          postalCode: "33314",
+          addressCountry: "US",
+        },
+        description: "The Roof Store is a Florida-licensed roofing manufacturer and contractor. We manufacture FungalShield, SmartShield, and RoofShield — proprietary rubber roof coating systems — at our Davie, FL facility and apply them ourselves.",
+        numberOfEmployees: { "@type": "QuantitativeValue", minValue: 10, maxValue: 50 },
+        areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "About Us", item: `${BASE}/about` },
+      ],
+    },
+  ];
   return (
     <div className="w-full">
       <SEO
         title="About Us — The Roof Store"
         description="Nearly 30 years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
         canonical="/about"
+        schema={schema}
+        geo={{ region: "US-FL", placename: "Davie, FL" }}
       />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">

@@ -231,13 +231,39 @@ function FAQ({ items }: { items: typeof questions }) {
   );
 }
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Products() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Roof Coating Products — The Roof Store",
+      url: `${BASE}/products`,
+      description: "RP1 FungalShield, RP2 SmartShield, RP3 RoofShield — manufactured in Davie FL. The only TAS-106 rated coating in the world.",
+      hasPart: [
+        { "@type": "Product", name: "FungalShield (RP1)", url: `${BASE}/products/fungalshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock" } },
+        { "@type": "Product", name: "SmartShield (RP2)", url: `${BASE}/products/smartshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock" } },
+        { "@type": "Product", name: "RoofShield (RP3)", url: `${BASE}/products/roofshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock" } },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Products", item: `${BASE}/products` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="FungalShield, SmartShield & RoofShield — Roof Coating Products | The Roof Store Florida"
         description="RP1 FungalShield, RP2 SmartShield, RP3 RoofShield — manufactured in Davie FL. The only TAS-106 rated coating in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
+        schema={schema}
       />
 
       {/* HERO */}

@@ -93,13 +93,53 @@ const realJobs = [
   },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function CommercialRoofs() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Commercial Roof Waterproofing — The Roof Store",
+      url: `${BASE}/commercial-roofs`,
+      provider: {
+        "@type": "RoofingContractor",
+        name: "The Roof Store",
+        url: BASE,
+        telephone: "+19542109614",
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+      },
+      areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
+      description: "Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. TAS-106 certified.",
+      serviceType: "Commercial Roof Waterproofing",
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Commercial Roofing Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Built-Up Roofing (BUR) Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Modified Bitumen Waterproofing" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Metal Roof Waterproofing" } },
+        ],
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Commercial Roofs", item: `${BASE}/commercial-roofs` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida"
         description="Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. TAS-106 certified. Call 954-210-9614."
         canonical="/commercial-roofs"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

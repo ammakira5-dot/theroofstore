@@ -80,13 +80,56 @@ const reviews = [
   },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Reviews() {
+  const allReviews = [featured, ...reviews];
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "The Roof Store",
+      url: BASE,
+      telephone: "+19542109614",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Davie",
+        addressRegion: "FL",
+        postalCode: "33314",
+        addressCountry: "US",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: String(allReviews.length),
+        bestRating: "5",
+        worstRating: "1",
+      },
+      review: allReviews.map((r) => ({
+        "@type": "Review",
+        author: { "@type": "Person", name: r.name },
+        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+        reviewBody: "quote" in r ? r.quote : r.text,
+        locationCreated: { "@type": "Place", name: r.location },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Reviews", item: `${BASE}/reviews` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Customer Reviews & Testimonials — The Roof Store Florida"
         description="Real testimonials from South Florida homeowners — including Don Godshall's Hurricane Wilma survival story. A+ BBB Rated since 1994. RoofShield, SmartShield, FungalShield."
         canonical="/reviews"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

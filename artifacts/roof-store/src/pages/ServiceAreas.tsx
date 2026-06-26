@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const areas = [
   "Broward County", "Miami-Dade County", "Palm Beach County", "Fort Lauderdale",
@@ -12,9 +13,40 @@ const areas = [
   "Miami", "Hialeah", "Miami Beach", "Aventura", "North Miami",
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function ServiceAreas() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      name: "The Roof Store",
+      url: BASE,
+      telephone: "+19542109614",
+      email: "info@theroofstore.net",
+      address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+      areaServed: areas.map((a) => ({ "@type": "Place", name: `${a}, FL` })),
+      description: "The Roof Store serves South Florida homeowners across Broward, Miami-Dade, and Palm Beach counties. A+ BBB rated since 1994.",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Service Areas", item: `${BASE}/service-areas` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
+      <SEO
+        title="Service Areas — South Florida Roof Coating | The Roof Store"
+        description="The Roof Store serves Broward, Miami-Dade, and Palm Beach counties. Rubber roof coating, tile restoration, and weatherproofing in Fort Lauderdale, Miami, West Palm Beach, and 30+ South Florida cities."
+        canonical="/service-areas"
+        schema={schema}
+        geo={{ region: "US-FL", placename: "South Florida" }}
+      />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>

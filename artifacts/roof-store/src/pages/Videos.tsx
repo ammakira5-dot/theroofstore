@@ -57,13 +57,46 @@ const highlights = [
   { icon: Play, stat: "30 Years", label: "Of documented South Florida performance" },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function Videos() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "The Roof Store Videos",
+      url: `${BASE}/videos`,
+      itemListElement: videos.map((v, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "VideoObject",
+          name: v.title,
+          description: v.tag,
+          thumbnailUrl: `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
+          embedUrl: `https://www.youtube.com/embed/${v.id}`,
+          uploadDate: "2024-01-01",
+          publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
+        },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Videos", item: `${BASE}/videos` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="Videos — RoofShield System & Uplift Test | The Roof Store Florida"
         description="Watch The Roof Store's customer testimonials and the TAS-106 Dade County Uplift Test — the only pull test rated roof coating system in the world. See real hurricane performance documented on video."
         canonical="/videos"
+        schema={schema}
       />
 
       <section className="bg-primary text-white py-24">

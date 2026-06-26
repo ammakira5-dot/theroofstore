@@ -61,13 +61,39 @@ const systems = [
   },
 ];
 
+const BASE = "https://www.theroofstore.net";
+
 export default function RoofSystems() {
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "The Roof Store — Roof Coating Systems",
+      url: `${BASE}/roof-systems`,
+      description: "Three proprietary roof coating systems engineered for Florida's climate.",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "FungalShield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
+        { "@type": "ListItem", position: 2, name: "SmartShield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },
+        { "@type": "ListItem", position: 3, name: "RoofShield (RP3)", url: `${BASE}/products/roofshield`, description: "Multi-layer monolithic hurricane protection system — fills every gap between tiles, sealed solid." },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+        { "@type": "ListItem", position: 2, name: "Roof Systems", item: `${BASE}/roof-systems` },
+      ],
+    },
+  ];
+
   return (
     <div className="w-full">
       <SEO
         title="FungalShield, SmartShield & RoofShield — Roof Systems for Florida"
         description="Explore our three branded roof systems: FungalShield anti-fungal coating, SmartShield energy-reflective system, and RoofShield all-weather waterproofing membrane — engineered for Florida's climate."
         canonical="/roof-systems"
+        schema={schema}
       />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">

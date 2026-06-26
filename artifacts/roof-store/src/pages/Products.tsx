@@ -58,8 +58,8 @@ const products = [
     summary:
       "A complete waterproof and weatherproof coating system designed specifically for Florida tile roofs — in over 3,000 tintable colors. 5× thicker than standard roof paint. BASF Cool Pigment Technology means the darker the color, the MORE it reflects (TSR +32%). FP&L confirmed energy savings. Exclusively available through The Roof Store.",
     highlights: [
-      "Primary function: waterproof & weatherproof protection for tile roofs",
-      "5× thicker than standard roof paint — bonds directly to the tile surface",
+      "Surface coating for field tiles — waterproof, weatherproof, 5× thicker than standard roof paint",
+      "Ridge caps polyurethaned & fiber coated on every job — minimum hurricane wind-lift protection",
       "3,000+ tintable color options — match any HOA shade or custom color",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology (TSR +32%)",
       "FP&L (Florida Power & Light) independently confirmed cooling cost savings",

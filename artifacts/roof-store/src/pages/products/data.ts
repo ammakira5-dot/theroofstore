@@ -93,17 +93,17 @@ export const smartShield: ProductData = {
   heroDesc: "A full waterproof, weatherproof coating system for tile roofs — in over 3,000 tintable colors. The darker the color, the more it reflects. FP&L confirmed energy savings. Exclusively available through The Roof Store.",
   heroImage: `${BASE}/images/Waterproofing-Technology.jpg`,
   overview: [
-    "SmartShield (RP2) is The Roof Store's most popular system — a complete waterproof and weatherproof coating engineered specifically for Florida tile roofs. Before anything else, SmartShield is a protective roofing system: it seals the tile surface against wind-driven rain, UV degradation, moisture intrusion, and mildew growth. It is 5× thicker than standard roof paint and bonds directly to the tile, forming a durable rubber-acrylic barrier that extends tile life significantly.",
-    "What sets SmartShield apart from any other waterproof tile coating is its color capability. Over 3,000 tintable color options — and in collaboration with BASF, the world's largest chemical producer, we engineered a breakthrough that no one else has achieved: Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32%, even at the darkest black. The counterintuitive result: the darker the color you choose, the more heat it reflects away from your home. Florida Power & Light (FP&L) independently confirmed the energy savings.",
-    "SmartShield is manufactured as true liquid rubber acrylic at our Davie, Florida facility — 100% without water, fillers, thickeners, or extenders. It is exclusively available through The Roof Store. No retail store, hardware chain, or any other contractor carries this formula.",
+    "SmartShield (RP2) is The Roof Store's most popular system — a complete waterproof and weatherproof coating engineered specifically for Florida tile roofs. It seals the tile surface against wind-driven rain, UV degradation, moisture intrusion, and mildew growth. It is 5× thicker than standard roof paint and bonds directly to the tile, forming a durable rubber-acrylic barrier that extends tile life significantly.",
+    "It is important to understand what SmartShield is and is not. For the main field tiles, SmartShield is a surface coating — it protects the tile face and waterproofs the roof without filling the spaces between individual tiles. That full gap-filling monolithic treatment is the job of our RoofShield (RP3) system. Where SmartShield does add structural reinforcement is at the ridge caps: during every installation, the ridge caps are polyurethaned and fiber coated as a minimum standard. Ridge caps are the most wind-vulnerable section of any tile roof in South Florida, and this treatment gives them meaningful additional hurricane wind-lift protection — even on a SmartShield-only job.",
+    "What sets SmartShield apart from any other waterproof tile coating is its color capability. Over 3,000 tintable color options — and in collaboration with BASF, the world's largest chemical producer, we engineered a breakthrough no other product has achieved: Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32%, even at the darkest black. The counterintuitive result: the darker the color you choose, the more heat it reflects. Florida Power & Light (FP&L) independently confirmed the energy savings. Manufactured exclusively at our Davie, Florida facility — not available in any retail store.",
   ],
   features: [
-    { title: "Waterproof & Weatherproof — Primary Function", desc: "SmartShield's first job is protection: it seals tile roofs against wind-driven rain, UV damage, and moisture intrusion. 5× thicker than standard roof paint — a real rubber-acrylic membrane, not a thin coat." },
+    { title: "Waterproof & Weatherproof Surface Coating", desc: "Seals the tile surface against wind-driven rain, UV damage, and moisture intrusion. 5× thicker than standard roof paint — bonds directly to field tile, not a thin decorative coat." },
+    { title: "Ridge Caps — Polyurethane & Fiber Treatment", desc: "Every SmartShield installation includes polyurethane and fiber coating on the ridge caps as a minimum standard. Ridge caps are the most wind-exposed area of any tile roof — this treatment provides meaningful hurricane wind-lift protection at the critical points." },
     { title: "3,000+ Tintable Colors", desc: "The widest color selection of any protective tile roof coating. Match any HOA color, existing tile shade, or custom aesthetic — exclusively formulated and manufactured by The Roof Store." },
     { title: "The Darker, the More Reflective", desc: "BASF-engineered Cool Pigment Technology increases Total Solar Reflectance (TSR) by 32% — even at the darkest black. Choose the color you want without sacrificing energy performance." },
     { title: "FP&L Confirmed Energy Savings", desc: "Florida Power & Light independently confirmed SmartShield saves on cooling costs — the only utility-endorsed roof coating in our category." },
-    { title: "BASF Collaboration — Exclusive Formula", desc: "Developed with BASF, the world's largest chemical producer. Passed full tensile, flexural, DSC, TGA, and viscosity testing. Not sold in any retail store, period." },
-    { title: "Guaranteed Mildew Resistance", desc: "Biologically resistant formula — less cleaning, no black streaking, more lasting curb appeal throughout Florida's humid climate." },
+    { title: "Guaranteed Mildew Resistance", desc: "Biologically resistant formula — less cleaning, no black streaking, lasting curb appeal in Florida's humid climate." },
   ],
   specs: [
     { label: "Product Code", value: "RP2 — SmartShield" },
@@ -131,8 +131,16 @@ export const smartShield: ProductData = {
   ],
   faq: [
     {
+      q: "Does SmartShield fill the gaps between tiles like RoofShield does?",
+      a: "No — and that's an important distinction. SmartShield is a surface coating applied to the field tiles. It waterproofs and protects the tile face but does not fill the spaces between individual tiles. That full gap-filling monolithic treatment — where every void between tiles is sealed solid — is what RoofShield (RP3) does. If your goal is maximum hurricane wind-lift protection across the entire roof field, RoofShield is the right system. SmartShield gives you excellent tile protection and color in a single coat.",
+    },
+    {
+      q: "Does SmartShield provide any hurricane protection?",
+      a: "Yes, at the ridge caps. Every SmartShield installation includes polyurethane and fiber coating on the ridge caps as a minimum standard. The ridge caps are the most vulnerable section of any tile roof to wind uplift in a South Florida hurricane — this treatment mechanically reinforces them and provides meaningful additional wind-lift protection. The field tiles receive the waterproof surface coating. For full monolithic hurricane protection across every tile, the RoofShield system is the complete solution.",
+    },
+    {
       q: "What is SmartShield actually for — is it paint or a waterproofer?",
-      a: "Both. SmartShield is first and foremost a waterproof weatherproof coating for tile roofs — it seals the tile surface against rain, UV, and moisture. It also happens to come in over 3,000 tintable colors with BASF Cool Pigment energy-reflectance built in. Think of it as a complete tile roof protection system that also looks exactly how you want it to.",
+      a: "Both. SmartShield is first and foremost a waterproof weatherproof surface coating for tile roofs — it seals the tile face against rain, UV, and moisture. It comes in over 3,000 tintable colors with BASF Cool Pigment energy-reflectance built in. Think of it as complete tile protection in your chosen color.",
     },
     {
       q: "How can a dark color reflect MORE heat than a lighter one?",
@@ -145,10 +153,6 @@ export const smartShield: ProductData = {
     {
       q: "Is SmartShield available at Home Depot, Lowe's, or any other retailer?",
       a: "No. SmartShield is an exclusive proprietary formula developed in collaboration with BASF specifically for The Roof Store. It is not sold in any retail store, hardware chain, or through any other contractor. The only way to get it is directly through us.",
-    },
-    {
-      q: "Did FP&L really confirm SmartShield saves on cooling costs?",
-      a: "Yes. Florida Power & Light independently evaluated SmartShield's energy performance and confirmed cooling cost savings. This is utility-endorsed validation that no generic elastomeric competitor product can match.",
     },
     {
       q: "Can SmartShield be applied over FungalShield?",
@@ -172,8 +176,8 @@ export const smartShield: ProductData = {
     },
     {
       src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-2.jpeg",
-      alt: "SmartShield Step 2 — ridge caps polyurethaned and pointings fiber coated",
-      caption: "Step 2 — Ridge caps polyurethaned & pointings fiber coated",
+      alt: "SmartShield Step 2 — ridge caps polyurethaned and fiber coated for hurricane wind-lift protection",
+      caption: "Step 2 — Ridge caps polyurethaned & fiber coated (hurricane wind-lift protection)",
     },
     {
       src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-3.jpeg",

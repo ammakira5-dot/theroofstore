@@ -17,6 +17,7 @@ const factoryPhotos = [
   { src: `${BASE}/images/factory/12.jpg`, alt: "FungalShield SmartShield RoofShield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
   { src: `${BASE}/images/factory/13.jpg`, alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
   { src: `${BASE}/images/factory/14.jpg`, alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
+  { src: "/images/factory/15.jpg", alt: "Technician operating liquid rubber blending tank at The Roof Store coating facility in Davie Florida", title: "Liquid Rubber Blending — The Roof Store Roof Coating Manufacturer" },
 ];
 
 const products = [

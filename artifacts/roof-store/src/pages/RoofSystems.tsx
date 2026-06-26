@@ -93,6 +93,7 @@ export default function RoofSystems() {
         title="FungalShield, SmartShield & RoofShield — Roof Systems for Florida"
         description="Explore our three branded roof systems: FungalShield anti-fungal coating, SmartShield energy-reflective system, and RoofShield all-weather waterproofing membrane — engineered for Florida's climate."
         canonical="/roof-systems"
+        ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}
       />
       <section className="bg-primary text-white py-24">
@@ -151,6 +152,7 @@ export default function RoofSystems() {
                     <img
                       src={system.image}
                       alt={system.imageAlt}
+                      title={`${system.name} — ${system.tagline} | The Roof Store`}
                       className="w-full h-72 lg:h-96 object-cover"
                       loading="lazy"
                       decoding="async"

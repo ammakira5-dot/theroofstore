@@ -60,6 +60,7 @@ export default function Home() {
         title="The Roof Store | Rubber Roof Coating Florida — FungalShield, SmartShield & RoofShield"
         description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
+        ogImage="https://www.theroofstore.net/images/hero-bg.png"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL", position: "26.0765;-80.2521" }}
       />
@@ -69,7 +70,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-primary/70 mix-blend-multiply z-10" />
           <img 
             src="/images/hero-bg.png" 
-            alt="Beautiful weatherproofed Florida roof" 
+            alt="Florida home with liquid rubber roof coating applied by The Roof Store — weatherproof and hurricane-rated"
+            title="The Roof Store — Liquid Rubber Roof Coating Florida | FungalShield, SmartShield, RoofShield"
             className="w-full h-full object-cover"
           />
         </div>

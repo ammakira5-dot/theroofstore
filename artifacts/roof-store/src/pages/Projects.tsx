@@ -112,6 +112,18 @@ export default function Projects() {
         { "@type": "ListItem", position: 2, name: "Projects", item: `${BASE}/projects` },
       ],
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      name: "Roof Coating Before & After Project Gallery — The Roof Store",
+      url: `${BASE}/projects`,
+      associatedMedia: [
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-after.png`, name: "Spanish Tile Roof Restoration After — RoofShield System Davie FL", description: "Spanish tile roof after RoofShield liquid rubber membrane restoration in Davie, FL. Saved owner $22,000+ vs. re-roofing.", caption: "Spanish Tile Roof Restoration — After" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-before.png`, name: "Spanish Tile Roof Before Coating — Algae Staining and Cracking", description: "Spanish tile roof before RoofShield application showing UV damage, algae staining, and hairline cracking at ridge caps.", caption: "Spanish Tile Roof Restoration — Before" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-deck-extra-3.jpg`, name: "Flat Deck Rubber Roof Seam Sealing In Progress — South Florida", description: "Flat deck rubber roof seam sealing in progress with liquid rubber coating system applied by The Roof Store.", caption: "Flat Deck Rubber Roof Installation" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-cement-after.png`, name: "Flat Cement Tile Roof After FungalShield RoofShield Two-Coat System", description: "Flat cement tile roof after FungalShield (RP1) + RoofShield (RP3) two-coat waterproofing system in Broward County, FL.", caption: "Flat Cement Tile Waterproofing — After" },
+      ],
+    },
   ];
 
   return (
@@ -120,6 +132,7 @@ export default function Projects() {
         title="Roof Coating Projects — Before & After South Florida"
         description="See real before & after results from The Roof Store's rubber roof coating and tile restoration projects across South Florida. Real savings vs. replacement."
         canonical="/projects"
+        ogImage={`${BASE}/images/projects/clay-tile-after.png`}
         schema={schema}
       />
 
@@ -198,6 +211,7 @@ export default function Projects() {
                           <img
                             src={img.src}
                             alt={img.alt}
+                            title={`${img.alt} — ${project.title} | The Roof Store`}
                             className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             loading="lazy"
                           />

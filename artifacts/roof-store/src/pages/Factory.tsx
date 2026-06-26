@@ -7,16 +7,16 @@ import { Leaf, Sun, ShieldCheck, Award, Users, MapPin } from "lucide-react";
 const BASE = "https://www.theroofstore.net";
 
 const factoryPhotos = [
-  { src: `${BASE}/images/factory/1.jpg`, alt: "The Roof Store manufacturing facility" },
-  { src: `${BASE}/images/factory/2.jpg`, alt: "Roof coating production equipment" },
-  { src: `${BASE}/images/factory/3.jpg`, alt: "Liquid rubber blending tanks" },
-  { src: `${BASE}/images/factory/4.jpg`, alt: "Factory production floor" },
-  { src: `${BASE}/images/factory/5.jpg`, alt: "Batch mixing process" },
-  { src: `${BASE}/images/factory/7.jpg`, alt: "Product storage and finishing" },
-  { src: `${BASE}/images/factory/10.jpg`, alt: "Quality control lab" },
-  { src: `${BASE}/images/factory/12.jpg`, alt: "Roof coating inventory" },
-  { src: `${BASE}/images/factory/13.jpg`, alt: "Manufacturing process" },
-  { src: `${BASE}/images/factory/14.jpg`, alt: "Factory operations" },
+  { src: `${BASE}/images/factory/1.jpg`, alt: "The Roof Store liquid rubber roof coating manufacturing facility in Davie, Florida", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
+  { src: `${BASE}/images/factory/2.jpg`, alt: "FungalShield SmartShield RoofShield production equipment at The Roof Store factory", title: "Roof Coating Production Equipment — The Roof Store Davie FL" },
+  { src: `${BASE}/images/factory/3.jpg`, alt: "Liquid rubber blending tanks for roof coating production at The Roof Store South Florida", title: "Liquid Rubber Blending — The Roof Store Manufacturing" },
+  { src: `${BASE}/images/factory/4.jpg`, alt: "Roof coating factory production floor — The Roof Store Davie Florida manufacturer", title: "Factory Production Floor — The Roof Store" },
+  { src: `${BASE}/images/factory/5.jpg`, alt: "Batch mixing process for liquid rubber roof coating system at The Roof Store", title: "Roof Coating Batch Mixing — The Roof Store" },
+  { src: `${BASE}/images/factory/7.jpg`, alt: "Roof coating product storage and finishing at South Florida manufacturing facility", title: "Roof Coating Storage — The Roof Store Factory" },
+  { src: `${BASE}/images/factory/10.jpg`, alt: "Quality control lab testing roof coating formulas at The Roof Store Davie FL", title: "Quality Control Lab — The Roof Store Roof Coatings" },
+  { src: `${BASE}/images/factory/12.jpg`, alt: "FungalShield SmartShield RoofShield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
+  { src: `${BASE}/images/factory/13.jpg`, alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
+  { src: `${BASE}/images/factory/14.jpg`, alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
 ];
 
 const products = [
@@ -70,6 +70,7 @@ export default function Factory() {
         title="Our Factory — Manufactured in Davie, Florida Since 1994"
         description="The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
         canonical="/factory"
+        ogImage={`${BASE}/images/factory/1.jpg`}
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL", position: "26.0765;-80.2521" }}
       />
@@ -133,6 +134,7 @@ export default function Factory() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
+                  title={photo.title}
                   className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />

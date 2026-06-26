@@ -67,25 +67,25 @@ export function BeforeAfterSlider({
       onTouchStart={onTouchStart}
       onClick={(e) => updatePosition(e.clientX)}
     >
-      {/* Before image — full width base layer */}
+      {/* After image — full background (visible on the right side) */}
       <img
-        src={beforeSrc}
-        alt={beforeAlt}
+        src={afterSrc}
+        alt={afterAlt}
         className="absolute inset-0 w-full h-full object-cover"
-        style={beforeStyle}
+        style={afterStyle}
         draggable={false}
       />
 
-      {/* After image — clipped to right of slider */}
+      {/* Before image — clipped overlay showing the LEFT portion */}
       <div
         className="absolute inset-0 overflow-hidden"
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
       >
         <img
-          src={afterSrc}
-          alt={afterAlt}
+          src={beforeSrc}
+          alt={beforeAlt}
           className="absolute inset-0 w-full h-full object-cover"
-          style={afterStyle}
+          style={beforeStyle}
           draggable={false}
         />
       </div>
@@ -100,7 +100,7 @@ export function BeforeAfterSlider({
         </div>
       </div>
 
-      {/* Labels — small and unobtrusive */}
+      {/* Labels */}
       <span className="absolute top-3 left-3 pointer-events-none bg-black/40 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full tracking-wide uppercase">
         {beforeLabel}
       </span>

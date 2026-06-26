@@ -33,7 +33,7 @@ const beforeAfterProjects = [
     afterLabel: "After",
   },
   {
-    title: "Cement Tile Waterproofing System",
+    title: "Flat Cement Tile Waterproofing System",
     type: "FungalShield + RoofShield Two-Coat System",
     location: "Broward County, FL",
     size: "Residential",

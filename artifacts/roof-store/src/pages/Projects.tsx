@@ -14,8 +14,8 @@ const beforeAfterProjects = [
     saved: "$22,000+",
     description:
       "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat RoofShield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
-    beforeSrc: "/images/projects/spanish-tile-before.png",
-    afterSrc: "https://www.theroofstore.net/images/Cement-tile-before.webp",
+    beforeSrc: "/images/projects/spanish-tile-after.png",
+    afterSrc: "/images/projects/spanish-tile-before.png",
     beforeLabel: "Before",
     afterLabel: "After",
   },

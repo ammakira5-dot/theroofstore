@@ -61,8 +61,8 @@ export function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl cursor-col-resize select-none shadow-lg"
-      style={{ aspectRatio: "4/3" }}
+      className="relative w-full max-w-sm mx-auto overflow-hidden rounded-xl cursor-col-resize select-none shadow-lg bg-gray-100"
+      style={{ aspectRatio: "8/5" }}
       onMouseDown={onMouseDown}
       onTouchStart={onTouchStart}
       onClick={(e) => updatePosition(e.clientX)}

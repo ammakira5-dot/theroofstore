@@ -33,10 +33,6 @@ const beforeAfterProjects = [
     saved: "$18,000+",
     description:
       "Flat roofs are the most leak-prone in Florida. This flat deck received a complete liquid rubber membrane system — no tear-off, no replacement. The seamless application eliminates every joint and seam, permanently stopping leaks through ponding water, UV, and storm rain.",
-    beforeSrc: "/images/projects/flat-deck-before.png",
-    afterSrc: "/images/projects/flat-deck-after.png",
-    beforeLabel: "Before",
-    afterLabel: "After",
     gallery: [
       { src: "/images/projects/flat-deck-extra-1.png", alt: "Large commercial flat deck rubber roof coating" },
       { src: "/images/projects/flat-deck-extra-2.png", alt: "Commercial flat roof with HVAC units after coating" },
@@ -149,20 +145,22 @@ export default function Projects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+                  className={project.beforeSrc ? "grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" : "max-w-2xl"}
                 >
-                  <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <BeforeAfterSlider
-                      beforeSrc={project.beforeSrc}
-                      afterSrc={project.afterSrc}
-                      beforeLabel={project.beforeLabel}
-                      afterLabel={project.afterLabel}
-                      beforeAlt={`${project.title} — Before`}
-                      afterAlt={`${project.title} — After`}
-                    />
-                  </div>
+                  {project.beforeSrc && (
+                    <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                      <BeforeAfterSlider
+                        beforeSrc={project.beforeSrc}
+                        afterSrc={project.afterSrc!}
+                        beforeLabel={project.beforeLabel}
+                        afterLabel={project.afterLabel}
+                        beforeAlt={`${project.title} — Before`}
+                        afterAlt={`${project.title} — After`}
+                      />
+                    </div>
+                  )}
 
-                  <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                  <div className={project.beforeSrc && i % 2 === 1 ? "lg:order-1" : ""}>
                     <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
                       <MapPin className="h-3.5 w-3.5" />
                       {project.location} · {project.size}

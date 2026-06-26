@@ -61,12 +61,13 @@ export function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl cursor-col-resize select-none"
-      style={{ aspectRatio: "16/9" }}
+      className="relative w-full overflow-hidden rounded-xl cursor-col-resize select-none shadow-lg"
+      style={{ aspectRatio: "4/3" }}
       onMouseDown={onMouseDown}
       onTouchStart={onTouchStart}
       onClick={(e) => updatePosition(e.clientX)}
     >
+      {/* Before image — full width base layer */}
       <img
         src={beforeSrc}
         alt={beforeAlt}
@@ -75,6 +76,7 @@ export function BeforeAfterSlider({
         draggable={false}
       />
 
+      {/* After image — clipped to right of slider */}
       <div
         className="absolute inset-0 overflow-hidden"
         style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
@@ -88,24 +90,22 @@ export function BeforeAfterSlider({
         />
       </div>
 
+      {/* Divider line + handle */}
       <div
-        className="absolute top-0 bottom-0 w-0.5 bg-white shadow-xl"
+        className="absolute top-0 bottom-0 w-px bg-white/90"
         style={{ left: `${position}%` }}
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white shadow-2xl flex items-center justify-center ring-2 ring-white/40">
-          <GripVertical className="h-5 w-5 text-primary" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-9 w-9 rounded-full bg-white shadow-lg flex items-center justify-center">
+          <GripVertical className="h-4 w-4 text-primary" />
         </div>
       </div>
 
-      <span className="absolute top-3 left-3 pointer-events-none bg-black/60 text-white text-xs font-bold px-3 py-1.5 rounded-full backdrop-blur-sm tracking-wider uppercase">
+      {/* Labels — small and unobtrusive */}
+      <span className="absolute top-3 left-3 pointer-events-none bg-black/40 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full tracking-wide uppercase">
         {beforeLabel}
       </span>
-      <span className="absolute top-3 right-3 pointer-events-none bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wider uppercase">
+      <span className="absolute top-3 right-3 pointer-events-none bg-accent/80 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full tracking-wide uppercase">
         {afterLabel}
-      </span>
-
-      <span className="absolute bottom-3 left-1/2 -translate-x-1/2 pointer-events-none text-white/80 text-xs font-medium bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">
-        ← drag to compare →
       </span>
     </div>
   );

@@ -12,7 +12,7 @@ export function Footer() {
               <Shield className="h-8 w-8 text-accent" />
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-2xl leading-none text-white">The Roof Store</span>
-                <span className="text-xs uppercase tracking-wider text-primary-foreground/70 font-bold">Storm Shield Paint Systems Inc.</span>
+                <span className="text-xs uppercase tracking-wider text-primary-foreground/70 font-bold">FungalShield · SmartShield · RoofShield</span>
               </div>
             </Link>
             <p className="text-primary-foreground/80 max-w-sm mb-6">
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Storm Shield Paint Systems Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Roof Store. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

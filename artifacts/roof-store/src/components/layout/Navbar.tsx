@@ -101,7 +101,7 @@ export function Navbar() {
             <Shield className="h-8 w-8 text-primary" />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-xl leading-none text-primary">The Roof Store</span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Storm Shield Paint Systems Inc.</span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">FungalShield · SmartShield · RoofShield</span>
             </div>
           </Link>
 
@@ -221,7 +221,7 @@ export function Navbar() {
             <Shield className="h-7 w-7 text-primary shrink-0" />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg leading-none text-primary">The Roof Store</span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Storm Shield Paint Systems</span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">FungalShield · SmartShield · RoofShield</span>
             </div>
           </div>
           <button onClick={() => setOpen(false)} className="p-1.5 rounded-md hover:bg-muted transition-colors" aria-label="Close menu">

@@ -40,8 +40,8 @@ const beforeAfterProjects = [
     saved: "$30,000+",
     description:
       "A two-coat system starting with FungalShield (RP1) to kill mold and prevent regrowth, followed by RoofShield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
-    beforeSrc: "https://www.theroofstore.net/images/water-proof-roof.webp",
-    afterSrc: "https://www.theroofstore.net/images/cement-tile-waterproofing.webp",
+    beforeSrc: "/images/projects/flat-cement-before.png",
+    afterSrc: "/images/projects/flat-cement-after.png",
     beforeLabel: "Before",
     afterLabel: "After",
   },

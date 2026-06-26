@@ -36,7 +36,7 @@ const queryClient = new QueryClient();
 function CountyRoute({ params }: { params: { county: string } }) {
   const county = findCounty(params.county);
   if (!county) return <NotFound />;
-  return <CountyPage county={county.name} slug={county.slug} description={county.description} cities={county.cities} />;
+  return <CountyPage county={county.name} slug={county.slug} description={county.description} image={county.image} cities={county.cities} />;
 }
 
 function CityRoute({ params }: { params: { county: string; city: string } }) {

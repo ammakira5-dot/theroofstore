@@ -9,7 +9,8 @@ import { counties as countiesData } from "./data";
 const counties = countiesData.map((c) => ({
   name: c.name,
   slug: c.slug,
-  cities: c.cities.map((city) => city.name),
+  image: c.image,
+  cities: c.cities.map((city) => ({ name: city.name, slug: city.slug })),
 }));
 
 export default function ServiceAreas() {
@@ -42,8 +43,17 @@ export default function ServiceAreas() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-card border rounded-xl p-8 shadow-sm"
+                className="bg-card border rounded-xl shadow-sm overflow-hidden"
               >
+                <div className="h-44 overflow-hidden">
+                  <img
+                    src={county.image}
+                    alt={`${county.name}, Florida`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
                     <MapPin className="h-5 w-5" />
@@ -62,15 +72,16 @@ export default function ServiceAreas() {
                   {county.cities.map((city, j) => (
                     <li key={j}>
                       <Link
-                        href={`/service-areas/${county.slug}/${city.toLowerCase().replace(/\s+/g, "-")}`}
+                        href={`/service-areas/${county.slug}/${city.slug}`}
                         className="flex items-center gap-2 py-1.5 text-foreground hover:text-accent transition-colors group"
                       >
                         <div className="h-1.5 w-1.5 rounded-full bg-accent shrink-0 group-hover:scale-125 transition-transform" />
-                        {city}
+                        {city.name}
                       </Link>
                     </li>
                   ))}
                 </ul>
+                </div>
               </motion.div>
             ))}
           </div>

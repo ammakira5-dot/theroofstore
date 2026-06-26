@@ -8,12 +8,13 @@ interface CountyPageProps {
   county: string;
   slug: string;
   description: string;
+  image: string;
   cities: { name: string; slug: string }[];
 }
 
 const BASE = "https://www.theroofstore.net";
 
-export function CountyPage({ county, slug, description, cities }: CountyPageProps) {
+export function CountyPage({ county, slug, description, image, cities }: CountyPageProps) {
   const countyUrl = `${BASE}/service-areas/${slug}`;
 
   const schema = [
@@ -77,15 +78,22 @@ export function CountyPage({ county, slug, description, cities }: CountyPageProp
         geo={{ region: "US-FL", placename: `${county}, FL` }}
       />
 
-      <section className="bg-primary text-white py-24">
-        <div className="container px-4 max-w-4xl mx-auto">
+      <section className="relative min-h-[420px] flex items-center overflow-hidden">
+        <img
+          src={image}
+          alt={`${county}, Florida — The Roof Store service area`}
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-primary/75" />
+        <div className="relative z-10 container px-4 max-w-4xl mx-auto py-24">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <nav className="flex items-center gap-2 text-white/60 text-sm mb-6">
               <Link href="/service-areas" className="hover:text-white transition-colors">Service Areas</Link>
               <span>/</span>
               <span className="text-white">{county}</span>
             </nav>
-            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Services in {county}</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6 text-white">Roof Coating Services in {county}</h1>
             <p className="text-xl text-white/80">{description}</p>
           </motion.div>
         </div>

@@ -260,17 +260,20 @@ export default function Factory() {
                 <Users className="h-3.5 w-3.5" />
                 Distributor & Contractor Program
               </div>
-              <h2 className="text-4xl font-serif font-bold text-primary mb-4">Carry Our Products</h2>
+              <h2 className="text-4xl font-serif font-bold text-primary mb-4">Become a Distributor</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 We supply FungalShield, SmartShield, and RoofShield to licensed contractors and distributors throughout Florida, nationally, and internationally. Volume pricing, technical training, and full marketing support included.
               </p>
+              <p className="text-muted-foreground leading-relaxed">
+                County, state, and national territories available. Installer distributorships from $25,000. Sales manager packages negotiable.
+              </p>
             </div>
             <div className="space-y-4">
-              <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-white h-14 text-lg">
-                <Link href="/contact">Contact Us About Distribution</Link>
+              <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg font-bold">
+                <Link href="/distributorships">View Distributorship Opportunities</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="w-full h-14 text-lg">
-                <Link href="/products">View All Products</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>

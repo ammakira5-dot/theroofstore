@@ -98,106 +98,214 @@ export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
   const html = `
 <!DOCTYPE html>
 <html>
-<body style="font-family: Arial, sans-serif; max-width: 650px; margin: 0 auto; color: #1a1a1a; background: #f9fafb;">
+<body style="font-family: Arial, sans-serif; max-width: 640px; margin: 0 auto; color: #1a1a1a; background: #f4f4f0;">
 
-  <div style="background: #39505F; padding: 32px; text-align: center; border-radius: 8px 8px 0 0;">
-    <h1 style="color: #fff; margin: 0 0 6px; font-size: 22px; font-weight: bold;">The Roof Store</h1>
-    <p style="color: rgba(255,255,255,0.75); margin: 0; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase;">The Original Liquid Applied Rubber Roof Shield Systems</p>
+  <!-- HEADER -->
+  <div style="background: #39505F; padding: 36px 32px; text-align: center; border-radius: 8px 8px 0 0;">
+    <p style="color: rgba(255,255,255,0.6); margin: 0 0 6px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;">The Original Since 1994</p>
+    <h1 style="color: #fff; margin: 0 0 4px; font-size: 28px; font-weight: bold; letter-spacing: -0.5px;">The Roof Store</h1>
+    <p style="color: #28A745; margin: 0; font-size: 13px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase;">Factory Price Menu</p>
   </div>
 
-  <div style="background: #fff; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 8px 8px; padding: 36px 32px;">
-
-    <h2 style="color: #39505F; font-size: 20px; margin: 0 0 12px;">Hi ${firstName}, we received your information!</h2>
-    <p style="font-size: 15px; line-height: 1.7; color: #374151; margin: 0 0 20px;">
-      One of our sales associates will be contacting you soon. In the meantime, the theroofstore.net team has provided the most important information for clarification purposes:
+  <!-- INTRO -->
+  <div style="background: #fff; padding: 28px 32px; border-left: 1px solid #e5e7eb; border-right: 1px solid #e5e7eb;">
+    <p style="margin: 0 0 6px; font-size: 16px; color: #39505F;">Hi ${firstName},</p>
+    <p style="margin: 0; font-size: 14px; line-height: 1.7; color: #6b7280;">
+      Thanks for reaching out! A sales associate will contact you soon. In the meantime, here is our <strong style="color: #1a1a1a;">factory price menu</strong> — pick your roof type and system to get a clear idea of cost. All prices include <strong>labor &amp; materials</strong>.
     </p>
-
-    <div style="background: #f0fdf4; border-left: 4px solid #28A745; border-radius: 4px; padding: 20px 24px; margin-bottom: 28px;">
-      <ul style="margin: 0; padding-left: 18px; color: #374151; font-size: 14px; line-height: 2;">
-        <li>Our system is the <strong>only tile roof coating system</strong> with the Dade County TAS-106 Wind Uplift Test certification.</li>
-        <li>We are the <strong>only contracting &amp; manufacturing firm</strong> with side-by-side evidence of hurricane-coated resistant roofs.</li>
-        <li>Our products are <strong>industrial strength, environmentally safe</strong>, resin weatherproof rubber submersible coating materials.</li>
-        <li>Our <strong>transferable product warranty</strong> may include a hurricane uplift rating which can lower your insurance premiums.</li>
-        <li>Our product <strong>Fire rating</strong> may qualify for a discount to lower your insurance premiums.</li>
-        <li>Roof Shield is a <strong>retrofit property improvement</strong> which is tax deductible.</li>
-        <li>Our <strong>white reflective products</strong> honor the FP&amp;L discount of up to 45¢ per sq ft for energy efficiency.</li>
-        <li>Roof Shield System qualifies for the <strong>State of Florida Roof Life Certification</strong> for an additional 10 years on 50+ year old roofs.</li>
-        <li>Our Florida corporation has been <strong>servicing Floridians since 1994</strong> — A Licensed commercial and residential contracting firm.</li>
-      </ul>
-    </div>
-
-    <div style="text-align: center; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 20px 24px; margin-bottom: 32px;">
-      <p style="margin: 0 0 4px; font-size: 12px; font-weight: 600; color: #166534; text-transform: uppercase; letter-spacing: 0.05em;">Reach Us Directly</p>
-      <a href="tel:9542109614" style="font-size: 28px; font-weight: bold; color: #28A745; text-decoration: none;">954-210-9614</a>
-      <p style="margin: 4px 0 0; font-size: 12px; color: #6b7280;">Mon–Fri 8AM–5PM · Sat 9AM–2PM</p>
-    </div>
-
-    <h3 style="color: #39505F; font-size: 17px; margin: 0 0 16px; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px;">Our Pricing <span style="font-size: 13px; font-weight: normal; color: #6b7280;">(certain discounts may apply with rebate program)</span></h3>
-
-    <div style="margin-bottom: 20px;">
-      <p style="font-weight: bold; color: #28A745; margin: 0 0 8px; font-size: 15px;">FungalShield System — Clear (Roofs or Walls)</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>A)</strong> Flat smooth tile, 2/12–4/12 pitch: 50¢–70¢/sq ft &nbsp;|&nbsp; 5/12 pitch: 70¢–90¢/sq ft</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>B)</strong> Flat broom swept tile, 2/12–4/12 pitch: 70¢–90¢/sq ft &nbsp;|&nbsp; 5/12 pitch: 90¢–$1.25/sq ft</p>
-      <p style="margin: 0; font-size: 13px; color: #374151;"><strong>C)</strong> S-Tile, 2/12–4/12 pitch: 90¢–$1.25/sq ft &nbsp;|&nbsp; 5/12 pitch: $1.25–$1.45/sq ft</p>
-    </div>
-
-    <div style="margin-bottom: 20px;">
-      <p style="font-weight: bold; color: #28A745; margin: 0 0 8px; font-size: 15px;">SmartShield System — Waterproofing (Tile, Walls &amp; Flat Decks)</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>A)</strong> Flat decks: $2.35–$2.75/sq ft</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>B)</strong> Flat smooth tile, 2/12–4/12 pitch: $1.90–$2.25/sq ft &nbsp;|&nbsp; 5/12 pitch: $2.25–$2.50/sq ft</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>C)</strong> Flat broom swept tile, 2/12–4/12: $2.15–$2.35/sq ft &nbsp;|&nbsp; 5/12: $2.35–$2.50/sq ft</p>
-      <p style="margin: 0; font-size: 13px; color: #374151;"><strong>D)</strong> S-Tile, 2/12–4/12: $2.35–$2.50/sq ft &nbsp;|&nbsp; 5/12: $2.50–$2.75/sq ft</p>
-    </div>
-
-    <div style="margin-bottom: 24px;">
-      <p style="font-weight: bold; color: #28A745; margin: 0 0 8px; font-size: 15px;">RoofShield System — Weatherproofing Retrofit</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>A)</strong> Flat decks: $2.75–$3.50/sq ft</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>B)</strong> Flat smooth tile, 2/12–4/12: $2.70–$3.00/sq ft</p>
-      <p style="margin: 0 0 4px; font-size: 13px; color: #374151;"><strong>C)</strong> Flat broom swept tile, 2/12–4/12: $3.25–$3.50/sq ft &nbsp;|&nbsp; 5/12: $3.65–$3.85/sq ft</p>
-      <p style="margin: 0; font-size: 13px; color: #374151;"><strong>D)</strong> S-Tile, 2/12–4/12: $4.00–$4.20/sq ft &nbsp;|&nbsp; 5/12: $4.45–$4.75/sq ft</p>
-    </div>
-
-    <p style="font-size: 13px; color: #6b7280; line-height: 1.6; margin-bottom: 24px; font-style: italic;">
-      Variance in price is predicated on type and length of warranty, additional preparation, access, pitch and shape of the tile or structure. Prices include all required materials, labor, and some minor restoration. For an approximate sq ft on a Barrel Tile roof, take the interior space under air and multiply by 20% (Flat cement tile × 10%).
-    </p>
-
-    <div style="background: #fefce8; border: 1px solid #fde68a; border-radius: 8px; padding: 20px 24px; margin-bottom: 24px;">
-      <p style="font-weight: bold; color: #92400e; margin: 0 0 10px; font-size: 15px;">Manufacturer's Onsite Inspection — $150.00</p>
-      <p style="font-size: 13px; color: #374151; line-height: 1.7; margin: 0 0 10px;">
-        Required for the complete <strong>RoofShield System warranty</strong>. The inspection report confirms stable surfaces and edges, and may help qualify your roof for the State of Florida additional Roof Life Certification. The $150 fee is <strong>100% refundable</strong> if:
-      </p>
-      <ul style="margin: 0; padding-left: 18px; font-size: 13px; color: #374151; line-height: 1.9;">
-        <li>You provide a recent 4-point exam including roof wind mitigation within the last 6 months</li>
-        <li>Inordinate structural issues are found that do not meet our minimum warranty standards</li>
-        <li>You decide to purchase our products and install them yourself (minimum $1,000 product order)</li>
-        <li>You retain our licensed contracting firm or an authorized distributor to apply the system</li>
-      </ul>
-    </div>
-
-    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px 24px; margin-bottom: 28px;">
-      <p style="font-weight: bold; color: #39505F; margin: 0 0 10px;">To Confirm Your Appointment, Please Reply With One of the Following:</p>
-      <ul style="margin: 0; padding-left: 18px; font-size: 14px; color: #374151; line-height: 2;">
-        <li><strong>"I want the inspection for the Complete RoofShield System"</strong></li>
-        <li><strong>"I want an onsite price quote"</strong> (no charge)</li>
-      </ul>
-      <p style="font-size: 13px; color: #6b7280; margin: 12px 0 0;">
-        On-site appointments guaranteed within <strong>24–48 hours</strong> of your written request (excluding weekends and holidays).
-      </p>
-    </div>
-
-    <p style="font-size: 13px; color: #6b7280; line-height: 1.6; margin: 0;">
-      There is <strong>never a charge for an onsite price quote</strong>. Structural repairs must be undertaken before application and are the responsibility of the owner. Please inquire for minimum project sizes. Commercial projects may not include the standard fee agreement or turnaround guarantee.
-    </p>
-
   </div>
 
-  <p style="text-align: center; font-size: 12px; color: #9ca3af; margin-top: 20px; line-height: 1.8;">
-    Thank you for your interest in our products.<br>
-    <strong style="color: #6b7280;">The Original Liquid Applied Rubber Roof Shield Systems</strong><br>
-    <a href="https://www.theroofstore.net" style="color: #9ca3af;">theroofstore.net</a> · 
-    <a href="mailto:info@theroofstore.net" style="color: #9ca3af;">info@theroofstore.net</a> · 954-210-9614<br>
-    Copyright &copy; ${new Date().getFullYear()} theroofstore.net
-  </p>
+  <!-- DIVIDER -->
+  <div style="background: #39505F; height: 3px;"></div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MENU ITEM 1: FUNGALSHIELD              -->
+  <!-- ═══════════════════════════════════════ -->
+  <div style="background: #fff; border-left: 1px solid #e5e7eb; border-right: 1px solid #e5e7eb; padding: 28px 32px;">
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 6px;">
+      <tr>
+        <td>
+          <span style="background: #dcfce7; color: #166534; font-size: 10px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 20px;">Entry Level</span>
+          <h2 style="margin: 8px 0 2px; color: #39505F; font-size: 20px;">FungalShield&nbsp;<span style="font-size: 13px; color: #9ca3af; font-weight: normal;">(RP1)</span></h2>
+          <p style="margin: 0; font-size: 13px; color: #6b7280;">Clear anti-fungal &amp; anti-algae coating — roofs or walls</p>
+        </td>
+        <td style="text-align: right; vertical-align: top; padding-top: 10px;">
+          <span style="font-size: 13px; color: #28A745; font-weight: bold;">from 50¢/sq ft</span>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px;">
+      <thead>
+        <tr style="background: #f9fafb;">
+          <th style="text-align: left; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">Roof Type</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">2/12–4/12 Pitch</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">5/12 Pitch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Smooth Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">50¢ – 70¢</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">70¢ – 90¢</td>
+        </tr>
+        <tr style="background: #fafafa;">
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Broom Swept Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">70¢ – 90¢</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">90¢ – $1.25</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; color: #374151;">S-Tile (Barrel / Spanish)</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">90¢ – $1.25</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">$1.25 – $1.45</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="background: #e5e7eb; height: 1px; margin: 0 32px;"></div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MENU ITEM 2: SMARTSHIELD              -->
+  <!-- ═══════════════════════════════════════ -->
+  <div style="background: #fff; border-left: 1px solid #e5e7eb; border-right: 1px solid #e5e7eb; padding: 28px 32px;">
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 6px;">
+      <tr>
+        <td>
+          <span style="background: #dbeafe; color: #1e40af; font-size: 10px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 20px;">Most Popular</span>
+          <h2 style="margin: 8px 0 2px; color: #39505F; font-size: 20px;">SmartShield&nbsp;<span style="font-size: 13px; color: #9ca3af; font-weight: normal;">(RP2)</span></h2>
+          <p style="margin: 0; font-size: 13px; color: #6b7280;">Waterproofing — tile roofs, walls &amp; flat decks · 3,000+ colors</p>
+        </td>
+        <td style="text-align: right; vertical-align: top; padding-top: 10px;">
+          <span style="font-size: 13px; color: #28A745; font-weight: bold;">from $1.90/sq ft</span>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px;">
+      <thead>
+        <tr style="background: #f9fafb;">
+          <th style="text-align: left; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">Roof Type</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">2/12–4/12 Pitch</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">5/12 Pitch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Deck</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;" colspan="2">$2.35 – $2.75</td>
+        </tr>
+        <tr style="background: #fafafa;">
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Smooth Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$1.90 – $2.25</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$2.25 – $2.50</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Broom Swept Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$2.15 – $2.35</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$2.35 – $2.50</td>
+        </tr>
+        <tr style="background: #fafafa;">
+          <td style="padding: 9px 12px; color: #374151;">S-Tile (Barrel / Spanish)</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">$2.35 – $2.50</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">$2.50 – $2.75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="background: #e5e7eb; height: 1px; margin: 0 32px;"></div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MENU ITEM 3: ROOFSHIELD               -->
+  <!-- ═══════════════════════════════════════ -->
+  <div style="background: #fff; border-left: 1px solid #e5e7eb; border-right: 1px solid #e5e7eb; padding: 28px 32px;">
+
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 6px;">
+      <tr>
+        <td>
+          <span style="background: #fef3c7; color: #92400e; font-size: 10px; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 8px; border-radius: 20px;">Premium · Flagship</span>
+          <h2 style="margin: 8px 0 2px; color: #39505F; font-size: 20px;">RoofShield&nbsp;<span style="font-size: 13px; color: #9ca3af; font-weight: normal;">(RP3)</span></h2>
+          <p style="margin: 0; font-size: 13px; color: #6b7280;">Full weatherproofing retrofit · World's only TAS-106 Dade County rated coating · Lifetime warranty</p>
+        </td>
+        <td style="text-align: right; vertical-align: top; padding-top: 10px;">
+          <span style="font-size: 13px; color: #28A745; font-weight: bold;">from $2.70/sq ft</span>
+        </td>
+      </tr>
+    </table>
+
+    <table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px;">
+      <thead>
+        <tr style="background: #f9fafb;">
+          <th style="text-align: left; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">Roof Type</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">2/12–4/12 Pitch</th>
+          <th style="text-align: center; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #e5e7eb;">5/12 Pitch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Deck</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;" colspan="2">$2.75 – $3.50</td>
+        </tr>
+        <tr style="background: #fafafa;">
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Smooth Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;" colspan="2">$2.70 – $3.00</td>
+        </tr>
+        <tr>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; color: #374151;">Flat Broom Swept Tile</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$3.25 – $3.50</td>
+          <td style="padding: 9px 12px; border-bottom: 1px solid #f3f4f6; text-align: center; font-weight: bold; color: #39505F;">$3.65 – $3.85</td>
+        </tr>
+        <tr style="background: #fafafa;">
+          <td style="padding: 9px 12px; color: #374151;">S-Tile (Barrel / Spanish)</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">$4.00 – $4.20</td>
+          <td style="padding: 9px 12px; text-align: center; font-weight: bold; color: #39505F;">$4.45 – $4.75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="background: #39505F; height: 3px;"></div>
+
+  <!-- NOTES BAR -->
+  <div style="background: #f9fafb; border-left: 1px solid #e5e7eb; border-right: 1px solid #e5e7eb; padding: 20px 32px;">
+    <p style="margin: 0; font-size: 12px; color: #9ca3af; line-height: 1.7;">
+      All prices include labor &amp; materials. Minor restoration on flat decks and seam taping included where designated. Variance based on warranty type, pitch, access, and surface condition. 
+      <strong style="color: #6b7280;">Barrel tile sq ft tip:</strong> Take interior sq ft under air × 1.20 (flat cement tile × 1.10).
+    </p>
+  </div>
+
+  <!-- INSPECTION NOTE -->
+  <div style="background: #fefce8; border: 1px solid #fde68a; border-left: 4px solid #f59e0b; margin: 0 0; padding: 20px 32px; border-right: 1px solid #fde68a;">
+    <p style="margin: 0 0 4px; font-size: 13px; font-weight: bold; color: #92400e;">Manufacturer's Onsite Inspection — $150 <span style="font-weight: normal;">(RoofShield warranty only · 100% refundable)</span></p>
+    <p style="margin: 0; font-size: 12px; color: #78350f; line-height: 1.7;">
+      Required to confirm roof soundness for the full RoofShield warranty. Fee is fully refundable if you provide a recent wind mitigation report, structural issues disqualify the roof, or you purchase products direct ($1,000+ order). <strong>There is never a charge for a standard onsite price quote.</strong>
+    </p>
+  </div>
+
+  <!-- CALL TO ACTION -->
+  <div style="background: #39505F; padding: 28px 32px; text-align: center;">
+    <p style="color: rgba(255,255,255,0.8); margin: 0 0 8px; font-size: 13px;">Ready to move forward? Simply reply to this email with:</p>
+    <p style="color: #fff; margin: 0 0 4px; font-size: 14px; font-weight: bold;">"I want the RoofShield inspection"</p>
+    <p style="color: rgba(255,255,255,0.5); margin: 0 0 16px; font-size: 12px;">— or —</p>
+    <p style="color: #fff; margin: 0 0 16px; font-size: 14px; font-weight: bold;">"I want a free onsite price quote"</p>
+    <p style="color: rgba(255,255,255,0.6); margin: 0 0 16px; font-size: 12px;">Appointments confirmed within 24–48 hrs (excl. weekends &amp; holidays)</p>
+    <a href="tel:9542109614" style="display: inline-block; background: #28A745; color: #fff; font-size: 20px; font-weight: bold; text-decoration: none; padding: 14px 36px; border-radius: 6px; letter-spacing: 0.5px;">📞 954-210-9614</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background: #2d3e4a; padding: 20px 32px; border-radius: 0 0 8px 8px; text-align: center;">
+    <p style="margin: 0; font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.8;">
+      The Roof Store · Storm Shield Paint Systems Inc. · Davie, FL 33314<br>
+      <a href="https://www.theroofstore.net" style="color: rgba(255,255,255,0.4);">theroofstore.net</a> · info@theroofstore.net · 954-210-9614<br>
+      Copyright &copy; ${new Date().getFullYear()} theroofstore.net · A+ BBB Rated Since 1994
+    </p>
+  </div>
 
 </body>
 </html>`;

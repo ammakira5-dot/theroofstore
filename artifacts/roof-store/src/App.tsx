@@ -216,6 +216,7 @@ function Router() {
       <Route path="/references.php" component={() => <RedirectTo to="/reviews" />} />
       <Route path="/miami-dade-references.php" component={() => <RedirectTo to="/reviews" />} />
       <Route path="/faq.php" component={() => <RedirectTo to="/faq" />} />
+      <Route path="/questions.php" component={() => <RedirectTo to="/questions" />} />
       <Route path="/aboutus.php" component={() => <RedirectTo to="/about" />} />
       <Route path="/contact.php" component={() => <RedirectTo to="/contact" />} />
       <Route path="/distributorships.php" component={() => <RedirectTo to="/distributorships" />} />

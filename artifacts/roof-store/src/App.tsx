@@ -29,6 +29,7 @@ import Terms from "@/pages/Terms";
 import RoofLifeCertification from "@/pages/RoofLifeCertification";
 import ManufacturersReport from "@/pages/ManufacturersReport";
 import RoofPaintingVsCoating from "@/pages/RoofPaintingVsCoating";
+import PartnerNetwork from "@/pages/PartnerNetwork";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -104,6 +105,7 @@ function Router() {
       <Route path="/roof-life-certification" component={RoofLifeCertification} />
       <Route path="/manufacturers-report" component={ManufacturersReport} />
       <Route path="/roof-painting-vs-coating" component={RoofPaintingVsCoating} />
+      <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

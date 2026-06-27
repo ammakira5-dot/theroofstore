@@ -23,6 +23,8 @@ import Distributorships from "@/pages/Distributorships";
 import CommercialRoofs from "@/pages/CommercialRoofs";
 import Blog from "@/pages/Blog";
 import Questions from "@/pages/Questions";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -82,6 +84,8 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/questions" component={Questions} />
       <Route path="/shop" component={Shop} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

@@ -25,6 +25,7 @@ import Blog from "@/pages/Blog";
 import Questions from "@/pages/Questions";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
+import RoofLifeCertification from "@/pages/RoofLifeCertification";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -86,6 +87,7 @@ function Router() {
       <Route path="/shop" component={Shop} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
+      <Route path="/roof-life-certification" component={RoofLifeCertification} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}
@@ -205,6 +207,7 @@ function Router() {
 
       {/* ── Legacy — /services/ PHP pages ── */}
       <Route path="/services/commercial-metal-roof-coating.php" component={() => <RedirectTo to="/commercial-roofs" />} />
+      <Route path="/services/additional-roof-life-certification.php" component={() => <RedirectTo to="/roof-life-certification" />} />
       <Route path="/services/:slug" component={() => <RedirectTo to="/roof-services" />} />
 
       {/* ── Legacy — root-level .php pages ── */}

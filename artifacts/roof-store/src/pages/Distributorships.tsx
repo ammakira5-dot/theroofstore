@@ -345,6 +345,27 @@ export default function Distributorships() {
         </div>
       </section>
 
+      {/* Partner Network callout */}
+      <section className="py-12 bg-background border-t border-border">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="bg-muted rounded-2xl p-8 flex flex-col md:flex-row md:items-center gap-6">
+            <div className="flex-1">
+              <div className="text-xs font-bold text-accent uppercase tracking-widest mb-2">Already a Partner?</div>
+              <h3 className="text-2xl font-serif font-bold text-primary mb-2">View Our Authorized Partner Network</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                See our current authorized partners — Windproof Roof Systems and Roof Protect Products — and how they're listed on theroofstore.net.
+              </p>
+            </div>
+            <Link
+              href="/partner-network"
+              className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-lg transition-colors shrink-0"
+            >
+              View Partner Network
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-primary text-white text-center">
         <div className="container px-4 max-w-3xl mx-auto">

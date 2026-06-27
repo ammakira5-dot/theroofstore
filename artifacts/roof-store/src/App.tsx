@@ -164,6 +164,12 @@ function Router() {
       <Route path="/areas-we-serve" component={() => <RedirectTo to="/service-areas" />} />
       <Route path="/locations" component={() => <RedirectTo to="/service-areas" />} />
 
+      {/* ── Legacy — project / gallery sub-pages (old .php URLs) ── */}
+      <Route path="/projects/:slug" component={() => <RedirectTo to="/projects" />} />
+      <Route path="/project/:slug" component={() => <RedirectTo to="/projects" />} />
+      <Route path="/gallery/:slug" component={() => <RedirectTo to="/projects" />} />
+      <Route path="/portfolio/:slug" component={() => <RedirectTo to="/projects" />} />
+
       {/* ── Legacy — blog post URLs ── */}
       <Route path="/blog/:slug" component={() => <RedirectTo to="/blog" />} />
 

@@ -130,6 +130,42 @@ export default function ManufacturersReport() {
         </div>
       </section>
 
+      {/* Fissures */}
+      <section className="py-16 bg-background">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="bg-amber-50 border border-amber-200 rounded-2xl p-8 md:p-10">
+            <div className="flex items-start gap-5">
+              <div className="h-12 w-12 rounded-xl bg-amber-100 flex items-center justify-center shrink-0 mt-1">
+                <AlertTriangle className="h-6 w-6 text-amber-600" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-primary mb-3">
+                  Don't Underestimate Small Fissures
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Hairline fissures — tiny surface cracks that can be nearly invisible to the naked eye — are one of the most common and damaging problems found during inspection. They form from years of thermal expansion and contraction, UV degradation, and substrate movement. On their own they look harmless. But under Florida rain conditions, water forces its way through those micro-cracks, travels beneath the surface, and causes rot, mold, and structural damage far from the visible entry point.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Fissures are also a warranty liability. Applying the RoofShield Monolithic system over unrepaired fissures traps moisture beneath the coating — exactly the opposite of what the system is designed to do. That's why our inspection specifically flags every fissure and crack zone, and any required sealing is documented in the rework scope before a single drop of product is applied.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                  {[
+                    { label: "Cause", text: "Thermal cycling, UV breakdown, substrate movement over time" },
+                    { label: "Risk", text: "Water infiltration, trapped moisture, mold, structural rot" },
+                    { label: "Fix", text: "Identified in inspection, sealed in rework scope before application" },
+                  ].map((item) => (
+                    <div key={item.label} className="bg-white rounded-xl p-4 border border-amber-100">
+                      <div className="text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">{item.label}</div>
+                      <p className="text-sm text-foreground leading-relaxed">{item.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Example drawings callout */}
       <section className="py-16 bg-background">
         <div className="container px-4 max-w-5xl mx-auto">

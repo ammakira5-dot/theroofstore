@@ -68,6 +68,7 @@ export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
   const moreTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [location] = useLocation();
@@ -78,6 +79,7 @@ export function Navbar() {
     setOpen(false);
     setDropdownOpen(false);
     setMoreOpen(false);
+    setMobileMoreOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -122,7 +124,7 @@ export function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-foreground">
+          <nav className="hidden lg:flex items-center gap-3 text-sm font-medium text-foreground">
             {/* Products dropdown */}
             <div
               ref={dropdownRef}
@@ -235,7 +237,7 @@ export function Navbar() {
             </div>
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4 ml-4 pl-6 border-l shrink-0">
+          <div className="hidden lg:flex items-center gap-3 ml-2 pl-4 border-l shrink-0">
             <a href="tel:954-210-9614" className="flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
               <Phone className="h-4 w-4" />
               954-210-9614
@@ -337,6 +339,32 @@ export function Navbar() {
               <ChevronRight className="h-4 w-4 opacity-40" />
             </Link>
           ))}
+
+          {/* More — mobile */}
+          <div className="border-b border-border/40">
+            <button
+              className={`w-full flex items-center justify-between px-6 py-4 text-base font-medium hover:bg-muted hover:text-accent transition-colors ${isMoreActive ? "text-accent bg-accent/5" : "text-foreground"}`}
+              onClick={() => setMobileMoreOpen(!mobileMoreOpen)}
+            >
+              More
+              <ChevronDown className={`h-4 w-4 opacity-60 transition-transform duration-200 ${mobileMoreOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileMoreOpen && (
+              <div className="bg-muted/40 border-t border-border/30">
+                {moreLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`flex items-center justify-between px-8 py-3.5 text-sm font-medium hover:bg-muted hover:text-accent transition-colors ${location === link.href ? "text-accent bg-accent/5" : "text-foreground"}`}
+                    onClick={() => setOpen(false)}
+                  >
+                    {link.label}
+                    <ChevronRight className="h-4 w-4 opacity-40" />
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="p-6 border-t space-y-3 bg-muted/50">

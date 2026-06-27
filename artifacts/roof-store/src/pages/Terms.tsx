@@ -61,7 +61,7 @@ export default function Terms() {
             <div className="mt-3 space-y-1">
               <p><strong>The Roof Store</strong> (Storm Shield Paint Systems Inc.)</p>
               <p>Phone: <a href="tel:954-210-9614" className="text-accent hover:underline">954-210-9614</a></p>
-              <p>Email: <a href="mailto:roofrestor@bellsouth.net" className="text-accent hover:underline">roofrestor@bellsouth.net</a></p>
+              <p>Email: <a href="mailto:theroofstore@gmail.com" className="text-accent hover:underline">theroofstore@gmail.com</a></p>
             </div>
           </section>
         </div>

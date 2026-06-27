@@ -20,7 +20,7 @@ export default function About() {
         name: "The Roof Store",
         url: BASE,
         telephone: "+19542109614",
-        email: "roofrestor@bellsouth.net",
+        email: "theroofstore@gmail.com",
         foundingDate: "1994",
         address: {
           "@type": "PostalAddress",

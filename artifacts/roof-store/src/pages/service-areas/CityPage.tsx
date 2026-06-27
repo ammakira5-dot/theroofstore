@@ -25,7 +25,7 @@ export function CityPage({ city, county, countySlug, citySlug, image }: CityPage
       alternateName: "The Roof Store",
       url: BASE,
       telephone: "+19542109614",
-      email: "roofrestor@bellsouth.net",
+      email: "theroofstore@gmail.com",
       image,
       address: {
         "@type": "PostalAddress",

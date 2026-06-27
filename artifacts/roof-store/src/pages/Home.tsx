@@ -12,7 +12,7 @@ const BUSINESS_CORE = {
   alternateName: "The Roof Store",
   url: BASE,
   telephone: "+19542109614",
-  email: "roofrestor@bellsouth.net",
+  email: "theroofstore@gmail.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "4411 SW 47th Ave",

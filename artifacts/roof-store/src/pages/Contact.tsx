@@ -51,7 +51,7 @@ export default function Contact() {
         alternateName: "The Roof Store",
         url: "https://www.theroofstore.net",
         telephone: "+19542109614",
-        email: "roofrestor@bellsouth.net",
+        email: "theroofstore@gmail.com",
         address: { "@type": "PostalAddress", streetAddress: "4411 SW 47th Ave", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
         contactPoint: {
           "@type": "ContactPoint",
@@ -119,8 +119,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-bold text-foreground mb-1">Email Us</div>
-                    <a href="mailto:roofrestor@bellsouth.net" className="text-accent font-bold hover:underline">
-                      roofrestor@bellsouth.net
+                    <a href="mailto:theroofstore@gmail.com" className="text-accent font-bold hover:underline">
+                      theroofstore@gmail.com
                     </a>
                   </div>
                 </div>

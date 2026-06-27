@@ -1,4 +1,5 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,6 +38,14 @@ import { findCounty, findCity } from "@/pages/service-areas/data";
 
 const queryClient = new QueryClient();
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  return null;
+}
+
 function CountyRoute({ params }: { params: { county: string } }) {
   const county = findCounty(params.county);
   if (!county) return <NotFound />;
@@ -59,6 +68,8 @@ function CityRoute({ params }: { params: { county: string; city: string } }) {
 
 function Router() {
   return (
+    <>
+    <ScrollToTop />
     <Switch>
       {/* ── Core pages ── */}
       <Route path="/" component={Home} />
@@ -232,6 +243,7 @@ function Router() {
       {/* ── Catch-all ── */}
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 

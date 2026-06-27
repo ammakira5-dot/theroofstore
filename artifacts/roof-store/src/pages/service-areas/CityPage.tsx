@@ -10,11 +10,12 @@ interface CityPageProps {
   countySlug: string;
   citySlug: string;
   image: string;
+  blurb?: string;
 }
 
 const BASE = "https://www.theroofstore.net";
 
-export function CityPage({ city, county, countySlug, citySlug, image }: CityPageProps) {
+export function CityPage({ city, county, countySlug, citySlug, image, blurb }: CityPageProps) {
   const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
 
   const schema = [
@@ -126,6 +127,15 @@ export function CityPage({ city, county, countySlug, citySlug, image }: CityPage
                   Most homeowners in {city} save 40–60% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.
                 </p>
               </motion.div>
+
+              {blurb && (
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <div className="border-l-4 border-accent bg-accent/5 rounded-r-lg px-6 py-5">
+                    <h3 className="text-sm font-bold text-accent uppercase tracking-wide mb-2">About {city}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{blurb}</p>
+                  </div>
+                </motion.div>
+              )}
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">

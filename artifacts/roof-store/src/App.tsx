@@ -63,6 +63,7 @@ function CityRoute({ params }: { params: { county: string; city: string } }) {
       countySlug={result.county.slug}
       citySlug={result.city.slug}
       image={getCityImage(result.county, result.city)}
+      blurb={result.city.blurb}
     />
   );
 }

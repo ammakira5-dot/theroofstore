@@ -124,7 +124,7 @@ export function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-3 text-sm font-medium text-foreground">
+          <nav className="hidden xl:flex items-center gap-3 text-sm font-medium text-foreground">
             {/* Products dropdown */}
             <div
               ref={dropdownRef}
@@ -237,7 +237,7 @@ export function Navbar() {
             </div>
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3 ml-2 pl-4 border-l shrink-0">
+          <div className="hidden xl:flex items-center gap-3 ml-2 pl-4 border-l shrink-0">
             <a href="tel:954-210-9614" className="flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
               <Phone className="h-4 w-4" />
               954-210-9614
@@ -249,7 +249,7 @@ export function Navbar() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 rounded-md hover:bg-muted transition-colors"
+            className="xl:hidden p-2 rounded-md hover:bg-muted transition-colors"
             aria-label={open ? "Close menu" : "Open menu"}
           >
             {open ? <X className="h-6 w-6 text-foreground" /> : <Menu className="h-6 w-6 text-foreground" />}

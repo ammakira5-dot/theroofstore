@@ -15,7 +15,7 @@ export function FloatingCTA() {
 
   return (
     <div
-      className={`fixed bottom-6 left-0 right-0 z-40 flex justify-center gap-3 px-4 transition-all duration-300 lg:hidden pointer-events-none ${
+      className={`fixed bottom-6 left-0 right-0 z-40 flex justify-center gap-3 px-4 transition-all duration-300 xl:hidden pointer-events-none ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >

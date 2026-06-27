@@ -22,7 +22,20 @@ router.get("/storage/public-objects/*filePath", async (req: Request, res: Respon
       return;
     }
 
-    const response = await objectStorageService.downloadObject(file);
+    const metadata = await objectStorageService.getObjectMetadata(file);
+    const etag = objectStorageService.computeEtag(metadata);
+
+    if (etag) {
+      res.setHeader("ETag", etag);
+      const ifNoneMatch = req.headers["if-none-match"];
+      if (ifNoneMatch === etag) {
+        res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+        res.status(304).end();
+        return;
+      }
+    }
+
+    const response = await objectStorageService.downloadObject(file, metadata);
 
     res.status(response.status);
     response.headers.forEach((value, key) => res.setHeader(key, value));

@@ -87,8 +87,27 @@ export class ObjectStorageService {
     return null;
   }
 
-  async downloadObject(file: File, cacheTtlSec: number = 3600): Promise<Response> {
+  async getObjectMetadata(file: File): Promise<Record<string, unknown>> {
     const [metadata] = await file.getMetadata();
+    return metadata as Record<string, unknown>;
+  }
+
+  computeEtag(metadata: Record<string, unknown>): string | null {
+    if (metadata.md5Hash && typeof metadata.md5Hash === "string") {
+      return `"${metadata.md5Hash}"`;
+    }
+    if (metadata.generation && typeof metadata.generation === "string") {
+      return `"${metadata.generation}"`;
+    }
+    return null;
+  }
+
+  async downloadObject(
+    file: File,
+    cachedMetadata?: Record<string, unknown>,
+    cacheTtlSec: number = 3600
+  ): Promise<Response> {
+    const metadata = cachedMetadata ?? ((await file.getMetadata())[0] as Record<string, unknown>);
 
     const nodeStream = file.createReadStream();
     const webStream = Readable.toWeb(nodeStream) as ReadableStream;
@@ -108,6 +127,10 @@ export class ObjectStorageService {
     };
     if (metadata.size) {
       headers["Content-Length"] = String(metadata.size);
+    }
+    const etag = this.computeEtag(metadata);
+    if (etag) {
+      headers["ETag"] = etag;
     }
 
     return new Response(webStream, { headers });

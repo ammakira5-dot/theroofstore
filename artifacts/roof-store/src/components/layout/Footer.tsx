@@ -102,7 +102,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/80">
                 <Mail className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <a href="mailto:info@theroofstore.net" className="hover:text-accent transition-colors">info@theroofstore.net</a>
+                <a href="mailto:roofrestor@bellsouth.net" className="hover:text-accent transition-colors">roofrestor@bellsouth.net</a>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />

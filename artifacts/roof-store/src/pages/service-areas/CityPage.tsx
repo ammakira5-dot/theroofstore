@@ -72,8 +72,8 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
   return (
     <div className="w-full">
       <SEO
-        title={`Rubber Roof Coating in ${city}, FL — The Roof Store`}
-        description={`The Roof Store provides rubber roof coating, tile restoration, and weatherproofing in ${city}, ${county}, FL. A+ BBB rated since 1994. Free consultation — call 954-210-9614.`}
+        title={`Roof Painting Contractor in ${city}, FL | Roof Coating Systems — The Roof Store`}
+        description={`Looking for a roof painting contractor in ${city}, FL? The Roof Store offers professional roof coating systems that outperform standard roof paint — waterproof, hurricane-rated, and A+ BBB accredited since 1994. Free inspection: 954-210-9614.`}
         canonical={`/service-areas/${countySlug}/${citySlug}`}
         ogImage={image}
         schema={schema}
@@ -178,6 +178,26 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                       </div>
                     </div>
                   ))}
+                </div>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <div className="bg-primary/5 border border-primary/15 rounded-xl p-6 space-y-4">
+                  <h3 className="text-2xl font-serif font-bold text-primary">
+                    Looking for a Roof Painting Contractor in {city}?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Most homeowners start their search looking for a "roof painting contractor" — it's the natural first step when a roof starts fading, cracking, or showing its age. But there's a critical distinction that can save you thousands of dollars and years of headaches.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">Standard roof paint</strong> coats the surface but doesn't seal it. In South Florida's climate — intense UV, heavy summer rains, high humidity, and hurricane-force winds — a painted roof typically needs re-application every 2–3 years and provides little to no real waterproofing protection. It's a cosmetic fix for a structural problem.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">Our roof coating systems</strong> are a different category entirely. Applied as a liquid, they cure into a seamless, flexible rubber membrane that bonds directly to your roof surface — sealing every seam, crack, and penetration. They're hurricane wind-uplift rated, reflect UV to lower cooling costs, and are warranted for 10–15 years. The investment is comparable to repeated paint jobs, but it lasts dramatically longer and actually waterproofs your home.
+                  </p>
+                  <Link href="/roof-painting-vs-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+                    Learn more: Roof Paint vs. Roof Coating Systems →
+                  </Link>
                 </div>
               </motion.div>
 

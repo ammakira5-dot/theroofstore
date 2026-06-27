@@ -128,6 +128,29 @@ export default function RoofServices() {
         </div>
       </section>
 
+      {/* Manufacturer's Report callout */}
+      <section className="py-16 bg-muted">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="bg-background rounded-2xl border shadow-sm p-8 md:p-10 flex flex-col md:flex-row items-start gap-8">
+            <div className="h-14 w-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <div className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Required for Warranty</div>
+              <h3 className="text-2xl font-serif font-bold text-primary mb-3">Manufacturer's Inspection Report</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Every RoofShield Monolithic warranty program on a flat or tile roof requires a pre-application Manufacturer's Report — including infrared moisture imaging, a signed drawing legend, photo documentation, and a required rework scope. The fee is <strong className="text-foreground">$150 per 5,000 sq ft</strong> and is <strong className="text-foreground">100% refundable</strong> when you proceed with the warranty program.
+              </p>
+              <Link href="/manufacturers-report" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+                Learn about the inspection process →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-primary text-white text-center">
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-6">Don't Re-Roof. Weatherproof.</h2>

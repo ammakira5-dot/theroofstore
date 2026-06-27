@@ -95,3 +95,9 @@ id = "MU_uSd03H8TDZlR4Po5f_"
 uri = "file://screenshots/email-preview.jpg"
 type = "image"
 title = "Factory Price Menu — Customer Auto-Response Email"
+
+[[outputs]]
+id = "sbB1FgQVVdX9xirYxRrdG"
+uri = "file://attached_assets/citation-fix-list.csv"
+type = "table"
+title = "Citation Fix List"

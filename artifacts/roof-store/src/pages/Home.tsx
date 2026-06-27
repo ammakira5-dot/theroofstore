@@ -230,7 +230,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* ── Additional Roof Life Certification ── */}
+      <section className="py-20 bg-primary text-white">
+        <div className="container px-4">
+          <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+            <div className="flex-1">
+              <div className="inline-block bg-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Florida Insurance Benefit</div>
+              <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-4 leading-tight">
+                Additional Roof Life Certification
+              </h2>
+              <p className="text-primary-foreground/85 text-lg mb-4 leading-relaxed">
+                Florida homeowners with roofs 15–25 years old may qualify for an <strong className="text-white">Additional Roof Life Certification</strong> — a licensed inspection that can extend your roof's insurability by 5 years and help prevent policy cancellation. The Roof Store's weatherproof coating systems are specifically engineered to meet the structural standards required for this certification.
+              </p>
+              <p className="text-primary-foreground/70 mb-8">
+                Serving Miami-Dade, Broward, and Palm Beach counties. Cement tile, flat, and shingle roofs eligible.
+              </p>
+              <Link
+                href="/roof-life-certification"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3.5 rounded-lg transition-colors text-sm uppercase tracking-wider"
+              >
+                Learn About the Certification <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            <div className="flex-shrink-0 grid grid-cols-2 gap-4 text-center">
+              {[
+                { value: "5 Yrs", label: "Extended Insurability" },
+                { value: "15–25", label: "Roof Age Eligible" },
+                { value: "3", label: "Counties Served" },
+                { value: "30+", label: "Years Experience" },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-white/10 rounded-xl p-5 min-w-[120px]">
+                  <div className="text-3xl font-serif font-bold text-accent">{stat.value}</div>
+                  <div className="text-xs text-primary-foreground/70 mt-1 font-medium">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-muted">
         <div className="container px-4 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold text-primary mb-6">Ready to Protect Your Home?</h2>

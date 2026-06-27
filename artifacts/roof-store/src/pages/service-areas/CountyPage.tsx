@@ -21,12 +21,14 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
     {
       "@context": "https://schema.org",
       "@type": "RoofingContractor",
-      name: "The Roof Store",
+      name: "The Roof Store Waterproofing Products",
+      alternateName: "The Roof Store",
       url: BASE,
       telephone: "+19542109614",
       email: "info@theroofstore.net",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "4411 SW 47th Ave",
         addressLocality: "Davie",
         addressRegion: "FL",
         postalCode: "33314",

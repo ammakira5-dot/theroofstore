@@ -14,7 +14,8 @@ export default function ManufacturersReport() {
       "Pre-application roof inspection required for RoofShield warranty programs in Florida. Includes infrared moisture scan, signed drawing legend, photo documentation, and required rework areas. Fee is 100% refundable.",
     provider: {
       "@type": "RoofingContractor",
-      name: "The Roof Store",
+      name: "The Roof Store Waterproofing Products",
+      alternateName: "The Roof Store",
       telephone: "954-210-9614",
       url: BASE,
     },

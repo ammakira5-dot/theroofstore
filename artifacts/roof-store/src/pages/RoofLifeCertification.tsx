@@ -68,7 +68,8 @@ export default function RoofLifeCertification() {
     description: "Professional roof coating treatment that extends the certified life of aging roofs in Florida, helping homeowners avoid forced re-roofing by insurance companies.",
     provider: {
       "@type": "LocalBusiness",
-      name: "The Roof Store",
+      name: "The Roof Store Waterproofing Products",
+      alternateName: "The Roof Store",
       telephone: "954-210-9614",
       areaServed: ["Broward County", "Miami-Dade County", "Palm Beach County"],
     },

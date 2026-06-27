@@ -145,9 +145,19 @@ export default function ManufacturersReport() {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Hairline fissures — tiny surface cracks that can be nearly invisible to the naked eye — are one of the most common and damaging problems found during inspection. They form from years of thermal expansion and contraction, UV degradation, and substrate movement. On their own they look harmless. But under Florida rain conditions, water forces its way through those micro-cracks, travels beneath the surface, and causes rot, mold, and structural damage far from the visible entry point.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-4">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Fissures are also a warranty liability. Applying the RoofShield Monolithic system over unrepaired fissures traps moisture beneath the coating — exactly the opposite of what the system is designed to do. That's why our inspection specifically flags every fissure and crack zone, and any required sealing is documented in the rework scope before a single drop of product is applied.
                 </p>
+                <div className="rounded-xl overflow-hidden border border-amber-200 mb-6">
+                  <img
+                    src="/images/roof-fissure-example.png"
+                    alt="Inspector pointing to a hairline fissure on a flat roof surface during pre-application inspection"
+                    className="w-full h-64 object-cover object-center"
+                  />
+                  <div className="bg-amber-50 px-4 py-2 text-xs text-amber-700 font-medium">
+                    Real inspection photo — a hairline fissure identified and flagged during a Manufacturer's Report walkthrough
+                  </div>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
                   {[
                     { label: "Cause", text: "Thermal cycling, UV breakdown, substrate movement over time" },

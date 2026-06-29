@@ -217,6 +217,7 @@ export default function RoofSystems() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="mt-12"
                   >
+                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {system.name}</div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                       {system.gallery.map((img, gi) => (
                         <div

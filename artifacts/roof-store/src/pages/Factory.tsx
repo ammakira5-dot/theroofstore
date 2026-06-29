@@ -8,9 +8,9 @@ import { Lightbox, useLightbox } from "@/components/Lightbox";
 const BASE = "https://www.theroofstore.net";
 
 const factoryPhotos = [
-  { src: "/images/factory/1.jpg", alt: "The Roof Store liquid rubber roof coating manufacturing facility in Davie, Florida", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
-  { src: "/images/factory/2.jpg", alt: "FungalShield SmartShield RoofShield production equipment at The Roof Store factory", title: "Roof Coating Production Equipment — The Roof Store Davie FL" },
-  { src: "/images/factory/3.jpg", alt: "Liquid rubber blending tanks for roof coating production at The Roof Store South Florida", title: "Liquid Rubber Blending — The Roof Store Manufacturing" },
+  { src: "/images/factory/exterior.png", alt: "The Roof Store manufacturing facility exterior — Davie Florida roof coating manufacturer since 1994", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
+  { src: "/images/factory/exterior2.png", alt: "The Roof Store MFG building exterior with team — roof coating manufacturer Davie Florida", title: "The Roof Store MFG — Davie Florida Manufacturing Facility" },
+  { src: "/images/factory/exterior3.png", alt: "The Roof Store MFG sign — The Original Liquid Applied Rubber Roof Shield System, Davie Florida", title: "The Roof Store MFG Sign — Original Liquid Applied Rubber Roof Shield System" },
   { src: "/images/factory/4.jpg", alt: "Roof coating factory production floor — The Roof Store Davie Florida manufacturer", title: "Factory Production Floor — The Roof Store" },
   { src: "/images/factory/5.jpg", alt: "Batch mixing process for liquid rubber roof coating system at The Roof Store", title: "Roof Coating Batch Mixing — The Roof Store" },
   { src: "/images/factory/7.jpg", alt: "Roof coating product storage and finishing at South Florida manufacturing facility", title: "Roof Coating Storage — The Roof Store Factory" },
@@ -19,9 +19,6 @@ const factoryPhotos = [
   { src: "/images/factory/13.jpg", alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
   { src: "/images/factory/14.jpg", alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
   { src: "/images/factory/15.jpg", alt: "Technician operating liquid rubber blending tank at The Roof Store coating facility in Davie Florida", title: "Liquid Rubber Blending — The Roof Store Roof Coating Manufacturer" },
-  { src: "/images/factory/exterior.png", alt: "The Roof Store manufacturing facility exterior — Davie Florida roof coating manufacturer since 1994", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
-  { src: "/images/factory/exterior2.png", alt: "The Roof Store MFG building exterior with team — roof coating manufacturer Davie Florida", title: "The Roof Store MFG — Davie Florida Manufacturing Facility" },
-  { src: "/images/factory/exterior3.png", alt: "The Roof Store MFG sign — The Original Liquid Applied Rubber Roof Shield System, Davie Florida", title: "The Roof Store MFG Sign — Original Liquid Applied Rubber Roof Shield System" },
   { src: "/images/factory/interior1.png", alt: "The Roof Store product showroom and supply area — roof coating materials and accessories in Davie Florida", title: "The Roof Store Showroom — Roof Coating Supplies Davie FL" },
   { src: "/images/factory/interior2.png", alt: "The Roof Store owner demonstrating roof coating fabric membrane at Davie Florida manufacturing facility", title: "Roof Coating Membrane Demo — The Roof Store Manufacturer" },
   { src: "/images/factory/mixing.png", alt: "Custom color tinting and mixing roof coating at The Roof Store manufacturing facility in Davie Florida", title: "Roof Coating Color Mixing — The Roof Store Manufacturer Davie FL" },

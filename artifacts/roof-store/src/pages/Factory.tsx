@@ -8,16 +8,16 @@ import { Lightbox, useLightbox } from "@/components/Lightbox";
 const BASE = "https://www.theroofstore.net";
 
 const factoryPhotos = [
-  { src: `${BASE}/images/factory/1.jpg`, alt: "The Roof Store liquid rubber roof coating manufacturing facility in Davie, Florida", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
-  { src: `${BASE}/images/factory/2.jpg`, alt: "FungalShield SmartShield RoofShield production equipment at The Roof Store factory", title: "Roof Coating Production Equipment — The Roof Store Davie FL" },
-  { src: `${BASE}/images/factory/3.jpg`, alt: "Liquid rubber blending tanks for roof coating production at The Roof Store South Florida", title: "Liquid Rubber Blending — The Roof Store Manufacturing" },
-  { src: `${BASE}/images/factory/4.jpg`, alt: "Roof coating factory production floor — The Roof Store Davie Florida manufacturer", title: "Factory Production Floor — The Roof Store" },
-  { src: `${BASE}/images/factory/5.jpg`, alt: "Batch mixing process for liquid rubber roof coating system at The Roof Store", title: "Roof Coating Batch Mixing — The Roof Store" },
-  { src: `${BASE}/images/factory/7.jpg`, alt: "Roof coating product storage and finishing at South Florida manufacturing facility", title: "Roof Coating Storage — The Roof Store Factory" },
-  { src: `${BASE}/images/factory/10.jpg`, alt: "Quality control lab testing roof coating formulas at The Roof Store Davie FL", title: "Quality Control Lab — The Roof Store Roof Coatings" },
-  { src: `${BASE}/images/factory/12.jpg`, alt: "FungalShield SmartShield RoofShield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
-  { src: `${BASE}/images/factory/13.jpg`, alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
-  { src: `${BASE}/images/factory/14.jpg`, alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
+  { src: "/images/factory/1.jpg", alt: "The Roof Store liquid rubber roof coating manufacturing facility in Davie, Florida", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
+  { src: "/images/factory/2.jpg", alt: "FungalShield SmartShield RoofShield production equipment at The Roof Store factory", title: "Roof Coating Production Equipment — The Roof Store Davie FL" },
+  { src: "/images/factory/3.jpg", alt: "Liquid rubber blending tanks for roof coating production at The Roof Store South Florida", title: "Liquid Rubber Blending — The Roof Store Manufacturing" },
+  { src: "/images/factory/4.jpg", alt: "Roof coating factory production floor — The Roof Store Davie Florida manufacturer", title: "Factory Production Floor — The Roof Store" },
+  { src: "/images/factory/5.jpg", alt: "Batch mixing process for liquid rubber roof coating system at The Roof Store", title: "Roof Coating Batch Mixing — The Roof Store" },
+  { src: "/images/factory/7.jpg", alt: "Roof coating product storage and finishing at South Florida manufacturing facility", title: "Roof Coating Storage — The Roof Store Factory" },
+  { src: "/images/factory/10.jpg", alt: "Quality control lab testing roof coating formulas at The Roof Store Davie FL", title: "Quality Control Lab — The Roof Store Roof Coatings" },
+  { src: "/images/factory/12.jpg", alt: "FungalShield SmartShield RoofShield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
+  { src: "/images/factory/13.jpg", alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
+  { src: "/images/factory/14.jpg", alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
   { src: "/images/factory/15.jpg", alt: "Technician operating liquid rubber blending tank at The Roof Store coating facility in Davie Florida", title: "Liquid Rubber Blending — The Roof Store Roof Coating Manufacturer" },
 ];
 

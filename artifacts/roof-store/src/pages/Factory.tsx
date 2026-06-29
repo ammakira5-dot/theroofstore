@@ -25,6 +25,7 @@ const factoryPhotos = [
   { src: "/images/factory/interior1.png", alt: "The Roof Store product showroom and supply area — roof coating materials and accessories in Davie Florida", title: "The Roof Store Showroom — Roof Coating Supplies Davie FL" },
   { src: "/images/factory/interior2.png", alt: "The Roof Store owner demonstrating roof coating fabric membrane at Davie Florida manufacturing facility", title: "Roof Coating Membrane Demo — The Roof Store Manufacturer" },
   { src: "/images/factory/mixing.png", alt: "Custom color tinting and mixing roof coating at The Roof Store manufacturing facility in Davie Florida", title: "Roof Coating Color Mixing — The Roof Store Manufacturer Davie FL" },
+  { src: "/images/factory/mixing-tank.png", alt: "Worker operating large liquid rubber blending tank at The Roof Store roof coating factory in Davie Florida", title: "Liquid Rubber Blending Tank — The Roof Store Manufacturing Davie FL" },
 ];
 
 const products = [

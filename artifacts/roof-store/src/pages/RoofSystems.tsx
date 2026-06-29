@@ -46,10 +46,6 @@ const systems = [
       "FP&L (Florida Power & Light) confirmed cooling cost savings",
       "Waterproof & guaranteed mildew-proof — 5× thicker than standard roof paint",
     ],
-    beforeSrc: "/images/projects/spanish-tile-before.png",
-    afterSrc: "/images/projects/spanish-tile-after.png",
-    beforeLabel: "Before",
-    afterLabel: "After SmartShield",
     gallery: [
       { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after SmartShield comparison" },
       { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after SmartShield" },
@@ -84,6 +80,10 @@ const systems = [
     extraAfterSrc: "/images/projects/flat-cement-after.png",
     extraBeforeLabel: "Before",
     extraAfterLabel: "After RoofShield",
+    extraBeforeSrc2: "/images/projects/spanish-tile-before.png",
+    extraAfterSrc2: "/images/projects/spanish-tile-after.png",
+    extraBeforeLabel2: "Before",
+    extraAfterLabel2: "After RoofShield",
     gallery: [
       { src: "/images/project-before-1.png", alt: "Tile roof before RoofShield waterproof membrane" },
       { src: "/images/project-after-1.png", alt: "Tile roof after RoofShield waterproof membrane" },
@@ -193,6 +193,18 @@ export default function RoofSystems() {
                           afterLabel={system.extraAfterLabel}
                           beforeAlt={`${system.name} — Before (2)`}
                           afterAlt={`${system.name} — After (2)`}
+                        />
+                      </div>
+                    )}
+                    {system.extraBeforeSrc2 && (
+                      <div className="mt-6">
+                        <BeforeAfterSlider
+                          beforeSrc={system.extraBeforeSrc2}
+                          afterSrc={system.extraAfterSrc2!}
+                          beforeLabel={system.extraBeforeLabel2}
+                          afterLabel={system.extraAfterLabel2}
+                          beforeAlt={`${system.name} — Before (3)`}
+                          afterAlt={`${system.name} — After (3)`}
                         />
                       </div>
                     )}

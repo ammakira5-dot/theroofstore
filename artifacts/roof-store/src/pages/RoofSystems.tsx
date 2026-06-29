@@ -24,10 +24,6 @@ const systems = [
       "UV-stable formula maintains protection through Florida heat",
       "Extends roof life by halting biological deterioration",
     ],
-    beforeSrc: "/images/projects/flat-cement-before.png",
-    afterSrc: "/images/projects/flat-cement-after.png",
-    beforeLabel: "Before",
-    afterLabel: "After FungalShield",
     gallery: [
       { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile waterproofing project exterior" },
       { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
@@ -84,6 +80,10 @@ const systems = [
     afterSrc: "/images/projects/clay-tile-after.png",
     beforeLabel: "Before",
     afterLabel: "After RoofShield",
+    extraBeforeSrc: "/images/projects/flat-cement-before.png",
+    extraAfterSrc: "/images/projects/flat-cement-after.png",
+    extraBeforeLabel: "Before",
+    extraAfterLabel: "After RoofShield",
     gallery: [
       { src: "/images/project-before-1.png", alt: "Tile roof before RoofShield waterproof membrane" },
       { src: "/images/project-after-1.png", alt: "Tile roof after RoofShield waterproof membrane" },
@@ -174,14 +174,28 @@ export default function RoofSystems() {
                   className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
                 >
                   <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <BeforeAfterSlider
-                      beforeSrc={system.beforeSrc}
-                      afterSrc={system.afterSrc}
-                      beforeLabel={system.beforeLabel}
-                      afterLabel={system.afterLabel}
-                      beforeAlt={`${system.name} — Before`}
-                      afterAlt={`${system.name} — After`}
-                    />
+                    {system.beforeSrc && (
+                      <BeforeAfterSlider
+                        beforeSrc={system.beforeSrc}
+                        afterSrc={system.afterSrc!}
+                        beforeLabel={system.beforeLabel}
+                        afterLabel={system.afterLabel}
+                        beforeAlt={`${system.name} — Before`}
+                        afterAlt={`${system.name} — After`}
+                      />
+                    )}
+                    {system.extraBeforeSrc && (
+                      <div className="mt-6">
+                        <BeforeAfterSlider
+                          beforeSrc={system.extraBeforeSrc}
+                          afterSrc={system.extraAfterSrc!}
+                          beforeLabel={system.extraBeforeLabel}
+                          afterLabel={system.extraAfterLabel}
+                          beforeAlt={`${system.name} — Before (2)`}
+                          afterAlt={`${system.name} — After (2)`}
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div className={i % 2 === 1 ? "lg:order-1" : ""}>

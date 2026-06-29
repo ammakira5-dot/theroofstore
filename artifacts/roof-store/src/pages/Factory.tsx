@@ -142,6 +142,10 @@ export default function Factory() {
                   title={photo.title}
                   className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  onError={e => {
+                    const el = e.currentTarget.closest(".overflow-hidden") as HTMLElement | null;
+                    if (el) el.style.display = "none";
+                  }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                   <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>

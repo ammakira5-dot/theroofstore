@@ -89,6 +89,8 @@ const systems = [
       { src: "/images/project-after-1.png", alt: "Tile roof after RoofShield waterproof membrane" },
       { src: "/images/project-before-2.png", alt: "Roof before RoofShield hurricane protection system" },
       { src: "/images/project-after-2.png", alt: "Roof after RoofShield hurricane protection system" },
+      { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile roof waterproofing project exterior" },
+      { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
     ],
   },
 ];

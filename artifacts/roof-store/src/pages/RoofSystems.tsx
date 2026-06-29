@@ -24,8 +24,8 @@ const systems = [
       "UV-stable formula maintains protection through Florida heat",
       "Extends roof life by halting biological deterioration",
     ],
-    beforeSrc: "/images/projects/clay-tile-before.png",
-    afterSrc: "/images/projects/clay-tile-after.png",
+    beforeSrc: "/images/projects/flat-cement-before.png",
+    afterSrc: "/images/projects/flat-cement-after.png",
     beforeLabel: "Before",
     afterLabel: "After FungalShield",
     gallery: [

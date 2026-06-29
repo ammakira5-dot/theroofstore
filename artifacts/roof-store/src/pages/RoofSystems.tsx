@@ -1,16 +1,20 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Droplets, ShieldCheck, Zap, Sun, ThumbsUp, Leaf } from "lucide-react";
+import { MapPin, ShieldCheck, Zap, Sun, Leaf, DollarSign } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { Lightbox, useLightbox, type LightboxImage } from "@/components/Lightbox";
 
 const systems = [
   {
     icon: Leaf,
-    image: "/images/fungalshield-product.png",
-    imageAlt: "FungalShield anti-fungal roof coating being applied to a Florida tile roof",
     name: "FungalShield",
     tagline: "Florida's Anti-Fungal Roof Coating System",
+    badge: "RP1 — Anti-Fungal System",
+    location: "Broward County, FL",
+    size: "Residential",
+    color: "bg-green-100 text-green-700",
     description:
       "Engineered specifically for Florida's humid climate, FungalShield is a high-performance anti-fungal, anti-algae roof coating that eliminates and prevents the black streaks and biological growth that plague South Florida roofs. Its active biocide formula bonds to the roof surface, creating a long-lasting barrier against mold, mildew, algae, and fungus — restoring appearance while protecting structural integrity.",
     features: [
@@ -20,16 +24,25 @@ const systems = [
       "UV-stable formula maintains protection through Florida heat",
       "Extends roof life by halting biological deterioration",
     ],
-    color: "bg-green-100 text-green-700",
+    beforeSrc: "/images/projects/flat-cement-before.png",
+    afterSrc: "/images/projects/flat-cement-after.png",
+    beforeLabel: "Before",
+    afterLabel: "After FungalShield",
+    gallery: [
+      { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile waterproofing project exterior" },
+      { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
+    ],
   },
   {
     icon: Sun,
-    image: "/images/smartshield-product.png",
-    imageAlt: "Aerial view of a Florida home with SmartShield energy-reflective cool roof coating",
     name: "SmartShield",
     tagline: "3,000+ Colors — The Darker the Color, the More It Reflects",
+    badge: "RP2 — Energy-Reflective Coating",
+    location: "South Florida",
+    size: "Residential",
+    color: "bg-accent/10 text-accent",
     description:
-      "SmartShield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — our team engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. For years, South Florida homeowners have wanted dark-colored roofs — charcoal, brown, slate — without sacrificing energy efficiency. SmartShield is the answer: over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
+      "SmartShield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — our team engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
     features: [
       "3,000+ color options — full custom palette, any shade including dark charcoal & brown",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology, TSR +32%",
@@ -37,17 +50,28 @@ const systems = [
       "FP&L (Florida Power & Light) confirmed cooling cost savings",
       "Waterproof & guaranteed mildew-proof — 5× thicker than standard roof paint",
     ],
-    color: "bg-accent/10 text-accent",
-    basf: true,
+    beforeSrc: "/images/projects/spanish-tile-before.png",
+    afterSrc: "/images/projects/spanish-tile-after.png",
+    beforeLabel: "Before",
+    afterLabel: "After SmartShield",
+    gallery: [
+      { src: "/images/project-before-1.png", alt: "Spanish tile roof before SmartShield color coating" },
+      { src: "/images/project-after-1.png", alt: "Spanish tile roof after SmartShield color coating" },
+      { src: "/images/project-before-2.png", alt: "Tile roof before SmartShield energy-reflective coating" },
+      { src: "/images/project-after-2.png", alt: "Tile roof after SmartShield energy-reflective coating" },
+    ],
   },
   {
     icon: ShieldCheck,
-    image: "/images/roofshield-product.png",
-    imageAlt: "RoofShield seamless waterproof membrane being applied to a flat roof",
     name: "RoofShield",
     tagline: "World's Only TAS-106 Dade County Uplift Rated Coating",
+    badge: "RP3 — Hurricane Protection Membrane",
+    location: "Davie, FL",
+    size: "Residential",
+    color: "bg-primary/10 text-primary",
+    worldsOnly: true,
     description:
-      "RoofShield (RP3) is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. Works on flat cement decks, shingle roofs, barrel tile, S-tile, metal, gravel, and foam — any Florida roof type. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
+      "RoofShield is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
     features: [
       "World's ONLY TAS-106 Dade County Uplift Pull Test certified roof coating",
       "Tested on real Spanish & concrete tile — adds true tile attachment to substrate",
@@ -56,14 +80,36 @@ const systems = [
       "100% seamless waterproof rubber membrane — stops leaks permanently",
       "Lifetime Warranty — maintenance-free, transferable & renewable",
     ],
-    color: "bg-primary/10 text-primary",
-    worldsOnly: true,
+    beforeSrc: "/images/projects/clay-tile-before.png",
+    afterSrc: "/images/projects/clay-tile-after.png",
+    beforeLabel: "Before",
+    afterLabel: "After RoofShield",
+    gallery: [
+      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after RoofShield comparison" },
+      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Restored Spanish tile roof close-up after RoofShield" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof home exterior after RoofShield restoration" },
+    ],
   },
 ];
 
 const BASE = "https://www.theroofstore.net";
 
+const allGalleryImages: LightboxImage[] = systems.flatMap(
+  (s) => (s.gallery ?? []).map((img) => ({ src: img.src, alt: img.alt }))
+);
+
+function galleryOffset(systemIndex: number): number {
+  let offset = 0;
+  for (let i = 0; i < systemIndex; i++) {
+    offset += systems[i].gallery?.length ?? 0;
+  }
+  return offset;
+}
+
 export default function RoofSystems() {
+  const lb = useLightbox(allGalleryImages);
+
   const schema = [
     {
       "@context": "https://schema.org",
@@ -88,6 +134,7 @@ export default function RoofSystems() {
   ];
 
   return (
+    <>
     <div className="w-full">
       <SEO
         title="FungalShield, SmartShield & RoofShield — Roof Systems for Florida"
@@ -96,6 +143,7 @@ export default function RoofSystems() {
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}
       />
+
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
@@ -104,7 +152,7 @@ export default function RoofSystems() {
             </div>
             <h1 className="text-5xl font-serif font-bold mb-6">Roof Systems</h1>
             <p className="text-xl text-white/80">
-              Advanced weatherproofing systems engineered for Florida's climate — designed to outperform and outlast traditional roofing.
+              Three proprietary systems. Engineered in South Florida. Built to outperform and outlast.
             </p>
           </motion.div>
         </div>
@@ -112,81 +160,87 @@ export default function RoofSystems() {
 
       <section className="py-24 bg-background">
         <div className="container px-4">
-          <div className="grid grid-cols-1 gap-16">
+          <div className="space-y-24">
             {systems.map((system, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
-              >
-                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                  {system.name === "RoofShield" && (
-                    <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
-                      ★ World's Only TAS-106 Dade County Rated Coating
-                    </div>
-                  )}
-                  <div className={`inline-flex items-center gap-3 px-4 py-2 rounded-full text-sm font-bold mb-6 ${system.color}`}>
-                    <system.icon className="h-4 w-4" />
-                    {system.tagline}
-                  </div>
-                  <h2 className="text-3xl font-serif font-bold text-primary mb-4">{system.name}</h2>
-                  <p className="text-muted-foreground text-lg leading-relaxed mb-8">{system.description}</p>
-                  <ul className="space-y-3 mb-8">
-                    {system.features.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3 text-foreground">
-                        <Zap className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
-                    <Link href="/contact">Get a Free Quote</Link>
-                  </Button>
-                </div>
-                <div className={`rounded-2xl overflow-hidden shadow-lg ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <picture>
-                    <source srcSet={system.image.replace(".png", ".webp")} type="image/webp" />
-                    <img
-                      src={system.image}
-                      alt={system.imageAlt}
-                      title={`${system.name} — ${system.tagline} | The Roof Store`}
-                      className="w-full h-72 lg:h-96 object-cover"
-                      loading="lazy"
-                      decoding="async"
+              <div key={i}>
+                {i > 0 && <div className="border-t border-border mb-24" />}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+                >
+                  <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                    <BeforeAfterSlider
+                      beforeSrc={system.beforeSrc}
+                      afterSrc={system.afterSrc}
+                      beforeLabel={system.beforeLabel}
+                      afterLabel={system.afterLabel}
+                      beforeAlt={`${system.name} — Before`}
+                      afterAlt={`${system.name} — After`}
                     />
-                  </picture>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+                  </div>
 
-      <section className="py-20 bg-muted">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { icon: ShieldCheck, label: "Windproof" },
-              { icon: Droplets, label: "Waterproof" },
-              { icon: Sun, label: "UV Resistant" },
-              { icon: ThumbsUp, label: "BBB Certified" },
-            ].map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="flex flex-col items-center"
-              >
-                <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center mb-4">
-                  <item.icon className="h-8 w-8 text-white" />
-                </div>
-                <span className="font-bold font-serif text-primary text-lg">{item.label}</span>
-              </motion.div>
+                  <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                    {system.worldsOnly && (
+                      <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+                        ★ World's Only TAS-106 Dade County Rated Coating
+                      </div>
+                    )}
+                    <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
+                      <MapPin className="h-3.5 w-3.5" />
+                      {system.location} · {system.size}
+                    </div>
+                    <h2 className="text-3xl font-serif font-bold text-primary mb-2">{system.name}</h2>
+                    <div className="text-sm font-semibold text-muted-foreground mb-4 uppercase tracking-wide">{system.tagline}</div>
+                    <p className="text-muted-foreground leading-relaxed mb-6 text-lg">{system.description}</p>
+                    <ul className="space-y-2 mb-6">
+                      {system.features.map((feature, j) => (
+                        <li key={j} className="flex items-start gap-3 text-foreground">
+                          <Zap className="h-4 w-4 text-accent shrink-0 mt-1" />
+                          <span className="text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
+                      <Link href="/contact">Get a Free Quote</Link>
+                    </Button>
+                  </div>
+                </motion.div>
+
+                {system.gallery && system.gallery.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mt-12"
+                  >
+                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {system.name}</div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      {system.gallery.map((img, gi) => (
+                        <div
+                          key={gi}
+                          className="overflow-hidden rounded-lg shadow-sm aspect-[4/3] bg-muted relative group cursor-zoom-in"
+                          onClick={() => lb.open(galleryOffset(i) + gi)}
+                        >
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            title={`${img.alt} — ${system.name} | The Roof Store`}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
+                            <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -202,5 +256,7 @@ export default function RoofSystems() {
         </div>
       </section>
     </div>
+    <Lightbox images={allGalleryImages} index={lb.activeIndex} onClose={lb.close} onPrev={lb.prev} onNext={lb.next} />
+    </>
   );
 }

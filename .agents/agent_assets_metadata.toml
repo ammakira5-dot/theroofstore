@@ -101,3 +101,15 @@ id = "sbB1FgQVVdX9xirYxRrdG"
 uri = "file://attached_assets/citation-fix-list.csv"
 type = "table"
 title = "Citation Fix List"
+
+[[outputs]]
+id = "E9jWc91N-S61AzIeGGCsV"
+uri = "file://attached_assets/image_search/tile_roof_after.webp"
+type = "image"
+title = "Option 1 — Tile roof after coating (coated/sealed look)"
+
+[[outputs]]
+id = "ChMjEWtx4rc_X3JS2WsZd"
+uri = "file://attached_assets/image_search/tile_roof_applying.webp"
+type = "image"
+title = "Option 2 — Tile roof with coating being applied"

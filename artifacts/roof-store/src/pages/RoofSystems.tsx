@@ -55,10 +55,10 @@ const systems = [
     beforeLabel: "Before",
     afterLabel: "After SmartShield",
     gallery: [
-      { src: "/images/project-before-1.png", alt: "Spanish tile roof before SmartShield color coating" },
-      { src: "/images/project-after-1.png", alt: "Spanish tile roof after SmartShield color coating" },
-      { src: "/images/project-before-2.png", alt: "Tile roof before SmartShield energy-reflective coating" },
-      { src: "/images/project-after-2.png", alt: "Tile roof after SmartShield energy-reflective coating" },
+      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after SmartShield comparison" },
+      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after SmartShield" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Restored Spanish tile roof close-up after SmartShield" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof home exterior after SmartShield" },
     ],
   },
   {
@@ -85,10 +85,10 @@ const systems = [
     beforeLabel: "Before",
     afterLabel: "After RoofShield",
     gallery: [
-      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after RoofShield comparison" },
-      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after" },
-      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Restored Spanish tile roof close-up after RoofShield" },
-      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof home exterior after RoofShield restoration" },
+      { src: "/images/project-before-1.png", alt: "Tile roof before RoofShield waterproof membrane" },
+      { src: "/images/project-after-1.png", alt: "Tile roof after RoofShield waterproof membrane" },
+      { src: "/images/project-before-2.png", alt: "Roof before RoofShield hurricane protection system" },
+      { src: "/images/project-after-2.png", alt: "Roof after RoofShield hurricane protection system" },
     ],
   },
 ];

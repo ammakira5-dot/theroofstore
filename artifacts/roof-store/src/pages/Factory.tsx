@@ -24,6 +24,7 @@ const factoryPhotos = [
   { src: "/images/factory/exterior3.png", alt: "The Roof Store MFG sign — The Original Liquid Applied Rubber Roof Shield System, Davie Florida", title: "The Roof Store MFG Sign — Original Liquid Applied Rubber Roof Shield System" },
   { src: "/images/factory/interior1.png", alt: "The Roof Store product showroom and supply area — roof coating materials and accessories in Davie Florida", title: "The Roof Store Showroom — Roof Coating Supplies Davie FL" },
   { src: "/images/factory/interior2.png", alt: "The Roof Store owner demonstrating roof coating fabric membrane at Davie Florida manufacturing facility", title: "Roof Coating Membrane Demo — The Roof Store Manufacturer" },
+  { src: "/images/factory/mixing.png", alt: "Custom color tinting and mixing roof coating at The Roof Store manufacturing facility in Davie Florida", title: "Roof Coating Color Mixing — The Roof Store Manufacturer Davie FL" },
 ];
 
 const products = [

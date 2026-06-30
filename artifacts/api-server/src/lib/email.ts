@@ -172,9 +172,10 @@ export async function sendLeadEmail(data: ContactSubmission): Promise<void> {
 </body>
 </html>`;
 
+  const to = process.env.LEADS_EMAIL ?? "ammakira5@gmail.com";
   await resend.emails.send({
     from: "The Roof Store <leads@theroofstore.net>",
-    to: ["theroofstore@gmail.com"],
+    to: [to],
     replyTo: data.email,
     subject: `New Lead: ${data.name} — ${data.phone}`,
     html,

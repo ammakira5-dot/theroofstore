@@ -42,6 +42,30 @@ const faqs = [
     a: "Yes. We provide written performance warranties on all our installations. Warranty terms vary by system — from 5-year maintenance warranties to 15+ year performance guarantees on our premium systems. Ask our team for full warranty details during your consultation.",
   },
   {
+    q: "Do I need to pressure clean my roof before painting or waterproofing it?",
+    a: "Yes — professional roof pressure cleaning is always the required first step before any tile roof painting, waterproofing, or flat roof sealing. Paint and coatings need a clean, dry surface to bond properly. Applying coatings over algae, mold, dirt, or loose material will cause premature peeling and failure. Our team handles the pressure cleaning as part of every roof painting and waterproofing project.",
+  },
+  {
+    q: "Can you paint a tile roof in South Florida?",
+    a: "Absolutely. Tile roof painting is one of our most popular services. We use professional-grade elastomeric roof coatings specifically formulated for Florida's UV intensity, heat, and humidity — available in over 3,000 colors. Tile roof painting restores faded, chalky, or discolored tiles, improves curb appeal, adds a waterproof barrier, and can reduce cooling costs by reflecting solar heat. All painting is done after thorough pressure cleaning.",
+  },
+  {
+    q: "How do I waterproof a tile roof?",
+    a: "Tile roof waterproofing involves cleaning the roof surface, repairing any cracked or broken tiles, repointing ridge caps and hip areas, and applying a multi-coat elastomeric coating system that seals every tile surface and fills every gap. The result is a continuous waterproof membrane over your existing tile roof that stops leaks permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating — the strongest waterproofing solution available for tile roofs in South Florida.",
+  },
+  {
+    q: "How do I seal a flat roof after pressure cleaning?",
+    a: "After pressure cleaning a flat or low-slope roof, the surface needs to dry completely (typically 24–48 hours in Florida weather), then a primer is applied followed by one or more coats of elastomeric rubber coating. Our flat roof sealing process creates a seamless, fully-adhered waterproof membrane with no seams, joints, or weak points. We handle the entire process — pressure cleaning, drying, priming, and sealing — as a single continuous project.",
+  },
+  {
+    q: "What types of roofs do you pressure clean?",
+    a: "We pressure clean all roof types common in South Florida: Spanish clay tile, flat cement tile, concrete tile, clay barrel tile, commercial built-up flat decks, modified bitumen, and metal roofs. We use calibrated low-pressure washing techniques appropriate to each surface type — ensuring a thorough clean without damaging tiles or dislodging mortar.",
+  },
+  {
+    q: "How much does roof pressure cleaning cost in South Florida?",
+    a: "Roof pressure cleaning costs vary based on roof size, pitch, and condition. Most residential tile roofs in Broward, Miami-Dade, and Palm Beach County range from a few hundred to over a thousand dollars depending on square footage. We include a free roof inspection with every estimate — call us at 954-210-9614 or use our contact form for a no-obligation quote.",
+  },
+  {
     q: "How do I get started?",
     a: "Simply call us at 954-210-9614 or use our online contact form to schedule a free roof inspection and consultation. One of our certified technicians will come to your property, assess your roof, and provide a detailed written proposal at no charge.",
   },

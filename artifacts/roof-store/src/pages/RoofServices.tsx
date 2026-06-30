@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star } from "lucide-react";
+import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star, Waves } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const services = [
+  {
+    icon: Waves,
+    title: "Roof Pressure Cleaning",
+    description:
+      "Professional roof pressure cleaning is the essential first step before any tile roof painting, waterproofing, or flat roof sealing. We use calibrated low-pressure washing to safely deep-clean Spanish tile, flat cement tile, clay barrel tile, and flat decks — removing algae, mold, black streaking, and biological buildup without damaging the tile surface.",
+    benefits: ["Safe for all tile types — clay, cement, and composite", "Required before any painting, coating, or sealing", "Removes algae, mold, moss, and black streaking", "Prepares surface for maximum adhesion of coatings"],
+  },
   {
     icon: Star,
     title: "Roof Tile Reglazing",
@@ -124,6 +131,41 @@ export default function RoofServices() {
                 </ul>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SEO keyword section */}
+      <section className="py-20 bg-muted">
+        <div className="container px-4 max-w-5xl mx-auto space-y-12">
+          <div className="text-center mb-4">
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Painting &amp; Waterproofing in South Florida</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean a Spanish tile roof, paint a flat cement tile roof, waterproof a clay tile roof, or seal a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-background rounded-xl p-8 border shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Roof Pressure Cleaning — All Roof Types</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">Professional roof pressure cleaning removes years of algae, mold, black streaking, and biological buildup from tile, cement, and flat roofs. Pressure cleaning is always the first step before any roof painting, coating, or waterproofing job — ensuring maximum adhesion and long-term performance.</p>
+              <p className="text-sm font-semibold text-foreground mb-2">We safely pressure clean:</p>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li className="flex gap-2"><span className="text-accent">→</span> Spanish clay tile &amp; cement tile roofs</li>
+                <li className="flex gap-2"><span className="text-accent">→</span> Clay barrel tile roofs</li>
+                <li className="flex gap-2"><span className="text-accent">→</span> Flat cement tile roofs</li>
+                <li className="flex gap-2"><span className="text-accent">→</span> Commercial built-up flat decks</li>
+              </ul>
+            </div>
+            <div className="bg-background rounded-xl p-8 border shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Painting &amp; Color Restoration</h3>
+              <p className="text-muted-foreground leading-relaxed">Faded, chalky, or discolored roof tiles impact curb appeal and resale value. Our tile roof painting service uses professional-grade elastomeric coatings in 3,000+ colors to restore your tile's appearance — or give it an entirely new look. All tile roof painting is done after professional pressure cleaning to ensure proper adhesion and a lasting finish.</p>
+            </div>
+            <div className="bg-background rounded-xl p-8 border shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Waterproofing</h3>
+              <p className="text-muted-foreground leading-relaxed">Cracked, porous tile lets water infiltrate your roof deck — leading to leaks, rot, and costly structural damage. Our tile roof waterproofing systems fill every gap and seal every surface, creating a continuous waterproof membrane that keeps Florida's torrential rains out permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating.</p>
+            </div>
+            <div className="bg-background rounded-xl p-8 border shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Flat Roof Sealing After Pressure Cleaning</h3>
+              <p className="text-muted-foreground leading-relaxed">After pressure cleaning, a flat or low-slope roof needs a fresh coat of rubber waterproofing sealant to restore its watertight integrity. Our flat roof sealing service applies a seamless elastomeric membrane directly over the cleaned surface — stopping leaks and protecting against Florida's ponding rain and intense UV exposure.</p>
+            </div>
           </div>
         </div>
       </section>

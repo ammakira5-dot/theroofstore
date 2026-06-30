@@ -80,6 +80,20 @@ export default function ManufacturersReport() {
       {/* What it is */}
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-5xl mx-auto">
+
+          {/* Not-an-estimate callout */}
+          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-7 mb-16 flex items-start gap-5">
+            <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+              <ClipboardCheck className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-primary mb-2">This Is Not a Price Estimate</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                The Manufacturer's Inspection Report is a <strong className="text-foreground">formal documented report</strong> — not a quote, not a sales visit, not a ballpark number. Think of it the same way you think of your <strong className="text-foreground">Wind Mitigation Report</strong>: a licensed inspector comes out, documents the current state of your roof with photos, drawings, and moisture data, and produces a signed report that becomes the basis for your warranty coverage. Just as your insurance company requires a wind mitigation report before issuing a wind coverage policy, The Roof Store requires this inspection report before issuing a RoofShield manufacturer's warranty. The $150/5,000 sq ft fee is <strong className="text-foreground">100% refunded</strong> when you proceed with the warranty program.
+              </p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">What Is It?</div>

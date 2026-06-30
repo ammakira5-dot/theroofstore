@@ -59,7 +59,10 @@ const BUSINESS_CORE = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "RoofShield (RP3) — Full Monolithic Hurricane Protection System" } },
     ],
   },
-  sameAs: ["https://www.theroofstore.net"],
+  sameAs: [
+    "https://www.theroofstore.net",
+    "https://share.google/N1wxTaP5lNwkenLa1",
+  ],
 };
 
 export default function Home() {

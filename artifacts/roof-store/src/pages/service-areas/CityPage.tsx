@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { MapPin, Phone, ShieldCheck, Star } from "lucide-react";
+import { MapPin, Phone, ShieldCheck, Star, Waves, Paintbrush, Droplets, Wind, Wrench } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
@@ -143,18 +143,45 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    "Rubber Roof Coating",
-                    "Tile Roof Restoration",
-                    "Tile Reglazing & Reseal",
-                    "Flat Deck Waterproofing",
-                    "Elastomeric Coating",
-                    "Hurricane Protection Coating",
-                    "Silicone Roof System",
-                    "Emergency Roof Repair",
+                    {
+                      icon: Waves,
+                      title: "Roof Pressure Cleaning",
+                      desc: `Professional low-pressure washing removes years of algae, mold, and black streaking from tile and flat roofs in ${city}. Always the required first step before any painting, coating, or waterproofing.`,
+                    },
+                    {
+                      icon: Paintbrush,
+                      title: "Tile Roof Painting",
+                      desc: `Restore faded, chalky, or discolored tile roofs with professional-grade elastomeric coatings in 3,000+ colors. A popular choice for ${city} homeowners looking to refresh curb appeal and resale value.`,
+                    },
+                    {
+                      icon: Droplets,
+                      title: "Tile Roof Waterproofing",
+                      desc: `Seal every tile surface with a continuous waterproof membrane that stops leaks permanently — without the cost of a full replacement. Covers Spanish tile, flat cement tile, and clay barrel tile roofs in ${city}.`,
+                    },
+                    {
+                      icon: ShieldCheck,
+                      title: "Flat Roof Sealing",
+                      desc: `Seamless elastomeric rubber membrane applied over your existing flat deck — no seams, no weak points. Ideal for flat-roofed homes and commercial buildings throughout ${city}.`,
+                    },
+                    {
+                      icon: Wind,
+                      title: "Hurricane Protection Coating",
+                      desc: `Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating — engineered to withstand South Florida hurricane-force winds and keep ${city} homes protected season after season.`,
+                    },
+                    {
+                      icon: Wrench,
+                      title: "Roof Repair & Maintenance",
+                      desc: `Cracked tiles, failed ridge caps, eave wood damage — we repair all problem areas before waterproofing so your ${city} roof is fully sound before any warranty system is applied.`,
+                    },
                   ].map((service, i) => (
-                    <div key={i} className="flex items-center gap-3 py-2 border-b border-border last:border-0">
-                      <ShieldCheck className="h-5 w-5 text-accent shrink-0" />
-                      <span className="text-foreground">{service}</span>
+                    <div key={i} className="flex items-start gap-4 p-5 bg-muted/50 rounded-xl border hover:shadow-sm transition-shadow">
+                      <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <service.icon className="h-5 w-5 text-accent" />
+                      </div>
+                      <div>
+                        <div className="font-bold text-foreground mb-1">{service.title}</div>
+                        <div className="text-muted-foreground text-sm leading-relaxed">{service.desc}</div>
+                      </div>
                     </div>
                   ))}
                 </div>

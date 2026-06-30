@@ -163,7 +163,7 @@ export default function RoofSystems() {
                   transition={{ duration: 0.6 }}
                   className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
                 >
-                  <div className={i % 2 === 1 ? "order-2 lg:order-2" : ""}>
+                  <div className={i % 2 === 1 ? "order-2 lg:order-2" : "order-2 lg:order-1"}>
                     {system.beforeSrc ? (
                       <>
                         <BeforeAfterSlider
@@ -223,7 +223,7 @@ export default function RoofSystems() {
                     ) : null}
                   </div>
 
-                  <div className={i % 2 === 1 ? "order-1 lg:order-1" : ""}>
+                  <div className={i % 2 === 1 ? "order-1 lg:order-1" : "order-1 lg:order-2"}>
                     {system.worldsOnly && (
                       <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                         ★ World's Only TAS-106 Dade County Rated Coating

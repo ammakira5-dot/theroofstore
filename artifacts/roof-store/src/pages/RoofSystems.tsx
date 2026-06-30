@@ -73,12 +73,12 @@ const systems = [
       "Lifetime Warranty — maintenance-free, transferable & renewable",
     ],
     gallery: [
-      { src: "/images/project-before-1.png", alt: "Tile roof before RoofShield waterproof membrane" },
-      { src: "/images/project-after-1.png", alt: "Tile roof after RoofShield waterproof membrane" },
-      { src: "/images/project-before-2.png", alt: "Roof before RoofShield hurricane protection system" },
-      { src: "/images/project-after-2.png", alt: "Roof after RoofShield hurricane protection system" },
-      { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile roof waterproofing project exterior" },
-      { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
+      { src: "/images/projects/clay-tile-before.png", alt: "Clay tile roof before RoofShield waterproof coating" },
+      { src: "/images/projects/clay-tile-after.png", alt: "Clay tile roof after RoofShield waterproof coating" },
+      { src: "/images/projects/flat-cement-before.png", alt: "Flat cement roof before RoofShield waterproof coating" },
+      { src: "/images/projects/flat-cement-after.png", alt: "Flat cement roof after RoofShield waterproof coating" },
+      { src: "/images/projects/spanish-tile-before.png", alt: "Spanish tile roof before RoofShield waterproof coating" },
+      { src: "/images/projects/spanish-tile-after.png", alt: "Spanish tile roof after RoofShield waterproof coating" },
     ],
   },
 ];

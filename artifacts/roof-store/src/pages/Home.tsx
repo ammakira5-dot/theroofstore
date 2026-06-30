@@ -1,8 +1,30 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wind, Wrench, Award, ArrowRight, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
+
+const heroSlides = [
+  {
+    headline: (
+      <>
+        Don't Re-Roof.<br />
+        <span className="text-accent">Weatherproof</span> at 1/2 the Cost.
+      </>
+    ),
+    sub: "The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.",
+  },
+  {
+    headline: (
+      <>
+        Preserve Your<br />
+        <span className="text-accent">Property's Value.</span>
+      </>
+    ),
+    sub: "Our coatings protect your roofing materials and preserve the liquidity of your property investment — paying for themselves the moment they're installed.",
+  },
+];
 
 const BASE = "https://www.theroofstore.net";
 
@@ -41,6 +63,17 @@ const BUSINESS_CORE = {
 };
 
 export default function Home() {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSlideIndex((i) => (i + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const slide = heroSlides[slideIndex];
+
   const schema = [
     {
       "@context": "https://schema.org",
@@ -88,13 +121,34 @@ export default function Home() {
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
               A+ BBB Rated Since 1994
             </div>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
-              Don't Re-Roof.<br />
-              <span className="text-accent">Weatherproof</span> at 1/2 the Cost.
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-10 font-medium">
-              The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal &amp; Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.
-            </p>
+            <div className="relative min-h-[220px] md:min-h-[260px] mb-6">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={slideIndex}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
+                    {slide.headline}
+                  </h1>
+                  <p className="text-xl md:text-2xl text-white/90 font-medium">
+                    {slide.sub}
+                  </p>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+            <div className="flex gap-2 mb-6">
+              {heroSlides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setSlideIndex(i)}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${i === slideIndex ? "w-8 bg-accent" : "w-4 bg-white/40"}`}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
+            </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
                 <Link href="/contact">Schedule Your Free Consultation</Link>

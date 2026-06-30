@@ -87,9 +87,15 @@ export default function ManufacturersReport() {
               <ClipboardCheck className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-primary mb-2">This Is Not a Price Estimate</h3>
+              <h3 className="text-xl font-bold text-primary mb-2">What This Report Actually Is</h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                The Manufacturer's Inspection Report is the <strong className="text-foreground">product manufacturer's assessment</strong> of whether your specific roof meets the minimum standards required for the RoofShield system to be applied, cleaned, and sealed successfully. It is not a price estimate — it is a <strong className="text-foreground">pass/fail qualification report</strong> that must be completed before any exact pricing can be finalized.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                It is similar in concept to a wind mitigation report — an independent, documented evaluation of your roof's current condition — but its purpose is different: instead of satisfying an insurance requirement, it satisfies the <strong className="text-foreground">manufacturer's own minimum quality standards</strong> so that the warranty they issue is valid and enforceable.
+              </p>
               <p className="text-muted-foreground leading-relaxed">
-                The Manufacturer's Inspection Report is a <strong className="text-foreground">formal documented report</strong> — not a quote, not a sales visit, not a ballpark number. Think of it the same way you think of your <strong className="text-foreground">Wind Mitigation Report</strong>: a licensed inspector comes out, documents the current state of your roof with photos, drawings, and moisture data, and produces a signed report that becomes the basis for your warranty coverage. Just as your insurance company requires a wind mitigation report before issuing a wind coverage policy, The Roof Store requires this inspection report before issuing a RoofShield manufacturer's warranty. The $150/5,000 sq ft fee is <strong className="text-foreground">100% refunded</strong> when you proceed with the warranty program.
+                While exact pricing is determined after the report, our <strong className="text-foreground">factory price sheet does publish general per-sq-ft rates</strong> based on roof type (flat, tile, pitch) — so you can get a ballpark sense of cost before scheduling. The $150/5,000 sq ft report fee is <strong className="text-foreground">100% refunded</strong> when you proceed with the warranty program.
               </p>
             </div>
           </div>

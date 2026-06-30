@@ -164,40 +164,63 @@ export default function RoofSystems() {
                   className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
                 >
                   <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    {system.beforeSrc && (
-                      <BeforeAfterSlider
-                        beforeSrc={system.beforeSrc}
-                        afterSrc={system.afterSrc!}
-                        beforeLabel={system.beforeLabel}
-                        afterLabel={system.afterLabel}
-                        beforeAlt={`${system.name} — Before`}
-                        afterAlt={`${system.name} — After`}
-                      />
-                    )}
-                    {system.extraBeforeSrc && (
-                      <div className="mt-6">
+                    {system.beforeSrc ? (
+                      <>
                         <BeforeAfterSlider
-                          beforeSrc={system.extraBeforeSrc}
-                          afterSrc={system.extraAfterSrc!}
-                          beforeLabel={system.extraBeforeLabel}
-                          afterLabel={system.extraAfterLabel}
-                          beforeAlt={`${system.name} — Before (2)`}
-                          afterAlt={`${system.name} — After (2)`}
+                          beforeSrc={system.beforeSrc}
+                          afterSrc={system.afterSrc!}
+                          beforeLabel={system.beforeLabel}
+                          afterLabel={system.afterLabel}
+                          beforeAlt={`${system.name} — Before`}
+                          afterAlt={`${system.name} — After`}
                         />
+                        {system.extraBeforeSrc && (
+                          <div className="mt-6">
+                            <BeforeAfterSlider
+                              beforeSrc={system.extraBeforeSrc}
+                              afterSrc={system.extraAfterSrc!}
+                              beforeLabel={system.extraBeforeLabel}
+                              afterLabel={system.extraAfterLabel}
+                              beforeAlt={`${system.name} — Before (2)`}
+                              afterAlt={`${system.name} — After (2)`}
+                            />
+                          </div>
+                        )}
+                        {system.extraBeforeSrc2 && (
+                          <div className="mt-6">
+                            <BeforeAfterSlider
+                              beforeSrc={system.extraBeforeSrc2}
+                              afterSrc={system.extraAfterSrc2!}
+                              beforeLabel={system.extraBeforeLabel2}
+                              afterLabel={system.extraAfterLabel2}
+                              beforeAlt={`${system.name} — Before (3)`}
+                              afterAlt={`${system.name} — After (3)`}
+                            />
+                          </div>
+                        )}
+                      </>
+                    ) : system.gallery && system.gallery.length > 0 ? (
+                      <div className="grid grid-cols-2 gap-3">
+                        {system.gallery.map((img, idx) => (
+                          <div
+                            key={idx}
+                            className="overflow-hidden rounded-xl aspect-[4/3] bg-muted relative group cursor-zoom-in"
+                            onClick={() => lb.open(galleryOffset(i) + idx)}
+                          >
+                            <img
+                              src={img.src}
+                              alt={img.alt}
+                              title={`${img.alt} — ${system.name} | The Roof Store`}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                    )}
-                    {system.extraBeforeSrc2 && (
-                      <div className="mt-6">
-                        <BeforeAfterSlider
-                          beforeSrc={system.extraBeforeSrc2}
-                          afterSrc={system.extraAfterSrc2!}
-                          beforeLabel={system.extraBeforeLabel2}
-                          afterLabel={system.extraAfterLabel2}
-                          beforeAlt={`${system.name} — Before (3)`}
-                          afterAlt={`${system.name} — After (3)`}
-                        />
-                      </div>
-                    )}
+                    ) : null}
                   </div>
 
                   <div className={i % 2 === 1 ? "lg:order-1" : ""}>
@@ -227,7 +250,7 @@ export default function RoofSystems() {
                   </div>
                 </motion.div>
 
-                {system.gallery && system.gallery.length > 0 && (
+                {system.beforeSrc && system.gallery && system.gallery.length > 0 && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

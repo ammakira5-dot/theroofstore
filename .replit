@@ -34,3 +34,9 @@ externalPort = 3000
 [[ports]]
 localPort = 24639
 externalPort = 80
+
+[userenv]
+
+[userenv.shared]
+SMTP_USER = "roofrestor@bellsouth.net"
+SMTP_TO = "roofrestor@bellsouth.net"

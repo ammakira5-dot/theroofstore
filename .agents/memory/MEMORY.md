@@ -1,1 +1,2 @@
 - [Deploy approval required](deploy-policy.md) — never suggest publishing unless the user explicitly says to publish/deploy.
+- [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.

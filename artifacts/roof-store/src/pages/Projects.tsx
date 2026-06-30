@@ -40,6 +40,19 @@ const beforeAfterProjects = [
     afterLabel: "After",
   },
   {
+    title: "Residential Flat Roof Waterproofing",
+    type: "Full Rubber Elastomeric Membrane System",
+    location: "South Florida",
+    size: "Residential Flat Deck",
+    saved: "$15,000+",
+    description:
+      "This residential flat deck had years of failed patch repairs — peeling old coating, water stains, and bare membrane in high-traffic areas around the parapet walls. We stripped the failed material, primed the deck, and applied a full seamless elastomeric rubber membrane system. The result: a bright white, fully waterproof surface with no seams or weak points.",
+    beforeSrc: "/images/projects/flat-roof-residential-before.png",
+    afterSrc: "/images/projects/flat-roof-residential-after.png",
+    beforeLabel: "Before",
+    afterLabel: "After",
+  },
+  {
     title: "Flat Deck Rubber Roof Installation",
     type: "Liquid Rubber Membrane — Full Flat Deck",
     location: "South Florida",

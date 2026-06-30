@@ -28,10 +28,10 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
       email: "theroofstore@gmail.com",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "4411 SW 47th Ave",
+        streetAddress: "4801 S University Dr",
         addressLocality: "Davie",
         addressRegion: "FL",
-        postalCode: "33314",
+        postalCode: "33328",
         addressCountry: "US",
       },
       areaServed: {

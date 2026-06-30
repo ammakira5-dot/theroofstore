@@ -30,10 +30,10 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
       image,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "4411 SW 47th Ave",
+        streetAddress: "4801 S University Dr",
         addressLocality: "Davie",
         addressRegion: "FL",
-        postalCode: "33314",
+        postalCode: "33328",
         addressCountry: "US",
       },
       areaServed: {

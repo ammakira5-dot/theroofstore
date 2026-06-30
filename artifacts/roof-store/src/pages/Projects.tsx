@@ -154,7 +154,7 @@ export default function Projects() {
         name: "The Roof Store",
         url: BASE,
         telephone: "+19542109614",
-        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
     },
     {

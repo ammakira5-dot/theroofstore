@@ -391,7 +391,7 @@ export function buildAutoResponseHtml(name: string): string {
   <!-- FOOTER -->
   <div style="background: #2d3e4a; padding: 20px 32px; border-radius: 0 0 8px 8px; text-align: center;">
     <p style="margin: 0; font-size: 11px; color: rgba(255,255,255,0.4); line-height: 1.8;">
-      The Roof Store · Storm Shield Paint Systems Inc. · Davie, FL 33314<br>
+      The Roof Store · Storm Shield Paint Systems Inc. · Davie, FL 33328<br>
       <a href="https://www.theroofstore.net" style="color: rgba(255,255,255,0.4);">theroofstore.net</a> · info@theroofstore.net · 954-210-9614<br>
       Copyright &copy; ${new Date().getFullYear()} theroofstore.net · A+ BBB Rated Since 1994
     </p>

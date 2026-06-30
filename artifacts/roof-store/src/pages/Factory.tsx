@@ -51,7 +51,7 @@ export default function Factory() {
         "@type": "PostalAddress",
         addressLocality: "Davie",
         addressRegion: "FL",
-        postalCode: "33314",
+        postalCode: "33328",
         addressCountry: "US",
       },
       description: "The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",

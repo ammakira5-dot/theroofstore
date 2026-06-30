@@ -52,7 +52,7 @@ export default function Contact() {
         url: "https://www.theroofstore.net",
         telephone: "+19542109614",
         email: "theroofstore@gmail.com",
-        address: { "@type": "PostalAddress", streetAddress: "4411 SW 47th Ave", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+        address: { "@type": "PostalAddress", streetAddress: "4801 S University Dr", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+19542109614",

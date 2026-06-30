@@ -19,10 +19,10 @@ const schema = {
     telephone: "+19542109614",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "4411 SW 47th Ave",
+      streetAddress: "4801 S University Dr",
       addressLocality: "Davie",
       addressRegion: "FL",
-      postalCode: "33314",
+      postalCode: "33328",
       addressCountry: "US",
     },
   },
@@ -262,7 +262,7 @@ export default function PartnerNetwork() {
               </a>
             </div>
             <p className="text-white/50 text-sm mt-6">
-              4411 SW 47th Ave, Davie FL 33314 · A+ BBB Rated since 1994
+              4801 S University Dr, Davie FL 33328 · A+ BBB Rated since 1994
             </p>
           </motion.div>
         </div>

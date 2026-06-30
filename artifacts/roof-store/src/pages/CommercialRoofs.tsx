@@ -133,7 +133,7 @@ export default function CommercialRoofs() {
         name: "The Roof Store",
         url: BASE,
         telephone: "+19542109614",
-        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
       areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
       description: "Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. TAS-106 certified.",

@@ -26,7 +26,7 @@ export default function About() {
           "@type": "PostalAddress",
           addressLocality: "Davie",
           addressRegion: "FL",
-          postalCode: "33314",
+          postalCode: "33328",
           addressCountry: "US",
         },
         description: "The Roof Store is a Florida-licensed roofing manufacturer and contractor. We manufacture FungalShield, SmartShield, and RoofShield — proprietary rubber roof coating systems — at our Davie, FL facility and apply them ourselves.",

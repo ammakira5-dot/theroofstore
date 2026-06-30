@@ -50,7 +50,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
         "@type": "Organization",
         name: "The Roof Store",
         url: BASE,
-        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" },
+        address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
       ...(product.shopAvailable && product.price
         ? {

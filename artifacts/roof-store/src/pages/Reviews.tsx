@@ -95,7 +95,7 @@ export default function Reviews() {
         "@type": "PostalAddress",
         addressLocality: "Davie",
         addressRegion: "FL",
-        postalCode: "33314",
+        postalCode: "33328",
         addressCountry: "US",
       },
       aggregateRating: {

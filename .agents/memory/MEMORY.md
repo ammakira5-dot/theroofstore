@@ -1,0 +1,1 @@
+- [Deploy approval required](deploy-policy.md) — never suggest publishing unless the user explicitly says to publish/deploy.

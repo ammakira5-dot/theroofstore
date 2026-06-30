@@ -47,10 +47,10 @@ const systems = [
       "Waterproof & guaranteed mildew-proof — 5× thicker than standard roof paint",
     ],
     gallery: [
-      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Spanish tile roof before and after SmartShield comparison" },
-      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Spanish tile restoration aerial before and after SmartShield" },
-      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Restored Spanish tile roof close-up after SmartShield" },
-      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof home exterior after SmartShield" },
+      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Composite tile roof coated with SmartShield color roof system" },
+      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Composite tile roof restoration with SmartShield cool pigment coating" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Composite tile roof close-up after SmartShield application" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Composite tile roof home exterior restored with SmartShield" },
     ],
   },
   {

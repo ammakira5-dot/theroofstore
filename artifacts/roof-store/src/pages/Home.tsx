@@ -1,8 +1,17 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wind, Wrench, Award, ArrowRight, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
+
+const HERO_IMAGES = [
+  { src: "/images/hero-bg.png", alt: "Florida home with liquid rubber roof coating applied by The Roof Store" },
+  { src: "/images/projects/spanish-tile-after.png", alt: "Spanish tile roof fully restored — The Roof Store" },
+  { src: "/images/projects/clay-tile-after.png", alt: "Clay barrel tile roof restored with SmartShield coating" },
+  { src: "/images/projects/flat-roof-residential-after.png", alt: "Residential flat roof sealed and waterproofed — The Roof Store" },
+  { src: "/images/projects/flat-deck-after.png", alt: "Flat deck rubber roof installation completed — The Roof Store" },
+];
 
 const BASE = "https://www.theroofstore.net";
 
@@ -41,6 +50,15 @@ const BUSINESS_CORE = {
 };
 
 export default function Home() {
+  const [heroIndex, setHeroIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroIndex((i) => (i + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   const schema = [
     {
       "@context": "https://schema.org",
@@ -70,12 +88,30 @@ export default function Home() {
       <section className="relative h-[85dvh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-primary/70 mix-blend-multiply z-10" />
-          <img 
-            src="/images/hero-bg.png" 
-            alt="Florida home with liquid rubber roof coating applied by The Roof Store — weatherproof and hurricane-rated"
-            title="The Roof Store — Liquid Rubber Roof Coating Florida | FungalShield, SmartShield, RoofShield"
-            className="w-full h-full object-cover"
-          />
+          <AnimatePresence initial={false}>
+            <motion.img
+              key={heroIndex}
+              src={HERO_IMAGES[heroIndex].src}
+              alt={HERO_IMAGES[heroIndex].alt}
+              title="The Roof Store — Liquid Rubber Roof Coating Florida | FungalShield, SmartShield, RoofShield"
+              className="absolute inset-0 w-full h-full object-cover"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: "easeInOut" }}
+            />
+          </AnimatePresence>
+          {/* Dot indicators */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+            {HERO_IMAGES.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setHeroIndex(i)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${i === heroIndex ? "bg-white scale-125" : "bg-white/40 hover:bg-white/70"}`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
         
         <div className="container relative z-20 px-4 pt-20">

@@ -25,8 +25,8 @@ const systems = [
       "Extends roof life by halting biological deterioration",
     ],
     gallery: [
-      { src: "/images/projects/flat-cement-extra-1.png", alt: "Flat cement tile waterproofing project exterior" },
-      { src: "/images/projects/flat-cement-extra-2.png", alt: "Flat cement tile waterproofing crew on site" },
+      { src: "/images/projects/flat-cement-extra-1.png", alt: "Spanish clay tile roof treated with FungalShield anti-fungal coating" },
+      { src: "/images/projects/flat-cement-extra-2.png", alt: "Spanish cement tile roof restored with FungalShield anti-fungal system" },
     ],
   },
   {

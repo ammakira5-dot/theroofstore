@@ -38,5 +38,7 @@ externalPort = 80
 [userenv]
 
 [userenv.shared]
-SMTP_USER = "roofrestor@bellsouth.net"
-SMTP_TO = "roofrestor@bellsouth.net"
+SMTP_USER = "theroofstore@gmail.com"
+SMTP_TO = "theroofstore@gmail.com"
+SMTP_HOST = "smtp.gmail.com"
+SMTP_PORT = "465"

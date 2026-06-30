@@ -61,7 +61,7 @@ const BUSINESS_CORE = {
   },
   sameAs: [
     "https://www.theroofstore.net",
-    "https://share.google/N1wxTaP5lNwkenLa1",
+    "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",
   ],
 };
 

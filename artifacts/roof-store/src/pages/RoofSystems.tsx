@@ -79,6 +79,8 @@ const systems = [
       { src: "/images/projects/flat-cement-after.png", alt: "Flat cement roof after RoofShield waterproof coating" },
       { src: "/images/projects/spanish-tile-before.png", alt: "Spanish tile roof before RoofShield waterproof coating" },
       { src: "/images/projects/spanish-tile-after.png", alt: "Spanish tile roof after RoofShield waterproof coating" },
+      { src: "/images/projects/flat-deck-before-2.png", alt: "Flat deck roof with water damage before RoofShield waterproof coating" },
+      { src: "/images/projects/flat-deck-after-2.png", alt: "Flat deck roof fully restored after RoofShield waterproof coating" },
     ],
   },
 ];

@@ -75,8 +75,8 @@ const systems = [
     gallery: [
       { src: "/images/projects/clay-tile-before.png", alt: "Composite clay tile roof before RoofShield waterproof coating" },
       { src: "/images/projects/clay-tile-after.png", alt: "Composite clay tile roof after RoofShield waterproof coating" },
-      { src: "/images/projects/flat-cement-before.png", alt: "Composite flat cement tile roof before RoofShield waterproof coating" },
-      { src: "/images/projects/flat-cement-after.png", alt: "Composite flat cement tile roof after RoofShield waterproof coating" },
+      { src: "/images/projects/flat-cement-before.png", alt: "Flat cement tile roof before RoofShield waterproof coating" },
+      { src: "/images/projects/flat-cement-after.png", alt: "Flat cement tile roof after RoofShield waterproof coating" },
       { src: "/images/projects/spanish-tile-before.png", alt: "Composite Spanish tile roof before RoofShield waterproof coating" },
       { src: "/images/projects/spanish-tile-after.png", alt: "Composite Spanish tile roof after RoofShield waterproof coating" },
       { src: "/images/projects/flat-deck-before-2.png", alt: "Commercial built-up flat deck roof before RoofShield waterproof coating" },

@@ -74,7 +74,7 @@ const beforeAfterProjects = [
     size: "Residential",
     saved: "$8,000+",
     description:
-      "Before any RoofShield coating can be applied, every damaged area must be properly repaired. This flat cement tile roof required eave edge repair — tiles were carefully removed, the exposed deck and fascia sealed with rubberized mastic, and tiles reinstalled cleanly. Only once the substrate is sound can the waterproofing system perform as warranted.",
+      "Older tile roofs often have some rotted or soft wood around the eaves, soffits, or fascia edges — and many homeowners are told they need a full roof replacement because of it. Not true. Localized wood damage at the edges does not mean the entire roof structure is compromised. This flat cement tile roof is a perfect example: we removed the affected tiles, repaired the damaged eave wood, sealed the deck and fascia with rubberized mastic, and reinstalled the tiles cleanly — preparing the entire surface for a full RoofShield waterproofing system at a fraction of replacement cost.",
     beforeSrc: "/images/projects/cement-tile-repair-before.png",
     afterSrc: "/images/projects/cement-tile-repair-after.png",
     beforeLabel: "Repair In Progress",

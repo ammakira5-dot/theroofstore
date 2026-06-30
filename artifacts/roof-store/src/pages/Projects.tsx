@@ -68,6 +68,19 @@ const beforeAfterProjects = [
     ],
   },
   {
+    title: "Flat Cement Tile Eave Repair",
+    type: "Required Repair Before RoofShield System Application",
+    location: "South Florida",
+    size: "Residential",
+    saved: "$8,000+",
+    description:
+      "Before any RoofShield coating can be applied, every damaged area must be properly repaired. This flat cement tile roof required eave edge repair — tiles were carefully removed, the exposed deck and fascia sealed with rubberized mastic, and tiles reinstalled cleanly. Only once the substrate is sound can the waterproofing system perform as warranted.",
+    beforeSrc: "/images/projects/cement-tile-repair-before.png",
+    afterSrc: "/images/projects/cement-tile-repair-after.png",
+    beforeLabel: "Repair In Progress",
+    afterLabel: "Repaired",
+  },
+  {
     title: "Flat Cement Tile Waterproofing System",
     type: "FungalShield + RoofShield Two-Coat System",
     location: "Broward County, FL",

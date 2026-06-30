@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
-import { sendLeadEmail, sendAutoResponse, buildAutoResponseHtml } from "../lib/email";
+import { sendLeadEmail, sendAutoResponse, buildAutoResponseHtml, sendLeadEmailViaGmail, canSendViaGmail } from "../lib/email";
 import { db, submissionsTable } from "@workspace/db";
 
 const router = Router();
@@ -35,26 +35,39 @@ router.post("/contact", async (req, res) => {
     source: data.source,
   });
 
-  if (!process.env.RESEND_API_KEY) {
-    req.log.warn("RESEND_API_KEY not set — submission saved to DB only");
-    res.json({ ok: true, note: "saved" });
+  const submission = { ...data, email: data.email || undefined };
+
+  if (process.env.RESEND_API_KEY) {
+    try {
+      await sendLeadEmail(submission);
+      req.log.info({ name: data.name }, "lead email sent via Resend");
+      if (data.email) {
+        sendAutoResponse(submission).catch((err) =>
+          req.log.error({ err }, "auto-response email failed (non-blocking)")
+        );
+      }
+      res.json({ ok: true });
+    } catch (err) {
+      req.log.error({ err }, "failed to send lead email via Resend");
+      res.status(500).json({ ok: false, error: "Failed to send email" });
+    }
     return;
   }
 
-  try {
-    const submission = { ...data, email: data.email || undefined };
-    await sendLeadEmail(submission);
-    req.log.info({ name: data.name }, "lead email sent");
-    if (data.email) {
-      sendAutoResponse(submission).catch((err) =>
-        req.log.error({ err }, "auto-response email failed (non-blocking)")
-      );
+  if (canSendViaGmail()) {
+    try {
+      await sendLeadEmailViaGmail(submission);
+      req.log.info({ name: data.name }, "lead email sent via Gmail");
+      res.json({ ok: true });
+    } catch (err) {
+      req.log.error({ err }, "failed to send lead email via Gmail");
+      res.status(500).json({ ok: false, error: "Failed to send email" });
     }
-    res.json({ ok: true });
-  } catch (err) {
-    req.log.error({ err }, "failed to send lead email");
-    res.status(500).json({ ok: false, error: "Failed to send email" });
+    return;
   }
+
+  req.log.warn("No email credentials set — submission saved to DB only");
+  res.json({ ok: true, note: "saved" });
 });
 
 router.get("/email-preview", (req, res) => {

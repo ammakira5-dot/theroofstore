@@ -27,6 +27,19 @@ const beforeAfterProjects = [
     ],
   },
   {
+    title: "Older Spanish Tile Full Restoration",
+    type: "Full Tile Removal, Deck Repair & RoofShield System",
+    location: "South Florida",
+    size: "Residential",
+    saved: "$25,000+",
+    description:
+      "This older Spanish barrel tile roof had decades of wear — cracked tiles, compromised underlayment, and exposed deck boards in several sections. Our crew removed the damaged tiles, inspected and repaired the deck, then reinstalled and sealed the roof with our full RoofShield waterproofing system. The finished roof looks brand new and is protected for decades to come.",
+    beforeSrc: "/images/projects/spanish-tile-older-before.png",
+    afterSrc: "/images/projects/spanish-tile-older-after.png",
+    beforeLabel: "Before",
+    afterLabel: "After",
+  },
+  {
     title: "Flat Deck Rubber Roof Installation",
     type: "Liquid Rubber Membrane — Full Flat Deck",
     location: "South Florida",

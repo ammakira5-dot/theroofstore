@@ -173,8 +173,9 @@ export async function sendLeadEmail(data: ContactSubmission): Promise<void> {
 </html>`;
 
   const to = process.env.LEADS_EMAIL ?? "ammakira5@gmail.com";
+  const from = process.env.RESEND_FROM ?? "The Roof Store <onboarding@resend.dev>";
   await resend.emails.send({
-    from: "The Roof Store <leads@theroofstore.net>",
+    from,
     to: [to],
     replyTo: data.email,
     subject: `New Lead: ${data.name} — ${data.phone}`,
@@ -406,8 +407,9 @@ export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
   const firstName = data.name.split(" ")[0];
   const html = buildAutoResponseHtml(data.name);
 
+  const from = process.env.RESEND_FROM ?? "The Roof Store <onboarding@resend.dev>";
   await resend.emails.send({
-    from: "The Roof Store <info@theroofstore.net>",
+    from,
     to: [data.email],
     replyTo: "info@theroofstore.net",
     subject: `We received your request, ${firstName} — The Roof Store`,

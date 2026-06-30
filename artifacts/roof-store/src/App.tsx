@@ -28,6 +28,7 @@ import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import RoofLifeCertification from "@/pages/RoofLifeCertification";
 import ManufacturersReport from "@/pages/ManufacturersReport";
+import Pricing from "@/pages/Pricing";
 import RoofPaintingVsCoating from "@/pages/RoofPaintingVsCoating";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import Shop from "@/pages/Shop";
@@ -104,6 +105,7 @@ function Router() {
       <Route path="/terms" component={Terms} />
       <Route path="/roof-life-certification" component={RoofLifeCertification} />
       <Route path="/manufacturers-report" component={ManufacturersReport} />
+      <Route path="/pricing" component={Pricing} />
       <Route path="/roof-painting-vs-coating" component={RoofPaintingVsCoating} />
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/admin" component={Admin} />

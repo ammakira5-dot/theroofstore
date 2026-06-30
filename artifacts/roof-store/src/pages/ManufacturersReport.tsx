@@ -77,6 +77,20 @@ export default function ManufacturersReport() {
         </div>
       </section>
 
+      {/* Instant email callout */}
+      <section className="py-10 bg-accent/5 border-b border-accent/10">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              <strong className="text-foreground">Want to see pricing first?</strong> Submit a contact request and our full factory price sheet — per sq ft by system, roof type, and pitch — is emailed to you instantly.
+            </p>
+            <a href="/contact" className="shrink-0 inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap">
+              Get Price Sheet by Email →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* What it is */}
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-5xl mx-auto">

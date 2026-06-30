@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { z } from "zod";
-import { sendLeadEmail, sendAutoResponse, buildAutoResponseHtml, sendLeadEmailViaGmail, canSendViaGmail } from "../lib/email";
+import { sendLeadEmail, sendAutoResponse, buildAutoResponseHtml, sendLeadEmailViaSmtp, canSendViaSmtp } from "../lib/email";
 import { db, submissionsTable } from "@workspace/db";
 
 const router = Router();
@@ -54,13 +54,13 @@ router.post("/contact", async (req, res) => {
     return;
   }
 
-  if (canSendViaGmail()) {
+  if (canSendViaSmtp()) {
     try {
-      await sendLeadEmailViaGmail(submission);
-      req.log.info({ name: data.name }, "lead email sent via Gmail");
+      await sendLeadEmailViaSmtp(submission);
+      req.log.info({ name: data.name }, "lead email sent via SMTP");
       res.json({ ok: true });
     } catch (err) {
-      req.log.error({ err }, "failed to send lead email via Gmail");
+      req.log.error({ err }, "failed to send lead email via SMTP");
       res.status(500).json({ ok: false, error: "Failed to send email" });
     }
     return;

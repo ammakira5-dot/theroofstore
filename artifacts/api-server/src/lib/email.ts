@@ -7,16 +7,24 @@ function getResend(): Resend {
   return new Resend(key);
 }
 
-export function canSendViaGmail(): boolean {
-  return !!(process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD);
+// Generic SMTP fallback — works with BellSouth, Gmail, Yahoo, or any provider.
+// Required env vars: SMTP_USER, SMTP_PASSWORD
+// Optional env vars: SMTP_HOST (default: outbound.att.net), SMTP_PORT (default: 465), SMTP_TO (default: SMTP_USER)
+export function canSendViaSmtp(): boolean {
+  return !!(process.env.SMTP_USER && process.env.SMTP_PASSWORD);
 }
 
-export async function sendLeadEmailViaGmail(data: ContactSubmission): Promise<void> {
-  const user = process.env.GMAIL_USER!;
-  const pass = process.env.GMAIL_APP_PASSWORD!;
+export async function sendLeadEmailViaSmtp(data: ContactSubmission): Promise<void> {
+  const user = process.env.SMTP_USER!;
+  const pass = process.env.SMTP_PASSWORD!;
+  const host = process.env.SMTP_HOST ?? "outbound.att.net";
+  const port = parseInt(process.env.SMTP_PORT ?? "465", 10);
+  const to = process.env.SMTP_TO ?? user;
 
   const transport = nodemailer.createTransport({
-    service: "gmail",
+    host,
+    port,
+    secure: port === 465,
     auth: { user, pass },
   });
 
@@ -83,7 +91,7 @@ export async function sendLeadEmailViaGmail(data: ContactSubmission): Promise<vo
 
   await transport.sendMail({
     from: `"The Roof Store Leads" <${user}>`,
-    to: user,
+    to,
     replyTo: data.email || user,
     subject: `New Lead: ${data.name} — ${data.phone}`,
     html,

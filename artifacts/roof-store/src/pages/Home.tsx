@@ -65,7 +65,7 @@ const BUSINESS_CORE = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
+    ratingValue: "5.0",
     reviewCount: "9",
     bestRating: "5",
     worstRating: "1",

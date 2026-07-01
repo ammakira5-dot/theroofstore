@@ -223,6 +223,7 @@ function Router() {
       <Route path="/fl/Miami-Gardens-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Miami-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Homestead-roof-restoration.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
+      <Route path="/fl/index.php" component={() => <RedirectTo to="/service-areas" />} />
       <Route path="/fl/Boynton-Beach-roof-contractor.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/boynton-beach" />} />
       <Route path="/fl/Lake-Worth-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lake-worth-beach" />} />
       <Route path="/fl/Lantana-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lantana" />} />
@@ -231,6 +232,26 @@ function Router() {
       <Route path="/fl/Southwest-Ranches-roof-coating.php" component={() => <RedirectTo to="/service-areas/broward-county/southwest-ranches" />} />
       <Route path="/fl/North-Palm-Beach-roof-contractor.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/north-palm-beach" />} />
       <Route path="/fl/Sweetwater-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/sweetwater" />} />
+      <Route path="/fl/Sunny-Isles-Beach-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/sunny-isles-beach" />} />
+      <Route path="/fl/Cooper-City-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/cooper-city" />} />
+      <Route path="/fl/Fort-Lauderdale-shingle-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/fort-lauderdale" />} />
+      <Route path="/fl/Pembroke-Pines-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/pembroke-pines" />} />
+      <Route path="/fl/Virginia-Gardens-roof-painting.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/virginia-gardens" />} />
+      <Route path="/fl/Key-Biscayne-roof-painting.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/key-biscayne" />} />
+      <Route path="/fl/Parkland-shingle-roof-coating.php" component={() => <RedirectTo to="/service-areas/broward-county/parkland" />} />
+      <Route path="/fl/Miami-roof-restoration.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/miami" />} />
+      <Route path="/fl/North-Miami-roof-contractor.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/north-miami" />} />
+      <Route path="/fl/Briny-Breezes-roof-repair.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/briny-breezes" />} />
+      <Route path="/fl/Bal-Harbour-roof-painting.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/bal-harbour" />} />
+      <Route path="/fl/Ocean-Ridge-roof-sealing.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/ocean-ridge" />} />
+      <Route path="/fl/West-Palm-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/west-palm-beach" />} />
+      <Route path="/fl/Weston-shingle-roof-restoration.php" component={() => <RedirectTo to="/service-areas/broward-county/weston" />} />
+      <Route path="/fl/Pahokee-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/pahokee" />} />
+      <Route path="/fl/North-Bay-Village-roof-painting.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/north-bay-village" />} />
+      <Route path="/fl/Opa-Locka-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/opa-locka" />} />
+      <Route path="/fl/Indian-Creek-Village-roof-sealing.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/indian-creek-village" />} />
+      <Route path="/fl/Golfview-roof-painting.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/golfview" />} />
+      <Route path="/fl/Lauderhill-roof-sealing.php" component={() => <RedirectTo to="/service-areas/broward-county/lauderhill" />} />
       <Route path="/fl/:slug" component={() => <RedirectTo to="/service-areas" />} />
 
       {/* ── Legacy — /services/ PHP pages ── */}
@@ -246,7 +267,12 @@ function Router() {
       {/* ── Legacy — root-level .php pages ── */}
       <Route path="/residential.php" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/projects/reviews.php" component={() => <RedirectTo to="/reviews" />} />
+      <Route path="/affiliations.php" component={() => <RedirectTo to="/partner-network" />} />
+      <Route path="/testimonials.php" component={() => <RedirectTo to="/reviews" />} />
+      <Route path="/energy-incentives.php" component={() => <RedirectTo to="/roof-systems" />} />
       <Route path="/Roof_Painting_Service_Broward_County_for_Smart_Shield.php" component={() => <RedirectTo to="/products/smartshield" />} />
+      <Route path="/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf" component={() => <RedirectTo to="/products/smartshield" />} />
+      <Route path="/assets/files/basic-colors-smart-shield.pdf" component={() => <RedirectTo to="/products/smartshield" />} />
       <Route path="/roof-shield-system.php" component={() => <RedirectTo to="/products/roofshield" />} />
       <Route path="/factory.php" component={() => <RedirectTo to="/factory" />} />
       <Route path="/products.php" component={() => <RedirectTo to="/products" />} />

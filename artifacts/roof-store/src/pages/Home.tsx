@@ -43,7 +43,7 @@ const BUSINESS_CORE = {
     postalCode: "33328",
     addressCountry: "US",
   },
-  geo: { "@type": "GeoCoordinates", latitude: 26.0512, longitude: -80.2454 },
+  geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
   priceRange: "$$",
   image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   logo: `${BASE}/assets/images/logo.png`,
@@ -62,6 +62,21 @@ const BUSINESS_CORE = {
   sameAs: [
     "https://www.theroofstore.net",
     "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",
+  ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "47",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "17:00",
+    },
   ],
 };
 
@@ -83,11 +98,6 @@ export default function Home() {
       "@type": "WebSite",
       name: "The Roof Store",
       url: BASE,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: { "@type": "EntryPoint", urlTemplate: `${BASE}/search?q={search_term_string}` },
-        "query-input": "required name=search_term_string",
-      },
     },
     { "@context": "https://schema.org", ...BUSINESS_CORE },
   ];

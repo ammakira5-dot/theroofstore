@@ -244,6 +244,8 @@ function Router() {
       <Route path="/services/:slug" component={() => <RedirectTo to="/roof-services" />} />
 
       {/* ── Legacy — root-level .php pages ── */}
+      <Route path="/residential.php" component={() => <RedirectTo to="/roof-services" />} />
+      <Route path="/projects/reviews.php" component={() => <RedirectTo to="/reviews" />} />
       <Route path="/Roof_Painting_Service_Broward_County_for_Smart_Shield.php" component={() => <RedirectTo to="/products/smartshield" />} />
       <Route path="/roof-shield-system.php" component={() => <RedirectTo to="/products/roofshield" />} />
       <Route path="/factory.php" component={() => <RedirectTo to="/factory" />} />

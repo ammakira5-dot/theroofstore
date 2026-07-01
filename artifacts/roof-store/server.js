@@ -15,6 +15,8 @@ const app = express();
 
 const EXACT_REDIRECTS = {
   // Root-level PHP pages
+  "/residential.php": "/roof-services",
+  "/projects/reviews.php": "/reviews",
   "/Roof_Painting_Service_Broward_County_for_Smart_Shield.php": "/products/smartshield",
   "/roof-shield-system.php": "/products/roofshield",
   "/factory.php": "/factory",

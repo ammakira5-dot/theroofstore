@@ -62,11 +62,12 @@ const BUSINESS_CORE = {
   sameAs: [
     "https://www.theroofstore.net",
     "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",
+    "https://share.google/D1EDyrzQhB4vW1fdz",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "9",
+    reviewCount: "19",
     bestRating: "5",
     worstRating: "1",
   },

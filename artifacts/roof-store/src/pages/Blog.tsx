@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Tag, ChevronDown, ChevronUp } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useState } from "react";
 
 const posts = [
   {
@@ -14,6 +15,11 @@ const posts = [
     tag: "Insurance & Roof Coating",
     excerpt:
       "There's a dangerous piece of misinformation spreading from insurance agents: \"If you seal or paint your roof, you'll lose your insurance.\" The reality? Florida's Governor issued a bulletin in March 2023 restating homeowners' legal right to an Additional Roof Life Certification — an affidavit that supersedes all insurance agent opinions and fully protects your coverage.",
+    body: [
+      "Florida insurance agents have been telling homeowners for years that sealing or painting a roof will void their coverage. This is not true — and in March 2023, Florida's Governor issued an official bulletin to all insurance carriers explicitly restating that homeowners have a legal right to obtain an Additional Roof Life Certification. That certification, signed by a licensed contractor or engineer, legally supersedes any age-based or condition-based denial from an insurance company employee.",
+      "The confusion stems from insurers trying to force roof replacements on older roofs — often tile roofs 10 to 20 years old — even when those roofs are structurally sound and watertight. A professional roof coating system, applied by a licensed contractor, restores the roof's waterproofing, fills gaps and seams, and provides documented evidence of the roof's continued serviceability. That documentation is exactly what the Additional Roof Life Certification captures.",
+      "For South Florida homeowners facing Citizens Insurance or private carrier pressure, a properly documented roof coating is often the most cost-effective path to maintaining coverage. The average tile roof replacement in Broward or Miami-Dade runs $25,000–$50,000. A professional coating system from The Roof Store typically costs a fraction of that — and comes with a written lifetime warranty that satisfies insurer requirements. The key is working with a licensed contractor who can provide the certification alongside the installation.",
+    ],
   },
   {
     title: "New Florida Homeowners Insurance Laws",
@@ -24,6 +30,11 @@ const posts = [
     tag: "Florida Insurance Law",
     excerpt:
       "Only licensed contractors, engineers, and roof mitigation specialists — not insurance company employees — have the legal authority to assess your roof's condition. Insurance agents stomping around on your roof cannot legally deny your coverage. Here's what the new Florida laws actually say about who has the final word on your roof.",
+    body: [
+      "Florida law is explicit: only a licensed roofing contractor, professional engineer, or roof mitigation specialist has the legal standing to assess the condition of your roof and determine its remaining useful life. An insurance company's adjuster or field agent can document what they observe, but they cannot unilaterally declare a roof non-compliant if a licensed professional has certified otherwise. This distinction matters enormously for homeowners facing non-renewal threats.",
+      "Senate Bill 2-D, passed in 2022, introduced major reforms to Florida's property insurance market. One of the most important provisions for homeowners with older roofs: insurers can no longer automatically require replacement of a roof that has 25% or more of its life remaining — as determined by a licensed professional assessment, not an insurance company's internal estimate. For cement tile and Spanish tile roofs, which commonly last 40–50+ years, this protection is particularly significant.",
+      "The practical implication: before accepting an insurance company's demand for a full roof replacement, get a licensed contractor's written assessment. If that assessment documents serviceable condition and certifies additional roof life, Florida law gives that certification legal weight over the insurer's position. Storm Shield Paint Systems Inc. — The Roof Store — provides this certification as part of our professional coating services for qualifying roofs throughout Broward, Miami-Dade, and Palm Beach Counties.",
+    ],
   },
   {
     title: "Citizens Insurance for Older Tile Roofs in Florida",
@@ -34,6 +45,11 @@ const posts = [
     tag: "Citizens Insurance",
     excerpt:
       "Citizens Insurance has specific rules about older tile roofs — but they changed in 2023 in favor of homeowners. If your cement tile or Spanish tile roof is cleaned, repaired, and professionally sealed, it can qualify for continued coverage under Senate Bill 2-D. We explain exactly what the new Citizens roof rules mean for South Florida homeowners.",
+    body: [
+      "Citizens Property Insurance Corporation — Florida's insurer of last resort — has historically been aggressive about requiring roof replacements on older homes. Prior to the 2022–2023 legislative reforms, Citizens could decline to renew policies on homes with roofs over 25 years old, regardless of actual condition. That blanket age-based policy has been significantly constrained by Senate Bill 2-D and subsequent regulatory guidance.",
+      "Under the current framework, Citizens must give weight to a professional inspection and written certification of a roof's remaining useful life. For cement tile roofs and Spanish tile roofs — which are the dominant roof type in South Florida — the material itself is extremely durable. Tile roofs regularly last 50+ years when properly maintained and coated. The issue is rarely the tile itself; it's the underlying waterproofing and sealing that degrades over time. A professional liquid-applied coating system restores that waterproofing and can extend the certifiable life of the roof by 15–25 years.",
+      "Homeowners facing Citizens non-renewal over roof age should take the following steps: (1) get a licensed contractor's written inspection confirming the roof is structurally sound; (2) have the roof professionally pressure-cleaned; (3) apply a certified coating system such as SmartShield (RP2) or RoofShield (RP3); (4) obtain an Additional Roof Life Certification from the licensed contractor. This documented package — inspection, coating, and certification — is the strongest possible response to a Citizens non-renewal notice. Call us at 954-210-9614 to discuss your specific situation.",
+    ],
   },
   {
     title: "Additional Roof Life Certification: Benefits & Meaning",
@@ -44,6 +60,54 @@ const posts = [
     tag: "Roof Certification",
     excerpt:
       "An Additional Roof Life Certification is a comprehensive professional assessment that documents how many more years your existing roof can provide sufficient protection. In Florida, this affidavit legally supersedes an insurance company's age-based denial — and can save you tens of thousands versus a forced replacement. Here's what it covers and how to get one.",
+    body: [
+      "An Additional Roof Life Certification (also called a Roof Condition Certification or Roof Life Extension Affidavit) is a signed, written document prepared by a licensed roofing contractor or professional engineer that states the roof has been professionally inspected, treated, and is expected to remain serviceable for a specified number of additional years. In Florida, this certification carries legal weight — it gives homeowners a documented professional opinion that insurers must consider alongside their own assessments.",
+      "The certification typically documents: the current condition of the roof substrate (decking, underlayment, and tiles or membrane); any repairs completed prior to or during the certification; the coating system applied and its specifications; and the licensed professional's opinion on the roof's remaining useful life. For a tile roof that receives a full RoofShield (RP3) or SmartShield (RP2) treatment, the certification may state 15–25 additional years of serviceability — a timeframe that completely satisfies Citizens and most private insurer requirements.",
+      "The financial math is straightforward: a professional coating and certification from The Roof Store costs significantly less than a full roof replacement — often by $20,000 to $40,000 — while delivering the same insurance compliance outcome. And unlike a replacement, the coating preserves the original tile (which is often the most valuable part of a South Florida home's roof system). The certification is valid with all major Florida insurers and can be presented at any time — during renewal, following a non-renewal notice, or proactively before any issue arises. Call 954-210-9614 to schedule your assessment.",
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "Can I seal or paint my roof and still keep my Florida homeowners insurance?",
+    a: "Yes. Florida law explicitly protects homeowners who choose to coat or seal their roofs. The Governor's March 2023 bulletin to all insurers restated that an Additional Roof Life Certification — signed by a licensed contractor — legally supersedes any insurance agent's age-based or condition-based denial. Coating your roof does not void your insurance. In fact, a properly documented professional coating often strengthens your coverage position by providing written certification of the roof's continued serviceability.",
+  },
+  {
+    q: "What is an Additional Roof Life Certification and how do I get one?",
+    a: "An Additional Roof Life Certification is a signed affidavit from a licensed roofing contractor or professional engineer documenting that your roof has been professionally inspected, repaired as needed, and treated — and is expected to remain serviceable for a stated number of additional years. To get one, you need a licensed contractor to inspect and coat your roof, then issue the written certification. The Roof Store provides this certification as part of our RoofShield (RP3) and SmartShield (RP2) coating services for qualifying roofs. Call 954-210-9614 to schedule your assessment.",
+  },
+  {
+    q: "Does Citizens Insurance accept a roof coating in place of a full replacement?",
+    a: "Yes, under Senate Bill 2-D and subsequent regulatory guidance, Citizens must give legal weight to a licensed professional's written certification of a roof's remaining useful life. If a licensed contractor inspects your roof, applies an approved coating system, and certifies that the roof has 15+ additional years of serviceable life, Citizens cannot automatically deny that certification. The process must be documented correctly — inspection report, coating application with licensed contractor's sign-off, and written certification — but when done properly, it is a legally recognized alternative to full replacement.",
+  },
+  {
+    q: "How long does a professional roof coating last in South Florida?",
+    a: "Professional liquid-applied roof coating systems applied by licensed contractors typically last 15–25 years in South Florida's climate, depending on the product system and roof type. RoofShield (RP3), our TAS-106 Dade County rated system, carries a lifetime warranty when professionally installed. SmartShield (RP2), our elastomeric tile roof coating, is warranted for the life of the roof under normal conditions. South Florida's UV exposure, heat, and hurricane-season rainfall are factored into the formulation of both systems — they're manufactured specifically for this climate.",
+  },
+  {
+    q: "Who is legally qualified to assess my roof's condition in Florida?",
+    a: "Only a Florida-licensed roofing contractor, professional engineer (PE), or certified roof mitigation specialist has the legal standing to assess your roof's condition and issue a binding written certification. An insurance company's adjuster or field agent can document their observations, but they cannot override a licensed professional's written certification of a roof's remaining useful life. This distinction is established by Florida statute and was reinforced by the 2022–2023 insurance reform legislation.",
+  },
+  {
+    q: "Can an insurance company force me to replace my roof in Florida?",
+    a: "Not if a licensed professional has certified otherwise. Senate Bill 2-D (2022) and the Governor's 2023 insurance bulletin significantly constrained insurers' ability to mandate replacement of roofs that a licensed professional has certified as having remaining useful life. If your roof is structurally sound and a licensed contractor has professionally treated and certified it, Florida law gives that certification legal weight. Insurers can still non-renew policies for other reasons, but roof age alone — when countered by a proper certification — is no longer sufficient grounds for a forced replacement mandate.",
+  },
+  {
+    q: "What's the difference between a roof coating and a roof replacement?",
+    a: "A roof replacement removes all existing materials down to the decking and installs a completely new roof system — tile, membrane, underlayment, and all. It costs $25,000–$60,000+ in South Florida and disrupts the home for days or weeks. A professional roof coating system applies liquid-applied waterproofing layers over the existing roof — sealing all gaps, voids, and seams — without removing the existing materials. It costs a fraction of replacement, is completed in 1–3 days, and when done with a certified system like RoofShield (RP3), delivers the same waterproofing protection with a lifetime warranty. For structurally sound roofs, coating is almost always the superior financial choice.",
+  },
+  {
+    q: "Does roof coating help with Florida's hurricane wind and water requirements?",
+    a: "Yes — especially RoofShield (RP3), which is TAS-106 Dade County rated, the highest hurricane-resistance certification available in Florida. TAS-106 rating means the system has been independently tested to withstand hurricane-force wind uplift and wind-driven rain intrusion. The RoofShield system fills every gap and void between tiles with multiple layers of liquid-applied material, making the roof essentially monolithic — a single continuous waterproof surface with no spaces for wind or water to penetrate. This is the only liquid-applied system of its kind with this specific Dade County certification.",
+  },
+  {
+    q: "How do I know if my tile roof qualifies for coating instead of replacement?",
+    a: "Most tile roofs in South Florida qualify for coating if the tile itself is intact (not more than 15–20% broken or missing), the decking is sound (no widespread rot or structural damage), and there are no active major leaks that have caused interior structural damage. A professional inspection will confirm this. In our experience — over 30 years and thousands of South Florida roofs — the majority of tile roofs that insurance companies pressure homeowners to replace are actually excellent candidates for coating. Call 954-210-9614 for a free assessment and honest opinion on your specific roof.",
+  },
+  {
+    q: "Can a roof coating help me avoid losing my Citizens Insurance policy?",
+    a: "In many cases, yes. Citizens has non-renewed thousands of policies over roof age — particularly tile roofs over 25 years old. If your roof is structurally sound, a professional coating system combined with an Additional Roof Life Certification provides the documented evidence Citizens needs to continue coverage. The key is acting before your renewal date, not after receiving a non-renewal notice (though a coating and certification can also be used to respond to a notice). The Roof Store has helped hundreds of South Florida homeowners use this approach to retain their Citizens coverage. Call us at 954-210-9614 to discuss your timeline.",
   },
 ];
 
@@ -59,6 +123,26 @@ const topics = [
 ];
 
 const BASE = "https://www.theroofstore.net";
+
+function FAQItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border rounded-xl overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full text-left px-6 py-5 flex items-start justify-between gap-4 bg-card hover:bg-muted/50 transition-colors"
+      >
+        <span className="font-serif font-bold text-primary leading-snug">{q}</span>
+        {open ? <ChevronUp className="h-5 w-5 text-accent shrink-0 mt-0.5" /> : <ChevronDown className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />}
+      </button>
+      {open && (
+        <div className="px-6 py-5 bg-card border-t text-muted-foreground leading-relaxed text-sm">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Blog() {
   const schema = [
@@ -86,6 +170,15 @@ export default function Blog() {
     },
     {
       "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: BASE },
@@ -98,7 +191,7 @@ export default function Blog() {
     <div className="w-full">
       <SEO
         title="Blog — Roof Coating, Florida Insurance Laws & Storm Protection | The Roof Store"
-        description="Expert articles on Florida roof coating, homeowners insurance laws, hurricane protection, and Additional Roof Life Certification. The Roof Store — Davie, FL — 954-210-9614."
+        description="Expert articles on Florida roof coating, homeowners insurance laws, Citizens Insurance, hurricane protection, and Additional Roof Life Certification. The Roof Store — Davie, FL — 954-210-9614."
         canonical="/blog"
         schema={schema}
       />
@@ -121,7 +214,7 @@ export default function Blog() {
         <div className="container px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-            <div className="lg:col-span-2 space-y-10">
+            <div className="lg:col-span-2 space-y-12">
               {posts.map((post, i) => (
                 <motion.article
                   key={i}
@@ -159,9 +252,16 @@ export default function Blog() {
                         {post.title}
                       </a>
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed text-sm mb-5">
+                    <p className="text-muted-foreground leading-relaxed text-sm mb-5 font-medium">
                       {post.excerpt}
                     </p>
+                    <div className="space-y-3 mb-6">
+                      {post.body.map((para, j) => (
+                        <p key={j} className="text-muted-foreground leading-relaxed text-sm">
+                          {para}
+                        </p>
+                      ))}
+                    </div>
                     <a
                       href={post.url}
                       target="_blank"
@@ -270,18 +370,32 @@ export default function Blog() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted">
-        <div className="container px-4 max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4">More Articles on the Full Blog</h2>
-          <p className="text-muted-foreground mb-8">
-            The complete blog is hosted at theroofstore.net/blog with additional articles, updates, and resources.
-          </p>
-          <Button asChild size="lg" variant="outline" className="h-12 px-8">
-            <a href="https://theroofstore.net/blog/" target="_blank" rel="noopener noreferrer">
-              Visit Full Blog
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+      <section className="py-24 bg-muted">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-14"
+          >
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">
+              Florida Roof Coating & Insurance — Frequently Asked Questions
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Answers to the most common questions South Florida homeowners ask about roof coatings, Citizens Insurance, and the Additional Roof Life Certification — from 30 years of hands-on experience.
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="space-y-3"
+          >
+            {faqs.map((faq, i) => (
+              <FAQItem key={i} q={faq.q} a={faq.a} />
+            ))}
+          </motion.div>
         </div>
       </section>
 

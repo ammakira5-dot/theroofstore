@@ -59,6 +59,12 @@ const BUSINESS_CORE = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "RoofShield (RP3) — Full Monolithic Hurricane Protection System" } },
     ],
   },
+  owns: {
+    "@type": "WebSite",
+    name: "Windproof Roof Systems",
+    url: "https://www.windproofroofsystems.com",
+    description: "Authorized tile roof restoration and coating website operated by Storm Shield Paint Systems Inc.",
+  },
   sameAs: [
     "https://www.theroofstore.net",
     "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",

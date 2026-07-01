@@ -199,6 +199,18 @@ export default function PartnerNetwork() {
         </div>
       </section>
 
+      {/* Corporate disclosure */}
+      <section className="py-6 bg-muted/30 border-t border-border">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <p className="text-xs text-muted-foreground text-center leading-relaxed">
+            Windproof Roof Systems and Roof Protect Products are owned and operated by{" "}
+            <strong className="text-foreground">Storm Shield Paint Systems Inc.</strong>, the Florida-licensed
+            contractor and manufacturer behind The Roof Store Waterproofing Products. All coating products
+            distributed or installed under these brands are manufactured at our Broward County, Florida facility.
+          </p>
+        </div>
+      </section>
+
       {/* Become a partner */}
       <section className="py-16 bg-muted/50">
         <div className="container px-4 max-w-4xl mx-auto">

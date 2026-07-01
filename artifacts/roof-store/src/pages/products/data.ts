@@ -78,6 +78,8 @@ export const fungalShield: ProductData = {
   shopUrl: "https://www.roofprotectproducts.com/product/RP1FungalShield",
   price: "$190",
   shopAvailable: false,
+  sku: "RP1",
+  mpn: "RP1",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
 };
 
@@ -167,6 +169,8 @@ export const smartShield: ProductData = {
   shopUrl: "https://www.roofprotectproducts.com/product/RP2SmartShield",
   price: "$285",
   shopAvailable: true,
+  sku: "RP2",
+  mpn: "RP2",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
   pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
   pdfLabel: "SmartShield Product Sheet (PDF)",
@@ -300,6 +304,8 @@ export const roofShield: ProductData = {
   shopUrl: "https://www.roofprotectproducts.com/product/RP3RoofShield",
   price: "$325",
   shopAvailable: true,
+  sku: "RP3",
+  mpn: "RP3",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
   pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
   pdfLabel: "RoofShield Product Sheet (PDF)",

@@ -27,6 +27,8 @@ export interface ProductData {
   shopUrl?: string;
   price?: string;
   shopAvailable?: boolean;
+  sku?: string;
+  mpn?: string;
   productImage?: string;
   pdfUrl?: string;
   pdfLabel?: string;
@@ -47,6 +49,8 @@ export function ProductDetail({ product }: { product: ProductData }) {
       description: product.seoDescription,
       image: product.productImage ?? product.heroImage,
       url: `${BASE}/products/${product.slug}`,
+      ...(product.sku ? { sku: product.sku } : {}),
+      ...(product.mpn ? { mpn: product.mpn } : {}),
       brand: { "@type": "Brand", name: "The Roof Store" },
       manufacturer: {
         "@type": "Organization",

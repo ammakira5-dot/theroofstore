@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { MapPin, Phone, ShieldCheck, Star, Waves, Paintbrush, Droplets, Wind, Wrench } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
+import { cityCoords } from "./coords";
 
 interface CityPageProps {
   city: string;
@@ -17,6 +18,7 @@ const BASE = "https://www.theroofstore.net";
 
 export function CityPage({ city, county, countySlug, citySlug, image, blurb }: CityPageProps) {
   const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
+  const coords = cityCoords[citySlug];
 
   const schema = [
     {
@@ -39,6 +41,13 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
       areaServed: {
         "@type": "City",
         name: city,
+        ...(coords && {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: coords.lat,
+            longitude: coords.lon,
+          },
+        }),
         containedInPlace: {
           "@type": "AdministrativeArea",
           name: `${county}, Florida`,
@@ -77,7 +86,11 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
         canonical={`/service-areas/${countySlug}/${citySlug}`}
         ogImage={image}
         schema={schema}
-        geo={{ region: "US-FL", placename: `${city}, FL` }}
+        geo={{
+          region: "US-FL",
+          placename: `${city}, FL`,
+          ...(coords && { position: `${coords.lat};${coords.lon}` }),
+        }}
       />
 
       {/* Hero with city photo */}

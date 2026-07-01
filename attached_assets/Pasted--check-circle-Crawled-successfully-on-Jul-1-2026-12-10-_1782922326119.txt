@@ -1,0 +1,272 @@
+
+check_circle
+Crawled successfully on Jul 1, 2026, 12:10:30 PM
+Detected items
+check_circle
+The Roof Store
+type
+LocalBusiness
+type
+HomeAndConstructionBusiness
+type
+Organization
+id
+https://www.theroofstore.net/#organization
+name
+The Roof Store
+legalName
+Storm Shield Paint Systems Inc.
+alternateName
+The Roof Store Waterproofing Products
+alternateName
+Storm Shield Paint Systems
+alternateName
+theroofstore.net
+description
+The Roof Store (theroofstore.net) is South Florida's original professional-grade roof paint and coating manufacturer and installer, in business since 1994. We make products that protect conventional roofing materials — manufacturing and installing proprietary coating systems FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) — that weatherproof and seal tile, flat, flat decks, metal, foam, and shingle roofs, extending their life and providing additional wind, water, and hurricane protection.
+foundingDate
+1994
+url
+https://www.theroofstore.net/
+logo
+https://www.theroofstore.net/images/logo-badge.png
+image
+https://www.theroofstore.net/images/hero-bg.png
+telephone
++19542109614
+email
+theroofstore@gmail.com
+slogan
+Don't Re-Roof. Weatherproof at 1/2 the Cost.
+knowsAbout
+liquid-applied roof coatings
+knowsAbout
+elastomeric roof coatings
+knowsAbout
+polyurethane roof coatings
+knowsAbout
+silicone roof coatings
+knowsAbout
+silicone roof coating manufacturer
+knowsAbout
+ponding water roof coating
+knowsAbout
+tile roof waterproofing
+knowsAbout
+flat roof sealing
+knowsAbout
+roof painting
+knowsAbout
+hurricane-rated roof coatings
+knowsAbout
+TAS-106 roof coating systems
+knowsAbout
+Dade County approved roof coatings
+knowsAbout
+anti-fungal roof coatings
+knowsAbout
+roof waterproofing installation
+knowsAbout
+proprietary roof coating manufacturing
+knowsAbout
+roof pressure cleaning
+knowsAbout
+barrel tile roof coating
+knowsAbout
+Spanish tile roof painting
+knowsAbout
+foam roof coating
+knowsAbout
+commercial flat roof coating
+knowsAbout
+50-year silicone roof warranty
+address
+type
+PostalAddress
+streetAddress
+4801 S University Dr
+addressLocality
+Davie
+addressRegion
+FL
+postalCode
+33328
+addressCountry
+type
+Country
+name
+US
+geo
+type
+GeoCoordinates
+latitude
+26.0765
+longitude
+-80.2521
+areaServed
+type
+State
+name
+Florida
+areaServed
+type
+County
+name
+Broward County
+areaServed
+type
+County
+name
+Miami-Dade County
+areaServed
+type
+County
+name
+Palm Beach County
+areaServed
+type
+County
+name
+Monroe County
+brand
+type
+Brand
+name
+FungalShield
+description
+Anti-fungal and anti-algae clear liquid roof coating (RP1)
+brand
+type
+Brand
+name
+SmartShield
+description
+Energy-reflective liquid waterproofing coating for tile and flat roofs (RP2)
+brand
+type
+Brand
+name
+RoofShield
+description
+TAS-106 Dade County rated hurricane-proof liquid waterproofing system with lifetime warranty (RP3)
+hasOfferCatalog
+type
+OfferCatalog
+name
+Proprietary Liquid-Applied Roof Coating Systems
+itemListElement
+type
+Offer
+itemOffered
+type
+Product
+name
+FungalShield (RP1)
+description
+Professional-grade anti-fungal and anti-algae clear liquid coating applied to tile roofs, walls, and flat decks. Seals and protects existing roof surfaces, extending their life and preventing mold and algae growth.
+brand
+type
+Brand
+name
+FungalShield
+manufacturer
+type
+Organization
+name
+Storm Shield Paint Systems Inc.
+itemListElement
+type
+Offer
+itemOffered
+type
+Product
+name
+SmartShield (RP2)
+description
+Professional-grade elastomeric waterproofing coating for tile and flat roofs. Over 3,000 colors. Seals and weatherproofs existing roof surfaces, adding water resistance and extending roof life by years.
+brand
+type
+Brand
+name
+SmartShield
+manufacturer
+type
+Organization
+name
+Storm Shield Paint Systems Inc.
+itemListElement
+type
+Offer
+itemOffered
+type
+Product
+name
+RoofShield (RP3)
+description
+World's only TAS-106 Dade County rated liquid-applied roof coating system. Hurricane-proof waterproofing with lifetime warranty. Manufactured and installed exclusively by Storm Shield Paint Systems Inc.
+brand
+type
+Brand
+name
+RoofShield
+manufacturer
+type
+Organization
+name
+Storm Shield Paint Systems Inc.
+currenciesAccepted
+USD
+paymentAccepted
+Cash, Check, Credit Card
+priceRange
+$$
+openingHoursSpecification
+type
+OpeningHoursSpecification
+dayOfWeek
+http://schema.org/Monday
+dayOfWeek
+http://schema.org/Tuesday
+dayOfWeek
+http://schema.org/Wednesday
+dayOfWeek
+http://schema.org/Thursday
+dayOfWeek
+http://schema.org/Friday
+opens
+T08:00
+closes
+T17:00
+aggregateRating
+type
+AggregateRating
+ratingValue
+5.0
+reviewCount
+19
+bestRating
+5
+worstRating
+1
+owns
+type
+WebSite
+name
+Windproof Roof Systems
+url
+https://www.windproofroofsystems.com/
+description
+Authorized tile roof restoration and coating website operated by Storm Shield Paint Systems Inc.
+sameAs
+https://www.theroofstore.net/
+sameAs
+https://maps.app.goo.gl/EtoKtkspkEtLBmGi9
+sameAs
+https://share.google/D1EDyrzQhB4vW1fdz
+copyrightYear
+2026
+copyrightHolder
+type
+Organization
+name
+Storm Shield Paint Systems Inc.

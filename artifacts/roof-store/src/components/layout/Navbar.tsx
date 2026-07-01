@@ -118,9 +118,9 @@ export function Navbar() {
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4 shrink-0">
-            <img src="/images/logo-badge.png" alt="The Roof Store" className="h-14 w-auto" />
-            <div className="flex flex-col items-center">
+          <Link href="/" className="flex items-center gap-3 shrink-0">
+            <img src="/images/logo-badge.png" alt="The Roof Store" className="h-12 xl:h-14 w-auto" />
+            <div className="hidden sm:flex flex-col items-center">
               <span className="font-serif font-bold text-xl leading-none text-primary">The Roof Store</span>
               <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">FungalShield · SmartShield · RoofShield</span>
             </div>

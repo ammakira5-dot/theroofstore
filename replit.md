@@ -36,7 +36,13 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Always confirm the plan before making changes
+- Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"
+
+## Pending to-dos
+
+- **Fix pre-existing TypeScript errors in `artifacts/roof-store/src/pages/RoofSystems.tsx`** — union type property access errors (extraAfterSrc, extraBeforeLabel, etc.)
+- **Set `ADMIN_PASSWORD` secret** — missing env var, needed for any admin area
 
 ## Gotchas
 

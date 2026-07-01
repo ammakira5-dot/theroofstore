@@ -65,7 +65,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
         url: BASE,
         address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
-      ...(product.price
+      ...(product.price && product.shopAvailable !== false
         ? {
             offers: {
               "@type": "Offer",

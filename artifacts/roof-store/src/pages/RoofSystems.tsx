@@ -108,7 +108,7 @@ export default function RoofSystems() {
       "@type": "ItemList",
       name: "The Roof Store — Roof Coating Systems",
       url: `${BASE}/roof-systems`,
-      description: "Three proprietary roof coating systems engineered for Florida's climate.",
+      description: "Three proprietary roof coating systems — FungalShield, SmartShield, RoofShield — manufactured in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "FungalShield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
         { "@type": "ListItem", position: 2, name: "SmartShield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },
@@ -129,8 +129,8 @@ export default function RoofSystems() {
     <>
     <div className="w-full">
       <SEO
-        title="FungalShield, SmartShield & RoofShield — Roof Systems for Florida"
-        description="Explore our three branded roof systems: FungalShield anti-fungal coating, SmartShield energy-reflective system, and RoofShield all-weather waterproofing membrane — engineered for Florida's climate."
+        title="Elastomeric, Polyurethane & Silicone Roof Coating Systems — The Roof Store Florida"
+        description="Manufacturer-specified elastomeric, polyurethane, and silicone roof coating systems for Florida homes and commercial properties. FungalShield, SmartShield & RoofShield — formulation determined after inspection. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
         canonical="/roof-systems"
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}

@@ -11,12 +11,13 @@ interface SEOProps {
     placename?: string;
     position?: string;
   };
+  noindex?: boolean;
 }
 
 const DEFAULT_OG_IMAGE = "https://www.theroofstore.net/assets/images/Waterproofing-Technology.jpg";
 const BASE_URL = "https://www.theroofstore.net";
 
-export function SEO({ title, description, canonical, ogImage, schema, geo }: SEOProps) {
+export function SEO({ title, description, canonical, ogImage, schema, geo, noindex }: SEOProps) {
   const siteTitle = "The Roof Store";
   const fullTitle = title === siteTitle ? siteTitle : `${title} | The Roof Store`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
@@ -32,7 +33,7 @@ export function SEO({ title, description, canonical, ogImage, schema, geo }: SEO
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
       <link rel="canonical" href={canonicalUrl} />
 
       {geo?.region && <meta name="geo.region" content={geo.region} />}

@@ -13,7 +13,7 @@ export default function About() {
       "@type": "AboutPage",
       name: "About The Roof Store",
       url: `${BASE}/about`,
-      description: "Nearly 30 years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994.",
+      description: "30+ years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994.",
       mainEntity: {
         "@context": "https://schema.org",
         "@type": "RoofingContractor",
@@ -47,7 +47,7 @@ export default function About() {
     <div className="w-full">
       <SEO
         title="About Us — The Roof Store"
-        description="Nearly 30 years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
+        description="30+ years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. A+ BBB rated since 1994."
         canonical="/about"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}
@@ -56,7 +56,7 @@ export default function About() {
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h1 className="text-5xl font-serif font-bold mb-6">About The Roof Store</h1>
-            <p className="text-xl text-white/80">Nearly 30 years of protecting Florida homes from the elements.</p>
+            <p className="text-xl text-white/80">30+ years of protecting Florida homes from the elements.</p>
           </motion.div>
         </div>
       </section>

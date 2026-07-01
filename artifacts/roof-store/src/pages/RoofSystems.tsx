@@ -150,6 +150,83 @@ export default function RoofSystems() {
         </div>
       </section>
 
+      {/* Formulation grades — systems vs. products */}
+      <section className="py-16 bg-muted border-b border-border">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+              Manufacturer-Specified — Not Off the Shelf
+            </div>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">
+              The System Defines the Goal. The Formulation Is Specified Per Roof.
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
+              FungalShield, SmartShield, and RoofShield are application systems — each engineered for a specific
+              protection goal. The actual coating product used within each system is determined <em>after</em> our
+              manufacturer's inspection, based on the roof's condition, surface material, the client's goals, and
+              realistic budget. We manufacture three formulation grades — and not every roof qualifies for every one.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              {
+                grade: "Grade 1",
+                name: "Elastomeric",
+                summary: "Proven entry-level formulation with strong performance across a wide range of residential roofs. Excellent for flexibility, adhesion, and weatherproofing. Best-value option for qualifying surfaces.",
+                warranty: "Standard warranty",
+                best: "Tile, flat, and metal roofs in good base condition",
+              },
+              {
+                grade: "Grade 2",
+                name: "Polyurethane",
+                summary: "Stronger and more durable than elastomeric, with a more robust long-term warranty. Bridges the gap between elastomeric and silicone — ideal when you want silicone-grade performance at a lower investment.",
+                warranty: "Enhanced warranty",
+                best: "Roofs requiring greater durability or with moderate weathering",
+              },
+              {
+                grade: "Grade 3",
+                name: "Silicone",
+                summary: "The most durable coating ingredient available. Rated for ponding water — the only formulation we recommend for commercial flat roofs holding more than ½ inch of standing water. Carries the highest product warranty in our line.",
+                warranty: "Up to 50-year product warranty",
+                best: "Commercial flat roofs, negative-pitch surfaces, ponding water",
+                highlight: true,
+              },
+            ].map((f, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className={`rounded-2xl border p-6 ${f.highlight ? "border-accent bg-accent/5" : "border-border bg-card"}`}
+              >
+                <div className={`text-xs font-bold uppercase tracking-widest mb-1 ${f.highlight ? "text-accent" : "text-muted-foreground"}`}>
+                  {f.grade}
+                </div>
+                <h3 className="text-xl font-serif font-bold text-primary mb-3">{f.name}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{f.summary}</p>
+                <div className="space-y-2 text-xs">
+                  <div className="flex items-start gap-2">
+                    <ShieldCheck className={`h-3.5 w-3.5 shrink-0 mt-0.5 ${f.highlight ? "text-accent" : "text-muted-foreground"}`} />
+                    <span className={f.highlight ? "font-bold text-accent" : "text-muted-foreground"}>{f.warranty}</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-3.5 w-3.5 shrink-0 mt-0.5 text-muted-foreground" />
+                    <span className="text-muted-foreground">{f.best}</span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <p className="text-center text-xs text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Formulation is determined by our licensed manufacturer's inspection — not every surface qualifies for
+            every product. We recommend only what is realistic and best for the roof, the client's goals, and the budget.
+          </p>
+        </div>
+      </section>
+
       <section className="py-24 bg-background">
         <div className="container px-4">
           <div className="space-y-24">

@@ -224,7 +224,7 @@ function Router() {
       <Route path="/fl/Miami-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Homestead-roof-restoration.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Boynton-Beach-roof-contractor.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/boynton-beach" />} />
-      <Route path="/fl/Lake-Worth-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lake-worth" />} />
+      <Route path="/fl/Lake-Worth-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lake-worth-beach" />} />
       <Route path="/fl/Lantana-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lantana" />} />
       <Route path="/fl/Deerfield-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/broward-county/deerfield-beach" />} />
       <Route path="/fl/Oakland-Park-roof-sealing.php" component={() => <RedirectTo to="/service-areas/broward-county/oakland-park" />} />

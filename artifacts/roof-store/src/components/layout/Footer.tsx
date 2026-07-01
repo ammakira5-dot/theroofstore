@@ -51,11 +51,11 @@ export function Footer() {
               <Shield className="h-8 w-8 text-accent" />
               <div className="flex flex-col">
                 <span className="font-serif font-bold text-2xl leading-none text-white">The Roof Store</span>
-                <span className="text-xs uppercase tracking-wider text-primary-foreground/70 font-bold">FungalShield · SmartShield · RoofShield</span>
+                <span className="text-xs uppercase tracking-wider text-primary-foreground/70 font-bold">theroofstore.net · Since 1994</span>
               </div>
             </Link>
             <p className="text-primary-foreground/80 max-w-sm mb-6">
-              The pioneer of high-strength weatherproof rubber roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost.
+              The pioneer of high-strength weatherproof rubber roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost. South Florida's original coating manufacturer at <span className="text-accent font-semibold">theroofstore.net</span>.
             </p>
             <div className="flex items-center gap-2 mb-5">
               <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">A+ BBB Rated Since 1994</div>
@@ -106,14 +106,14 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span>Serving South Florida & Surrounding Areas</span>
+                <span>4801 S University Dr, Davie, FL 33328<br /><span className="text-primary-foreground/60 text-xs">Serving Broward · Miami-Dade · Palm Beach</span></span>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} The Roof Store. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} theroofstore.net — Storm Shield Paint Systems Inc. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

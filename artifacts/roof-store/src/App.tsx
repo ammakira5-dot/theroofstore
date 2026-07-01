@@ -223,11 +223,24 @@ function Router() {
       <Route path="/fl/Miami-Gardens-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Miami-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
       <Route path="/fl/Homestead-roof-restoration.php" component={() => <RedirectTo to="/service-areas/miami-dade-county" />} />
+      <Route path="/fl/Boynton-Beach-roof-contractor.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/boynton-beach" />} />
+      <Route path="/fl/Lake-Worth-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lake-worth" />} />
+      <Route path="/fl/Lantana-roof-coating.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/lantana" />} />
+      <Route path="/fl/Deerfield-Beach-roof-sealing.php" component={() => <RedirectTo to="/service-areas/broward-county/deerfield-beach" />} />
+      <Route path="/fl/Oakland-Park-roof-sealing.php" component={() => <RedirectTo to="/service-areas/broward-county/oakland-park" />} />
+      <Route path="/fl/Southwest-Ranches-roof-coating.php" component={() => <RedirectTo to="/service-areas/broward-county/southwest-ranches" />} />
+      <Route path="/fl/North-Palm-Beach-roof-contractor.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/north-palm-beach" />} />
+      <Route path="/fl/Sweetwater-roof-coating.php" component={() => <RedirectTo to="/service-areas/miami-dade-county/sweetwater" />} />
       <Route path="/fl/:slug" component={() => <RedirectTo to="/service-areas" />} />
 
       {/* ── Legacy — /services/ PHP pages ── */}
       <Route path="/services/commercial-metal-roof-coating.php" component={() => <RedirectTo to="/commercial-roofs" />} />
+      <Route path="/services/commercial-metal-roof-restoration.php" component={() => <RedirectTo to="/commercial-roofs" />} />
+      <Route path="/services/commercial-metal-roof-painting.php" component={() => <RedirectTo to="/commercial-roofs" />} />
       <Route path="/services/additional-roof-life-certification.php" component={() => <RedirectTo to="/roof-life-certification" />} />
+      <Route path="/services/spanish-tile-roof-coating.php" component={() => <RedirectTo to="/roof-systems" />} />
+      <Route path="/services/residential-spanish-tile-roof-waterproofing.php" component={() => <RedirectTo to="/roof-systems" />} />
+      <Route path="/services/cement-tile-roof-restoration.php" component={() => <RedirectTo to="/roof-systems" />} />
       <Route path="/services/:slug" component={() => <RedirectTo to="/roof-services" />} />
 
       {/* ── Legacy — root-level .php pages ── */}

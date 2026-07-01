@@ -27,6 +27,7 @@ export interface ProductData {
   shopUrl?: string;
   price?: string;
   shopAvailable?: boolean;
+  productImage?: string;
   pdfUrl?: string;
   pdfLabel?: string;
   beforeAfterImages?: { before: string; beforeAlt: string; after: string; afterAlt: string; label: string }[];
@@ -44,6 +45,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
       "@type": "Product",
       name: product.name,
       description: product.seoDescription,
+      image: product.productImage ?? product.heroImage,
       url: `${BASE}/products/${product.slug}`,
       brand: { "@type": "Brand", name: "The Roof Store" },
       manufacturer: {
@@ -52,7 +54,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
         url: BASE,
         address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
-      ...(product.shopAvailable && product.price
+      ...(product.price
         ? {
             offers: {
               "@type": "Offer",

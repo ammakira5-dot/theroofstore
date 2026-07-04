@@ -344,6 +344,13 @@ export const roofShield: ProductData = {
       after: `${BASE}/images/projects/spanish-tile-after.png`,
       afterAlt: "Composite Spanish tile roof after Roof Shield — monolithic sealed surface",
     },
+    {
+      label: "Flat Deck Roof",
+      before: `${BASE}/images/projects/flat-deck-before-2.png`,
+      beforeAlt: "Commercial built-up flat deck roof before Roof Shield waterproof coating",
+      after: `${BASE}/images/projects/flat-deck-after-2.png`,
+      afterAlt: "Commercial built-up flat deck roof fully restored after Roof Shield waterproof coating",
+    },
   ],
 };
 

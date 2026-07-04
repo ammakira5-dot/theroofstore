@@ -172,7 +172,7 @@ export default function RoofServices() {
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Waterproofing</h3>
-              <p className="text-muted-foreground leading-relaxed">Cracked, porous tile lets water infiltrate your roof deck — leading to leaks, rot, and costly structural damage. Our tile roof waterproofing systems fill every gap and seal every surface, creating a continuous waterproof membrane that keeps Florida's torrential rains out permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating.</p>
+              <p className="text-muted-foreground leading-relaxed">Cracked, porous tile lets water infiltrate your roof deck — leading to leaks, rot, and costly structural damage. Our tile roof waterproofing systems fill every gap and seal every surface, creating a continuous waterproof membrane that keeps Florida's torrential rains out permanently. Our Roof Shield system is the world's only TAS-106 Dade County Uplift rated coating.</p>
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Flat Roof Sealing After Pressure Cleaning</h3>
@@ -180,7 +180,7 @@ export default function RoofServices() {
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Reflective &amp; Cool Roof Coating</h3>
-              <p className="text-muted-foreground leading-relaxed">Our SmartShield reflective roof coating uses BASF Cool Pigment Technology to increase Total Solar Reflectance by 32% — even at the darkest black. This acrylic cool roof coating lowers attic temperatures and cooling costs while giving you 3,000+ tintable color choices, independently confirmed by Florida Power &amp; Light.</p>
+              <p className="text-muted-foreground leading-relaxed">Our Smart Shield reflective roof coating uses BASF Cool Pigment Technology to increase Total Solar Reflectance by 32% — even at the darkest black. This acrylic cool roof coating lowers attic temperatures and cooling costs while giving you 3,000+ tintable color choices, independently confirmed by Florida Power &amp; Light.</p>
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function RoofServices() {
               <div className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-3">Required for Warranty</div>
               <h3 className="text-2xl font-serif font-bold text-primary mb-3">Manufacturer's Inspection Report</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Every RoofShield Monolithic warranty program on a flat or tile roof requires a pre-application Manufacturer's Report — including infrared moisture imaging, a signed drawing legend, photo documentation, and a required rework scope. The fee is <strong className="text-foreground">$150 per 5,000 sq ft</strong> and is <strong className="text-foreground">100% refundable</strong> when you proceed with the warranty program.
+                Every Roof Shield Monolithic warranty program on a flat or tile roof requires a pre-application Manufacturer's Report — including infrared moisture imaging, a signed drawing legend, photo documentation, and a required rework scope. The fee is <strong className="text-foreground">$150 per 5,000 sq ft</strong> and is <strong className="text-foreground">100% refundable</strong> when you proceed with the warranty program.
               </p>
               <Link href="/manufacturers-report" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
                 Learn about the inspection process →

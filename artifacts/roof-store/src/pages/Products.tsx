@@ -13,7 +13,7 @@ const products = [
   {
     code: "RP1",
     icon: Leaf,
-    name: "FungalShield",
+    name: "Fungal Shield",
     slug: "fungalshield",
     tagline: "\"Save Your Tiles\"",
     subtitle: "Anti-Fungal & Anti-Algae Clear Roof Coating",
@@ -33,7 +33,7 @@ const products = [
       "5-Year Product Warranty — included standard",
     ],
     specs: [
-      { label: "Product Code", value: "RP1 — FungalShield" },
+      { label: "Product Code", value: "RP1 — Fungal Shield" },
       { label: "Coverage Rate", value: "~90 sq ft per gallon" },
       { label: "Finish", value: "Clear — no color change to tiles" },
       { label: "Mildew Resistance", value: "Guaranteed" },
@@ -46,7 +46,7 @@ const products = [
   {
     code: "RP2",
     icon: Sun,
-    name: "SmartShield",
+    name: "Smart Shield",
     slug: "smartshield",
     tagline: "\"Waterproof. Weatherproof. In 3,000+ Colors.\"",
     subtitle: "Tintable Waterproof & Weatherproof Tile Roof Coating",
@@ -66,7 +66,7 @@ const products = [
       "Guaranteed mildew resistance — exclusive formula, not sold in any retail store",
     ],
     specs: [
-      { label: "Product Code", value: "RP2 — SmartShield" },
+      { label: "Product Code", value: "RP2 — Smart Shield" },
       { label: "Primary Function", value: "Waterproof & weatherproof coating for tile roofs" },
       { label: "Color Options", value: "3,000+ tintable colors — full custom palette" },
       { label: "Coverage Rate", value: "~90 sq ft per gallon" },
@@ -77,14 +77,14 @@ const products = [
       { label: "Manufactured", value: "Davie, FL — The Roof Store" },
     ],
     bestFor: "Any tile roof homeowner who wants proven waterproof protection in a chosen color — dark or light — while also reflecting the Florida heat.",
-    extra: "Developed in collaboration with BASF — the world's largest chemical producer — SmartShield passed full tensile, flexural, DSC, TGA, and viscosity testing. The BASF Cool Pigment breakthrough: choose any color you want and the darker you go, the more heat reflects away from your home. Exclusively available through The Roof Store.",
+    extra: "Developed in collaboration with BASF — the world's largest chemical producer — Smart Shield passed full tensile, flexural, DSC, TGA, and viscosity testing. The BASF Cool Pigment breakthrough: choose any color you want and the darker you go, the more heat reflects away from your home. Exclusively available through The Roof Store.",
     pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
-    pdfLabel: "SmartShield Product Sheet",
+    pdfLabel: "Smart Shield Product Sheet",
   },
   {
     code: "RP3",
     icon: ShieldCheck,
-    name: "RoofShield",
+    name: "Roof Shield",
     slug: "roofshield",
     tagline: "\"We Don't Just Coat Your Roof — We Make It Monolithic\"",
     subtitle: "Multi-Layer System — Fills Every Gap Between Tiles. Hurricane Proof.",
@@ -105,7 +105,7 @@ const products = [
       "Additional Roof Life Certification up to 10 years (Citizens Insurance accepted)",
     ],
     specs: [
-      { label: "Product Code", value: "RP3 — RoofShield" },
+      { label: "Product Code", value: "RP3 — Roof Shield" },
       { label: "System Type", value: "Multi-layer — several proprietary products applied in sequence" },
       { label: "Key Mechanism", value: "Fills every tile gap and void → creates one monolithic sealed roof" },
       { label: "Coverage Rate", value: "~50 sq ft per gallon (multi-layer full system)" },
@@ -119,7 +119,7 @@ const products = [
     bestFor: "Any tile roof where hurricane wind or rain intrusion between tiles is a risk — and any roof approaching replacement age that deserves a structural solution rather than a simple re-roof.",
     featured: true,
     pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
-    pdfLabel: "RoofShield Product Sheet",
+    pdfLabel: "Roof Shield Product Sheet",
   },
 ];
 
@@ -171,7 +171,7 @@ const comparisonRows = [
 const questions = [
   {
     q: "Does the product pass TAS-106 Dade County Wind Uplift?",
-    a: "This is the gold standard test for tile roof wind resistance in Florida. A new tile roof must pass minimum 35 lbs uplift in the field and 55 lbs at the ridge caps (≈120–130 MPH). Our RoofShield (RP3) is the only liquid coating in the world that has received an independent TAS-106 certification. Ask any competitor to provide their TAS-106 documentation. Most cannot.",
+    a: "This is the gold standard test for tile roof wind resistance in Florida. A new tile roof must pass minimum 35 lbs uplift in the field and 55 lbs at the ridge caps (≈120–130 MPH). Our Roof Shield (RP3) is the only liquid coating in the world that has received an independent TAS-106 certification. Ask any competitor to provide their TAS-106 documentation. Most cannot.",
   },
   {
     q: "Is the product rated for ponding water and flat roofs?",
@@ -183,15 +183,15 @@ const questions = [
   },
   {
     q: "How many coats are required and how often do you recoat?",
-    a: "Some generic coatings require a separate protective coat over the waterproofing coat — and then require recoating every 3–5 years. \"Protect the protectant\" doesn't make much sense. RoofShield comes with a lifetime maintenance-free warranty. You should do the math on long-term cost before purchasing any competitor product.",
+    a: "Some generic coatings require a separate protective coat over the waterproofing coat — and then require recoating every 3–5 years. \"Protect the protectant\" doesn't make much sense. Roof Shield comes with a lifetime maintenance-free warranty. You should do the math on long-term cost before purchasing any competitor product.",
   },
   {
     q: "Is the warranty transferable when the property sells?",
-    a: "Most manufacturer warranties are non-transferable and void upon change of ownership. Our RoofShield lifetime warranty is fully transferable to a new buyer and renewable. This adds measurable value to your property at resale.",
+    a: "Most manufacturer warranties are non-transferable and void upon change of ownership. Our Roof Shield lifetime warranty is fully transferable to a new buyer and renewable. This adds measurable value to your property at resale.",
   },
   {
     q: "Can you provide documentation for any energy savings claims?",
-    a: "For SmartShield (RP2): FP&L (Florida Power & Light) independently confirmed our product saves on cooling costs — this is utility-validated, not a marketing claim. Ask any competitor whether their energy savings claim has been independently validated by a utility company.",
+    a: "For Smart Shield (RP2): FP&L (Florida Power & Light) independently confirmed our product saves on cooling costs — this is utility-validated, not a marketing claim. Ask any competitor whether their energy savings claim has been independently validated by a utility company.",
   },
 ];
 
@@ -240,11 +240,11 @@ export default function Products() {
       "@type": "CollectionPage",
       name: "Roof Coating Products — The Roof Store",
       url: `${BASE}/products`,
-      description: "RP1 FungalShield, RP2 SmartShield, RP3 RoofShield — manufactured in Davie FL. The only TAS-106 rated coating in the world.",
+      description: "RP1 Fungal Shield, RP2 Smart Shield, RP3 Roof Shield — manufactured in Davie FL. The only TAS-106 rated coating in the world.",
       hasPart: [
-        { "@type": "Product", name: "FungalShield (RP1)", url: `${BASE}/products/fungalshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock" } },
-        { "@type": "Product", name: "SmartShield (RP2)", url: `${BASE}/products/smartshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock" } },
-        { "@type": "Product", name: "RoofShield (RP3)", url: `${BASE}/products/roofshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock" } },
+        { "@type": "Product", name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock" } },
+        { "@type": "Product", name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock" } },
+        { "@type": "Product", name: "Roof Shield (RP3)", url: `${BASE}/products/roofshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock" } },
       ],
     },
     {
@@ -260,8 +260,8 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="FungalShield, SmartShield & RoofShield — Roof Coating Products | The Roof Store Florida"
-        description="RP1 FungalShield, RP2 SmartShield, RP3 RoofShield — manufactured in Davie FL. The only TAS-106 rated coating in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        title="Fungal Shield, Smart Shield & Roof Shield — Roof Coating Products | The Roof Store Florida"
+        description="RP1 Fungal Shield, RP2 Smart Shield, RP3 Roof Shield — manufactured in Davie FL. The only TAS-106 rated coating in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
         schema={schema}
       />
@@ -298,9 +298,9 @@ export default function Products() {
             </div>
             <div className="flex gap-6 sm:gap-12">
               {[
-                { code: "RP1", name: "FungalShield", coverage: "90 sq ft/gal" },
-                { code: "RP2", name: "SmartShield", coverage: "90 sq ft/gal" },
-                { code: "RP3", name: "RoofShield", coverage: "50 sq ft/gal" },
+                { code: "RP1", name: "Fungal Shield", coverage: "90 sq ft/gal" },
+                { code: "RP2", name: "Smart Shield", coverage: "90 sq ft/gal" },
+                { code: "RP3", name: "Roof Shield", coverage: "50 sq ft/gal" },
               ].map(p => (
                 <div key={p.code} className="text-center">
                   <div className="text-xs font-bold opacity-70 uppercase tracking-wide">{p.code}</div>

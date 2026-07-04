@@ -14,18 +14,18 @@ const videos = [
     customer: "Don Godshall",
     location: "5651 Thornbluff Ave., Davie FL",
     quote: "During Hurricane Wilma my neighbors' tiles were hitting my house. The next morning after the storm passed we went outside to see what happened — our roof was still perfect.",
-    desc: "Don Godshall faced a choice: replace the roof or seal it with RoofShield. He chose RoofShield. When Hurricane Wilma hit, neighbor tiles were flying across his yard. His roof didn't lose a single tile. Watch his full story.",
+    desc: "Don Godshall faced a choice: replace the roof or seal it with Roof Shield. He chose Roof Shield. When Hurricane Wilma hit, neighbor tiles were flying across his yard. His roof didn't lose a single tile. Watch his full story.",
   },
   {
     id: "RrcGPZg7s6I",
-    title: "Customer Testimonial — RoofShield System",
+    title: "Customer Testimonial — Roof Shield System",
     tag: "Customer Testimonial",
     icon: Play,
     testimonialImage: null,
     customer: null,
     location: null,
     quote: null,
-    desc: "A real homeowner describes their experience with The Roof Store's RoofShield liquid rubber membrane system — including performance through storm season.",
+    desc: "A real homeowner describes their experience with The Roof Store's Roof Shield liquid rubber membrane system — including performance through storm season.",
   },
   {
     id: "j33btx-TGXo",
@@ -40,14 +40,14 @@ const videos = [
   },
   {
     id: "DG7M1ckiMPM",
-    title: "RoofShield Installation — How It's Applied",
+    title: "Roof Shield Installation — How It's Applied",
     tag: "Installation",
     icon: Play,
     testimonialImage: null,
     customer: null,
     location: null,
     quote: null,
-    desc: "See the full RoofShield liquid rubber membrane application from start to finish — surface prep, primer coat, rubber membrane, and top coat. Applied by our certified crews to a real South Florida tile roof.",
+    desc: "See the full Roof Shield liquid rubber membrane application from start to finish — surface prep, primer coat, rubber membrane, and top coat. Applied by our certified crews to a real South Florida tile roof.",
   },
 ];
 
@@ -93,7 +93,7 @@ export default function Videos() {
   return (
     <div className="w-full">
       <SEO
-        title="Videos — RoofShield System & Uplift Test | The Roof Store Florida"
+        title="Videos — Roof Shield System & Uplift Test | The Roof Store Florida"
         description="Watch The Roof Store's customer testimonials and the TAS-106 Dade County Uplift Test — the only pull test rated roof coating system in the world. See real hurricane performance documented on video."
         canonical="/videos"
         schema={schema}

@@ -31,9 +31,9 @@ const productDropdown = {
       group: "Product Lines",
       links: [
         { href: "/products", label: "All Products", icon: LayoutGrid, desc: "Overview of all three systems" },
-        { href: "/products/fungalshield", label: "FungalShield (RP1)", icon: Leaf, desc: "Anti-fungal & anti-algae coating" },
-        { href: "/products/smartshield", label: "SmartShield (RP2)", icon: Sun, desc: "Energy-reflective cool pigment coating" },
-        { href: "/products/roofshield", label: "RoofShield (RP3)", icon: ShieldCheck, desc: "Hurricane-proof waterproofing system" },
+        { href: "/products/fungalshield", label: "Fungal Shield (RP1)", icon: Leaf, desc: "Anti-fungal & anti-algae coating" },
+        { href: "/products/smartshield", label: "Smart Shield (RP2)", icon: Sun, desc: "Energy-reflective cool pigment coating" },
+        { href: "/products/roofshield", label: "Roof Shield (RP3)", icon: ShieldCheck, desc: "Hurricane-proof waterproofing system" },
       ],
     },
     {
@@ -48,14 +48,14 @@ const productDropdown = {
       links: [
         {
           href: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
-          label: "SmartShield (RP2) PDF",
+          label: "Smart Shield (RP2) PDF",
           icon: FileText,
           desc: "Technical data sheet",
           external: true,
         },
         {
           href: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
-          label: "RoofShield (RP3) PDF",
+          label: "Roof Shield (RP3) PDF",
           icon: FileText,
           desc: "System technical data",
           external: true,
@@ -122,7 +122,7 @@ export function Navbar() {
             <img src="/images/logo-badge.png" alt="The Roof Store" className="h-12 xl:h-14 w-auto" />
             <div className="hidden sm:flex flex-col items-center">
               <span className="font-serif font-bold text-xl leading-none text-primary">The Roof Store</span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">FungalShield · SmartShield · RoofShield</span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Fungal Shield · Smart Shield · Roof Shield</span>
             </div>
           </Link>
 
@@ -276,7 +276,7 @@ export function Navbar() {
             <Shield className="h-7 w-7 text-primary shrink-0" />
             <div className="flex flex-col">
               <span className="font-serif font-bold text-lg leading-none text-primary">The Roof Store</span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">FungalShield · SmartShield · RoofShield</span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Fungal Shield · Smart Shield · Roof Shield</span>
             </div>
           </div>
           <button onClick={() => setOpen(false)} className="p-1.5 rounded-md hover:bg-muted transition-colors" aria-label="Close menu">

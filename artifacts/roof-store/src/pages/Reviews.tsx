@@ -7,7 +7,7 @@ import { SEO } from "@/components/SEO";
 const featured = {
   name: "Don Godshall",
   location: "5651 Thornbluff Ave., Davie FL 33331",
-  product: "RoofShield System",
+  product: "Roof Shield System",
   yearsAgo: "15+ years ago",
   quote: "I had to either replace the roof or seal it. I decided to use the Roof Shield roof paint sealant system. During Hurricane Wilma my neighbors' tiles were hitting my house. The next morning after the storm passed we went outside to see what happened — our roof was still perfect.",
   image: "https://www.theroofstore.net/images/Don-Godshall-Testimonial.gif",
@@ -18,37 +18,37 @@ const reviews = [
   {
     name: "Mr. Dale King",
     location: "2001 NE 21st Ave, Ft Lauderdale, FL",
-    product: "RoofShield System",
+    product: "Roof Shield System",
     yearsAgo: "27 years ago — resealed 2002",
     text: "Original roof coating was installed in 1992, resealed in 2002. My roof went through several storms without leaks due to hurricane damage. I could not be more pleased with your process.",
   },
   {
     name: "George Figler",
     location: "Ft Lauderdale, FL — General Contractor, Muvico Company",
-    product: "RoofShield System",
+    product: "Roof Shield System",
     yearsAgo: "17 years ago",
     text: "I was looking to reroof or get a new replacement roof in Ft Lauderdale. Fortunately I found the rubber roof coating that could seal the roof and protect it. Wilma damaged several roofs up and down our street — my roof was intact and is still doing the job that was guaranteed.",
   },
   {
     name: "Patrick Pointu",
     location: "Lauderdale By The Sea, FL",
-    product: "RoofShield — 1,700 sq ft Flat BUR Roof",
+    product: "Roof Shield — 1,700 sq ft Flat BUR Roof",
     yearsAgo: "2.5 years ago",
-    text: "Palm Beach County Sheriff. Had the RoofShield system applied to my two-story home. Outstanding work and the flat roof has been completely problem-free since.",
+    text: "Palm Beach County Sheriff. Had the Roof Shield system applied to my two-story home. Outstanding work and the flat roof has been completely problem-free since.",
   },
   {
     name: "Lonnie Mergler",
     location: "4771 SW 70th Ter, Davie FL",
-    product: "RoofShield System — S Tile",
+    product: "Roof Shield System — S Tile",
     yearsAgo: "2.5 years ago",
-    text: "Davie Code Enforcement Officer, Retired Police Officer NJ. The Roof Store installed the RoofShield system on my S-tile roof. Professional from start to finish.",
+    text: "Davie Code Enforcement Officer, Retired Police Officer NJ. The Roof Store installed the Roof Shield system on my S-tile roof. Professional from start to finish.",
   },
   {
     name: "Keith Zambrano",
     location: "Delray Beach, FL",
-    product: "SmartShield — S Tile",
+    product: "Smart Shield — S Tile",
     yearsAgo: "2.5 years ago",
-    text: "Retired Military. Had SmartShield applied to my S-tile roof. The energy savings have been noticeable immediately and the roof looks brand new. Excellent company.",
+    text: "Retired Military. Had Smart Shield applied to my S-tile roof. The energy savings have been noticeable immediately and the roof looks brand new. Excellent company.",
   },
   {
     name: "Julie Coppola",
@@ -74,7 +74,7 @@ const reviews = [
   {
     name: "Brian Bennett",
     location: "Lighthouse Point, FL",
-    product: "RoofShield — Flat Tile, Two Story",
+    product: "Roof Shield — Flat Tile, Two Story",
     yearsAgo: "2.5 years ago",
     text: "Two-story flat tile roof in Lighthouse Point. The Roof Store treated the whole structure and the waterproofing has been flawless. Would recommend without hesitation.",
   },
@@ -127,7 +127,7 @@ export default function Reviews() {
     <div className="w-full">
       <SEO
         title="Customer Reviews & Testimonials — The Roof Store Florida"
-        description="Real testimonials from South Florida homeowners — including Don Godshall's Hurricane Wilma survival story. A+ BBB Rated since 1994. RoofShield, SmartShield, FungalShield."
+        description="Real testimonials from South Florida homeowners — including Don Godshall's Hurricane Wilma survival story. A+ BBB Rated since 1994. Roof Shield, Smart Shield, Fungal Shield."
         canonical="/reviews"
         schema={schema}
       />

@@ -29,7 +29,7 @@ export default function Terms() {
 
           <section>
             <h2 className="font-serif font-bold text-2xl text-primary mb-3">Intellectual Property</h2>
-            <p>All content on this website — including text, images, logos, product names (FungalShield, SmartShield, RoofShield), and graphics — is the property of Storm Shield Paint Systems Inc. and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or use any content without our express written permission.</p>
+            <p>All content on this website — including text, images, logos, product names (Fungal Shield, Smart Shield, Roof Shield), and graphics — is the property of Storm Shield Paint Systems Inc. and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, or use any content without our express written permission.</p>
           </section>
 
           <section>

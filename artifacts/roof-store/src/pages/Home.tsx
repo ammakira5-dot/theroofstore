@@ -54,9 +54,9 @@ const BUSINESS_CORE = {
     "@type": "OfferCatalog",
     name: "Roof Coating Systems",
     itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "FungalShield (RP1) — Anti-Fungal Roof Coating" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "SmartShield (RP2) — Tintable Waterproof Tile Roof Coating" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "RoofShield (RP3) — Full Monolithic Hurricane Protection System" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fungal Shield (RP1) — Anti-Fungal Roof Coating" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Smart Shield (RP2) — Tintable Waterproof Tile Roof Coating" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Roof Shield (RP3) — Full Monolithic Hurricane Protection System" } },
     ],
   },
   owns: {
@@ -112,7 +112,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <SEO
-        title="The Roof Store | Rubber Roof Coating Florida — FungalShield, SmartShield & RoofShield"
+        title="The Roof Store | Rubber Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield"
         description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
         ogImage="https://www.theroofstore.net/images/hero-bg.png"
@@ -126,7 +126,7 @@ export default function Home() {
           <img 
             src="/images/hero-bg.png" 
             alt="Florida home with liquid rubber roof coating applied by The Roof Store — weatherproof and hurricane-rated"
-            title="The Roof Store — Liquid Rubber Roof Coating Florida | FungalShield, SmartShield, RoofShield"
+            title="The Roof Store — Liquid Rubber Roof Coating Florida | Fungal Shield, Smart Shield, Roof Shield"
             className="w-full h-full object-cover"
           />
         </div>
@@ -187,8 +187,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
             <div className="flex flex-col items-center p-4">
               <Factory className="h-12 w-12 text-accent mb-4" />
-              <h3 className="font-serif font-bold text-xl mb-2">Manufacturer &amp; Contractor</h3>
-              <p className="text-white/80 text-sm">We make our own coatings and install them ourselves. No middlemen — straight from our Davie, FL factory to your roof.</p>
+              <h3 className="font-serif font-bold text-xl mb-2">Direct-Source Contractor</h3>
+              <p className="text-white/80 text-sm">We sell Roof Protect's proprietary coatings and install them ourselves. No middlemen — straight from the Davie, FL factory to your roof.</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <Award className="h-12 w-12 text-accent mb-4" />
@@ -198,7 +198,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-4">
               <Wind className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2">World's Only TAS-106 Rated</h3>
-              <p className="text-white/80 text-sm">RoofShield is the only liquid coating on earth with Dade County TAS-106 Uplift certification — tested on Spanish tile roofs.</p>
+              <p className="text-white/80 text-sm">Roof Shield is the only liquid coating on earth with Dade County TAS-106 Uplift certification — tested on Spanish tile roofs.</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <ShieldCheck className="h-12 w-12 text-accent mb-4" />
@@ -221,7 +221,7 @@ export default function Home() {
             {[
               { title: "Roof Tile Restoration", desc: "Complete cleaning, repair, and sealing of aging terracotta and concrete tiles.", icon: <Wrench className="h-6 w-6" /> },
               { title: "Flat Deck Rubber Paint", desc: "Seamless liquid rubber membranes that eliminate leaks on flat roofs permanently.", icon: <Droplets className="h-6 w-6" /> },
-              { title: "FungalShield · SmartShield · RoofShield", desc: "Our three branded coating systems tackle algae, heat, and waterproofing — choose the right shield for your roof.", icon: <ShieldCheck className="h-6 w-6" /> }
+              { title: "Fungal Shield · Smart Shield · Roof Shield", desc: "Our three branded coating systems tackle algae, heat, and waterproofing — choose the right shield for your roof.", icon: <ShieldCheck className="h-6 w-6" /> }
             ].map((s, i) => (
               <motion.div 
                 key={i}

@@ -33,7 +33,7 @@ const systems: PriceSystem[] = [
     badge: "Entry Level",
     badgeColor: "bg-green-100 text-green-800",
     icon: Leaf,
-    name: "FungalShield",
+    name: "Fungal Shield",
     code: "RP1",
     tagline: "Clear anti-fungal & anti-algae coating — roofs or walls",
     from: "from 50¢ / sq ft",
@@ -48,7 +48,7 @@ const systems: PriceSystem[] = [
     badge: "Most Popular",
     badgeColor: "bg-blue-100 text-blue-800",
     icon: Sun,
-    name: "SmartShield",
+    name: "Smart Shield",
     code: "RP2",
     tagline: "Waterproofing — tile roofs, walls & flat decks · 3,000+ colors",
     from: "from $1.90 / sq ft",
@@ -64,7 +64,7 @@ const systems: PriceSystem[] = [
     badge: "Premium · Flagship",
     badgeColor: "bg-amber-100 text-amber-800",
     icon: ShieldCheck,
-    name: "RoofShield",
+    name: "Roof Shield",
     code: "RP3",
     tagline: "Full weatherproofing retrofit · World's only TAS-106 Dade County rated coating · Lifetime warranty",
     from: "from $2.70 / sq ft",
@@ -83,7 +83,7 @@ export default function Pricing() {
     "@context": "https://schema.org",
     "@type": "PriceSpecification",
     name: "Factory Price Menu — The Roof Store",
-    description: "Per-square-foot pricing for FungalShield, SmartShield, and RoofShield roof coating systems. Prices vary by roof type and pitch. All prices include labor and materials.",
+    description: "Per-square-foot pricing for Fungal Shield, Smart Shield, and Roof Shield roof coating systems. Prices vary by roof type and pitch. All prices include labor and materials.",
     url: `${BASE}/pricing`,
   };
 
@@ -91,7 +91,7 @@ export default function Pricing() {
     <div className="w-full">
       <SEO
         title="Pricing — Factory Price Menu | The Roof Store"
-        description="Factory per-sq-ft pricing for FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) roof coating systems. All prices include labor & materials. Serving South Florida since 1994."
+        description="Factory per-sq-ft pricing for Fungal Shield (RP1), Smart Shield (RP2), and Roof Shield (RP3) roof coating systems. All prices include labor & materials. Serving South Florida since 1994."
         canonical="/pricing"
         schema={schema}
       />
@@ -172,12 +172,12 @@ export default function Pricing() {
                 </table>
               </div>
 
-              {/* Inspection note for RoofShield */}
+              {/* Inspection note for Roof Shield */}
               {sys.inspection && (
                 <div className="mx-6 mb-6 mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex items-start gap-3">
                   <Info className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                   <p className="text-sm text-amber-800 leading-relaxed">
-                    <strong>Manufacturer's Inspection Required:</strong> The RoofShield warranty program requires a pre-application Manufacturer's Report — $150 per 5,000 sq ft, <strong>100% refunded</strong> when you proceed. <Link href="/manufacturers-report" className="underline font-semibold">Learn more →</Link>
+                    <strong>Manufacturer's Inspection Required:</strong> The Roof Shield warranty program requires a pre-application Manufacturer's Report — $150 per 5,000 sq ft, <strong>100% refunded</strong> when you proceed. <Link href="/manufacturers-report" className="underline font-semibold">Learn more →</Link>
                   </p>
                 </div>
               )}

@@ -9,12 +9,12 @@ import { Lightbox, useLightbox, type LightboxImage } from "@/components/Lightbox
 const beforeAfterProjects = [
   {
     title: "Spanish Tile Roof Restoration",
-    type: "RoofShield Liquid Rubber Membrane System",
+    type: "Roof Shield Liquid Rubber Membrane System",
     location: "Davie, FL",
     size: "Residential",
     saved: "$22,000+",
     description:
-      "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat RoofShield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
+      "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat Roof Shield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
     beforeSrc: "/images/projects/clay-tile-before.png",
     afterSrc: "/images/projects/clay-tile-after.png",
     beforeLabel: "Before",
@@ -28,12 +28,12 @@ const beforeAfterProjects = [
   },
   {
     title: "Older Spanish Tile Full Restoration",
-    type: "Full Tile Removal, Deck Repair & RoofShield System",
+    type: "Full Tile Removal, Deck Repair & Roof Shield System",
     location: "South Florida",
     size: "Residential",
     saved: "$25,000+",
     description:
-      "This older Spanish barrel tile roof had decades of wear — cracked tiles, compromised underlayment, and exposed deck boards in several sections. Our crew removed the damaged tiles, inspected and repaired the deck, then reinstalled and sealed the roof with our full RoofShield waterproofing system. The finished roof looks brand new and is protected for decades to come.",
+      "This older Spanish barrel tile roof had decades of wear — cracked tiles, compromised underlayment, and exposed deck boards in several sections. Our crew removed the damaged tiles, inspected and repaired the deck, then reinstalled and sealed the roof with our full Roof Shield waterproofing system. The finished roof looks brand new and is protected for decades to come.",
     beforeSrc: "/images/projects/spanish-tile-older-before.png",
     afterSrc: "/images/projects/spanish-tile-older-after.png",
     beforeLabel: "Before",
@@ -69,12 +69,12 @@ const beforeAfterProjects = [
   },
   {
     title: "Flat Cement Tile Eave Repair",
-    type: "Required Repair Before RoofShield System Application",
+    type: "Required Repair Before Roof Shield System Application",
     location: "South Florida",
     size: "Residential",
     saved: "$8,000+",
     description:
-      "Older tile roofs often have some rotted or soft wood around the eaves, soffits, or fascia edges — and many homeowners are told they need a full roof replacement because of it. Not true. Localized wood damage at the edges does not mean the entire roof structure is compromised. This flat cement tile roof is a perfect example: we removed the affected tiles, repaired the damaged eave wood, sealed the deck and fascia with rubberized mastic, and reinstalled the tiles cleanly — preparing the entire surface for a full RoofShield waterproofing system at a fraction of replacement cost.",
+      "Older tile roofs often have some rotted or soft wood around the eaves, soffits, or fascia edges — and many homeowners are told they need a full roof replacement because of it. Not true. Localized wood damage at the edges does not mean the entire roof structure is compromised. This flat cement tile roof is a perfect example: we removed the affected tiles, repaired the damaged eave wood, sealed the deck and fascia with rubberized mastic, and reinstalled the tiles cleanly — preparing the entire surface for a full Roof Shield waterproofing system at a fraction of replacement cost.",
     beforeSrc: "/images/projects/cement-tile-repair-before.png",
     afterSrc: "/images/projects/cement-tile-repair-after.png",
     beforeLabel: "Repair In Progress",
@@ -82,12 +82,12 @@ const beforeAfterProjects = [
   },
   {
     title: "Flat Cement Tile Waterproofing System",
-    type: "FungalShield + RoofShield Two-Coat System",
+    type: "Fungal Shield + Roof Shield Two-Coat System",
     location: "Broward County, FL",
     size: "Residential",
     saved: "$30,000+",
     description:
-      "A two-coat system starting with FungalShield (RP1) to kill mold and prevent regrowth, followed by RoofShield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
+      "A two-coat system starting with Fungal Shield (RP1) to kill mold and prevent regrowth, followed by Roof Shield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
     beforeSrc: "/images/projects/flat-cement-before.png",
     afterSrc: "/images/projects/flat-cement-after.png",
     beforeLabel: "Before",
@@ -103,8 +103,8 @@ const caseStudies = [
   {
     title: "Hurricane Recovery Coating",
     location: "Hollywood, FL",
-    type: "RoofShield Premium System",
-    description: "Post-hurricane assessment and full RoofShield premium system application. Multiple cracked tiles replaced, all ridge caps reseated and sealed.",
+    type: "Roof Shield Premium System",
+    description: "Post-hurricane assessment and full Roof Shield premium system application. Multiple cracked tiles replaced, all ridge caps reseated and sealed.",
     result: "Insurance-approved restoration. Passed wind mitigation inspection at highest rating.",
     icon: ShieldCheck,
   },
@@ -171,10 +171,10 @@ export default function Projects() {
       name: "Roof Coating Before & After Project Gallery — The Roof Store",
       url: `${BASE}/projects`,
       associatedMedia: [
-        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-after.png`, name: "Spanish Tile Roof Restoration After — RoofShield System Davie FL", description: "Spanish tile roof after RoofShield liquid rubber membrane restoration in Davie, FL. Saved owner $22,000+ vs. re-roofing.", caption: "Spanish Tile Roof Restoration — After" },
-        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-before.png`, name: "Spanish Tile Roof Before Coating — Algae Staining and Cracking", description: "Spanish tile roof before RoofShield application showing UV damage, algae staining, and hairline cracking at ridge caps.", caption: "Spanish Tile Roof Restoration — Before" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-after.png`, name: "Spanish Tile Roof Restoration After — Roof Shield System Davie FL", description: "Spanish tile roof after Roof Shield liquid rubber membrane restoration in Davie, FL. Saved owner $22,000+ vs. re-roofing.", caption: "Spanish Tile Roof Restoration — After" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-before.png`, name: "Spanish Tile Roof Before Coating — Algae Staining and Cracking", description: "Spanish tile roof before Roof Shield application showing UV damage, algae staining, and hairline cracking at ridge caps.", caption: "Spanish Tile Roof Restoration — Before" },
         { "@type": "ImageObject", url: `${BASE}/images/projects/flat-deck-extra-3.jpg`, name: "Flat Deck Rubber Roof Seam Sealing In Progress — South Florida", description: "Flat deck rubber roof seam sealing in progress with liquid rubber coating system applied by The Roof Store.", caption: "Flat Deck Rubber Roof Installation" },
-        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-cement-after.png`, name: "Flat Cement Tile Roof After FungalShield RoofShield Two-Coat System", description: "Flat cement tile roof after FungalShield (RP1) + RoofShield (RP3) two-coat waterproofing system in Broward County, FL.", caption: "Flat Cement Tile Waterproofing — After" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-cement-after.png`, name: "Flat Cement Tile Roof After Fungal Shield Roof Shield Two-Coat System", description: "Flat cement tile roof after Fungal Shield (RP1) + Roof Shield (RP3) two-coat waterproofing system in Broward County, FL.", caption: "Flat Cement Tile Waterproofing — After" },
       ],
     },
   ];

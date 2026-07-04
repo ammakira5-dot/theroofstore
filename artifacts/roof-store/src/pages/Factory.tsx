@@ -15,7 +15,7 @@ const factoryPhotos = [
   { src: "/images/factory/5.jpg", alt: "Batch mixing process for liquid rubber roof coating system at The Roof Store", title: "Roof Coating Batch Mixing — The Roof Store" },
   { src: "/images/factory/7.jpg", alt: "Roof coating product storage and finishing at South Florida manufacturing facility", title: "Roof Coating Storage — The Roof Store Factory" },
   { src: "/images/factory/10.jpg", alt: "Quality control lab testing roof coating formulas at The Roof Store Davie FL", title: "Quality Control Lab — The Roof Store Roof Coatings" },
-  { src: "/images/factory/12.jpg", alt: "FungalShield SmartShield RoofShield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
+  { src: "/images/factory/12.jpg", alt: "Fungal Shield Smart Shield Roof Shield inventory at The Roof Store manufacturing plant", title: "Roof Coating Inventory — The Roof Store" },
   { src: "/images/factory/13.jpg", alt: "Liquid rubber roof coating manufacturing process at The Roof Store South Florida", title: "Manufacturing Process — The Roof Store Davie FL" },
   { src: "/images/factory/14.jpg", alt: "Factory operations at The Roof Store roof coating manufacturer in Davie Florida", title: "Factory Operations — The Roof Store" },
   { src: "/images/factory/15.jpg", alt: "Technician operating liquid rubber blending tank at The Roof Store coating facility in Davie Florida", title: "Liquid Rubber Blending — The Roof Store Roof Coating Manufacturer" },
@@ -26,9 +26,9 @@ const factoryPhotos = [
 ];
 
 const products = [
-  { icon: Leaf, name: "FungalShield", code: "RP1", href: "/products/fungalshield", color: "bg-green-100 text-green-700", desc: "Anti-fungal & anti-algae roof coating" },
-  { icon: Sun, name: "SmartShield", code: "RP2", href: "/products/smartshield", color: "bg-accent/10 text-accent", desc: "Energy-reflective smart coating system — our most popular" },
-  { icon: ShieldCheck, name: "RoofShield", code: "RP3", href: "/products/roofshield", color: "bg-primary/10 text-primary", desc: "Flagship all-weather waterproofing membrane" },
+  { icon: Leaf, name: "Fungal Shield", code: "RP1", href: "/products/fungalshield", color: "bg-green-100 text-green-700", desc: "Anti-fungal & anti-algae roof coating" },
+  { icon: Sun, name: "Smart Shield", code: "RP2", href: "/products/smartshield", color: "bg-accent/10 text-accent", desc: "Energy-reflective smart coating system — our most popular" },
+  { icon: ShieldCheck, name: "Roof Shield", code: "RP3", href: "/products/roofshield", color: "bg-primary/10 text-primary", desc: "Flagship all-weather waterproofing membrane" },
 ];
 
 const stats = [
@@ -54,11 +54,11 @@ export default function Factory() {
         postalCode: "33328",
         addressCountry: "US",
       },
-      description: "The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      description: "The Roof Store manufactures Fungal Shield, Smart Shield, and Roof Shield at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
       makesOffer: [
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "FungalShield (RP1)", description: "Anti-fungal roof coating — manufactured in Davie, FL" } },
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "SmartShield (RP2)", description: "Tintable waterproof tile roof coating — manufactured in Davie, FL" } },
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "RoofShield (RP3)", description: "Monolithic hurricane protection roof system — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Fungal Shield (RP1)", description: "Anti-fungal roof coating — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Smart Shield (RP2)", description: "Tintable waterproof tile roof coating — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Roof Shield (RP3)", description: "Monolithic hurricane protection roof system — manufactured in Davie, FL" } },
       ],
     },
     {
@@ -76,7 +76,7 @@ export default function Factory() {
     <div className="w-full">
       <SEO
         title="Our Factory — Manufactured in Davie, Florida Since 1994"
-        description="The Roof Store manufactures FungalShield, SmartShield, and RoofShield at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
+        description="The Roof Store manufactures Fungal Shield, Smart Shield, and Roof Shield at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
         canonical="/factory"
         ogImage={`${BASE}/images/factory/1.jpg`}
         schema={schema}
@@ -91,7 +91,7 @@ export default function Factory() {
             </div>
             <h1 className="text-5xl font-serif font-bold mb-6">Our Factory</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Through proprietary manufacturing technology, every gallon of FungalShield, SmartShield, and RoofShield is formulated as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
+              Through proprietary manufacturing technology, every gallon of Fungal Shield, Smart Shield, and Roof Shield is formulated as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
             </p>
           </motion.div>
         </div>
@@ -202,7 +202,7 @@ export default function Factory() {
               <div className="text-sm font-bold uppercase tracking-wider text-accent mb-4">The Proof</div>
               <h2 className="text-4xl font-serif font-bold mb-4">5× Stronger Than a New Roof at ½ the Cost</h2>
               <p className="text-white/75 text-lg leading-relaxed mb-4">
-                The original RoofShield System has been independently tested and documented to be five times stronger in wind uplift resistance than a standard new tile roof installation — at half the cost and a fraction of the installation time.
+                The original Roof Shield System has been independently tested and documented to be five times stronger in wind uplift resistance than a standard new tile roof installation — at half the cost and a fraction of the installation time.
               </p>
               <p className="text-white/75 leading-relaxed">
                 Our documented projects include roofs that survived real Category-force hurricane winds without a single tile displaced. Not simulated. Not theoretical. Real roofs, real storms.
@@ -270,7 +270,7 @@ export default function Factory() {
               </div>
               <h2 className="text-4xl font-serif font-bold text-primary mb-4">Become a Distributor</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We supply FungalShield, SmartShield, and RoofShield to licensed contractors and distributors throughout Florida, nationally, and internationally. Volume pricing, technical training, and full marketing support included.
+                We supply Fungal Shield, Smart Shield, and Roof Shield to licensed contractors and distributors throughout Florida, nationally, and internationally. Volume pricing, technical training, and full marketing support included.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 County, state, and national territories available. Installer distributorships from $25,000. Sales manager packages negotiable.

@@ -101,7 +101,7 @@ export default function Distributorships() {
       name: "Roof Coating Distributorship Opportunities — The Roof Store Florida",
       url: `${BASE}/distributorships`,
       description:
-        "Become an authorized distributor of FungalShield, SmartShield, and RoofShield roof coating systems. Exclusive county territories, full training, advertising support, and proven sales system. Call 954-210-9614.",
+        "Become an authorized distributor of Fungal Shield, Smart Shield, and Roof Shield roof coating systems. Exclusive county territories, full training, advertising support, and proven sales system. Call 954-210-9614.",
       provider: {
         "@type": "Organization",
         name: "The Roof Store — Storm Shield Paint Systems Inc.",
@@ -123,7 +123,7 @@ export default function Distributorships() {
     <div className="w-full">
       <SEO
         title="Roof Coating Distributorship Opportunities — The Roof Store Florida"
-        description="Become an authorized distributor of FungalShield, SmartShield & RoofShield. Exclusive county territories, full training, complete advertising support, and proven sales system. Call 954-210-9614."
+        description="Become an authorized distributor of Fungal Shield, Smart Shield & Roof Shield. Exclusive county territories, full training, complete advertising support, and proven sales system. Call 954-210-9614."
         canonical="/distributorships"
         schema={schema}
       />
@@ -180,7 +180,7 @@ export default function Distributorships() {
         </div>
       </section>
 
-      {/* RoofShield System Overview */}
+      {/* Roof Shield System Overview */}
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -194,10 +194,10 @@ export default function Distributorships() {
                 The 5-Step Seamless Roof Coating System
               </div>
               <h2 className="text-4xl font-serif font-bold text-primary mb-6">
-                RoofShield™ — A Product That Virtually Sells Itself
+                Roof Shield™ — A Product That Virtually Sells Itself
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                FungalShield, SmartShield, and RoofShield are the most advanced roof coating, waterproofing, and painting products available today. Our proprietary liquid rubber formulas are 100% resin — no fillers — and are suitable for ponding water and below-grade projects.
+                Fungal Shield, Smart Shield, and Roof Shield are the most advanced roof coating, waterproofing, and painting products available today. Our proprietary liquid rubber formulas are 100% resin — no fillers — and are suitable for ponding water and below-grade projects.
               </p>
               <ul className="space-y-3">
                 {systemBenefits.map((b, i) => (
@@ -220,11 +220,11 @@ export default function Distributorships() {
               <div className="bg-muted rounded-2xl overflow-hidden border border-border">
                 <div className="grid grid-cols-2">
                   <div className="relative">
-                    <img src="/images/distributorships/Cement-tile-before.jpg" alt="Cement tile roof before RoofShield coating" className="w-full h-44 object-cover" />
+                    <img src="/images/distributorships/Cement-tile-before.jpg" alt="Cement tile roof before Roof Shield coating" className="w-full h-44 object-cover" />
                     <span className="absolute top-2 left-2 bg-black/60 text-white text-xs font-bold px-2 py-0.5 rounded">BEFORE</span>
                   </div>
                   <div className="relative">
-                    <img src="/images/distributorships/Cement-Tile-After.jpg" alt="Cement tile roof after RoofShield coating" className="w-full h-44 object-cover" />
+                    <img src="/images/distributorships/Cement-Tile-After.jpg" alt="Cement tile roof after Roof Shield coating" className="w-full h-44 object-cover" />
                     <span className="absolute top-2 left-2 bg-accent/90 text-white text-xs font-bold px-2 py-0.5 rounded">AFTER</span>
                   </div>
                 </div>
@@ -236,7 +236,7 @@ export default function Distributorships() {
 
               {/* Barrel Tile Weatherproof */}
               <div className="bg-muted rounded-2xl overflow-hidden border border-border">
-                <img src="/images/distributorships/barrel-tile-after-weatherproof.jpg" alt="Barrel tile roof after weatherproofing with RoofShield" className="w-full h-48 object-cover" />
+                <img src="/images/distributorships/barrel-tile-after-weatherproof.jpg" alt="Barrel tile roof after weatherproofing with Roof Shield" className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">Barrel Tile — Customer Testimonial</div>
                   <p className="text-muted-foreground italic text-sm">"The coating really stopped all my roof leaks."</p>

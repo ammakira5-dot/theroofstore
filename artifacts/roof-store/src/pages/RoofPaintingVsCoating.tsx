@@ -75,12 +75,12 @@ const coatingBenefits = [
   {
     benefit: "Hurricane wind-uplift rated",
     detail:
-      "Our RoofShield system carries Florida Product Approval for wind uplift resistance — tested to perform in hurricane conditions.",
+      "Our Roof Shield system carries Florida Product Approval for wind uplift resistance — tested to perform in hurricane conditions.",
   },
   {
-    benefit: "FungalShield protection built in",
+    benefit: "Fungal Shield protection built in",
     detail:
-      "Our RP1 FungalShield system includes permanent antimicrobial protection that prevents black algae, fungus, and biological growth from returning.",
+      "Our RP1 Fungal Shield system includes permanent antimicrobial protection that prevents black algae, fungus, and biological growth from returning.",
   },
   {
     benefit: "Citizens Insurance certification eligible",
@@ -94,7 +94,7 @@ const comparisonRows = [
   { label: "Lifespan in South Florida", paint: "2–3 years", coating: "10–15+ years" },
   { label: "Flexibility", paint: "Rigid — cracks", coating: "Elastomeric — moves with roof" },
   { label: "Hurricane rated", paint: "No", coating: "Yes — Florida Product Approval" },
-  { label: "Algae / mold protection", paint: "None", coating: "FungalShield antimicrobial" },
+  { label: "Algae / mold protection", paint: "None", coating: "Fungal Shield antimicrobial" },
   { label: "Citizens certification eligible", paint: "No", coating: "Yes" },
   { label: "Energy savings", paint: "Minimal", coating: "Significant UV reflection" },
   { label: "Warranty", paint: "None", coating: "10–15 year manufacturer warranty" },
@@ -194,7 +194,7 @@ export default function RoofPaintingVsCoating() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-serif font-bold text-primary mb-3">What a Roof Coating System Actually Does</h2>
             <p className="text-muted-foreground mb-10">
-              Our proprietary coating systems — FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) — are not
+              Our proprietary coating systems — Fungal Shield (RP1), Smart Shield (RP2), and Roof Shield (RP3) — are not
               paint. They are liquid-applied roofing systems that cure into a continuous rubber membrane.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -263,21 +263,21 @@ export default function RoofPaintingVsCoating() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  name: "FungalShield",
+                  name: "Fungal Shield",
                   code: "RP1",
                   href: "/products/fungalshield",
                   desc: "Our antimicrobial coating system designed to permanently prevent algae, mold, and black streaking. Ideal for tile roofs in heavily shaded or humid environments.",
                   tag: "Best for: Tile — algae & mold control",
                 },
                 {
-                  name: "SmartShield",
+                  name: "Smart Shield",
                   code: "RP2",
                   href: "/products/smartshield",
                   desc: "Our energy-efficient reflective coating system that dramatically reduces roof surface temperature and lowers cooling costs — while providing a full waterproof seal.",
                   tag: "Best for: Flat / low-slope roofs",
                 },
                 {
-                  name: "RoofShield",
+                  name: "Roof Shield",
                   code: "RP3",
                   href: "/products/roofshield",
                   desc: "Our premium hurricane-rated rubber roof system with the highest wind uplift resistance and longest warranty. Built for South Florida's most demanding exposure conditions.",

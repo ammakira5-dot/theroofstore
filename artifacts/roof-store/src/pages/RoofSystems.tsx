@@ -35,14 +35,14 @@ interface RoofSystem {
 const systems: RoofSystem[] = [
   {
     icon: Leaf,
-    name: "FungalShield",
+    name: "Fungal Shield",
     tagline: "Florida's Anti-Fungal Roof Coating System",
     badge: "RP1 — Anti-Fungal System",
     location: "Broward County, FL",
     size: "Residential",
     color: "bg-green-100 text-green-700",
     description:
-      "Engineered specifically for Florida's humid climate, FungalShield is a high-performance anti-fungal, anti-algae roof coating that eliminates and prevents the black streaks and biological growth that plague South Florida roofs. Its active biocide formula bonds to the roof surface, creating a long-lasting barrier against mold, mildew, algae, and fungus — restoring appearance while protecting structural integrity.",
+      "Engineered specifically for Florida's humid climate, Fungal Shield is a high-performance anti-fungal, anti-algae roof coating that eliminates and prevents the black streaks and biological growth that plague South Florida roofs. Its active biocide formula, built on a clear elastomeric base, bonds to the roof surface, creating a long-lasting barrier against mold, mildew, algae, and fungus — restoring appearance while protecting structural integrity.",
     features: [
       "Active biocide formula inhibits algae, mold, and fungal growth",
       "Eliminates black streaking caused by biological organisms",
@@ -51,20 +51,20 @@ const systems: RoofSystem[] = [
       "Extends roof life by halting biological deterioration",
     ],
     gallery: [
-      { src: "/images/projects/flat-cement-extra-1.png", alt: "Spanish clay tile roof treated with FungalShield anti-fungal coating" },
-      { src: "/images/projects/flat-cement-extra-2.png", alt: "Spanish cement tile roof restored with FungalShield anti-fungal system" },
+      { src: "/images/projects/flat-cement-extra-1.png", alt: "Spanish clay tile roof treated with Fungal Shield anti-fungal coating" },
+      { src: "/images/projects/flat-cement-extra-2.png", alt: "Spanish cement tile roof restored with Fungal Shield anti-fungal system" },
     ],
   },
   {
     icon: Sun,
-    name: "SmartShield",
+    name: "Smart Shield",
     tagline: "3,000+ Colors — The Darker the Color, the More It Reflects",
     badge: "RP2 — Energy-Reflective Coating",
     location: "South Florida",
     size: "Residential",
     color: "bg-accent/10 text-accent",
     description:
-      "SmartShield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — our team engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
+      "Smart Shield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — Roof Protect engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Built on an elastomeric base for darker tile colors, or fortified with polyurethane or ceramic for non-reflective tile roofs and certain flat roofs. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
     features: [
       "3,000+ color options — full custom palette, any shade including dark charcoal & brown",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology, TSR +32%",
@@ -73,40 +73,40 @@ const systems: RoofSystem[] = [
       "Waterproof & guaranteed mildew-proof — 5× thicker than standard roof paint",
     ],
     gallery: [
-      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Composite tile roof coated with SmartShield color roof system" },
-      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Composite tile roof restoration with SmartShield cool pigment coating" },
-      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Composite tile roof close-up after SmartShield application" },
-      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Composite tile roof home exterior restored with SmartShield" },
+      { src: "/images/projects/spanish-tile-extra-3.png", alt: "Composite tile roof coated with Smart Shield color roof system" },
+      { src: "/images/projects/spanish-tile-extra-4.png", alt: "Composite tile roof restoration with Smart Shield cool pigment coating" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Composite tile roof close-up after Smart Shield application" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Composite tile roof home exterior restored with Smart Shield" },
     ],
   },
   {
     icon: ShieldCheck,
-    name: "RoofShield",
-    tagline: "World's Only TAS-106 Dade County Uplift Rated Coating",
+    name: "Roof Shield",
+    tagline: "The Original Liquid Applied Rubber Roof Shield System",
     badge: "RP3 — Hurricane Protection Membrane",
     location: "Davie, FL",
     size: "Residential",
     color: "bg-primary/10 text-primary",
     worldsOnly: true,
     description:
-      "RoofShield is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Tested on real Spanish tile roofs, it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. One 100% seamless liquid rubber membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
+      "Roof Shield — The Original Liquid Applied Rubber Roof Shield System — is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Typically formulated with a proprietary premium silicone base ingredient (interchangeable with elastomeric or polyurethane depending on the project), it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at half the cost. One 100% seamless membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
     features: [
       "World's ONLY TAS-106 Dade County Uplift Pull Test certified roof coating",
       "Tested on real Spanish & concrete tile — adds true tile attachment to substrate",
       "5× stronger in wind uplift than a new tile roof installation",
       "135+ MPH documented — zero tiles lost on treated roofs in real hurricane events",
-      "100% seamless waterproof rubber membrane — stops leaks permanently",
+      "100% seamless waterproof membrane — stops leaks permanently, including on flat roofs with standing water",
       "Lifetime Warranty — maintenance-free, transferable & renewable",
     ],
     gallery: [
-      { src: "/images/projects/clay-tile-before.png", alt: "Composite clay tile roof before RoofShield waterproof coating" },
-      { src: "/images/projects/clay-tile-after.png", alt: "Composite clay tile roof after RoofShield waterproof coating" },
-      { src: "/images/projects/flat-cement-before.png", alt: "Flat cement tile roof before RoofShield waterproof coating" },
-      { src: "/images/projects/flat-cement-after.png", alt: "Flat cement tile roof after RoofShield waterproof coating" },
-      { src: "/images/projects/spanish-tile-before.png", alt: "Composite Spanish tile roof before RoofShield waterproof coating" },
-      { src: "/images/projects/spanish-tile-after.png", alt: "Composite Spanish tile roof after RoofShield waterproof coating" },
-      { src: "/images/projects/flat-deck-before-2.png", alt: "Commercial built-up flat deck roof before RoofShield waterproof coating" },
-      { src: "/images/projects/flat-deck-after-2.png", alt: "Commercial built-up flat deck roof fully restored after RoofShield waterproof coating" },
+      { src: "/images/projects/clay-tile-before.png", alt: "Composite clay tile roof before Roof Shield waterproof coating" },
+      { src: "/images/projects/clay-tile-after.png", alt: "Composite clay tile roof after Roof Shield waterproof coating" },
+      { src: "/images/projects/flat-cement-before.png", alt: "Flat cement tile roof before Roof Shield waterproof coating" },
+      { src: "/images/projects/flat-cement-after.png", alt: "Flat cement tile roof after Roof Shield waterproof coating" },
+      { src: "/images/projects/spanish-tile-before.png", alt: "Composite Spanish tile roof before Roof Shield waterproof coating" },
+      { src: "/images/projects/spanish-tile-after.png", alt: "Composite Spanish tile roof after Roof Shield waterproof coating" },
+      { src: "/images/projects/flat-deck-before-2.png", alt: "Commercial built-up flat deck roof before Roof Shield waterproof coating" },
+      { src: "/images/projects/flat-deck-after-2.png", alt: "Commercial built-up flat deck roof fully restored after Roof Shield waterproof coating" },
     ],
   },
 ];
@@ -134,11 +134,11 @@ export default function RoofSystems() {
       "@type": "ItemList",
       name: "The Roof Store — Roof Coating Systems",
       url: `${BASE}/roof-systems`,
-      description: "Three proprietary roof coating systems — FungalShield, SmartShield, RoofShield — manufactured in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
+      description: "Three proprietary roof coating systems — Fungal Shield, Smart Shield, Roof Shield — manufactured by Roof Protect in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "FungalShield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
-        { "@type": "ListItem", position: 2, name: "SmartShield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },
-        { "@type": "ListItem", position: 3, name: "RoofShield (RP3)", url: `${BASE}/products/roofshield`, description: "Multi-layer monolithic hurricane protection system — fills every gap between tiles, sealed solid." },
+        { "@type": "ListItem", position: 1, name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
+        { "@type": "ListItem", position: 2, name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },
+        { "@type": "ListItem", position: 3, name: "Roof Shield (RP3)", url: `${BASE}/products/roofshield`, description: "Multi-layer monolithic hurricane protection system — fills every gap between tiles, sealed solid." },
       ],
     },
     {
@@ -156,7 +156,7 @@ export default function RoofSystems() {
     <div className="w-full">
       <SEO
         title="Elastomeric, Polyurethane & Silicone Roof Coating Systems — The Roof Store Florida"
-        description="Manufacturer-specified elastomeric, polyurethane, and silicone roof coating systems for Florida homes and commercial properties. FungalShield, SmartShield & RoofShield — formulation determined after inspection. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
+        description="Manufacturer-specified elastomeric, polyurethane, and silicone roof coating systems for Florida homes and commercial properties. Fungal Shield, Smart Shield & Roof Shield — formulation determined after inspection. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
         canonical="/roof-systems"
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}
@@ -187,10 +187,10 @@ export default function RoofSystems() {
               The System Defines the Goal. The Formulation Is Specified Per Roof.
             </h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-              FungalShield, SmartShield, and RoofShield are application systems — each engineered for a specific
+              Fungal Shield, Smart Shield, and Roof Shield are application systems — each engineered for a specific
               protection goal. The actual coating product used within each system is determined <em>after</em> our
               manufacturer's inspection, based on the roof's condition, surface material, the client's goals, and
-              realistic budget. We manufacture three formulation grades — and not every roof qualifies for every one.
+              realistic budget. Roof Protect manufactures three formulation grades — and not every roof qualifies for every one.
             </p>
           </div>
 

@@ -58,11 +58,11 @@ export function ProductDetail({ product }: { product: ProductData }) {
         bestRating: "5",
         worstRating: "1",
       },
-      brand: { "@type": "Brand", name: "The Roof Store" },
+      brand: { "@type": "Brand", name: "Roof Protect" },
       manufacturer: {
         "@type": "Organization",
-        name: "The Roof Store",
-        url: BASE,
+        name: "Roof Protect",
+        url: "https://www.roofprotectproducts.com",
         address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
       ...(product.price && product.shopAvailable !== false
@@ -289,8 +289,8 @@ export function ProductDetail({ product }: { product: ProductData }) {
 
               <div className="bg-muted rounded-xl p-6">
                 <div className="text-sm font-bold text-foreground mb-4 uppercase tracking-wide">Manufactured By</div>
-                <div className="font-bold text-primary mb-1">The Roof Store</div>
-                <div className="text-sm text-muted-foreground mb-4">Made in South Florida since 1994</div>
+                <div className="font-bold text-primary mb-1">Roof Protect</div>
+                <div className="text-sm text-muted-foreground mb-4">Made in South Florida since 1994 — available exclusively through The Roof Store</div>
                 <Link href="/factory" className="text-sm text-accent font-semibold flex items-center gap-1 hover:underline">
                   See our factory <ArrowRight className="h-3.5 w-3.5" />
                 </Link>

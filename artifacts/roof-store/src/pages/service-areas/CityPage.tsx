@@ -179,7 +179,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                     {
                       icon: Wind,
                       title: "Hurricane Protection Coating",
-                      desc: `Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating — engineered to withstand South Florida hurricane-force winds and keep ${city} homes protected season after season.`,
+                      desc: `Our Roof Shield system is the world's only TAS-106 Dade County Uplift rated coating — engineered to withstand South Florida hurricane-force winds and keep ${city} homes protected season after season.`,
                     },
                     {
                       icon: Wrench,

@@ -38,7 +38,7 @@ export const counties: CountyEntry[] = [
         slug: "cooper-city",
         image: "/api/storage/public-objects/cities/1568605114967-8130f3a36994.jpg",
         blurb:
-          "Cooper City is a tight-knit family suburb where most homes feature barrel or flat tile roofs installed in the 1980s and 90s — making it prime territory for restoration rather than replacement. The city's tree canopy is beautiful but holds moisture against roof surfaces, accelerating algae and fungal growth that our FungalShield system is specifically designed to eliminate.",
+          "Cooper City is a tight-knit family suburb where most homes feature barrel or flat tile roofs installed in the 1980s and 90s — making it prime territory for restoration rather than replacement. The city's tree canopy is beautiful but holds moisture against roof surfaces, accelerating algae and fungal growth that our Fungal Shield system is specifically designed to eliminate.",
       },
       {
         name: "Coral Springs",
@@ -178,7 +178,7 @@ export const counties: CountyEntry[] = [
         slug: "plantation",
         image: "/api/storage/public-objects/cities/1501594907352-04cda38ebc29.jpg",
         blurb:
-          "Plantation's signature feature is its stunning canopy of mature oaks — but those trees drop leaves and seed pods that accumulate on roofs, holding moisture and promoting algae and mold growth. Our FungalShield system is specifically designed to prevent and eliminate the black streaking and biological growth that Plantation homeowners deal with every year.",
+          "Plantation's signature feature is its stunning canopy of mature oaks — but those trees drop leaves and seed pods that accumulate on roofs, holding moisture and promoting algae and mold growth. Our Fungal Shield system is specifically designed to prevent and eliminate the black streaking and biological growth that Plantation homeowners deal with every year.",
       },
       {
         name: "Pompano Beach",
@@ -272,7 +272,7 @@ export const counties: CountyEntry[] = [
         slug: "biscayne-park",
         image: "/api/storage/public-objects/cities/1568605114967-8130f3a36994.jpg",
         blurb:
-          "A small historic village incorporated in 1933, Biscayne Park is one of Miami-Dade's oldest communities with charming mid-century homes that often carry aging roof systems. The tree-canopied streets hold moisture against roof surfaces — our FungalShield treatment is particularly effective on the organic growth common in Biscayne Park's shaded neighborhoods.",
+          "A small historic village incorporated in 1933, Biscayne Park is one of Miami-Dade's oldest communities with charming mid-century homes that often carry aging roof systems. The tree-canopied streets hold moisture against roof surfaces — our Fungal Shield treatment is particularly effective on the organic growth common in Biscayne Park's shaded neighborhoods.",
       },
       {
         name: "Coral Gables",
@@ -300,7 +300,7 @@ export const counties: CountyEntry[] = [
         slug: "el-portal",
         image: "/api/storage/public-objects/cities/1416339306562-f3d12fefd36f.jpg",
         blurb:
-          "El Portal is a small, tree-rich village just north of Miami with a unique character rooted in its historic homes and lush landscaping. The dense tree canopy is a defining feature but also a roofing challenge — leaves and shading promote algae and mold growth on roof surfaces that our FungalShield system is specifically formulated to prevent.",
+          "El Portal is a small, tree-rich village just north of Miami with a unique character rooted in its historic homes and lush landscaping. The dense tree canopy is a defining feature but also a roofing challenge — leaves and shading promote algae and mold growth on roof surfaces that our Fungal Shield system is specifically formulated to prevent.",
       },
       {
         name: "Florida City",
@@ -513,7 +513,7 @@ export const counties: CountyEntry[] = [
         slug: "belle-glade",
         image: "/api/storage/public-objects/cities/1500382017468-9049fed747ef.jpg",
         blurb:
-          "Sitting on the southern shore of Lake Okeechobee, Belle Glade faces a unique climate: high agricultural humidity from surrounding sugarcane fields, intense inland heat, and occasional severe storms rolling off the lake. The combination of moisture and heat creates ideal conditions for algae and organic growth on roof surfaces — our FungalShield system addresses this problem directly.",
+          "Sitting on the southern shore of Lake Okeechobee, Belle Glade faces a unique climate: high agricultural humidity from surrounding sugarcane fields, intense inland heat, and occasional severe storms rolling off the lake. The combination of moisture and heat creates ideal conditions for algae and organic growth on roof surfaces — our Fungal Shield system addresses this problem directly.",
       },
       {
         name: "Boca Raton",

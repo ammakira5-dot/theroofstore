@@ -30,7 +30,7 @@ const sections = [
       {
         type: "highlight",
         title: "What \"Hurricane Proof\" or \"High Velocity Wind Zone Rated\" Really Means",
-        text: "The TAS-106 Dade County Approved tile pull test is required on all new tile roof replacements in Florida after tiles are set. New tile roof replacement requires a minimum of 35 lbs of lift in the field and 55 lbs at the ridge caps — equal to about 120–130 MPH. Miami Dade High Velocity Wind Zone Rated means the structure has been tested to the minimum wind resistance standard at 130 MPH within its own strength design criteria before any mastic, caulk, or elastomeric is applied. If you Google \"hurricane coatings,\" companies will show videos where you can see the gaps between the tiles — obviously painting alone adds no uplift resistance whatsoever. Our RoofShield (RP3) is the only liquid coating in the world that has received an independent TAS-106 Uplift Pull Test certification.",
+        text: "The TAS-106 Dade County Approved tile pull test is required on all new tile roof replacements in Florida after tiles are set. New tile roof replacement requires a minimum of 35 lbs of lift in the field and 55 lbs at the ridge caps — equal to about 120–130 MPH. Miami Dade High Velocity Wind Zone Rated means the structure has been tested to the minimum wind resistance standard at 130 MPH within its own strength design criteria before any mastic, caulk, or elastomeric is applied. If you Google \"hurricane coatings,\" companies will show videos where you can see the gaps between the tiles — obviously painting alone adds no uplift resistance whatsoever. Our Roof Shield (RP3) is the only liquid coating in the world that has received an independent TAS-106 Uplift Pull Test certification.",
       },
       {
         type: "fact",
@@ -49,12 +49,12 @@ const sections = [
       },
       {
         type: "p",
-        text: "Citizens Insurance now requires that homes with a shingle roof of 25 years or cement tile roofs of 50 years must have the roof replaced to be eligible for coverage — UNLESS you can provide a Satisfactory Roof Condition Certification. This is exactly what we provide. With our RoofShield (RP3) installation, we can certify an additional 5–10 years of useful roof life, legally recognized by the State of Florida and accepted by Citizens Insurance for coverage continuation.",
+        text: "Citizens Insurance now requires that homes with a shingle roof of 25 years or cement tile roofs of 50 years must have the roof replaced to be eligible for coverage — UNLESS you can provide a Satisfactory Roof Condition Certification. This is exactly what we provide. With our Roof Shield (RP3) installation, we can certify an additional 5–10 years of useful roof life, legally recognized by the State of Florida and accepted by Citizens Insurance for coverage continuation.",
       },
       {
         type: "highlight",
         title: "Florida Roofing Rules — Leak Guarantees",
-        text: "A roofing contractor must provide a minimum of 2 years for leaks on a new roof replacement. Unusual wind conditions of 65 MPH or above may void previous roof repair or new roof installation warranties. This varies depending on the contractor and system installed. Always inquire about the fine print on warranties and how this affects you in the event of a storm. Our RoofShield lifetime warranty is transferable to a new buyer and renewable — no standard new roof warranty offers all three.",
+        text: "A roofing contractor must provide a minimum of 2 years for leaks on a new roof replacement. Unusual wind conditions of 65 MPH or above may void previous roof repair or new roof installation warranties. This varies depending on the contractor and system installed. Always inquire about the fine print on warranties and how this affects you in the event of a storm. Our Roof Shield lifetime warranty is transferable to a new buyer and renewable — no standard new roof warranty offers all three.",
       },
       {
         type: "p",
@@ -68,7 +68,7 @@ const sections = [
     content: [
       {
         type: "p",
-        text: "FP&L (Florida Power & Light) has a participating contractor reflective rebate program. Our SmartShield (RP2) coating features Cool Pigment Technology — 23% more reflective than our prior formula — and FP&L has independently confirmed that SmartShield saves on cooling costs. This is utility-validated, not a marketing claim.",
+        text: "FP&L (Florida Power & Light) has a participating contractor reflective rebate program. Our Smart Shield (RP2) coating features Cool Pigment Technology — 23% more reflective than our prior formula — and FP&L has independently confirmed that Smart Shield saves on cooling costs. This is utility-validated, not a marketing claim.",
       },
       {
         type: "callout",
@@ -77,12 +77,12 @@ const sections = [
       },
       {
         type: "p",
-        text: "There are presently no rebate incentives to repair or replace cement tile roofs or barrel clay tile roofs from the insurance industry, with the exception of under-air act rebates by applying white Energy Star reflective paints or coatings. Our SmartShield qualifies for Energy Star reflective roof recognition.",
+        text: "There are presently no rebate incentives to repair or replace cement tile roofs or barrel clay tile roofs from the insurance industry, with the exception of under-air act rebates by applying white Energy Star reflective paints or coatings. Our Smart Shield qualifies for Energy Star reflective roof recognition.",
       },
       {
         type: "highlight",
-        title: "Our SmartShield Innovation — The BASF Partnership",
-        text: "The market wanted darker colors like charcoal black and dark brown on roof tiles. Our question was: how do you make a dark color reflect heat against the sun's rays? We sent our products to BASF — the world's largest chemical producer — for complete redevelopment and testing. They came back with increased tensile strength, durability, and reflectiveness. BASF added its chemistry for a sustainable future and helped develop the most innovative dark-color coating on the planet. The result passed a full cycle of tensile tests, flexural tests, DSC, TGA, and viscosity testing. SmartShield's formulation is recognized worldwide as one of the most innovative products of its kind.",
+        title: "Our Smart Shield Innovation — The BASF Partnership",
+        text: "The market wanted darker colors like charcoal black and dark brown on roof tiles. Our question was: how do you make a dark color reflect heat against the sun's rays? We sent our products to BASF — the world's largest chemical producer — for complete redevelopment and testing. They came back with increased tensile strength, durability, and reflectiveness. BASF added its chemistry for a sustainable future and helped develop the most innovative dark-color coating on the planet. The result passed a full cycle of tensile tests, flexural tests, DSC, TGA, and viscosity testing. Smart Shield's formulation is recognized worldwide as one of the most innovative products of its kind.",
       },
     ],
   },
@@ -90,16 +90,16 @@ const sections = [
 
 const pdfs = [
   {
-    name: "SmartShield (RP2) — Technical Data Sheet",
+    name: "Smart Shield (RP2) — Technical Data Sheet",
     url: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
     product: "RP2",
-    desc: "SmartShield color coating technical information, BASF chemistry details, and performance data.",
+    desc: "Smart Shield color coating technical information, BASF chemistry details, and performance data.",
   },
   {
-    name: "RoofShield (RP3) — System Technical Data",
+    name: "Roof Shield (RP3) — System Technical Data",
     url: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
     product: "RP3",
-    desc: "RoofShield waterproofing system technical data — TAS-106 certification, application guide, and warranty details.",
+    desc: "Roof Shield waterproofing system technical data — TAS-106 certification, application guide, and warranty details.",
   },
 ];
 

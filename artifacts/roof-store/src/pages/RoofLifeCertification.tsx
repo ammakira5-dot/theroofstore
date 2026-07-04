@@ -32,7 +32,7 @@ const steps = [
   {
     number: "02",
     title: "Professional Coating Application",
-    description: "We apply our FungalShield, SmartShield, or RoofShield rubber coating system — a high-strength waterproof membrane that restores and protects the roof surface.",
+    description: "We apply our Fungal Shield, Smart Shield, or Roof Shield rubber coating system — a high-strength waterproof membrane that restores and protects the roof surface.",
   },
   {
     number: "03",

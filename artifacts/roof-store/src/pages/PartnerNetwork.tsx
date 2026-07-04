@@ -37,7 +37,7 @@ const partners = [
     specialty: "Tile Roof Restoration & Reglazing",
     territory: "South Florida — Broward, Miami-Dade, Palm Beach",
     description:
-      "Windproof Roof Systems is our authorized specialist for tile roof restoration, reglazing, and decorative color changes. Their technicians are trained in our full RoofShield coating system and focus on barrel tile, cement tile, and S-tile roofs throughout South Florida. Dade County TAS-106 wind uplift tested.",
+      "Windproof Roof Systems is our authorized specialist for tile roof restoration, reglazing, and decorative color changes. Their technicians are trained in our full Roof Shield coating system and focus on barrel tile, cement tile, and S-tile roofs throughout South Florida. Dade County TAS-106 wind uplift tested.",
     services: [
       "Tile Roof Restoration",
       "Tile Reglazing",
@@ -108,7 +108,7 @@ export default function PartnerNetwork() {
           >
             {[
               { label: "Factory Trained", desc: "All partners complete full on-site training at our Davie, FL facility before operating." },
-              { label: "System Certified", desc: "Partners are certified specifically in our FungalShield, SmartShield, and RoofShield systems." },
+              { label: "System Certified", desc: "Partners are certified specifically in our Fungal Shield, Smart Shield, and Roof Shield systems." },
               { label: "Backed by The Roof Store", desc: "Every partner carries the backing of our A+ BBB rating, 30+ year reputation, and product warranties." },
             ].map((item, i) => (
               <div key={i} className="bg-background rounded-xl p-6">

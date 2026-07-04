@@ -7,7 +7,7 @@ import { SEO } from "@/components/SEO";
 const products = [
   {
     code: "RP1",
-    name: "FungalShield",
+    name: "Fungal Shield",
     slug: "fungalshield",
     icon: Leaf,
     iconBg: "bg-green-100",
@@ -31,7 +31,7 @@ const products = [
   },
   {
     code: "RP2",
-    name: "SmartShield",
+    name: "Smart Shield",
     slug: "smartshield",
     icon: Sun,
     iconBg: "bg-accent/10",
@@ -55,7 +55,7 @@ const products = [
   },
   {
     code: "RP3",
-    name: "RoofShield",
+    name: "Roof Shield",
     slug: "roofshield",
     icon: ShieldCheck,
     iconBg: "bg-primary/10",
@@ -99,7 +99,7 @@ export default function Shop() {
           "@type": "ListItem", position: 1,
           item: {
             "@type": "Product",
-            name: "FungalShield (RP1) — Anti-Fungal Roof Coating",
+            name: "Fungal Shield (RP1) — Anti-Fungal Roof Coating",
             url: `${BASE}/products/fungalshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
             offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP1FungalShield" },
@@ -109,7 +109,7 @@ export default function Shop() {
           "@type": "ListItem", position: 2,
           item: {
             "@type": "Product",
-            name: "SmartShield (RP2) — Tintable Waterproof Tile Roof Coating",
+            name: "Smart Shield (RP2) — Tintable Waterproof Tile Roof Coating",
             url: `${BASE}/products/smartshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
             offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP2SmartShield" },
@@ -119,7 +119,7 @@ export default function Shop() {
           "@type": "ListItem", position: 3,
           item: {
             "@type": "Product",
-            name: "RoofShield (RP3) — Monolithic Hurricane Protection System",
+            name: "Roof Shield (RP3) — Monolithic Hurricane Protection System",
             url: `${BASE}/products/roofshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
             offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP3RoofShield" },
@@ -140,8 +140,8 @@ export default function Shop() {
   return (
     <div className="w-full">
       <SEO
-        title="Buy Roof Coating Products Online — FungalShield, SmartShield, RoofShield | The Roof Store"
-        description="Purchase RP1 FungalShield ($190), RP2 SmartShield ($285), and RP3 RoofShield ($325) online. Manufactured in Davie, FL. Available in 5–50 gallon containers. Free consultation 954-210-9614."
+        title="Buy Roof Coating Products Online — Fungal Shield, Smart Shield, Roof Shield | The Roof Store"
+        description="Purchase RP1 Fungal Shield ($190), RP2 Smart Shield ($285), and RP3 Roof Shield ($325) online. Manufactured in Davie, FL. Available in 5–50 gallon containers. Free consultation 954-210-9614."
         canonical="/shop"
         schema={schema}
       />

@@ -29,13 +29,13 @@ const serviceBlocks = [
     icon: Sun,
     title: "Reflective & Cool Roof Coating",
     body: (county: string) =>
-      `SmartShield, our reflective cool roof coating, uses BASF Cool Pigment Technology to increase solar reflectance by 32% — even in the darkest colors. Homeowners in ${county} choose it to lower cooling costs without sacrificing curb appeal.`,
+      `Smart Shield, our reflective cool roof coating, uses BASF Cool Pigment Technology to increase solar reflectance by 32% — even in the darkest colors. Homeowners in ${county} choose it to lower cooling costs without sacrificing curb appeal.`,
   },
   {
     icon: Droplets,
     title: "Tile & Flat Roof Waterproofing",
     body: (county: string) =>
-      `Cracked or porous tile and aging flat decks let water infiltrate the roof structure. Our waterproofing systems seal every gap and seam on ${county} roofs, backed by RoofShield — the world's only TAS-106 Dade County Uplift rated monolithic coating.`,
+      `Cracked or porous tile and aging flat decks let water infiltrate the roof structure. Our waterproofing systems seal every gap and seam on ${county} roofs, backed by Roof Shield — the world's only TAS-106 Dade County Uplift rated monolithic coating.`,
   },
   {
     icon: Layers,

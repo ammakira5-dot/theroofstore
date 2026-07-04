@@ -9,9 +9,9 @@ export default function ManufacturersReport() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Manufacturer's Inspection Report — RoofShield Monolithic System",
+    name: "Manufacturer's Inspection Report — Roof Shield Monolithic System",
     description:
-      "Pre-application roof inspection required for RoofShield warranty programs in Florida. Includes infrared moisture scan, signed drawing legend, photo documentation, and required rework areas. Fee is 100% refundable.",
+      "Pre-application roof inspection required for Roof Shield warranty programs in Florida. Includes infrared moisture scan, signed drawing legend, photo documentation, and required rework areas. Fee is 100% refundable.",
     provider: {
       "@type": "RoofingContractor",
       name: "The Roof Store Waterproofing Products",
@@ -55,8 +55,8 @@ export default function ManufacturersReport() {
   return (
     <>
       <SEO
-        title="Manufacturer's Inspection Report | RoofShield Warranty | The Roof Store"
-        description="The Roof Store's Manufacturer's Report is required for all RoofShield Monolithic warranty programs on flat and tile roofs in Florida. Includes infrared moisture scan, drawing legend, and rework scope. $150/5,000 sq ft — 100% refundable."
+        title="Manufacturer's Inspection Report | Roof Shield Warranty | The Roof Store"
+        description="The Roof Store's Manufacturer's Report is required for all Roof Shield Monolithic warranty programs on flat and tile roofs in Florida. Includes infrared moisture scan, drawing legend, and rework scope. $150/5,000 sq ft — 100% refundable."
         canonical={`${BASE}/manufacturers-report`}
         schema={schema}
       />
@@ -72,7 +72,7 @@ export default function ManufacturersReport() {
             Manufacturer's Inspection Report
           </h1>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-            Every RoofShield Monolithic warranty program on a flat or tile roof requires a Manufacturer's Report — a thorough pre-application inspection that protects both you and the warranty.
+            Every Roof Shield Monolithic warranty program on a flat or tile roof requires a Manufacturer's Report — a thorough pre-application inspection that protects both you and the warranty.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function ManufacturersReport() {
             <div>
               <h3 className="text-xl font-bold text-primary mb-2">What This Report Actually Is</h3>
               <p className="text-muted-foreground leading-relaxed mb-3">
-                The Manufacturer's Inspection Report is the <strong className="text-foreground">product manufacturer's assessment</strong> of whether your specific roof meets the minimum standards required for the RoofShield system to be applied, cleaned, and sealed successfully. It is not a price estimate — it is a <strong className="text-foreground">pass/fail qualification report</strong> that must be completed before any exact pricing can be finalized.
+                The Manufacturer's Inspection Report is the <strong className="text-foreground">product manufacturer's assessment</strong> of whether your specific roof meets the minimum standards required for the Roof Shield system to be applied, cleaned, and sealed successfully. It is not a price estimate — it is a <strong className="text-foreground">pass/fail qualification report</strong> that must be completed before any exact pricing can be finalized.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-3">
                 It is similar in concept to a wind mitigation report — an independent, documented evaluation of your roof's current condition — but its purpose is different: instead of satisfying an insurance requirement, it satisfies the <strong className="text-foreground">manufacturer's own minimum quality standards</strong> so that the warranty they issue is valid and enforceable.
@@ -121,7 +121,7 @@ export default function ManufacturersReport() {
                 A Complete Roof Assessment Before We Touch a Drop of Coating
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-                Before we can apply the RoofShield Monolithic system and back it with a manufacturer's warranty, we need to know exactly what we're working with. Flat roofs with negative pitch, old rework areas, ponding water zones, AC units with minimal clearance — these all affect how we prepare and apply the system.
+                Before we can apply the Roof Shield Monolithic system and back it with a manufacturer's warranty, we need to know exactly what we're working with. Flat roofs with negative pitch, old rework areas, ponding water zones, AC units with minimal clearance — these all affect how we prepare and apply the system.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-5">
                 The Manufacturer's Report documents the roof's current condition in full detail: photographs, a signed scaled drawing, infrared moisture imaging, and a written scope of any repairs needed before application can begin.
@@ -181,7 +181,7 @@ export default function ManufacturersReport() {
                   Hairline fissures — tiny surface cracks that can be nearly invisible to the naked eye — are one of the most common and damaging problems found during inspection. They form from years of thermal expansion and contraction, UV degradation, and substrate movement. On their own they look harmless. But under Florida rain conditions, water forces its way through those micro-cracks, travels beneath the surface, and causes rot, mold, and structural damage far from the visible entry point.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Fissures are also a warranty liability. Applying the RoofShield Monolithic system over unrepaired fissures traps moisture beneath the coating — exactly the opposite of what the system is designed to do. That's why our inspection specifically flags every fissure and crack zone, and any required sealing is documented in the rework scope before a single drop of product is applied.
+                  Fissures are also a warranty liability. Applying the Roof Shield Monolithic system over unrepaired fissures traps moisture beneath the coating — exactly the opposite of what the system is designed to do. That's why our inspection specifically flags every fissure and crack zone, and any required sealing is documented in the rework scope before a single drop of product is applied.
                 </p>
                 <div className="rounded-xl overflow-hidden border border-amber-200 mb-6">
                   <img
@@ -288,7 +288,7 @@ export default function ManufacturersReport() {
           <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 flex items-start gap-3">
             <RotateCcw className="h-5 w-5 text-accent shrink-0 mt-0.5" />
             <p className="text-sm text-foreground leading-relaxed">
-              <strong>Fully Refundable Guarantee:</strong> The Manufacturer's Report fee is 100% refunded when you move forward with a RoofShield warranty program. You only pay it once — and it comes back to you at the start of the job.
+              <strong>Fully Refundable Guarantee:</strong> The Manufacturer's Report fee is 100% refunded when you move forward with a Roof Shield warranty program. You only pay it once — and it comes back to you at the start of the job.
             </p>
           </div>
         </div>

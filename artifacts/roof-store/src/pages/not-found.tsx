@@ -17,7 +17,7 @@ export default function NotFound() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12 text-left">
           {[
             { icon: Home, label: "Home", href: "/", desc: "Back to the homepage" },
-            { icon: Package, label: "Our Products", href: "/products", desc: "FungalShield · SmartShield · RoofShield" },
+            { icon: Package, label: "Our Products", href: "/products", desc: "Fungal Shield · Smart Shield · Roof Shield" },
             { icon: Wrench, label: "Services", href: "/roof-services", desc: "Roof coating, waterproofing & restoration" },
             { icon: MapPin, label: "Service Areas", href: "/service-areas", desc: "Broward, Miami-Dade, Palm Beach & more" },
             { icon: Star, label: "Reviews", href: "/reviews", desc: "What our customers say" },

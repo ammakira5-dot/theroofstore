@@ -105,7 +105,7 @@ const faqs = [
   },
   {
     q: "Will pressure cleaning alone stop the black streaks from coming back?",
-    a: "Cleaning removes existing growth but doesn't prevent it from returning — algae spores are airborne and will recolonize an untreated roof within a season in our climate. For permanent protection, we recommend our FungalShield (RP1) antimicrobial coating system after cleaning.",
+    a: "Cleaning removes existing growth but doesn't prevent it from returning — algae spores are airborne and will recolonize an untreated roof within a season in our climate. For permanent protection, we recommend our Fungal Shield (RP1) antimicrobial coating system after cleaning.",
   },
 ];
 
@@ -156,7 +156,7 @@ export default function RoofPressureCleaning() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Beyond appearance, a dirty roof surface will not properly bond with any paint, elastomeric coating, or
-              waterproofing membrane. Every job we perform — whether it's <Link href="/roof-systems" className="text-accent font-semibold hover:underline">FungalShield, SmartShield, or RoofShield</Link> —
+              waterproofing membrane. Every job we perform — whether it's <Link href="/roof-systems" className="text-accent font-semibold hover:underline">Fungal Shield, Smart Shield, or Roof Shield</Link> —
               begins with a full pressure cleaning or soft wash to guarantee maximum adhesion and long-term performance.
             </p>
           </motion.div>
@@ -237,12 +237,12 @@ export default function RoofPressureCleaning() {
               </div>
               <h3 className="text-2xl font-serif font-bold text-primary mb-2">Prevent Algae From Coming Back</h3>
               <p className="text-muted-foreground max-w-xl">
-                Cleaning removes existing growth, but it doesn't stop new growth. Our FungalShield (RP1) antimicrobial
+                Cleaning removes existing growth, but it doesn't stop new growth. Our Fungal Shield (RP1) antimicrobial
                 coating system permanently protects your roof against algae, mold, and black streaking after cleaning.
               </p>
             </div>
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white shrink-0" >
-              <Link href="/products/fungalshield">See FungalShield</Link>
+              <Link href="/products/fungalshield">See Fungal Shield</Link>
             </Button>
           </motion.div>
         </div>

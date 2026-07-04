@@ -15,9 +15,9 @@ const BASE = "https://www.theroofstore.net";
 const serviceBlocks = [
   {
     icon: Waves,
-    title: "Roof Pressure Cleaning",
+    title: "Roof Pressure Cleaning & Soft Washing",
     body: (county: string) =>
-      `Before any roof coating, painting, or waterproofing job in ${county}, our technicians pressure clean tile, cement, and flat roofs to remove algae, mold, and black streaking — ensuring maximum adhesion for the coating systems that follow.`,
+      `Before any roof coating, painting, or waterproofing job in ${county}, our technicians pressure clean and soft wash tile, cement, and flat roofs to remove algae, mold, and black streaking — ensuring maximum adhesion for the coating systems that follow. Soft washing offers a lower-impact option for older or more fragile tile.`,
   },
   {
     icon: Paintbrush,

@@ -124,6 +124,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Services Available in {county}</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
+                    "Roof Pressure Cleaning & Soft Washing",
                     "Rubber Roof Coating",
                     "Tile Roof Restoration",
                     "Tile Reglazing",

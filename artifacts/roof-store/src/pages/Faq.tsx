@@ -43,7 +43,11 @@ const faqs = [
   },
   {
     q: "Do I need to pressure clean my roof before painting or waterproofing it?",
-    a: "Yes — professional roof pressure cleaning is always the required first step before any tile roof painting, waterproofing, or flat roof sealing. Paint and coatings need a clean, dry surface to bond properly. Applying coatings over algae, mold, dirt, or loose material will cause premature peeling and failure. Our team handles the pressure cleaning as part of every roof painting and waterproofing project.",
+    a: "Yes — professional roof pressure cleaning or soft washing is always the required first step before any tile roof painting, waterproofing, or flat roof sealing. Paint and coatings need a clean, dry surface to bond properly. Applying coatings over algae, mold, dirt, or loose material will cause premature peeling and failure. Our team handles the pressure cleaning or soft wash treatment as part of every roof painting and waterproofing project.",
+  },
+  {
+    q: "What is the difference between roof pressure cleaning and soft washing?",
+    a: "Pressure cleaning uses calibrated low-pressure water to physically blast away algae, mold, and black streaking, and is our standard method for most tile, cement, and flat roofs. Soft washing uses a biodegradable cleaning solution applied at very low pressure to kill biological growth at the root — it's a gentler option we recommend for older, cracked, or more fragile tile where high-pressure water could cause damage. Both methods are always followed by a full rinse and inspection before any coating is applied.",
   },
   {
     q: "Can you paint a tile roof in South Florida?",
@@ -58,12 +62,12 @@ const faqs = [
     a: "After pressure cleaning a flat or low-slope roof, the surface needs to dry completely (typically 24–48 hours in Florida weather), then a primer is applied followed by one or more coats of elastomeric rubber coating. Our flat roof sealing process creates a seamless, fully-adhered waterproof membrane with no seams, joints, or weak points. We handle the entire process — pressure cleaning, drying, priming, and sealing — as a single continuous project.",
   },
   {
-    q: "What types of roofs do you pressure clean?",
-    a: "We pressure clean all roof types common in South Florida: Spanish clay tile, flat cement tile, concrete tile, clay barrel tile, commercial built-up flat decks, modified bitumen, and metal roofs. We use calibrated low-pressure washing techniques appropriate to each surface type — ensuring a thorough clean without damaging tiles or dislodging mortar.",
+    q: "What types of roofs do you pressure clean or soft wash?",
+    a: "We pressure clean and soft wash all roof types common in South Florida: Spanish clay tile, flat cement tile, concrete tile, clay barrel tile, commercial built-up flat decks, modified bitumen, and metal roofs. We use calibrated low-pressure washing or soft wash chemical treatments appropriate to each surface type — ensuring a thorough clean without damaging tiles or dislodging mortar.",
   },
   {
-    q: "How much does roof pressure cleaning cost in South Florida?",
-    a: "Roof pressure cleaning costs vary based on roof size, pitch, and condition. Most residential tile roofs in Broward, Miami-Dade, and Palm Beach County range from a few hundred to over a thousand dollars depending on square footage. We include a free roof inspection with every estimate — call us at 954-210-9614 or use our contact form for a no-obligation quote.",
+    q: "How much does roof pressure cleaning or soft washing cost in South Florida?",
+    a: "Roof pressure cleaning and soft washing costs vary based on roof size, pitch, and condition. Most residential tile roofs in Broward, Miami-Dade, and Palm Beach County range from a few hundred to over a thousand dollars depending on square footage. We include a free roof inspection with every estimate — call us at 954-210-9614 or use our contact form for a no-obligation quote.",
   },
   {
     q: "How do I get started?",

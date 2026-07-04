@@ -158,8 +158,8 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                   {[
                     {
                       icon: Waves,
-                      title: "Roof Pressure Cleaning",
-                      desc: `Professional low-pressure washing removes years of algae, mold, and black streaking from tile and flat roofs in ${city}. Always the required first step before any painting, coating, or waterproofing.`,
+                      title: "Roof Pressure Cleaning & Soft Washing",
+                      desc: `Professional low-pressure washing and soft wash treatments remove years of algae, mold, and black streaking from tile and flat roofs in ${city}. Soft washing is a gentler, chemical-based option for older or fragile tile. Always the required first step before any painting, coating, or waterproofing.`,
                     },
                     {
                       icon: Paintbrush,

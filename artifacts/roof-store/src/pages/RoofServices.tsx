@@ -8,10 +8,10 @@ import { counties } from "@/pages/service-areas/data";
 const services = [
   {
     icon: Waves,
-    title: "Roof Pressure Cleaning",
+    title: "Roof Pressure Cleaning & Soft Washing",
     description:
-      "Professional roof pressure cleaning is the essential first step before any tile roof painting, waterproofing, or flat roof sealing. We use calibrated low-pressure washing to safely deep-clean Spanish tile, flat cement tile, clay barrel tile, and flat decks — removing algae, mold, black streaking, and biological buildup without damaging the tile surface.",
-    benefits: ["Safe for all tile types — clay, cement, and composite", "Required before any painting, coating, or sealing", "Removes algae, mold, moss, and black streaking", "Prepares surface for maximum adhesion of coatings"],
+      "Professional roof pressure cleaning and soft washing are the essential first step before any tile roof painting, waterproofing, or flat roof sealing. We use calibrated low-pressure washing and chemical soft wash treatments to safely deep-clean Spanish tile, flat cement tile, clay barrel tile, and flat decks — removing algae, mold, black streaking, and biological buildup without damaging the tile surface.",
+    benefits: ["Soft wash treatment safe for aged or fragile tile", "Safe for all tile types — clay, cement, and composite", "Required before any painting, coating, or sealing", "Removes algae, mold, moss, and black streaking"],
   },
   {
     icon: Star,
@@ -88,8 +88,8 @@ export default function RoofServices() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Services — Tile Restoration, Flat Deck, Hurricane Coating"
-        description="Professional roof services in South Florida: tile reglazing, tile restoration, flat deck rubber coating, elastomeric systems, hurricane protection, and emergency repairs."
+        title="Roof Services — Pressure Cleaning, Soft Wash, Tile Restoration, Hurricane Coating"
+        description="Professional roof services in South Florida: roof pressure cleaning, soft washing, tile reglazing, tile restoration, flat deck rubber coating, elastomeric systems, hurricane protection, and emergency repairs."
         canonical="/roof-services"
         schema={schema}
       />
@@ -140,14 +140,14 @@ export default function RoofServices() {
       <section className="py-20 bg-muted">
         <div className="container px-4 max-w-5xl mx-auto space-y-12">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Painting, Elastomeric &amp; Reflective Roof Coating in South Florida</h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean a Spanish tile roof, paint a flat cement tile roof, apply an elastomeric or acrylic roof coating, or install a reflective cool roof coating on a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Soft Washing, Painting, Elastomeric &amp; Reflective Roof Coating in South Florida</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean or soft wash a Spanish tile roof, paint a flat cement tile roof, apply an elastomeric or acrylic roof coating, or install a reflective cool roof coating on a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-background rounded-xl p-8 border shadow-sm">
-              <h3 className="text-xl font-serif font-bold text-primary mb-3">Roof Pressure Cleaning — All Roof Types</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">Professional roof pressure cleaning removes years of algae, mold, black streaking, and biological buildup from tile, cement, and flat roofs. Pressure cleaning is always the first step before any roof painting, coating, or waterproofing job — ensuring maximum adhesion and long-term performance.</p>
-              <p className="text-sm font-semibold text-foreground mb-2">We safely pressure clean:</p>
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Roof Pressure Cleaning &amp; Soft Washing — All Roof Types</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">Professional roof pressure cleaning and soft washing removes years of algae, mold, black streaking, and biological buildup from tile, cement, and flat roofs. On older or more fragile tile, our lower-impact soft wash method applies a biodegradable cleaning solution that kills growth at the root without the physical wear of high-pressure water. Pressure cleaning and soft washing is always the first step before any roof painting, coating, or waterproofing job — ensuring maximum adhesion and long-term performance.</p>
+              <p className="text-sm font-semibold text-foreground mb-2">We safely pressure clean and soft wash:</p>
               <ul className="space-y-1 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-accent">→</span> Spanish clay tile &amp; cement tile roofs</li>
                 <li className="flex gap-2"><span className="text-accent">→</span> Clay barrel tile roofs</li>

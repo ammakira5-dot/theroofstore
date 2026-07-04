@@ -113,3 +113,15 @@ id = "ChMjEWtx4rc_X3JS2WsZd"
 uri = "file://attached_assets/image_search/tile_roof_applying.webp"
 type = "image"
 title = "Option 2 — Tile roof with coating being applied"
+
+[[outputs]]
+id = "J2TOz7Sb_N5h5NMHBFb-d"
+uri = "file://content-drafts/bestroofpaint-com-new-content.md"
+type = "text"
+title = "Best Roof Paint — New Site Copy"
+
+[[outputs]]
+id = "ccj5x077jnNJ4ZHihhjEy"
+uri = "file://content-drafts/ftlauderdaleroofcoating-com-new-content.md"
+type = "text"
+title = "Ft. Lauderdale Roof Coating — New Site Copy"

@@ -193,7 +193,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-4">
               <Award className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2">Nearly 30 Years Experience</h3>
-              <p className="text-white/80 text-sm">Pioneers in high-strength weatherproof rubber roof coating systems. A+ BBB since 1994.</p>
+              <p className="text-white/80 text-sm">Pioneers in high-strength weatherproof rubber roof coating systems. Licensed &amp; insured, A+ BBB since 1994.</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <Wind className="h-12 w-12 text-accent mb-4" />

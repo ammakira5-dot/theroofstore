@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { MapPin, Phone, ArrowRight, ShieldCheck, Waves, Paintbrush, Droplets, Sun, Wind, Wrench } from "lucide-react";
+import { MapPin, Phone, ArrowRight, ShieldCheck, Waves, Paintbrush, Droplets, Sun, Wind, Wrench, Layers } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
@@ -36,6 +36,12 @@ const serviceBlocks = [
     title: "Tile & Flat Roof Waterproofing",
     body: (county: string) =>
       `Cracked or porous tile and aging flat decks let water infiltrate the roof structure. Our waterproofing systems seal every gap and seam on ${county} roofs, backed by RoofShield — the world's only TAS-106 Dade County Uplift rated monolithic coating.`,
+  },
+  {
+    icon: Layers,
+    title: "Metal Roof Coating",
+    body: (county: string) =>
+      `Metal roofs throughout ${county} face rust, corrosion, and seam leaks from Florida's heat and humidity. Our metal roof coating systems seal seams and fasteners, stop corrosion, and reflect solar heat to lower cooling costs.`,
   },
   {
     icon: Wind,
@@ -101,7 +107,7 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
     <div className="w-full">
       <SEO
         title={`Elastomeric & Reflective Roof Coating in ${county}, FL — The Roof Store`}
-        description={`Elastomeric, acrylic, and reflective cool roof coating services in ${county}, FL. Tile restoration, waterproofing, and hurricane protection — A+ BBB rated since 1994. Free quote: 954-210-9614.`}
+        description={`Elastomeric, acrylic, and reflective cool roof coating services in ${county}, FL. Tile, flat, and metal roof coating, waterproofing, and hurricane protection — licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`}
         canonical={`/roof-services/${slug}`}
         schema={schema}
         geo={{ region: "US-FL", placename: `${county}, FL` }}
@@ -131,7 +137,7 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
             <div className="lg:col-span-2 space-y-10">
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  The Roof Store has provided roof coating, elastomeric painting, and reflective cool roof coating services throughout {county} for nearly 30 years. Our liquid-applied rubber roof shield systems restore and weatherproof existing roofs at up to half the cost of full replacement — backed by an A+ BBB rating and comprehensive performance warranties.
+                  The Roof Store has provided roof coating, elastomeric painting, and reflective cool roof coating services throughout {county} for nearly 30 years. Our liquid-applied rubber roof shield systems restore and weatherproof existing roofs at up to half the cost of full replacement — backed by a licensed and insured team, an A+ BBB rating, and comprehensive performance warranties.
                 </p>
               </motion.div>
 
@@ -206,6 +212,14 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
                 </div>
                 <div className="text-sm font-bold text-foreground">BBB Rated</div>
                 <div className="text-xs text-muted-foreground">Since 1994</div>
+              </div>
+
+              <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 text-center">
+                <div className="text-3xl font-serif font-bold text-accent mb-1 flex items-center justify-center gap-2">
+                  <ShieldCheck className="h-6 w-6" />
+                </div>
+                <div className="text-sm font-bold text-foreground">Licensed &amp; Insured</div>
+                <div className="text-xs text-muted-foreground">Florida Roofing Contractor</div>
               </div>
             </div>
           </div>

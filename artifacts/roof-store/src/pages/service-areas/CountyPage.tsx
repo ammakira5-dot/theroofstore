@@ -74,7 +74,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
     <div className="w-full">
       <SEO
         title={`Roof Painting & Coating Contractor in ${county}, FL — The Roof Store`}
-        description={`Looking for a roof painting contractor in ${county}? The Roof Store provides professional roof coating systems that outperform standard paint — waterproof, hurricane-rated, A+ BBB since 1994. Free inspection: 954-210-9614.`}
+        description={`Looking for a roof painting contractor in ${county}? The Roof Store provides professional roof coating systems that outperform standard paint — waterproof, hurricane-rated, licensed & insured, A+ BBB since 1994. Free inspection: 954-210-9614.`}
         canonical={`/service-areas/${slug}`}
         schema={schema}
         geo={{ region: "US-FL", placename: `${county}, FL` }}
@@ -113,7 +113,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                   The Roof Store has been protecting homes and commercial properties throughout {county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to half the cost of replacement. All work is backed by our A+ BBB rating and comprehensive performance warranties.
+                  We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to half the cost of replacement. All work is performed by our licensed and insured team, backed by our A+ BBB rating and comprehensive performance warranties.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right roof coating system for your specific needs.
@@ -129,6 +129,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                     "Tile Roof Restoration",
                     "Tile Reglazing",
                     "Flat Deck Waterproofing",
+                    "Metal Roof Coating",
                     "Elastomeric Coating",
                     "Hurricane Protection",
                     "Silicone Roof System",
@@ -208,6 +209,11 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                 <div className="text-3xl font-serif font-bold text-accent mb-1">A+</div>
                 <div className="text-sm font-bold text-foreground">BBB Rated</div>
                 <div className="text-xs text-muted-foreground">Since 1994</div>
+              </div>
+
+              <div className="bg-accent/10 border border-accent/30 rounded-xl p-6 text-center">
+                <div className="text-sm font-bold text-foreground">Licensed &amp; Insured</div>
+                <div className="text-xs text-muted-foreground">Florida Roofing Contractor</div>
               </div>
             </div>
           </div>

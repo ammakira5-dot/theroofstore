@@ -57,8 +57,9 @@ export function Footer() {
             <p className="text-primary-foreground/80 max-w-sm mb-6">
               The pioneer of high-strength weatherproof rubber roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost. South Florida's original coating manufacturer at <span className="text-accent font-semibold">theroofstore.net</span>.
             </p>
-            <div className="flex items-center gap-2 mb-5">
+            <div className="flex items-center flex-wrap gap-2 mb-5">
               <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">A+ BBB Rated Since 1994</div>
+              <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">Licensed &amp; Insured</div>
             </div>
             <div>
               <p className="text-primary-foreground/60 text-xs uppercase tracking-wider font-semibold mb-3">Follow Us</p>

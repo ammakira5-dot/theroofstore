@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star, Waves, MapPin, ArrowRight } from "lucide-react";
+import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star, Waves, MapPin, ArrowRight, Layers } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { counties } from "@/pages/service-areas/data";
 
@@ -42,6 +42,13 @@ const services = [
     benefits: ["Multi-layer elastomeric application system", "10–25 year performance warranty", "Reflective cool roof coating finish", "Full roof system approach"],
   },
   {
+    icon: Layers,
+    title: "Metal Roof Coating",
+    description:
+      "Metal roofs face their own set of challenges in South Florida — rust, corrosion, seam leaks, and intense heat gain. Our metal roof coating systems seal seams and fasteners, stop corrosion before it spreads, and reflect solar heat to lower cooling costs, all without the expense of a full metal roof replacement.",
+    benefits: ["Corrosion & rust prevention", "Seam and fastener sealing", "Reflective heat-reducing finish", "Extends metal roof lifespan"],
+  },
+  {
     icon: Wind,
     title: "Hurricane Protection & Reinforcement",
     description:
@@ -71,8 +78,9 @@ export default function RoofServices() {
         { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Tile Roof Restoration", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
         { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Tile Reglazing & Reseal", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
         { "@type": "ListItem", position: 4, item: { "@type": "Service", name: "Flat Deck Waterproofing", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
-        { "@type": "ListItem", position: 5, item: { "@type": "Service", name: "Hurricane Protection Coating", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
-        { "@type": "ListItem", position: 6, item: { "@type": "Service", name: "Emergency Roof Repair", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
+        { "@type": "ListItem", position: 5, item: { "@type": "Service", name: "Metal Roof Coating", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
+        { "@type": "ListItem", position: 6, item: { "@type": "Service", name: "Hurricane Protection Coating", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
+        { "@type": "ListItem", position: 7, item: { "@type": "Service", name: "Emergency Roof Repair", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
       ],
     },
     {

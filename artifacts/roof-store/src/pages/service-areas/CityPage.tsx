@@ -205,6 +205,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                 <div className="space-y-4">
                   {[
                     { title: "Nearly 30 Years in South Florida", desc: "Established in 1994, we understand Florida's climate and building codes better than anyone." },
+                    { title: "Licensed & Insured", desc: "The Roof Store is a fully licensed and insured Florida roofing contractor — every job is covered." },
                     { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
                     { title: "Save Up to 50%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
                     { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },

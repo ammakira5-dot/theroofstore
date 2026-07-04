@@ -105,8 +105,8 @@ export default function RoofPaintingVsCoating() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Paint vs. Roof Coating Systems — What South Florida Homeowners Need to Know | The Roof Store"
-        description="Searching for a roof painting contractor in South Florida? Learn why professional roof coating systems outperform standard roof paint — better waterproofing, longer lifespan, hurricane-rated. A+ BBB rated since 1994."
+        title="Roof Paint vs. Roof Coating Systems & Cost Comparison | The Roof Store"
+        description="Searching for a roof painting contractor in South Florida? Learn why professional roof coating systems outperform standard roof paint — better waterproofing, longer lifespan, hurricane-rated, and lower long-term roof coating cost. Licensed & insured, A+ BBB rated since 1994."
         canonical="/roof-painting-vs-coating"
         schema={schema}
       />
@@ -156,6 +156,12 @@ export default function RoofPaintingVsCoating() {
               It makes the roof look better for a season or two, but it doesn't seal, doesn't waterproof, doesn't flex,
               and doesn't protect. Homeowners end up repainting every 2–3 years and still dealing with leaks, algae, and
               deterioration — spending more over time than a proper coating system would have cost upfront.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              When comparing roof coating cost against roof replacement cost in Florida, the numbers favor coating in
+              almost every case: a professional roof coating system typically runs a fraction of full replacement
+              cost while delivering a comparable — often longer — service life. Get a free, no-obligation roof coating
+              estimate for your property, or see our <Link href="/pricing" className="text-accent font-semibold hover:underline">factory pricing page</Link> for guide rates by system and roof type.
             </p>
           </motion.div>
         </div>

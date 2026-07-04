@@ -50,6 +50,14 @@ const faqs = [
     a: "Pressure cleaning uses calibrated low-pressure water to physically blast away algae, mold, and black streaking, and is our standard method for most tile, cement, and flat roofs. Soft washing uses a biodegradable cleaning solution applied at very low pressure to kill biological growth at the root — it's a gentler option we recommend for older, cracked, or more fragile tile where high-pressure water could cause damage. Both methods are always followed by a full rinse and inspection before any coating is applied.",
   },
   {
+    q: "Silicone vs. elastomeric roof coating — which is better for Florida?",
+    a: "Silicone roof coatings are popular nationally, but The Roof Store uses elastomeric and acrylic rubber coating systems instead — and for South Florida's climate, that's a deliberate choice. Elastomeric coatings stay flexible over a much wider temperature range, which matters when a tile or flat roof surface can swing from cool overnight lows to 150°F+ in direct summer sun. They also accept a full color range (silicone typically only comes in white, gray, or tan) and can be tinted in 3,000+ colors to match any home. Our RoofShield system additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating — a level of hurricane wind-lift testing not available with standard silicone products. If you've been comparing silicone vs. elastomeric roof coating, ask us about the difference during your free inspection.",
+  },
+  {
+    q: "How much does a roof coating cost in Florida?",
+    a: "Roof coating cost in Florida varies by system (FungalShield, SmartShield, or RoofShield), roof type (tile, flat deck, or metal), square footage, and pitch. As a general rule, a professional roof coating system runs a fraction of the cost of full roof replacement — often saving homeowners up to 50%. We provide a free on-site roof coating estimate with exact factory pricing for your property; see our Pricing page for guide rates by system and roof type, or call 954-210-9614 for a free quote.",
+  },
+  {
     q: "Can you paint a tile roof in South Florida?",
     a: "Absolutely. Tile roof painting is one of our most popular services. We use professional-grade elastomeric roof coatings specifically formulated for Florida's UV intensity, heat, and humidity — available in over 3,000 colors. Tile roof painting restores faded, chalky, or discolored tiles, improves curb appeal, adds a waterproof barrier, and can reduce cooling costs by reflecting solar heat. All painting is done after thorough pressure cleaning.",
   },

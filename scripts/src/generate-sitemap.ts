@@ -54,6 +54,12 @@ const countyRoutes: UrlEntry[] = counties.flatMap(
       priority: "0.8",
       lastmod: TODAY,
     },
+    {
+      loc: `/roof-services/${county.slug}`,
+      changefreq: "monthly",
+      priority: "0.8",
+      lastmod: TODAY,
+    },
     ...county.cities.map((city: { slug: string }) => ({
       loc: `/service-areas/${county.slug}/${city.slug}`,
       changefreq: "monthly",

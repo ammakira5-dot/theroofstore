@@ -63,9 +63,16 @@ export default function ServiceAreas() {
 
                 <Link
                   href={`/service-areas/${county.slug}`}
-                  className="inline-flex items-center gap-2 text-accent font-bold text-sm mb-6 hover:underline"
+                  className="inline-flex items-center gap-2 text-accent font-bold text-sm mb-2 hover:underline"
                 >
                   View full {county.name} page <ArrowRight className="h-4 w-4" />
+                </Link>
+                <br />
+                <Link
+                  href={`/roof-services/${county.slug}`}
+                  className="inline-flex items-center gap-2 text-accent font-bold text-sm mb-6 hover:underline"
+                >
+                  Roof coating services in {county.name} <ArrowRight className="h-4 w-4" />
                 </Link>
 
                 <div className="overflow-y-auto h-60 pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-accent/40 hover:[&::-webkit-scrollbar-thumb]:bg-accent/70">

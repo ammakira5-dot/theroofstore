@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star, Waves } from "lucide-react";
+import { Wrench, Paintbrush, Droplets, ShieldCheck, Wind, Star, Waves, MapPin, ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { counties } from "@/pages/service-areas/data";
 
 const services = [
   {
@@ -35,10 +36,10 @@ const services = [
   },
   {
     icon: ShieldCheck,
-    title: "Premium Roof Coating Systems",
+    title: "Premium Reflective & Elastomeric Roof Coating Systems",
     description:
-      "Our premium multi-layer coating systems are engineered for maximum longevity and protection. Applied in multiple coats over a prepared substrate, these systems provide decades of reliable weatherproof performance.",
-    benefits: ["Multi-layer application system", "10–25 year performance warranty", "Energy-efficient reflective finish", "Full roof system approach"],
+      "Our premium multi-layer elastomeric and acrylic roof coating systems are engineered for maximum longevity and protection. Applied in multiple coats over a prepared substrate, these reflective cool roof coating systems provide decades of reliable weatherproof performance.",
+    benefits: ["Multi-layer elastomeric application system", "10–25 year performance warranty", "Reflective cool roof coating finish", "Full roof system approach"],
   },
   {
     icon: Wind,
@@ -139,8 +140,8 @@ export default function RoofServices() {
       <section className="py-20 bg-muted">
         <div className="container px-4 max-w-5xl mx-auto space-y-12">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Painting &amp; Waterproofing in South Florida</h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean a Spanish tile roof, paint a flat cement tile roof, waterproof a clay tile roof, or seal a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Painting, Elastomeric &amp; Reflective Roof Coating in South Florida</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean a Spanish tile roof, paint a flat cement tile roof, apply an elastomeric or acrylic roof coating, or install a reflective cool roof coating on a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-background rounded-xl p-8 border shadow-sm">
@@ -156,7 +157,7 @@ export default function RoofServices() {
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Painting &amp; Color Restoration</h3>
-              <p className="text-muted-foreground leading-relaxed">Faded, chalky, or discolored roof tiles impact curb appeal and resale value. Our tile roof painting service uses professional-grade elastomeric coatings in 3,000+ colors to restore your tile's appearance — or give it an entirely new look. All tile roof painting is done after professional pressure cleaning to ensure proper adhesion and a lasting finish.</p>
+              <p className="text-muted-foreground leading-relaxed">Faded, chalky, or discolored roof tiles impact curb appeal and resale value. Our tile roof painting service uses professional-grade elastomeric and acrylic roof coatings in 3,000+ colors to restore your tile's appearance — or give it an entirely new look. All tile roof painting is done after professional pressure cleaning to ensure proper adhesion and a lasting finish.</p>
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Waterproofing</h3>
@@ -166,6 +167,33 @@ export default function RoofServices() {
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Flat Roof Sealing After Pressure Cleaning</h3>
               <p className="text-muted-foreground leading-relaxed">After pressure cleaning, a flat or low-slope roof needs a fresh coat of rubber waterproofing sealant to restore its watertight integrity. Our flat roof sealing service applies a seamless elastomeric membrane directly over the cleaned surface — stopping leaks and protecting against Florida's ponding rain and intense UV exposure.</p>
             </div>
+            <div className="bg-background rounded-xl p-8 border shadow-sm">
+              <h3 className="text-xl font-serif font-bold text-primary mb-3">Reflective &amp; Cool Roof Coating</h3>
+              <p className="text-muted-foreground leading-relaxed">Our SmartShield reflective roof coating uses BASF Cool Pigment Technology to increase Total Solar Reflectance by 32% — even at the darkest black. This acrylic cool roof coating lowers attic temperatures and cooling costs while giving you 3,000+ tintable color choices, independently confirmed by Florida Power &amp; Light.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service by county links */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Services By County</h2>
+          <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
+            Elastomeric, acrylic, and reflective cool roof coating services tailored to your county.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            {counties.map((county, i) => (
+              <Link
+                key={i}
+                href={`/roof-services/${county.slug}`}
+                className="flex items-center justify-center gap-2 bg-card border rounded-xl py-4 px-4 text-foreground font-semibold hover:text-accent hover:shadow-md transition-all group"
+              >
+                <MapPin className="h-4 w-4 text-accent shrink-0" />
+                {county.name}
+                <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

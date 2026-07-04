@@ -52,6 +52,7 @@ const faqs = [
   {
     q: "Silicone vs. elastomeric roof coating — which is better for Florida?",
     a: "Silicone roof coatings are popular nationally, but The Roof Store uses elastomeric and acrylic rubber coating systems instead — and for South Florida's climate, that's a deliberate choice. Elastomeric coatings stay flexible over a much wider temperature range, which matters when a tile or flat roof surface can swing from cool overnight lows to 150°F+ in direct summer sun. They also accept a full color range (silicone typically only comes in white, gray, or tan) and can be tinted in 3,000+ colors to match any home. Our RoofShield system additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating — a level of hurricane wind-lift testing not available with standard silicone products. If you've been comparing silicone vs. elastomeric roof coating, ask us about the difference during your free inspection.",
+    link: { href: "/silicone-vs-elastomeric-roof-coating", label: "Read our full silicone vs. elastomeric comparison" },
   },
   {
     q: "How much does a roof coating cost in Florida?",
@@ -142,6 +143,14 @@ export default function Faq() {
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed pb-6 text-base">
                     {faq.a}
+                    {faq.link && (
+                      <Link
+                        href={faq.link.href}
+                        className="mt-3 inline-block font-semibold text-primary hover:underline"
+                      >
+                        {faq.link.label} →
+                      </Link>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               </motion.div>

@@ -121,7 +121,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
             <p className="text-2xl text-white/75 font-light mb-8 max-w-2xl">{product.tagline}</p>
             <div className="flex flex-wrap gap-4">
               {product.shopUrl && product.shopAvailable !== false ? (
-                <a href={product.shopUrl} target="_blank" rel="noopener noreferrer">
+                <a href={product.shopUrl} target="_blank" rel="nofollow noopener noreferrer">
                   <Button size="lg" className="bg-accent hover:bg-accent/90 text-white h-12 px-8">
                     <ShoppingCart className="h-4 w-4 mr-2" />
                     Buy Online{product.price ? ` — ${product.price}` : ""}

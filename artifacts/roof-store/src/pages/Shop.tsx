@@ -257,7 +257,7 @@ export default function Shop() {
                         <a
                           href={product.buyUrl}
                           target="_blank"
-                          rel="noopener noreferrer"
+                          rel="nofollow noopener noreferrer"
                           className="block"
                         >
                           <Button className="w-full bg-accent hover:bg-accent/90 text-white h-12 text-base font-bold mb-3">
@@ -332,7 +332,7 @@ export default function Shop() {
           <a
             href="https://www.roofprotectproducts.com/products"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm"
           >
             Visit the full store at roofprotectproducts.com

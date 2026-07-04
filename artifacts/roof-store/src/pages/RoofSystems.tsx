@@ -64,7 +64,7 @@ const systems: RoofSystem[] = [
     size: "Residential",
     color: "bg-accent/10 text-accent",
     description:
-      "Smart Shield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — Roof Protect engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Built on an elastomeric base for darker tile colors, or fortified with polyurethane or ceramic for non-reflective tile roofs and certain flat roofs. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
+      "Smart Shield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — Roof Protect engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Typically built on an elastomeric base for darker tile colors, the base can also be formulated as polyurethane, or blended with ceramic for a flatter, less-reflective look on non-reflective tile roofs and certain flat roofs. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
     features: [
       "3,000+ color options — full custom palette, any shade including dark charcoal & brown",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology, TSR +32%",

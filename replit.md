@@ -41,9 +41,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
-- **Fix pre-existing TypeScript errors in `artifacts/roof-store/src/pages/RoofSystems.tsx`** — union type property access errors (extraAfterSrc, extraBeforeLabel, etc.)
 - **Set `ADMIN_PASSWORD` secret** — missing env var, needed for any admin area
-- **Fix product schemas on roofprotectproducts.com** — FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) Product schemas have brand = product name instead of "The Roof Store", missing `offers`, and no `image`. Google flags these as invalid Product snippets. Fix: set brand to "The Roof Store", add offers with price + availability, add image URL. This affects GSC "Product snippets: some invalid" warning on the SmartShield page.
+- **Fix product schemas on roofprotectproducts.com** — FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) Product schemas have brand = product name instead of "The Roof Store", missing `offers`, and no `image`. Google flags these as invalid Product snippets. Fix: set brand to "The Roof Store", add offers with price + availability, add image URL. This affects GSC "Product snippets: some invalid" warning on the SmartShield page. (Not part of this codebase — roofprotectproducts.com is a separate site with no code access here.)
 
 ## Gotchas
 

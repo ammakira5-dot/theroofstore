@@ -6,7 +6,33 @@ import { SEO } from "@/components/SEO";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { Lightbox, useLightbox, type LightboxImage } from "@/components/Lightbox";
 
-const systems = [
+interface RoofSystem {
+  icon: typeof Leaf;
+  name: string;
+  tagline: string;
+  badge: string;
+  location: string;
+  size: string;
+  color: string;
+  worldsOnly?: boolean;
+  description: string;
+  features: string[];
+  gallery?: { src: string; alt: string }[];
+  beforeSrc?: string;
+  afterSrc?: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  extraBeforeSrc?: string;
+  extraAfterSrc?: string;
+  extraBeforeLabel?: string;
+  extraAfterLabel?: string;
+  extraBeforeSrc2?: string;
+  extraAfterSrc2?: string;
+  extraBeforeLabel2?: string;
+  extraAfterLabel2?: string;
+}
+
+const systems: RoofSystem[] = [
   {
     icon: Leaf,
     name: "FungalShield",

@@ -162,6 +162,9 @@ export default function RoofServices() {
                 <li className="flex gap-2"><span className="text-accent">→</span> Flat cement tile roofs</li>
                 <li className="flex gap-2"><span className="text-accent">→</span> Commercial built-up flat decks</li>
               </ul>
+              <Link href="/roof-pressure-cleaning" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm mt-4">
+                Learn more about pressure cleaning &amp; soft washing →
+              </Link>
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Painting &amp; Color Restoration</h3>

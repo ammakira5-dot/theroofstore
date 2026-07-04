@@ -6,7 +6,28 @@ import { Leaf, Sun, ShieldCheck, Info, Mail } from "lucide-react";
 
 const BASE = "https://www.theroofstore.net";
 
-const systems = [
+interface PriceRow {
+  type: string;
+  low: string;
+  high: string;
+  sameCol?: boolean;
+}
+
+interface PriceSystem {
+  id: string;
+  badge: string;
+  badgeColor: string;
+  icon: typeof Leaf;
+  name: string;
+  code: string;
+  tagline: string;
+  from: string;
+  flatNote?: string;
+  inspection?: boolean;
+  rows: PriceRow[];
+}
+
+const systems: PriceSystem[] = [
   {
     id: "fungalshield",
     badge: "Entry Level",

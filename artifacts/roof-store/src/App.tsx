@@ -30,6 +30,8 @@ import RoofLifeCertification from "@/pages/RoofLifeCertification";
 import ManufacturersReport from "@/pages/ManufacturersReport";
 import Pricing from "@/pages/Pricing";
 import RoofPaintingVsCoating from "@/pages/RoofPaintingVsCoating";
+import RoofPressureCleaning from "@/pages/RoofPressureCleaning";
+import SiliconeVsElastomeric from "@/pages/SiliconeVsElastomeric";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
@@ -115,6 +117,8 @@ function Router() {
       <Route path="/manufacturers-report" component={ManufacturersReport} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/roof-painting-vs-coating" component={RoofPaintingVsCoating} />
+      <Route path="/roof-pressure-cleaning" component={RoofPressureCleaning} />
+      <Route path="/silicone-vs-elastomeric-roof-coating" component={SiliconeVsElastomeric} />
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/admin" component={Admin} />
 

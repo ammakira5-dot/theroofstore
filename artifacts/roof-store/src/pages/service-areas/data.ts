@@ -185,7 +185,7 @@ export const counties: CountyEntry[] = [
         slug: "pompano-beach",
         image: "/api/storage/public-objects/cities/1590523277543-a94d2e4eb00b.jpg",
         blurb:
-          "Pompano Beach is a rapidly redeveloping coastal city with a wide range of building ages — from 1960s flat-roof bungalows near the beach to brand-new waterfront developments. The city's direct Atlantic exposure means salt air and UV radiation are significant factors in accelerating roof degradation across all building types.",
+          "Pompano Beach is a rapidly redeveloping coastal city with a wide range of building ages — from 1960s flat-roof bungalows near the beach to brand-new waterfront developments. With direct Atlantic exposure, salt air and UV radiation accelerate roof degradation here faster than inland areas, making professional roof coating installation — not just a can of paint — essential for lasting protection.",
       },
       {
         name: "Sea Ranch Lakes",

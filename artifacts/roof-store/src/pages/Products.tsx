@@ -261,7 +261,7 @@ export default function Products() {
     <div className="w-full">
       <SEO
         title="Roof Painting Products — FungalShield, SmartShield & RoofShield Coating Systems | The Roof Store Florida"
-        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — The Roof Store's roof painting & coating systems for tile, flat, shingle, and metal roofs, built from products manufactured in-house by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — The Roof Store's roof painting & coating systems for residential and commercial tile, flat, shingle, and metal roofs, built from products manufactured in-house by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
         schema={schema}
       />

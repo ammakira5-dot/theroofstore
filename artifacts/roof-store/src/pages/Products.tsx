@@ -148,10 +148,10 @@ const comparisonRows = [
     note: "No other coating in the world holds this certification.",
   },
   {
-    feature: "True 100% Liquid Rubber Acrylic",
+    feature: "Engineered base chemistry matched to your roof",
     ours: "passes",
-    generic: "warn",
-    note: "Elastomeric coatings are not rubber — they combine enamel and thickeners and hold water in the film.",
+    generic: "fails",
+    note: "Generic coatings are one-size-fits-all off-the-shelf paint. Ours are formulated per system and per project — elastomeric, polyurethane, or silicone — matched to your roof, budget, and goals.",
   },
   {
     feature: "Below-grade / flat roof application",
@@ -195,8 +195,12 @@ const questions = [
     a: "Read the warranty exclusions. Many popular-brand roof coatings — including Lanco Harris, Karnak, and Sherwin-Williams products — specifically state \"not for use in ponding water\" or \"not intended for use in ponding areas.\" That exclusion disqualifies them from flat roof use. Our products do not carry this limitation.",
   },
   {
-    q: "Is it a true 100% rubber acrylic or an elastomeric?",
-    a: "Elastomeric paint is not rubber. It is a category of products made by combining enamel and thickeners — essentially caulk that needs a topcoat to protect it. Elastomerics were designed for sealing walls, not waterproofing roofs. Our products are true liquid rubber acrylics — manufactured without water, fillers, thickeners, or extenders. Put them in a freezer: rubber survives, elastomeric cracks.",
+    q: "What's the difference between your elastomeric, polyurethane, and silicone options?",
+    a: "We don't force every roof into one formula. Depending on your roof type, budget, and goals, we build your system on one of three engineered base chemistries — elastomeric, polyurethane, or silicone. Fungal Shield (RP1) uses a raw, uncolored elastomeric resin base — no fillers, no added color — loaded with additives that repel fungus and mold, reduce tile porosity, shed water, and add UV protection. Smart Shield (RP2) uses an elastomeric or polyurethane base that we had re-engineered with BASF to do something generic coatings can't: hold true darker color choices on tile roofs without breaking down. That matters because dark tile roofs are one of the biggest trends in South Florida right now, and most reflective coatings simply can't perform in darker tones. This isn't off-the-shelf paint — every base is engineered for a specific job.",
+  },
+  {
+    q: "Can these systems be combined — like a colored top coat over Roof Shield?",
+    a: "Yes, and it's actually common. For example, a client with a tile roof who wants the full Roof Shield monolithic waterproofing system but also wants the roof painted a specific color — black is popular — will get the Roof Shield base coats applied first to seal and waterproof the roof, then Smart Shield applied as the final top coat for color and reflectivity. Our systems aren't rigid, one-size packages — we combine base and top coats to match the performance and look each client wants.",
   },
   {
     q: "How many coats are required and how often do you recoat?",

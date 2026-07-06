@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { Layout } from "@/components/layout/Layout";
 import { ShieldCheck, FileCheck, AlertTriangle, Clock, DollarSign, Home, CheckCircle, Phone } from "lucide-react";
 
 const problems = [
@@ -81,7 +80,7 @@ export default function RoofLifeCertification() {
   };
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Additional Roof Life Certification Florida | The Roof Store"
         description="Florida insurance company threatening to cancel because of your roof's age? Our professional rubber coating system extends your roof's certified life — saving you $15,000–$40,000 vs. full replacement. Serving Broward, Miami-Dade & Palm Beach since 1994."
@@ -304,6 +303,6 @@ export default function RoofLifeCertification() {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 }

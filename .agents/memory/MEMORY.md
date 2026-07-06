@@ -1,2 +1,3 @@
 - [Deploy approval required](deploy-policy.md) — never suggest publishing unless the user explicitly says to publish/deploy.
 - [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.
+- [Roof Store entity structure](roof-store-entity-structure.md) — 3-tier model (storefront/manufacturer/installer) + "RoofProtect" one-word spelling; consult before editing company/product copy.

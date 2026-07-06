@@ -46,8 +46,8 @@ export default function About() {
   return (
     <div className="w-full">
       <SEO
-        title="About Us — The Roof Store"
-        description="30+ years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. Licensed & insured, A+ BBB rated since 1994."
+        title="About The Roof Store — Florida Roof Painting Contractor Since 1994"
+        description="The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid rubber roof coating system. FungalShield, SmartShield & RoofShield are built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614."
         canonical="/about"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}

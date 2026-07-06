@@ -260,8 +260,8 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Fungal Shield, Smart Shield & Roof Shield — Roof Coating Products | The Roof Store Florida"
-        description="RP1 Fungal Shield, RP2 Smart Shield, RP3 Roof Shield — manufactured in Davie FL. The only TAS-106 rated coating in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        title="Roof Painting Products — FungalShield, SmartShield & RoofShield Coating Systems | The Roof Store Florida"
+        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — The Roof Store's roof painting & coating systems, built from products manufactured in-house by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
         schema={schema}
       />

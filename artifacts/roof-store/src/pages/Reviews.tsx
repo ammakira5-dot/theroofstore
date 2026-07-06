@@ -126,8 +126,8 @@ export default function Reviews() {
   return (
     <div className="w-full">
       <SEO
-        title="Customer Reviews & Testimonials — The Roof Store Florida"
-        description="Real testimonials from South Florida homeowners — including Don Godshall's Hurricane Wilma survival story. A+ BBB Rated since 1994. Roof Shield, Smart Shield, Fungal Shield."
+        title="5-Star Customer Reviews & Testimonials — The Roof Store Florida"
+        description="Real 5-star testimonials from South Florida homeowners — including Don Godshall's Hurricane Wilma survival story. A+ BBB Rated since 1994, one of South Florida's longest-standing roof coating contractors with a proven track record customers trust. Roof Shield, Smart Shield, Fungal Shield."
         canonical="/reviews"
         schema={schema}
       />

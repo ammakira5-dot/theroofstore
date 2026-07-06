@@ -16,9 +16,9 @@ export const fungalShield: ProductData = {
   heroDesc: "Sheds water, prevents staining, eliminates black streaking — and keeps tiles looking new.",
   heroImage: `${BASE}/images/homeshow-small.JPG`,
   overview: [
-    "Fungal Shield (RP1) is Roof Protect's clear anti-fungal roof coating, available exclusively through The Roof Store — the answer to South Florida's most common roof complaint: black streaks, green algae patches, and mold colonies that make a perfectly sound roof look like it needs replacing. These aren't cosmetic issues — they are living biological organisms actively breaking down your roofing substrate.",
+    "Fungal Shield (RP1) is RoofProtect's clear anti-fungal roof coating, available exclusively through The Roof Store — the answer to South Florida's most common roof complaint: black streaks, green algae patches, and mold colonies that make a perfectly sound roof look like it needs replacing. These aren't cosmetic issues — they are living biological organisms actively breaking down your roofing substrate.",
     "Fungal Shield starts from a clear elastomeric base, to which additional active ingredients are added to create its biocide formula. It penetrates and bonds to clay tile, concrete tile, metal, and flat roof surfaces, killing existing biological growth while creating a long-lasting barrier against future infestations. It sheds water away from the tile surface, prevents staining, and provides UV protection — all in a clear finish that preserves the original look of your roof.",
-    'Manufactured by Roof Protect at their Davie, Florida facility as a true liquid rubber coating — 100% without water, fillers, thickeners, or extenders. Every batch is the same proprietary formula refined over 30 years. The 5-Year Product Warranty is included standard. As our own slogan says: "Save Your Tiles."',
+    'Manufactured by RoofProtect at their Davie, Florida facility as a true liquid rubber coating — 100% without water, fillers, thickeners, or extenders. Every batch is the same proprietary formula refined over 30 years. The 5-Year Product Warranty is included standard. As our own slogan says: "Save Your Tiles."',
   ],
   features: [
     { title: "Active Biocide Formula", desc: "Kills algae, mold, and fungus at the cellular level — eliminates black streaking caused by Gloeocapsa magma bacteria." },
@@ -37,7 +37,7 @@ export const fungalShield: ProductData = {
     { label: "UV Resistance", value: "UV-stable — no degradation in Florida heat" },
     { label: "Compatible Substrates", value: "Clay tile, concrete tile, metal, flat deck" },
     { label: "Product Warranty", value: "5 Years" },
-    { label: "Manufactured", value: "Davie, Florida — Roof Protect" },
+    { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
   ],
   applications: [
     "Tile roofs with black streaking and algae growth",
@@ -96,14 +96,14 @@ export const smartShield: ProductData = {
   heroDesc: "A full waterproof, weatherproof coating system for tile roofs — in over 3,000 tintable colors. As a reflective cool roof coating, the darker the color, the more it reflects. FP&L confirmed energy savings. Exclusively available through The Roof Store.",
   heroImage: `${BASE}/images/Waterproofing-Technology.jpg`,
   overview: [
-    "Smart Shield (RP2) is Roof Protect's most popular system, available exclusively through The Roof Store — a complete waterproof and weatherproof roof coating engineered specifically for Florida tile roofs. Its base formula is typically elastomeric, tuned for darker tile colors, and it seals the tile surface against wind-driven rain, UV degradation, moisture intrusion, and mildew growth. It is 5× thicker than standard roof paint and bonds directly to the tile, forming a durable protective barrier that extends tile life significantly.",
+    "Smart Shield (RP2) is RoofProtect's most popular system, available exclusively through The Roof Store — a complete waterproof and weatherproof roof coating engineered specifically for Florida tile roofs. Its base formula is typically elastomeric, tuned for darker tile colors, and it seals the tile surface against wind-driven rain, UV degradation, moisture intrusion, and mildew growth. It is 5× thicker than standard roof paint and bonds directly to the tile, forming a durable protective barrier that extends tile life significantly.",
     "Smart Shield's base can also be formulated as polyurethane instead of elastomeric, or blended with ceramic for a flatter, less-reflective look on tile roofs where a matte finish is preferred, or for certain flat roof applications — the right formulation depends on the roof deck's drainage and the project's price point. It is important to understand what Smart Shield is and is not. For the main field tiles, Smart Shield is a surface coating — it protects the tile face and waterproofs the roof without filling the spaces between individual tiles. That full gap-filling monolithic treatment is the job of our Roof Shield (RP3) system. Where Smart Shield does add structural reinforcement is at the ridge caps: during every installation, the ridge caps are polyurethaned and fiber coated as a minimum standard. Ridge caps are the most wind-vulnerable section of any tile roof in South Florida, and this treatment gives them meaningful additional hurricane wind-lift protection — even on a Smart Shield-only job.",
-    "What sets Smart Shield apart from any other waterproof tile coating is its color capability. Over 3,000 tintable color options — and in collaboration with BASF, the world's largest chemical producer, Roof Protect engineered a breakthrough no other reflective roof coating has achieved: Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32%, even at the darkest black. The counterintuitive result: the darker the color you choose, the more heat this cool roof coating reflects. Florida Power & Light (FP&L) independently confirmed the energy savings. Manufactured by Roof Protect at their Davie, Florida facility — not available in any retail store.",
+    "What sets Smart Shield apart from any other waterproof tile coating is its color capability. Over 3,000 tintable color options — and in collaboration with BASF, the world's largest chemical producer, RoofProtect engineered a breakthrough no other reflective roof coating has achieved: Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32%, even at the darkest black. The counterintuitive result: the darker the color you choose, the more heat this cool roof coating reflects. Florida Power & Light (FP&L) independently confirmed the energy savings. Manufactured by RoofProtect at their Davie, Florida facility — not available in any retail store.",
   ],
   features: [
     { title: "Waterproof & Weatherproof Surface Coating", desc: "Seals the tile surface against wind-driven rain, UV damage, and moisture intrusion. 5× thicker than standard roof paint — bonds directly to field tile, not a thin decorative coat." },
     { title: "Ridge Caps — Polyurethane & Fiber Treatment", desc: "Every Smart Shield installation includes polyurethane and fiber coating on the ridge caps as a minimum standard. Ridge caps are the most wind-exposed area of any tile roof — this treatment provides meaningful hurricane wind-lift protection at the critical points." },
-    { title: "3,000+ Tintable Colors", desc: "The widest color selection of any protective tile roof coating. Match any HOA color, existing tile shade, or custom aesthetic — exclusively formulated and manufactured by Roof Protect." },
+    { title: "3,000+ Tintable Colors", desc: "The widest color selection of any protective tile roof coating. Match any HOA color, existing tile shade, or custom aesthetic — exclusively formulated and manufactured by RoofProtect." },
     { title: "Reflective Cool Roof Coating — The Darker, the More Reflective", desc: "BASF-engineered Cool Pigment Technology increases Total Solar Reflectance (TSR) by 32% — even at the darkest black. As a true reflective cool roof coating, you choose the color you want without sacrificing energy performance." },
     { title: "Polyurethane Base or Ceramic Blend Available", desc: "For tile roofs that don't want a reflective finish, or for certain flat roof applications, Smart Shield's base can be formulated as polyurethane instead of elastomeric, or blended with ceramic for a flatter, less-reflective look — the right option depends on price point and roof deck drainage." },
     { title: "FP&L Confirmed Energy Savings", desc: "Florida Power & Light independently confirmed Smart Shield saves on cooling costs — the only utility-endorsed roof coating in our category." },
@@ -122,7 +122,7 @@ export const smartShield: ProductData = {
     { label: "Mildew Resistance", value: "Guaranteed" },
     { label: "Availability", value: "Exclusive — not available in any retail store" },
     { label: "Compatible Substrates", value: "Cement tile, clay tile, S-tile, flat tile, shingle, metal" },
-    { label: "Manufactured", value: "Davie, Florida — Roof Protect" },
+    { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
   ],
   applications: [
     "Tile roofs needing waterproofing and weatherproofing protection — primary use case",
@@ -149,7 +149,7 @@ export const smartShield: ProductData = {
     },
     {
       q: "How can a dark color reflect MORE heat than a lighter one?",
-      a: "This is the breakthrough Roof Protect's collaboration with BASF produced. Standard dark pigments absorb heat — that's why everyone assumed dark roofs would always be hotter. Our Cool Pigment Technology uses specially engineered near-infrared-reflective (NIR) pigments that bounce away the sun's heat energy even in the darkest color ranges. TSR is increased by 32% across all colors, with the greatest gain at the darkest end of the spectrum. No other coating achieves this.",
+      a: "This is the breakthrough RoofProtect's collaboration with BASF produced. Standard dark pigments absorb heat — that's why everyone assumed dark roofs would always be hotter. Our Cool Pigment Technology uses specially engineered near-infrared-reflective (NIR) pigments that bounce away the sun's heat energy even in the darkest color ranges. TSR is increased by 32% across all colors, with the greatest gain at the darkest end of the spectrum. No other coating achieves this.",
     },
     {
       q: "Can Smart Shield be made non-reflective for tile roofs that don't want that effect?",
@@ -157,11 +157,11 @@ export const smartShield: ProductData = {
     },
     {
       q: "How many colors does Smart Shield come in?",
-      a: "Over 3,000 tintable color options. We work with you to match any HOA-approved color, any existing tile, or any custom aesthetic. Because Roof Protect manufactures the product, we can produce the exact formulation for your project — something no retail paint store can do.",
+      a: "Over 3,000 tintable color options. We work with you to match any HOA-approved color, any existing tile, or any custom aesthetic. Because RoofProtect manufactures the product, we can produce the exact formulation for your project — something no retail paint store can do.",
     },
     {
       q: "Is Smart Shield available at Home Depot, Lowe's, or any other retailer?",
-      a: "No. Smart Shield is an exclusive proprietary formula developed by Roof Protect in collaboration with BASF, available through The Roof Store. It is not sold in any retail store, hardware chain, or through any other contractor. The only way to get it is directly through us.",
+      a: "No. Smart Shield is an exclusive proprietary formula developed by RoofProtect in collaboration with BASF, available through The Roof Store. It is not sold in any retail store, hardware chain, or through any other contractor. The only way to get it is directly through us.",
     },
     {
       q: "Can Smart Shield be applied over Fungal Shield?",
@@ -237,7 +237,7 @@ export const roofShield: ProductData = {
   heroDesc: "A multi-layer system using several of our proprietary products to fill every space between your tiles — creating a single monolithic roof structure. No gaps. No wind or rain entry. The world's only TAS-106 Dade County Pull Test Rated liquid roof coating.",
   heroImage: `${BASE}/images/roof-shield-system.jpg`,
   overview: [
-    "Roof Shield (RP3) — officially The Original Liquid Applied Rubber Roof Shield System — is fundamentally different from any roof coating on the market, because it is not just a coating. It is a multi-layer system that uses several of Roof Protect's proprietary products in combination to physically fill every void, gap, and space between your tiles: under the overlaps, in the grout joints, between barrel tile ribs, in every penetration point. Before treatment, your tile roof has hundreds of open spaces that wind and rain can enter. After Roof Shield, those spaces are gone — sealed solid.",
+    "Roof Shield (RP3) — officially The Original Liquid Applied Rubber Roof Shield System — is fundamentally different from any roof coating on the market, because it is not just a coating. It is a multi-layer system that uses several of RoofProtect's proprietary products in combination to physically fill every void, gap, and space between your tiles: under the overlaps, in the grout joints, between barrel tile ribs, in every penetration point. Before treatment, your tile roof has hundreds of open spaces that wind and rain can enter. After Roof Shield, those spaces are gone — sealed solid.",
     "Roof Shield, Smart Shield, and Fungal Shield are interchangeable systems built from elastomeric, polyurethane, or silicone base ingredients depending on a customer's goals and price point. Roof Shield specifically is usually formulated around a proprietary premium silicone base ingredient to achieve its monolithic barrier — which is what makes it suitable for every roof type, including flat roofs that hold standing water. The result is a monolithic roof: instead of hundreds of individual tiles sitting on mortar and clips — each one a potential wind or water entry point — the entire roof surface becomes one continuous sealed structure. Wind cannot lift individual tiles because they are bonded into a single unit. Rain cannot penetrate between tiles because there are no gaps left to enter. Before and after photos of the process show the dramatic difference: tile voids that were once open to the sky are completely filled and sealed.",
     "This multi-layer monolithic system is the reason Roof Shield holds the only independent Dade County TAS-106 Uplift Pull Test certification ever awarded to a liquid roof coating — 5× the wind uplift strength of a new tile roof, at approximately half the replacement cost, with a maintenance-free Lifetime Warranty that is transferable and renewable.",
   ],
@@ -264,7 +264,7 @@ export const roofShield: ProductData = {
     { label: "Warranty", value: "Lifetime — Maintenance-Free, Transferable & Renewable" },
     { label: "Roof Life Extension", value: "Up to 10 additional years certification (State of Florida / Citizens recognized)" },
     { label: "Compatible Substrates", value: "Concrete tile, barrel tile, S-tile, flat deck (including water-holding flat roofs), metal, gravel, foam — any Florida roof" },
-    { label: "Manufactured", value: "Davie, Florida — Roof Protect" },
+    { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
   ],
   applications: [
     "Tile roofs where individual tiles are at risk of wind uplift in hurricane conditions",
@@ -283,11 +283,11 @@ export const roofShield: ProductData = {
     },
     {
       q: "What is Roof Shield actually made of — rubber or silicone?",
-      a: "Roof Shield is officially The Original Liquid Applied Rubber Roof Shield System — that's the name of the system. The specific base ingredient Roof Protect typically formulates it with is a proprietary premium silicone blend, chosen because it performs on every roof type, including flat roofs that hold standing water. Our systems can also interchange elastomeric or polyurethane base ingredients depending on a project's goals and price point.",
+      a: "Roof Shield is officially The Original Liquid Applied Rubber Roof Shield System — that's the name of the system. The specific base ingredient RoofProtect typically formulates it with is a proprietary premium silicone blend, chosen because it performs on every roof type, including flat roofs that hold standing water. Our systems can also interchange elastomeric or polyurethane base ingredients depending on a project's goals and price point.",
     },
     {
       q: "How many products are used in the Roof Shield system?",
-      a: "Roof Shield is a multi-layer system that uses several of Roof Protect's proprietary products applied in sequence. Each layer serves a specific function — penetrating seal, gap fill, bonding membrane, and protective topcoat — working together to create the final monolithic structure. This is why you cannot replicate the result with a single off-the-shelf product.",
+      a: "Roof Shield is a multi-layer system that uses several of RoofProtect's proprietary products applied in sequence. Each layer serves a specific function — penetrating seal, gap fill, bonding membrane, and protective topcoat — working together to create the final monolithic structure. This is why you cannot replicate the result with a single off-the-shelf product.",
     },
     {
       q: "What makes Roof Shield different from any other roof coating?",

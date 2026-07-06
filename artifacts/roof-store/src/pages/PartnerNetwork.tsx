@@ -55,7 +55,7 @@ const partners = [
     specialty: "Roofing Product Supply & Distribution",
     territory: "South Florida & National Distribution",
     description:
-      "Roof Protect Products is our authorized product supply and distribution partner — operating under our in-house RoofProtect factory license, the manufacturing label behind Fungal Shield, Smart Shield, and Roof Shield. Contractors and property managers can purchase our full range of rubber roof coating products, sealants, and primers direct from the factory in Broward County, Florida.",
+      "Roof Protect Products is our authorized product supply and distribution partner — operating under our in-house RoofProtect factory license, the manufacturing label behind FungalShield, SmartShield, and RoofShield. Contractors and property managers can purchase our full range of rubber roof coating products, sealants, and primers direct from the factory in Broward County, Florida.",
     services: [
       "Wholesale Product Supply",
       "Rubber Roof Coating Products",
@@ -204,7 +204,7 @@ export default function PartnerNetwork() {
         <div className="container px-4 max-w-4xl mx-auto">
           <p className="text-xs text-muted-foreground text-center leading-relaxed">
             The Roof Store is our retail storefront. Our coating products are manufactured in-house under our{" "}
-            <strong className="text-foreground">Roof Protect</strong> factory license, and professional installation
+            <strong className="text-foreground">RoofProtect</strong> factory license, and professional installation
             is available through <strong className="text-foreground">Storm Shield Paint Systems Inc.</strong>, our
             exclusive Florida-licensed contracting and installation division. Windproof Roof Systems is our authorized
             tile restoration specialist. All coating products distributed or installed under these brands are

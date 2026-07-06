@@ -188,7 +188,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-4">
               <Factory className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2">Direct-Source Contractor</h3>
-              <p className="text-white/80 text-sm">We sell Roof Protect's proprietary coatings and install them ourselves. No middlemen — straight from the Davie, FL factory to your roof.</p>
+              <p className="text-white/80 text-sm">We sell RoofProtect's proprietary coatings and install them ourselves. No middlemen — straight from the Davie, FL factory to your roof.</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <Award className="h-12 w-12 text-accent mb-4" />

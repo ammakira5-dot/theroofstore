@@ -64,7 +64,7 @@ const systems: RoofSystem[] = [
     size: "Residential",
     color: "bg-accent/10 text-accent",
     description:
-      "Smart Shield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — Roof Protect engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Typically built on an elastomeric base for darker tile colors, the base can also be formulated as polyurethane, or blended with ceramic for a flatter, less-reflective look on non-reflective tile roofs and certain flat roofs. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
+      "Smart Shield is our most popular system and the most innovative protective color roof coating ever developed. In collaboration with BASF — the world's largest chemical producer — RoofProtect engineered Cool Pigment Technology that increases Total Solar Reflectance (TSR) by 32% even at the darkest black. Typically built on an elastomeric base for darker tile colors, the base can also be formulated as polyurethane, or blended with ceramic for a flatter, less-reflective look on non-reflective tile roofs and certain flat roofs. Over 3,000 color options, FP&L-confirmed energy savings, and an exclusive formula not available in any retail store. The darker the color, the more it reflects.",
     features: [
       "3,000+ color options — full custom palette, any shade including dark charcoal & brown",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology, TSR +32%",
@@ -146,7 +146,7 @@ export default function RoofSystems() {
       "@type": "ItemList",
       name: "The Roof Store — Roof Coating Systems",
       url: `${BASE}/roof-systems`,
-      description: "Three proprietary roof coating systems — Fungal Shield, Smart Shield, Roof Shield — manufactured by Roof Protect in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
+      description: "Three proprietary roof coating systems — Fungal Shield, Smart Shield, Roof Shield — manufactured by RoofProtect in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
         { "@type": "ListItem", position: 2, name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },
@@ -202,7 +202,7 @@ export default function RoofSystems() {
               Fungal Shield, Smart Shield, and Roof Shield are application systems — each engineered for a specific
               protection goal. The actual coating product used within each system is determined <em>after</em> our
               manufacturer's inspection, based on the roof's condition, surface material, the client's goals, and
-              realistic budget. Roof Protect manufactures three formulation grades — and not every roof qualifies for every one.
+              realistic budget. RoofProtect manufactures three formulation grades — and not every roof qualifies for every one.
             </p>
           </div>
 

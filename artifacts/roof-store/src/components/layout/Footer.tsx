@@ -55,7 +55,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-primary-foreground/80 max-w-sm mb-6">
-              The pioneer of high-strength weatherproof rubber roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost. South Florida's original coating manufacturer at <span className="text-accent font-semibold">theroofstore.net</span>. Products are manufactured in-house under our Roof Protect factory license, with professional installation available through Storm Shield Paint Systems Inc., our exclusive licensed contracting division.
+              The pioneer of high-strength weatherproof rubber roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost. South Florida's original coating manufacturer at <span className="text-accent font-semibold">theroofstore.net</span>. Products are manufactured in-house under our RoofProtect factory license, with professional installation available through Storm Shield Paint Systems Inc., our exclusive licensed contracting division.
             </p>
             <div className="flex items-center flex-wrap gap-2 mb-5">
               <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">A+ BBB Rated Since 1994</div>

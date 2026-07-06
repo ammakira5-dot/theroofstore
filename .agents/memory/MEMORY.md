@@ -2,3 +2,4 @@
 - [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.
 - [Roof Store entity structure](roof-store-entity-structure.md) — 3-tier model (storefront/manufacturer/installer) + "RoofProtect" one-word spelling; consult before editing company/product copy.
 - [Verification tool caches by URL](verification-tool-url-caching.md) — screenshot/webFetch tools can serve stale cached snapshots per exact URL; always add a cache-busting query param before trusting a "still broken in prod" result.
+- [Sister-site duplicate content cleanup](sister-sites-duplicate-content.md) — tracks status of separate roofing-business sites (bestroofpaint.com, ftlauderdaleroofcoating.com, roofrestorationsandwaterproofinginc.com) being de-duplicated vs theroofstore.net; I verify only, owner edits directly.

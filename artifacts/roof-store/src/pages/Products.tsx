@@ -414,6 +414,16 @@ export default function Products() {
                         <span className="font-bold text-foreground">Best for: </span>
                         <span className="text-muted-foreground">{product.bestFor}</span>
                       </div>
+
+                      {product.highlights.some((h) => h.includes("Roof Life Certification") || h.includes("Roof Life Extension")) && (
+                        <div className="mt-3 text-xs text-muted-foreground">
+                          Learn more about the{" "}
+                          <Link href="/roof-life-certification" className="text-accent font-semibold underline underline-offset-2 hover:text-accent/80">
+                            Additional Roof Life Certification
+                          </Link>
+                          .
+                        </div>
+                      )}
                     </div>
 
                     {/* Right column — specs */}

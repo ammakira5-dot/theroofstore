@@ -52,7 +52,9 @@ const paintProblems = [
   {
     issue: "No insurance or certification value",
     detail:
-      "A painted roof does not qualify for Citizens Insurance Roof Life Certification or any extended warranty program.",
+      "A painted roof does not qualify for a Citizens Insurance Roof Life Certification or any extended warranty program.",
+    linkHref: "/roof-life-certification",
+    linkLabel: "Learn about the certification",
   },
 ];
 
@@ -180,6 +182,11 @@ export default function RoofPaintingVsCoating() {
                   <div>
                     <div className="font-bold text-foreground mb-1">{item.issue}</div>
                     <div className="text-muted-foreground text-sm leading-relaxed">{item.detail}</div>
+                    {item.linkHref && (
+                      <Link href={item.linkHref} className="text-accent font-semibold text-sm underline underline-offset-2 hover:text-accent/80 inline-block mt-2">
+                        {item.linkLabel}
+                      </Link>
+                    )}
                   </div>
                 </div>
               ))}

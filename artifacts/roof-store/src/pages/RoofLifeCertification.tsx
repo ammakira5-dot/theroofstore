@@ -257,6 +257,29 @@ export default function RoofLifeCertification() {
         </div>
       </section>
 
+      {/* Legal Basis / Sources */}
+      <section className="py-12 bg-slate-50 border-t border-border">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="font-serif font-bold text-xl text-primary mb-3">The Legal Basis for Roof Life Certification</h2>
+          <p className="text-foreground/70 text-sm leading-relaxed mb-3">
+            Roof life certification isn't a marketing concept — it's grounded in Florida law and the insurance industry's own paperwork. Florida Senate Bill 2-D (2022), codified as{" "}
+            <span className="font-medium text-primary">Florida Statute 627.7011(5)</span>, prohibits insurers from denying coverage or requiring replacement of a roof based on age alone if a licensed contractor or engineer certifies the roof has sufficient remaining useful life.
+          </p>
+          <p className="text-foreground/70 text-sm leading-relaxed">
+            Citizens Property Insurance Corporation formalizes this with its own{" "}
+            <a
+              href="https://www.citizensfla.com/documents/20702/1199344/CIT+RCF-1+03+23.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent font-semibold underline underline-offset-2 hover:text-accent/80"
+            >
+              Roof Condition Certification Form (CIT RCF-1)
+            </a>
+            , the affidavit a licensed contractor completes to document a roof's condition and remaining serviceable life. That's the exact document our assessment and coating treatment are designed to support.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-accent">
         <div className="container mx-auto px-4 max-w-3xl text-center">

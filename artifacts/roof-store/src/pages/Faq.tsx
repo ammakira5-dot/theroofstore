@@ -110,8 +110,8 @@ export default function Faq() {
   return (
     <div className="w-full">
       <SEO
-        title="FAQ — Rubber Roof Coating Questions Answered"
-        description="Answers to common questions about rubber roof coatings, tile restoration, hurricane performance, warranties, and how roof coating compares to full replacement."
+        title="FAQ — Roof Painting & Roof Coating Questions Answered | The Roof Store"
+        description="Answers to common questions about roof painting and roof coating systems: tile restoration, hurricane performance, warranties, and how coating compares to full roof replacement. The Roof Store — Davie, FL — 954-210-9614."
         schema={schema}
         canonical="/faq"
       />

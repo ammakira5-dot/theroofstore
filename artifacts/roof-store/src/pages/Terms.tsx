@@ -1,10 +1,9 @@
 import React from "react";
-import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 
 export default function Terms() {
   return (
-    <Layout>
+    <>
       <SEO title="Terms of Service — The Roof Store" description="Terms of service for theroofstore.net — Storm Shield Paint Systems Inc., Davie, FL." canonical="/terms" noindex />
       <div className="container mx-auto px-4 py-16 max-w-3xl">
         <h1 className="font-serif font-bold text-4xl text-primary mb-2">Terms of Service</h1>
@@ -68,6 +67,6 @@ export default function Terms() {
           </section>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

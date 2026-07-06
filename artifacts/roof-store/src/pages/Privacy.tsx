@@ -1,10 +1,9 @@
 import React from "react";
-import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 
 export default function Privacy() {
   return (
-    <Layout>
+    <>
       <SEO title="Privacy Policy — The Roof Store" description="Privacy policy for theroofstore.net — Storm Shield Paint Systems Inc., Davie, FL." canonical="/privacy" noindex />
       <div className="container mx-auto px-4 py-16 max-w-3xl">
         <h1 className="font-serif font-bold text-4xl text-primary mb-2">Privacy Policy</h1>
@@ -71,6 +70,6 @@ export default function Privacy() {
           </section>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

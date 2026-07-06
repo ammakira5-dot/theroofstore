@@ -44,7 +44,7 @@ export default function Factory() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "The Roof Store — Manufacturing Facility",
+      name: "RoofProtect Products — Manufacturing Facility",
       url: `${BASE}/factory`,
       telephone: "+19542109614",
       address: {
@@ -54,11 +54,11 @@ export default function Factory() {
         postalCode: "33328",
         addressCountry: "US",
       },
-      description: "The Roof Store manufactures Fungal Shield, Smart Shield, and Roof Shield at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      description: "RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
       makesOffer: [
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Fungal Shield (RP1)", description: "Anti-fungal roof coating — manufactured in Davie, FL" } },
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Smart Shield (RP2)", description: "Tintable waterproof tile roof coating — manufactured in Davie, FL" } },
-        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Roof Shield (RP3)", description: "Monolithic hurricane protection roof system — manufactured in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Fungal Shield (RP1)", description: "Anti-fungal roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Smart Shield (RP2)", description: "Tintable waterproof tile roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
+        { "@type": "Offer", itemOffered: { "@type": "Product", name: "Roof Shield (RP3)", description: "Monolithic hurricane protection roof system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
       ],
     },
     {
@@ -75,8 +75,8 @@ export default function Factory() {
     <>
     <div className="w-full">
       <SEO
-        title="Our Factory — Manufactured in Davie, Florida Since 1994"
-        description="The Roof Store manufactures Fungal Shield, Smart Shield, and Roof Shield at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
+        title="Our Manufacturing Partner — RoofProtect Products, Davie, Florida"
+        description="RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
         canonical="/factory"
         ogImage={`${BASE}/images/factory/1.jpg`}
         schema={schema}
@@ -87,11 +87,11 @@ export default function Factory() {
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
-              Made in Davie, Florida
+              Manufactured by RoofProtect Products — Davie, Florida
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Our Factory</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Our Manufacturing Partner</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Through proprietary manufacturing technology, every gallon of Fungal Shield, Smart Shield, and Roof Shield is formulated as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
+              Through proprietary manufacturing technology, RoofProtect Products formulates every gallon of material used in the Fungal Shield, Smart Shield, and Roof Shield systems as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
             </p>
           </motion.div>
         </div>
@@ -123,9 +123,9 @@ export default function Factory() {
               <MapPin className="h-3.5 w-3.5" />
               4801 South University Drive, Davie FL 33328
             </div>
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Inside Our Facility</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Inside the Facility</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              "The Original Liquid Applied Rubber Roof Shield System" — trademarked and manufactured exclusively at our South Florida facility. The only Dade County TAS-106 Uplift Pull Test Rated roof coating system in the world. Certified, documented, and proven through real hurricane conditions.
+              "The Original Liquid Applied Rubber Roof Shield System" — trademarked, with all underlying materials manufactured exclusively by RoofProtect Products at this South Florida facility. The only Dade County TAS-106 Uplift Pull Test Rated roof coating system in the world. Certified, documented, and proven through real hurricane conditions.
             </p>
           </div>
 
@@ -172,8 +172,8 @@ export default function Factory() {
               },
               {
                 icon: Users,
-                title: "Contractor + Manufacturer = Accountability",
-                desc: "We don't just make it — we install it. The Roof Store is our exclusive contracting division, A+ BBB Rated since 1994. The same company that formulated your product applies it to your roof. Full accountability, zero gap.",
+                title: "Manufacturer + Retailer + Installer = Accountability",
+                desc: "RoofProtect Products manufactures the materials, The Roof Store sells the systems (A+ BBB Rated since 1994), and our exclusive licensed contracting partner, Storm Shield Paint Systems Inc., can install it on your roof. One connected family of companies — full accountability, zero gap.",
               },
             ].map((item, i) => (
               <motion.div
@@ -234,8 +234,8 @@ export default function Factory() {
       <section className="py-20 bg-muted">
         <div className="container px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Three Products — Manufactured Here</h2>
-            <p className="text-muted-foreground text-lg">RP1, RP2, and RP3 — each formulated and blended on-site in Davie, Florida.</p>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Three Systems — Materials Manufactured Here</h2>
+            <p className="text-muted-foreground text-lg">RP1, RP2, and RP3 — the materials behind each system are formulated and blended on-site by RoofProtect Products in Davie, Florida.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {products.map((p, i) => (

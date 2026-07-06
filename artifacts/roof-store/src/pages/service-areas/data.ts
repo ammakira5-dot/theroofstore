@@ -45,7 +45,7 @@ export const counties: CountyEntry[] = [
         slug: "coral-springs",
         image: "/api/storage/public-objects/cities/1691423332423-f2132628ff72.jpg",
         blurb:
-          "One of Broward's largest planned communities, Coral Springs features a wide mix of residential roof types — from flat decks on 1970s ranch homes to barrel tile on newer estate properties. The city's age means many roofs are decades old and show signs of UV degradation, fading, and hairline cracking that our rubber coating systems seal and protect without the disruption of a tear-off.",
+          "One of Broward's largest planned communities, Coral Springs features a wide mix of residential roof types — from flat decks on 1970s ranch homes to barrel tile on newer estate properties. The city's age means many roofs are decades old and show signs of UV degradation, fading, and hairline cracking that our rubber coating systems seal and protect without the disruption of a tear-off. For homeowners chasing the modern dark tile look, our Smart Shield system's BASF Cool Pigment Technology reflects heat even at the darkest color choices.",
       },
       {
         name: "Dania Beach",
@@ -59,7 +59,7 @@ export const counties: CountyEntry[] = [
         slug: "davie",
         image: "/api/storage/public-objects/cities/1553284965-83fd3e82fa5a.jpg",
         blurb:
-          "Our home base — The Roof Store has operated out of Davie since 1994, and we know the local roofing landscape better than anyone. As Davie's original rubber roof paint and roof coating contractor, we work on everything from large flat-deck barn roofs to Spanish tile on residential homes throughout the town, serving Davie's unique mix of equestrian estates, suburban neighborhoods, and commercial properties.",
+          "Our home base — The Roof Store has operated out of Davie since 1994, and we know the local roofing landscape better than anyone. As Davie's original rubber roof paint and roof coating contractor, we work on everything from large flat-deck barn roofs to Spanish tile on residential homes throughout the town, serving Davie's unique mix of equestrian estates, suburban neighborhoods, and commercial properties. Darker tile roofs have become increasingly popular with Davie homeowners, and our Smart Shield system's BASF Cool Pigment Technology lets you go dark without sacrificing energy efficiency.",
       },
       {
         name: "Deerfield Beach",
@@ -157,7 +157,7 @@ export const counties: CountyEntry[] = [
         slug: "parkland",
         image: "/api/storage/public-objects/cities/1501594907352-04cda38ebc29.jpg",
         blurb:
-          "Parkland is one of Broward's most prestigious planned communities, known for its large estate homes, equestrian trails, and strict HOA standards. Most homes here feature high-end barrel tile roofs that need expert care — our tile restoration and resealing process restores original color and integrity while meeting Parkland's demanding aesthetic requirements.",
+          "Parkland is one of Broward's most prestigious planned communities, known for its large estate homes, equestrian trails, and strict HOA standards. Most homes here feature high-end barrel tile roofs that need expert care — our tile restoration and resealing process restores original color and integrity while meeting Parkland's demanding aesthetic requirements. Parkland's estate homeowners increasingly want darker tile roofs, and our Smart Shield system's BASF Cool Pigment Technology delivers that look without the heat penalty older dark coatings carried.",
       },
       {
         name: "Pembroke Park",
@@ -227,7 +227,7 @@ export const counties: CountyEntry[] = [
         slug: "weston",
         image: "/api/storage/public-objects/cities/1559494007-9f5847c49d94.jpg",
         blurb:
-          "Weston is one of South Florida's premier master-planned communities, known for its award-winning schools, manicured streetscapes, and upscale lifestyle. Homes here typically feature barrel or S-tile roofs with high HOA standards for appearance — our tile restoration and resealing process restores faded, porous tile to like-new condition without the cost of full replacement.",
+          "Weston is one of South Florida's premier master-planned communities, known for its award-winning schools, manicured streetscapes, and upscale lifestyle. Homes here typically feature barrel or S-tile roofs with high HOA standards for appearance — our tile restoration and resealing process restores faded, porous tile to like-new condition without the cost of full replacement. Dark tile roofs are trending among Weston homeowners, and our Smart Shield system's BASF Cool Pigment Technology reflects heat even at the darkest color choices — so you get the modern look without a hotter roof.",
       },
       {
         name: "Wilton Manors",

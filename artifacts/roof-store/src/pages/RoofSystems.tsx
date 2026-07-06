@@ -146,7 +146,7 @@ export default function RoofSystems() {
       "@type": "ItemList",
       name: "The Roof Store — Roof Coating Systems",
       url: `${BASE}/roof-systems`,
-      description: "Three proprietary roof coating systems — Fungal Shield, Smart Shield, Roof Shield — built using RoofProtect-manufactured coating products from Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
+      description: "Three proprietary roof coating systems — Fungal Shield, Smart Shield, Roof Shield — built from products manufactured in-house by RoofProtect Products in Davie, FL. Formulation (elastomeric, polyurethane, or silicone) is specified per roof after manufacturer's inspection. Up to 50-year silicone product warranty available.",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield`, description: "Anti-fungal & anti-algae roof coating — eliminates black streaking on Florida tile roofs." },
         { "@type": "ListItem", position: 2, name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield`, description: "Tintable waterproof & weatherproof surface coating for tile roofs. 3,000+ colors. BASF Cool Pigment Technology." },

@@ -46,6 +46,7 @@ const partners = [
       "Tile Re-Setting & Repair",
     ],
     badge: "Tile Specialist",
+    linkPaused: true,
   },
   {
     name: "Roof Protect Products",
@@ -64,6 +65,7 @@ const partners = [
       "National Product Distribution",
     ],
     badge: "Product Supply",
+    linkPaused: false,
   },
 ];
 
@@ -142,15 +144,17 @@ export default function PartnerNetwork() {
                   <h2 className="text-2xl font-serif font-bold">{partner.name}</h2>
                   <div className="text-white/70 text-sm mt-1">{partner.specialty}</div>
                 </div>
-                <a
-                  href={partner.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors border border-white/20 shrink-0"
-                >
-                  Visit Site
-                  <ExternalLink className="h-4 w-4" />
-                </a>
+                {!partner.linkPaused && (
+                  <a
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors border border-white/20 shrink-0"
+                  >
+                    Visit Site
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
               </div>
 
               {/* Card body */}
@@ -168,17 +172,26 @@ export default function PartnerNetwork() {
                         {partner.phone}
                       </a>
                     </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <ExternalLink className="h-4 w-4 text-accent shrink-0" />
-                      <a
-                        href={partner.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-accent transition-colors"
-                      >
-                        {partner.domain}
-                      </a>
-                    </div>
+                    {partner.linkPaused ? (
+                      <div className="flex items-center gap-3 text-sm">
+                        <ExternalLink className="h-4 w-4 text-muted-foreground/50 shrink-0" />
+                        <span className="text-muted-foreground/70 italic">
+                          Site link temporarily paused pending content updates
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-3 text-sm">
+                        <ExternalLink className="h-4 w-4 text-accent shrink-0" />
+                        <a
+                          href={partner.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          {partner.domain}
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
 

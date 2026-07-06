@@ -96,8 +96,8 @@ export default function RoofServices() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Coating Installation Services — Tile Restoration, Flat Roof Sealing, Hurricane Coating | South Florida"
-        description="Licensed roof coating installation contractor in South Florida: pressure cleaning, soft washing, tile reglazing & restoration, flat deck rubber coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. Professionally installed with our FungalShield, SmartShield & RoofShield systems."
+        title="Roof Restoration & Roof Painting Services — Tile, Flat, Shingle & Metal Roofs | South Florida"
+        description="Licensed roof restoration and roof painting contractor in South Florida: pressure cleaning, soft washing, tile reglazing & restoration, flat deck rubber coating, shingle roof coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. Professionally installed with our FungalShield, SmartShield & RoofShield systems."
         canonical="/roof-services"
         schema={schema}
       />

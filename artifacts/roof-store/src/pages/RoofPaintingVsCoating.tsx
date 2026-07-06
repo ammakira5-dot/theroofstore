@@ -106,7 +106,7 @@ export default function RoofPaintingVsCoating() {
     <div className="w-full">
       <SEO
         title="Roof Paint vs. Roof Coating Systems & Cost Comparison | The Roof Store"
-        description="Searching for a roof painting contractor in South Florida? Learn why professional roof coating systems outperform standard roof paint — better waterproofing, longer lifespan, hurricane-rated, and lower long-term roof coating cost. Licensed & insured, A+ BBB rated since 1994."
+        description="Searching for a roof painting or roof restoration contractor in South Florida? Learn why professional roof coating systems outperform standard roof paint on tile, flat, shingle, and metal roofs — better waterproofing, longer lifespan, hurricane-rated, and lower long-term roof coating cost. Licensed & insured, A+ BBB rated since 1994."
         canonical="/roof-painting-vs-coating"
         schema={schema}
       />

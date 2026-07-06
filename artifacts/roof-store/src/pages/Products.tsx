@@ -16,20 +16,21 @@ const products = [
     name: "Fungal Shield",
     slug: "fungalshield",
     tagline: "\"Save Your Tiles\"",
-    subtitle: "Anti-Fungal & Anti-Algae Clear Roof Coating",
+    subtitle: "Clear Roof Tile Sealer & Anti-Fungal, Anti-Algae Roof Coating",
     accentClass: "border-green-600",
     badgeClass: "bg-green-100 text-green-700",
     iconBg: "bg-green-100",
     iconColor: "text-green-700",
     coverageSqFt: 90,
     summary:
-      "Florida's clear anti-fungal roof coating — kills black streaking, mold, algae, and fungal growth at the cellular level. Bonds to the tile surface and creates a permanent biological barrier without changing the color or appearance of your roof.",
+      "Florida's clear roof tile sealer and anti-fungal roof coating — kills black streaking, mold, algae, and fungal growth at the cellular level. Bonds to tile, metal roofing, and flat deck surfaces alike, creating a permanent biological barrier without changing the color or appearance of your roof.",
     highlights: [
       "Active biocide formula — eliminates Gloeocapsa magma (black streak bacteria)",
+      "Doubles as a clear metal roof coating — protects metal panels without changing their finish",
       "Guaranteed mildew resistance — less cleaning required",
       "Sheds water, prevents staining & UV protection",
       "Clear finish — preserves original tile appearance",
-      "Compatible: clay tile, concrete tile, metal, flat deck",
+      "Compatible: clay tile, concrete tile, metal roofing, flat deck",
       "5-Year Product Warranty — included standard",
     ],
     specs: [
@@ -40,8 +41,9 @@ const products = [
       { label: "UV Resistance", value: "UV-stable — no degradation in Florida heat" },
       { label: "Warranty", value: "5-Year Product Warranty" },
       { label: "Manufactured", value: "Davie, FL — The Roof Store" },
+      { label: "Price", value: "$190" },
     ],
-    bestFor: "Tile roofs with black streaking, algae patches, or mold in South Florida's year-round humidity.",
+    bestFor: "Tile, metal, and flat roofs with black streaking, algae patches, or mold in South Florida's year-round humidity.",
   },
   {
     code: "RP2",
@@ -60,6 +62,8 @@ const products = [
     highlights: [
       "Surface coating for field tiles — waterproof, weatherproof, 5× thicker than standard roof paint",
       "Ridge caps polyurethaned & fiber coated on every job — minimum hurricane wind-lift protection",
+      "Also formulated as a direct-to-metal roof coating — not just tile",
+      "Rated for ponding water on flat roofs — no \"not for use in ponding water\" exclusion",
       "3,000+ tintable color options — match any HOA shade or custom color",
       "The darker the color, the MORE it reflects — BASF Cool Pigment Technology (TSR +32%)",
       "FP&L (Florida Power & Light) independently confirmed cooling cost savings",
@@ -67,14 +71,16 @@ const products = [
     ],
     specs: [
       { label: "Product Code", value: "RP2 — Smart Shield" },
-      { label: "Primary Function", value: "Waterproof & weatherproof coating for tile roofs" },
+      { label: "Primary Function", value: "Waterproof & weatherproof coating for tile, metal & flat roofs" },
       { label: "Color Options", value: "3,000+ tintable colors — full custom palette" },
       { label: "Coverage Rate", value: "~90 sq ft per gallon" },
       { label: "Cool Pigment", value: "BASF Technology — TSR +32% even at darkest black" },
       { label: "Energy Endorsement", value: "FP&L confirmed cooling cost savings" },
+      { label: "Ponding Water", value: "Rated for standing water on flat decks — no exclusion" },
       { label: "Mildew Resistance", value: "Guaranteed" },
       { label: "Availability", value: "Exclusive — not sold in any retail store" },
       { label: "Manufactured", value: "Davie, FL — The Roof Store" },
+      { label: "Price", value: "$285" },
     ],
     bestFor: "Any tile roof homeowner who wants proven waterproof protection in a chosen color — dark or light — while also reflecting the Florida heat.",
     extra: "Developed in collaboration with BASF — the world's largest chemical producer — Smart Shield passed full tensile, flexural, DSC, TGA, and viscosity testing. The BASF Cool Pigment breakthrough: choose any color you want and the darker you go, the more heat reflects away from your home. Exclusively available through The Roof Store.",
@@ -103,6 +109,8 @@ const products = [
       "135+ MPH documented real hurricane wind resistance — 5× stronger than a new roof",
       "½ the cost of full roof replacement — Lifetime Warranty, transferable & renewable",
       "Additional Roof Life Certification up to 10 years (Citizens Insurance accepted)",
+      "Rated for ponding water on flat roofs — no \"not for use in ponding water\" exclusion",
+      "Also applies to metal roofing — seals seams and fasteners the same way it seals tile gaps",
     ],
     specs: [
       { label: "Product Code", value: "RP3 — Roof Shield" },
@@ -114,7 +122,10 @@ const products = [
       { label: "Wind Strength vs. New Roof", value: "5× stronger in wind uplift resistance" },
       { label: "Warranty", value: "Lifetime — Maintenance-Free, Transferable & Renewable" },
       { label: "Roof Life Extension", value: "Up to 10 years certification (FL / Citizens recognized)" },
+      { label: "Ponding Water", value: "Rated for standing water on flat decks — no exclusion" },
+      { label: "Compatible Substrates", value: "Tile, flat deck, metal roofing" },
       { label: "Manufactured", value: "Davie, FL — The Roof Store" },
+      { label: "Price", value: "$325" },
     ],
     bestFor: "Any tile roof where hurricane wind or rain intrusion between tiles is a risk — and any roof approaching replacement age that deserves a structural solution rather than a simple re-roof.",
     featured: true,
@@ -166,6 +177,12 @@ const comparisonRows = [
     generic: "fails",
     note: "Place generic elastomeric in a freezer — it breaks. Real rubber does not.",
   },
+  {
+    feature: "Dedicated metal roof coating option",
+    ours: "passes",
+    generic: "warn",
+    note: "Fungal Shield, Smart Shield, and Roof Shield all bond directly to metal roofing — not just tile.",
+  },
 ];
 
 const questions = [
@@ -192,6 +209,10 @@ const questions = [
   {
     q: "Can you provide documentation for any energy savings claims?",
     a: "For Smart Shield (RP2): FP&L (Florida Power & Light) independently confirmed our product saves on cooling costs — this is utility-validated, not a marketing claim. Ask any competitor whether their energy savings claim has been independently validated by a utility company.",
+  },
+  {
+    q: "Do you offer a metal roof coating, or is this just for tile?",
+    a: "All three systems apply to metal roofing, not just tile. Fungal Shield works as a clear metal roof coating that stops rust-driven staining and biological growth without changing the panel's finish. Smart Shield applies as a direct-to-metal waterproof, weatherproof, tintable coating. Roof Shield's multi-layer system seals seams and fasteners on metal roofs the same way it seals gaps between tiles.",
   },
 ];
 
@@ -260,8 +281,8 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Painting Products — FungalShield, SmartShield & RoofShield Coating Systems | The Roof Store Florida"
-        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — The Roof Store's roof painting & coating systems for residential and commercial tile, flat, shingle, and metal roofs, built from products manufactured in-house by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        title="Roof Painting Products — Metal Roof Coating, Flat Roof Coating & Roof Tile Sealer | The Roof Store Florida"
+        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — roof painting & coating systems for tile, flat, shingle, and metal roofs. Clear roof tile sealer, direct-to-metal roof coating, and flat roof coating rated for ponding water — all manufactured by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
         schema={schema}
       />

@@ -1,3 +1,4 @@
 - [Deploy approval required](deploy-policy.md) — never suggest publishing unless the user explicitly says to publish/deploy.
 - [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.
 - [Roof Store entity structure](roof-store-entity-structure.md) — 3-tier model (storefront/manufacturer/installer) + "RoofProtect" one-word spelling; consult before editing company/product copy.
+- [Verification tool caches by URL](verification-tool-url-caching.md) — screenshot/webFetch tools can serve stale cached snapshots per exact URL; always add a cache-busting query param before trusting a "still broken in prod" result.

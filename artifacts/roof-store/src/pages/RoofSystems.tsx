@@ -167,8 +167,8 @@ export default function RoofSystems() {
     <>
     <div className="w-full">
       <SEO
-        title="Elastomeric, Polyurethane & Silicone Roof Coating Systems — The Roof Store Florida"
-        description="Manufacturer-specified elastomeric, polyurethane, and silicone roof coating systems for Florida homes and commercial properties. Fungal Shield, Smart Shield & Roof Shield — formulation determined after inspection. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
+        title="Roof Painting & Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store"
+        description="Roof painting done right — FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems, professionally installed by our licensed crew for Florida homes and commercial properties. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
         canonical="/roof-systems"
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}

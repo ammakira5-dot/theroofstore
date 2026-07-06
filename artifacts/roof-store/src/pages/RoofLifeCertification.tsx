@@ -62,9 +62,9 @@ export default function RoofLifeCertification() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Additional Roof Life Certification — The Roof Store",
+    name: "Additional Roof Life Certification & Roof Life Extension — The Roof Store",
     url: `${BASE}/roof-life-certification`,
-    description: "Professional roof coating treatment that extends the certified life of aging roofs in Florida, helping homeowners avoid forced re-roofing by insurance companies.",
+    description: "Professional roof coating treatment that provides a certified roof life extension for aging roofs in Florida, helping homeowners avoid forced re-roofing by insurance companies.",
     provider: {
       "@type": "LocalBusiness",
       name: "The Roof Store Waterproofing Products",
@@ -82,8 +82,8 @@ export default function RoofLifeCertification() {
   return (
     <>
       <SEO
-        title="Additional Roof Life Certification Florida | The Roof Store"
-        description="Florida insurance company threatening to cancel because of your roof's age? Our professional rubber coating system extends your roof's certified life — saving you $15,000–$40,000 vs. full replacement. Serving Broward, Miami-Dade & Palm Beach since 1994."
+        title="Roof Life Extension & Certification Florida | The Roof Store"
+        description="Florida insurance company threatening to cancel because of your roof's age? Our professional rubber coating system provides a certified roof life extension — saving you $15,000–$40,000 vs. full replacement. Serving Broward, Miami-Dade & Palm Beach since 1994."
         canonical={`${BASE}/roof-life-certification`}
         schema={schema}
       />
@@ -98,14 +98,14 @@ export default function RoofLifeCertification() {
           >
             <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/40 text-accent text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
               <FileCheck className="h-4 w-4" />
-              FLORIDA ROOF LIFE CERTIFICATION SERVICE
+              FLORIDA ROOF LIFE EXTENSION & CERTIFICATION SERVICE
             </div>
             <h1 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
               Don't Let Your Insurance Company<br />
               <span className="text-accent">Force a Roof Replacement</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mb-8">
-              If your Florida insurer is threatening to cancel your policy because of your roof's age, our professional rubber coating system can extend your roof's certified life — saving you tens of thousands of dollars.
+              If your Florida insurer is threatening to cancel your policy because of your roof's age, our professional rubber coating system provides a certified roof life extension — saving you tens of thousands of dollars.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -165,10 +165,10 @@ export default function RoofLifeCertification() {
               THE SOLUTION
             </div>
             <h2 className="font-serif font-bold text-3xl md:text-4xl text-primary mb-4">
-              How Our Certification Treatment Works
+              How Our Roof Life Extension Treatment Works
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Our high-strength liquid rubber coating system restores your roof to like-new protective performance — providing the professional treatment documentation needed to support an extended life certification.
+              Our high-strength liquid rubber coating system restores your roof to like-new protective performance — providing the professional treatment documentation needed to support a certified roof life extension.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">

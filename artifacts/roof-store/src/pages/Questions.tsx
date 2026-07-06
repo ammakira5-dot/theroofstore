@@ -40,7 +40,7 @@ const sections = [
   },
   {
     letter: "B",
-    title: "Would You Like to Extend the Life of Your Roof?",
+    title: "Roof Life Extension: Would You Like to Extend the Life of Your Roof?",
     content: [
       {
         type: "callout",

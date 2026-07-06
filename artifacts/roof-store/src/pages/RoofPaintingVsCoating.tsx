@@ -142,22 +142,34 @@ export default function RoofPaintingVsCoating() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-3xl font-serif font-bold text-primary">Why "Roof Painting" Falls Short Here</h2>
+            <h2 className="text-3xl font-serif font-bold text-primary">The Real History Behind Roof Painting — And the "Roofs Need to Breathe" Myth</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Roof painting is a legitimate service in many climates. Apply a coat of elastomeric or acrylic paint, the
-              roof looks better, and in mild climates that might hold up for a few years. But South Florida is not a mild
-              climate.
+              Roof painting didn't start as a marketing gimmick — it started as a genuine discovery. Decades ago, roof
+              painters applying thick coats to tile roofs noticed that paint seeping into the gaps between tiles
+              actually helped hold the tiles down against wind. Through repeated hurricane seasons, the idea held up
+              and spread as a practical, lower-cost way to protect a tile roof.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              We have the most intense UV radiation in the continental United States. We get 60+ inches of rainfall per
-              year — much of it in short, violent downpours. We deal with high humidity year-round, tropical storm
-              season from June through November, and hurricane-force wind events that test every surface on your home.
+              Traditional roof-replacement companies pushed back hard — and one of their most repeated objections was
+              that coated roofs "can't breathe." That claim is misleading. Most professional-grade coatings, including
+              the elastomeric and silicone-based systems we use, are vapor-permeable: they block liquid water from
+              getting in while still letting trapped moisture vapor escape. Silicone systems (like our Roof Shield
+              formulation) have a somewhat lower permeability rating than pure acrylic coatings, but they're still
+              breathable — which is why a properly applied coating prevents blistering and trapped-moisture failures
+              rather than causing them.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              In this environment, standard roof paint is a <strong>cosmetic solution to a structural problem.</strong>{" "}
-              It makes the roof look better for a season or two, but it doesn't seal, doesn't waterproof, doesn't flex,
-              and doesn't protect. Homeowners end up repainting every 2–3 years and still dealing with leaks, algae, and
-              deterioration — spending more over time than a proper coating system would have cost upfront.
+              Where roof painting actually did earn a bad reputation: some painters — and some homeowners — painted
+              directly over existing leaks and roof damage without repairing the structure underneath. Covering a
+              problem doesn't fix it; it just hides it. That misuse, not the underlying technique, is what gave roof
+              coatings their reputation problem.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              That's exactly why every one of our installations starts with an infrared moisture scan — to find hidden
+              leaks and trapped moisture before any coating goes on. It's also why, over the last decade, most
+              traditional roof repair and replacement companies have started offering similar coating systems
+              themselves — because done right, it works, and homeowners increasingly want an alternative to being sold
+              a full roof replacement they don't need.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               When comparing roof coating cost against roof replacement cost in Florida, the numbers favor coating in

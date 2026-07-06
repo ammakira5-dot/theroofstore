@@ -36,6 +36,11 @@ const sections = [
         type: "fact",
         text: "Roofprotect Advanced Rubber roof coating can be submerged under water for prolonged periods without subsequent damage due to saturation of the coating — ideal for flat roofs. Generic elastomeric products cannot make this claim.",
       },
+      {
+        type: "highlight",
+        title: "Doesn't a Roof Need to Breathe? Won't a Coating Trap Moisture?",
+        text: "This is one of the most common objections you'll hear from roof-replacement companies — and it's misleading. \"Breathable\" in roofing terms means vapor-permeable: the coating blocks liquid water from entering while still letting trapped moisture vapor escape. Our elastomeric coatings have a high permeability rating, and our silicone-based Roof Shield system — while somewhat less permeable than pure acrylic — is still vapor-permeable and lets the roof assembly dry out over time. The real risk isn't breathability, it's coating over a roof with existing trapped moisture or unrepaired leaks — which is why every installation starts with an infrared moisture scan to confirm the deck is dry first.",
+      },
     ],
   },
   {

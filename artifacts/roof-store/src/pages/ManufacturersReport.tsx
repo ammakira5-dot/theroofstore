@@ -43,7 +43,7 @@ export default function ManufacturersReport() {
     {
       icon: Droplets,
       title: "Infrared Moisture Scan",
-      desc: "Thermal infrared imaging detects hidden moisture trapped beneath the surface — invisible to the naked eye but critical to long-term coating adhesion and warranty validity.",
+      desc: "Thermal infrared imaging detects hidden moisture trapped beneath the surface — invisible to the naked eye but critical to long-term coating adhesion and warranty validity. This scan is also the definitive answer to the \"roofs need to breathe\" objection: our coatings are vapor-permeable and won't trap moisture on their own, but applying over a roof deck with existing hidden moisture would. That's precisely why we scan first.",
     },
     {
       icon: ClipboardCheck,

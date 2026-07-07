@@ -270,6 +270,24 @@ export default function RoofReplacementAlternative() {
         </div>
       </section>
 
+      {/* Brand image */}
+      <section className="py-10 bg-background">
+        <div className="container px-4 max-w-3xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <div className="rounded-2xl overflow-hidden border border-border shadow-sm">
+              <img
+                src="/images/roof-replacement-alternative-truck.png"
+                alt="The Roof Store truck — Don't Re-Roof It, Weatherproof It at half the cost — South Florida"
+                className="w-full object-cover"
+              />
+              <div className="bg-muted px-6 py-3 text-xs text-muted-foreground italic text-center">
+                The Roof Store — serving South Florida since 1994. "Don't Re-Roof It — Weatherproof It @ ½ the Cost."
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* The core question */}
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-3xl mx-auto">

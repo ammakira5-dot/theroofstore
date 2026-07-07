@@ -29,7 +29,7 @@ export default function About() {
           postalCode: "33328",
           addressCountry: "US",
         },
-        description: "The Roof Store is a Florida-licensed roofing contractor and the exclusive seller of Fungal Shield, Smart Shield, and Roof Shield — proprietary roof coating systems built from products manufactured in-house by RoofProtect Products in Davie, FL. We sell these systems and install them with our own licensed crew.",
+        description: "The Roof Store is a Florida-licensed contractor and the exclusive seller of Fungal Shield, Smart Shield, and Roof Shield — proprietary roof coating systems built from products manufactured in-house by RoofProtect Products in Davie, FL. We sell these systems and install them with our own licensed crew.",
         numberOfEmployees: { "@type": "QuantitativeValue", minValue: 10, maxValue: 50 },
         areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
       },
@@ -67,7 +67,7 @@ export default function About() {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
               <h2 className="text-4xl font-serif font-bold text-primary mb-6">Our Story</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Welcome to Theroofstore.net. For nearly 30 years, The Roof Store has been Florida's trusted source for <strong className="text-foreground">Fungal Shield, Smart Shield, and Roof Shield</strong> — three proprietary roof coating systems built from products formulated and produced in-house by RoofProtect Products in Davie, Florida. We're a licensed roofing contractor and the exclusive seller of these systems, and we install them with our own licensed crew.
+                Welcome to Theroofstore.net. For nearly 30 years, The Roof Store has been Florida's trusted source for <strong className="text-foreground">Fungal Shield, Smart Shield, and Roof Shield</strong> — three proprietary roof coating systems built from products formulated and produced in-house by RoofProtect Products in Davie, Florida. We're a licensed contractor and the exclusive seller of these systems, and we install them with our own licensed crew.
               </p>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
                 The Roof Store (Contracting &amp; Product Installation Division) is a licensed and insured Florida roofing contractor, A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. You can also buy the products direct online and apply them yourself, or use any licensed installer you choose.
@@ -187,7 +187,7 @@ export default function About() {
                 Icon: UserCheck,
                 step: "Option 3",
                 title: "Buy & Use Your Own Installer",
-                desc: "Purchase our products and use any licensed roofing contractor you prefer. We supply the product, the technical data sheets, and phone support to ensure it's applied correctly.",
+                desc: "Purchase our products and use any licensed contractor you prefer. We supply the product, the technical data sheets, and phone support to ensure it's applied correctly.",
                 cta: "Browse Products",
                 href: "/products",
                 dark: false,

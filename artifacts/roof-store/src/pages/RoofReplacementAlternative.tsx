@@ -443,6 +443,56 @@ export default function RoofReplacementAlternative() {
         </div>
       </section>
 
+      {/* Before / After — Lincoln Baker */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+              Real Customer Result
+            </div>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-3">
+              See the Difference — Before &amp; After
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Tile roof restoration — South Florida home. Coating instead of full replacement.
+            </p>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {/* Before — placeholder */}
+            <div className="rounded-2xl overflow-hidden border border-border bg-muted flex flex-col">
+              <div className="relative flex-1 min-h-64 bg-muted flex items-center justify-center">
+                <div className="text-center text-muted-foreground/50 p-8">
+                  <div className="text-4xl mb-3">📷</div>
+                  <div className="text-sm font-medium">Before photo coming soon</div>
+                </div>
+                <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-bold px-3 py-1 rounded-full">BEFORE</span>
+              </div>
+              <div className="px-5 py-4 bg-muted border-t border-border">
+                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Before Coating</div>
+                <p className="text-sm text-muted-foreground">Original tile condition prior to Roof Shield restoration system.</p>
+              </div>
+            </div>
+
+            {/* After */}
+            <div className="rounded-2xl overflow-hidden border border-border bg-muted flex flex-col">
+              <div className="relative">
+                <img
+                  src="/images/lincoln-baker-after.png"
+                  alt="South Florida tile roof after Roof Shield coating restoration — Lincoln Baker"
+                  className="w-full object-cover"
+                />
+                <span className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">AFTER</span>
+              </div>
+              <div className="px-5 py-4 bg-muted border-t border-border">
+                <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">After Roof Shield Coating</div>
+                <p className="text-sm text-muted-foreground">Lincoln Baker — South Florida. Dark tile restored and weatherproofed. No replacement needed.</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Cost section */}
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-3xl mx-auto">

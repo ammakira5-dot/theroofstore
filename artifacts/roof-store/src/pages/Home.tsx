@@ -241,6 +241,7 @@ export default function Home() {
                 { myth: "\"It's just paint.\"", truth: "100% resin liquid rubber — no fillers, no water-based shortcuts. Rated for ponding water." },
                 { myth: "\"It voids your warranty.\"", truth: "Our coating systems are designed to work with your existing materials, not against them." },
                 { myth: "\"My insurance won't cover it.\"", truth: "Florida homeowners often qualify for an Additional Roof Life Certification after coating." },
+                { myth: "\"A new tile roof is stronger.\"", truth: "New cement tile manufactured under current building codes is actually lighter-duty than older tile. Retrofit your existing tile with our liquid rubber system and the assembly is stronger — and more weatherproof — than new tile alone." },
               ].map((item, i) => (
                 <motion.div
                   key={i}

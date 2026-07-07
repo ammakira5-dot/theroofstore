@@ -33,6 +33,7 @@ import RoofPaintingVsCoating from "@/pages/RoofPaintingVsCoating";
 import RoofPressureCleaning from "@/pages/RoofPressureCleaning";
 import SiliconeVsElastomeric from "@/pages/SiliconeVsElastomeric";
 import PartnerNetwork from "@/pages/PartnerNetwork";
+import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -120,6 +121,7 @@ function Router() {
       <Route path="/roof-pressure-cleaning" component={RoofPressureCleaning} />
       <Route path="/silicone-vs-elastomeric-roof-coating" component={SiliconeVsElastomeric} />
       <Route path="/partner-network" component={PartnerNetwork} />
+      <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

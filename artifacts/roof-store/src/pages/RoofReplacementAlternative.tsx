@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { CheckCircle2, XCircle, Phone, ArrowRight, DollarSign, ShieldCheck, Droplets, Sun } from "lucide-react";
+import { CheckCircle2, XCircle, Phone, ArrowRight, DollarSign, ShieldCheck, Droplets, Sun, Clock, BookOpen } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const BASE = "https://www.theroofstore.net";
@@ -204,12 +204,78 @@ export default function RoofReplacementAlternative() {
         </div>
       </section>
 
+      {/* Article meta + quick nav */}
+      <section className="py-10 bg-background border-b border-border">
+        <div className="container px-4 max-w-3xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <div className="flex items-center gap-3 text-xs text-muted-foreground mb-6">
+              <BookOpen className="h-4 w-4 text-accent" />
+              <span>By <strong className="text-foreground">The Roof Store Team</strong></span>
+              <span className="text-muted-foreground/40">·</span>
+              <Clock className="h-3.5 w-3.5" />
+              <span>7 min read</span>
+              <span className="text-muted-foreground/40">·</span>
+              <span>Updated July 2026</span>
+            </div>
+            <div className="bg-muted rounded-2xl border border-border overflow-hidden">
+              <div className="bg-primary/5 border-b border-border px-6 py-4">
+                <div className="text-xs font-bold text-accent uppercase tracking-widest">Article Quick Nav</div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-border">
+                <div className="px-6 py-5">
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">What You'll Learn</div>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    {[
+                      "Can you coat instead of replace?",
+                      "Coating vs. replacement — side by side",
+                      "When coating is the right call",
+                      "Tile roof restoration options",
+                      "Flat roof coating alternative",
+                      "Cost per square foot in Florida",
+                      "Frequently asked questions",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-2">
+                        <CheckCircle2 className="h-3.5 w-3.5 text-accent shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="px-6 py-5">
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">Next Steps</div>
+                  <ul className="space-y-3 text-sm">
+                    <li>
+                      <a href="tel:9542109614" className="flex items-center gap-2 text-accent font-bold hover:underline">
+                        <Phone className="h-3.5 w-3.5 shrink-0" />
+                        Call for a free roof assessment
+                      </a>
+                    </li>
+                    <li>
+                      <Link href="/contact" className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors">
+                        <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                        Request a free estimate online
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/products" className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors">
+                        <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                        Browse our coating systems
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* The core question */}
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-              Can You Coat Your Roof Instead of Replacing It?
+              1. Can You Coat Your Roof Instead of Replacing It?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-5">
               This is the question every Florida homeowner facing a large replacement quote should be asking. The short answer: <strong className="text-foreground">in most cases, yes</strong> — and you'll pay roughly half as much to do it.
@@ -229,7 +295,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-              Roof Restoration vs. Replacement — How They Compare
+              2. Roof Restoration vs. Replacement — How They Compare
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Side by side, on the factors that matter most to Florida homeowners.
@@ -264,7 +330,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4 max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-              When Roof Coating Is the Right Call
+              3. When Roof Coating Is the Right Call
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Coating works when the structure of your roof is sound. Here are the signs your roof is a good candidate.
@@ -311,7 +377,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4 max-w-5xl mx-auto space-y-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-              Tile Roof Restoration &amp; Flat Roof Coating — Florida's Two Biggest Needs
+              4. Tile Roof Restoration &amp; Flat Roof Coating — Florida's Two Biggest Needs
             </h2>
           </motion.div>
 
@@ -364,7 +430,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4 max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">
-              Roof Coating Cost Per Square Foot in Florida
+              5. Roof Coating Cost Per Square Foot in Florida
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               The numbers are straightforward. On a typical 1,500 square foot Florida roof:
@@ -393,7 +459,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4 max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
-              Frequently Asked Questions
+              6. Frequently Asked Questions
             </h2>
           </motion.div>
           <div className="space-y-5">

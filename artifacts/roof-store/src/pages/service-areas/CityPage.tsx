@@ -289,18 +289,36 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                 <div className="text-xs text-muted-foreground">Serving {city} since 1994</div>
               </div>
 
-              {/* City photo thumbnail */}
-              <div className="rounded-xl overflow-hidden shadow-md">
-                <img
-                  src={image}
-                  alt={`Aerial view of ${city}, Florida`}
-                  className="w-full h-40 object-cover"
-                  loading="lazy"
-                />
-                <div className="bg-muted px-4 py-2 text-xs text-muted-foreground text-center">
-                  {city}, {county}, Florida
+              {/* Google Maps embed */}
+              {coords ? (
+                <div className="rounded-xl overflow-hidden shadow-md border border-border">
+                  <div className="bg-muted px-4 py-2.5 flex items-center gap-2 text-xs font-semibold text-foreground">
+                    <MapPin className="h-3.5 w-3.5 text-accent shrink-0" />
+                    {city}, {county}, FL
+                  </div>
+                  <iframe
+                    title={`Map of ${city}, Florida — The Roof Store service area`}
+                    src={`https://maps.google.com/maps?q=${coords.lat},${coords.lon}&z=13&output=embed`}
+                    width="100%"
+                    height="220"
+                    style={{ border: 0, display: "block" }}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
-              </div>
+              ) : (
+                <div className="rounded-xl overflow-hidden shadow-md">
+                  <img
+                    src={image}
+                    alt={`Aerial view of ${city}, Florida`}
+                    className="w-full h-40 object-cover"
+                    loading="lazy"
+                  />
+                  <div className="bg-muted px-4 py-2 text-xs text-muted-foreground text-center">
+                    {city}, {county}, Florida
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

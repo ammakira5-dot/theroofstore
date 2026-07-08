@@ -148,6 +148,11 @@ const EXACT_REDIRECTS = {
   "/rp2": "/products/smartshield",
   "/rp3": "/products/roofshield",
 
+  // Legacy company pages — .php variants
+  "/about-us.php": "/about",
+  "/contact-us.php": "/contact",
+  "/services.php": "/roof-services",
+
   // Legacy company pages
   "/about-us": "/about",
   "/our-company": "/about",
@@ -195,6 +200,12 @@ app.use((req, res, next) => {
   // /services/*.php catch-all → /roof-services
   if (req.path.startsWith("/services/") && req.path.endsWith(".php")) {
     return res.redirect(301, "/roof-services");
+  }
+
+  // General .php catch-all — any unmapped .php URL → homepage
+  // (prevents sirv from returning a hard 404 for file-extension paths)
+  if (req.path.endsWith(".php")) {
+    return res.redirect(301, "/");
   }
 
   // /blog/:slug → /blog

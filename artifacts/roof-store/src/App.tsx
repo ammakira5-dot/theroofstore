@@ -285,6 +285,9 @@ function Router() {
       <Route path="/services/:slug" component={() => <RedirectTo to="/roof-services" />} />
 
       {/* ── Legacy — root-level .php pages ── */}
+      <Route path="/about-us.php" component={() => <RedirectTo to="/about" />} />
+      <Route path="/contact-us.php" component={() => <RedirectTo to="/contact" />} />
+      <Route path="/services.php" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/residential.php" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/projects/reviews.php" component={() => <RedirectTo to="/reviews" />} />
       <Route path="/affiliations.php" component={() => <RedirectTo to="/partner-network" />} />

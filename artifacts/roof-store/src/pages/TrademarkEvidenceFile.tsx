@@ -414,6 +414,37 @@ export default function TrademarkEvidenceFile() {
             </p>
           </section>
 
+          {/* Exhibit J — 2011 Field Footage */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI-A. Exhibit J — 2011 Field Footage: Cement Tile Roof Repair, Fort Lauderdale / Pompano Beach</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              A second, independently uploaded video on the same YouTube channel shows on-site field footage of a cement tile roof repair performed by the business in Fort Lauderdale / Pompano Beach, Florida, again using the "Don't Re-Roof, Weatherproof at 1/2 the Cost" positioning. Uploaded to YouTube on December 6, 2011 (per the platform's own recorded upload date), this predates theroof.store's August 2021 domain registration by nearly a decade and corroborates continuous, real-world use of the brand and tagline between the circa-1999 commercial (Exhibit I) and the present day.
+            </p>
+            <div className="border-2 border-gray-300 rounded overflow-hidden mb-3 bg-black aspect-video max-w-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/_D-SYtBH-mQ"
+                title="2011 field footage — cement tile roof repair, Fort Lauderdale / Pompano Beach"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <div className="border border-gray-300 rounded p-4 bg-gray-50 font-sans text-sm mb-4">
+              <p className="font-semibold mb-1">YouTube Listing Details (verbatim, platform-recorded metadata):</p>
+              <ul className="text-gray-700 space-y-1">
+                <li><strong>Title:</strong> "Roof repair cement tile roof Ft lauderdale, Pompano Beach"</li>
+                <li><strong>Uploader / channel handle:</strong> makira1111 (same channel as Exhibit I)</li>
+                <li><strong>Views:</strong> 179</li>
+                <li><strong>Upload age (as displayed by YouTube):</strong> "14y ago"; platform-recorded upload date December 6, 2011</li>
+                <li><strong>Description (verbatim excerpt):</strong> "Don't Re Roof Weatherproof your roof at 1/2 The cost of re roofing in Fort Lauderdale Florida.33301. Visit us at www.theroofstore.net or call toll free 954-302-5387 for your free over the phone evaluation estimate and product price sheet"</li>
+                <li><strong>URL:</strong> youtube.com/watch?v=_D-SYtBH-mQ</li>
+              </ul>
+            </div>
+            <p className="text-xs font-sans text-gray-500 mb-4 italic">
+              Source: youtube.com/watch?v=_D-SYtBH-mQ. Note the description lists a legacy toll-free number (954-302-5387), distinct from the business's current number (954-210-9614) — consistent with the same business updating its contact information over a multi-decade operating history, not a change of identity. The domain reference "www.theroofstore.net" in this 2011 description independently corroborates continuous use of that exact domain between Exhibit F's Wayback captures and the present.
+            </p>
+          </section>
+
           {/* No Legitimate Rights Analysis */}
           <section className="mb-10">
             <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
@@ -514,6 +545,7 @@ export default function TrademarkEvidenceFile() {
                   ["Jul 8, 2026", "Sunbiz corporate records pulled", "Official Florida Sunbiz filings confirming common ownership (Anthony R. Meurer) across Anthony's Enterprises Inc., Storm Shield Systems Inc., All Surface Restorations & Preservations Inc., and Storm Shield Paint Systems Inc. located and added as Exhibit H."],
                   ["Jul 8, 2026", "Circa-1999 TV commercial located and added", "Original television commercial (\"Don't Re-Roof, Waterproof at 1/2 the Cost\") showing Roof Shield system installation, narrated by site owner, located on YouTube and added as Exhibit I."],
                   ["Jul 8, 2026", "YouTube upload metadata added to Exhibit I", "Platform-recorded metadata for the YouTube listing (channel handle \"makira1111,\" title \"Roof repair Fort Lauderdale Broward County,\" 131 views, \"14y ago\" upload age, verbatim description) added to Exhibit I as independent corroboration."],
+                  ["Jul 8, 2026", "2011 field footage located and added", "Second video on the same \"makira1111\" YouTube channel — \"Roof repair cement tile roof Ft lauderdale, Pompano Beach\" (179 views, uploaded Dec 6, 2011, description references www.theroofstore.net and a legacy toll-free number) — located and added as Exhibit J."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>

@@ -195,6 +195,17 @@ export default function TrademarkMonitoringLog() {
 
         {error && <p className="text-sm text-destructive bg-destructive/10 rounded px-3 py-2 mb-4">{error}</p>}
 
+        {role === "attorney" && (
+          <div className="bg-accent/5 border border-accent/20 rounded-xl p-4 mb-6 flex items-start gap-3">
+            <ShieldCheck className="h-5 w-5 text-accent mt-0.5 shrink-0" />
+            <p className="text-sm text-muted-foreground">
+              You're signed in with <span className="font-semibold text-foreground">read-only attorney access</span>. This view only shows the log for your review —
+              there are no buttons to add entries or trigger checks on purpose, so the evidentiary record can't be altered from this account.
+              Everything below was recorded automatically by the monitoring system or added by the site admin.
+            </p>
+          </div>
+        )}
+
         {role === "admin" && (
           <>
             {/* Automated check */}

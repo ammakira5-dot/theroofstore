@@ -153,12 +153,14 @@ export default function About() {
               <p className="text-sm text-muted-foreground mb-4">
                 Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."
               </p>
-              <Link
-                href="/videos"
+              <a
+                href="https://www.youtube.com/@makira1111"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
               >
                 <Youtube className="h-4 w-4" /> More videos on our YouTube channel
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>

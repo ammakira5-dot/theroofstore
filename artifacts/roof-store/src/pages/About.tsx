@@ -65,6 +65,21 @@ export default function About() {
         url: BASE,
       },
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "The Roof Store — Cement Tile Roof Repair, Ft. Lauderdale / Pompano Beach",
+      description: "Field footage of The Roof Store repairing a cement tile roof in Fort Lauderdale / Pompano Beach, Florida, showing our Don't Re-Roof, Waterproof-at-half-the-cost process in action.",
+      thumbnailUrl: "https://img.youtube.com/vi/_D-SYtBH-mQ/hqdefault.jpg",
+      uploadDate: "2011-12-06",
+      embedUrl: "https://www.youtube.com/embed/_D-SYtBH-mQ",
+      contentUrl: "https://www.youtube.com/watch?v=_D-SYtBH-mQ",
+      publisher: {
+        "@type": "Organization",
+        name: "The Roof Store",
+        url: BASE,
+      },
+    },
   ];
   return (
     <div className="w-full">
@@ -101,21 +116,39 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto mb-16"
+            className="max-w-5xl mx-auto mb-16"
           >
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-black aspect-video mb-4">
-              <iframe
-                src="https://www.youtube.com/embed/IUcKj0nKNDc"
-                title="Original 1999 TV commercial — Don't Re-Roof, Waterproof at 1/2 the Cost"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-black aspect-video mb-4">
+                  <iframe
+                    src="https://www.youtube.com/embed/IUcKj0nKNDc"
+                    title="Original 1999 TV commercial — Don't Re-Roof, Waterproof at 1/2 the Cost"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."
+                </p>
+              </div>
+              <div>
+                <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-black aspect-video mb-4">
+                  <iframe
+                    src="https://www.youtube.com/embed/_D-SYtBH-mQ"
+                    title="Cement tile roof repair — Fort Lauderdale / Pompano Beach"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  2011 field footage — cement tile roof repair in Fort Lauderdale / Pompano Beach.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <p className="text-sm text-muted-foreground">
-                Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."
-              </p>
+            <div className="flex justify-center mt-6">
               <a
                 href="https://www.youtube.com/@makira1111"
                 target="_blank"

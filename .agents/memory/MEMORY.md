@@ -6,3 +6,4 @@
 - [Express req typing pitfall](express-request-typing.md) — never type a helper's `req` via `Parameters<Parameters<typeof router.use>[0]>[0]`; use `Request` from express directly.
 - [Don't Re-Roof keyword strategy](dont-reroof-keyword-strategy.md) — keyword research for "roof replacement alternative" niche; Tier 2 ($20–$55/click) is the sweet spot; landing page + SEO-first approach recommended; pending user review to action.
 - [Evidentiary log multi-role auth](evidentiary-log-multi-role-auth.md) — pattern for adding a read-only attorney/viewer role to an admin-only evidentiary log without weakening chain-of-custody.
+- [AI Overview claims need verification](ai-overview-claims-need-verification.md) — AI Mode/Overview answers can invent confident specifics; verify each atom against primary sources (e.g. Sunbiz) before treating as evidence.

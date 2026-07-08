@@ -291,9 +291,45 @@ export default function TrademarkEvidenceFile() {
             </div>
           </section>
 
+          {/* Exhibit G — Printed Marketing Materials */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. Exhibit G — Printed Marketing Brochure Referencing theroofstore.net</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              Two-page printed marketing brochure for <strong>Storm Shield Paint Systems Inc.</strong> (dba "Roof Shield Coating System"), distributed to commercial and residential prospects in South Florida. The brochure explicitly references <strong>www.theroofstore.net</strong> twice as the destination for customer reviews and product materials data, and states the company "has been the roof restoration and waterproofing business serving the South Florida commercial and residential markets since 1994." It also includes a dated photo captioned <strong>"Fort Lauderdale Home Show, 1994"</strong> credited to Capt. Anthony R. Meurer, President — corroborating the 1994 founding date independently of the website archive record in Exhibit F.
+            </p>
+            <p className="text-xs font-sans text-amber-800 bg-amber-50 border border-amber-300 rounded p-3 mb-4 leading-relaxed">
+              <strong>Dating note:</strong> This exact printed version references Hurricanes Wilma (2005) and Irma (2017) in customer testimonials, so this specific copy was printed or last revised sometime after 2017 — the underlying design and "since 1994" branding originated earlier (business records place initial creation in the early-to-mid 2000s), and the document has evidently been kept in ongoing use/revision since. Recommend attorney treat this as evidence of a marketing template in continuous use over two decades, dated conservatively as "in circulation, in some version, since at least the early-to-mid 2000s," rather than pinning an exact single print date without further documentation.
+            </p>
+            <div className="border-2 border-gray-300 rounded overflow-hidden mb-4">
+              <div className="bg-gray-100 px-4 py-2 text-xs font-sans flex justify-between items-center border-b border-gray-300">
+                <span className="font-semibold">EXHIBIT G — Storm Shield Paint Systems Inc. Brochure, Page 1</span>
+                <span className="text-gray-500">Source: Company marketing archive</span>
+              </div>
+              <img
+                src="/attached_assets/screenshots/storm_shield_brochure_page1.png"
+                alt="Exhibit G page 1: Storm Shield Paint Systems Inc. brochure referencing theroofstore.net"
+                className="w-full"
+              />
+            </div>
+            <div className="border-2 border-gray-300 rounded overflow-hidden">
+              <div className="bg-gray-100 px-4 py-2 text-xs font-sans flex justify-between items-center border-b border-gray-300">
+                <span className="font-semibold">EXHIBIT G — Storm Shield Paint Systems Inc. Brochure, Page 2</span>
+                <span className="text-gray-500">Source: Company marketing archive</span>
+              </div>
+              <img
+                src="/attached_assets/screenshots/storm_shield_brochure_page2.png"
+                alt="Exhibit G page 2: Storm Shield Paint Systems Inc. brochure, since 1994, Fort Lauderdale Home Show 1994 photo"
+                className="w-full"
+              />
+            </div>
+            <p className="text-xs font-sans text-gray-500 mt-2 italic">
+              Note: Brochure also lists current business address (4700 Sheridan Street, Suite J, Hollywood, FL 33021) and phone (954-210-9614), matching the prior rights holder's present-day contact information, confirming continuity of the same operating entity.
+            </p>
+          </section>
+
           {/* No Legitimate Rights Analysis */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               This section directly addresses the second required element of the UDRP/URS test: that the <strong>respondent</strong> (Dmitry Lipinskiy, operating theroof.store) has no rights or legitimate interest of his own in the name "The Roof Store." Under UDRP Policy ¶4(a)(ii) and ¶4(c), once the complainant makes a prima facie showing on this element, the burden shifts to the respondent to come forward with evidence of a legitimate right — none is apparent from the public record.
             </p>
@@ -338,7 +374,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* SEO / AI Manipulation Attack Vectors */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               If the respondent becomes aware of this claim, the following are the realistic technical/digital tactics they could attempt to muddy the record, along with the countermeasure already in place or recommended for each. Any attempt along these lines would itself constitute additional evidence of bad faith and awareness of prior rights.
             </p>
@@ -352,7 +388,7 @@ export default function TrademarkEvidenceFile() {
               </thead>
               <tbody>
                 {[
-                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section XI below."],
+                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section XII below."],
                   ["Negative SEO: flood theroofstore.net with spammy/toxic backlinks to trigger a Google penalty", "Google's algorithm largely discounts this against established, trusted domains; a sudden unnatural link spike is itself detectable and reportable.", "Monitor Search Console \"Links\" report monthly; use Google's Disavow Tool if a spike appears; Ahrefs/SEMrush backlink alerts."],
                   ["Schema markup spam — inject false structured data (fake founding dates, fake reviews, fake awards) to compete for Google's Knowledge Panel / AI Overview citation", "Structured data claims are checkable against public records (Sunbiz, BBB, WHOIS); false schema is a reportable policy violation to Google.", "Keep our own Organization/LocalBusiness schema accurate, dated, and cross-linked (sameAs) to BBB, GMB, and Sunbiz so Google's entity graph favors the verifiable source."],
                   ["Content/AI farming — publish large volumes of AI-generated articles repeating \"The Roof Store\" + Florida keywords to dominate AI Overviews and LLM-cited answers", "Volume without authority or citations rarely outranks a domain with 24 years of consistent history and real citations once Google/AI systems weigh source trust.", "Continue building small amounts of high-quality, factual, citable content (which we're already doing) rather than competing on volume."],
@@ -371,7 +407,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Monitoring & Defense Log */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Monitoring &amp; Defense Log</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Monitoring &amp; Defense Log</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               Running log of monitoring activity and any new incidents observed. Add a dated row every time something new is checked or discovered.
             </p>
@@ -385,8 +421,9 @@ export default function TrademarkEvidenceFile() {
               </thead>
               <tbody>
                 {[
-                  ["Jul 8, 2026", "Initial evidence file compiled", "Baseline documentation established — see Exhibits A–F above."],
+                  ["Jul 8, 2026", "Initial evidence file compiled", "Baseline documentation established — see Exhibits A–G above."],
                   ["Jul 8, 2026", "Wayback Machine independent archive pull", "Confirmed continuous archive.org captures of theroofstore.net from Jan 2002 onward — see Exhibit F."],
+                  ["Jul 8, 2026", "Printed marketing brochure located and added", "Storm Shield Paint Systems Inc. brochure referencing theroofstore.net and 1994 founding located and added as Exhibit G."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>
@@ -408,7 +445,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Legal Framework */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Applicable Legal Frameworks</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Applicable Legal Frameworks</h3>
             <div className="grid grid-cols-2 gap-4 text-sm font-sans">
               {[
                 {
@@ -438,7 +475,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Recommended Next Steps */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Recommended Next Steps</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIV. Recommended Next Steps</h3>
             <ol className="list-decimal list-inside space-y-3 text-sm font-sans leading-relaxed">
               <li><strong>Attorney review of this file</strong> — Florida IP counsel to assess strength of common law mark, UDRP eligibility, and ACPA standing before any public action.</li>
               <li><strong>Formal WHOIS/registrant unmasking</strong> — Confirm Dmitry Lipinskiy as registrant of record via UDRP discovery or pre-suit demand to GoDaddy.</li>
@@ -451,7 +488,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Reservation */}
           <section className="mb-12">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIV. Reservation of Rights</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XV. Reservation of Rights</h3>
             <p className="text-sm font-sans leading-relaxed text-gray-700">
               The Roof Store / Storm Shield Paint Systems Inc. expressly reserves all rights under the Lanham Act, ACPA, Florida common law, and ICANN UDRP with respect to the domain theroof.store and any other domain names or social media handles using "The Roof Store" brand. This document does not constitute a waiver of any right or remedy. All evidence herein was captured from publicly accessible web pages and represents the live state of the respondent's commercial operations as of the documentation date.
             </p>

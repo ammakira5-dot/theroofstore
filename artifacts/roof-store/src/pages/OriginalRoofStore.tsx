@@ -32,8 +32,8 @@ const schema = [
 ];
 
 const milestones = [
-  { year: "1994", event: "The Roof Store founded in Davie, Florida, as an asset of Anthony's Enterprises Inc. and Storm Shield Paint Systems Inc. First liquid rubber roof coating system introduced to the South Florida market." },
-  { year: "1998", event: "Business presence documented publicly at the Fort Lauderdale Home Show under Anthony's Enterprises Inc." },
+  { year: "1994", event: "The Roof Store founded in Davie, Florida, as an asset of Anthony's Enterprises Inc. and Storm Shield Paint Systems Inc. First liquid rubber roof coating system introduced to the South Florida market. Storm Shield Paint Systems Inc. exhibits at the Fort Lauderdale Home Show that same year." },
+  { year: "Early-to-mid 2000s", event: "Printed marketing materials in commercial distribution reference www.theroofstore.net alongside the Storm Shield Paint Systems Inc. name, evidencing established brand and domain identity around the time of formal domain registration." },
   { year: "2002", event: "theroofstore.net domain registered July 29, 2002. Continuous, unbroken commercial use begins." },
   { year: "2010s", event: "RoofProtect Products established as the manufacturing entity. FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) systems developed and commercialized." },
   { year: "2022+", event: "Confusingly similar domain names registered by out-of-state entities, both of which actively market into Florida — The Roof Store's primary geographic market." },

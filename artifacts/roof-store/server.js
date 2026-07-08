@@ -23,6 +23,12 @@ const EXACT_REDIRECTS = {
   "/Roof_Painting_Service_Broward_County_for_Smart_Shield.php": "/products/smartshield",
   "/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf": "/products/smartshield",
   "/assets/files/basic-colors-smart-shield.pdf": "/products/smartshield",
+  // RoofProtect product embed URLs — match each bucket's #1 roller to its correct product page
+  "/pdf/fungalshield-info.pdf": "/products/fungalshield",
+  "/pdf/roofshield-info.pdf": "/products/roofshield",
+  "/pdf/smartshield-info.pdf": "/products/smartshield",
+  // RP3 RoofShield — old brochure embed URL now points to RoofShield product page
+  "/pdf/pdf-images/Brochure/Brochure_2006_Revised_2018.pdf": "/products/roofshield",
   "/roof-shield-system.php": "/products/roofshield",
   "/factory.php": "/factory",
   "/products.php": "/products",

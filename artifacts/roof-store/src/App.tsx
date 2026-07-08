@@ -165,6 +165,12 @@ function Router() {
       <Route path="/flat-roof-coating" component={() => <RedirectTo to="/commercial-roofs" />} />
       <Route path="/foam-roof-coating" component={() => <RedirectTo to="/commercial-roofs" />} />
 
+      {/* ── RoofProtect embed URLs — each bucket's #1 roller links to its correct product page ── */}
+      <Route path="/pdf/fungalshield-info.pdf" component={() => <RedirectTo to="/products/fungalshield" />} />
+      <Route path="/pdf/roofshield-info.pdf" component={() => <RedirectTo to="/products/roofshield" />} />
+      <Route path="/pdf/smartshield-info.pdf" component={() => <RedirectTo to="/products/smartshield" />} />
+      <Route path="/pdf/pdf-images/Brochure/Brochure_2006_Revised_2018.pdf" component={() => <RedirectTo to="/products/roofshield" />} />
+
       {/* ── Legacy — products ── */}
       <Route path="/smartshield" component={() => <RedirectTo to="/products/smartshield" />} />
       <Route path="/smart-shield" component={() => <RedirectTo to="/products/smartshield" />} />

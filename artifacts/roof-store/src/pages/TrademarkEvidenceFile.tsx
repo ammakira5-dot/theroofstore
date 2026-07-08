@@ -366,9 +366,32 @@ export default function TrademarkEvidenceFile() {
             </p>
           </section>
 
+          {/* Exhibit I — Circa-1999 TV Commercial */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Exhibit I — Circa-1999 Television Commercial: "Don't Re-Roof, Waterproof at 1/2 the Cost"</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              A television commercial produced circa 1999 for the business (then operating as All Surface Restorations &amp; Preservations Inc., per Exhibit H's corporate name history) features the tagline <strong>"Don't Re-Roof, Waterproof at 1/2 the Cost"</strong> and shows live installation of the Roof Shield liquid rubber system on a flat cement tile roof. Per the site owner's direct, first-hand statement, the on-camera narration is his own voice, and the commercial displays a business phone number he has continuously owned for over 20 years — the same continuity of contact information used by the business today. The commercial is publicly archived on YouTube.
+            </p>
+            <div className="border-2 border-gray-300 rounded overflow-hidden mb-3 bg-black aspect-video max-w-2xl">
+              <iframe
+                src="https://www.youtube.com/embed/IUcKj0nKNDc"
+                title="Circa-1999 TV commercial — Don't Re-Roof, Waterproof at 1/2 the Cost — Roof Shield system installation"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <p className="text-xs font-sans text-gray-500 mb-4 italic">
+              Source: youtube.com/watch?v=IUcKj0nKNDc. Produced circa 1999, per site owner's recollection — a precise production/air date has not yet been independently documented and should be corroborated where possible (e.g. station traffic logs, video file metadata, or a dated master tape/cassette if one still exists).
+            </p>
+            <p className="text-xs font-sans text-amber-800 bg-amber-50 border border-amber-300 rounded p-3 leading-relaxed">
+              <strong>Note for counsel:</strong> This exhibit is currently supported by the site owner's own first-hand statement (personal narration, personal phone number shown, personal recollection of production date) rather than independent third-party documentation. It is strong corroborating evidence of the "Don't Re-Roof, Waterproof" tagline's decades-long, continuous association with this business — directly relevant to any dispute over origin or ownership of that tagline/slogan — but counsel may wish to further authenticate the production date (e.g., broadcast records, video metadata, or witness affidavit) before relying on it as dispositive on timing.
+            </p>
+          </section>
+
           {/* No Legitimate Rights Analysis */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               This section directly addresses the second required element of the UDRP/URS test: that the <strong>respondent</strong> (Dmitry Lipinskiy, operating theroof.store) has no rights or legitimate interest of his own in the name "The Roof Store." Under UDRP Policy ¶4(a)(ii) and ¶4(c), once the complainant makes a prima facie showing on this element, the burden shifts to the respondent to come forward with evidence of a legitimate right — none is apparent from the public record.
             </p>
@@ -413,7 +436,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* SEO / AI Manipulation Attack Vectors */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               If the respondent becomes aware of this claim, the following are the realistic technical/digital tactics they could attempt to muddy the record, along with the countermeasure already in place or recommended for each. Any attempt along these lines would itself constitute additional evidence of bad faith and awareness of prior rights.
             </p>
@@ -427,7 +450,7 @@ export default function TrademarkEvidenceFile() {
               </thead>
               <tbody>
                 {[
-                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section XIII below."],
+                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section XIV below."],
                   ["Negative SEO: flood theroofstore.net with spammy/toxic backlinks to trigger a Google penalty", "Google's algorithm largely discounts this against established, trusted domains; a sudden unnatural link spike is itself detectable and reportable.", "Monitor Search Console \"Links\" report monthly; use Google's Disavow Tool if a spike appears; Ahrefs/SEMrush backlink alerts."],
                   ["Schema markup spam — inject false structured data (fake founding dates, fake reviews, fake awards) to compete for Google's Knowledge Panel / AI Overview citation", "Structured data claims are checkable against public records (Sunbiz, BBB, WHOIS); false schema is a reportable policy violation to Google.", "Keep our own Organization/LocalBusiness schema accurate, dated, and cross-linked (sameAs) to BBB, GMB, and Sunbiz so Google's entity graph favors the verifiable source."],
                   ["Content/AI farming — publish large volumes of AI-generated articles repeating \"The Roof Store\" + Florida keywords to dominate AI Overviews and LLM-cited answers", "Volume without authority or citations rarely outranks a domain with 24 years of consistent history and real citations once Google/AI systems weigh source trust.", "Continue building small amounts of high-quality, factual, citable content (which we're already doing) rather than competing on volume."],
@@ -446,7 +469,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Monitoring & Defense Log */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Monitoring &amp; Defense Log</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIV. Monitoring &amp; Defense Log</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               Running log of monitoring activity and any new incidents observed. Add a dated row every time something new is checked or discovered.
             </p>
@@ -460,10 +483,11 @@ export default function TrademarkEvidenceFile() {
               </thead>
               <tbody>
                 {[
-                  ["Jul 8, 2026", "Initial evidence file compiled", "Baseline documentation established — see Exhibits A–H above."],
+                  ["Jul 8, 2026", "Initial evidence file compiled", "Baseline documentation established — see Exhibits A–I above."],
                   ["Jul 8, 2026", "Wayback Machine independent archive pull", "Confirmed continuous archive.org captures of theroofstore.net from Jan 2002 onward — see Exhibit F."],
                   ["Jul 8, 2026", "Printed marketing brochure located and added", "Storm Shield Paint Systems Inc. brochure referencing theroofstore.net and 1994 founding located and added as Exhibit G."],
                   ["Jul 8, 2026", "Sunbiz corporate records pulled", "Official Florida Sunbiz filings confirming common ownership (Anthony R. Meurer) across Anthony's Enterprises Inc., Storm Shield Systems Inc., All Surface Restorations & Preservations Inc., and Storm Shield Paint Systems Inc. located and added as Exhibit H."],
+                  ["Jul 8, 2026", "Circa-1999 TV commercial located and added", "Original television commercial (\"Don't Re-Roof, Waterproof at 1/2 the Cost\") showing Roof Shield system installation, narrated by site owner, located on YouTube and added as Exhibit I."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>
@@ -485,7 +509,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Legal Framework */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIV. Applicable Legal Frameworks</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XV. Applicable Legal Frameworks</h3>
             <div className="grid grid-cols-2 gap-4 text-sm font-sans">
               {[
                 {
@@ -515,7 +539,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Recommended Next Steps */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XV. Recommended Next Steps</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XVI. Recommended Next Steps</h3>
             <ol className="list-decimal list-inside space-y-3 text-sm font-sans leading-relaxed">
               <li><strong>Attorney review of this file</strong> — Florida IP counsel to assess strength of common law mark, UDRP eligibility, and ACPA standing before any public action.</li>
               <li><strong>Formal WHOIS/registrant unmasking</strong> — Confirm Dmitry Lipinskiy as registrant of record via UDRP discovery or pre-suit demand to GoDaddy.</li>
@@ -528,7 +552,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Reservation */}
           <section className="mb-12">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XVI. Reservation of Rights</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XVII. Reservation of Rights</h3>
             <p className="text-sm font-sans leading-relaxed text-gray-700">
               The Roof Store / Storm Shield Paint Systems Inc. expressly reserves all rights under the Lanham Act, ACPA, Florida common law, and ICANN UDRP with respect to the domain theroof.store and any other domain names or social media handles using "The Roof Store" brand. This document does not constitute a waiver of any right or remedy. All evidence herein was captured from publicly accessible web pages and represents the live state of the respondent's commercial operations as of the documentation date.
             </p>

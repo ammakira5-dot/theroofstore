@@ -4,7 +4,32 @@ import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { Play, ShieldCheck, FileCheck } from "lucide-react";
 
-const videos = [
+interface VideoEntry {
+  id: string;
+  title: string;
+  tag: string;
+  icon: typeof Play;
+  testimonialImage: string | null;
+  customer: string | null;
+  location: string | null;
+  quote: string | null;
+  desc: string;
+  uploadDate?: string;
+}
+
+const videos: VideoEntry[] = [
+  {
+    id: "IUcKj0nKNDc",
+    title: "Original 1999 TV Commercial — \"Don't Re-Roof, Waterproof at 1/2 the Cost\"",
+    tag: "Company History",
+    icon: ShieldCheck,
+    testimonialImage: null,
+    customer: null,
+    location: null,
+    quote: null,
+    desc: "A rare look back at our roots: this television commercial aired circa 1999, narrated by our founder, showing the Roof Shield system being installed live on a flat cement tile roof. The same message we brought to Florida homeowners over 25 years ago — \"Don't Re-Roof, Waterproof at 1/2 the Cost\" — is still exactly what we do today.",
+    uploadDate: "1999-06-01",
+  },
   {
     id: "dYKcWoDVPns",
     title: "Don Godshall — Hurricane Wilma Survivor",
@@ -75,7 +100,7 @@ export default function Videos() {
           description: v.tag,
           thumbnailUrl: `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
           embedUrl: `https://www.youtube.com/embed/${v.id}`,
-          uploadDate: "2024-01-01",
+          uploadDate: v.uploadDate ?? "2024-01-01",
           publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
         },
       })),

@@ -33,6 +33,7 @@ const schema = [
 
 const milestones = [
   { year: "1994", event: "The Roof Store founded in Davie, Florida, as an asset of Anthony's Enterprises Inc. and Storm Shield Paint Systems Inc. First liquid rubber roof coating system introduced to the South Florida market. Storm Shield Paint Systems Inc. exhibits at the Fort Lauderdale Home Show that same year." },
+  { year: "1999", event: "A television commercial airs featuring the tagline \"Don't Re-Roof, Waterproof at 1/2 the Cost,\" showing live installation of the Roof Shield system on a flat cement tile roof — narrated personally by our founder." },
   { year: "Early-to-mid 2000s", event: "Printed marketing materials in commercial distribution reference www.theroofstore.net alongside the Storm Shield Paint Systems Inc. name, evidencing established brand and domain identity around the time of formal domain registration." },
   { year: "2002", event: "theroofstore.net domain registered July 29, 2002. Continuous, unbroken commercial use begins." },
   { year: "2010s", event: "RoofProtect Products established as the manufacturing entity. FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) systems developed and commercialized." },
@@ -151,6 +152,27 @@ export default function OriginalRoofStore() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Original 1999 TV Commercial */}
+      <section className="py-20 bg-background">
+        <div className="container px-4 max-w-3xl mx-auto text-center">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">Our Original 1999 TV Commercial</h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              "Don't Re-Roof, Waterproof at 1/2 the Cost" — the same promise we've made to Florida homeowners for over 25 years, captured live on a real roof installation.
+            </p>
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-lg bg-black aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/IUcKj0nKNDc"
+                title="Original 1999 TV commercial — Don't Re-Roof, Waterproof at 1/2 the Cost"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 

@@ -163,7 +163,7 @@ export default function OriginalRoofStore() {
             </div>
             <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-8 space-y-5 text-muted-foreground">
               <p className="text-lg leading-relaxed">
-                The Roof Store is aware of at least two business entities that have adopted names or domain registrations confusingly similar to <strong className="text-foreground">"The Roof Store"</strong> and that actively market roofing products or services into the State of Florida — the same primary geographic market in which The Roof Store has operated continuously since 1994.
+                The Roof Store is aware of at least two business entities that have adopted names or domain registrations confusingly similar to <strong className="text-foreground">"The Roof Store"</strong> and that actively market roofing products or services into the State of Florida — the same primary geographic market in which The Roof Store has operated continuously since our domain registration on <strong className="text-foreground">July 29, 2002</strong>.
               </p>
               <p className="text-lg leading-relaxed">
                 Both registrations were made after <strong className="text-foreground">theroofstore.net</strong> had already established over 20 years of unbroken commercial use and digital footprint. Any standard domain availability check, WHOIS query, or registrar search system conducted at or before the time of registration would have revealed the existence of theroofstore.net and its long-established commercial use.

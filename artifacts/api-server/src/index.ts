@@ -1,5 +1,6 @@
 import app from "./app";
 import { logger } from "./lib/logger";
+import { runAutomatedCheck } from "./routes/trademark-monitoring";
 
 const rawPort = process.env["PORT"];
 
@@ -23,3 +24,17 @@ app.listen(port, (err) => {
 
   logger.info({ port }, "Server listening");
 });
+
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+
+setTimeout(() => {
+  runAutomatedCheck().catch((err) => {
+    logger.error({ err }, "scheduled trademark monitoring check failed to run");
+  });
+}, 60_000);
+
+setInterval(() => {
+  runAutomatedCheck().catch((err) => {
+    logger.error({ err }, "scheduled trademark monitoring check failed to run");
+  });
+}, ONE_DAY_MS);

@@ -66,12 +66,7 @@ router.post("/trademark-monitoring/entries", async (req, res) => {
   res.json({ ok: true, entry: row });
 });
 
-router.post("/trademark-monitoring/check-now", async (req, res) => {
-  if (!checkAuth(req)) {
-    res.status(401).json({ ok: false, error: "Unauthorized" });
-    return;
-  }
-
+export async function runAutomatedCheck(recordedBy = "automated-check") {
   try {
     const response = await fetch(CHECK_TARGET_URL, {
       headers: { "User-Agent": "Mozilla/5.0 (compatible; TrademarkMonitor/1.0)" },
@@ -108,13 +103,12 @@ router.post("/trademark-monitoring/check-now", async (req, res) => {
         sourceUrl: CHECK_TARGET_URL,
         contentSnapshot: snapshot,
         contentHash: hash,
-        recordedBy: "automated-check",
+        recordedBy,
       })
       .returning();
 
-    res.json({ ok: true, entry: row, changed });
+    return { ok: true as const, entry: row, changed };
   } catch (err) {
-    req.log.error({ err }, "automated trademark monitoring check failed");
     const [row] = await db
       .insert(trademarkMonitoringLogTable)
       .values({
@@ -122,11 +116,25 @@ router.post("/trademark-monitoring/check-now", async (req, res) => {
         summary: "Automated check FAILED to reach target site.",
         details: err instanceof Error ? err.message : "Unknown error",
         sourceUrl: CHECK_TARGET_URL,
-        recordedBy: "automated-check",
+        recordedBy,
       })
       .returning();
-    res.json({ ok: true, entry: row, changed: null, warning: "Check failed — see details" });
+    return { ok: true as const, entry: row, changed: null, warning: "Check failed — see details", err };
   }
+}
+
+router.post("/trademark-monitoring/check-now", async (req, res) => {
+  if (!checkAuth(req)) {
+    res.status(401).json({ ok: false, error: "Unauthorized" });
+    return;
+  }
+
+  const result = await runAutomatedCheck("manual-trigger");
+  if (result.err) {
+    req.log.error({ err: result.err }, "automated trademark monitoring check failed");
+  }
+  const { err, ...response } = result;
+  res.json(response);
 });
 
 export default router;

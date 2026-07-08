@@ -89,7 +89,9 @@ export async function runAutomatedCheck(recordedBy = "automated-check") {
       .from(trademarkMonitoringLogTable)
       .orderBy(desc(trademarkMonitoringLogTable.createdAt))
       .limit(50);
-    const lastAuto = previousAutoEntries.find((e) => e.entryType === "auto_check");
+    const lastAuto = previousAutoEntries.find(
+      (e) => e.entryType === "auto_check" && e.contentHash !== null,
+    );
 
     const changed = !lastAuto ? null : lastAuto.contentHash !== hash;
 

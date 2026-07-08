@@ -495,7 +495,7 @@ app.use(
 // ── SPA fallback with per-page meta injection ─────────────────────────────
 // For every HTML request (page navigation), inject the correct title,
 // description, and canonical so Googlebot sees unique tags per page.
-app.get("*", (req, res) => {
+app.use((req, res) => {
   const meta = resolvePageMeta(req.path);
   const canonicalUrl = `${BASE}${meta.canonical}`;
   const escaped = {

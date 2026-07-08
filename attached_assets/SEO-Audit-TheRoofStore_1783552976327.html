@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit Report — The Roof Store (theroofstore.net)</title>
+<style>
+  :root {
+    --blue:#1e3a8a;--blue-light:#3b82f6;--green:#16a34a;--green-light:#dcfce7;
+    --amber:#d97706;--amber-light:#fef3c7;--red:#dc2626;--red-light:#fee2e2;
+    --gray:#f8fafc;--border:#e2e8f0;--text:#1e293b;--muted:#64748b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--text);background:#fff;line-height:1.6;}
+  .report-wrap{max-width:960px;margin:0 auto;padding:40px 24px;}
+  /* Cover */
+  .cover{background:linear-gradient(135deg,var(--blue) 0%,#1d4ed8 100%);color:#fff;border-radius:12px;padding:48px 40px;margin-bottom:40px;}
+  .cover h1{font-size:2rem;font-weight:800;margin-bottom:8px;}
+  .cover .sub{font-size:1.05rem;opacity:.85;margin-bottom:24px;}
+  .cover-meta{display:flex;gap:32px;flex-wrap:wrap;}
+  .cover-meta div{font-size:.875rem;opacity:.9;}
+  .cover-meta span{font-weight:700;display:block;font-size:1rem;}
+  /* Score bar */
+  .score-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:40px;}
+  .score-card{border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;}
+  .score-card .val{font-size:2rem;font-weight:800;line-height:1;}
+  .score-card .label{font-size:.8rem;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;}
+  .score-green .val{color:var(--green);}
+  .score-amber .val{color:var(--amber);}
+  .score-red .val{color:var(--red);}
+  /* Sections */
+  .section{margin-bottom:48px;}
+  .section-header{border-left:4px solid var(--blue);padding-left:14px;margin-bottom:20px;}
+  .section-header h2{font-size:1.3rem;font-weight:700;color:var(--blue);}
+  .section-header p{color:var(--muted);font-size:.9rem;margin-top:4px;}
+  /* Cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:24px;}
+  .card{border:1px solid var(--border);border-radius:10px;padding:20px;}
+  .card h3{font-size:.95rem;font-weight:700;margin-bottom:8px;}
+  .card p, .card li{font-size:.875rem;color:var(--text);}
+  .card ul{padding-left:16px;}
+  .card ul li{margin-bottom:4px;}
+  .card-good{border-left:4px solid var(--green);background:var(--green-light);}
+  .card-warn{border-left:4px solid var(--amber);background:var(--amber-light);}
+  .card-bad{border-left:4px solid var(--red);background:var(--red-light);}
+  /* Tables */
+  table{width:100%;border-collapse:collapse;font-size:.875rem;margin-bottom:20px;}
+  th{background:var(--blue);color:#fff;padding:10px 12px;text-align:left;font-weight:600;}
+  td{padding:10px 12px;border-bottom:1px solid var(--border);}
+  tr:nth-child(even) td{background:var(--gray);}
+  /* Badges */
+  .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:600;}
+  .badge-green{background:var(--green-light);color:var(--green);}
+  .badge-amber{background:var(--amber-light);color:var(--amber);}
+  .badge-red{background:var(--red-light);color:var(--red);}
+  /* Finding rows */
+  .finding{display:flex;gap:12px;padding:14px;border-radius:8px;margin-bottom:12px;border:1px solid var(--border);}
+  .finding-icon{font-size:1.2rem;flex-shrink:0;line-height:1.5;}
+  .finding h4{font-size:.9rem;font-weight:700;margin-bottom:4px;}
+  .finding p{font-size:.83rem;color:var(--muted);}
+  .find-warn{background:var(--amber-light);border-color:#fcd34d;}
+  .find-bad{background:var(--red-light);border-color:#fca5a5;}
+  .find-good{background:var(--green-light);border-color:#86efac;}
+  /* Divider */
+  .divider{border:none;border-top:1px solid var(--border);margin:32px 0;}
+  /* Footer */
+  .report-footer{text-align:center;color:var(--muted);font-size:.8rem;padding-top:24px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+<div class="report-wrap">
+
+<!-- COVER -->
+<div class="cover">
+  <h1>SEO Audit Report</h1>
+  <div class="sub">theroofstore.net — Strategic eCommerce SEO Evaluation</div>
+  <div class="cover-meta">
+    <div><span>Site</span>https://www.theroofstore.net</div>
+    <div><span>Industry</span>Roofing Contractor / Florida</div>
+    <div><span>Report Date</span>July 9, 2026</div>
+    <div><span>Audit Scope</span>Homepage, Products, Blog, Sitemap, Technical</div>
+  </div>
+</div>
+
+<!-- OVERALL SCORES -->
+<div class="score-bar">
+  <div class="score-card score-amber"><div class="val">58/100</div><div class="label">Overall SEO Score</div></div>
+  <div class="score-card score-amber"><div class="val">C+</div><div class="label">Technical Health</div></div>
+  <div class="score-card score-amber"><div class="val">Medium</div><div class="label">Keyword Coverage</div></div>
+  <div class="score-card score-green"><div class="val">Strong</div><div class="label">Content Quality</div></div>
+  <div class="score-card score-red"><div class="val">Weak</div><div class="label">Off-Page / Authority</div></div>
+  <div class="score-card score-amber"><div class="val">Partial</div><div class="label">GEO / AI Visibility</div></div>
+</div>
+
+<!-- SECTION 1: EXECUTIVE SUMMARY -->
+<div class="section">
+  <div class="section-header">
+    <h2>1. Executive Summary — Business &amp; ROI Perspective</h2>
+    <p>Top-level assessment of traffic, conversion, and organic business value.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card card-good">
+      <h3>✅ What's Working</h3>
+      <ul>
+        <li>Crawlable, well-structured site with clean HTML semantics</li>
+        <li>Rich schema markup (RoofingContractor, LocalBusiness, AggregateRating, BreadcrumbList, ItemList)</li>
+        <li>Strong unique selling propositions (TAS-106, 30-year track record, manufacturer-direct)</li>
+        <li>Active blog targeting high-intent local queries (Florida insurance, Citizens coverage)</li>
+        <li>Sitemap with 100+ URLs properly registered</li>
+        <li>Dedicated service-area pages for 80+ Florida cities — excellent local SEO footprint</li>
+      </ul>
+    </div>
+    <div class="card card-warn">
+      <h3>⚠️ Key Risks</h3>
+      <ul>
+        <li>Duplicate &lt;title&gt; and &lt;meta description&gt; injected twice on every page (technical rendering issue)</li>
+        <li>Duplicate og:title, og:description, og:url tags — multiple sets on every page</li>
+        <li>Homepage H1 is brand/value-focused, not keyword-targeted</li>
+        <li>FAQ page renders only question headings — zero answer text indexed</li>
+        <li>Blog has only 4 posts (all dated September–August 2024) — stale content signal</li>
+        <li>Google index footprint very thin (site: query returns only 5 URLs)</li>
+        <li>Off-page authority appears low — no visible earned editorial backlinks</li>
+        <li>Review count in schema: only 19 reviews (aggregateRating)</li>
+      </ul>
+    </div>
+  </div>
+
+  <p style="font-size:.875rem;color:var(--muted);">
+    <strong>Revenue Impact:</strong> The site's content quality and UVP are above average for local roofing contractors. However, the thin Google index, duplicate metadata, and stale blog limit organic impressions and CTR. The largest near-term opportunity is fixing duplicate tags (immediate crawl benefit), expanding blog content to capture long-tail insurance and hurricane queries, and actively building citations/reviews to boost Local Pack rankings for high-converting "roof coating [city]" terms.
+  </p>
+</div>
+
+<hr class="divider">
+
+<!-- SECTION 2: MARKET & BUYER CONTEXT -->
+<div class="section">
+  <div class="section-header">
+    <h2>2. Market &amp; Buyer Context — Strategic Insights</h2>
+    <p>Search intent mapping, buyer segmentation, and channel mix for the South Florida roofing market.</p>
+  </div>
+
+  <h3 style="font-size:1rem;margin-bottom:12px;font-weight:700;">Target Keyword Intent Lifecycle</h3>
+  <table>
+    <tr><th>Funnel Stage</th><th>Example Queries</th><th>Site Coverage</th><th>Gap</th></tr>
+    <tr>
+      <td>Informational (TOFU)</td>
+      <td>"how long does roof coating last Florida", "rubber roof vs replacement"</td>
+      <td><span class="badge badge-amber">Partial</span> — blog covers insurance angle only</td>
+      <td>No guides on coating types, DIY vs pro, lifespan comparisons</td>
+    </tr>
+    <tr>
+      <td>Category/Comparison (MOFU)</td>
+      <td>"roof coating alternative to replacement Florida", "best roof coating South Florida"</td>
+      <td><span class="badge badge-green">Good</span> — /roof-replacement-alternative-florida page targets this</td>
+      <td>No comparison landing page for competing coatings (elastomeric vs silicone)</td>
+    </tr>
+    <tr>
+      <td>Transactional (BOFU)</td>
+      <td>"roof coating contractor Broward", "roof coating company Davie FL", "TAS-106 roof coating"</td>
+      <td><span class="badge badge-amber">Partial</span> — service-area pages exist but thin</td>
+      <td>No city-specific conversion pages with pricing signals</td>
+    </tr>
+    <tr>
+      <td>Local/Near-me</td>
+      <td>"roof coating near me", "roof coating Fort Lauderdale", "liquid rubber roof Boca Raton"</td>
+      <td><span class="badge badge-green">Good</span> — 80+ city-level service area pages in sitemap</td>
+      <td>Need to verify content depth on those city pages (not sampled)</td>
+    </tr>
+  </table>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Primary Buyer Segment</h3>
+      <p>Florida homeowners age 45–70+, tile roofs 15–25 years old, facing Citizens Insurance non-renewal or replacement quotes of $15K–$30K. High urgency, price-sensitive, trust-seeking. They research online before calling.</p>
+    </div>
+    <div class="card">
+      <h3>Seasonal Opportunity</h3>
+      <p>Hurricane preparedness window (May–October) and insurance renewal pressure (Jan–March) represent peak demand windows. The site's TAS-106 / Citizens Insurance content is positioned well for this — but needs fresher content dates and broader seasonal coverage.</p>
+    </div>
+    <div class="card">
+      <h3>Channel Mix Observation</h3>
+      <p>Site appears to rely primarily on direct/referral and possible paid. Organic search appears underdeveloped relative to the content quality — the duplicate metadata issue is likely suppressing CTR. Google Business Profile (Yelp listing found under "Storm Shield") may be driving most local leads.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr class="divider">
+
+<!-- SECTION 3: ECOMMERCE ASSET DIAGNOSIS -->
+<div class="section">
+  <div class="section-header">
+    <h2>3. eCommerce Asset Diagnosis — Technical &amp; Content Audit</h2>
+    <p>Keyword matrix, technical health, on-page quality, schema, off-page authority, and GEO visibility.</p>
+  </div>
+
+  <!-- 3A: Technical Health -->
+  <h3 style="font-size:1rem;margin-bottom:12px;font-weight:700;">3A. Technical Health</h3>
+
+  <div class="finding find-bad">
+    <div class="finding-icon">🔴</div>
+    <div>
+      <h4>Critical: Duplicate &lt;title&gt; and &lt;meta description&gt; tags (all pages)</h4>
+      <p>Every crawled page (homepage, /roof-systems, /products, /blog) injects two separate &lt;title&gt; tags and two &lt;meta name="description"&gt; tags. Google will arbitrarily pick one — or use neither, substituting its own snippet. This actively suppresses CTR by making meta previews unpredictable. Root cause: a global site-wide tag in the template &lt;head&gt; plus a page-specific tag added via a plugin/component. Fix: audit the theme's &lt;head&gt; template and ensure only one canonical meta block fires per page.</p>
+    </div>
+  </div>
+
+  <div class="finding find-bad">
+    <div class="finding-icon">🔴</div>
+    <div>
+      <h4>Critical: Duplicate og:title, og:description, og:url Open Graph tags (all pages)</h4>
+      <p>Two competing sets of OG tags are rendered on every page (one global set + one page-specific set). When this page is shared on social media or parsed by AI crawlers, the first or random set gets used — often the less optimized global default. Fix: same root cause as duplicate &lt;title&gt; — consolidate to one OG block per page.</p>
+    </div>
+  </div>
+
+  <div class="finding find-bad">
+    <div class="finding-icon">🔴</div>
+    <div>
+      <h4>Critical: Google Index Coverage Is Extremely Thin</h4>
+      <p>A site: search returns only 5 indexed URLs for theroofstore.net despite the sitemap containing 100+ pages. This strongly suggests either a crawl budget issue, the service-area/city pages being seen as thin/duplicate content by Google, or the sitemap only recently being submitted. Immediate action: verify Google Search Console index coverage report, check for manual actions, ensure the 80+ city pages have unique content of at least 300–400 words each.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Warning: FAQ Page Has No Indexable Answer Text</h4>
+      <p>The /faq page renders only question titles — all answers appear to be hidden behind collapsible elements (likely JS accordion). Google may not execute the JS, meaning the FAQ content is invisible to crawlers. This page could be a goldmine for FAQ schema and featured snippets ("Can I coat my roof instead of replacing it?" — exactly what people search). Fix: include answer text in the HTML source, not just on expand.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Warning: robots.txt Blocks Nothing — Verify No Sensitive Pages Are Exposed</h4>
+      <p>robots.txt is wide open: <code>User-agent: * Allow: /</code>. While this is generally fine, the /shop, /privacy, /terms, and any admin/internal pages should be verified as non-sensitive. Additionally, there is no separate Disallow for cart, checkout, or duplicate-parameter URLs.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Warning: www vs non-www — Canonical Ambiguity</h4>
+      <p>The sitemap and og:url use both <code>https://www.theroofstore.net</code> and <code>https://theroofstore.net</code> (without www). The blog posts link to theroofstore.net (no www). The canonical tags use the www version. Ensure a 301 redirect from non-www to www (or vice versa) is fully enforced, and that all internal links, canonical tags, og:url, and sitemap entries are consistent.</p>
+    </div>
+  </div>
+
+  <div class="finding find-good">
+    <div class="finding-icon">✅</div>
+    <div>
+      <h4>Positive: robots.txt declares sitemap correctly</h4>
+      <p>Sitemap URL is declared in robots.txt at <code>https://www.theroofstore.net/sitemap.xml</code>. Sitemap is well-structured with proper changefreq and priority values. Updated timestamps are current (July 2026).</p>
+    </div>
+  </div>
+
+  <div class="finding find-good">
+    <div class="finding-icon">✅</div>
+    <div>
+      <h4>Positive: Canonical tags present and correctly self-referential</h4>
+      <p>Every crawled page includes a proper self-referencing canonical URL. No apparent canonical mismatches on the pages sampled.</p>
+    </div>
+  </div>
+
+  <!-- 3B: On-Page & Content -->
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">3B. On-Page &amp; Catalog Quality</h3>
+
+  <table>
+    <tr><th>Page</th><th>Title Tag</th><th>H1</th><th>Meta Description</th><th>Word Count</th><th>Issues</th></tr>
+    <tr>
+      <td>Homepage (/)</td>
+      <td>The Roof Store | Rubber Roof Coating Florida…</td>
+      <td>Don't Re-Roof. Weatherproof at 1/2 the Cost.</td>
+      <td>Florida's original liquid-applied rubber…</td>
+      <td>~934</td>
+      <td><span class="badge badge-red">Duplicate title/meta</span> <span class="badge badge-amber">H1 not keyword-rich</span></td>
+    </tr>
+    <tr>
+      <td>/roof-systems</td>
+      <td>Roof Painting &amp; Roof Coating Systems Florida…</td>
+      <td>Roof Systems</td>
+      <td>Roof painting done right…</td>
+      <td>~1,127</td>
+      <td><span class="badge badge-red">Duplicate title/meta</span> <span class="badge badge-amber">H1 too generic</span></td>
+    </tr>
+    <tr>
+      <td>/products</td>
+      <td>FungalShield, SmartShield &amp; RoofShield…</td>
+      <td>Our Product Line</td>
+      <td>Three proprietary liquid rubber…</td>
+      <td>~1,800+</td>
+      <td><span class="badge badge-amber">H1 generic</span> <span class="badge badge-green">Strong body content</span></td>
+    </tr>
+    <tr>
+      <td>/roof-replacement-alternative-florida</td>
+      <td>Roof Replacement Alternative for Florida…</td>
+      <td>Roof Replacement Alternative for Florida Homeowners</td>
+      <td>Well-structured</td>
+      <td>~2,000+</td>
+      <td><span class="badge badge-green">Best-optimized page</span></td>
+    </tr>
+    <tr>
+      <td>/blog</td>
+      <td>The Roof Store Blog</td>
+      <td>The Roof Store Blog</td>
+      <td>Auto-generated</td>
+      <td>N/A (index)</td>
+      <td><span class="badge badge-amber">4 posts only, all 2024</span></td>
+    </tr>
+    <tr>
+      <td>/faq</td>
+      <td>Frequently Asked Questions</td>
+      <td>Frequently Asked Questions</td>
+      <td>Auto-generated</td>
+      <td>&lt;50 visible words</td>
+      <td><span class="badge badge-red">No indexable answer text</span></td>
+    </tr>
+  </table>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>H1 Tags Are Not Keyword-Optimized</h4>
+      <p>The homepage H1 ("Don't Re-Roof. Weatherproof at 1/2 the Cost.") is compelling copy but contains zero primary search keywords. High-value H1 targets for this page would be "Rubber Roof Coating Florida" or "Roof Coating Contractor South Florida." Similarly, /roof-systems H1 is just "Roof Systems" — a missed opportunity for "Roof Coating Systems Florida." These are the strongest on-page ranking signals Google uses.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Missing Keyword Targets: "Silicone roof coating Florida," "elastomeric vs silicone," "roof painting Broward"</h4>
+      <p>The site ranks well on branded terms (FungalShield, SmartShield, RoofShield) but misses high-volume generic queries. A dedicated landing page for "silicone roof coating Florida" and "elastomeric roof coating vs silicone Florida" would capture comparison-stage buyers who aren't yet brand-aware.</p>
+    </div>
+  </div>
+
+  <!-- 3C: Schema -->
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">3C. Structured Data &amp; Schema Markup</h3>
+  <div class="cards">
+    <div class="card card-good">
+      <h3>✅ Present &amp; Correct</h3>
+      <ul>
+        <li>RoofingContractor schema with full NAP (name, address, phone)</li>
+        <li>LocalBusiness + HomeAndConstructionBusiness schema</li>
+        <li>AggregateRating (5.0/5, 19 reviews)</li>
+        <li>OpeningHoursSpecification</li>
+        <li>GeoCoordinates</li>
+        <li>WebSite schema</li>
+        <li>ItemList (on /roof-systems)</li>
+        <li>BreadcrumbList (on /roof-systems)</li>
+        <li>hasOfferCatalog listing all 3 products</li>
+      </ul>
+    </div>
+    <div class="card card-warn">
+      <h3>⚠️ Missing / Fixable</h3>
+      <ul>
+        <li><strong>FAQPage schema</strong> — /faq page has 19 questions; once answer text is added to HTML, FAQPage schema would unlock rich snippet accordion results in Google SERP</li>
+        <li><strong>Product schema</strong> on individual /products/fungalshield, /smartshield, /roofshield pages — pricing ($190/$285/$325) is present in content but not marked up with Product/Offer schema</li>
+        <li><strong>Review schema</strong> — individual review text visible on Google Maps but not pulled into site pages; embedding 5–10 review markups would strengthen E-E-A-T signals</li>
+        <li><strong>Service schema</strong> on service-area pages</li>
+        <li><strong>VideoObject schema</strong> — /videos page exists in sitemap; adding schema would help YouTube embeds surface in Google video results</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3D: Off-Page -->
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">3D. Off-Page Authority Profile</h3>
+  <div class="finding find-bad">
+    <div class="finding-icon">🔴</div>
+    <div>
+      <h4>Off-Page Authority: Weak</h4>
+      <p>Backlink profile appears thin. Web search returns no editorial mentions, no directory links beyond Yelp (Storm Shield listing), and no press coverage. The domain has operated since 1994 but the current .net domain appears relatively new in its SEO build-out. Priority actions: (1) claim and optimize Google Business Profile; (2) build citations on HomeAdvisor, Angi, Houzz, Thumbtack, and local Broward/Miami-Dade business directories; (3) submit to Florida contractor licensing directories; (4) pursue local news mentions (roofing tips for hurricane season editorial pitches).</p>
+    </div>
+  </div>
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Review Velocity: Only 19 Reviews in Schema</h4>
+      <p>The aggregateRating declares 19 reviews at 5.0 stars. For a 30-year-old company, this is very low and will hurt Local Pack rankings compared to competitors with 100+ reviews. Google's local ranking algorithm heavily weights review count and recency. A systematic post-job review request program (text/email link to GBP) is the single highest-ROI off-page action available.</p>
+    </div>
+  </div>
+
+  <!-- 3E: GEO / AI -->
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">3E. Generative Engine Optimization (GEO) — AI Search Visibility</h3>
+  <div class="cards">
+    <div class="card card-good">
+      <h3>✅ GEO Strengths</h3>
+      <ul>
+        <li>TAS-106 certification claim is unique and verifiable — ideal for AI citations</li>
+        <li>Specific, factual content (cost ranges, sq ft coverage, MPH ratings) makes it LLM-quotable</li>
+        <li>Florida insurance law blog posts are highly specific and citable</li>
+        <li>Structured schema provides machine-readable entity signals</li>
+      </ul>
+    </div>
+    <div class="card card-warn">
+      <h3>⚠️ GEO Gaps</h3>
+      <ul>
+        <li>No author bylines with credentials on blog posts — E-E-A-T weakness for AI systems evaluating expertise</li>
+        <li>No "About" page content showing licensed contractor credentials, certifications, or staff bios sampled in crawl</li>
+        <li>Thin review count limits AI models' confidence in citing this business as a recommended provider</li>
+        <li>No "last updated" metadata visible on key evergreen pages — AI systems prefer freshness signals</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SECTION 4: COMPETITIVE LANDSCAPE -->
+<div class="section">
+  <div class="section-header">
+    <h2>4. Competitive Landscape &amp; SWOT Analysis</h2>
+    <p>Competitor intelligence and strategic positioning assessment.</p>
+  </div>
+
+  <h3 style="font-size:1rem;margin-bottom:12px;font-weight:700;">Competitive Signals</h3>
+  <table>
+    <tr><th>Competitor</th><th>Positioning</th><th>SEO Signal</th><th>Threat Level</th></tr>
+    <tr>
+      <td>ftlauderdaleroofcoating.com</td>
+      <td>Uses "The Original Liquid Applied Rubber Roof Shield System" — same trademark language</td>
+      <td>Appears in search for rubber roof coating queries</td>
+      <td><span class="badge badge-red">High</span></td>
+    </tr>
+    <tr>
+      <td>Salomon Roofing (salomonroofing.com)</td>
+      <td>Full-service Miami roofing with coatings</td>
+      <td>Strong domain authority, broad services</td>
+      <td><span class="badge badge-amber">Medium</span></td>
+    </tr>
+    <tr>
+      <td>Yelp / HomeAdvisor aggregators</td>
+      <td>Rank above individual contractors for "roof coating near me" queries</td>
+      <td>Very high DA; own the local pack results</td>
+      <td><span class="badge badge-red">High</span></td>
+    </tr>
+    <tr>
+      <td>inlandcoatings.com</td>
+      <td>National liquid rubber coating supplier/brand</td>
+      <td>Ranking for "best liquid rubber roof coating" nationally</td>
+      <td><span class="badge badge-amber">Medium (national)</span></td>
+    </tr>
+    <tr>
+      <td>EPDM Coatings (epdmcoatings.com)</td>
+      <td>DIY rubber coating alternative; award mentions</td>
+      <td>Visible in search for rubber/EPDM roof queries</td>
+      <td><span class="badge badge-amber">Medium (DIY segment)</span></td>
+    </tr>
+  </table>
+
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">SWOT Analysis</h3>
+  <div class="cards">
+    <div class="card card-good">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Only TAS-106-rated liquid coating on the market — truly defensible UVP</li>
+        <li>Manufacturer + contractor = cost and credibility advantage</li>
+        <li>30 years of documented real-world hurricane performance</li>
+        <li>Florida insurance certification content is differentiated and high-intent</li>
+        <li>80+ city-level service pages provide broad local SEO footprint</li>
+      </ul>
+    </div>
+    <div class="card card-warn">
+      <h3>Weaknesses</h3>
+      <ul>
+        <li>Thin Google index (only 5 URLs indexed vs. 100+ in sitemap)</li>
+        <li>Low review count (19) limits Local Pack visibility</li>
+        <li>Duplicate metadata suppresses click-through rates</li>
+        <li>Blog stalled at 4 posts; last post August 2024</li>
+        <li>Off-page authority is very limited</li>
+        <li>FAQ answers not indexable by Google</li>
+      </ul>
+    </div>
+    <div class="card card-good">
+      <h3>Opportunities</h3>
+      <ul>
+        <li>FAQPage schema + visible answer text → featured snippet capture</li>
+        <li>Hurricane season blog content (May–Oct annual cycle)</li>
+        <li>Product schema on product pages → Google Shopping-style rich results</li>
+        <li>GBP optimization + review campaign → Local Pack dominance</li>
+        <li>Silicone vs elastomeric vs polyurethane comparison pages — high-intent MOFU</li>
+        <li>Distributorship/contractor B2B SEO — untapped segment</li>
+      </ul>
+    </div>
+    <div class="card card-bad">
+      <h3>Threats</h3>
+      <ul>
+        <li>ftlauderdaleroofcoating.com using same trademark language — possible confusion</li>
+        <li>Yelp/HomeAdvisor dominating local pack above individual contractors</li>
+        <li>Florida roofing market is competitive — established contractors have higher DA</li>
+        <li>Google algorithm updates increasingly favor high-review-count local businesses</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SECTION 5: PLUGIN / PERFORMANCE DEBT -->
+<div class="section">
+  <div class="section-header">
+    <h2>5. Plugin / Performance Debt</h2>
+    <p>Script load, rendering, and CMS configuration issues that affect Core Web Vitals and SEO.</p>
+  </div>
+
+  <div class="finding find-bad">
+    <div class="finding-icon">🔴</div>
+    <div>
+      <h4>Dual Metadata Injection — Root Cause: Template Conflict</h4>
+      <p>The site injects two complete sets of &lt;title&gt;, &lt;meta description&gt;, og:*, and twitter:* tags per page. This is the classic pattern of a CMS theme that adds a global metadata block in the &lt;head&gt; template AND a per-page SEO plugin (or React/Next.js head component) that adds a second set. Identify which system owns meta tag generation and disable the duplicate. This is the highest-priority fix on the site.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>Blog Running on Separate "Just another WordPress site" Instance</h4>
+      <p>The blog's browser title renders as "Just another WordPress site — The Roof Store." This is the WordPress default tagline — it was never customized. This tells Google (and users) that the blog is a low-effort subdirectory. It also means the WordPress blog settings (tagline, site title) have never been configured, which suggests the SEO plugin configuration on the WordPress blog instance may be incomplete.</p>
+    </div>
+  </div>
+
+  <div class="finding find-warn">
+    <div class="finding-icon">🟡</div>
+    <div>
+      <h4>JavaScript-Hidden FAQ Content (Accordion Pattern)</h4>
+      <p>The FAQ's question answers are rendered only when JavaScript expands the accordion. Googlebot may not render this JS. This is both a technical SEO issue (content not indexed) and a schema opportunity (FAQPage schema requires visible Q&amp;A pairs). Fix: render answer text in HTML and use JS only to visually collapse/expand, or SSR the FAQ content.</p>
+    </div>
+  </div>
+
+  <div class="finding find-good">
+    <div class="finding-icon">✅</div>
+    <div>
+      <h4>Semantic HTML Structure is Well-Implemented</h4>
+      <p>All sampled pages include &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, and &lt;footer&gt; semantic tags. This is good for accessibility and crawlability. Heading hierarchy (H1 → H2 → H3) is mostly logical, though H4/H5 usage is absent where it could subdivide longer sections.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- SECTION 6: ACTION PLAN -->
+<div class="section">
+  <div class="section-header">
+    <h2>6. Action Plan &amp; Execution Roadmap</h2>
+    <p>Prioritized fixes using the ICE framework (Impact × Confidence × Ease).</p>
+  </div>
+
+  <table>
+    <tr><th>#</th><th>Action Item</th><th>Category</th><th>Impact</th><th>Confidence</th><th>Ease</th><th>ICE Score</th><th>Timeline</th></tr>
+    <tr>
+      <td>1</td>
+      <td>Fix duplicate &lt;title&gt;, &lt;meta description&gt;, og:* tags sitewide</td>
+      <td>Technical</td>
+      <td>High</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td><span class="badge badge-red">9/10</span></td>
+      <td>Week 1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Fix FAQ page — add visible answer HTML; add FAQPage schema</td>
+      <td>Technical + Schema</td>
+      <td>High</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td><span class="badge badge-red">8.5/10</span></td>
+      <td>Week 1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Optimize H1 tags on homepage, /roof-systems, /products to include primary keywords</td>
+      <td>On-Page</td>
+      <td>High</td>
+      <td>High</td>
+      <td>Easy</td>
+      <td><span class="badge badge-red">8/10</span></td>
+      <td>Week 1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Launch review collection campaign — target 50+ Google reviews in 60 days</td>
+      <td>Off-Page / Local</td>
+      <td>Very High</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td><span class="badge badge-red">8/10</span></td>
+      <td>Week 1–8</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Fix www / non-www canonical consistency across all links, OG tags, and sitemap</td>
+      <td>Technical</td>
+      <td>Medium</td>
+      <td>High</td>
+      <td>Easy</td>
+      <td><span class="badge badge-amber">7.5/10</span></td>
+      <td>Week 1–2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Add Product schema (with price) to /products/fungalshield, /smartshield, /roofshield</td>
+      <td>Schema</td>
+      <td>Medium</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td><span class="badge badge-amber">7/10</span></td>
+      <td>Week 2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Fix WordPress blog tagline ("Just another WordPress site" → brand tagline)</td>
+      <td>On-Page</td>
+      <td>Medium</td>
+      <td>High</td>
+      <td>Easy</td>
+      <td><span class="badge badge-amber">7/10</span></td>
+      <td>Week 1 (30 min)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Publish 2 blog posts/month targeting hurricane season and Citizens Insurance queries</td>
+      <td>Content</td>
+      <td>High</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td><span class="badge badge-amber">7/10</span></td>
+      <td>Ongoing</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Build citations on Angi, HomeAdvisor, Houzz, BBB, Thumbtack, local Broward directories</td>
+      <td>Off-Page</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td><span class="badge badge-amber">6.5/10</span></td>
+      <td>Month 1–2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Create "silicone vs elastomeric roof coating Florida" comparison landing page</td>
+      <td>Content</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td><span class="badge badge-amber">6/10</span></td>
+      <td>Month 2</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Add author bios and credentials to blog posts (E-E-A-T / GEO improvement)</td>
+      <td>Content / E-E-A-T</td>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td>Easy</td>
+      <td><span class="badge badge-amber">6/10</span></td>
+      <td>Week 2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Verify depth of 80+ city service pages; expand thin ones to 300+ words with local context</td>
+      <td>Content / Local</td>
+      <td>High</td>
+      <td>Medium</td>
+      <td>Hard</td>
+      <td><span class="badge badge-green">5.5/10</span></td>
+      <td>Month 2–3</td>
+    </tr>
+  </table>
+
+  <h3 style="font-size:1rem;margin:24px 0 12px;font-weight:700;">Projected Growth Outcomes (if Top 5 Actions Completed)</h3>
+  <div class="cards">
+    <div class="card">
+      <h3>🎯 0–30 Days</h3>
+      <p>Fixing duplicate metadata and H1 tags should improve CTR on existing indexed pages within 2–4 weeks of Googlebot re-crawling. FAQ schema fix could trigger featured snippet appearances for "can I coat my roof instead of replacing it Florida" type queries.</p>
+    </div>
+    <div class="card">
+      <h3>📈 30–90 Days</h3>
+      <p>Review campaign + citation building will improve Local Pack rankings for "roof coating [city]" queries — typically the highest-converting query type for service businesses. Product schema may unlock rich snippet price displays in SERPs.</p>
+    </div>
+    <div class="card">
+      <h3>🚀 90–180 Days</h3>
+      <p>Consistent blog publishing + deeper city-page content should drive a 30–60% increase in organic impressions. Combined with technical fixes, a doubling of organic consultation requests over 6 months is a realistic target given the current low baseline.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="report-footer">
+  <p>SEO Audit Report — The Roof Store (theroofstore.net) — Generated July 9, 2026 by StoreClaw</p>
+  <p style="margin-top:6px;">This report is based on public crawl data, search visibility signals, and technical analysis. It does not include Google Search Console or Analytics data; connecting those platforms would enable more precise traffic and query analysis.</p>
+</div>
+
+</div><!-- /report-wrap -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a182c176adc434f9',t:'MTc4MzU1MjE1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

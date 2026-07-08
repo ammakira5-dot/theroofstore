@@ -8,6 +8,20 @@ export default function TrademarkEvidenceFile() {
       <SEO
         title="Brand Infringement Evidence File | The Roof Store"
         description="Internal documentation of brand infringement evidence — The Roof Store (theroofstore.net) v. theroof.store."
+        canonical="/trademark-evidence-file"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: "Brand Infringement Evidence File — The Roof Store v. theroof.store",
+          description: "Documentation of brand infringement evidence — The Roof Store (theroofstore.net) v. theroof.store (Dmitry Lipinskiy).",
+          datePublished: "2026-07-08",
+          dateModified: "2026-07-08",
+          publisher: {
+            "@type": "Organization",
+            name: "The Roof Store",
+            url: "https://www.theroofstore.net",
+          },
+        }}
       />
       <div className="min-h-screen bg-white text-gray-900 font-serif print:text-sm">
 

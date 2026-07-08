@@ -1,11 +1,261 @@
 import express from "express";
 import sirv from "sirv";
+import fs from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT) || 3000;
 const staticDir = join(__dirname, "dist/public");
+
+// ── Per-page meta map ─────────────────────────────────────────────────────
+// Injected server-side so Googlebot sees unique title/description/canonical
+// on every page (not just the homepage default baked into index.html).
+
+const BASE = "https://www.theroofstore.net";
+
+const PAGE_META = {
+  "/": {
+    title: "The Roof Store | Roof Coating Installation & Roof Painting Contractor | South Florida Since 1994",
+    description: "The Roof Store — South Florida's roof coating systems provider and installation contractor since 1994. FungalShield, SmartShield & RoofShield systems built from products manufactured in-house by RoofProtect. Roof painting, waterproofing, hurricane-rated tile roof coating & flat roof restoration. Davie, FL · 954-210-9614.",
+  },
+  "/about": {
+    title: "About The Roof Store — Florida Roof Painting Contractor Since 1994",
+    description: "The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid rubber roof coating system. FungalShield, SmartShield & RoofShield built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614.",
+  },
+  "/roof-systems": {
+    title: "Roof Painting & Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store",
+    description: "Roof painting done right — FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614.",
+  },
+  "/roof-services": {
+    title: "Roof Restoration & Roof Painting Services — Tile, Flat, Shingle & Metal Roofs | South Florida",
+    description: "Licensed roof restoration and roof painting contractor for residential and commercial properties in South Florida: pressure cleaning, tile reglazing & restoration, flat deck rubber coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. FungalShield, SmartShield & RoofShield systems.",
+  },
+  "/service-areas": {
+    title: "Roof Painting & Roof Coating Service Areas — South Florida | The Roof Store",
+    description: "The Roof Store provides roof painting and roof coating installation for tile, flat, shingle, and metal roofs in Broward, Miami-Dade, and Palm Beach counties. Rubber roof coating, tile restoration, and weatherproofing in Fort Lauderdale, Miami, West Palm Beach, and 30+ South Florida cities.",
+  },
+  "/products": {
+    title: "Roof Coating Products — FungalShield, SmartShield & RoofShield | The Roof Store Florida",
+    description: "Shop The Roof Store's proprietary roof coating systems: FungalShield (RP1) anti-fungal clear sealer, SmartShield (RP2) reflective waterproof tile coating, and RoofShield (RP3) TAS-106 hurricane-rated monolithic system. Manufactured in-house by RoofProtect. Davie, FL — 954-210-9614.",
+  },
+  "/products/fungalshield": {
+    title: "FungalShield (RP1) — Clear Roof Tile Sealer & Anti-Fungal Roof Coating | The Roof Store Florida",
+    description: "FungalShield (RP1) is a clear roof tile sealer that eliminates black streaking, algae, mold, and fungal growth on Florida tile, metal, and flat roofs. A stronger alternative to standard roof painting for tile and metal roofs. Mildew resistant. 5-Year Product Warranty. $190 — Free quote 954-210-9614.",
+  },
+  "/products/smartshield": {
+    title: "SmartShield (RP2) — Reflective Cool Roof Coating for Tile | The Roof Store Florida",
+    description: "SmartShield is a reflective cool roof coating that waterproofs tile roofs in 3,000+ colors. 5× the thickness of standard roof paint, true waterproofing, BASF Cool Pigment for energy savings. Elastomeric or polyurethane base. FP&L confirmed energy savings. Free quote — 954-210-9614.",
+  },
+  "/products/roofshield": {
+    title: "RoofShield (RP3) — The Original Liquid Applied Rubber Roof Shield System | The Roof Store Florida",
+    description: "RoofShield — The Original Liquid Applied Rubber Roof Shield System — fills every gap between tiles with multiple product layers making your roof monolithic. TAS-106 Dade County rated, hurricane-proof, lifetime warranty. Silicone base for all roof types including flat roofs. 954-210-9614.",
+  },
+  "/commercial-roofs": {
+    title: "Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida",
+    description: "Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. TAS-106 certified. Call 954-210-9614.",
+  },
+  "/reviews": {
+    title: "5-Star Customer Reviews & Testimonials — The Roof Store Florida",
+    description: "Real 5-star testimonials from South Florida homeowners — including Hurricane Wilma survival stories. A+ BBB Rated since 1994, one of South Florida's longest-standing roof coating contractors. RoofShield, SmartShield, FungalShield.",
+  },
+  "/projects": {
+    title: "Roof Coating Projects — Before & After South Florida | The Roof Store",
+    description: "See real before & after results from The Roof Store's rubber roof coating and tile restoration projects across South Florida. Real savings vs. replacement.",
+  },
+  "/blog": {
+    title: "Blog — Roof Coating, Florida Insurance Laws & Storm Protection | The Roof Store",
+    description: "Expert articles on Florida roof coating, homeowners insurance laws, Citizens Insurance, hurricane protection, and Additional Roof Life Certification. The Roof Store — Davie, FL — 954-210-9614.",
+  },
+  "/faq": {
+    title: "FAQ — Roof Painting & Roof Coating Questions Answered | The Roof Store",
+    description: "Answers to common questions about roof painting and roof coating systems: tile restoration, hurricane performance, warranties, and how coating compares to full roof replacement. The Roof Store — Davie, FL — 954-210-9614.",
+  },
+  "/questions": {
+    title: "Questions to Ask Your Roofing Contractor | The Roof Store",
+    description: "Important questions every Florida homeowner should ask before hiring a roof coating contractor. Protect yourself from unlicensed work and poor-quality products. The Roof Store — 954-210-9614.",
+  },
+  "/videos": {
+    title: "Videos — Roof Shield System & Uplift Test | The Roof Store Florida",
+    description: "Watch The Roof Store's customer testimonials and the TAS-106 Dade County Uplift Test — the only pull test rated roof coating system in the world. See real hurricane performance documented on video.",
+  },
+  "/factory": {
+    title: "Our Manufacturing Partner — RoofProtect Products, Davie, Florida",
+    description: "RoofProtect Products manufactures the liquid rubber coating materials used in FungalShield, SmartShield, and RoofShield sold by The Roof Store. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented.",
+  },
+  "/distributorships": {
+    title: "Roof Coating Distributorship Opportunities — The Roof Store Florida",
+    description: "Become an authorized distributor of FungalShield, SmartShield & RoofShield. Exclusive county territories, full training, complete advertising support, and proven sales system. Call 954-210-9614.",
+  },
+  "/shop": {
+    title: "Buy Roof Coating Products Online — FungalShield, SmartShield, RoofShield | The Roof Store",
+    description: "Purchase RP1 FungalShield ($190), RP2 SmartShield ($285), and RP3 RoofShield ($325) online. Manufactured in Davie, FL. Available in 5–50 gallon containers. Free consultation 954-210-9614.",
+  },
+  "/contact": {
+    title: "Contact The Roof Store — Davie, FL | 954-210-9614",
+    description: "Contact The Roof Store for a free roof inspection or quote. Licensed & insured roof coating contractor serving South Florida since 1994. Call 954-210-9614 or visit us in Davie, FL.",
+  },
+  "/pricing": {
+    title: "Roof Coating Pricing — FungalShield, SmartShield & RoofShield | The Roof Store",
+    description: "Transparent pricing for FungalShield, SmartShield, and RoofShield roof coating systems. DIY product purchase or full professional installation. Significantly less than a full roof replacement. Call 954-210-9614.",
+  },
+  "/roof-systems": {
+    title: "Roof Painting & Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store",
+    description: "FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs. Built from products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614.",
+  },
+  "/silicone-vs-elastomeric-roof-coating": {
+    title: "Silicone vs Elastomeric Roof Coating — What's the Difference? | The Roof Store",
+    description: "Silicone vs elastomeric roof coating compared: ponding water resistance, UV performance, lifespan, and cost. The Roof Store manufactures both. Davie, FL — 954-210-9614.",
+  },
+  "/roof-pressure-cleaning": {
+    title: "Roof Pressure Cleaning & Soft Washing — South Florida | The Roof Store",
+    description: "Professional roof pressure cleaning and soft washing for tile, flat, and metal roofs in South Florida. Required before any coating application. Licensed & insured. Free quote — 954-210-9614.",
+  },
+  "/partner-network": {
+    title: "Authorized Installer & Partner Network | The Roof Store",
+    description: "Find authorized installers and partners of The Roof Store's FungalShield, SmartShield & RoofShield coating systems across South Florida. Licensed & insured crews only. 954-210-9614.",
+  },
+  "/roof-life-certification": {
+    title: "Additional Roof Life Certification — Florida Insurance Compliance | The Roof Store",
+    description: "Get an Additional Roof Life Certification for your Florida homeowners insurance. The Roof Store's coating systems can extend your roof's certified life and help you keep or reduce your insurance coverage. 954-210-9614.",
+  },
+  "/service-areas/broward-county": {
+    title: "Roof Painting & Coating Contractor in Broward County, FL — The Roof Store",
+    description: "Professional roof coating, tile restoration, and waterproofing across all 31 municipalities in Broward County, FL. Licensed & insured, A+ BBB rated since 1994. FungalShield, SmartShield & RoofShield. Free inspection: 954-210-9614.",
+  },
+  "/service-areas/miami-dade-county": {
+    title: "Roof Painting & Coating Contractor in Miami-Dade County, FL — The Roof Store",
+    description: "Professional roof coating, tile restoration, and waterproofing across Miami-Dade County, FL. Licensed & insured, A+ BBB rated since 1994. FungalShield, SmartShield & RoofShield. Free inspection: 954-210-9614.",
+  },
+  "/service-areas/palm-beach-county": {
+    title: "Roof Painting & Coating Contractor in Palm Beach County, FL — The Roof Store",
+    description: "Professional roof coating, tile restoration, and waterproofing across Palm Beach County, FL. Licensed & insured, A+ BBB rated since 1994. FungalShield, SmartShield & RoofShield. Free inspection: 954-210-9614.",
+  },
+  "/roof-services/broward-county": {
+    title: "Roof Restoration & Painting Services in Broward County, FL | The Roof Store",
+    description: "Roof painting contractor in Broward County, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection. Licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.",
+  },
+  "/roof-services/miami-dade-county": {
+    title: "Roof Restoration & Painting Services in Miami-Dade County, FL | The Roof Store",
+    description: "Roof painting contractor in Miami-Dade County, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection. Licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.",
+  },
+  "/roof-services/palm-beach-county": {
+    title: "Roof Restoration & Painting Services in Palm Beach County, FL | The Roof Store",
+    description: "Roof painting contractor in Palm Beach County, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection. Licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.",
+  },
+};
+
+// City-level page meta — generated dynamically from slug → city name lookup
+const CITY_SLUG_TO_NAME = {
+  // Broward County
+  "coconut-creek": "Coconut Creek", "cooper-city": "Cooper City",
+  "coral-springs": "Coral Springs", "dania-beach": "Dania Beach",
+  "davie": "Davie", "deerfield-beach": "Deerfield Beach",
+  "fort-lauderdale": "Fort Lauderdale", "hillsboro-beach": "Hillsboro Beach",
+  "hallandale-beach": "Hallandale Beach", "hollywood": "Hollywood",
+  "lauderdale-lakes": "Lauderdale Lakes", "lauderhill": "Lauderhill",
+  "lauderdale-by-the-sea": "Lauderdale-by-the-Sea", "lighthouse-point": "Lighthouse Point",
+  "margate": "Margate", "miramar": "Miramar", "north-lauderdale": "North Lauderdale",
+  "oakland-park": "Oakland Park", "parkland": "Parkland",
+  "pembroke-park": "Pembroke Park", "pembroke-pines": "Pembroke Pines",
+  "plantation": "Plantation", "pompano-beach": "Pompano Beach",
+  "sea-ranch-lakes": "Sea Ranch Lakes", "southwest-ranches": "Southwest Ranches",
+  "sunrise": "Sunrise", "tamarac": "Tamarac", "west-park": "West Park",
+  "weston": "Weston", "wilton-manors": "Wilton Manors",
+  // Miami-Dade County
+  "aventura": "Aventura", "bal-harbour": "Bal Harbour",
+  "bay-harbor-islands": "Bay Harbor Islands", "biscayne-park": "Biscayne Park",
+  "coral-gables": "Coral Gables", "cutler-bay": "Cutler Bay",
+  "doral": "Doral", "el-portal": "El Portal",
+  "florida-city": "Florida City", "hialeah": "Hialeah",
+  "hialeah-gardens": "Hialeah Gardens", "homestead": "Homestead",
+  "indian-creek-village": "Indian Creek Village", "key-biscayne": "Key Biscayne",
+  "medley": "Medley", "miami": "Miami", "miami-beach": "Miami Beach",
+  "miami-gardens": "Miami Gardens", "miami-lakes": "Miami Lakes",
+  "miami-shores": "Miami Shores", "miami-springs": "Miami Springs",
+  "north-bay-village": "North Bay Village", "north-miami": "North Miami",
+  "north-miami-beach": "North Miami Beach", "opa-locka": "Opa-locka",
+  "palmetto-bay": "Palmetto Bay", "pinecrest": "Pinecrest",
+  "south-miami": "South Miami", "sunny-isles-beach": "Sunny Isles Beach",
+  "surfside": "Surfside", "sweetwater": "Sweetwater",
+  "virginia-gardens": "Virginia Gardens", "west-miami": "West Miami",
+  // Palm Beach County
+  "boca-raton": "Boca Raton", "boynton-beach": "Boynton Beach",
+  "briny-breezes": "Briny Breezes", "cloud-lake": "Cloud Lake",
+  "delray-beach": "Delray Beach", "glen-ridge": "Glen Ridge",
+  "golf": "Golf", "golfview": "Golfview",
+  "greenacres": "Greenacres", "gulf-stream": "Gulf Stream",
+  "haverhill": "Haverhill", "highland-beach": "Highland Beach",
+  "hypoluxo": "Hypoluxo", "juno-beach": "Juno Beach",
+  "jupiter": "Jupiter", "jupiter-inlet-colony": "Jupiter Inlet Colony",
+  "lake-clarke-shores": "Lake Clarke Shores", "lake-park": "Lake Park",
+  "lake-worth-beach": "Lake Worth Beach", "lantana": "Lantana",
+  "loxahatchee-groves": "Loxahatchee Groves", "manalapan": "Manalapan",
+  "mangonia-park": "Mangonia Park", "north-palm-beach": "North Palm Beach",
+  "ocean-ridge": "Ocean Ridge", "pahokee": "Pahokee",
+  "palm-beach": "Palm Beach", "palm-beach-gardens": "Palm Beach Gardens",
+  "palm-beach-shores": "Palm Beach Shores", "palm-springs": "Palm Springs",
+  "riviera-beach": "Riviera Beach", "royal-palm-beach": "Royal Palm Beach",
+  "south-bay": "South Bay", "south-palm-beach": "South Palm Beach",
+  "tequesta": "Tequesta", "village-of-golf": "Village of Golf",
+  "wellington": "Wellington", "west-palm-beach": "West Palm Beach",
+};
+
+function resolvePageMeta(path) {
+  // Exact match
+  if (PAGE_META[path]) return { ...PAGE_META[path], canonical: path };
+
+  // City service-areas page: /service-areas/<county>/<city>
+  const cityMatch = path.match(/^\/service-areas\/([^/]+)\/([^/]+)$/);
+  if (cityMatch) {
+    const citySlug = cityMatch[2];
+    const city = CITY_SLUG_TO_NAME[citySlug] || citySlug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    return {
+      title: `Roof Painting & Coating Contractor in ${city}, FL | Roof Coating Systems — The Roof Store`,
+      description: `Looking for a roof coating contractor in ${city}, FL? The Roof Store offers professional roof coating systems for tile, flat, shingle, and metal roofs — waterproof, hurricane-rated, A+ BBB accredited since 1994. Free inspection: 954-210-9614.`,
+      canonical: path,
+    };
+  }
+
+  // County service-areas page: /service-areas/<county>
+  const saCountyMatch = path.match(/^\/service-areas\/([^/]+)$/);
+  if (saCountyMatch) {
+    const county = saCountyMatch[1].replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    return {
+      title: `Roof Painting & Coating Contractor in ${county}, FL — The Roof Store`,
+      description: `Professional roof coating, tile restoration, and waterproofing across ${county}, FL. Licensed & insured, A+ BBB rated since 1994. FungalShield, SmartShield & RoofShield. Free inspection: 954-210-9614.`,
+      canonical: path,
+    };
+  }
+
+  // County roof-services page: /roof-services/<county>
+  const rsCountyMatch = path.match(/^\/roof-services\/([^/]+)$/);
+  if (rsCountyMatch) {
+    const county = rsCountyMatch[1].replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    return {
+      title: `Roof Restoration & Painting Services in ${county}, FL | The Roof Store`,
+      description: `Roof painting contractor in ${county}, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection. Licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`,
+      canonical: path,
+    };
+  }
+
+  // Fallback — homepage meta (will be overridden by React Helmet client-side)
+  return {
+    title: "The Roof Store | Roof Coating Installation & Roof Painting Contractor | South Florida Since 1994",
+    description: "The Roof Store — South Florida's roof coating systems provider and installation contractor since 1994. FungalShield, SmartShield & RoofShield. Davie, FL · 954-210-9614.",
+    canonical: path,
+  };
+}
+
+// Read and cache index.html at startup
+let indexHtml = null;
+function getIndexHtml() {
+  if (!indexHtml) {
+    const indexPath = join(staticDir, "index.html");
+    indexHtml = fs.readFileSync(indexPath, "utf-8");
+  }
+  return indexHtml;
+}
 
 const app = express();
 
@@ -233,13 +483,73 @@ app.use((req, res, next) => {
   next();
 });
 
-// ── Static file serving with SPA fallback ────────────────────────────────
+// ── Static assets (JS, CSS, images, fonts, etc.) ─────────────────────────
+// Serve real files first; don't fall through to SPA for asset requests.
 app.use(
   sirv(staticDir, {
-    single: true,
+    single: false,
     etag: true,
   }),
 );
+
+// ── SPA fallback with per-page meta injection ─────────────────────────────
+// For every HTML request (page navigation), inject the correct title,
+// description, and canonical so Googlebot sees unique tags per page.
+app.get("*", (req, res) => {
+  const meta = resolvePageMeta(req.path);
+  const canonicalUrl = `${BASE}${meta.canonical}`;
+  const escaped = {
+    title: meta.title.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
+    description: meta.description.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
+    canonicalUrl: canonicalUrl.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
+  };
+
+  let html = getIndexHtml();
+
+  // Replace title
+  html = html.replace(
+    /<title>[^<]*<\/title>/,
+    `<title>${escaped.title}</title>`,
+  );
+  // Replace meta description
+  html = html.replace(
+    /<meta name="description" content="[^"]*"/,
+    `<meta name="description" content="${escaped.description}"`,
+  );
+  // Replace canonical
+  html = html.replace(
+    /<link rel="canonical" href="[^"]*"/,
+    `<link rel="canonical" href="${escaped.canonicalUrl}"`,
+  );
+  // Replace og:title
+  html = html.replace(
+    /<meta property="og:title" content="[^"]*"/,
+    `<meta property="og:title" content="${escaped.title}"`,
+  );
+  // Replace og:description
+  html = html.replace(
+    /<meta property="og:description" content="[^"]*"/,
+    `<meta property="og:description" content="${escaped.description}"`,
+  );
+  // Replace og:url
+  html = html.replace(
+    /<meta property="og:url" content="[^"]*"/,
+    `<meta property="og:url" content="${escaped.canonicalUrl}"`,
+  );
+  // Replace twitter:title
+  html = html.replace(
+    /<meta name="twitter:title" content="[^"]*"/,
+    `<meta name="twitter:title" content="${escaped.title}"`,
+  );
+  // Replace twitter:description
+  html = html.replace(
+    /<meta name="twitter:description" content="[^"]*"/,
+    `<meta name="twitter:description" content="${escaped.description}"`,
+  );
+
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.send(html);
+});
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`The Roof Store serving on port ${port}`);

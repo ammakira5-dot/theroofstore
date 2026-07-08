@@ -1,10 +1,10 @@
-import { Router } from "express";
+import { Router, type Request } from "express";
 import { db, submissionsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
 
 const router = Router();
 
-function checkAuth(req: Parameters<Parameters<typeof router.use>[0]>[0]): boolean {
+function checkAuth(req: Request): boolean {
   const password = process.env.ADMIN_PASSWORD;
   if (!password) return false;
   const header = req.headers["x-admin-password"];

@@ -8,15 +8,24 @@ const router = Router();
 
 const CHECK_TARGET_URL = "https://theroof.store/";
 
-function checkAuth(req: Request): boolean {
-  const password = process.env.ADMIN_PASSWORD;
-  if (!password) return false;
+type AuthRole = "admin" | "attorney" | false;
+
+function checkAuth(req: Request): AuthRole {
   const header = req.headers["x-admin-password"];
-  return header === password;
+  if (typeof header !== "string" || !header) return false;
+
+  const adminPassword = process.env.ADMIN_PASSWORD;
+  if (adminPassword && header === adminPassword) return "admin";
+
+  const attorneyPassword = process.env.ATTORNEY_ACCESS_PASSWORD;
+  if (attorneyPassword && header === attorneyPassword) return "attorney";
+
+  return false;
 }
 
 router.get("/trademark-monitoring/entries", async (req, res) => {
-  if (!checkAuth(req)) {
+  const role = checkAuth(req);
+  if (!role) {
     res.status(401).json({ ok: false, error: "Unauthorized" });
     return;
   }
@@ -27,7 +36,7 @@ router.get("/trademark-monitoring/entries", async (req, res) => {
     .orderBy(desc(trademarkMonitoringLogTable.createdAt))
     .limit(500);
 
-  res.json({ ok: true, entries: rows });
+  res.json({ ok: true, role, entries: rows });
 });
 
 const ManualEntrySchema = z.object({
@@ -38,7 +47,7 @@ const ManualEntrySchema = z.object({
 });
 
 router.post("/trademark-monitoring/entries", async (req, res) => {
-  if (!checkAuth(req)) {
+  if (checkAuth(req) !== "admin") {
     res.status(401).json({ ok: false, error: "Unauthorized" });
     return;
   }
@@ -124,7 +133,7 @@ export async function runAutomatedCheck(recordedBy = "automated-check") {
 }
 
 router.post("/trademark-monitoring/check-now", async (req, res) => {
-  if (!checkAuth(req)) {
+  if (checkAuth(req) !== "admin") {
     res.status(401).json({ ok: false, error: "Unauthorized" });
     return;
   }

@@ -26,9 +26,12 @@ function formatDate(iso: string) {
   }).format(new Date(iso));
 }
 
+type Role = "admin" | "attorney" | null;
+
 export default function TrademarkMonitoringLog() {
   const [password, setPassword] = useState(() => sessionStorage.getItem("admin_pw") ?? "");
   const [authed, setAuthed] = useState(false);
+  const [role, setRole] = useState<Role>(null);
   const [loading, setLoading] = useState(false);
   const [checking, setChecking] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -52,6 +55,7 @@ export default function TrademarkMonitoringLog() {
       if (!res.ok) throw new Error("Server error");
       const data = await res.json();
       setEntries(data.entries);
+      setRole(data.role ?? null);
       setAuthed(true);
       sessionStorage.setItem("admin_pw", pw);
     } catch {
@@ -74,6 +78,7 @@ export default function TrademarkMonitoringLog() {
   function logout() {
     sessionStorage.removeItem("admin_pw");
     setAuthed(false);
+    setRole(null);
     setEntries([]);
     setPassword("");
   }
@@ -135,7 +140,7 @@ export default function TrademarkMonitoringLog() {
           </div>
           <form onSubmit={handleLogin} className="bg-card border rounded-2xl p-8 shadow-sm space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="admin-pw">Admin Password</Label>
+              <Label htmlFor="admin-pw">Access Password</Label>
               <Input
                 id="admin-pw"
                 type="password"
@@ -166,7 +171,14 @@ export default function TrademarkMonitoringLog() {
       <div className="container px-4 py-12 max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
           <div>
-            <h1 className="text-3xl font-serif font-bold text-primary">Monitoring &amp; Defense Log</h1>
+            <div className="flex items-center gap-2 flex-wrap">
+              <h1 className="text-3xl font-serif font-bold text-primary">Monitoring &amp; Defense Log</h1>
+              {role === "attorney" && (
+                <span className="text-xs font-semibold uppercase tracking-wide bg-accent/10 text-accent rounded-full px-2.5 py-1">
+                  Attorney Access — Read Only
+                </span>
+              )}
+            </div>
             <p className="text-muted-foreground text-sm mt-1">
               Append-only record. Entries cannot be edited or deleted once saved — this preserves evidentiary integrity.
             </p>
@@ -183,45 +195,49 @@ export default function TrademarkMonitoringLog() {
 
         {error && <p className="text-sm text-destructive bg-destructive/10 rounded px-3 py-2 mb-4">{error}</p>}
 
-        {/* Automated check */}
-        <div className="bg-card border rounded-xl p-5 mb-6 flex items-center justify-between flex-wrap gap-4">
-          <div className="flex items-center gap-3">
-            <Bot className="h-5 w-5 text-accent" />
-            <div>
-              <p className="font-semibold text-sm">Automated Check — theroof.store</p>
-              <p className="text-xs text-muted-foreground">Fetches the live homepage, hashes the content, and flags any change since the last check for your review.</p>
+        {role === "admin" && (
+          <>
+            {/* Automated check */}
+            <div className="bg-card border rounded-xl p-5 mb-6 flex items-center justify-between flex-wrap gap-4">
+              <div className="flex items-center gap-3">
+                <Bot className="h-5 w-5 text-accent" />
+                <div>
+                  <p className="font-semibold text-sm">Automated Check — theroof.store</p>
+                  <p className="text-xs text-muted-foreground">Fetches the live homepage, hashes the content, and flags any change since the last check for your review.</p>
+                </div>
+              </div>
+              <Button size="sm" onClick={runCheckNow} disabled={checking} className="bg-accent hover:bg-accent/90 text-white">
+                {checking ? <><Loader2 className="h-4 w-4 mr-1.5 animate-spin" />Running…</> : "Run Check Now"}
+              </Button>
             </div>
-          </div>
-          <Button size="sm" onClick={runCheckNow} disabled={checking} className="bg-accent hover:bg-accent/90 text-white">
-            {checking ? <><Loader2 className="h-4 w-4 mr-1.5 animate-spin" />Running…</> : "Run Check Now"}
-          </Button>
-        </div>
 
-        {/* Manual entry form */}
-        <form onSubmit={handleAddEntry} className="bg-card border rounded-xl p-5 mb-8 space-y-3">
-          <p className="font-semibold text-sm flex items-center gap-2"><User className="h-4 w-4 text-accent" /> Add Manual Entry</p>
-          <div className="space-y-2">
-            <Label htmlFor="summary">What did you observe? (required)</Label>
-            <Input id="summary" value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="e.g. Checked Google Search Console — no manual actions or unusual link spikes" required />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div className="space-y-2">
-              <Label htmlFor="sourceUrl">Source / where checked (optional)</Label>
-              <Input id="sourceUrl" value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} placeholder="e.g. Google Search Console" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="recordedBy">Recorded by (optional)</Label>
-              <Input id="recordedBy" value={recordedBy} onChange={(e) => setRecordedBy(e.target.value)} placeholder="Your name" />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="details">Details (optional)</Label>
-            <Textarea id="details" value={details} onChange={(e) => setDetails(e.target.value)} rows={3} placeholder="Any additional notes, findings, or context" />
-          </div>
-          <Button type="submit" disabled={submitting || !summary.trim()} className="bg-primary hover:bg-primary/90 text-white">
-            {submitting ? <><Loader2 className="h-4 w-4 mr-1.5 animate-spin" />Saving…</> : <><PlusCircle className="h-4 w-4 mr-1.5" />Add Entry</>}
-          </Button>
-        </form>
+            {/* Manual entry form */}
+            <form onSubmit={handleAddEntry} className="bg-card border rounded-xl p-5 mb-8 space-y-3">
+              <p className="font-semibold text-sm flex items-center gap-2"><User className="h-4 w-4 text-accent" /> Add Manual Entry</p>
+              <div className="space-y-2">
+                <Label htmlFor="summary">What did you observe? (required)</Label>
+                <Input id="summary" value={summary} onChange={(e) => setSummary(e.target.value)} placeholder="e.g. Checked Google Search Console — no manual actions or unusual link spikes" required />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="space-y-2">
+                  <Label htmlFor="sourceUrl">Source / where checked (optional)</Label>
+                  <Input id="sourceUrl" value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} placeholder="e.g. Google Search Console" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="recordedBy">Recorded by (optional)</Label>
+                  <Input id="recordedBy" value={recordedBy} onChange={(e) => setRecordedBy(e.target.value)} placeholder="Your name" />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="details">Details (optional)</Label>
+                <Textarea id="details" value={details} onChange={(e) => setDetails(e.target.value)} rows={3} placeholder="Any additional notes, findings, or context" />
+              </div>
+              <Button type="submit" disabled={submitting || !summary.trim()} className="bg-primary hover:bg-primary/90 text-white">
+                {submitting ? <><Loader2 className="h-4 w-4 mr-1.5 animate-spin" />Saving…</> : <><PlusCircle className="h-4 w-4 mr-1.5" />Add Entry</>}
+              </Button>
+            </form>
+          </>
+        )}
 
         {/* Log entries */}
         {loading ? (

@@ -35,6 +35,7 @@ import SiliconeVsElastomeric from "@/pages/SiliconeVsElastomeric";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
+import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -124,6 +125,7 @@ function Router() {
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
+      <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

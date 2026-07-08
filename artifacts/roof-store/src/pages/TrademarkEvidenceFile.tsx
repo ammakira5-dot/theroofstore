@@ -256,9 +256,114 @@ export default function TrademarkEvidenceFile() {
             </p>
           </section>
 
+          {/* Exhibit F — Wayback Machine */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">VIII. Exhibit F — Independent Third-Party Archive Verification (Internet Archive)</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              The Internet Archive's Wayback Machine (archive.org) independently crawled and preserved theroofstore.net starting in <strong>January 2002</strong> — six months before the July 29, 2002 WHOIS registration date, and captured continuously through the following years. This is <strong>third-party, independently verifiable evidence</strong> not authored or controlled by the prior rights holder, making it materially stronger than self-published claims.
+            </p>
+            <table className="w-full text-sm font-sans border-collapse mb-4">
+              <thead>
+                <tr className="border-b-2 border-gray-900">
+                  <th className="text-left py-2 pr-4 w-32">Capture Date</th>
+                  <th className="text-left py-2">Page Title / Content Summary</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Jan 21, 2002", `Title: "The Weatherproofing store." Footer: "Copyright © 2001. Anthony's Enterprises Inc. All rights reserved." Confirms live commercial content at this domain by January 2002.`],
+                  ["Apr 5, 2004", `Same "Weatherproofing store" branding. "Copyright © 2004. Anthony's Enterprises Inc." Call-to-action: "Call me today for your FREE weatherproofing evaluation! Protect your property before it's too late!" Phone: (954)-274-1533 / (305)-924-0163.`],
+                  ["Apr 25, 2005", `Same branding and entity. Updated phone: (754) 367-3768. Confirms continuous operation into 2005.`],
+                  ["Dec 21, 2007", `Rebrand visible: "Welcome to the Roof Store." Full navigation added: about us | references | products | residential | commercial | affiliations | faq's | contact us. This marks the transition point to "The Roof Store" branding as documented in this file.`],
+                ].map(([date, summary]) => (
+                  <tr key={date} className="border-b border-gray-200 bg-green-50">
+                    <td className="py-2 pr-4 font-semibold align-top text-xs">{date}</td>
+                    <td className="py-2 leading-relaxed">{summary}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="text-xs font-sans text-gray-600 leading-relaxed mb-2">
+              <strong>Source:</strong> Internet Archive Wayback Machine, CDX API query for theroofstore.net, snapshots publicly viewable at web.archive.org/web/20020121005542/http://www.theroofstore.net/ and successive captures through 2007.
+            </p>
+            <div className="border border-amber-400 bg-amber-50 rounded p-4 text-xs font-sans text-amber-900 leading-relaxed">
+              <strong>Flag for attorney review:</strong> The 2002–2005 archive captures list the registrant entity as <strong>"Anthony's Enterprises Inc."</strong>, not Storm Shield Paint Systems Inc. This may reflect a predecessor entity, a DBA/trade name arrangement, or a later corporate restructuring/rebrand. Recommend confirming chain of title and any assignment of the domain and "The Roof Store" mark from Anthony's Enterprises Inc. to Storm Shield Paint Systems Inc. via Florida Sunbiz records before relying on this evidence in a formal filing, to ensure standing is clearly established.
+            </div>
+          </section>
+
+          {/* SEO / AI Manipulation Attack Vectors */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              If the respondent becomes aware of this claim, the following are the realistic technical/digital tactics they could attempt to muddy the record, along with the countermeasure already in place or recommended for each. Any attempt along these lines would itself constitute additional evidence of bad faith and awareness of prior rights.
+            </p>
+            <table className="w-full text-sm font-sans border-collapse">
+              <thead>
+                <tr className="border-b-2 border-gray-900">
+                  <th className="text-left py-2 pr-4 w-1/3">Possible Tactic</th>
+                  <th className="text-left py-2 pr-4 w-1/3">Why It Would Backfire</th>
+                  <th className="text-left py-2">Our Countermeasure</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section X below."],
+                  ["Negative SEO: flood theroofstore.net with spammy/toxic backlinks to trigger a Google penalty", "Google's algorithm largely discounts this against established, trusted domains; a sudden unnatural link spike is itself detectable and reportable.", "Monitor Search Console \"Links\" report monthly; use Google's Disavow Tool if a spike appears; Ahrefs/SEMrush backlink alerts."],
+                  ["Schema markup spam — inject false structured data (fake founding dates, fake reviews, fake awards) to compete for Google's Knowledge Panel / AI Overview citation", "Structured data claims are checkable against public records (Sunbiz, BBB, WHOIS); false schema is a reportable policy violation to Google.", "Keep our own Organization/LocalBusiness schema accurate, dated, and cross-linked (sameAs) to BBB, GMB, and Sunbiz so Google's entity graph favors the verifiable source."],
+                  ["Content/AI farming — publish large volumes of AI-generated articles repeating \"The Roof Store\" + Florida keywords to dominate AI Overviews and LLM-cited answers", "Volume without authority or citations rarely outranks a domain with 24 years of consistent history and real citations once Google/AI systems weigh source trust.", "Continue building small amounts of high-quality, factual, citable content (which we're already doing) rather than competing on volume."],
+                  ["Hidden-text / prompt-injection attempts aimed at AI answer engines (text designed to manipulate what LLMs say when asked about \"The Roof Store\")", "This is a form of manipulation most AI providers explicitly police; it can be reported directly to the AI platform as manipulation/spam.", "Periodically ask ChatGPT/Gemini/Perplexity/Google AI Overview \"who is the original Roof Store in Florida\" and log the answer as evidence of current AI perception."],
+                  ["Fake or review-bombing attacks against BBB/GMB profiles to damage credibility", "Fake reviews are directly reportable and removable via BBB and Google's review policy enforcement, and create a paper trail of harassment.", "Monitor BBB/GMB profiles for unusual review activity; report and document immediately."],
+                ].map(([tactic, why, counter]) => (
+                  <tr key={tactic as string} className="border-b border-gray-200 align-top">
+                    <td className="py-2 pr-4">{tactic}</td>
+                    <td className="py-2 pr-4 text-gray-700">{why}</td>
+                    <td className="py-2 text-gray-700">{counter}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+
+          {/* Monitoring & Defense Log */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. Monitoring &amp; Defense Log</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              Running log of monitoring activity and any new incidents observed. Add a dated row every time something new is checked or discovered.
+            </p>
+            <table className="w-full text-sm font-sans border-collapse">
+              <thead>
+                <tr className="border-b-2 border-gray-900">
+                  <th className="text-left py-2 pr-4 w-32">Date</th>
+                  <th className="text-left py-2 pr-4 w-40">Check / Incident</th>
+                  <th className="text-left py-2">Finding</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Jul 8, 2026", "Initial evidence file compiled", "Baseline documentation established — see Exhibits A–F above."],
+                  ["Jul 8, 2026", "Wayback Machine independent archive pull", "Confirmed continuous archive.org captures of theroofstore.net from Jan 2002 onward — see Exhibit F."],
+                ].map(([date, check, finding]) => (
+                  <tr key={date + check} className="border-b border-gray-200 align-top">
+                    <td className="py-2 pr-4 font-semibold text-xs">{date}</td>
+                    <td className="py-2 pr-4">{check}</td>
+                    <td className="py-2 text-gray-700">{finding}</td>
+                  </tr>
+                ))}
+                <tr className="border-b border-dashed border-gray-300 align-top text-gray-400 italic">
+                  <td className="py-3 pr-4 text-xs">[date]</td>
+                  <td className="py-3 pr-4">[next monitoring check]</td>
+                  <td className="py-3">[finding — add as new incidents/checks occur]</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="text-xs font-sans text-gray-500 mt-3 italic">
+              Recommended monitoring cadence: monthly Search Console link/manual-action check; Google Alerts for "the roof store" + "trademark"; quarterly Ahrefs/SEMrush comparison against theroof.store; periodic AI-answer-engine spot checks (ChatGPT, Gemini, Google AI Overview) for "who is the original Roof Store in Florida."
+            </p>
+          </section>
+
           {/* Legal Framework */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">VIII. Applicable Legal Frameworks</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Applicable Legal Frameworks</h3>
             <div className="grid grid-cols-2 gap-4 text-sm font-sans">
               {[
                 {
@@ -288,7 +393,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Recommended Next Steps */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. Recommended Next Steps</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Recommended Next Steps</h3>
             <ol className="list-decimal list-inside space-y-3 text-sm font-sans leading-relaxed">
               <li><strong>Attorney review of this file</strong> — Florida IP counsel to assess strength of common law mark, UDRP eligibility, and ACPA standing before any public action.</li>
               <li><strong>Formal WHOIS/registrant unmasking</strong> — Confirm Dmitry Lipinskiy as registrant of record via UDRP discovery or pre-suit demand to GoDaddy.</li>
@@ -301,7 +406,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Reservation */}
           <section className="mb-12">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. Reservation of Rights</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Reservation of Rights</h3>
             <p className="text-sm font-sans leading-relaxed text-gray-700">
               The Roof Store / Storm Shield Paint Systems Inc. expressly reserves all rights under the Lanham Act, ACPA, Florida common law, and ICANN UDRP with respect to the domain theroof.store and any other domain names or social media handles using "The Roof Store" brand. This document does not constitute a waiver of any right or remedy. All evidence herein was captured from publicly accessible web pages and represents the live state of the respondent's commercial operations as of the documentation date.
             </p>

@@ -32,7 +32,8 @@ const schema = [
 ];
 
 const milestones = [
-  { year: "1994", event: "The Roof Store founded in Davie, Florida. First liquid rubber roof coating system introduced to the South Florida market." },
+  { year: "1994", event: "The Roof Store founded in Davie, Florida, as an asset of Anthony's Enterprises Inc. and Storm Shield Paint Systems Inc. First liquid rubber roof coating system introduced to the South Florida market." },
+  { year: "1998", event: "Business presence documented publicly at the Fort Lauderdale Home Show under Anthony's Enterprises Inc." },
   { year: "2002", event: "theroofstore.net domain registered July 29, 2002. Continuous, unbroken commercial use begins." },
   { year: "2010s", event: "RoofProtect Products established as the manufacturing entity. FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) systems developed and commercialized." },
   { year: "2022+", event: "Confusingly similar domain names registered by out-of-state entities, both of which actively market into Florida — The Roof Store's primary geographic market." },
@@ -111,7 +112,7 @@ export default function OriginalRoofStore() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-6">Who We Are</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-5">
               <p>
-                <strong className="text-foreground">The Roof Store</strong> is a Florida-based roofing products manufacturer and contractor headquartered at 4801 S University Drive, Davie, FL 33328. We have operated under the name "The Roof Store" and at the domain <strong className="text-foreground">theroofstore.net</strong> continuously since our domain registration on <strong className="text-foreground">July 29, 2002</strong> — and as a licensed Florida business since <strong className="text-foreground">1994</strong>.
+                <strong className="text-foreground">The Roof Store</strong> is a Florida-based roofing products manufacturer and contractor headquartered at 4801 S University Drive, Davie, FL 33328. We have operated under the name "The Roof Store" and at the domain <strong className="text-foreground">theroofstore.net</strong> continuously since our domain registration on <strong className="text-foreground">July 29, 2002</strong>. The Roof Store name and business assets have been held since <strong className="text-foreground">1994</strong> by Anthony's Enterprises Inc. and Storm Shield Paint Systems Inc., the licensed Florida corporations behind our roofing operations.
               </p>
               <p>
                 Our proprietary liquid rubber roof coating systems — <strong className="text-foreground">FungalShield (RP1)</strong>, <strong className="text-foreground">SmartShield (RP2)</strong>, and <strong className="text-foreground">RoofShield (RP3)</strong> — are manufactured under our RoofProtect factory license and installed by Storm Shield Paint Systems Inc., our licensed contracting division. We serve Broward, Miami-Dade, and Palm Beach counties and have been A+ rated by the Better Business Bureau throughout our operation.

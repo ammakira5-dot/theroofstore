@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
+import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck, Youtube } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const BASE = "https://www.theroofstore.net";
+
+const milestones = [
+  { year: "1994", event: "The Roof Store is founded in Davie, Florida, introducing the first liquid rubber roof coating system to the South Florida market." },
+  { year: "1999", event: "Our \"Don't Re-Roof, Waterproof at 1/2 the Cost\" television commercial airs, showing a live Roof Shield installation — narrated by our founder." },
+  { year: "2002", event: "theroofstore.net is registered, and our online presence begins — continuous and unbroken ever since." },
+  { year: "2010s", event: "RoofProtect Products is established as our in-house manufacturing division, developing FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3)." },
+  { year: "Today", event: "30+ years and 10,000+ Florida homes later, we're still Florida's original liquid rubber roof coating specialist — A+ BBB rated and family-run." },
+];
 
 export default function About() {
   const schema = [
@@ -102,6 +110,55 @@ export default function About() {
                   </motion.div>
                 ))}
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our History */}
+      <section className="py-24 bg-background border-y">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Our History</h2>
+            <p className="text-muted-foreground text-lg">Three decades of protecting Florida roofs, from our very first TV commercial to today.</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="space-y-6">
+              {milestones.map((m, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className="flex gap-5 items-start"
+                >
+                  <div className="shrink-0 bg-primary text-white rounded-xl px-3.5 py-2 text-sm font-bold min-w-[76px] text-center">
+                    {m.year}
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed pt-1.5">{m.event}</p>
+                </motion.div>
+              ))}
+            </div>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+              <div className="relative w-full rounded-2xl overflow-hidden shadow-lg bg-black aspect-video mb-4">
+                <iframe
+                  src="https://www.youtube.com/embed/IUcKj0nKNDc"
+                  title="Original 1999 TV commercial — Don't Re-Roof, Waterproof at 1/2 the Cost"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."
+              </p>
+              <Link
+                href="/videos"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors"
+              >
+                <Youtube className="h-4 w-4" /> More videos on our YouTube channel
+              </Link>
             </motion.div>
           </div>
         </div>

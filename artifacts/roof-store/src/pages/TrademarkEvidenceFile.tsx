@@ -291,9 +291,54 @@ export default function TrademarkEvidenceFile() {
             </div>
           </section>
 
+          {/* No Legitimate Rights Analysis */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              This section directly addresses the second required element of the UDRP/URS test: that the <strong>respondent</strong> (Dmitry Lipinskiy, operating theroof.store) has no rights or legitimate interest of his own in the name "The Roof Store." Under UDRP Policy ¶4(a)(ii) and ¶4(c), once the complainant makes a prima facie showing on this element, the burden shifts to the respondent to come forward with evidence of a legitimate right — none is apparent from the public record.
+            </p>
+            <table className="w-full text-sm font-sans border-collapse">
+              <thead>
+                <tr className="border-b-2 border-gray-900">
+                  <th className="text-left py-2 pr-4 w-1/3">UDRP ¶4(c) Safe Harbor</th>
+                  <th className="text-left py-2 pr-4 w-1/3">Respondent's Position</th>
+                  <th className="text-left py-2">Supporting Evidence</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  [
+                    "¶4(c)(i) — Bona fide offering of goods/services under the name before any notice of the dispute",
+                    "Fails. Respondent registered theroof.store in August 2021 — 19 years after the prior rights holder's domain and 27 years after the business was founded, in the same industry and geographic market. Prior use by another party in the same field at time of registration defeats a claim of bona fide, independent adoption.",
+                    "Section II Timeline; Exhibit C (WHOIS dates)",
+                  ],
+                  [
+                    "¶4(c)(ii) — Respondent has been commonly known by the domain name",
+                    "Fails. Respondent's own public identity is \"Dmitry Lipinskiy\" / \"Roofing Insights\" — built since 2017, years before theroof.store existed. \"The Roof Store\" is not his personal or pre-existing business name; it was adopted for the domain in 2021 to compete in an industry he already had an audience in.",
+                    "Section II Timeline (Roofing Insights founded 2017); Exhibit D",
+                  ],
+                  [
+                    "¶4(c)(iii) — Legitimate noncommercial or fair use, without intent for commercial gain or to mislead",
+                    "Fails. Respondent operates theroof.store as an active bulk roofing-supply commerce site shipping nationwide, including into Florida — the prior rights holder's core market. This is textbook commercial use of an identical name, not commentary, criticism, or fair use.",
+                    "Exhibit A (homepage/commerce); Exhibit E (digital reach)",
+                  ],
+                ].map(([title, position, evidence]) => (
+                  <tr key={title as string} className="border-b border-gray-200 align-top">
+                    <td className="py-2 pr-4 font-medium">{title}</td>
+                    <td className="py-2 pr-4 text-gray-700">{position}</td>
+                    <td className="py-2 text-xs text-gray-500 italic">{evidence}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="text-sm font-sans mt-4 leading-relaxed">
+              Additionally, respondent holds no trademark registration of his own for "The Roof Store" (none located in USPTO or Florida Sunbiz trademark records as of the documentation date), and his own on-camera statement (Exhibit D) confirms the name was adopted as a deliberate brand-strategy decision — undercutting any argument that use of the identical name was coincidental, generic, or independently developed. Taken together, the record supports a prima facie finding that respondent lacks any right or legitimate interest in the name, shifting the burden to him to justify his use — a burden the public record gives him no apparent means to meet.
+            </p>
+          </section>
+
           {/* SEO / AI Manipulation Attack Vectors */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. Anticipated Counter-Attack Vectors &amp; Countermeasures</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               If the respondent becomes aware of this claim, the following are the realistic technical/digital tactics they could attempt to muddy the record, along with the countermeasure already in place or recommended for each. Any attempt along these lines would itself constitute additional evidence of bad faith and awareness of prior rights.
             </p>
@@ -307,7 +352,7 @@ export default function TrademarkEvidenceFile() {
               </thead>
               <tbody>
                 {[
-                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section X below."],
+                  ["Publish a \"rebuttal\" or counter-history page disputing this claim", "Proves actual knowledge of the prior claim — defeats any innocent-registrant defense and is independently datable/archivable as new evidence of bad faith.", "Do not engage or link to it. Screenshot + Wayback-archive it immediately and log it in Section XI below."],
                   ["Negative SEO: flood theroofstore.net with spammy/toxic backlinks to trigger a Google penalty", "Google's algorithm largely discounts this against established, trusted domains; a sudden unnatural link spike is itself detectable and reportable.", "Monitor Search Console \"Links\" report monthly; use Google's Disavow Tool if a spike appears; Ahrefs/SEMrush backlink alerts."],
                   ["Schema markup spam — inject false structured data (fake founding dates, fake reviews, fake awards) to compete for Google's Knowledge Panel / AI Overview citation", "Structured data claims are checkable against public records (Sunbiz, BBB, WHOIS); false schema is a reportable policy violation to Google.", "Keep our own Organization/LocalBusiness schema accurate, dated, and cross-linked (sameAs) to BBB, GMB, and Sunbiz so Google's entity graph favors the verifiable source."],
                   ["Content/AI farming — publish large volumes of AI-generated articles repeating \"The Roof Store\" + Florida keywords to dominate AI Overviews and LLM-cited answers", "Volume without authority or citations rarely outranks a domain with 24 years of consistent history and real citations once Google/AI systems weigh source trust.", "Continue building small amounts of high-quality, factual, citable content (which we're already doing) rather than competing on volume."],
@@ -326,7 +371,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Monitoring & Defense Log */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X. Monitoring &amp; Defense Log</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Monitoring &amp; Defense Log</h3>
             <p className="text-sm font-sans mb-4 leading-relaxed">
               Running log of monitoring activity and any new incidents observed. Add a dated row every time something new is checked or discovered.
             </p>
@@ -363,7 +408,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Legal Framework */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Applicable Legal Frameworks</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Applicable Legal Frameworks</h3>
             <div className="grid grid-cols-2 gap-4 text-sm font-sans">
               {[
                 {
@@ -393,7 +438,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Recommended Next Steps */}
           <section className="mb-10">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. Recommended Next Steps</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Recommended Next Steps</h3>
             <ol className="list-decimal list-inside space-y-3 text-sm font-sans leading-relaxed">
               <li><strong>Attorney review of this file</strong> — Florida IP counsel to assess strength of common law mark, UDRP eligibility, and ACPA standing before any public action.</li>
               <li><strong>Formal WHOIS/registrant unmasking</strong> — Confirm Dmitry Lipinskiy as registrant of record via UDRP discovery or pre-suit demand to GoDaddy.</li>
@@ -406,7 +451,7 @@ export default function TrademarkEvidenceFile() {
 
           {/* Reservation */}
           <section className="mb-12">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIII. Reservation of Rights</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIV. Reservation of Rights</h3>
             <p className="text-sm font-sans leading-relaxed text-gray-700">
               The Roof Store / Storm Shield Paint Systems Inc. expressly reserves all rights under the Lanham Act, ACPA, Florida common law, and ICANN UDRP with respect to the domain theroof.store and any other domain names or social media handles using "The Roof Store" brand. This document does not constitute a waiver of any right or remedy. All evidence herein was captured from publicly accessible web pages and represents the live state of the respondent's commercial operations as of the documentation date.
             </p>

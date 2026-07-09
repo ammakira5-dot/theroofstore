@@ -91,3 +91,21 @@ Remaining lower-priority items from audit #2 (add geo keyword to a homepage H2, 
 
 ### theroofstore.net (in codebase, 1 item)
 - Re-enable windproofroofsields.com partner link in `PartnerNetwork.tsx` once their 3 fixes above go live (`linkPaused: true` → remove flag)
+
+---
+
+## Audit #2 Section-by-Section Review (in progress, July 9 2026)
+
+Going through the second audit's "Key Risks" list with the user one section at a time, confirming status against the live published site before any further changes. Final consolidated list to be handed to the user for their team once all sections are reviewed.
+
+### Section 1 — Key Risks (reviewed, confirmed against live site)
+- ✅ Duplicate `<title>`/`<meta description>` — fixed, verified 1 of each on live homepage
+- ✅ Duplicate `og:title`/`og:description`/`og:url` — fixed, verified 1 of each on live homepage
+- ✅ Homepage H1 brand-focused not keyword-targeted — fixed in first audit round, stale claim
+- ✅ FAQ page answers not indexed — fixed (accordion → always-visible text); not 100% verified via rendered-DOM/Google-side check, code-level fix confirmed only
+- ⏳ **Owner action** — Blog has only 4 stale posts (Aug–Sep 2024) — needs real new content, not a code fix
+- ⏳ **Owner action / expected to self-resolve** — Thin Google index footprint (site: query only 5 URLs) — should improve as Google re-crawls now that sitemap is fixed + resubmitted; nothing more to do in code
+- ⏳ **Owner action** — Low off-page/editorial authority, no backlinks — outreach/PR/citations work, already tracked below
+- ✅ reviewCount hardcoded "19" — fixed, now correctly shows "10" (actual review count) everywhere
+
+(More sections pending — user is sending audit sections one at a time for review.)

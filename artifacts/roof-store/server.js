@@ -24,8 +24,8 @@ const PAGE_META = {
     description: "The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid rubber roof coating system. FungalShield, SmartShield & RoofShield built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614.",
   },
   "/roof-systems": {
-    title: "Roof Painting & Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store",
-    description: "Roof painting done right — FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614.",
+    title: "Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store",
+    description: "FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs, professionally installed by our licensed crew for residential and commercial properties in Florida. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614.",
   },
   "/roof-services": {
     title: "Roof Restoration & Roof Painting Services — Tile, Flat, Shingle & Metal Roofs | South Florida",

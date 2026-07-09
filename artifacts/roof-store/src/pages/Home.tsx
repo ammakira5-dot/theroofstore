@@ -28,6 +28,33 @@ const heroSlides = [
 
 const BASE = "https://www.theroofstore.net";
 
+const homeFaqs = [
+  {
+    q: "How does roof coating compare to full roof replacement in Florida?",
+    a: "Roof coating typically costs 40–60% less than a full roof replacement, can be applied directly over your existing roof without tear-off, and extends your roof's life by 10–25 years. For South Florida homeowners, a liquid rubber coating system also delivers hurricane wind-uplift performance that new tile alone cannot match — our Roof Shield system is 5× stronger than a new tile roof in pull-test resistance.",
+  },
+  {
+    q: "Will a rubber roof coating hold up to Florida hurricanes?",
+    a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to hold Dade County TAS-106 Uplift Pull Test certification, with documented 135+ MPH performance on real hurricane events. The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
+  },
+  {
+    q: "How long does a rubber roof coating last in Florida's climate?",
+    a: "Our premium coating systems are engineered to last 10–25 years in Florida's conditions — intense UV, heavy rainfall, high humidity, and hurricane-force winds. We provide written performance warranties on every installation: from 5-year product warranties on Fungal Shield to a maintenance-free Lifetime Warranty on our flagship Roof Shield system.",
+  },
+  {
+    q: "What types of roofs can be coated?",
+    a: "We work with all common South Florida roof types: Spanish clay tile, flat cement tile, concrete barrel tile, low-slope and flat decks, modified bitumen, metal roofing panels, and foam roofs. During your free inspection, our technician will assess your roof and confirm whether coating or restoration is the right solution — we'll tell you honestly if it's not.",
+  },
+  {
+    q: "Can roof coating help me keep my homeowners insurance?",
+    a: "Yes. After a successful Roof Shield installation, The Roof Store can certify an additional 5–10 years of useful roof life — a document recognized by the State of Florida and accepted by Citizens Property Insurance Corporation for coverage continuation on roofs that would otherwise be flagged for replacement. This certification is one of the most practical insurance tools available to South Florida homeowners with aging roofs.",
+  },
+  {
+    q: "How much does roof coating cost in Florida?",
+    a: "Cost depends on the system (Fungal Shield, Smart Shield, or Roof Shield), roof type, square footage, and current condition. As a guide, our systems start from $190 per gallon for Fungal Shield through to $325 per gallon for Roof Shield — with most residential projects costing significantly less than a full roof replacement. We provide a free on-site inspection and written estimate at no charge. Call 954-210-9614 or use our contact form to schedule.",
+  },
+];
+
 const BUSINESS_CORE = {
   "@type": "RoofingContractor",
   name: "The Roof Store Waterproofing Products",
@@ -107,6 +134,15 @@ export default function Home() {
       url: BASE,
     },
     { "@context": "https://schema.org", ...BUSINESS_CORE },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: homeFaqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.q,
+        acceptedAnswer: { "@type": "Answer", text: faq.a },
+      })),
+    },
   ];
 
   return (
@@ -392,6 +428,36 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Common Questions</h2>
+            <p className="text-muted-foreground text-lg">Everything homeowners ask us before their free inspection.</p>
+          </div>
+          <div className="space-y-0 divide-y divide-border border border-border rounded-2xl overflow-hidden">
+            {homeFaqs.map((faq, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.06 }}
+                className="px-8 py-7 bg-card"
+              >
+                <h3 className="font-serif font-bold text-lg text-foreground mb-3">{faq.q}</h3>
+                <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/faq" className="text-accent font-bold hover:underline text-sm">
+              See all frequently asked questions →
+            </Link>
           </div>
         </div>
       </section>

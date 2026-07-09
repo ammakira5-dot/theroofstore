@@ -298,7 +298,7 @@ export default function Products() {
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
               Roofprotect Products — Manufactured in Davie, Florida
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Our Product Line</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">FungalShield, SmartShield &amp; RoofShield — Roof Coating Products for South Florida</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Three proprietary liquid rubber roof coating systems — RP1, RP2, and RP3 — each formulated for a specific Florida roofing challenge. True liquid rubber acrylic. No water, fillers, thickeners, or extenders.
             </p>

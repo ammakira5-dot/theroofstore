@@ -114,7 +114,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
               <span>/</span>
               <span className="text-white">{city}</span>
             </nav>
-            <h1 className="text-5xl font-serif font-bold mb-6 text-white">Rubber Roof Coating in {city}, FL</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6 text-white">Roof Coating Services in {city}, FL</h1>
             <p className="text-xl text-white/85">
               Professional roof restoration and weatherproofing for {city} homeowners and businesses. A+ BBB Rated since 1994.
             </p>

@@ -21,13 +21,15 @@ Stripped all static meta/OG/title/canonical tags from `index.html`; switched `se
 ### ✅ #2 — Fix /faq page answer visibility (ICE 8.5/10) — DONE July 9 2026
 Replaced JS Accordion with always-visible Q&A cards (`<h2>` + `<p>` per item). All 19 answers now in HTML DOM. FAQPage schema already present.
 
-### 🟡 #3 — H1 keyword optimization (ICE 8/10) — NEXT UP (paused July 9 2026, awaiting user choice)
-Keyword research done. Top keywords: "roof coating Florida" (1,500–3,000/mo), "roof painting Florida" (1,000–2,000/mo), "tile roof painting Florida" (300–700/mo), "flat roof coating Florida" (500–1,000/mo), "tile roof waterproofing Florida" (300–600/mo), "elastomeric roof coating Florida" (300–600/mo).
-
-Proposed H1 options presented to user — awaiting pick:
-- **Homepage** (current: "Don't Re-Roof. Weatherproof at 1/2 the Cost."): A) "Roof Coating & Waterproofing Contractor — South Florida Since 1994" | B) "Rubber Roof Coating Florida — Tile, Flat & Metal Roofs" | C) Keep tagline as H1, add keyword-rich H2 below (recommended)
-- **`/roof-systems`** (current: "Roof Systems"): A) "Roof Coating & Painting Systems — Florida Tile, Flat & Metal Roofs" | B) "Professional Roof Coating Systems for Florida Homes"
-- **`/products`** (current: "Our Product Line"): A) "FungalShield, SmartShield & RoofShield — Florida Roof Coating Systems" | B) "Liquid Rubber Roof Coating Products — TAS-106 Certified, Made in Florida"
+### ✅ #3 — H1 keyword optimization (ICE 8/10) — DONE July 9 2026
+Real competitor research (Rhino Shield, Paint2Last, Big Green Men, Pearl Roof, G&J Roofing, South Star Roofing, Roofing Recovery FL) showed winning pattern: "coating" language (never "painting"), hyper-local geo, no jargon in H1. Applied sitewide:
+- Homepage H1 → "Rubber Roof Coating South Florida — Tile, Flat & Metal Roofs" (kept old tagline as subtext)
+- `/roof-systems` → "Roof Coating Systems in South Florida — Tile, Flat & Metal Roofs"
+- `/products` → "FungalShield, SmartShield & RoofShield — Roof Coating Products for South Florida"
+- City pages template → "Roof Coating Services in {City}, FL" (dropped "Rubber" prefix for consistency)
+- County pages template → "Roof Coating Services in {County}"
+- Miami-Dade County page given special enhanced H1 (highest-competition market): "Roof Coating Services in Miami-Dade County, FL — Tile & Flat Roofs"
+- Homepage explicitly does NOT include "Davie" (business location) — geo meta tags/schema handle that; city pages own city-specific keyword targeting.
 
 ### 🟡 #4 — www vs non-www canonical consistency (ICE 7.5/10)
 Blog posts link to `theroofstore.net` (no www). All internal links, og:url, canonical tags, and sitemap entries must consistently use `https://www.theroofstore.net`. Verify server.js 301-redirects non-www → www.

@@ -95,7 +95,11 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
               <span>/</span>
               <span className="text-white">{county}</span>
             </nav>
-            <h1 className="text-5xl font-serif font-bold mb-6 text-white">Roof Coating Services in {county}</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6 text-white">
+              {slug === "miami-dade-county"
+                ? "Roof Coating Services in Miami-Dade County, FL — Tile & Flat Roofs"
+                : `Roof Coating Services in ${county}`}
+            </h1>
             <p className="text-xl text-white/80">{description}</p>
           </motion.div>
         </div>

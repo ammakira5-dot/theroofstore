@@ -19,7 +19,7 @@ const BASE_URL = "https://www.theroofstore.net";
 
 export function SEO({ title, description, canonical, ogImage, schema, geo, noindex }: SEOProps) {
   const siteTitle = "The Roof Store";
-  const fullTitle = title === siteTitle ? siteTitle : `${title} | The Roof Store`;
+  const fullTitle = title.includes(siteTitle) ? title : `${title} | ${siteTitle}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
   const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : BASE_URL;
 

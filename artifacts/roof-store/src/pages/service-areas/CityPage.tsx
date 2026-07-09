@@ -4,6 +4,7 @@ import { MapPin, Phone, ShieldCheck, Star, Waves, Paintbrush, Droplets, Wind, Wr
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 import { cityCoords } from "./coords";
+import { variantIndex, introVariants, serviceVariants, whyChooseVariants, paintVsCoatingVariants } from "./contentVariants";
 
 interface CityPageProps {
   city: string;
@@ -16,9 +17,21 @@ interface CityPageProps {
 
 const BASE = "https://www.theroofstore.net";
 
+const serviceIcons = [Waves, Paintbrush, Droplets, ShieldCheck, Wind, Wrench];
+
 export function CityPage({ city, county, countySlug, citySlug, image, blurb }: CityPageProps) {
   const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
   const coords = cityCoords[citySlug];
+
+  const introIdx = variantIndex(citySlug, introVariants.length);
+  const serviceIdx = variantIndex(`${citySlug}-svc`, serviceVariants.length);
+  const whyIdx = variantIndex(`${citySlug}-why`, whyChooseVariants.length);
+  const paintIdx = variantIndex(`${citySlug}-paint`, paintVsCoatingVariants.length);
+
+  const introParagraphs = introVariants[introIdx](city, county);
+  const services = serviceVariants[serviceIdx](city);
+  const whyChoose = whyChooseVariants[whyIdx](city);
+  const paintVsCoating = paintVsCoatingVariants[paintIdx](city);
 
   const schema = [
     {
@@ -169,15 +182,11 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                 <h2 className="text-3xl font-serif font-bold text-primary mb-4">
                   Roof Coating Services in {city}
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  The Roof Store has been serving {city}, {county} homeowners and commercial property owners for nearly 30 years. Our certified technicians provide professional rubber roof coating, tile restoration, and weatherproofing services throughout the {city} area.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  Living in {city}, FL means dealing with intense UV exposure, heavy rainfall, high humidity, and the constant threat of hurricanes. Our roof coating systems are specifically engineered for South Florida's demanding climate — protecting your home without the cost of a full roof replacement.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Most homeowners in {city} save 40–60% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.
-                </p>
+                {introParagraphs.map((p, i) => (
+                  <p key={i} className={`text-muted-foreground text-lg leading-relaxed ${i < introParagraphs.length - 1 ? "mb-4" : ""}`}>
+                    {p}
+                  </p>
+                ))}
               </motion.div>
 
               {blurb && (
@@ -194,62 +203,27 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                   Our Services in {city}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {[
-                    {
-                      icon: Waves,
-                      title: "Roof Pressure Cleaning & Soft Washing",
-                      desc: `Professional low-pressure washing and soft wash treatments remove years of algae, mold, and black streaking from tile and flat roofs in ${city}. Soft washing is a gentler, chemical-based option for older or fragile tile. Always the required first step before any painting, coating, or waterproofing.`,
-                    },
-                    {
-                      icon: Paintbrush,
-                      title: "Tile Roof Painting",
-                      desc: `Restore faded, chalky, or discolored tile roofs with professional-grade elastomeric coatings in 3,000+ colors. A popular choice for ${city} homeowners looking to refresh curb appeal and resale value.`,
-                    },
-                    {
-                      icon: Droplets,
-                      title: "Tile Roof Waterproofing",
-                      desc: `Seal every tile surface with a continuous waterproof membrane that stops leaks permanently — without the cost of a full replacement. Covers Spanish tile, flat cement tile, and clay barrel tile roofs in ${city}.`,
-                    },
-                    {
-                      icon: ShieldCheck,
-                      title: "Flat Roof Sealing",
-                      desc: `Seamless elastomeric rubber membrane applied over your existing flat deck — no seams, no weak points. Ideal for flat-roofed homes and commercial buildings throughout ${city}.`,
-                    },
-                    {
-                      icon: Wind,
-                      title: "Hurricane Protection Coating",
-                      desc: `Our Roof Shield system is the world's only TAS-106 Dade County Uplift rated coating — engineered to withstand South Florida hurricane-force winds and keep ${city} homes protected season after season.`,
-                    },
-                    {
-                      icon: Wrench,
-                      title: "Roof Repair & Maintenance",
-                      desc: `Cracked tiles, failed ridge caps, eave wood damage — we repair all problem areas before waterproofing so your ${city} roof is fully sound before any warranty system is applied.`,
-                    },
-                  ].map((service, i) => (
-                    <div key={i} className="flex items-start gap-4 p-5 bg-muted/50 rounded-xl border hover:shadow-sm transition-shadow">
-                      <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <service.icon className="h-5 w-5 text-accent" />
+                  {services.map((service, i) => {
+                    const Icon = serviceIcons[i] ?? ShieldCheck;
+                    return (
+                      <div key={i} className="flex items-start gap-4 p-5 bg-muted/50 rounded-xl border hover:shadow-sm transition-shadow">
+                        <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
+                          <Icon className="h-5 w-5 text-accent" />
+                        </div>
+                        <div>
+                          <div className="font-bold text-foreground mb-1">{service.title}</div>
+                          <div className="text-muted-foreground text-sm leading-relaxed">{service.desc}</div>
+                        </div>
                       </div>
-                      <div>
-                        <div className="font-bold text-foreground mb-1">{service.title}</div>
-                        <div className="text-muted-foreground text-sm leading-relaxed">{service.desc}</div>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Why {city} Homeowners Choose Us</h3>
                 <div className="space-y-4">
-                  {[
-                    { title: "Nearly 30 Years in South Florida", desc: "Established in 1994, we understand Florida's climate and building codes better than anyone." },
-                    { title: "Licensed & Insured", desc: "The Roof Store is a fully licensed and insured Florida roofing contractor — every job is covered." },
-                    { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
-                    { title: "Save Up to 50%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
-                    { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },
-                    { title: "Free Roof Inspection", desc: `No-cost, no-obligation assessment by a certified technician — we come to your ${city} property.` },
-                  ].map((item, i) => (
+                  {whyChoose.map((item, i) => (
                     <div key={i} className="flex items-start gap-4 p-4 bg-muted rounded-lg">
                       <Star className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                       <div>
@@ -264,17 +238,13 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <div className="bg-primary/5 border border-primary/15 rounded-xl p-6 space-y-4">
                   <h3 className="text-2xl font-serif font-bold text-primary">
-                    Looking for a Roof Painting Contractor in {city}?
+                    {paintVsCoating.heading}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Most homeowners start their search looking for a "roof painting contractor" — it's the natural first step when a roof starts fading, cracking, or showing its age. But there's a critical distinction that can save you thousands of dollars and years of headaches.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Standard roof paint</strong> coats the surface but doesn't seal it. In South Florida's climate — intense UV, heavy summer rains, high humidity, and hurricane-force winds — a painted roof typically needs re-application every 2–3 years and provides little to no real waterproofing protection. It's a cosmetic fix for a structural problem.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Our roof coating systems</strong> are a different category entirely. Applied as a liquid, they cure into a seamless, flexible rubber membrane that bonds directly to your roof surface — sealing every seam, crack, and penetration. They're hurricane wind-uplift rated, reflect UV to lower cooling costs, and are warranted for 10–15 years. The investment is comparable to repeated paint jobs, but it lasts dramatically longer and actually waterproofs your home.
-                  </p>
+                  {paintVsCoating.paragraphs.map((p, i) => (
+                    <p key={i} className="text-muted-foreground leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
                   <Link href="/roof-painting-vs-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
                     Learn more: Roof Paint vs. Roof Coating Systems →
                   </Link>

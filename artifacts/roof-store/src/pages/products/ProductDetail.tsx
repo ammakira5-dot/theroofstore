@@ -65,14 +65,16 @@ export function ProductDetail({ product }: { product: ProductData }) {
         url: "https://www.roofprotectproducts.com",
         address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
-      ...(product.price && product.shopAvailable !== false
+      ...(product.price
         ? {
             offers: {
               "@type": "Offer",
               priceCurrency: "USD",
               price: product.price.replace(/[^0-9.]/g, ""),
               availability: "https://schema.org/InStock",
-              url: product.shopUrl ?? `${BASE}/products/${product.slug}`,
+              url: product.shopAvailable !== false && product.shopUrl
+                ? product.shopUrl
+                : `${BASE}/products/${product.slug}`,
               seller: { "@type": "Organization", name: "The Roof Store", url: BASE },
             },
           }

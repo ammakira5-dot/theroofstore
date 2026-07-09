@@ -201,6 +201,126 @@ const CITY_SLUG_TO_NAME = {
   "wellington": "Wellington", "west-palm-beach": "West Palm Beach",
 };
 
+// City-level coordinates for geo meta tag server-side injection
+// Mirrors artifacts/roof-store/src/pages/service-areas/coords.ts
+const CITY_COORDS = {
+  // Broward County
+  "coconut-creek":         { lat: 26.2706, lon: -80.1786 },
+  "cooper-city":           { lat: 26.0569, lon: -80.2714 },
+  "coral-springs":         { lat: 26.2708, lon: -80.2706 },
+  "dania-beach":           { lat: 26.0526, lon: -80.1428 },
+  "davie":                 { lat: 26.0765, lon: -80.2521 },
+  "deerfield-beach":       { lat: 26.3184, lon: -80.0999 },
+  "fort-lauderdale":       { lat: 26.1224, lon: -80.1373 },
+  "hillsboro-beach":       { lat: 26.3126, lon: -80.0794 },
+  "hallandale-beach":      { lat: 25.9812, lon: -80.1483 },
+  "hollywood":             { lat: 26.0112, lon: -80.1495 },
+  "lauderdale-lakes":      { lat: 26.1673, lon: -80.2108 },
+  "lauderhill":            { lat: 26.1423, lon: -80.2136 },
+  "lauderdale-by-the-sea": { lat: 26.1915, lon: -80.0965 },
+  "lighthouse-point":      { lat: 26.2751, lon: -80.0872 },
+  "margate":               { lat: 26.2445, lon: -80.2061 },
+  "miramar":               { lat: 25.9871, lon: -80.2322 },
+  "north-lauderdale":      { lat: 26.2173, lon: -80.2247 },
+  "oakland-park":          { lat: 26.1712, lon: -80.1320 },
+  "parkland":              { lat: 26.3087, lon: -80.2425 },
+  "pembroke-park":         { lat: 25.9937, lon: -80.1706 },
+  "pembroke-pines":        { lat: 26.0126, lon: -80.2962 },
+  "plantation":            { lat: 26.1270, lon: -80.2331 },
+  "pompano-beach":         { lat: 26.2379, lon: -80.1248 },
+  "sea-ranch-lakes":       { lat: 26.2915, lon: -80.0899 },
+  "southwest-ranches":     { lat: 26.0337, lon: -80.3005 },
+  "sunrise":               { lat: 26.1504, lon: -80.2997 },
+  "tamarac":               { lat: 26.2128, lon: -80.2497 },
+  "west-park":             { lat: 25.9787, lon: -80.1853 },
+  "weston":                { lat: 26.1003, lon: -80.3997 },
+  "wilton-manors":         { lat: 26.1587, lon: -80.1337 },
+  // Miami-Dade County
+  "aventura":              { lat: 25.9565, lon: -80.1393 },
+  "bal-harbour":           { lat: 25.8936, lon: -80.1269 },
+  "bay-harbor-islands":    { lat: 25.8890, lon: -80.1264 },
+  "biscayne-park":         { lat: 25.8937, lon: -80.1686 },
+  "coral-gables":          { lat: 25.7215, lon: -80.2684 },
+  "cutler-bay":            { lat: 25.5807, lon: -80.3462 },
+  "doral":                 { lat: 25.8195, lon: -80.3369 },
+  "el-portal":             { lat: 25.8554, lon: -80.1814 },
+  "florida-city":          { lat: 25.4478, lon: -80.4789 },
+  "golden-beach":          { lat: 25.9729, lon: -80.1255 },
+  "hialeah":               { lat: 25.8576, lon: -80.2781 },
+  "hialeah-gardens":       { lat: 25.8698, lon: -80.3397 },
+  "homestead":             { lat: 25.4687, lon: -80.4776 },
+  "indian-creek-village":  { lat: 25.8851, lon: -80.1247 },
+  "islandia":              { lat: 25.3754, lon: -80.4312 },
+  "key-biscayne":          { lat: 25.6908, lon: -80.1624 },
+  "medley":                { lat: 25.8229, lon: -80.3355 },
+  "miami":                 { lat: 25.7617, lon: -80.1918 },
+  "miami-beach":           { lat: 25.7907, lon: -80.1300 },
+  "miami-gardens":         { lat: 25.9420, lon: -80.2455 },
+  "miami-lakes":           { lat: 25.9092, lon: -80.3133 },
+  "miami-shores":          { lat: 25.8665, lon: -80.1803 },
+  "miami-springs":         { lat: 25.8226, lon: -80.2928 },
+  "north-bay-village":     { lat: 25.8430, lon: -80.1558 },
+  "north-miami":           { lat: 25.8896, lon: -80.1867 },
+  "north-miami-beach":     { lat: 25.9326, lon: -80.1636 },
+  "opa-locka":             { lat: 25.9020, lon: -80.2497 },
+  "palmetto-bay":          { lat: 25.6235, lon: -80.3362 },
+  "pinecrest":             { lat: 25.6647, lon: -80.3005 },
+  "south-miami":           { lat: 25.7066, lon: -80.2936 },
+  "sunny-isles-beach":     { lat: 25.9540, lon: -80.1225 },
+  "surfside":              { lat: 25.8788, lon: -80.1258 },
+  "sweetwater":            { lat: 25.7637, lon: -80.3731 },
+  "virginia-gardens":      { lat: 25.8087, lon: -80.3031 },
+  "west-miami":            { lat: 25.7566, lon: -80.2936 },
+  // Palm Beach County
+  "atlantis":              { lat: 26.5904, lon: -80.0953 },
+  "belle-glade":           { lat: 26.6901, lon: -80.6698 },
+  "boca-raton":            { lat: 26.3683, lon: -80.1289 },
+  "boynton-beach":         { lat: 26.5354, lon: -80.0662 },
+  "briny-breezes":         { lat: 26.5282, lon: -80.0596 },
+  "cloud-lake":            { lat: 26.6738, lon: -80.1006 },
+  "delray-beach":          { lat: 26.4615, lon: -80.0728 },
+  "glen-ridge":            { lat: 26.6709, lon: -80.1012 },
+  "golfview":              { lat: 26.6726, lon: -80.0973 },
+  "greenacres":            { lat: 26.6237, lon: -80.1270 },
+  "gulf-stream":           { lat: 26.4893, lon: -80.0609 },
+  "haverhill":             { lat: 26.6995, lon: -80.1339 },
+  "highland-beach":        { lat: 26.3987, lon: -80.0660 },
+  "hypoluxo":              { lat: 26.5571, lon: -80.0548 },
+  "juno-beach":            { lat: 26.8779, lon: -80.0534 },
+  "jupiter":               { lat: 26.9342, lon: -80.0942 },
+  "jupiter-inlet-colony":  { lat: 26.9565, lon: -80.0715 },
+  "lake-clarke-shores":    { lat: 26.6423, lon: -80.0767 },
+  "lake-park":             { lat: 26.8012, lon: -80.0617 },
+  "lake-worth-beach":      { lat: 26.6148, lon: -80.0573 },
+  "lantana":               { lat: 26.5854, lon: -80.0515 },
+  "loxahatchee-groves":    { lat: 26.6590, lon: -80.3445 },
+  "manalapan":             { lat: 26.5237, lon: -80.0490 },
+  "mangonia-park":         { lat: 26.7673, lon: -80.0729 },
+  "north-palm-beach":      { lat: 26.8237, lon: -80.0868 },
+  "ocean-ridge":           { lat: 26.5176, lon: -80.0601 },
+  "pahokee":               { lat: 26.8204, lon: -80.6665 },
+  "palm-beach":            { lat: 26.7056, lon: -80.0364 },
+  "palm-beach-gardens":    { lat: 26.8234, lon: -80.1373 },
+  "palm-beach-shores":     { lat: 26.7726, lon: -80.0365 },
+  "palm-springs":          { lat: 26.6387, lon: -80.0962 },
+  "riviera-beach":         { lat: 26.7757, lon: -80.0601 },
+  "royal-palm-beach":      { lat: 26.7101, lon: -80.2211 },
+  "south-bay":             { lat: 26.6665, lon: -80.7165 },
+  "south-palm-beach":      { lat: 26.5948, lon: -80.0373 },
+  "tequesta":              { lat: 26.9687, lon: -80.1026 },
+  "wellington":            { lat: 26.6590, lon: -80.2706 },
+  "west-palm-beach":       { lat: 26.7153, lon: -80.0534 },
+  "westlake":              { lat: 26.7490, lon: -80.2564 },
+  "key-west":              { lat: 24.5551, lon: -81.7800 },
+};
+
+// County-level centroids for geo meta tag injection on county pages
+const COUNTY_COORDS = {
+  "broward-county":     { lat: 26.1901, lon: -80.3659 },
+  "miami-dade-county":  { lat: 25.7617, lon: -80.1918 },
+  "palm-beach-county":  { lat: 26.7153, lon: -80.0534 },
+};
+
 function resolvePageMeta(path) {
   // Exact match
   if (PAGE_META[path]) return { ...PAGE_META[path], canonical: path };
@@ -210,21 +330,40 @@ function resolvePageMeta(path) {
   if (cityMatch) {
     const citySlug = cityMatch[2];
     const city = CITY_SLUG_TO_NAME[citySlug] || citySlug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    const coords = CITY_COORDS[citySlug];
     return {
       title: `Roof Painting & Coating Contractor in ${city}, FL | Roof Coating Systems — The Roof Store`,
       description: `Looking for a roof coating contractor in ${city}, FL? The Roof Store offers professional roof coating systems for tile, flat, shingle, and metal roofs — waterproof, hurricane-rated, A+ BBB accredited since 1994. Free inspection: 954-210-9614.`,
       canonical: path,
+      ...(coords && {
+        geo: {
+          region: "US-FL",
+          placename: `${city}, FL`,
+          position: `${coords.lat};${coords.lon}`,
+          icbm: `${coords.lat}, ${coords.lon}`,
+        },
+      }),
     };
   }
 
   // County service-areas page: /service-areas/<county>
   const saCountyMatch = path.match(/^\/service-areas\/([^/]+)$/);
   if (saCountyMatch) {
-    const county = saCountyMatch[1].replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    const countySlug = saCountyMatch[1];
+    const county = countySlug.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+    const coords = COUNTY_COORDS[countySlug];
     return {
       title: `Roof Painting & Coating Contractor in ${county}, FL — The Roof Store`,
       description: `Professional roof coating, tile restoration, and waterproofing across ${county}, FL. Licensed & insured, A+ BBB rated since 1994. FungalShield, SmartShield & RoofShield. Free inspection: 954-210-9614.`,
       canonical: path,
+      ...(coords && {
+        geo: {
+          region: "US-FL",
+          placename: `${county}, FL`,
+          position: `${coords.lat};${coords.lon}`,
+          icbm: `${coords.lat}, ${coords.lon}`,
+        },
+      }),
     };
   }
 
@@ -546,6 +685,17 @@ app.use((req, res) => {
     /<meta name="twitter:description" content="[^"]*"/,
     `<meta name="twitter:description" content="${escaped.description}"`,
   );
+
+  // Inject geo meta tags before </head> for city/county pages
+  if (meta.geo) {
+    const geoTags = [
+      `<meta name="geo.region" content="${meta.geo.region}" />`,
+      `<meta name="geo.placename" content="${meta.geo.placename}" />`,
+      `<meta name="geo.position" content="${meta.geo.position}" />`,
+      `<meta name="ICBM" content="${meta.geo.icbm}" />`,
+    ].join("\n    ");
+    html = html.replace("</head>", `    ${geoTags}\n  </head>`);
+  }
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.send(html);

@@ -40,6 +40,27 @@ VideoObject schema already existed (ItemList of VideoObjects). Fixed the `descri
 ### ✅ #6 — Service schema on city/county service area pages — DONE July 9 2026
 Added standalone `Service` schema (serviceType, provider, areaServed, hasOfferCatalog) to both CityPage.tsx and CountyPage.tsx, alongside the existing RoofingContractor schema. Previously services were only nested inside RoofingContractor's offer catalog with no explicit Service entity tied to areaServed — now each city/county page has its own clear Service schema for local SEO.
 
+### ✅ #7 — CRITICAL: homepage shipped with zero title/meta/OG tags in production — DONE July 9 2026
+Self-introduced regression from fix #1: `server.js` mounted `sirv` (static file server) before the meta-injection fallback. Since `dist/public/index.html` is a real file, sirv served it directly for `/` — completely bypassing meta injection, which only runs for paths sirv can't resolve. Fixed by gating sirv to only handle paths with a file extension (real assets); all extensionless page routes (including `/`) now always go through the meta-injection middleware. Verified locally: homepage has correct `<title>`, single `og:title`, and assets still 200.
+
+### ✅ #8 — Sitemap missing 4 real pages (ICE 6/10) — DONE July 9 2026
+`/silicone-vs-elastomeric-roof-coating`, `/roof-painting-vs-coating`, `/roof-replacement-alternative-florida`, `/roof-life-certification` all exist as real routes/pages but were never added to `scripts/src/generate-sitemap.ts`'s `staticRoutes` list. Added all 4; sitemap regenerated (now 137 URLs, was 133).
+
+### ✅ #9 — reviewCount hardcoded "19", didn't match actual review count — DONE July 9 2026
+Actual reviews on `/reviews` page = 10 (1 featured + 9 listed). Fixed hardcoded `"19"` → `"10"` in Home.tsx, ProductDetail.tsx, and index.html schema to match reality (Reviews.tsx already computed it dynamically via `allReviews.length`).
+
+### ⏳ #10 — Trim `<title>` tags over ~60-65 chars sitewide (ICE 5/10) — NOT DONE
+Many pages (Home, Videos, Products, Blog, RoofSystems, Faq, About, RoofReplacementAlternative, etc.) have titles >60 chars, which Google truncates in SERPs. Needs a page-by-page pass to shorten while keeping primary keyword + brand. Not done this session — lower priority, high page count, needs care to preserve keyword targeting per page.
+
+### ⏳ #11 — Add BBB/Yelp/Houzz to `sameAs` schema array (ICE 6/10) — BLOCKED, needs owner input
+`index.html` LocalBusiness schema `sameAs` only has the domain + 2 Google Maps links. Cannot add BBB/Yelp/Houzz profile URLs without the user providing the real links — fabricating them would be worse than leaving them out (broken/invalid schema).
+
+### ⏳ #12 — RoofShield product schema image mismatch (audit claim, ICE n/a) — UNVERIFIED / likely stale
+Audit claimed `smartshield-pail.png` used on RoofShield page. Checked `products/data.ts` — no such mismatch found in current source. Likely already fixed or audit was stale. Needs one more live-page check to fully close out.
+
+### ⏳ #13 — Homepage geo-keyword H2, absolute OG image URLs on city pages, Review schema snippets — NOT YET TRIAGED
+Remaining lower-priority items from audit #2 (add geo keyword to a homepage H2, confirm city-page `og:image` values are absolute URLs not relative, add explicit Review-type schema snippets). Not verified/actioned this session.
+
 ---
 
 ## Owner Must Do (not in this codebase)

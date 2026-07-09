@@ -635,12 +635,20 @@ app.use((req, res, next) => {
 
 // ── Static assets (JS, CSS, images, fonts, etc.) ─────────────────────────
 // Serve real files first; don't fall through to SPA for asset requests.
-app.use(
-  sirv(staticDir, {
-    single: false,
-    etag: true,
-  }),
-);
+// IMPORTANT: sirv will serve a matching index.html directly for "/" (and any
+// other extensionless path with a matching static file), which would bypass
+// the per-page meta injection below and ship pages with no title/meta tags.
+// So we only let sirv handle actual asset requests (paths with a file
+// extension) and always route extensionless page routes to the SPA fallback.
+const staticAssets = sirv(staticDir, {
+  single: false,
+  etag: true,
+});
+app.use((req, res, next) => {
+  const hasExtension = /\.[a-zA-Z0-9]+$/.test(req.path) && req.path !== "/index.html";
+  if (!hasExtension) return next();
+  return staticAssets(req, res, next);
+});
 
 // ── SPA fallback with per-page meta injection ─────────────────────────────
 // For every HTML request (page navigation), inject the correct title,

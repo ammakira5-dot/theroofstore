@@ -44,6 +44,10 @@ const staticRoutes: UrlEntry[] = [
   { loc: "/factory", changefreq: "yearly", priority: "0.6", lastmod: TODAY },
   { loc: "/shop", changefreq: "monthly", priority: "0.6", lastmod: TODAY },
   { loc: "/contact", changefreq: "yearly", priority: "0.8", lastmod: TODAY },
+  { loc: "/silicone-vs-elastomeric-roof-coating", changefreq: "monthly", priority: "0.7", lastmod: TODAY },
+  { loc: "/roof-painting-vs-coating", changefreq: "monthly", priority: "0.7", lastmod: TODAY },
+  { loc: "/roof-replacement-alternative-florida", changefreq: "monthly", priority: "0.7", lastmod: TODAY },
+  { loc: "/roof-life-certification", changefreq: "monthly", priority: "0.7", lastmod: TODAY },
 ];
 
 const countyRoutes: UrlEntry[] = counties.flatMap(

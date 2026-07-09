@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit — theroofstore.net</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.65; }
+  .header { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%); color: #fff; padding: 48px 40px 36px; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .header .sub { font-size: 14px; opacity: 0.82; }
+  .header .meta { margin-top: 18px; display: flex; gap: 24px; flex-wrap: wrap; }
+  .badge { background: rgba(255,255,255,0.18); border-radius: 6px; padding: 6px 14px; font-size: 13px; font-weight: 600; }
+  .badge.green { background: #16a34a; }
+  .badge.amber { background: #d97706; }
+  .badge.red { background: #dc2626; }
+  .container { max-width: 1020px; margin: 0 auto; padding: 36px 24px 60px; }
+  .score-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .score-card { background: #fff; border-radius: 10px; padding: 20px 22px; box-shadow: 0 1px 4px rgba(0,0,0,.08); border-left: 4px solid #e2e8f0; }
+  .score-card.good { border-left-color: #16a34a; }
+  .score-card.warn { border-left-color: #d97706; }
+  .score-card.bad { border-left-color: #dc2626; }
+  .score-card .label { font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing: .05em; font-weight: 600; margin-bottom: 6px; }
+  .score-card .val { font-size: 26px; font-weight: 800; color: #1e293b; }
+  .score-card .sub { font-size: 12px; color: #64748b; margin-top: 2px; }
+  section { margin-bottom: 40px; }
+  h2 { font-size: 19px; font-weight: 700; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 18px; }
+  h3 { font-size: 15px; font-weight: 700; color: #334155; margin-bottom: 8px; margin-top: 18px; }
+  p { margin-bottom: 10px; font-size: 14.5px; }
+  ul, ol { padding-left: 22px; margin-bottom: 10px; }
+  li { font-size: 14.5px; margin-bottom: 5px; }
+  .issue-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.07); margin-top: 12px; }
+  .issue-table th { background: #f1f5f9; text-align: left; padding: 10px 14px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: #475569; font-weight: 700; }
+  .issue-table td { padding: 10px 14px; font-size: 13.5px; border-top: 1px solid #f1f5f9; vertical-align: top; }
+  .tag { display: inline-block; border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  .tag.p1 { background: #fef2f2; color: #dc2626; }
+  .tag.p2 { background: #fffbeb; color: #b45309; }
+  .tag.p3 { background: #f0fdf4; color: #16a34a; }
+  .tag.ok { background: #f0fdf4; color: #16a34a; }
+  .tag.warn { background: #fffbeb; color: #b45309; }
+  .tag.fail { background: #fef2f2; color: #dc2626; }
+  .code { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 10px 14px; font-family: monospace; font-size: 13px; margin: 8px 0; white-space: pre-wrap; word-break: break-all; }
+  .insight-box { background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 6px; padding: 14px 18px; margin: 12px 0; font-size: 14px; }
+  .warn-box { background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 6px; padding: 14px 18px; margin: 12px 0; font-size: 14px; }
+  .success-box { background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 6px; padding: 14px 18px; margin: 12px 0; font-size: 14px; }
+  .ice-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.07); margin-top: 12px; }
+  .ice-table th { background: #1e3a8a; color: #fff; text-align: left; padding: 10px 14px; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  .ice-table td { padding: 10px 14px; font-size: 13.5px; border-top: 1px solid #f1f5f9; }
+  .ice-table tr:nth-child(even) td { background: #f8fafc; }
+  .score-num { font-weight: 800; font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>SEO Audit Report — theroofstore.net</h1>
+  <div class="sub">Strategic eCommerce SEO Performance & Operational Framework · Audit Date: July 9, 2026</div>
+  <div class="meta">
+    <span class="badge amber">Overall: 61 / 100</span>
+    <span class="badge warn">Technical: 58</span>
+    <span class="badge warn">On-Page: 62</span>
+    <span class="badge green">Schema: 78</span>
+    <span class="badge red">Content Depth: 52</span>
+    <span class="badge amber">Local SEO: 68</span>
+  </div>
+</div>
+<div class="container"><!-- SECTION 1: EXECUTIVE SUMMARY -->
+<section>
+  <h2>1. Executive Summary</h2>
+  <div class="score-row">
+    <div class="score-card warn">
+      <div class="label">Overall SEO Score</div>
+      <div class="val">61<span style="font-size:16px;color:#64748b">/100</span></div>
+      <div class="sub">Solid foundations, significant gaps</div>
+    </div>
+    <div class="score-card warn">
+      <div class="label">Crawlability</div>
+      <div class="val">✓</div>
+      <div class="sub">Robots.txt & sitemap healthy</div>
+    </div>
+    <div class="score-card bad">
+      <div class="label">Duplicate Meta Tags</div>
+      <div class="val">Critical</div>
+      <div class="sub">Double og:/twitter: on inner pages</div>
+    </div>
+    <div class="score-card bad">
+      <div class="label">Legacy URL Conflict</div>
+      <div class="val">Active</div>
+      <div class="sub">/fl/*.php pages indexed</div>
+    </div>
+    <div class="score-card warn">
+      <div class="label">Title Tag Length</div>
+      <div class="val">Bloated</div>
+      <div class="sub">Homepage: ~80 chars; inner: 90+</div>
+    </div>
+    <div class="score-card good">
+      <div class="label">Structured Data</div>
+      <div class="val">Strong</div>
+      <div class="sub">RoofingContractor, Product, FAQ, BreadcrumbList</div>
+    </div>
+  </div>
+  <p>theroofstore.net has a technically ambitious build — local SEO schema, a deep city/county service-area hierarchy, and product-level structured data are genuine assets. The site is indexable and the sitemap covers all key pages. However, several high-impact issues are suppressing organic performance: duplicate meta/OG tag injection on every inner page (a rendering bug), bloated title tags, legacy <code>/fl/*.php</code> pages still being indexed in parallel with the new URL structure, a thin H-tag hierarchy on the homepage, and a complete absence of review/blog content that would support E-E-A-T and long-tail capture. Addressing the duplicate-tag bug and title-tag length alone is expected to improve CTR materially.</p>
+  <div class="warn-box"><strong>Revenue risk:</strong> The legacy <code>/fl/</code> pages (still appearing in Google's index) are competing directly with the new clean-URL service-area pages for the same local keywords. This causes keyword cannibalization that dilutes rankings for both URL sets.</div>
+</section>
+
+<!-- SECTION 2: MARKET & BUYER CONTEXT -->
+<section>
+  <h2>2. Market &amp; Buyer Context</h2>
+  <h3>Search Intent Lifecycle</h3>
+  <p>The South Florida rubber roof coating market is heavily intent-driven. Buyers move through three stages:</p>
+  <ul>
+    <li><strong>Informational (TOFU):</strong> "How long does roof coating last in Florida?" "Silicone vs elastomeric roof coating" — the FAQ and comparison pages target this well, but there is no blog archive to capture long-tail informational traffic at scale.</li>
+    <li><strong>Category (MOFU):</strong> "Roof coating contractor Broward County" / "tile roof waterproofing Fort Lauderdale" — service-area pages cover this, but content depth per city page is low (~960 words), and many smaller-city pages likely have near-identical content, risking thin-content penalties.</li>
+    <li><strong>Transactional (BOFU):</strong> "Free roof inspection South Florida" — homepage and product pages handle this with strong CTAs.</li>
+  </ul>
+  <h3>Buyer Segmentation Gaps</h3>
+  <ul>
+    <li>No dedicated page for insurance-restoration buyers searching "Citizens Insurance roof certification Florida" — a high-converting segment the site mentions but doesn't fully capture with a dedicated landing page.</li>
+    <li>Commercial roofing (<code>/commercial-roofs</code>) has a sitemap entry but no specific audit data; likely under-optimized for commercial property managers, who are a distinct buyer segment.</li>
+  </ul>
+  <div class="insight-box"><strong>GEO / AI Visibility:</strong> The site's FAQ pages and the structured data are good inputs for Google AI Overviews. However, no explicit author attribution, no "About the expert" schema, and no linked credentials (BBB, TAS-106 certification documents) are present in machine-readable form — limiting how confidently AI systems will cite the site as an authoritative source.</div>
+</section>
+
+<!-- SECTION 3: eCOMMERCE ASSET DIAGNOSIS -->
+<section>
+  <h2>3. eCommerce Asset Diagnosis — Technical &amp; Content Audit</h2>
+
+  <h3>3a. Title Tag Issues</h3>
+  <table class="issue-table">
+    <thead><tr><th>Page</th><th>Current Title</th><th>Length</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Homepage</td>
+        <td>The Roof Store | Rubber Roof Coating Florida — Fungal Shield, Smart Shield &amp; Roof Shield | The Roof Store</td>
+        <td style="color:#dc2626;font-weight:700">~100 chars</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>/roof-systems</td>
+        <td>Roof Painting &amp; Roof Coating Systems Florida — FungalShield, SmartShield &amp; RoofShield | The Roof Store | The Roof Store</td>
+        <td style="color:#dc2626;font-weight:700">~116 chars</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>/products/roofshield</td>
+        <td>Roof Shield (RP3) — The Original Liquid Applied Rubber Roof Shield System | The Roof Store Florida | The Roof Store</td>
+        <td style="color:#dc2626;font-weight:700">~113 chars</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>/service-areas/.../fort-lauderdale</td>
+        <td>Roof Painting Contractor in Fort Lauderdale, FL | Roof Coating Systems — The Roof Store | The Roof Store</td>
+        <td style="color:#dc2626;font-weight:700">~103 chars</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin-top:10px">Google truncates titles above ~60 characters. All audited pages are 40–55 characters over the limit. The " | The Roof Store" suffix appears to be appended <em>twice</em> (once in the page template, once by the CMS), compounding the problem. This causes the brand name to be cut off in SERPs and wastes crawl intent signals on redundant text.</p>
+  <div class="code">✗ Current: "Roof Shield (RP3) — The Original Liquid Applied Rubber Roof Shield System | The Roof Store Florida | The Roof Store"
+✓ Target:  "Roof Shield (RP3) — TAS-106 Rated Hurricane Roof Coating | The Roof Store"  (~72 chars)</div>
+
+  <h3>3b. Duplicate OG / Twitter Meta Tags (Critical Bug)</h3>
+  <p>On every inner page audited (/roof-systems, /products/roofshield, /service-areas/…), the <code>og:title</code>, <code>og:description</code>, <code>og:url</code>, <code>og:type</code>, <code>og:site_name</code>, <code>twitter:title</code>, and <code>twitter:description</code> tags are injected <strong>twice</strong> — once with the correct page-specific value and once with the global site-level value. This happens because the CMS renders a global OG block in the <code>&lt;head&gt;</code> template plus a page-level OG block in the page component, and both fire. Google and social crawlers pick up whichever appears last, which is often the wrong value.</p>
+  <div class="code">Example — /roof-systems:
+og:title (occurrence 1): "Roof Painting &amp; Roof Coating Systems Florida — ... | The Roof Store"
+og:title (occurrence 2): "Roof Painting &amp; Roof Coating Systems Florida — ... | The Roof Store | The Roof Store"
+→ Two different values. The second (bloated) version is the one social platforms read.</div>
+  <div class="warn-box"><strong>Impact:</strong> When pages are shared on Facebook, LinkedIn, WhatsApp, or Slack, the wrong title/description may display, reducing click-through. It also confuses structured data parsers and may contribute to Google demoting the click-worthy SERP title.</div>
+
+  <h3>3c. Legacy /fl/*.php URL Conflict</h3>
+  <p>Google's index still contains old URLs in the format <code>https://www.theroofstore.net/fl/broward-county.php</code>, <code>/fl/Fort-Lauderdale-roof-painting.php</code>, etc. These pages have different copy, older branding ("Premium Liquid 100% Acrylic Applied Rubber Coatings"), and no structured data. They appear in search results alongside the new <code>/service-areas/</code> pages, creating keyword cannibalization.</p>
+  <ul>
+    <li>The legacy pages are <strong>not</strong> in the sitemap — a positive sign.</li>
+    <li>However, they are crawlable (robots.txt allows all) and still being indexed by Google.</li>
+    <li>No canonical tags or redirects appear to be pointing the legacy URLs to the new structure.</li>
+  </ul>
+  <div class="warn-box"><strong>Fix required:</strong> 301-redirect all <code>/fl/*.php</code> URLs to their corresponding <code>/service-areas/[county]/[city]</code> equivalents, or at minimum add <code>&lt;meta name="robots" content="noindex, follow"&gt;</code> to each legacy page.</div>
+
+  <h3>3d. Homepage H1 / Heading Structure</h3>
+  <div class="code">H1: "Rubber Roof Coating South Florida  Tile, Flat &amp; Metal Roofs"  (double-space, no comma)
+H2: "Roof coating is just a bandaid." (myth-bust section)
+H2: "Our Premium Services"
+H2: "Manufacturer. Contractor. Direct Seller."
+H2: "Additional Roof Life Certification"
+H2: "Common Questions"
+H3s: (feature callouts, not topically structured)</div>
+  <ul>
+    <li>The H1 contains a double space between the location and roof-type qualifier — this appears as a rendering artifact and should be a single space or em dash for clean display.</li>
+    <li>The first H2 is a myth-bust headline ("Roof coating is just a bandaid.") which makes for compelling copywriting but is a weak keyword signal. Ideally the first H2 after the hero carries a keyword-rich subhead like "Florida's Only TAS-106 Certified Roof Coating System."</li>
+    <li>No H2 or H3 contains the geo-modifier "South Florida" or county names — missed reinforcement for local intent.</li>
+  </ul>
+
+  <h3>3e. Meta Description Assessment</h3>
+  <table class="issue-table">
+    <thead><tr><th>Page</th><th>Length</th><th>Status</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Homepage</td>
+        <td>158 chars</td>
+        <td><span class="tag ok">OK</span></td>
+        <td>Well-written, includes social proof + CTA</td>
+      </tr>
+      <tr>
+        <td>/roof-systems</td>
+        <td>338 chars (combined duplicate)</td>
+        <td><span class="tag fail">FAIL</span></td>
+        <td>Two meta descriptions merged — same double-injection bug as OG tags</td>
+      </tr>
+      <tr>
+        <td>/products/roofshield</td>
+        <td>420 chars (combined duplicate)</td>
+        <td><span class="tag fail">FAIL</span></td>
+        <td>Double injection — very long, Google will rewrite</td>
+      </tr>
+      <tr>
+        <td>/service-areas/.../fort-lauderdale</td>
+        <td>366 chars (combined duplicate)</td>
+        <td><span class="tag fail">FAIL</span></td>
+        <td>Double injection on all city pages</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>3f. Image Alt Text</h3>
+  <p>The homepage hero image alt text is strong: <em>"Florida home with liquid rubber roof coating applied by The Roof Store — weatherproof and hurricane-rated."</em> The /roof-systems and /products/roofshield pages also have descriptive alt text on project images. This is a genuine strength.</p>
+  <p>However, the OG image on the Fort Lauderdale service area page uses a relative URL (<code>/api/storage/public-objects/cities/1484199383121-dfa3c30608cd.jpg</code>) rather than an absolute URL — some social crawlers and schema validators will fail to resolve this, preventing rich previews from loading.</p>
+
+  <h3>3g. Structured Data — Strengths &amp; Gaps</h3>
+  <div class="success-box">
+    <strong>What's working well:</strong> The site has a comprehensive schema implementation — <code>RoofingContractor</code> with address/geo/aggregateRating on the homepage, <code>Product</code> with price/SKU/AggregateRating on product pages, <code>FAQPage</code> on the homepage and product pages, <code>BreadcrumbList</code> on all inner pages, and <code>Service</code> + city-level <code>areaServed</code> on service area pages. This is well above average for a local contractor site.
+  </div>
+  <p><strong>Gaps identified:</strong></p>
+  <ul>
+    <li><strong>Review count is static at 19</strong> in the schema. If the real review count (e.g., Google My Business) is higher, this undersells social proof to AI systems and rich result displays.</li>
+    <li><strong>No <code>Review</code> individual objects</strong> — adding 2–3 verbatim review snippets to the schema on the homepage and key product pages would strengthen E-E-A-T signals.</li>
+    <li><strong>The <code>sameAs</code> array</strong> on the homepage schema contains two Google Maps links (<code>maps.app.goo.gl</code> and <code>share.google/</code>) and the site's own URL, but no BBB listing URL, Yelp, Houzz, or other authoritative directory links that Google uses to validate NAP (Name/Address/Phone) consistency.</li>
+    <li><strong>The <code>Product</code> schema on /products/roofshield</strong> references an image pointing to <code>/images/products/smartshield-pail.png</code> — this appears to be the wrong product image (SmartShield pail on a RoofShield page).</li>
+  </ul>
+
+  <h3>3h. Robots.txt &amp; Sitemap</h3>
+  <div class="success-box">
+    Robots.txt is clean: <code>User-agent: * / Allow: /</code> with a correct sitemap pointer to <code>https://www.theroofstore.net/sitemap.xml</code>. Sitemap covers homepage, all product pages, service-area hierarchy (county + city level), FAQ, blog, shop, contact — comprehensive coverage.
+  </div>
+  <p><strong>One concern:</strong> The sitemap does not include the <code>/roof-replacement-alternative-florida</code>, <code>/silicone-vs-elastomeric-roof-coating</code>, <code>/roof-painting-vs-coating</code>, or <code>/roof-life-certification</code> comparison/informational pages that are linked from within the site's body copy. These could be important long-tail ranking pages that are missing from the sitemap index.</p>
+
+  <h3>3i. Domain &amp; Canonical Health</h3>
+  <ul>
+    <li>The crawl accessed the site via <code>theroofstore.net</code> (no www) and was served a 200 response, but the canonical on the homepage points to <code>https://www.theroofstore.net/</code> (with www). This indicates a likely redirect from non-www to www, which is correct — but should be verified as a permanent 301 and not a 302.</li>
+    <li>All audited pages have correct self-referencing canonicals.</li>
+    <li>No <code>hreflang</code> tags present — acceptable for a US-only English site, no action needed.</li>
+  </ul>
+</section><!-- SECTION 4: COMPETITIVE LANDSCAPE -->
+<section>
+  <h2>4. Competitive Landscape &amp; Strategic Analysis</h2>
+  <h3>SWOT</h3>
+  <table class="issue-table">
+    <thead><tr><th style="width:50%">Strengths</th><th>Weaknesses</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li>Unique TAS-106 certification claim — no competitor can replicate this keyword angle</li>
+            <li>30-year history + A+ BBB — strong E-E-A-T signal</li>
+            <li>Deep city-level service area hierarchy (100+ pages) with proper schema</li>
+            <li>Strong FAQ/comparison content that directly targets buyer objections</li>
+            <li>Proprietary product names (Fungal Shield, Smart Shield, Roof Shield) — potential branded search capture</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Duplicate meta/OG tag injection degrading SERP and social display on every inner page</li>
+            <li>Bloated title tags on all pages — estimated 20–35% CTR reduction from truncation</li>
+            <li>Legacy /fl/*.php pages competing with new service-area pages</li>
+            <li>No blog content — zero long-tail informational article ranking</li>
+            <li>Static review count (19) in schema vs. likely higher actual count</li>
+            <li>Product schema image mismatch (SmartShield image on RoofShield page)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Opportunities</strong>
+          <ul>
+            <li>"Roof life certification Florida" / "Citizens Insurance roof extension" — dedicated landing page with high commercial intent, near zero competition</li>
+            <li>Blog targeting: "How to pass roof inspection Florida 2025", "How long does elastomeric roof coating last" — zero-competition informational queries</li>
+            <li>AI Overview capture: The FAQ schema is already in place; adding author bio + credential schema would push the site into AI citation territory</li>
+            <li>GBP (Google Business Profile) review schema sync — if GBP has 100+ reviews, the schema showing 19 is underselling the brand</li>
+          </ul>
+        </td>
+        <td>
+          <strong>Threats</strong>
+          <ul>
+            <li>Legacy /fl/ URLs eroding new URL authority for local queries</li>
+            <li>Thin city-level pages (many sub-1,000 words with near-identical content structure) may trigger thin-content signals if Google's algorithm treats them as near-duplicates</li>
+            <li>No backlink profile data available in this audit — if DA/DR is low, the strong on-site content will underperform</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- SECTION 5: CONTENT DEPTH & GEO -->
+<section>
+  <h2>5. Content Depth, E-E-A-T &amp; GEO Readiness</h2>
+  <h3>Blog / Long-Form Content</h3>
+  <p>The sitemap includes <code>/blog</code> but the blog page was not crawled in depth. Given that the sitemap shows only 1 URL at the blog root (not individual post URLs), the blog likely has zero or very few published posts. This is a significant gap:</p>
+  <ul>
+    <li>Competitors who publish "Florida roof coating guide", "When to coat vs replace a tile roof in South Florida", etc., capture the entire informational top-of-funnel.</li>
+    <li>These posts would also feed the FAQ and service-area pages with internal links, improving crawl depth and topical authority.</li>
+  </ul>
+
+  <h3>Service Area Page Thin-Content Risk</h3>
+  <p>The site has 100+ city-level pages. From the Fort Lauderdale sample (~959 words), the structure is: hero → services list (copy shared across cities, only city name differs) → "About [City]" section (~100 words unique) → "Why choose us" (identical across cities) → CTA form. Pages with only the city name swapped and fewer than 400 unique words risk being filtered from results when Google detects near-duplicate content at scale.</p>
+  <div class="warn-box"><strong>Recommendation:</strong> For the 10–15 highest-value cities (Fort Lauderdale, Miami, Boca Raton, Coral Springs, etc.), add 200–400 words of genuinely city-specific content: local building code context, common local roof types, hurricane history in that municipality, specific neighborhood references. This differentiates the top-value pages from the long tail.</div>
+
+  <h3>E-E-A-T Signals</h3>
+  <ul>
+    <li><strong>Experience:</strong> "30 years experience", "installed 1994", hurricane case studies mentioned in copy — good signals in text, but no case study page with structured data.</li>
+    <li><strong>Expertise:</strong> No author bylines, no staff/team page visible, no named technician credentials. Adding a simple "Meet our team" section with schema would help.</li>
+    <li><strong>Authoritativeness:</strong> TAS-106 certification is a powerful uniqueness signal, but no link to the actual Dade County test document is provided — linking to the certification PDF or the Miami-Dade NOA portal would create a machine-verifiable authority chain.</li>
+    <li><strong>Trustworthiness:</strong> A+ BBB is mentioned but no BBB badge/link in schema. Adding the BBB profile URL to <code>sameAs</code> in the schema and displaying a live badge on the page would reinforce this.</li>
+  </ul>
+
+  <h3>GEO / AI Search Visibility</h3>
+  <p>The FAQPage schema on the homepage and product pages is the most direct path to Google AI Overview citations. Current status:</p>
+  <ul>
+    <li>6 well-structured FAQ items on the homepage — likely to be picked up for "how does roof coating compare to replacement" and "will rubber roof coating survive a hurricane" queries.</li>
+    <li>8 FAQ items on the Roof Shield product page — good for product-specific AI queries.</li>
+    <li>The <code>/silicone-vs-elastomeric-roof-coating</code> comparison page linked from the FAQ is not in the sitemap — if this page exists and is well-written, adding it to the sitemap and giving it FAQPage schema would make it a strong AI Overview candidate.</li>
+  </ul>
+</section>
+
+<!-- SECTION 6: ACTION PLAN -->
+<section>
+  <h2>6. Action Plan &amp; ICE Roadmap</h2>
+  <table class="ice-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Action</th>
+        <th>Category</th>
+        <th>Impact</th>
+        <th>Confidence</th>
+        <th>Ease</th>
+        <th>ICE</th>
+        <th>Priority</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Fix duplicate OG/Twitter meta tag injection — remove global OG block from base template, leave page-level block only</td>
+        <td>Technical</td>
+        <td class="score-num">9</td>
+        <td class="score-num">9</td>
+        <td class="score-num">7</td>
+        <td class="score-num">567</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Trim all title tags to ≤65 characters; remove duplicate " | The Roof Store" suffix</td>
+        <td>On-Page</td>
+        <td class="score-num">8</td>
+        <td class="score-num">9</td>
+        <td class="score-num">8</td>
+        <td class="score-num">576</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>301-redirect all /fl/*.php legacy URLs to corresponding /service-areas/[county]/[city] equivalents</td>
+        <td>Technical</td>
+        <td class="score-num">8</td>
+        <td class="score-num">8</td>
+        <td class="score-num">6</td>
+        <td class="score-num">384</td>
+        <td><span class="tag p1">P1</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Fix OG image on city pages to absolute URL (prepend https://www.theroofstore.net to /api/storage/... paths)</td>
+        <td>Technical</td>
+        <td class="score-num">6</td>
+        <td class="score-num">9</td>
+        <td class="score-num">9</td>
+        <td class="score-num">486</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Fix Product schema on /products/roofshield — change image from smartshield-pail.png to roof-shield-system.jpg</td>
+        <td>Schema</td>
+        <td class="score-num">6</td>
+        <td class="score-num">9</td>
+        <td class="score-num">9</td>
+        <td class="score-num">486</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Add BBB profile URL, Yelp, and Houzz to sameAs array in RoofingContractor schema</td>
+        <td>Schema</td>
+        <td class="score-num">6</td>
+        <td class="score-num">8</td>
+        <td class="score-num">8</td>
+        <td class="score-num">384</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Add informational pages (/silicone-vs-elastomeric, /roof-painting-vs-coating, /roof-replacement-alternative-florida, /roof-life-certification) to sitemap.xml</td>
+        <td>Technical</td>
+        <td class="score-num">7</td>
+        <td class="score-num">8</td>
+        <td class="score-num">9</td>
+        <td class="score-num">504</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Add H2 with geo-keyword after hero: "South Florida's Only TAS-106 Certified Roof Coating System" on homepage</td>
+        <td>On-Page</td>
+        <td class="score-num">6</td>
+        <td class="score-num">7</td>
+        <td class="score-num">8</td>
+        <td class="score-num">336</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Enrich top 10 city service area pages with 250–400 words of genuinely city-specific content to differentiate from thin-content risk</td>
+        <td>Content</td>
+        <td class="score-num">7</td>
+        <td class="score-num">7</td>
+        <td class="score-num">5</td>
+        <td class="score-num">245</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Update aggregateRating reviewCount in schema to match actual Google/BBB review count (currently hardcoded at 19)</td>
+        <td>Schema</td>
+        <td class="score-num">5</td>
+        <td class="score-num">8</td>
+        <td class="score-num">8</td>
+        <td class="score-num">320</td>
+        <td><span class="tag p2">P2</span></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Publish 4–6 blog posts targeting high-intent informational queries: "How long does roof coating last Florida", "Roof life certification Citizens Insurance", "Silicone vs elastomeric flat roof Florida"</td>
+        <td>Content</td>
+        <td class="score-num">8</td>
+        <td class="score-num">7</td>
+        <td class="score-num">4</td>
+        <td class="score-num">224</td>
+        <td><span class="tag p3">P3</span></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Create dedicated /roof-life-certification landing page with Service schema targeting "Citizens Insurance roof extension Florida" — high commercial intent, low competition</td>
+        <td>Content</td>
+        <td class="score-num">8</td>
+        <td class="score-num">7</td>
+        <td class="score-num">5</td>
+        <td class="score-num">280</td>
+        <td><span class="tag p3">P3</span></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Add individual Review schema snippets (2–3 verbatim reviews) to homepage and RoofShield page for AI Overview citation strength</td>
+        <td>Schema / GEO</td>
+        <td class="score-num">6</td>
+        <td class="score-num">7</td>
+        <td class="score-num">7</td>
+        <td class="score-num">294</td>
+        <td><span class="tag p3">P3</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Sprint Recommendation</h3>
+  <p><strong>Week 1 (Dev sprint):</strong> Items #1, #2, #4, #5 — all are template/code fixes requiring under 2 hours of developer time each. Expected outcome: correct social sharing on all pages, cleaner SERP titles with improved CTR.</p>
+  <p><strong>Week 2–3:</strong> Item #3 (legacy URL redirects — requires mapping ~50–100 /fl/ URLs) + Item #7 (sitemap additions). These consolidate link equity to the new URL structure.</p>
+  <p><strong>Month 2:</strong> Items #6, #8, #9, #10 — content and schema enrichment pass.</p>
+  <p><strong>Ongoing:</strong> Items #11, #12, #13 — content strategy and GEO optimization.</p>
+</section>
+
+</div>
+<div style="background:#1e3a8a;color:#fff;padding:24px 40px;font-size:13px;text-align:center;margin-top:40px">
+  Generated by StoreClaw SEO Advisor · theroofstore.net · July 9, 2026
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a18810882ddf9838',t:'MTc4MzYwNzgyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -645,57 +645,31 @@ app.use((req, res) => {
 
   let html = getIndexHtml();
 
-  // Replace title
-  html = html.replace(
-    /<title>[^<]*<\/title>/,
+  // Build the full meta block and insert it before </head> (single injection, no duplicates)
+  const metaTags = [
     `<title>${escaped.title}</title>`,
-  );
-  // Replace meta description
-  html = html.replace(
-    /<meta name="description" content="[^"]*"/,
-    `<meta name="description" content="${escaped.description}"`,
-  );
-  // Replace canonical
-  html = html.replace(
-    /<link rel="canonical" href="[^"]*"/,
-    `<link rel="canonical" href="${escaped.canonicalUrl}"`,
-  );
-  // Replace og:title
-  html = html.replace(
-    /<meta property="og:title" content="[^"]*"/,
-    `<meta property="og:title" content="${escaped.title}"`,
-  );
-  // Replace og:description
-  html = html.replace(
-    /<meta property="og:description" content="[^"]*"/,
-    `<meta property="og:description" content="${escaped.description}"`,
-  );
-  // Replace og:url
-  html = html.replace(
-    /<meta property="og:url" content="[^"]*"/,
-    `<meta property="og:url" content="${escaped.canonicalUrl}"`,
-  );
-  // Replace twitter:title
-  html = html.replace(
-    /<meta name="twitter:title" content="[^"]*"/,
-    `<meta name="twitter:title" content="${escaped.title}"`,
-  );
-  // Replace twitter:description
-  html = html.replace(
-    /<meta name="twitter:description" content="[^"]*"/,
-    `<meta name="twitter:description" content="${escaped.description}"`,
-  );
+    `<meta name="description" content="${escaped.description}" />`,
+    `<link rel="canonical" href="${escaped.canonicalUrl}" />`,
+    `<meta property="og:type" content="website" />`,
+    `<meta property="og:site_name" content="The Roof Store" />`,
+    `<meta property="og:title" content="${escaped.title}" />`,
+    `<meta property="og:description" content="${escaped.description}" />`,
+    `<meta property="og:url" content="${escaped.canonicalUrl}" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:title" content="${escaped.title}" />`,
+    `<meta name="twitter:description" content="${escaped.description}" />`,
+  ];
 
-  // Inject geo meta tags before </head> for city/county pages
   if (meta.geo) {
-    const geoTags = [
+    metaTags.push(
       `<meta name="geo.region" content="${meta.geo.region}" />`,
       `<meta name="geo.placename" content="${meta.geo.placename}" />`,
       `<meta name="geo.position" content="${meta.geo.position}" />`,
       `<meta name="ICBM" content="${meta.geo.icbm}" />`,
-    ].join("\n    ");
-    html = html.replace("</head>", `    ${geoTags}\n  </head>`);
+    );
   }
+
+  html = html.replace("</head>", `    ${metaTags.join("\n    ")}\n  </head>`);
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.send(html);

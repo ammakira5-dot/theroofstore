@@ -124,4 +124,9 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ✅ Content depth verified (audit flagged as "not sampled") — every one of the 111 city pages has a genuine unique ~300-450 character local blurb (housing stock era, roof type prevalence, local climate factors) layered on the shared page template (geo schema, maps embed, Service schema, phone CTA) — this is real per-city content, not thin/duplicate boilerplate
 - No action needed — this is a strength, not a gap
 
+### Section 5 — Seasonal Opportunity (reviewed, confirmed against live site)
+- ✅ TAS-106 / Citizens Insurance content well-positioned — Citizens Insurance and Senate Bill 2-D content is substantive and specific (not vague), TAS-106 is the site's strongest repeated differentiator
+- ⏳ **Owner/content action — confirmed real gap** — All 4 blog posts dated August–September 2024 (~2 years stale as of July 2026). Same root cause as Section 1's "stale blog" gap — not a separate fix, folding into that item.
+- ⏳ **Owner/content action — confirmed real gap** — No content built specifically around the hurricane-prep window (May–Oct) — e.g. no pre-season checklist or "before hurricane season" timed messaging. Citizens Insurance/recertification angle is covered well, but the seasonal-timing angle is not.
+
 (More sections pending — user is sending audit sections one at a time for review.)

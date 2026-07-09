@@ -9,7 +9,7 @@ const posts = [
   {
     title: "Roof Coating Can Save Your Home and Insurance Policy in Florida",
     slug: "roof-coating-can-save-your-home-and-insurance-policy-in-florida",
-    url: "https://theroofstore.net/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida/",
+    url: "https://www.theroofstore.net/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida/",
     image: "/images/blog/post-1.png",
     date: "September 2024",
     tag: "Insurance & Roof Coating",
@@ -24,7 +24,7 @@ const posts = [
   {
     title: "New Florida Homeowners Insurance Laws",
     slug: "new-florida-homeowners-insurance-laws",
-    url: "https://theroofstore.net/blog/new-florida-homeowners-insurance-laws/",
+    url: "https://www.theroofstore.net/blog/new-florida-homeowners-insurance-laws/",
     image: "/images/blog/post-2.png",
     date: "September 2024",
     tag: "Florida Insurance Law",
@@ -39,7 +39,7 @@ const posts = [
   {
     title: "Citizens Insurance for Older Tile Roofs in Florida",
     slug: "citizens-insurance-for-older-tile-roofs-in-florida",
-    url: "https://theroofstore.net/blog/citizens-insurance-for-older-tile-roofs-in-florida/",
+    url: "https://www.theroofstore.net/blog/citizens-insurance-for-older-tile-roofs-in-florida/",
     image: "/images/blog/post-3.png",
     date: "September 2024",
     tag: "Citizens Insurance",
@@ -54,7 +54,7 @@ const posts = [
   {
     title: "Additional Roof Life Certification: Benefits & Meaning",
     slug: "additional-roof-life-certification-benefits-meaning",
-    url: "https://theroofstore.net/blog/additional-roof-life-certification-benefits-meaning/",
+    url: "https://www.theroofstore.net/blog/additional-roof-life-certification-benefits-meaning/",
     image: "/images/blog/post-4.png",
     date: "August 2024",
     tag: "Roof Certification",

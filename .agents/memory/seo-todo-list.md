@@ -31,14 +31,14 @@ Real competitor research (Rhino Shield, Paint2Last, Big Green Men, Pearl Roof, G
 - Miami-Dade County page given special enhanced H1 (highest-competition market): "Roof Coating Services in Miami-Dade County, FL — Tile & Flat Roofs"
 - Homepage explicitly does NOT include "Davie" (business location) — geo meta tags/schema handle that; city pages own city-specific keyword targeting.
 
-### 🟡 #4 — www vs non-www canonical consistency (ICE 7.5/10)
-Blog posts link to `theroofstore.net` (no www). All internal links, og:url, canonical tags, and sitemap entries must consistently use `https://www.theroofstore.net`. Verify server.js 301-redirects non-www → www.
+### ✅ #4 — www vs non-www canonical consistency (ICE 7.5/10) — DONE July 9 2026
+Fixed 6 internal non-www links (4 Blog.tsx post URLs, 2 PDF links in Products.tsx/data.ts) to use `https://www.theroofstore.net`. Added server.js middleware: any request with `Host: theroofstore.net` now 301-redirects to `www.theroofstore.net` + original path. Left bare "theroofstore.net" mentions in OriginalRoofStore.tsx / TrademarkEvidenceFile.tsx untouched — those are historical/legal domain-registration documentation, not live links.
 
-### 🟡 #5 — VideoObject schema on /videos page
-The /videos page exists in sitemap but has no VideoObject schema. Adding it helps YouTube embeds surface in Google video results.
+### ✅ #5 — VideoObject schema on /videos page — DONE July 9 2026
+VideoObject schema already existed (ItemList of VideoObjects). Fixed the `description` field, which was using the short category tag (e.g. "Customer Testimonial") instead of the rich per-video description text — now uses full desc for better Google Video Search eligibility.
 
-### 🟡 #6 — Service schema on city/county service area pages
-City and county pages have geo tags and maps, but no `Service` schema. Adding it strengthens the local SEO signal for each service area.
+### ✅ #6 — Service schema on city/county service area pages — DONE July 9 2026
+Added standalone `Service` schema (serviceType, provider, areaServed, hasOfferCatalog) to both CityPage.tsx and CountyPage.tsx, alongside the existing RoofingContractor schema. Previously services were only nested inside RoofingContractor's offer catalog with no explicit Service entity tied to areaServed — now each city/county page has its own clear Service schema for local SEO.
 
 ---
 

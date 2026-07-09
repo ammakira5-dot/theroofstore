@@ -68,6 +68,34 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
         { "@type": "ListItem", position: 3, name: county, item: countyUrl },
       ],
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      serviceType: "Roof Coating & Waterproofing",
+      name: `Roof Coating Services in ${county}, FL`,
+      description: `Professional rubber roof coating, tile restoration, and waterproofing services for homeowners and businesses throughout ${county}, Florida.`,
+      url: countyUrl,
+      provider: {
+        "@type": "RoofingContractor",
+        name: "The Roof Store",
+        telephone: "+19542109614",
+        url: BASE,
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: `${county}, Florida`,
+      },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Roof Coating Services",
+        itemListElement: [
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
+        ],
+      },
+    },
   ];
 
   return (

@@ -185,7 +185,7 @@ export const smartShield: ProductData = {
   sku: "RP2",
   mpn: "RP2",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
-  pdfUrl: "https://theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+  pdfUrl: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
   pdfLabel: "Smart Shield Product Sheet (PDF)",
   galleryImages: [
     {

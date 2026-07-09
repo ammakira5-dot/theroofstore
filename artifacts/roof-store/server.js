@@ -398,6 +398,17 @@ function getIndexHtml() {
 
 const app = express();
 
+// ── Canonical host enforcement (non-www → www) ────────────────────────────
+// Ensures Google always sees a single canonical host, matching our
+// canonical tags, sitemap, and internal links (all www.theroofstore.net).
+app.use((req, res, next) => {
+  const host = req.headers.host || "";
+  if (host === "theroofstore.net") {
+    return res.redirect(301, `https://www.theroofstore.net${req.originalUrl}`);
+  }
+  next();
+});
+
 // ── Server-side 301 redirects ─────────────────────────────────────────────
 // These ensure Google receives a proper "Moved Permanently" response instead
 // of a 200 with a client-rendered 404 (soft 404), preserving SEO authority.

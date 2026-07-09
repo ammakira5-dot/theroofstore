@@ -97,7 +97,7 @@ export default function Videos() {
         item: {
           "@type": "VideoObject",
           name: v.title,
-          description: v.tag,
+          description: v.desc,
           thumbnailUrl: `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
           embedUrl: `https://www.youtube.com/embed/${v.id}`,
           uploadDate: v.uploadDate ?? "2024-01-01",

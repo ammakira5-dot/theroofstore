@@ -1,0 +1,13 @@
+   <title>The Roof Store, Roof Painting, Roof Specialist In Florida |</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="The Roof Store is the leading roof coating company in Florida. We manufacture and professionally install rubber roof paint, roof repair coating, flat roof silicone restoration, and elastomeric tile roof paint and roof coatings throughout South Florida. Call now at 954-210-9614 option 1!">
+    <meta name="keywords" content="roof coating near me, roof paint near me, roof sealants, rubber roof coating, coating roofing, roof coating companies near me, roof coating specialist near me, metal roof coating, silicone restoration, TMI Coatings, Roof Coating Specialists near me">
+    <meta name="author" content="The Roof Store">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.position" content="26.060815;-80.25344">
+    <meta name="geo.placename" content="Davie">
+    <meta name="geo.region" content="US-FL">
+    <meta name="icbm" content="26.060815, -80.25344">
+    <meta name="msvalidate.01" content="EC535B2BF1D74E755E8FEBC277E1CA35">
+    <meta name="google-site-verification" content="ObahI3vlJW9_BAtVy5gqAmIMqAtUMeuL2s19PGI2cto">

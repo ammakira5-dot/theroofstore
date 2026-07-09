@@ -75,7 +75,7 @@ const BUSINESS_CORE = {
   image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   logo: `${BASE}/assets/images/logo.png`,
   foundingDate: "1994",
-  description: "Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. full replacement. A+ BBB rated since 1994.",
+  description: "South Florida's original elastomeric roof coating company, serving homeowners and businesses since 1994. FungalShield, SmartShield & RoofShield systems weatherproof tile, flat, and metal roofs at half the cost of replacement.",
   areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -149,7 +149,7 @@ export default function Home() {
     <div className="w-full">
       <SEO
         title="The Roof Store | Elastomeric Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield"
-        description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
+        description="Florida's original elastomeric roof coating system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
         ogImage="https://www.theroofstore.net/images/hero-bg.png"
         schema={schema}

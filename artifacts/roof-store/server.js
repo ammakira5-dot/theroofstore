@@ -16,8 +16,8 @@ const BASE = "https://www.theroofstore.net";
 
 const PAGE_META = {
   "/": {
-    title: "The Roof Store | Roof Coating Installation & Roof Painting Contractor | South Florida Since 1994",
-    description: "The Roof Store — South Florida's roof coating systems provider and installation contractor since 1994. FungalShield, SmartShield & RoofShield systems built from products manufactured in-house by RoofProtect. Roof painting, waterproofing, hurricane-rated tile roof coating & flat roof restoration. Davie, FL · 954-210-9614.",
+    title: "The Roof Store | Elastomeric Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield",
+    description: "Florida's original elastomeric roof coating system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation.",
   },
   "/about": {
     title: "About The Roof Store — Florida Roof Painting Contractor Since 1994",

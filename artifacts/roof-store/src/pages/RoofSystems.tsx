@@ -254,6 +254,14 @@ export default function RoofSystems() {
                     <span className="text-muted-foreground">{f.best}</span>
                   </div>
                 </div>
+                {f.name === "Silicone" && (
+                  <Link
+                    href="/silicone-roof-coating"
+                    className="inline-block mt-4 text-xs font-semibold text-accent hover:underline"
+                  >
+                    Learn more about silicone roof coating →
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>

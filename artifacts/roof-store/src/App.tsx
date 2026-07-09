@@ -32,6 +32,7 @@ import Pricing from "@/pages/Pricing";
 import RoofPaintingVsCoating from "@/pages/RoofPaintingVsCoating";
 import RoofPressureCleaning from "@/pages/RoofPressureCleaning";
 import SiliconeVsElastomeric from "@/pages/SiliconeVsElastomeric";
+import SiliconeRoofCoating from "@/pages/SiliconeRoofCoating";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
@@ -123,6 +124,7 @@ function Router() {
       <Route path="/roof-painting-vs-coating" component={RoofPaintingVsCoating} />
       <Route path="/roof-pressure-cleaning" component={RoofPressureCleaning} />
       <Route path="/silicone-vs-elastomeric-roof-coating" component={SiliconeVsElastomeric} />
+      <Route path="/silicone-roof-coating" component={SiliconeRoofCoating} />
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />

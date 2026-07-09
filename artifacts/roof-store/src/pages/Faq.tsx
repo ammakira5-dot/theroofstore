@@ -49,9 +49,9 @@ const faqs = [
     a: "Pressure cleaning uses calibrated low-pressure water to physically blast away algae, mold, and black streaking, and is our standard method for most tile, cement, and flat roofs. Soft washing uses a biodegradable cleaning solution applied at very low pressure to kill biological growth at the root — it's a gentler option we recommend for older, cracked, or more fragile tile where high-pressure water could cause damage. Both methods are always followed by a full rinse and inspection before any coating is applied.",
   },
   {
-    q: "Silicone vs. elastomeric roof coating — which is better for Florida?",
-    a: "It depends on the system. The Roof Store primarily uses elastomeric and acrylic rubber coating systems for FungalShield and SmartShield — for South Florida's climate, that's a deliberate choice, since elastomeric coatings stay flexible over a much wider temperature range, which matters when a tile or flat roof surface can swing from cool overnight lows to 150°F+ in direct summer sun. They also accept a full color range and can be tinted in 3,000+ colors to match any home. Our RoofShield system is typically formulated with a proprietary premium silicone base ingredient instead — chosen because it performs on every roof type, including flat roofs that hold standing water — and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating. If you've been comparing silicone vs. elastomeric roof coating, ask us about the difference during your free inspection.",
-    link: { href: "/silicone-vs-elastomeric-roof-coating", label: "Read our full silicone vs. elastomeric comparison" },
+    q: "Do you offer silicone roof coating for flat or commercial roofs?",
+    a: "Yes. For commercial flat roofs and any roof that holds standing or ponding water, silicone is the strongest liquid-applied coating formulation available — it's the industry standard for that application. Our RoofShield (RP3) system is typically formulated with a proprietary premium silicone base ingredient for exactly this reason, and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating.",
+    link: { href: "/silicone-roof-coating", label: "Learn more about our silicone roof coating system" },
   },
   {
     q: "How much does a roof coating cost in Florida?",

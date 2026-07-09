@@ -22,8 +22,8 @@ Fix requires an architecture decision (SSR vs. static prerendering vs. other) �
 ### ✅ #1a — Fix duplicate `<title>`, `<meta description>`, `og:*` tags sitewide (ICE 9/10) — DONE July 9 2026
 Stripped all static meta/OG/title/canonical tags from `index.html`; switched `server.js` from regex-replace to single insert-before-`</head>` block. React Helmet is now the sole client-side source; server.js is the sole server-side source. No more duplicates.
 
-### ✅ #2 — Fix /faq page answer visibility (ICE 8.5/10) — DONE July 9 2026
-Replaced JS Accordion with always-visible Q&A cards (`<h2>` + `<p>` per item). All 19 answers now in HTML DOM. FAQPage schema already present.
+### ⚠️ #2 — Fix /faq page answer visibility — PARTIALLY DONE, correction July 9 2026
+Replaced JS Accordion with always-visible Q&A cards (`<h2>` + `<p>` per item) — fixed the "hidden behind expand/collapse" issue in the client-rendered DOM. BUT: re-verified against raw server HTML for Section 8 review and found the root `<div id="root">` is empty in the initial response, and `FAQPage` schema is not present in raw source either — same root cause as the Priority 1 SSR issue. The accordion fix only helps once JS has executed; it does not make the FAQ answers or schema visible to a crawler that doesn't render JS. Not a separate bug — folds into the Priority 1 SSR/prerendering fix.
 
 ### ✅ #3 — H1 keyword optimization (ICE 8/10) — DONE July 9 2026
 Real competitor research (Rhino Shield, Paint2Last, Big Green Men, Pearl Roof, G&J Roofing, South Star Roofing, Roofing Recovery FL) showed winning pattern: "coating" language (never "painting"), hyper-local geo, no jargon in H1. Applied sitewide:

@@ -7,7 +7,7 @@ import { SEO } from "@/components/SEO";
 const BASE = "https://www.theroofstore.net";
 
 const milestones = [
-  { year: "1994", event: "Founded in Davie, Florida, bringing the first liquid rubber roof coating system to the South Florida market — the same family-run business that operates The Roof Store today." },
+  { year: "1994", event: "Founded in Davie, Florida, bringing the first liquid elastomeric roof coating system to the South Florida market — the same family-run business that operates The Roof Store today." },
   { year: "1999", event: "Our \"Don't Re-Roof, Waterproof at 1/2 the Cost\" television commercial airs across Broward County, putting a live Roof Shield installation — and our founder's own voice — in front of thousands of Florida homeowners." },
   { year: "2002", event: "We launch theroofstore.net, extending our reach from local TV and print into a full digital presence that has run continuously ever since." },
   { year: "2010s", event: "We grow our in-house manufacturing capability, standing up RoofProtect Products to formulate FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) ourselves — bringing production in-house alongside our sales and installation teams." },
@@ -21,7 +21,7 @@ export default function About() {
       "@type": "AboutPage",
       name: "About The Roof Store",
       url: `${BASE}/about`,
-      description: "30+ years protecting Florida homes. The Roof Store — pioneers of the liquid rubber roof shield system. Licensed & insured, A+ BBB rated since 1994.",
+      description: "30+ years protecting Florida homes. The Roof Store — pioneers of the liquid elastomeric roof shield system. Licensed & insured, A+ BBB rated since 1994.",
       mainEntity: {
         "@context": "https://schema.org",
         "@type": "RoofingContractor",
@@ -84,8 +84,8 @@ export default function About() {
   return (
     <div className="w-full">
       <SEO
-        title="About The Roof Store — Florida Roof Painting Contractor Since 1994"
-        description="The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid rubber roof coating system. FungalShield, SmartShield & RoofShield are built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614."
+        title="About The Roof Store — Florida Roof Coating Contractor Since 1994"
+        description="The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid elastomeric roof coating system. FungalShield, SmartShield & RoofShield are built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614."
         canonical="/about"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}

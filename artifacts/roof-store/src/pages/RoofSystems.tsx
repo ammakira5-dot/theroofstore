@@ -167,8 +167,8 @@ export default function RoofSystems() {
     <>
     <div className="w-full">
       <SEO
-        title="Roof Painting & Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store"
-        description="Roof painting done right — FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs, professionally installed by our licensed crew for residential and commercial properties in Florida. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
+        title="Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store"
+        description="FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs, professionally installed by our licensed crew for residential and commercial properties in Florida. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
         canonical="/roof-systems"
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"
         schema={schema}

@@ -31,14 +31,14 @@ const BASE = "https://www.theroofstore.net";
 const homeFaqs = [
   {
     q: "How does roof coating compare to full roof replacement in Florida?",
-    a: "Roof coating typically costs 40–60% less than a full roof replacement, can be applied directly over your existing roof without tear-off, and extends your roof's life by 10–25 years. For South Florida homeowners, a liquid rubber coating system also delivers hurricane wind-uplift performance that new tile alone cannot match — our Roof Shield system is 5× stronger than a new tile roof in pull-test resistance.",
+    a: "Roof coating typically costs 40–60% less than a full roof replacement, can be applied directly over your existing roof without tear-off, and extends your roof's life by 10–25 years. For South Florida homeowners, a liquid elastomeric coating system also delivers hurricane wind-uplift performance that new tile alone cannot match — our Roof Shield system is 5× stronger than a new tile roof in pull-test resistance.",
   },
   {
-    q: "Will a rubber roof coating hold up to Florida hurricanes?",
+    q: "Will an elastomeric roof coating hold up to Florida hurricanes?",
     a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to hold Dade County TAS-106 Uplift Pull Test certification, with documented 135+ MPH performance on real hurricane events. The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
   },
   {
-    q: "How long does a rubber roof coating last in Florida's climate?",
+    q: "How long does an elastomeric roof coating last in Florida's climate?",
     a: "Our premium coating systems are engineered to last 10–25 years in Florida's conditions — intense UV, heavy rainfall, high humidity, and hurricane-force winds. We provide written performance warranties on every installation: from 5-year product warranties on Fungal Shield to a maintenance-free Lifetime Warranty on our flagship Roof Shield system.",
   },
   {

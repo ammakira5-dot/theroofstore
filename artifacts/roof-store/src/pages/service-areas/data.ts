@@ -24,7 +24,7 @@ export const counties: CountyEntry[] = [
     // Bird's-eye view of river winding through downtown Fort Lauderdale
     image: "/api/storage/public-objects/cities/1538016298852-e69a243f7ee2.jpg",
     description:
-      "The Roof Store serves all of Broward County, FL — from Fort Lauderdale to Coral Springs. Our rubber roof coating and tile restoration systems protect Broward homes from hurricanes, tropical storms, and intense UV exposure.",
+      "The Roof Store serves all of Broward County, FL — from Fort Lauderdale to Coral Springs. Our elastomeric roof coating and tile restoration systems protect Broward homes from hurricanes, tropical storms, and intense UV exposure.",
     cities: [
       {
         name: "Coconut Creek",
@@ -45,7 +45,7 @@ export const counties: CountyEntry[] = [
         slug: "coral-springs",
         image: "/api/storage/public-objects/cities/1691423332423-f2132628ff72.jpg",
         blurb:
-          "One of Broward's largest planned communities, Coral Springs features a wide mix of residential roof types — from flat decks on 1970s ranch homes to barrel tile on newer estate properties. The city's age means many roofs are decades old and show signs of UV degradation, fading, and hairline cracking that our rubber coating systems seal and protect without the disruption of a tear-off. For homeowners chasing the modern dark tile look, our Smart Shield system's BASF Cool Pigment Technology reflects heat even at the darkest color choices.",
+          "One of Broward's largest planned communities, Coral Springs features a wide mix of residential roof types — from flat decks on 1970s ranch homes to barrel tile on newer estate properties. The city's age means many roofs are decades old and show signs of UV degradation, fading, and hairline cracking that our elastomeric coating systems seal and protect without the disruption of a tear-off. For homeowners chasing the modern dark tile look, our Smart Shield system's BASF Cool Pigment Technology reflects heat even at the darkest color choices.",
       },
       {
         name: "Dania Beach",
@@ -66,7 +66,7 @@ export const counties: CountyEntry[] = [
         slug: "deerfield-beach",
         image: "/api/storage/public-objects/cities/1590523277543-a94d2e4eb00b.jpg",
         blurb:
-          "Deerfield Beach's coastline and proximity to the Atlantic Ocean mean roofs here face above-average salt air exposure, UV intensity, and wind load. Many of the city's mid-century flat-roof homes have been maintained with layers of old tar and gravel — our rubber coating system bonds directly over those surfaces, creating a modern watertight membrane without the mess of a full tear-off.",
+          "Deerfield Beach's coastline and proximity to the Atlantic Ocean mean roofs here face above-average salt air exposure, UV intensity, and wind load. Many of the city's mid-century flat-roof homes have been maintained with layers of old tar and gravel — our elastomeric coating system bonds directly over those surfaces, creating a modern watertight membrane without the mess of a full tear-off.",
       },
       {
         name: "Fort Lauderdale",
@@ -94,7 +94,7 @@ export const counties: CountyEntry[] = [
         slug: "hollywood",
         image: "/api/storage/public-objects/cities/1617202830798-cf48261fb70d.jpg",
         blurb:
-          "Hollywood's famous Broadwalk and beach culture attract a strong real estate market, but the coastal environment takes a heavy toll on roofing materials. Many of Hollywood's residential neighborhoods feature older flat-deck and barrel tile roofs that show significant UV fading and sealant breakdown — ideal candidates for our rubber restoration systems.",
+          "Hollywood's famous Broadwalk and beach culture attract a strong real estate market, but the coastal environment takes a heavy toll on roofing materials. Many of Hollywood's residential neighborhoods feature older flat-deck and barrel tile roofs that show significant UV fading and sealant breakdown — ideal candidates for our elastomeric restoration systems.",
       },
       {
         name: "Lauderdale Lakes",
@@ -108,7 +108,7 @@ export const counties: CountyEntry[] = [
         slug: "lauderhill",
         image: "/api/storage/public-objects/cities/1560518883-ce09059eeffa.jpg",
         blurb:
-          "Lauderhill is one of Broward's most affordable communities, and homeowners here are keenly aware of the value of protecting their investment without overspending. Our rubber roof coating systems deliver the same long-term protection as a full replacement at 40–60% less cost — a significant benefit for Lauderhill's budget-conscious property owners.",
+          "Lauderhill is one of Broward's most affordable communities, and homeowners here are keenly aware of the value of protecting their investment without overspending. Our elastomeric roof coating systems deliver the same long-term protection as a full replacement at 40–60% less cost — a significant benefit for Lauderhill's budget-conscious property owners.",
       },
       {
         name: "Lauderdale-by-the-Sea",
@@ -150,7 +150,7 @@ export const counties: CountyEntry[] = [
         slug: "oakland-park",
         image: "/api/storage/public-objects/cities/1416339306562-f3d12fefd36f.jpg",
         blurb:
-          "Oakland Park has seen significant revitalization in recent years, with buyers renovating mid-century homes that often need roof attention as part of a larger upgrade. Many of the city's original flat-deck roofs still have old built-up tar systems beneath them — surfaces our rubber coating bonds directly to without requiring demolition or a full tear-off.",
+          "Oakland Park has seen significant revitalization in recent years, with buyers renovating mid-century homes that often need roof attention as part of a larger upgrade. Many of the city's original flat-deck roofs still have old built-up tar systems beneath them — surfaces our elastomeric coating bonds directly to without requiring demolition or a full tear-off.",
       },
       {
         name: "Parkland",
@@ -171,7 +171,7 @@ export const counties: CountyEntry[] = [
         slug: "pembroke-pines",
         image: "/api/storage/public-objects/cities/1560185007-5f0bb1866cab.jpg",
         blurb:
-          "One of the largest cities in Florida, Pembroke Pines features one of the highest concentrations of HOA-governed communities in South Florida — meaning roof appearance and integrity matter as much as performance. Our tile restoration and rubber coating systems meet HOA color standards while delivering the weatherproofing protection that Pembroke Pines homeowners expect.",
+          "One of the largest cities in Florida, Pembroke Pines features one of the highest concentrations of HOA-governed communities in South Florida — meaning roof appearance and integrity matter as much as performance. Our tile restoration and elastomeric coating systems meet HOA color standards while delivering the weatherproofing protection that Pembroke Pines homeowners expect.",
       },
       {
         name: "Plantation",
@@ -206,14 +206,14 @@ export const counties: CountyEntry[] = [
         slug: "sunrise",
         image: "/api/storage/public-objects/cities/1477959858617-67f85cf4f1df.jpg",
         blurb:
-          "Home to a major arena and a massive commercial corridor along the Sawgrass Expressway, Sunrise has one of the highest concentrations of commercial flat roofs in Broward County alongside large residential neighborhoods. Our rubber roof coating systems are equally suited to large commercial membrane applications and the tile and shingle systems common in Sunrise's residential communities.",
+          "Home to a major arena and a massive commercial corridor along the Sawgrass Expressway, Sunrise has one of the highest concentrations of commercial flat roofs in Broward County alongside large residential neighborhoods. Our elastomeric roof coating systems are equally suited to large commercial membrane applications and the tile and shingle systems common in Sunrise's residential communities.",
       },
       {
         name: "Tamarac",
         slug: "tamarac",
         image: "/api/storage/public-objects/cities/1489824904134-891ab64532f1.jpg",
         blurb:
-          "Tamarac is a well-established community with a large senior population and a housing stock predominantly built in the 1970s and 80s — making it one of the most active areas in Broward for roof restoration. Many of Tamarac's homes feature flat-deck designs with aging built-up roofing that can be sealed and protected for another 15–20 years with our liquid-applied rubber system.",
+          "Tamarac is a well-established community with a large senior population and a housing stock predominantly built in the 1970s and 80s — making it one of the most active areas in Broward for roof restoration. Many of Tamarac's homes feature flat-deck designs with aging built-up roofing that can be sealed and protected for another 15–20 years with our liquid-applied elastomeric system.",
       },
       {
         name: "West Park",
@@ -244,7 +244,7 @@ export const counties: CountyEntry[] = [
     // Miami skyline — city high-rises reflected across Biscayne Bay
     image: "/api/storage/public-objects/cities/1535498730771-e735b998cd64.jpg",
     description:
-      "The Roof Store serves all of Miami-Dade County, FL with professional rubber roof coating, tile restoration, and weatherproofing. From Miami Beach to Homestead, our A+ BBB-rated team protects South Florida homes from the elements.",
+      "The Roof Store serves all of Miami-Dade County, FL with professional elastomeric roof coating, tile restoration, and weatherproofing. From Miami Beach to Homestead, our A+ BBB-rated team protects South Florida homes from the elements.",
     cities: [
       {
         name: "Aventura",
@@ -321,21 +321,21 @@ export const counties: CountyEntry[] = [
         slug: "hialeah",
         image: "/api/storage/public-objects/cities/1545324418-cc1a3fa10c00.jpg",
         blurb:
-          "Florida's fifth-largest city and one of the most densely populated, Hialeah has a vibrant Cuban-American community and a diverse building stock ranging from 1950s CBS block homes to newer commercial developments. Many of Hialeah's older homes have flat or low-slope roofs with aging built-up systems that our rubber coating can seal and rejuvenate without requiring a full tear-off.",
+          "Florida's fifth-largest city and one of the most densely populated, Hialeah has a vibrant Cuban-American community and a diverse building stock ranging from 1950s CBS block homes to newer commercial developments. Many of Hialeah's older homes have flat or low-slope roofs with aging built-up systems that our elastomeric coating can seal and rejuvenate without requiring a full tear-off.",
       },
       {
         name: "Hialeah Gardens",
         slug: "hialeah-gardens",
         image: "/api/storage/public-objects/cities/1564013799919-ab600027ffc6.jpg",
         blurb:
-          "A smaller city adjacent to Hialeah, Hialeah Gardens has a mix of residential and light-industrial properties with predominantly flat and low-slope roof systems. Our rubber coating and waterproofing systems work equally well on both residential flat decks and commercial membrane applications common throughout the area.",
+          "A smaller city adjacent to Hialeah, Hialeah Gardens has a mix of residential and light-industrial properties with predominantly flat and low-slope roof systems. Our elastomeric coating and waterproofing systems work equally well on both residential flat decks and commercial membrane applications common throughout the area.",
       },
       {
         name: "Homestead",
         slug: "homestead",
         image: "/api/storage/public-objects/cities/1574169208507-84376144848b.jpg",
         blurb:
-          "Homestead was ground zero for Hurricane Andrew in 1992 — an event that fundamentally changed how South Florida approaches roofing standards. Today, Homestead homeowners understand hurricane risk better than almost anyone, and our rubber roof coating systems with hurricane-rated wind uplift resistance are engineered precisely for these conditions.",
+          "Homestead was ground zero for Hurricane Andrew in 1992 — an event that fundamentally changed how South Florida approaches roofing standards. Today, Homestead homeowners understand hurricane risk better than almost anyone, and our elastomeric roof coating systems with hurricane-rated wind uplift resistance are engineered precisely for these conditions.",
       },
       {
         name: "Indian Creek Village",
@@ -349,21 +349,21 @@ export const counties: CountyEntry[] = [
         slug: "islandia",
         image: "/api/storage/public-objects/cities/1740990556921-6131d2a9d16c.jpg",
         blurb:
-          "Islandia is one of Florida's most unusual municipalities — a remote community in Biscayne Bay's Card Sound area accessible primarily by boat. The extreme marine environment here — surrounded by saltwater on all sides — is among the most corrosive for roofing materials anywhere in Florida, making our rubber waterproofing systems an essential defense against the elements.",
+          "Islandia is one of Florida's most unusual municipalities — a remote community in Biscayne Bay's Card Sound area accessible primarily by boat. The extreme marine environment here — surrounded by saltwater on all sides — is among the most corrosive for roofing materials anywhere in Florida, making our elastomeric waterproofing systems an essential defense against the elements.",
       },
       {
         name: "Key Biscayne",
         slug: "key-biscayne",
         image: "/api/storage/public-objects/cities/1548574505-5e239809ee19.jpg",
         blurb:
-          "A barrier island connected to Miami by the Rickenbacker Causeway, Key Biscayne combines the lifestyle of a secluded island village with direct Atlantic Ocean exposure on all sides. Salt air, tropical UV, and hurricane risk are constant concerns here — our rubber roof systems are specifically engineered for high-wind coastal environments like Key Biscayne.",
+          "A barrier island connected to Miami by the Rickenbacker Causeway, Key Biscayne combines the lifestyle of a secluded island village with direct Atlantic Ocean exposure on all sides. Salt air, tropical UV, and hurricane risk are constant concerns here — our elastomeric roof systems are specifically engineered for high-wind coastal environments like Key Biscayne.",
       },
       {
         name: "Medley",
         slug: "medley",
         image: "/api/storage/public-objects/cities/1558618666-fcd25c85cd64.jpg",
         blurb:
-          "Medley is a small industrial municipality in western Miami-Dade known primarily for its warehouses and commercial facilities — making it one of the area's top markets for commercial flat-roof coating and maintenance. Our large-scale rubber roof coating systems are well-suited to the wide commercial membrane applications that dominate Medley's building landscape.",
+          "Medley is a small industrial municipality in western Miami-Dade known primarily for its warehouses and commercial facilities — making it one of the area's top markets for commercial flat-roof coating and maintenance. Our large-scale elastomeric roof coating systems are well-suited to the wide commercial membrane applications that dominate Medley's building landscape.",
       },
       {
         name: "Miami",
@@ -384,7 +384,7 @@ export const counties: CountyEntry[] = [
         slug: "miami-gardens",
         image: "/api/storage/public-objects/cities/1558618666-fcd25c85cd64.jpg",
         blurb:
-          "Miami Gardens is a large, predominantly residential city in northern Miami-Dade with a significant stock of 1960s and 70s single-family CBS homes — many with original flat or low-slope roofing that has never been restored. Our rubber coating systems are a cost-effective solution for Miami Gardens homeowners who need reliable roof protection without the expense of full replacement.",
+          "Miami Gardens is a large, predominantly residential city in northern Miami-Dade with a significant stock of 1960s and 70s single-family CBS homes — many with original flat or low-slope roofing that has never been restored. Our elastomeric coating systems are a cost-effective solution for Miami Gardens homeowners who need reliable roof protection without the expense of full replacement.",
       },
       {
         name: "Miami Lakes",
@@ -405,7 +405,7 @@ export const counties: CountyEntry[] = [
         slug: "miami-springs",
         image: "/api/storage/public-objects/cities/1570129477492-45c003edd2be.jpg",
         blurb:
-          "Miami Springs was founded in 1926 with a Pueblo Revival architectural theme — giving it a unique collection of historic homes with curved parapets, flat roofs, and rounded forms that require specialized waterproofing expertise. Our liquid-applied rubber coating systems are ideal for the complex flat and low-slope geometries found throughout Miami Springs' historic building stock.",
+          "Miami Springs was founded in 1926 with a Pueblo Revival architectural theme — giving it a unique collection of historic homes with curved parapets, flat roofs, and rounded forms that require specialized waterproofing expertise. Our liquid-applied elastomeric coating systems are ideal for the complex flat and low-slope geometries found throughout Miami Springs' historic building stock.",
       },
       {
         name: "North Bay Village",
@@ -419,7 +419,7 @@ export const counties: CountyEntry[] = [
         slug: "north-miami",
         image: "/api/storage/public-objects/cities/1583608205776-bfd35f0d9f83.jpg",
         blurb:
-          "North Miami is a culturally diverse city undergoing significant development pressure, with older neighborhoods featuring 1950s and 60s flat-roof CBS homes alongside newer construction. Many of North Miami's original roofing systems are overdue for restoration — our rubber coating provides a cost-effective alternative to full replacement that many North Miami homeowners find compelling.",
+          "North Miami is a culturally diverse city undergoing significant development pressure, with older neighborhoods featuring 1950s and 60s flat-roof CBS homes alongside newer construction. Many of North Miami's original roofing systems are overdue for restoration — our elastomeric coating provides a cost-effective alternative to full replacement that many North Miami homeowners find compelling.",
       },
       {
         name: "North Miami Beach",
@@ -433,7 +433,7 @@ export const counties: CountyEntry[] = [
         slug: "opa-locka",
         image: "/api/storage/public-objects/cities/1477959858617-67f85cf4f1df.jpg",
         blurb:
-          "Famous for its extraordinary collection of Moorish Revival architecture built in the 1920s — including minarets, domes, and horseshoe arches — Opa-locka has a unique building stock that requires specialized roofing expertise. Many of the city's historic structures feature flat and low-slope roof systems where our liquid-applied rubber coating provides watertight protection without disturbing the historic character above.",
+          "Famous for its extraordinary collection of Moorish Revival architecture built in the 1920s — including minarets, domes, and horseshoe arches — Opa-locka has a unique building stock that requires specialized roofing expertise. Many of the city's historic structures feature flat and low-slope roof systems where our liquid-applied elastomeric coating provides watertight protection without disturbing the historic character above.",
       },
       {
         name: "Palmetto Bay",
@@ -482,14 +482,14 @@ export const counties: CountyEntry[] = [
         slug: "virginia-gardens",
         image: "/api/storage/public-objects/cities/1568605114967-8130f3a36994.jpg",
         blurb:
-          "Virginia Gardens is one of Miami-Dade's smallest municipalities — a quiet, compact village near Miami International Airport with a predominantly single-family residential character. The older CBS homes here often have flat or low-slope roofing that benefits enormously from our rubber coating restoration, extending roof life significantly at a cost homeowners in this tight-knit community appreciate.",
+          "Virginia Gardens is one of Miami-Dade's smallest municipalities — a quiet, compact village near Miami International Airport with a predominantly single-family residential character. The older CBS homes here often have flat or low-slope roofing that benefits enormously from our elastomeric coating restoration, extending roof life significantly at a cost homeowners in this tight-knit community appreciate.",
       },
       {
         name: "West Miami",
         slug: "west-miami",
         image: "/api/storage/public-objects/cities/1560518883-ce09059eeffa.jpg",
         blurb:
-          "West Miami is a small, historic city bordered by Coral Gables and Miami with a strong Cuban-American community and well-maintained older homes. The city's aging building stock — mostly 1950s and 60s CBS construction — features flat and low-slope roofs that are prime candidates for our rubber coating restoration systems.",
+          "West Miami is a small, historic city bordered by Coral Gables and Miami with a strong Cuban-American community and well-maintained older homes. The city's aging building stock — mostly 1950s and 60s CBS construction — features flat and low-slope roofs that are prime candidates for our elastomeric coating restoration systems.",
       },
     ],
   },
@@ -499,7 +499,7 @@ export const counties: CountyEntry[] = [
     // West Palm Beach waterfront — city, river, and bridge at night
     image: "/api/storage/public-objects/cities/1664829018245-04b94e17b8aa.jpg",
     description:
-      "From Boca Raton to Jupiter, The Roof Store serves all of Palm Beach County with our rubber roof coating and tile restoration systems. Protecting Palm Beach County homes from Florida's harsh climate since 1994.",
+      "From Boca Raton to Jupiter, The Roof Store serves all of Palm Beach County with our elastomeric roof coating and tile restoration systems. Protecting Palm Beach County homes from Florida's harsh climate since 1994.",
     cities: [
       {
         name: "Atlantis",
@@ -527,7 +527,7 @@ export const counties: CountyEntry[] = [
         slug: "boynton-beach",
         image: "/api/storage/public-objects/cities/1649357675339-53af4a244a0a.jpg",
         blurb:
-          "Boynton Beach is a rapidly growing coastal city with one of the most diverse housing stocks in Palm Beach County — from original 1950s beach bungalows to new waterfront developments. Our rubber coating and tile restoration services cover the full range of roof types found across Boynton Beach's expanding residential neighborhoods.",
+          "Boynton Beach is a rapidly growing coastal city with one of the most diverse housing stocks in Palm Beach County — from original 1950s beach bungalows to new waterfront developments. Our elastomeric coating and tile restoration services cover the full range of roof types found across Boynton Beach's expanding residential neighborhoods.",
       },
       {
         name: "Briny Breezes",
@@ -541,7 +541,7 @@ export const counties: CountyEntry[] = [
         slug: "cloud-lake",
         image: "/api/storage/public-objects/cities/1507003211169-0a1dd7228f2d.jpg",
         blurb:
-          "Cloud Lake is one of Palm Beach County's smallest municipalities — a quiet residential enclave of just a few hundred residents near West Palm Beach. The modest size of the community belies the importance of proper roof maintenance here, where older homes benefit significantly from our rubber coating restoration approach.",
+          "Cloud Lake is one of Palm Beach County's smallest municipalities — a quiet residential enclave of just a few hundred residents near West Palm Beach. The modest size of the community belies the importance of proper roof maintenance here, where older homes benefit significantly from our elastomeric coating restoration approach.",
       },
       {
         name: "Delray Beach",
@@ -604,7 +604,7 @@ export const counties: CountyEntry[] = [
         slug: "juno-beach",
         image: "/api/storage/public-objects/cities/1576123300830-fe145f281d12.jpg",
         blurb:
-          "Juno Beach is a quiet coastal town known for its sea turtle nesting habitat and relaxed beach lifestyle — but its direct Atlantic Ocean exposure means roofs here face some of the most intense UV and salt air conditions in Palm Beach County. Our rubber coating systems provide the durable, seamless protection that Juno Beach's coastal homes require.",
+          "Juno Beach is a quiet coastal town known for its sea turtle nesting habitat and relaxed beach lifestyle — but its direct Atlantic Ocean exposure means roofs here face some of the most intense UV and salt air conditions in Palm Beach County. Our elastomeric coating systems provide the durable, seamless protection that Juno Beach's coastal homes require.",
       },
       {
         name: "Jupiter",
@@ -646,7 +646,7 @@ export const counties: CountyEntry[] = [
         slug: "lantana",
         image: "/api/storage/public-objects/cities/1563714104487-2d992b91aeb9.jpg",
         blurb:
-          "Lantana is a small coastal town on the Intracoastal Waterway with direct access to the Atlantic Ocean beach — giving roofs here a heavy dose of salt air exposure from both directions. Our rubber coating systems are specifically formulated to withstand the marine environment that Lantana homeowners deal with year-round.",
+          "Lantana is a small coastal town on the Intracoastal Waterway with direct access to the Atlantic Ocean beach — giving roofs here a heavy dose of salt air exposure from both directions. Our elastomeric coating systems are specifically formulated to withstand the marine environment that Lantana homeowners deal with year-round.",
       },
       {
         name: "Loxahatchee Groves",
@@ -667,7 +667,7 @@ export const counties: CountyEntry[] = [
         slug: "mangonia-park",
         image: "/api/storage/public-objects/cities/1560518883-ce09059eeffa.jpg",
         blurb:
-          "Mangonia Park is a small, modest municipality in the heart of West Palm Beach's urban area — a tight-knit community with older housing stock and a working-class character. The older homes here are excellent candidates for our cost-effective rubber coating restoration systems, which deliver maximum protection at significantly lower cost than full replacement.",
+          "Mangonia Park is a small, modest municipality in the heart of West Palm Beach's urban area — a tight-knit community with older housing stock and a working-class character. The older homes here are excellent candidates for our cost-effective elastomeric coating restoration systems, which deliver maximum protection at significantly lower cost than full replacement.",
       },
       {
         name: "North Palm Beach",
@@ -681,7 +681,7 @@ export const counties: CountyEntry[] = [
         slug: "ocean-ridge",
         image: "/api/storage/public-objects/cities/1512936702668-1ab037aced2a.jpg",
         blurb:
-          "Ocean Ridge is a small, exclusive barrier island town between Boynton Beach and Briny Breezes — with direct Atlantic Ocean exposure making it one of the most demanding roofing environments in the county. Every home here faces maximum salt air, UV, and hurricane wind load, and our rubber coating systems are engineered precisely for these conditions.",
+          "Ocean Ridge is a small, exclusive barrier island town between Boynton Beach and Briny Breezes — with direct Atlantic Ocean exposure making it one of the most demanding roofing environments in the county. Every home here faces maximum salt air, UV, and hurricane wind load, and our elastomeric coating systems are engineered precisely for these conditions.",
       },
       {
         name: "Pahokee",
@@ -716,7 +716,7 @@ export const counties: CountyEntry[] = [
         slug: "palm-springs",
         image: "/api/storage/public-objects/cities/1558618666-fcd25c85cd64.jpg",
         blurb:
-          "Palm Springs, Florida is a modest, family-oriented community in central Palm Beach County with a strong blue-collar identity and older residential housing stock. Many homes here have flat or low-slope roofs that have been patched piecemeal over the years — our comprehensive rubber coating approach seals everything in a single, uniform watertight membrane.",
+          "Palm Springs, Florida is a modest, family-oriented community in central Palm Beach County with a strong blue-collar identity and older residential housing stock. Many homes here have flat or low-slope roofs that have been patched piecemeal over the years — our comprehensive elastomeric coating approach seals everything in a single, uniform watertight membrane.",
       },
       {
         name: "Riviera Beach",
@@ -737,7 +737,7 @@ export const counties: CountyEntry[] = [
         slug: "south-bay",
         image: "/api/storage/public-objects/cities/1500076656116-558758c991c1.jpg",
         blurb:
-          "South Bay sits on the southern rim of Lake Okeechobee — a small, agricultural community facing its own demanding climate conditions including intense heat, lake humidity, and severe inland storms. Our rubber coating systems are well-suited to the flat and low-slope industrial and residential roofing common in South Bay's building stock.",
+          "South Bay sits on the southern rim of Lake Okeechobee — a small, agricultural community facing its own demanding climate conditions including intense heat, lake humidity, and severe inland storms. Our elastomeric coating systems are well-suited to the flat and low-slope industrial and residential roofing common in South Bay's building stock.",
       },
       {
         name: "South Palm Beach",
@@ -751,7 +751,7 @@ export const counties: CountyEntry[] = [
         slug: "tequesta",
         image: "/api/storage/public-objects/cities/1548574505-5e239809ee19.jpg",
         blurb:
-          "Tequesta is a quiet, upscale community at the northern tip of Palm Beach County on the Loxahatchee River and Jupiter Inlet — known for its natural character and high quality of life. The riverfront and coastal exposure here creates a distinctive set of roofing challenges, and our rubber coating and tile restoration systems are well-suited to the custom homes throughout this desirable community.",
+          "Tequesta is a quiet, upscale community at the northern tip of Palm Beach County on the Loxahatchee River and Jupiter Inlet — known for its natural character and high quality of life. The riverfront and coastal exposure here creates a distinctive set of roofing challenges, and our elastomeric coating and tile restoration systems are well-suited to the custom homes throughout this desirable community.",
       },
       {
         name: "Wellington",
@@ -782,7 +782,7 @@ export const counties: CountyEntry[] = [
     // Aerial island view — Florida Keys from above, turquoise water all around
     image: "/api/storage/public-objects/cities/1519500900873-696f4e3171de.jpg",
     description:
-      "The Roof Store extends service to Monroe County, FL — protecting Keys homes from the harshest marine climate in Florida. Our rubber roof coating systems are engineered for salt air, high humidity, and hurricane-force wind exposure.",
+      "The Roof Store extends service to Monroe County, FL — protecting Keys homes from the harshest marine climate in Florida. Our elastomeric roof coating systems are engineered for salt air, high humidity, and hurricane-force wind exposure.",
     cities: [
       {
         name: "Key West",

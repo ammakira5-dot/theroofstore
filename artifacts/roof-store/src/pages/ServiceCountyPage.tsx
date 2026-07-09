@@ -106,8 +106,8 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
   return (
     <div className="w-full">
       <SEO
-        title={`Roof Painting & Roof Coating Contractor in ${county}, FL — The Roof Store`}
-        description={`Roof painting contractor in ${county}, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection — licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`}
+        title={`Roof Coating Contractor in ${county}, FL — The Roof Store`}
+        description={`Roof coating contractor in ${county}, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection — licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`}
         canonical={`/roof-services/${slug}`}
         schema={schema}
         geo={{ region: "US-FL", placename: `${county}, FL` }}
@@ -137,7 +137,7 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
             <div className="lg:col-span-2 space-y-10">
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  The Roof Store has provided roof coating, elastomeric painting, and reflective cool roof coating services throughout {county} for nearly 30 years. Our liquid-applied rubber roof shield systems restore and weatherproof existing roofs at up to half the cost of full replacement — backed by a licensed and insured team, an A+ BBB rating, and comprehensive performance warranties.
+                  The Roof Store has provided roof coating, elastomeric tile restoration, and reflective cool roof coating services throughout {county} for nearly 30 years. Our liquid-applied elastomeric roof shield systems restore and weatherproof existing roofs at up to half the cost of full replacement — backed by a licensed and insured team, an A+ BBB rating, and comprehensive performance warranties.
                 </p>
               </motion.div>
 

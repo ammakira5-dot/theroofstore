@@ -42,8 +42,8 @@ export default function ServiceAreas() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Painting & Roof Coating Service Areas — South Florida | The Roof Store"
-        description="The Roof Store provides roof painting and roof coating installation for tile, flat, shingle, and metal roofs in Broward, Miami-Dade, and Palm Beach counties. Rubber roof coating, tile restoration, and weatherproofing in Fort Lauderdale, Miami, West Palm Beach, and 30+ South Florida cities."
+        title="Roof Coating Service Areas — South Florida | The Roof Store"
+        description="The Roof Store provides roof coating installation for tile, flat, shingle, and metal roofs in Broward, Miami-Dade, and Palm Beach counties. Elastomeric roof coating, tile restoration, and weatherproofing in Fort Lauderdale, Miami, West Palm Beach, and 30+ South Florida cities."
         canonical="/service-areas"
         schema={schema}
         geo={{ region: "US-FL", placename: "South Florida" }}

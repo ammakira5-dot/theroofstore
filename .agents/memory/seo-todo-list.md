@@ -129,4 +129,9 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ⏳ **Owner/content action — confirmed real gap** — All 4 blog posts dated August–September 2024 (~2 years stale as of July 2026). Same root cause as Section 1's "stale blog" gap — not a separate fix, folding into that item.
 - ⏳ **Owner/content action — confirmed real gap** — No content built specifically around the hurricane-prep window (May–Oct) — e.g. no pre-season checklist or "before hurricane season" timed messaging. Citizens Insurance/recertification angle is covered well, but the seasonal-timing angle is not.
 
+### Section 6 — Channel Mix Observation (reviewed, confirmed against live site)
+- ⏳ **Confirmed real gap — no analytics installed** — No Google Analytics/GTM or any tracking found anywhere in the codebase. Without this, actual channel mix (direct/organic/referral/paid) can't be measured on-site at all; the audit's channel-mix claim is likely inferred from external tools (SEMrush/Ahrefs), not real analytics data. Awaiting user decision on whether to add GA4.
+- ✅ "Storm Shield" Yelp listing is legitimate — "Storm Shield Paint Systems Inc." is the real licensed contracting entity (schema `legalName`, footer, trademark evidence docs) — not a mix-up or duplicate business
+- ✅ Duplicate metadata (suspected CTR suppressor) — already fixed in Section 1
+
 (More sections pending — user is sending audit sections one at a time for review.)

@@ -15,7 +15,11 @@ description: Master prioritized to-do list from July 9, 2026 StoreClaw audit + i
 
 ## Codebase Fixes — Agent Can Do (prioritized by ICE score)
 
-### ✅ #1 — Fix duplicate `<title>`, `<meta description>`, `og:*` tags sitewide (ICE 9/10) — DONE July 9 2026
+### 🔴 PRIORITY 1 — No server-side rendering (SSR/prerendering) on city/county pages — NOT DONE, biggest open item
+City/county pages (111 + 4) are 100% client-rendered — raw HTML from the server is an empty shell (`<div id="root">` empty); only `<title>`/meta/OG tags are injected server-side, not the visible body content. Googlebot must execute JS to see any content at all, which is slower/less reliable at scale across 100+ near-identical-template pages. This is the most credible root cause for the "only 5 URLs indexed despite 137 in sitemap" finding (Audit #2 Section 7). Also corrects Section 4's earlier verdict: city blurbs are unique but average only ~56 words (44-91 range), well under the audit's suggested 300-400 word threshold — "unique" was true but "sufficient depth" was not, so Section 4 was too quick to call this a pure strength.
+Fix requires an architecture decision (SSR vs. static prerendering vs. other) — to be discussed with user before implementation.
+
+### ✅ #1a — Fix duplicate `<title>`, `<meta description>`, `og:*` tags sitewide (ICE 9/10) — DONE July 9 2026
 Stripped all static meta/OG/title/canonical tags from `index.html`; switched `server.js` from regex-replace to single insert-before-`</head>` block. React Helmet is now the sole client-side source; server.js is the sole server-side source. No more duplicates.
 
 ### ✅ #2 — Fix /faq page answer visibility (ICE 8.5/10) — DONE July 9 2026
@@ -133,5 +137,10 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ⏳ **Confirmed real gap — no analytics installed** — No Google Analytics/GTM or any tracking found anywhere in the codebase. Without this, actual channel mix (direct/organic/referral/paid) can't be measured on-site at all; the audit's channel-mix claim is likely inferred from external tools (SEMrush/Ahrefs), not real analytics data. Awaiting user decision on whether to add GA4.
 - ✅ "Storm Shield" Yelp listing is legitimate — "Storm Shield Paint Systems Inc." is the real licensed contracting entity (schema `legalName`, footer, trademark evidence docs) — not a mix-up or duplicate business
 - ✅ Duplicate metadata (suspected CTR suppressor) — already fixed in Section 1
+
+### Section 7 — Google Index Coverage Is Extremely Thin (reviewed, confirmed against live site)
+- 🔴 **Real root cause identified, now Priority 1** — City/county pages have no SSR/prerendering: raw HTML body is empty, only meta tags are server-injected. Very plausible explanation for why only 5 of 137 sitemap URLs are indexed. See Priority 1 item above.
+- ⚠️ **Correction to Section 4** — City blurbs are unique but average only ~56 words (44-91 range), below the audit's 300-400 word suggestion. Section 4's "no action needed" verdict was too quick — uniqueness ≠ sufficient depth. Folded into the Priority 1 item since both point to the same underlying page-architecture issue.
+- ⏳ **Owner action, can't verify from here** — Search Console index coverage report / manual actions check requires the user's Search Console access.
 
 (More sections pending — user is sending audit sections one at a time for review.)

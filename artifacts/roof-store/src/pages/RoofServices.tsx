@@ -172,7 +172,7 @@ export default function RoofServices() {
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Tile Roof Waterproofing</h3>
-              <p className="text-muted-foreground leading-relaxed">Cracked, porous tile lets water infiltrate your roof deck — leading to leaks, rot, and costly structural damage. Our tile roof waterproofing systems fill every gap and seal every surface, creating a continuous waterproof membrane that keeps Florida's torrential rains out permanently. Our Roof Shield system is the world's only TAS-106 Dade County Uplift rated coating.</p>
+              <p className="text-muted-foreground leading-relaxed">Cracked, porous tile lets water infiltrate your roof deck — leading to leaks, rot, and costly structural damage. Our Smart Shield system seals and waterproofs each individual tile with a durable, flexible coating — no full gap-fill required. For roofs that also need every gap and void between tiles physically filled into one sealed, monolithic surface, our Roof Shield system adds that structural layer and carries the world's only TAS-106 Dade County Uplift rated coating.</p>
             </div>
             <div className="bg-background rounded-xl p-8 border shadow-sm">
               <h3 className="text-xl font-serif font-bold text-primary mb-3">Flat Roof Sealing After Pressure Cleaning</h3>

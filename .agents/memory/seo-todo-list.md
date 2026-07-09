@@ -108,4 +108,10 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ⏳ **Owner action** — Low off-page/editorial authority, no backlinks — outreach/PR/citations work, already tracked below
 - ✅ reviewCount hardcoded "19" — fixed, now correctly shows "10" (actual review count) everywhere
 
+### Section 2 — Funnel Coverage Gap: TOFU (Informational) (reviewed, confirmed against live site)
+- ⏳ **Owner/content action** — Partially stale claim: 4 comparison/guide pages already live (silicone-vs-elastomeric, roof-painting-vs-coating, roof-replacement-alternative-florida, roof-life-certification) covering some coating-type/comparison ground.
+- ⏳ **Owner/content action — confirmed real gap** — No dedicated content for "how long does roof coating last Florida" (lifespan-specific guide) or "rubber roof vs replacement" as its own comparison piece.
+- ⏳ **Owner/content action — confirmed real gap** — Nothing addresses "DIY vs pro" roof coating angle at all.
+- Not a code fix — needs new blog posts/landing pages with real claims/expertise from the user or their team. Agent can draft outlines on request but should not fabricate technical/warranty claims.
+
 (More sections pending — user is sending audit sections one at a time for review.)

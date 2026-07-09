@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
     "generate-sitemap": "pnpm --filter @workspace/scripts run generate-sitemap",
-    "build": "pnpm run generate-sitemap && vite build --config vite.config.ts",
+    "prerender": "pnpm --filter @workspace/scripts run prerender",
+    "build": "pnpm run generate-sitemap && vite build --config vite.config.ts && pnpm run prerender",
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "start": "node server.js"

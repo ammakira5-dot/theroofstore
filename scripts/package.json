@@ -6,6 +6,7 @@
   "scripts": {
     "hello": "tsx ./src/hello.ts",
     "generate-sitemap": "tsx ./src/generate-sitemap.ts",
+    "prerender": "tsx ./src/prerender.ts",
     "refresh-city-images": "tsx ./src/refresh-city-images.ts",
     "upload-city-images-to-storage": "tsx ./src/upload-city-images-to-storage.ts",
     "generate-trademark-evidence-pdf": "tsx ./src/generate-trademark-evidence-pdf.ts",

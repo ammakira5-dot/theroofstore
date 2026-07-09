@@ -650,9 +650,33 @@ app.use((req, res, next) => {
   return staticAssets(req, res, next);
 });
 
+// ── Prerendered pages ──────────────────────────────────────────────────────
+// `pnpm run build` runs a headless-browser prerender pass (see
+// scripts/src/prerender.ts) that snapshots every route's fully-rendered HTML
+// (real body content + JSON-LD schema, not just title/meta tags) into
+// dist/public/<path>/index.html. Serve those directly when present — this is
+// what makes city/county/product/FAQ page content actually crawlable without
+// requiring Googlebot to execute JS. Real users still get full client-side
+// React after the JS bundle loads (no hydration mismatch since content is
+// identical, just briefly re-rendered client-side).
+app.use((req, res, next) => {
+  if (req.method !== "GET" && req.method !== "HEAD") return next();
+  const hasExtension = /\.[a-zA-Z0-9]+$/.test(req.path) && req.path !== "/index.html";
+  if (hasExtension) return next();
+
+  const prerenderedPath = join(staticDir, req.path, "index.html");
+  if (fs.existsSync(prerenderedPath) && fs.statSync(prerenderedPath).isFile()) {
+    res.set("Cache-Control", "public, max-age=3600");
+    return res.sendFile(prerenderedPath);
+  }
+  next();
+});
+
 // ── SPA fallback with per-page meta injection ─────────────────────────────
-// For every HTML request (page navigation), inject the correct title,
-// description, and canonical so Googlebot sees unique tags per page.
+// Safety net for any route that wasn't prerendered (e.g. a new page added
+// without rebuilding yet, or an unmapped path). Injects title/description/
+// canonical server-side so Googlebot still sees unique tags per page, even
+// though the visible body content will only be to a JS-executing crawler.
 app.use((req, res) => {
   const meta = resolvePageMeta(req.path);
   const canonicalUrl = `${BASE}${meta.canonical}`;

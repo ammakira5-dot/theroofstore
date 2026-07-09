@@ -119,4 +119,9 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ✅ "TAS-106 roof coating" — stale claim, actually one of the most heavily covered differentiators sitewide (15+ pages: RoofShield product, RoofSystems, About, FAQ, Blog, Questions, Videos, RoofReplacementAlternative, city/county pages)
 - ⏳ **Owner/content action — confirmed real gap** — No pricing signals on city-specific pages. Only a generic `$$` price-range symbol in schema; no actual pricing ranges, "starting at" language, or financing/quote conversion elements in visible content. Needs real pricing input from the user before anything can be added (agent should not fabricate prices).
 
+### Section 4 — Funnel Coverage Gap: Local/Near-me (reviewed, confirmed against live site)
+- ✅ "roof coating near me" / "roof coating Fort Lauderdale" / "liquid rubber roof Boca Raton" — confirmed strong: 111 city pages + 4 county pages, all in sitemap
+- ✅ Content depth verified (audit flagged as "not sampled") — every one of the 111 city pages has a genuine unique ~300-450 character local blurb (housing stock era, roof type prevalence, local climate factors) layered on the shared page template (geo schema, maps embed, Service schema, phone CTA) — this is real per-city content, not thin/duplicate boilerplate
+- No action needed — this is a strength, not a gap
+
 (More sections pending — user is sending audit sections one at a time for review.)

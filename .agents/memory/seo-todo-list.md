@@ -15,16 +15,19 @@ description: Master prioritized to-do list from July 9, 2026 StoreClaw audit + i
 
 ## Codebase Fixes — Agent Can Do (prioritized by ICE score)
 
-### 🔴 #1 — Fix duplicate `<title>`, `<meta description>`, `og:*` tags sitewide (ICE 9/10)
-Every page renders two complete sets of title/meta/OG tags. Root cause: `index.html` has a static `<title>` or base OG block AND `SEO.tsx` (React Helmet) injects a second set per page. Fix: strip any static meta/OG from `index.html` and ensure React Helmet is the sole source of truth.
+### ✅ #1 — Fix duplicate `<title>`, `<meta description>`, `og:*` tags sitewide (ICE 9/10) — DONE July 9 2026
+Stripped all static meta/OG/title/canonical tags from `index.html`; switched `server.js` from regex-replace to single insert-before-`</head>` block. React Helmet is now the sole client-side source; server.js is the sole server-side source. No more duplicates.
 
-### 🔴 #2 — Fix /faq page answer visibility (ICE 8.5/10)
-The dedicated `/faq` page still uses JS accordion — answers are hidden from Google. Fix: render all answer text in HTML directly (same pattern as the homepage FAQ fix). Add FAQPage schema to the /faq page once text is visible.
+### ✅ #2 — Fix /faq page answer visibility (ICE 8.5/10) — DONE July 9 2026
+Replaced JS Accordion with always-visible Q&A cards (`<h2>` + `<p>` per item). All 19 answers now in HTML DOM. FAQPage schema already present.
 
-### 🟡 #3 — H1 keyword optimization (ICE 8/10)
-- Homepage H1: "Don't Re-Roof. Weatherproof at 1/2 the Cost." → needs a keyword-rich H1. Suggestion: "Rubber Roof Coating Florida — Don't Re-Roof at Half the Cost" or add a keyword-rich subheading as the primary H1 and demote the tagline to H2.
-- `/roof-systems` H1: "Roof Systems" → "Roof Coating Systems Florida"
-- `/products` H1: "Our Product Line" → "Liquid Rubber Roof Coating Products — Florida TAS-106 Certified"
+### 🟡 #3 — H1 keyword optimization (ICE 8/10) — NEXT UP (paused July 9 2026, awaiting user choice)
+Keyword research done. Top keywords: "roof coating Florida" (1,500–3,000/mo), "roof painting Florida" (1,000–2,000/mo), "tile roof painting Florida" (300–700/mo), "flat roof coating Florida" (500–1,000/mo), "tile roof waterproofing Florida" (300–600/mo), "elastomeric roof coating Florida" (300–600/mo).
+
+Proposed H1 options presented to user — awaiting pick:
+- **Homepage** (current: "Don't Re-Roof. Weatherproof at 1/2 the Cost."): A) "Roof Coating & Waterproofing Contractor — South Florida Since 1994" | B) "Rubber Roof Coating Florida — Tile, Flat & Metal Roofs" | C) Keep tagline as H1, add keyword-rich H2 below (recommended)
+- **`/roof-systems`** (current: "Roof Systems"): A) "Roof Coating & Painting Systems — Florida Tile, Flat & Metal Roofs" | B) "Professional Roof Coating Systems for Florida Homes"
+- **`/products`** (current: "Our Product Line"): A) "FungalShield, SmartShield & RoofShield — Florida Roof Coating Systems" | B) "Liquid Rubber Roof Coating Products — TAS-106 Certified, Made in Florida"
 
 ### 🟡 #4 — www vs non-www canonical consistency (ICE 7.5/10)
 Blog posts link to `theroofstore.net` (no www). All internal links, og:url, canonical tags, and sitemap entries must consistently use `https://www.theroofstore.net`. Verify server.js 301-redirects non-www → www.

@@ -87,6 +87,15 @@ export function ProductDetail({ product }: { product: ProductData }) {
         { "@type": "ListItem", position: 3, name: product.name, item: `${BASE}/products/${product.slug}` },
       ],
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: product.faq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    },
   ];
 
   return (

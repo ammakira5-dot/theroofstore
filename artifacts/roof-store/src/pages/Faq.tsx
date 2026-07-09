@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SEO } from "@/components/SEO";
 
 const faqs = [
@@ -51,12 +50,12 @@ const faqs = [
   },
   {
     q: "Silicone vs. elastomeric roof coating — which is better for Florida?",
-    a: "It depends on the system. The Roof Store primarily uses elastomeric and acrylic rubber coating systems for Fungal Shield and Smart Shield — for South Florida's climate, that's a deliberate choice, since elastomeric coatings stay flexible over a much wider temperature range, which matters when a tile or flat roof surface can swing from cool overnight lows to 150°F+ in direct summer sun. They also accept a full color range and can be tinted in 3,000+ colors to match any home. Our Roof Shield system is typically formulated with a proprietary premium silicone base ingredient instead — chosen because it performs on every roof type, including flat roofs that hold standing water — and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating. If you've been comparing silicone vs. elastomeric roof coating, ask us about the difference during your free inspection.",
+    a: "It depends on the system. The Roof Store primarily uses elastomeric and acrylic rubber coating systems for FungalShield and SmartShield — for South Florida's climate, that's a deliberate choice, since elastomeric coatings stay flexible over a much wider temperature range, which matters when a tile or flat roof surface can swing from cool overnight lows to 150°F+ in direct summer sun. They also accept a full color range and can be tinted in 3,000+ colors to match any home. Our RoofShield system is typically formulated with a proprietary premium silicone base ingredient instead — chosen because it performs on every roof type, including flat roofs that hold standing water — and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating. If you've been comparing silicone vs. elastomeric roof coating, ask us about the difference during your free inspection.",
     link: { href: "/silicone-vs-elastomeric-roof-coating", label: "Read our full silicone vs. elastomeric comparison" },
   },
   {
     q: "How much does a roof coating cost in Florida?",
-    a: "Roof coating cost in Florida varies by system (Fungal Shield, Smart Shield, or Roof Shield), roof type (tile, flat deck, or metal), square footage, and pitch. As a general rule, a professional roof coating system runs a fraction of the cost of full roof replacement — often saving homeowners up to 50%. We provide a free on-site roof coating estimate with exact factory pricing for your property; see our Pricing page for guide rates by system and roof type, or call 954-210-9614 for a free quote.",
+    a: "Roof coating cost in Florida varies by system (FungalShield, SmartShield, or RoofShield), roof type (tile, flat deck, or metal), square footage, and pitch. As a general rule, a professional roof coating system runs a fraction of the cost of full roof replacement — often saving homeowners up to 50%. We provide a free on-site roof coating estimate with exact factory pricing for your property; see our Pricing page for guide rates by system and roof type, or call 954-210-9614 for a free quote.",
   },
   {
     q: "Can you paint a tile roof in South Florida?",
@@ -64,7 +63,7 @@ const faqs = [
   },
   {
     q: "How do I waterproof a tile roof?",
-    a: "Tile roof waterproofing involves cleaning the roof surface, repairing any cracked or broken tiles, repointing ridge caps and hip areas, and applying a multi-coat coating system that seals every tile surface and fills every gap. The result is a continuous waterproof membrane over your existing tile roof that stops leaks permanently. Our Roof Shield system is the world's only TAS-106 Dade County Uplift rated coating — the strongest waterproofing solution available for tile roofs in South Florida.",
+    a: "Tile roof waterproofing involves cleaning the roof surface, repairing any cracked or broken tiles, repointing ridge caps and hip areas, and applying a multi-coat coating system that seals every tile surface and fills every gap. The result is a continuous waterproof membrane over your existing tile roof that stops leaks permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating — the strongest waterproofing solution available for tile roofs in South Florida.",
   },
   {
     q: "How do I seal a flat roof after pressure cleaning?",
@@ -128,34 +127,29 @@ export default function Faq() {
 
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+          <div className="space-y-6">
             {faqs.map((faq, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
+                transition={{ delay: i * 0.04 }}
+                className="bg-card border rounded-xl px-6 py-6"
               >
-                <AccordionItem value={`item-${i}`} className="bg-card border rounded-xl px-6" data-testid={`faq-item-${i}`}>
-                  <AccordionTrigger className="text-left font-serif font-bold text-lg text-foreground hover:text-primary py-6">
-                    {faq.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pb-6 text-base">
-                    {faq.a}
-                    {faq.link && (
-                      <Link
-                        href={faq.link.href}
-                        className="mt-3 inline-block font-semibold text-primary hover:underline"
-                      >
-                        {faq.link.label} →
-                      </Link>
-                    )}
-                  </AccordionContent>
-                </AccordionItem>
+                <h2 className="font-serif font-bold text-lg text-foreground mb-3">{faq.q}</h2>
+                <p className="text-muted-foreground leading-relaxed text-base">{faq.a}</p>
+                {faq.link && (
+                  <Link
+                    href={faq.link.href}
+                    className="mt-3 inline-block font-semibold text-primary hover:underline text-sm"
+                  >
+                    {faq.link.label} →
+                  </Link>
+                )}
               </motion.div>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 

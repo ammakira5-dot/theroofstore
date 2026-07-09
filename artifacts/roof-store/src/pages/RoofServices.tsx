@@ -96,8 +96,8 @@ export default function RoofServices() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Restoration & Roof Painting Services — Tile, Flat, Shingle & Metal Roofs | South Florida"
-        description="Licensed roof restoration and roof painting contractor for residential and commercial properties in South Florida: pressure cleaning, soft washing, tile reglazing & restoration, flat deck rubber coating, shingle roof coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. Professionally installed with our FungalShield, SmartShield & RoofShield systems."
+        title="Roof Restoration & Roof Coating Services — Tile, Flat, Shingle & Metal Roofs | South Florida"
+        description="Licensed roof restoration and roof coating contractor for residential and commercial properties in South Florida: pressure cleaning, soft washing, tile reglazing & restoration, flat deck coating, shingle roof coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. Professionally installed with our FungalShield, SmartShield & RoofShield systems."
         canonical="/roof-services"
         schema={schema}
       />
@@ -148,7 +148,7 @@ export default function RoofServices() {
       <section className="py-20 bg-muted">
         <div className="container px-4 max-w-5xl mx-auto space-y-12">
           <div className="text-center mb-4">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Soft Washing, Painting, Elastomeric &amp; Reflective Roof Coating in South Florida</h2>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Pressure Cleaning, Soft Washing, Elastomeric &amp; Reflective Roof Coating in South Florida</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">Whether you need to pressure clean or soft wash a Spanish tile roof, paint a flat cement tile roof, apply an elastomeric or acrylic roof coating, or install a reflective cool roof coating on a flat deck — The Roof Store has been South Florida's trusted roof maintenance specialist since 1994, serving Broward, Miami-Dade, Palm Beach, and Monroe counties.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

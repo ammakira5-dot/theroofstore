@@ -285,8 +285,8 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Painting Products — Metal Roof Coating, Flat Roof Coating & Roof Tile Sealer | The Roof Store Florida"
-        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — roof painting & coating systems for tile, flat, shingle, and metal roofs. Clear roof tile sealer, direct-to-metal roof coating, and flat roof coating rated for ponding water — all manufactured by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        title="Roof Coating Products — Metal Roof Coating, Flat Roof Coating & Roof Tile Sealer | The Roof Store Florida"
+        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — roof coating systems for tile, flat, shingle, and metal roofs. Clear roof tile sealer, direct-to-metal roof coating, and flat roof coating rated for ponding water — all manufactured by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
         canonical="/products"
         schema={schema}
       />

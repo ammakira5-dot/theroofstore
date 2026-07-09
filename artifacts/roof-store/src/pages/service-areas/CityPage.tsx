@@ -59,7 +59,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
         "@type": "OfferCatalog",
         name: "Roof Coating Services",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
@@ -108,7 +108,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
         "@type": "OfferCatalog",
         name: "Roof Coating Services",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },

@@ -59,7 +59,7 @@ const partners = [
       "Roof Protect Products is our authorized product supply and distribution partner — operating under our in-house RoofProtect factory license, the manufacturing label behind FungalShield, SmartShield, and RoofShield. Contractors and property managers can purchase our full range of rubber roof coating products, sealants, and primers direct from the factory in Broward County, Florida.",
     services: [
       "Wholesale Product Supply",
-      "Rubber Roof Coating Products",
+      "Elastomeric Roof Coating Products",
       "Waterproofing Sealants & Primers",
       "Contractor Supply Program",
       "National Product Distribution",

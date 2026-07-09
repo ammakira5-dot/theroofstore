@@ -74,7 +74,7 @@ export default function RoofServices() {
       name: "Roof Services — The Roof Store",
       url: `${BASE}/roof-services`,
       itemListElement: [
-        { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Rubber Roof Coating", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
+        { "@type": "ListItem", position: 1, item: { "@type": "Service", name: "Elastomeric Roof Coating", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
         { "@type": "ListItem", position: 2, item: { "@type": "Service", name: "Tile Roof Restoration", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
         { "@type": "ListItem", position: 3, item: { "@type": "Service", name: "Tile Reglazing & Reseal", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },
         { "@type": "ListItem", position: 4, item: { "@type": "Service", name: "Flat Deck Waterproofing", provider: { "@type": "LocalBusiness", name: "The Roof Store" } } },

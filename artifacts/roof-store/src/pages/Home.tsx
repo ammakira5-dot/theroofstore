@@ -9,7 +9,7 @@ const heroSlides = [
   {
     headline: (
       <>
-        Rubber Roof Coating <span className="text-accent">South Florida</span><br />
+        Elastomeric Roof Coating <span className="text-accent">South Florida</span><br />
         Tile, Flat & Metal Roofs
       </>
     ),
@@ -148,7 +148,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <SEO
-        title="The Roof Store | Rubber Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield"
+        title="The Roof Store | Elastomeric Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield"
         description="Florida's original liquid-applied rubber roof shield system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
         ogImage="https://www.theroofstore.net/images/hero-bg.png"
@@ -162,7 +162,7 @@ export default function Home() {
           <img 
             src="/images/hero-bg.png" 
             alt="Florida home with liquid rubber roof coating applied by The Roof Store — weatherproof and hurricane-rated"
-            title="The Roof Store — Liquid Rubber Roof Coating Florida | Fungal Shield, Smart Shield, Roof Shield"
+            title="The Roof Store — Elastomeric Roof Coating Florida | Fungal Shield, Smart Shield, Roof Shield"
             className="w-full h-full object-cover"
           />
         </div>

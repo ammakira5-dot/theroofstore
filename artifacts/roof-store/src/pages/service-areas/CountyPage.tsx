@@ -44,7 +44,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
         "@type": "OfferCatalog",
         name: "Roof Coating Services",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
@@ -89,7 +89,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
         "@type": "OfferCatalog",
         name: "Roof Coating Services",
         itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rubber Roof Coating" } },
+          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
           { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
@@ -157,7 +157,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     "Roof Pressure Cleaning & Soft Washing",
-                    "Rubber Roof Coating",
+                    "Elastomeric Roof Coating",
                     "Tile Roof Restoration",
                     "Tile Reglazing",
                     "Flat Deck Waterproofing",

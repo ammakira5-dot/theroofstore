@@ -29,9 +29,9 @@ const services = [
   },
   {
     icon: Droplets,
-    title: "Flat Deck Rubber Roof Paint",
+    title: "Flat Deck Roof Coating",
     description:
-      "Flat and low-slope roofs demand a different solution — our rubber roof paint creates a seamless, fully adhered membrane that eliminates every potential leak point. No seams, no joints, no weak spots.",
+      "Flat and low-slope roofs demand a different solution — our roof coating creates a seamless, fully adhered membrane that eliminates every potential leak point. No seams, no joints, no weak spots.",
     benefits: ["Seamless waterproof membrane", "Handles ponding water", "Thermal shock resistant", "Commercial and residential grade"],
   },
   {

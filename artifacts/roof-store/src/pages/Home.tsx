@@ -229,7 +229,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-4">
               <Award className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2">Nearly 30 Years Experience</h3>
-              <p className="text-white/80 text-sm">Pioneers in high-strength weatherproof rubber roof coating systems. Licensed &amp; insured, A+ BBB since 1994.</p>
+              <p className="text-white/80 text-sm">Pioneers in high-strength elastomeric roof coating systems. Licensed &amp; insured, A+ BBB since 1994.</p>
             </div>
             <div className="flex flex-col items-center p-4">
               <Wind className="h-12 w-12 text-accent mb-4" />
@@ -307,7 +307,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { title: "Roof Tile Restoration", desc: "Complete cleaning, repair, and sealing of aging terracotta and concrete tiles.", icon: <Wrench className="h-6 w-6" /> },
-              { title: "Flat Deck Rubber Paint", desc: "Seamless liquid rubber membranes that eliminate leaks on flat roofs permanently.", icon: <Droplets className="h-6 w-6" /> },
+              { title: "Flat Deck Roof Coating", desc: "Seamless elastomeric membranes that eliminate leaks on flat roofs permanently.", icon: <Droplets className="h-6 w-6" /> },
               { title: "Fungal Shield · Smart Shield · Roof Shield", desc: "Our three branded coating systems tackle algae, heat, and waterproofing — choose the right shield for your roof.", icon: <ShieldCheck className="h-6 w-6" /> }
             ].map((s, i) => (
               <motion.div 

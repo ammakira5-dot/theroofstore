@@ -319,7 +319,7 @@ export default function Products() {
         <div className="container px-4">
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-center sm:text-left">
-              <div className="text-sm font-bold uppercase tracking-wider opacity-80">Coverage Reference — Weatherproof Rubber Products</div>
+              <div className="text-sm font-bold uppercase tracking-wider opacity-80">Coverage Reference — Weatherproof Coating Products</div>
             </div>
             <div className="flex gap-6 sm:gap-12">
               {[

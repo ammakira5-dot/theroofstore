@@ -59,7 +59,7 @@ export const counties: CountyEntry[] = [
         slug: "davie",
         image: "/api/storage/public-objects/cities/1553284965-83fd3e82fa5a.jpg",
         blurb:
-          "Our home base — The Roof Store has operated out of Davie since 1994, and we know the local roofing landscape better than anyone. As Davie's original rubber roof paint and roof coating contractor, we work on everything from large flat-deck barn roofs to Spanish tile on residential homes throughout the town, serving Davie's unique mix of equestrian estates, suburban neighborhoods, and commercial properties. Darker tile roofs have become increasingly popular with Davie homeowners, and our Smart Shield system's BASF Cool Pigment Technology lets you go dark without sacrificing energy efficiency.",
+          "Our home base — The Roof Store has operated out of Davie since 1994, and we know the local roofing landscape better than anyone. As Davie's original elastomeric roof coating contractor, we work on everything from large flat-deck barn roofs to Spanish tile on residential homes throughout the town, serving Davie's unique mix of equestrian estates, suburban neighborhoods, and commercial properties. Darker tile roofs have become increasingly popular with Davie homeowners, and our Smart Shield system's BASF Cool Pigment Technology lets you go dark without sacrificing energy efficiency.",
       },
       {
         name: "Deerfield Beach",

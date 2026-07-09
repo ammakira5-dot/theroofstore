@@ -114,4 +114,9 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ⏳ **Owner/content action — confirmed real gap** — Nothing addresses "DIY vs pro" roof coating angle at all.
 - Not a code fix — needs new blog posts/landing pages with real claims/expertise from the user or their team. Agent can draft outlines on request but should not fabricate technical/warranty claims.
 
+### Section 3 — Funnel Coverage Gap: BOFU (Transactional) (reviewed, confirmed against live site)
+- ✅ "roof coating contractor Broward" / "roof coating company Davie FL" — Davie/Broward city pages exist with geo-targeted title/description + phone CTA
+- ✅ "TAS-106 roof coating" — stale claim, actually one of the most heavily covered differentiators sitewide (15+ pages: RoofShield product, RoofSystems, About, FAQ, Blog, Questions, Videos, RoofReplacementAlternative, city/county pages)
+- ⏳ **Owner/content action — confirmed real gap** — No pricing signals on city-specific pages. Only a generic `$$` price-range symbol in schema; no actual pricing ranges, "starting at" language, or financing/quote conversion elements in visible content. Needs real pricing input from the user before anything can be added (agent should not fabricate prices).
+
 (More sections pending — user is sending audit sections one at a time for review.)

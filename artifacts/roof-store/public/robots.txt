@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /trademark-evidence-file
+Disallow: /trademark-monitoring-log
 
 Sitemap: https://www.theroofstore.net/sitemap.xml

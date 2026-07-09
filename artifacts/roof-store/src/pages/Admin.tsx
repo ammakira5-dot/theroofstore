@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Clock, ShieldCheck, Loader2, LogOut, RefreshCw } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const SOURCE_LABELS: Record<string, string> = {
   "contact-form": "Contact Page",
@@ -104,6 +105,7 @@ export default function Admin() {
   if (!authed) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center px-4">
+        <SEO title="Admin — The Roof Store" description="Internal admin dashboard." canonical="/admin" noindex />
         <div className="w-full max-w-sm">
           <div className="text-center mb-8">
             <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -137,6 +139,7 @@ export default function Admin() {
 
   return (
     <div className="container px-4 py-12 max-w-6xl mx-auto">
+      <SEO title="Admin — The Roof Store" description="Internal admin dashboard." canonical="/admin" noindex />
       <div className="flex items-center justify-between mb-8 flex-wrap gap-4">
         <div>
           <h1 className="text-3xl font-serif font-bold text-primary">Lead Submissions</h1>

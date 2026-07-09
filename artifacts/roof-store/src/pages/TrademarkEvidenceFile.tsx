@@ -9,6 +9,7 @@ export default function TrademarkEvidenceFile() {
         title="Brand Infringement Evidence File | The Roof Store"
         description="Internal documentation of brand infringement evidence — The Roof Store (theroofstore.net) v. theroof.store."
         canonical="/trademark-evidence-file"
+        noindex
         schema={{
           "@context": "https://schema.org",
           "@type": "CreativeWork",

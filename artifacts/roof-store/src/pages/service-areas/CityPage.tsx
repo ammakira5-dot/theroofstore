@@ -304,6 +304,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                     style={{ border: 0, display: "block" }}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
+                    allowFullScreen
                   />
                 </div>
               ) : (

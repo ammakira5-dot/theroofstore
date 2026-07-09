@@ -87,7 +87,9 @@ async function main() {
   });
   const baseUrl = `http://127.0.0.1:${port}`;
 
-  const executablePath = process.env.PLAYWRIGHT_CHROMIUM_PATH;
+  const executablePath =
+    process.env.REPLIT_PLAYWRIGHT_CHROMIUM_EXECUTABLE ||
+    process.env.PLAYWRIGHT_CHROMIUM_PATH;
   const browser = await chromium.launch(
     executablePath ? { executablePath } : undefined,
   );

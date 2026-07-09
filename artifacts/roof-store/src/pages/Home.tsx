@@ -9,11 +9,11 @@ const heroSlides = [
   {
     headline: (
       <>
-        Don't Re-Roof.<br />
-        <span className="text-accent">Weatherproof</span> at 1/2 the Cost.
+        Rubber Roof Coating <span className="text-accent">South Florida</span><br />
+        Tile, Flat & Metal Roofs
       </>
     ),
-    sub: "The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.",
+    sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.",
   },
   {
     headline: (

@@ -54,8 +54,11 @@ Self-introduced regression from fix #1: `server.js` mounted `sirv` (static file 
 ### ✅ #9 — reviewCount hardcoded "19", didn't match actual review count — DONE July 9 2026
 Actual reviews on `/reviews` page = 10 (1 featured + 9 listed). Fixed hardcoded `"19"` → `"10"` in Home.tsx, ProductDetail.tsx, and index.html schema to match reality (Reviews.tsx already computed it dynamically via `allReviews.length`).
 
-### ⏳ #10 — Trim `<title>` tags over ~60-65 chars sitewide (ICE 5/10) — NOT DONE
-Many pages (Home, Videos, Products, Blog, RoofSystems, Faq, About, RoofReplacementAlternative, etc.) have titles >60 chars, which Google truncates in SERPs. Needs a page-by-page pass to shorten while keeping primary keyword + brand. Not done this session — lower priority, high page count, needs care to preserve keyword targeting per page.
+### ✅ #10 — Trim `<title>` tags over ~60-65 chars sitewide (ICE 5/10) — DONE July 9 2026
+Shortened all 13 pages with titles over 65 chars (Home, Shop, Products, RoofServices, RoofSystems, CommercialRoofs, SiliconeVsElastomeric, SiliconeRoofCoating, RoofReplacementAlternative, Blog, and the 3 product detail pages via `seoTitle` in `products/data.ts`) — all now fit fully in SERPs while keeping primary keyword + brand. Published and sitemap resubmitted to Google Search Console.
+
+### ✅ Content accuracy fix — tile waterproofing Smart Shield vs. Roof Shield claims — DONE July 9 2026
+User flagged that content overstated Roof Shield (monolithic) as required for tile waterproofing, when Smart Shield also waterproofs individual tiles. Corrected explanation across `RoofServices.tsx` and all 4 `contentVariants.ts` service variants: traditional tile roofs rely on underlayment paper below the tiles (by design) which tears over time from roof movement, causing leaks; Smart Shield seals the tile surface itself; Roof Shield retrofits the whole tile field into one monolithic, gap-filled surface so water never reaches the aging paper at all. Also added: clients have the option to add Smart Shield as a top coat over Roof Shield for max reflectivity/cooling on dark color choices.
 
 ### ⏳ #11 — Add BBB/Yelp/Houzz to `sameAs` schema array (ICE 6/10) — BLOCKED, needs owner input
 `index.html` LocalBusiness schema `sameAs` only has the domain + 2 Google Maps links. Cannot add BBB/Yelp/Houzz profile URLs without the user providing the real links — fabricating them would be worse than leaving them out (broken/invalid schema).

@@ -101,6 +101,13 @@ Remaining lower-priority items from audit #2 (add geo keyword to a homepage H2, 
 ### theroofstore.net (in codebase, 1 item)
 - Re-enable windproofroofsields.com partner link in `PartnerNetwork.tsx` once their 3 fixes above go live (`linkPaused: true` → remove flag)
 
+### shopping.theroofstore.net — abandoned legacy subdomain, PRIORITY, owner action needed (July 10 2026)
+Found via `site:theroofstore.net` search, page 2: `https://www.shopping.theroofstore.net` is a separate, abandoned ~2020-era PHP shopping-cart site (own cart, own product-detail pages, Apache server) — not part of this codebase, still indexed by Google 10+ years later with a stale "Roof Protect" title. User reports clicking through from it leads to a doorway page for roofprotectproducts.com; not reproduced via direct fetch (likely JS/click-path-dependent), but the core issue holds regardless: this stale subdomain competes with the real site for brand searches and may leak traffic/authority to roofprotectproducts.com.
+Fix needs whoever controls hosting/DNS for that subdomain (not accessible from this codebase):
+1. Best: server-level 301 redirect `shopping.theroofstore.net` → `https://www.theroofstore.net/`
+2. If truly abandoned/inaccessible: request removal via Search Console (if verified access to that subdomain as a property)
+Next: user has more links to check this session — audit continuing.
+
 ---
 
 ## Audit #2 Section-by-Section Review (in progress, July 9 2026)

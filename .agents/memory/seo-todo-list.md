@@ -148,3 +148,13 @@ Going through the second audit's "Key Risks" list with the user one section at a
 - ⏳ **Owner action, can't verify from here** — Search Console index coverage report / manual actions check requires the user's Search Console access.
 
 (More sections pending — user is sending audit sections one at a time for review.)
+
+---
+
+## Audit #3 — Duplicate Content / Legacy URLs (July 9 2026, new audit doc, in progress)
+
+### Item 1 — windproofroofsystems.com flagged as duplicate sister site — NOT YET ACTIONED
+Schema on theroofstore.net declares windproofroofsystems.com as owned via `"owns"`. Site shares identical product names, near-identical USP language, overlapping testimonials (Don Godshall, Ana Arias, Arlene Kalb), broader service territory claim. Risk: diluted backlink/entity authority, possible canonical confusion. This overlaps with the already-tracked "Sister Sites Pending → windproofroofsystems.com" 3 fixes above (different issue — that item is about wrong phone numbers/copy; this is about canonical/indexation strategy). Audit recommends one of: canonical tag to theroofstore.net, robots.txt disallow, differentiate by territory, or remove shared testimonials. Needs user decision on strategy before any action (this is a business/domain-ownership decision, not a pure code fix, and windproofroofsystems.com is a separate site with no code access here).
+
+### Item 2 — Legacy .php URLs indexed, no 301 redirects — NOT YET ACTIONED
+15+ old .php URLs (from pre-migration PHP site) still return 200 and are indexed by Google alongside their new clean-URL equivalents (e.g. `/reviews.php` vs `/reviews`, `/commercial.php` vs `/commercial-roofs`, 20+ city `.php` pages). robots.txt doesn't block them; sitemap only lists new URLs but that doesn't stop indexing of the old ones. Fix: add server-level 301 redirects in `server.js` from each legacy .php path to its clean equivalent. This IS a code fix in this codebase — actionable once we confirm the full list of legacy paths with the user.

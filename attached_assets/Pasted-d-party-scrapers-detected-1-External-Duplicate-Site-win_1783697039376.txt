@@ -1,0 +1,39 @@
+d-party scrapers detected
+1. External Duplicate Site — windproofroofsystems.com CRITICAL
+The schema markup on theroofstore.net explicitly declares windproofroofsystems.com as an owned sister property via the "owns" field in the RoofingContractor schema. The site is live, indexed, and covers identical service territory, identical products (FungalShield, SmartShield, RoofShield), and near-identical marketing language.
+
+Evidence of Duplication
+Element	theroofstore.net	windproofroofsystems.com
+Brand / Products	FungalShield, SmartShield, Roof Shield	Fungal Shield, Smart Shield, Roof Shield
+USP claim	"world's only TAS-106 Dade County Uplift rated coating"	"Our Premium Roof Tile Coating System is Dade County TAS-106 Tile Wind Uplift Tested"
+Service territory	Dade, Broward, Palm Beach	Dade, Broward, Palm Beach, Martin, Port St Lucie, and more
+Founding claim	A+ BBB Rated since 1994	"A+ BBB Rated since 1994"
+Testimonials	Unique to theroofstore.net	Overlapping customer names (Don Godshall, Ana Arias, Arlene Kalb)
+Business entity	"Storm Shield Paint Systems Inc."	Not explicitly stated
+SEO Risk
+Google will index both sites, determine that theroofstore.net is the primary (given its canonical and sitemap setup), and deprioritize or filter windproofroofsystems.com from results. However, the existence of shared content across two domains creates a diluted backlink profile, confuses Google's entity understanding of the brand, and risks splitting search authority. If Google instead treats windproofroofsystems.com as the canonical source for any shared content strings, rankings can shift unexpectedly.
+
+Recommended actions:
+Add <link rel="canonical" href="https://www.theroofstore.net/"> on every page of windproofroofsystems.com pointing to the corresponding page on theroofstore.net, OR
+Add a robots.txt Disallow: / on windproofroofsystems.com to block indexation entirely if the site serves a non-SEO purpose (referral / brand), OR
+Rewrite windproofroofsystems.com content to cover the extended service territory (Martin, Port St Lucie, Indian River, etc.) that theroofstore.net does not — making it a geographically distinct, non-competing property.
+Remove the shared testimonial content from one site; testimonials should be exclusive to the site on which they were collected.
+2. Legacy .php Pages — Unredirected Duplicate URL Layer CRITICAL
+The site has undergone a migration from a legacy PHP-based architecture to a clean modern URL structure. Google has indexed at least 15+ of the old .php URLs, and none of the legacy pages appear to have been 301-redirected to their new equivalents. Both versions return HTTP 200 and serve content, meaning Google is indexing two versions of the same content under different URLs.
+
+Confirmed Legacy .php URLs in Google's Index
+Legacy .php URL	Probable New Equivalent	Risk
+/Roof_Painting_Service_Broward_County_for_Smart_Shield.php	/products/smartshield	Critical
+/reviews.php	/reviews	Critical
+/commercial.php	/commercial-roofs	High
+/contact.php	/contact	High
+/factory.php	/factory	High
+/install-video.php	/videos	High
+/services/residential-spanish-tile-roof-waterproofing.php	/roof-services or /roof-systems	High
+/services/shingle-roof-restoration.php	/roof-services	High
+/fl/broward-county.php	/service-areas/broward-county	High
+/fl/serviceareas.php	/service-areas	High
+/fl/[City]-roof-contractor.php (20+ city pages)	/service-areas/broward-county/[city]	High
+/fl/[City]-metal-roof-restoration.php	/service-areas/[county]/[city]	Medium
+Note: The robots.txt file does NOT block any of these .php URLs. They are fully crawlable and being indexed by Google. The sitemap.xml only lists the new clean URLs — but without 301 redirects, Google will continue indexing both.
+Fix: Implement server-level 301 permanent redirects from every legacy .php URL to its corresponding clean URL. Example: theroofstore.net/reviews.php → 301 → theroofstore.net/reviews. Verify all redirects via Google Search Console's Coverage report within 2–4 weeks.

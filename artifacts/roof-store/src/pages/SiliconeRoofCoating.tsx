@@ -107,7 +107,7 @@ export default function SiliconeRoofCoating() {
   return (
     <div className="w-full">
       <SEO
-        title="Silicone Roof Coating for Commercial & Flat Roofs in South Florida | The Roof Store"
+        title="Silicone Roof Coating for Commercial & Flat Roofs | Florida"
         description="Professional silicone roof coating installation for commercial and flat roofs with ponding water in Broward, Miami-Dade & Palm Beach County. Part of our Roof Shield (RP3) system — up to a 50-year warranty. Free estimate: 954-210-9614."
         canonical="/silicone-roof-coating"
         schema={schema}

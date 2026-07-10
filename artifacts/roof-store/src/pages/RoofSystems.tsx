@@ -167,7 +167,7 @@ export default function RoofSystems() {
     <>
     <div className="w-full">
       <SEO
-        title="Roof Coating Systems Florida — FungalShield, SmartShield & RoofShield | The Roof Store"
+        title="Roof Coating Systems FL | FungalShield, SmartShield, RoofShield"
         description="FungalShield, SmartShield & RoofShield are The Roof Store's proprietary roof coating systems for tile, flat, shingle, and metal roofs, professionally installed by our licensed crew for residential and commercial properties in Florida. Built from elastomeric, polyurethane & silicone products manufactured in-house by RoofProtect. Up to 50-year silicone warranty. Davie, FL — 954-210-9614."
         canonical="/roof-systems"
         ogImage="https://www.theroofstore.net/images/roofshield-product.png"

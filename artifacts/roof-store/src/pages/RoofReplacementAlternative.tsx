@@ -141,7 +141,7 @@ export default function RoofReplacementAlternative() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Replacement Alternative Florida — Coat It for Half the Cost | The Roof Store"
+        title="Roof Replacement Alternative Florida | The Roof Store"
         description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 40–60% less cost. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
         schema={schema}

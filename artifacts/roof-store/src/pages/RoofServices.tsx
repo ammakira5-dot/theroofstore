@@ -96,7 +96,7 @@ export default function RoofServices() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Restoration & Roof Coating Services — Tile, Flat, Shingle & Metal Roofs | South Florida"
+        title="Roof Coating & Restoration Services | South Florida"
         description="Licensed roof restoration and roof coating contractor for residential and commercial properties in South Florida: pressure cleaning, soft washing, tile reglazing & restoration, flat deck coating, shingle roof coating, elastomeric coating systems, metal roof coating, hurricane protection, and emergency repairs. Professionally installed with our FungalShield, SmartShield & RoofShield systems."
         canonical="/roof-services"
         schema={schema}

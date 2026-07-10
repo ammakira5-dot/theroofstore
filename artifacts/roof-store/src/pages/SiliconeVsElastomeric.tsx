@@ -105,7 +105,7 @@ export default function SiliconeVsElastomeric() {
   return (
     <div className="w-full">
       <SEO
-        title="Silicone vs. Elastomeric Roof Coating: Which Is Better for Florida? | The Roof Store"
+        title="Silicone vs. Elastomeric Roof Coating: Which Is Better? | Florida"
         description="Comparing silicone and elastomeric roof coatings for South Florida's climate: flexibility, color options, hurricane wind-uplift testing, ponding water resistance, and long-term maintenance. Licensed & insured since 1994 — 954-210-9614."
         canonical="/silicone-vs-elastomeric-roof-coating"
         schema={schema}

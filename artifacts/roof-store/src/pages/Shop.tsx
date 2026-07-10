@@ -140,7 +140,7 @@ export default function Shop() {
   return (
     <div className="w-full">
       <SEO
-        title="Buy Roof Coating Products Online — Fungal Shield, Smart Shield, Roof Shield | The Roof Store"
+        title="Buy Roof Coating Products Online | The Roof Store"
         description="Purchase RP1 Fungal Shield ($190), RP2 Smart Shield ($285), and RP3 Roof Shield ($325) online. Manufactured in Davie, FL. Available in 5–50 gallon containers. Free consultation 954-210-9614."
         canonical="/shop"
         schema={schema}

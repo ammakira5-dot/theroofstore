@@ -190,7 +190,7 @@ export default function Blog() {
   return (
     <div className="w-full">
       <SEO
-        title="Blog — Roof Coating, Florida Insurance Laws & Storm Protection | The Roof Store"
+        title="Blog — Roof Coating & Florida Insurance News | The Roof Store"
         description="Expert articles on Florida roof coating, homeowners insurance laws, Citizens Insurance, hurricane protection, and Additional Roof Life Certification. The Roof Store — Davie, FL — 954-210-9614."
         canonical="/blog"
         schema={schema}

@@ -148,7 +148,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <SEO
-        title="The Roof Store | Elastomeric Roof Coating Florida — Fungal Shield, Smart Shield & Roof Shield"
+        title="The Roof Store | Elastomeric Roof Coating Florida"
         description="Florida's original elastomeric roof coating system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
         ogImage="https://www.theroofstore.net/images/hero-bg.png"

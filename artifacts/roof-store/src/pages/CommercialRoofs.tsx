@@ -163,7 +163,7 @@ export default function CommercialRoofs() {
     <>
     <div className="w-full">
       <SEO
-        title="Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida"
+        title="Commercial Flat Roof & Metal Waterproofing | The Roof Store FL"
         description="Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. TAS-106 certified. Call 954-210-9614."
         canonical="/commercial-roofs"
         schema={schema}

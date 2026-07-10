@@ -386,11 +386,27 @@ function resolvePageMeta(path) {
   };
 }
 
-// Read and cache index.html at startup
+// Read and cache the pristine SPA shell at startup, for use as the template
+// the meta-injection fallback below inserts per-page tags into.
+//
+// IMPORTANT: dist/public/index.html is NOT safe to use for this — it is also
+// the exact file the build's prerender pass (scripts/src/prerender.ts)
+// overwrites with the "/" route's fully-rendered homepage HTML (real title,
+// body content, schema). If any other route falls through to this fallback
+// (e.g. a route that failed to prerender), reading dist/public/index.html
+// here would take the ALREADY-RENDERED HOMEPAGE HTML and splice a second,
+// different page's title/meta on top of it — shipping homepage body content
+// under another page's title/URL. The build's prerender step snapshots a
+// real untouched copy to dist/.prerender-shell-backup.html specifically to
+// avoid this trap (see prerender-static-server-shell-bug.md); reuse that
+// same pristine copy here when it exists.
 let indexHtml = null;
 function getIndexHtml() {
   if (!indexHtml) {
-    const indexPath = join(staticDir, "index.html");
+    const shellBackupPath = join(staticDir, "..", ".prerender-shell-backup.html");
+    const indexPath = fs.existsSync(shellBackupPath)
+      ? shellBackupPath
+      : join(staticDir, "index.html");
     indexHtml = fs.readFileSync(indexPath, "utf-8");
   }
   return indexHtml;
@@ -717,8 +733,23 @@ app.use((req, res, next) => {
 
   const prerenderedPath = join(staticDir, req.path, "index.html");
   if (fs.existsSync(prerenderedPath) && fs.statSync(prerenderedPath).isFile()) {
-    res.set("Cache-Control", "public, max-age=3600");
-    return res.sendFile(prerenderedPath);
+    // IMPORTANT: dist/public/index.html (the "/" route's target file) always
+    // exists — it's also the raw, un-prerendered Vite build shell. If the
+    // prerender pass didn't actually run (e.g. headless Chromium unavailable
+    // in a given build environment), this file check alone can't tell the
+    // difference and would silently serve a titleless, bodyless shell to
+    // every visitor and crawler sitewide. Since static index.html has all
+    // <title>/<meta> tags stripped (server-side injection is the sole
+    // source, see fix #1a), a real prerendered file must contain a <title>
+    // tag — use that as a cheap, reliable signal that this is genuine
+    // prerendered output, not the bare shell. If it's missing, fall through
+    // to the meta-injection safety net below instead of serving a broken page.
+    const contents = fs.readFileSync(prerenderedPath, "utf-8");
+    if (contents.includes("<title>")) {
+      res.set("Cache-Control", "public, max-age=3600");
+      res.setHeader("Content-Type", "text/html; charset=utf-8");
+      return res.send(contents);
+    }
   }
   next();
 });

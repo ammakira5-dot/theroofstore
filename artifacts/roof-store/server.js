@@ -431,6 +431,8 @@ const EXACT_REDIRECTS = {
   "/pdf/pdf-images/Brochure/Brochure_2006_Revised_2018.pdf": "/products/roofshield",
   "/roof-shield-system.php": "/products/roofshield",
   "/factory.php": "/factory",
+  "/commercial.php": "/commercial-roofs",
+  "/install-video.php": "/videos",
   "/products.php": "/products",
   "/reviews.php": "/reviews",
   "/references.php": "/reviews",

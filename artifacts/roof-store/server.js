@@ -627,6 +627,24 @@ const EXACT_REDIRECTS = {
   "/locations": "/service-areas",
 };
 
+// ── Bare-slug legacy city URL variants ─────────────────────────────────────
+// Before the site's .php era, city landing pages were apparently also
+// published (and indexed by Google) as bare root-level slugs — no "/fl/"
+// folder, no ".php" extension — e.g. "/Lantana-roof-coating" instead of
+// "/fl/Lantana-roof-coating.php". These have real accumulated SEO value
+// (some indexed 10+ years) and must 301 to their modern page, not 404,
+// so that ranking signal transfers instead of being lost. Derived
+// automatically from the /fl/*.php entries above to avoid manual drift.
+for (const [flPath, dest] of Object.entries(EXACT_REDIRECTS)) {
+  if (!flPath.startsWith("/fl/") || !flPath.endsWith(".php")) continue;
+  const slug = flPath.slice(4, -4); // strip "/fl/" prefix and ".php" suffix
+  if (!slug) continue;
+  const bareSlug = `/${slug}`;
+  const bareSlugPhp = `/${slug}.php`;
+  if (!(bareSlug in EXACT_REDIRECTS)) EXACT_REDIRECTS[bareSlug] = dest;
+  if (!(bareSlugPhp in EXACT_REDIRECTS)) EXACT_REDIRECTS[bareSlugPhp] = dest;
+}
+
 app.use((req, res, next) => {
   const dest = EXACT_REDIRECTS[req.path];
   if (dest) return res.redirect(301, dest);

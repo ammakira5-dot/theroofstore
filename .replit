@@ -46,3 +46,6 @@ SMTP_PORT = "465"
 
 [nix]
 channel = "stable-25_05"
+
+[objectStorage]
+defaultBucketID = "replit-objstore-4b09cc59-afe4-422d-8ba0-5a96260cddc7"

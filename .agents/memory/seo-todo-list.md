@@ -92,10 +92,11 @@ Remaining lower-priority items from audit #2 (add geo keyword to a homepage H2, 
 2. Remove "A+ BBB Rated since 1994" claim (duplicate of theroofstore.net)
 3. Rewrite FungalShield/SmartShield/RoofShield section (currently verbatim copy from theroofstore.net)
 
-### windproofroofsystems.com (3 fixes, replacement copy already drafted — just needs pasting)
+### windproofroofsystems.com (4 fixes, replacement copy already drafted for #3 — just needs pasting)
 1. Remove "A+ BBB Rated since 1994" claim
 2. Fix tel link: displays 954-743-0667 but `href` is `tel:954-900-1973`
 3. Replace verbatim product copy (FungalShield/SmartShield/RoofShield) with tile-restoration-specific paragraph
+4. Remove shared testimonials (Don Godshall, Ana Arias, Arlene Kalb) from windproofroofsystems.com — testimonials should be exclusive to the site where they were originally collected (theroofstore.net). Per July 10 2026 audit follow-up. Also consider rewriting content to cover extended territory (Martin, Port St Lucie, Indian River counties) not covered by theroofstore.net, per audit's canonical/differentiation recommendation.
 
 ### theroofstore.net (in codebase, 1 item)
 - Re-enable windproofroofsields.com partner link in `PartnerNetwork.tsx` once their 3 fixes above go live (`linkPaused: true` → remove flag)

@@ -396,6 +396,37 @@ function getIndexHtml() {
   return indexHtml;
 }
 
+// ── Known routes manifest ──────────────────────────────────────────────────
+// Authoritative list of every real page path (same source as sitemap.xml),
+// generated at build time by scripts/src/generate-sitemap.ts. Any path NOT
+// in this set is a genuinely invalid/legacy URL and must return a real 404
+// — not a 200 with homepage content (a "soft 404" that keeps stale/garbage
+// URLs indexed by Google forever).
+let knownRoutes = null;
+function getKnownRoutes() {
+  if (!knownRoutes) {
+    try {
+      const manifestPath = join(staticDir, "routes.json");
+      knownRoutes = new Set(JSON.parse(fs.readFileSync(manifestPath, "utf-8")));
+    } catch {
+      // Manifest missing (e.g. stale build) — fail safe to "no known routes"
+      // so we don't accidentally 404 everything; PAGE_META exact matches and
+      // service-area regex matches in resolvePageMeta still work below.
+      knownRoutes = new Set();
+    }
+  }
+  return knownRoutes;
+}
+
+function isKnownRoute(path) {
+  if (getKnownRoutes().has(path)) return true;
+  // Dynamic patterns not enumerable in the static routes manifest but still
+  // real, resolvable pages (mirrors resolvePageMeta's regex matches).
+  if (/^\/service-areas\/[^/]+\/[^/]+$/.test(path)) return true;
+  if (/^\/roof-services\/[^/]+$/.test(path)) return true;
+  return false;
+}
+
 const app = express();
 
 // ── Canonical host enforcement (non-www → www) ────────────────────────────
@@ -680,6 +711,25 @@ app.use((req, res, next) => {
 // canonical server-side so Googlebot still sees unique tags per page, even
 // though the visible body content will only be to a JS-executing crawler.
 app.use((req, res) => {
+  // Genuinely unknown path (not a real page, not a legacy URL we redirect) —
+  // return a real 404 instead of a soft-404 (200 + homepage content), so
+  // Google doesn't index garbage/legacy URLs indefinitely.
+  if (!isKnownRoute(req.path)) {
+    res.status(404);
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.send(`<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found | The Roof Store</title>
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist. <a href="${BASE}/">Return to The Roof Store homepage</a>.</p>
+  </body>
+</html>`);
+    return;
+  }
+
   const meta = resolvePageMeta(req.path);
   const canonicalUrl = `${BASE}${meta.canonical}`;
   const escaped = {

@@ -10,6 +10,10 @@ const OUTPUT_PATH = resolve(
   __dirname,
   "../../artifacts/roof-store/public/sitemap.xml",
 );
+const ROUTES_MANIFEST_PATH = resolve(
+  __dirname,
+  "../../artifacts/roof-store/public/routes.json",
+);
 
 const TODAY = new Date().toISOString().split("T")[0];
 
@@ -27,3 +31,15 @@ ${urlEntries}
 
 writeFileSync(OUTPUT_PATH, xml, "utf-8");
 console.log(`sitemap.xml written to ${OUTPUT_PATH} (${allRoutes.length} URLs)`);
+
+// Routes manifest — authoritative list of real page paths, consumed by
+// server.js at runtime to distinguish real (if not-yet-prerendered) routes
+// from genuinely invalid/legacy URLs, so the latter can return a real 404
+// instead of a soft-404 (200 + homepage content).
+const routesManifest = allRoutes.map(({ loc }) => loc);
+writeFileSync(
+  ROUTES_MANIFEST_PATH,
+  JSON.stringify(routesManifest, null, 2),
+  "utf-8",
+);
+console.log(`routes.json written to ${ROUTES_MANIFEST_PATH} (${routesManifest.length} routes)`);

@@ -137,3 +137,57 @@ id = "Fm5Sf-OuQvLW7uyFWIAJ_"
 uri = "file://attached_assets/exports/Brand_Infringement_Evidence_File_2026-07-08.pdf"
 type = "pdf"
 title = "Brand Infringement Evidence File (updated — includes Exhibit J)"
+
+[[outputs]]
+id = "UmpMmor4ZlYu-ZGJysXfZ"
+uri = "file://attached_assets/smartshield-review/slider/broken-tile.png"
+type = "image"
+title = "1 — Broken tile (before)"
+
+[[outputs]]
+id = "c3LTofHcRrW0dxKPSaFIC"
+uri = "file://attached_assets/smartshield-review/slider/tile-repair-2b.png"
+type = "image"
+title = "2 — Tile repair / wipe off residue (2b)"
+
+[[outputs]]
+id = "P7vRTiL-V7LYz7n_9PYyf"
+uri = "file://attached_assets/smartshield-review/slider/tile-repair-2c.png"
+type = "image"
+title = "3 — Tile repair / wipe off residue (2c)"
+
+[[outputs]]
+id = "7w8v13i5gVUx-V7YknmPA"
+uri = "file://attached_assets/smartshield-review/slider/soft-wash-tool.jpg"
+type = "image"
+title = "4 — Soft wash tool on roof"
+
+[[outputs]]
+id = "W5MGoyX0uzX1PhqeyDcCw"
+uri = "file://attached_assets/smartshield-review/slider/soft-cleaning.jpg"
+type = "image"
+title = "5 — Soft cleaning"
+
+[[outputs]]
+id = "pJm7kPajIQNK2oQqAUgdK"
+uri = "file://attached_assets/smartshield-review/slider/pressure-truck.jpg"
+type = "image"
+title = "6 — Pressure cleaning truck"
+
+[[outputs]]
+id = "OYX-fqYE7vjF71sLey6mj"
+uri = "file://attached_assets/smartshield-review/slider/pressure-cleaning.jpg"
+type = "image"
+title = "7 — Pressure cleaning"
+
+[[outputs]]
+id = "x3feyAYGCgpzD5516l8j5"
+uri = "file://attached_assets/smartshield-review/slider/roof-prep.jpg"
+type = "image"
+title = "8 — Roof prep"
+
+[[outputs]]
+id = "bibIOTTb3bIKAq0z16oU-"
+uri = "file://attached_assets/smartshield-review/slider/top-coat-prep.jpg"
+type = "image"
+title = "9 — Top coat over prep"

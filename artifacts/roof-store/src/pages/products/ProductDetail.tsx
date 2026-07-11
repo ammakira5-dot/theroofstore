@@ -236,7 +236,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
                         <img
                           src={img.src}
                           alt={img.alt}
-                          className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="w-full h-56 lg:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="px-3 py-2">
                           <p className="text-xs text-muted-foreground leading-snug">{img.caption}</p>

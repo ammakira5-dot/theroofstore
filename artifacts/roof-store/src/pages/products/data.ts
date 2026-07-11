@@ -189,44 +189,24 @@ export const smartShield: ProductData = {
   pdfLabel: "Smart Shield Product Sheet (PDF)",
   galleryImages: [
     {
-      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-1.png",
-      alt: "Smart Shield Step 1 — open valleys waterproofed",
-      caption: "Step 1 — Open valleys waterproofed",
+      src: `${BASE}/images/projects/spanish-tile-extra-3.png`,
+      alt: "Composite tile roof coated with Smart Shield color roof system",
+      caption: "Smart Shield color system — composite tile",
     },
     {
-      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-2.jpeg",
-      alt: "Smart Shield Step 2 — ridge caps polyurethaned and fiber coated for hurricane wind-lift protection",
-      caption: "Step 2 — Ridge caps polyurethaned & fiber coated (hurricane wind-lift protection)",
+      src: `${BASE}/images/projects/spanish-tile-extra-4.png`,
+      alt: "Composite tile roof restoration with Smart Shield cool pigment coating",
+      caption: "Smart Shield cool pigment — restored tile roof",
     },
     {
-      src: "https://www.theroofstore.net/assets/images/prep-image-smart-shield-3.jpeg",
-      alt: "Smart Shield Step 3 — primer sealer applied",
-      caption: "Step 3 — Primer sealer applied",
+      src: `${BASE}/images/projects/spanish-tile-extra-1.png`,
+      alt: "Composite tile roof close-up after Smart Shield application",
+      caption: "Smart Shield application — close-up finish",
     },
     {
-      src: "https://www.theroofstore.net/assets/images/smart-sheild-top-coated.jpeg",
-      alt: "Smart Shield Step 4 — final top coat with color applied",
-      caption: "Step 4 — Final top coat with color",
-    },
-    {
-      src: "https://www.theroofstore.net/assets/images/Refelctive-smart-shield-prep-1.jpeg",
-      alt: "Reflective Smart Shield — darker colors reflect more heat",
-      caption: "Darker colors reflect MORE heat — BASF Cool Pigment",
-    },
-    {
-      src: "https://www.theroofstore.net/assets/images/Refelctive-smart-shield-prep-3.jpeg",
-      alt: "Reflective Smart Shield completed installation",
-      caption: "Completed Smart Shield installation — heat reflecting",
-    },
-    {
-      src: "https://www.theroofstore.net/assets/images/making-color.jpeg",
-      alt: "Mixing custom Smart Shield colors at our Davie FL factory",
-      caption: "Factory-mixed custom colors — Davie, FL",
-    },
-    {
-      src: "https://www.theroofstore.net/assets/images/custom-colors-2.png",
-      alt: "Smart Shield hard-copy color code samples — 3,000+ options",
-      caption: "3,000 color options — hard-copy samples available",
+      src: `${BASE}/images/projects/spanish-tile-extra-2.png`,
+      alt: "Composite tile roof home exterior restored with Smart Shield",
+      caption: "Full home exterior — Smart Shield restored",
     },
   ],
 };

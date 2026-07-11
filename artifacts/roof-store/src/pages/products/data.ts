@@ -392,6 +392,13 @@ export const roofShield: ProductData = {
       after: `${BASE}/images/projects/flat-deck-after-2.png`,
       afterAlt: "Commercial built-up flat deck roof fully restored after Roof Shield waterproof coating",
     },
+    {
+      label: "Flat Roof Retrofit — All Seams Taped to Create a Monolithic Seamless System",
+      before: `/api/storage/public-objects/roofshield/rs-flat-seams-before.png`,
+      beforeAlt: "Flat roof during Roof Shield retrofit — all seams taped to create a monolithic seamless system",
+      after: `/api/storage/public-objects/roofshield/rs-flat-coated-after.png`,
+      afterAlt: "Flat roof after Roof Shield retrofit — fully coated monolithic seamless waterproof system completed",
+    },
   ],
 };
 

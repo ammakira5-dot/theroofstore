@@ -47,6 +47,8 @@ const partners = [
     ],
     badge: "Tile Specialist",
     linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
   },
   {
     name: "Roof Protect Products",
@@ -66,6 +68,33 @@ const partners = [
     ],
     badge: "Product Supply",
     linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
+  },
+  {
+    name: "Storm Shield Roof Coating Systems",
+    url: "https://maps.google.com/?q=Storm+Shield+Roof+Coating+Systems,+2049+SW+Cranberry+St,+Port+St.+Lucie,+FL+34953",
+    domain: "Google Business Profile",
+    phone: "754-273-4744",
+    specialty: "Flat Roof Waterproofing & Coating",
+    territory: "Port St. Lucie & Treasure Coast, Florida",
+    description:
+      "Storm Shield Roof Coating Systems is our authorized distributor and installer serving the Treasure Coast region of Florida. Operating from Port St. Lucie, they specialize in liquid-applied rubber waterproofing for flat, shingle, and tile roofs — and have earned a verified 5.0-star Google rating from local customers.",
+    services: [
+      "Flat Roof Waterproofing",
+      "Shingle Roof Sealing",
+      "Tile Roof Leak Repair",
+      "Commercial Metal Roof Coating",
+      "Elastomeric Sealant Application",
+    ],
+    badge: "Treasure Coast",
+    linkPaused: false,
+    gmbOnly: true,
+    reviews: [
+      { author: "Alex L.", text: "Very happy with the job the Storm Shield Coating Company did on our roof. If you need your roof completely sealed they are the ones to hire." },
+      { author: "Glen J.", text: "Our shingle roof needed repairs and we didn't want to replace the roof yet. We chose to seal it and it looks wonderful — they did a great job." },
+      { author: "Christine G.", text: "My flat roof needed some work and got it all done in a couple of days. They took care of all the repairs before they applied the waterproofing." },
+    ],
   },
 ];
 
@@ -111,7 +140,7 @@ export default function PartnerNetwork() {
             {[
               { label: "Factory Trained", desc: "All partners complete full on-site training at our Davie, FL facility before operating." },
               { label: "System Certified", desc: "Partners are certified specifically in our Fungal Shield, Smart Shield, and Roof Shield systems." },
-              { label: "Backed by The Roof Store", desc: "Every partner carries the backing of our A+ BBB rating, 30+ year reputation, and product warranties." },
+              { label: "Backed by The Roof Store", desc: "Every partner carries the backing of our 30+ year reputation, Florida contractor licensing, and product warranties." },
             ].map((item, i) => (
               <div key={i} className="bg-background rounded-xl p-6">
                 <ShieldCheck className="h-8 w-8 text-accent mx-auto mb-3" />
@@ -151,7 +180,7 @@ export default function PartnerNetwork() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-colors border border-white/20 shrink-0"
                   >
-                    Visit Site
+                    {partner.gmbOnly ? "View on Google Maps" : "Visit Site"}
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 )}
@@ -207,6 +236,20 @@ export default function PartnerNetwork() {
                   </ul>
                 </div>
               </div>
+
+              {partner.reviews.length > 0 && (
+                <div className="px-8 pb-8 border-t border-border pt-6">
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">Customer Reviews — ⭐ 5.0 Google Rating</div>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {partner.reviews.map((review, k) => (
+                      <blockquote key={k} className="bg-background rounded-xl p-4 border border-border">
+                        <p className="text-sm text-muted-foreground leading-relaxed italic mb-3">"{review.text}"</p>
+                        <cite className="text-xs font-bold text-foreground not-italic">— {review.author}</cite>
+                      </blockquote>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
@@ -289,7 +332,7 @@ export default function PartnerNetwork() {
               </a>
             </div>
             <p className="text-white/50 text-sm mt-6">
-              4801 S University Dr, Davie FL 33328 · A+ BBB Rated since 1994
+              4801 S University Dr, Davie FL 33328 · Licensed Roof Coating Manufacturer · Florida
             </p>
           </motion.div>
         </div>

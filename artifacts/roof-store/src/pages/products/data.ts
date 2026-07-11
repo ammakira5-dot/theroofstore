@@ -189,24 +189,59 @@ export const smartShield: ProductData = {
   pdfLabel: "Smart Shield Product Sheet (PDF)",
   galleryImages: [
     {
+      src: `/api/storage/public-objects/smartshield/ss-tile-repair-before.png`,
+      alt: "Broken roof tile before Smart Shield repair — open valley damage",
+      caption: "Tile repair — before",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-tile-repair-step2.png`,
+      alt: "Roof tile repair in progress — fiber coat pointing applied",
+      caption: "Tile repair — in progress",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-tile-repair-step3.png`,
+      alt: "Roof tile repair complete — residue wiped, surface ready for coating",
+      caption: "Tile repair — complete",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-softwash-truck.jpg`,
+      alt: "Chemical soft wash truck with water tank used for roof cleaning in Florida",
+      caption: "Soft wash system — water truck",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-softwash-tool.jpg`,
+      alt: "Soft wash cleaning tool applied to tile roof surface",
+      caption: "Soft wash tool on roof",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-softwash-cleaning.jpg`,
+      alt: "Technician performing chemical soft wash on tile roof",
+      caption: "Technician soft washing roof",
+    },
+    {
+      src: `/api/storage/public-objects/smartshield/ss-softwash-pressure.jpg`,
+      alt: "Technician pressure cleaning tile roof before Smart Shield application",
+      caption: "Roof pressure cleaning",
+    },
+    {
       src: `${BASE}/images/projects/spanish-tile-extra-3.png`,
       alt: "Composite tile roof coated with Smart Shield color roof system",
-      caption: "Smart Shield color system — composite tile",
+      caption: "Completed project — Smart Shield color system",
     },
     {
       src: `${BASE}/images/projects/spanish-tile-extra-4.png`,
       alt: "Composite tile roof restoration with Smart Shield cool pigment coating",
-      caption: "Smart Shield cool pigment — restored tile roof",
+      caption: "Completed project — cool pigment restored tile",
     },
     {
       src: `${BASE}/images/projects/spanish-tile-extra-1.png`,
       alt: "Composite tile roof close-up after Smart Shield application",
-      caption: "Smart Shield application — close-up finish",
+      caption: "Completed project — close-up finish",
     },
     {
       src: `${BASE}/images/projects/spanish-tile-extra-2.png`,
       alt: "Composite tile roof home exterior restored with Smart Shield",
-      caption: "Full home exterior — Smart Shield restored",
+      caption: "Completed project — full home exterior",
     },
   ],
 };

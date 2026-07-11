@@ -243,16 +243,6 @@ export const smartShield: ProductData = {
       alt: "Composite tile roof restoration with Smart Shield cool pigment coating",
       caption: "Completed project — cool pigment restored tile",
     },
-    {
-      src: `${BASE}/images/projects/spanish-tile-extra-1.png`,
-      alt: "Composite tile roof close-up after Smart Shield application",
-      caption: "Completed project — close-up finish",
-    },
-    {
-      src: `${BASE}/images/projects/spanish-tile-extra-2.png`,
-      alt: "Composite tile roof home exterior restored with Smart Shield",
-      caption: "Completed project — full home exterior",
-    },
   ],
 };
 

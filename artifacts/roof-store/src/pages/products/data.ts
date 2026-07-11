@@ -351,6 +351,20 @@ export const roofShield: ProductData = {
   pdfLabel: "Roof Shield Product Sheet (PDF)",
   beforeAfterImages: [
     {
+      label: "Preparation — Fill Valleys with Coating",
+      before: `/api/storage/public-objects/roofshield/rs-prep-1-before.jpg`,
+      beforeAlt: "Roof Shield preparation — filling open valleys between tiles with coating",
+      after: `/api/storage/public-objects/roofshield/rs-prep-2-after.jpg`,
+      afterAlt: "Ridge caps sealed with polyurethane as part of Roof Shield multi-layer system",
+    },
+    {
+      label: "Top Coat — Job Completed",
+      before: `/api/storage/public-objects/roofshield/rs-prep-3-before.jpg`,
+      beforeAlt: "Roof before final Roof Shield top coat application",
+      after: `/api/storage/public-objects/roofshield/rs-prep-4-after.jpg`,
+      afterAlt: "Roof after Roof Shield top coat — monolithic sealed surface, job completed",
+    },
+    {
       label: "Composite Clay Tile Roof",
       before: `${BASE}/images/projects/clay-tile-before.png`,
       beforeAlt: "Composite clay tile roof before Roof Shield — visible gaps and voids between tiles",

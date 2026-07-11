@@ -281,3 +281,9 @@ id = "dIcz13QAZ6Mkele2Xz3vo"
 uri = "file://artifacts/roof-store/public/docs/roofprotect-product-presentation.pdf"
 type = "pdf"
 title = "RoofProtect Product Presentation"
+
+[[outputs]]
+id = "km6gr9TgPsX79exohBCSO"
+uri = "file://attached_assets/factory-price-sheet.md"
+type = "text"
+title = "Factory Price Sheet — The Roof Store"

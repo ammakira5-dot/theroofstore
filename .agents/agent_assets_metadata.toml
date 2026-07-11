@@ -215,3 +215,51 @@ id = "cIMYb5iEPhfG4dXK8c2Ni"
 uri = "file://attached_assets/smartshield-review/check-cleaning.jpg"
 type = "image"
 title = "D — soft-cleaning (current #6)"
+
+[[outputs]]
+id = "y-pChW04VpcIsmErnUQRr"
+uri = "file://attached_assets/roofshield-review/imagebefore.png"
+type = "image"
+title = "imagebefore.png"
+
+[[outputs]]
+id = "YJhS8wVzyHP9feXcp4IbY"
+uri = "file://attached_assets/roofshield-review/imageafter.png"
+type = "image"
+title = "imageafter.png"
+
+[[outputs]]
+id = "t8syInWI74Ojhnt3mxbwb"
+uri = "file://attached_assets/roofshield-review/image.png"
+type = "image"
+title = "image.png"
+
+[[outputs]]
+id = "rYXkDaj5wgxGSNYMcuS7d"
+uri = "file://attached_assets/roofshield-review/main-1.jpg"
+type = "image"
+title = "main-section/1.jpg"
+
+[[outputs]]
+id = "mGJ6KK8fCxhTWPnQ54jRx"
+uri = "file://attached_assets/roofshield-review/main-3.jpg"
+type = "image"
+title = "main-section/3.jpg"
+
+[[outputs]]
+id = "i2VDQmxRc_7H3rliNllCg"
+uri = "file://attached_assets/roofshield-review/main-4.jpg"
+type = "image"
+title = "main-section/4.jpg"
+
+[[outputs]]
+id = "gCu8cif_A42LHhK7mmILG"
+uri = "file://attached_assets/roofshield-review/barrel-tile-after.jpg"
+type = "image"
+title = "barrel-tile-after-weatherproof.jpg"
+
+[[outputs]]
+id = "KW5ODtjONBoS5rwGuGWho"
+uri = "file://attached_assets/roofshield-review/cement-tile.jpg"
+type = "image"
+title = "cement-tile-waterproofing.jpg"

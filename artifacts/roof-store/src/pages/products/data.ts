@@ -351,7 +351,7 @@ export const roofShield: ProductData = {
   pdfLabel: "Roof Shield Product Sheet (PDF)",
   beforeAfterImages: [
     {
-      label: "Preparation — Fill Valleys with Coating",
+      label: "Preparation — We Retrofit a Monolithic Seamless System: Fill All Field Spaces, Ridge Caps & Open Valleys",
       before: `/api/storage/public-objects/roofshield/rs-prep-1-before.jpg`,
       beforeAlt: "Roof Shield preparation — filling open valleys between tiles with coating",
       after: `/api/storage/public-objects/roofshield/rs-prep-2-after.jpg`,

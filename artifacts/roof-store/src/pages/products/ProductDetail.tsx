@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { CheckCircle2, ArrowRight, Phone, ShoppingCart, ExternalLink, Download } from "lucide-react";
+import { CheckCircle2, ArrowRight, Phone, ShoppingCart, ExternalLink, Download, X, ChevronLeft, ChevronRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
@@ -40,6 +41,12 @@ const BASE = "https://www.theroofstore.net";
 
 export function ProductDetail({ product }: { product: ProductData }) {
   const Icon = product.icon;
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const gallery = product.galleryImages ?? [];
+  const openLightbox = (i: number) => setLightboxIndex(i);
+  const closeLightbox = () => setLightboxIndex(null);
+  const prevImage = () => setLightboxIndex((i) => (i !== null ? (i - 1 + gallery.length) % gallery.length : null));
+  const nextImage = () => setLightboxIndex((i) => (i !== null ? (i + 1) % gallery.length : null));
 
   const schema = [
     {
@@ -214,13 +221,18 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 </motion.div>
               )}
 
-              {product.galleryImages && product.galleryImages.length > 0 && (
+              {gallery.length > 0 && (
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                   <h2 className="text-3xl font-serif font-bold text-primary mb-2">See It In Action</h2>
                   <p className="text-muted-foreground mb-6">Real installations and our manufacturing process — straight from our team in Davie, FL.</p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    {product.galleryImages.map((img, i) => (
-                      <div key={i} className="group relative rounded-xl overflow-hidden border shadow-sm bg-muted">
+                    {gallery.map((img, i) => (
+                      <button
+                        key={i}
+                        onClick={() => openLightbox(i)}
+                        className="group relative rounded-xl overflow-hidden border shadow-sm bg-muted text-left focus:outline-none focus:ring-2 focus:ring-primary"
+                        aria-label={`View full size: ${img.caption}`}
+                      >
                         <img
                           src={img.src}
                           alt={img.alt}
@@ -229,7 +241,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
                         <div className="px-3 py-2">
                           <p className="text-xs text-muted-foreground leading-snug">{img.caption}</p>
                         </div>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </motion.div>
@@ -341,6 +353,43 @@ export function ProductDetail({ product }: { product: ProductData }) {
           </Button>
         </div>
       </section>
+
+      {lightboxIndex !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
+            aria-label="Close"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); prevImage(); }}
+            className="absolute left-4 text-white/80 hover:text-white p-2"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="w-10 h-10" />
+          </button>
+          <div className="max-w-4xl max-h-[90vh] px-16" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={gallery[lightboxIndex].src}
+              alt={gallery[lightboxIndex].alt}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+            />
+            <p className="text-white/80 text-center mt-3 text-sm">{gallery[lightboxIndex].caption}</p>
+          </div>
+          <button
+            onClick={(e) => { e.stopPropagation(); nextImage(); }}
+            className="absolute right-4 text-white/80 hover:text-white p-2"
+            aria-label="Next image"
+          >
+            <ChevronRight className="w-10 h-10" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

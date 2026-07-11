@@ -209,6 +209,11 @@ export const smartShield: ProductData = {
       caption: "Soft wash system — water truck",
     },
     {
+      src: `/api/storage/public-objects/smartshield/ss-softwash-pressure.jpg`,
+      alt: "Soft wash truck and pressure cleaning equipment on Florida roofing job",
+      caption: "Soft wash system — equipment",
+    },
+    {
       src: `/api/storage/public-objects/smartshield/ss-softwash-tool.jpg`,
       alt: "Soft wash cleaning tool applied to tile roof surface",
       caption: "Soft wash tool on roof",
@@ -217,11 +222,6 @@ export const smartShield: ProductData = {
       src: `/api/storage/public-objects/smartshield/ss-softwash-cleaning.jpg`,
       alt: "Technician performing chemical soft wash on tile roof",
       caption: "Technician soft washing roof",
-    },
-    {
-      src: `/api/storage/public-objects/smartshield/ss-softwash-pressure.jpg`,
-      alt: "Technician pressure cleaning tile roof before Smart Shield application",
-      caption: "Roof pressure cleaning",
     },
     {
       src: `${BASE}/images/projects/spanish-tile-extra-3.png`,

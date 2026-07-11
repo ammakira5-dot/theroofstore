@@ -191,3 +191,27 @@ id = "bibIOTTb3bIKAq0z16oU-"
 uri = "file://attached_assets/smartshield-review/slider/top-coat-prep.jpg"
 type = "image"
 title = "9 — Top coat over prep"
+
+[[outputs]]
+id = "fuuNxfn7WB5hzb7_nFjbl"
+uri = "file://attached_assets/smartshield-review/check-truck1.jpg"
+type = "image"
+title = "A — pressure-truck (current #4)"
+
+[[outputs]]
+id = "Cq4vxKhBwwrPLGvNAtXNq"
+uri = "file://attached_assets/smartshield-review/check-truck2.jpg"
+type = "image"
+title = "B — pressure-cleaning (current #7)"
+
+[[outputs]]
+id = "W83C1Rm-HID1S03ctXwIA"
+uri = "file://attached_assets/smartshield-review/check-tool.jpg"
+type = "image"
+title = "C — soft-wash-tool (current #5)"
+
+[[outputs]]
+id = "cIMYb5iEPhfG4dXK8c2Ni"
+uri = "file://attached_assets/smartshield-review/check-cleaning.jpg"
+type = "image"
+title = "D — soft-cleaning (current #6)"

@@ -126,6 +126,8 @@ const systems: RoofSystem[] = [
       { src: "/images/projects/spanish-tile-after.png", alt: "Composite Spanish tile roof after Roof Shield waterproof coating" },
       { src: "/images/projects/flat-deck-before-2.png", alt: "Commercial built-up flat deck roof before Roof Shield waterproof coating" },
       { src: "/images/projects/flat-deck-after-2.png", alt: "Commercial built-up flat deck roof fully restored after Roof Shield waterproof coating" },
+      { src: "/api/storage/public-objects/roofshield/rs-flat-seams-before.png", alt: "Flat roof retrofit — all seams taped to create a monolithic seamless system" },
+      { src: "/api/storage/public-objects/roofshield/rs-flat-coated-after.png", alt: "Flat roof after Roof Shield retrofit — fully coated monolithic seamless waterproof system completed" },
     ],
   },
 ];

@@ -71,12 +71,13 @@ async function main() {
 
   // dist/public/index.html gets overwritten with rendered output when we
   // prerender "/" itself, so it can never be trusted as the pristine shell on
-  // a resumed/retried run — snapshot a real backup once and always read the
-  // shell from there instead.
+  // a resumed/retried run — always snapshot a fresh backup from the current
+  // vite build's index.html (captured here, before "/" is prerendered).
+  // IMPORTANT: always overwrite — never skip if the file exists. A stale
+  // backup from a previous build carries old asset hashes; when vite rebuilds
+  // with new hashes the stale shell causes JS 404s and a blank page sitewide.
   const shellBackupPath = path.join(DIST_DIR, "..", ".prerender-shell-backup.html");
-  if (!fs.existsSync(shellBackupPath)) {
-    fs.copyFileSync(path.join(DIST_DIR, "index.html"), shellBackupPath);
-  }
+  fs.copyFileSync(path.join(DIST_DIR, "index.html"), shellBackupPath);
   const pristineShell = fs.readFileSync(shellBackupPath, "utf-8");
   const server = createStaticServer(DIST_DIR, pristineShell);
   const port = await new Promise<number>((resolvePort) => {

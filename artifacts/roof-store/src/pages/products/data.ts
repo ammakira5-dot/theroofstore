@@ -229,6 +229,11 @@ export const smartShield: ProductData = {
       caption: "Prep — waterproofing open valleys",
     },
     {
+      src: `/api/storage/public-objects/smartshield/ss-ridge-caps.png`,
+      alt: "Ridge caps polyurethaned and pointings fiber coated on tile roof — Smart Shield prep",
+      caption: "Prep — ridge caps polyurethaned & fiber coated",
+    },
+    {
       src: `${BASE}/images/projects/spanish-tile-extra-3.png`,
       alt: "Composite tile roof coated with Smart Shield color roof system",
       caption: "Completed project — Smart Shield color system",

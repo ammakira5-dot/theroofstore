@@ -7,13 +7,26 @@ The site owner runs theroofstore.net (this codebase) plus several separate small
 
 **Why this matters:** these sites had copied "years in business" claims and product-system names/descriptions from theroofstore.net (duplicate content risk for SEO), and had phone numbers cross-wired between sites (real bug — wrong click-to-call number for callers).
 
-Sites and status as of 2026-07-06:
-- **bestroofpaint.com** — GMB "Best Roof Paint and Waterproofing Service," own number 954-400-1324. Fixed: removed "30th year" shared-history claim; fixed click-to-call link (was `tel:8778245823`, wrong number).
-- **ftlauderdaleroofcoating.com** — no GMB, number 754-367-3768 (was 877-824-5823, removed/reassigned). Fixed: removed "33 years in business" (homepage) and "27th year in business" (contact-us.php) claims.
-- **roofrestorationsandwaterproofinginc.com** — has GMB, real number 877-824-5823. GMB cleaned up 2026-07-07: opening date fixed (was 1994, tied to The Roof Store), main business description duplicate language removed, product landing page URLs updated (RoofShield → `/product/RP3RoofShield`, SmartShield → `/product/RP2SmartShield` on roofprotectproducts.com), product description typos fixed. Still open on the **website itself**: click-to-call link is wrong (`tel:954-900-1973`, needs to become `tel:8778245823`); "A+ BBB Rated since 1994" claim on site; Fungal Shield/Smart Shield/Roof Shield section copy verbatim from theroofstore.net — not yet rewritten. WordPress access still the blocker for site edits.
-- **roofpaintmiami.com** — no GMB, number (786) 837-9064 (correct, no tel: link bug found). Fixed: removed "BBB A+ rated, established April 12 1994... 25th year in business" claim on contact-us.php. Explicitly references "the roof store distribution network" by name on its homepage — appears to be an intentional authorized-reseller storefront, not a fully independent business (unlike bestroofpaint.com/roofrestorationsandwaterproofinginc.com which don't name-drop The Roof Store).
-- **windproofroofsystems.com** — no GMB. This one is different from the others: it's a confirmed, intentional authorized partner (tile roof restoration specialist), not an independent/competing business. Still open on windproofroofsystems.com itself (owner must edit directly): "A+ BBB Rated since 1994" duplicate claim, `tel:` link mismatch (displays 954-743-0667 but links to `tel:954-900-1973`), and a Fungal/Smart/Roof Shield section copied verbatim from theroofstore.net. Drafted replacement copy for all three approved-pending-paste as of 2026-07-06 (partner-credit line instead of BBB claim, corrected tel: href, tile-restoration-specific paragraph instead of the generic 3-product copy).
-- On our own site (in this codebase), `artifacts/roof-store/src/pages/PartnerNetwork.tsx` lists Windproof as a partner; as of 2026-07-06 its outbound "Visit Site" button and domain link were paused (shows "Site link temporarily paused pending content updates" instead) via a `linkPaused: true` flag on the partner object, specifically because its own site still has the unresolved duplicate content/phone issues above. Re-enable (remove `linkPaused`) once windproofroofsystems.com's fixes are live and verified.
-- User mentioned more sister sites exist beyond these, not yet discussed in detail.
+## Current status (verified July 11 2026)
 
-**How to apply:** When resuming this work, re-fetch each site with a cache-busting query param (see `verification-tool-url-caching.md`) before reporting status. Draft copy fixes for the owner to paste in themselves (I don't have edit access to these sites' code/hosting). Next session: check whether windproofroofsystems.com's 3 fixes went live, and if so remove `linkPaused` on its PartnerNetwork.tsx entry; also check on roofrestorationsandwaterproofinginc.com WordPress access (owner said "tomorrow" as of 2026-07-06).
+- **ftlauderdaleroofcoating.com** ✅ CLEAN — uses RP1a/RP2a/RP3a codes, no full product names, links go to roofprotectproducts.com (correct). No action needed.
+
+- **bestroofpaint.com** ✅ CLEAN — no issues found in latest check. No action needed.
+
+- **roofpaintmiami.com** ⚠️ ONE FIX NEEDED — FAQ page shows "Broward (754) 367-3768" which is the ftlauderdale number, not Miami's. Correct number for this site is (786) 837-9064. Owner must edit the FAQ page in their CMS to fix. No duplicate product copy found.
+
+- **roofrestorationsandwaterproofinginc.com** ❌ DUPLICATE CONTENT — still has verbatim "Fungal shield / Smart shield / Roof shield" product copy on homepage (confirmed July 11 2026). WordPress access still the blocker. Owner is working on getting access credentials to share. Replacement copy was drafted in a prior session — pull it from transcript before drafting again.
+
+- **windproofroofsystems.com** ❌ DUPLICATE CONTENT — same verbatim product copy on homepage (confirmed July 11 2026). Also embeds same YouTube video (RrcGPZg7s6I) as theroofstore.net. Replacement copy drafted in prior session. Owner working on WordPress access. Also: `linkPaused: true` on PartnerNetwork.tsx entry — remove once fixes go live.
+
+- **flatroofsealants.com** ⚠️ NEW (discovered July 11 2026) — owner's own subsidiary set up for Port St. Lucie / North Florida distributor (authorized). WordPress-based (Divi theme). Issues: (1) footer says "Storm Shield Roof Paint Systems Inc. A+ BBB Rated since 1994" — remove the BBB/1994 claim, replace with "Authorized Storm Shield distributor" or similar; (2) product page copy may overlap with theroofstore.net — needs review once WordPress access confirmed. "The Roof Store Service Areas" label on homepage is fine to keep. Owner has a distributor testimonial letter — good candidate for Distributorships page on theroofstore.net. Owner is sourcing WordPress login.
+
+## Videos
+- roofrestorationsandwaterproofinginc.com and windproofroofsystems.com both embed YouTube video RrcGPZg7s6I, same as theroofstore.net Videos page. Not a direct penalty but reinforces shared-content signals. Not urgent to fix.
+
+## Pending (owner action, next session)
+- Owner sourcing WordPress access for flatroofsealants.com, roofrestorationsandwaterproofinginc.com, windproofroofsystems.com — may pass credentials to agent to make edits directly
+- Distributor letter for flatroofsealants.com distributor — add to Distributorships page on theroofstore.net once owner shares the text
+
+## How to apply
+Re-fetch each site with a cache-busting query param before reporting status. Draft copy fixes for owner to paste (or apply directly if given WP access). For windproofroofsystems.com: also remove `linkPaused` on its PartnerNetwork.tsx entry once fixes are live.

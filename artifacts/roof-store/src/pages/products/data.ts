@@ -224,6 +224,11 @@ export const smartShield: ProductData = {
       caption: "Technician soft washing roof",
     },
     {
+      src: `/api/storage/public-objects/smartshield/ss-open-valleys.png`,
+      alt: "Adding waterproofing to open valleys on tile roof — Smart Shield prep step",
+      caption: "Prep — waterproofing open valleys",
+    },
+    {
       src: `${BASE}/images/projects/spanish-tile-extra-3.png`,
       alt: "Composite tile roof coated with Smart Shield color roof system",
       caption: "Completed project — Smart Shield color system",

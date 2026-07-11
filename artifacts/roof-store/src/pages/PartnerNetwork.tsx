@@ -46,7 +46,7 @@ const partners = [
       "Tile Re-Setting & Repair",
     ],
     badge: "Tile Specialist",
-    linkPaused: true,
+    linkPaused: false,
   },
   {
     name: "Roof Protect Products",

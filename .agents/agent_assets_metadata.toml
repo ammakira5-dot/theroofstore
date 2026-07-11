@@ -238,19 +238,19 @@ title = "image.png"
 id = "rYXkDaj5wgxGSNYMcuS7d"
 uri = "file://attached_assets/roofshield-review/main-1.jpg"
 type = "image"
-title = "main-section/1.jpg"
+title = "1 — Before: Smart Shield Prep fill valleys with coating"
 
 [[outputs]]
 id = "mGJ6KK8fCxhTWPnQ54jRx"
 uri = "file://attached_assets/roofshield-review/main-3.jpg"
 type = "image"
-title = "main-section/3.jpg"
+title = "3 — Before: Top Coated Final Job Completed"
 
 [[outputs]]
 id = "i2VDQmxRc_7H3rliNllCg"
 uri = "file://attached_assets/roofshield-review/main-4.jpg"
 type = "image"
-title = "main-section/4.jpg"
+title = "4 — After: Top Coated Final Job Completed"
 
 [[outputs]]
 id = "gCu8cif_A42LHhK7mmILG"
@@ -263,3 +263,9 @@ id = "KW5ODtjONBoS5rwGuGWho"
 uri = "file://attached_assets/roofshield-review/cement-tile.jpg"
 type = "image"
 title = "cement-tile-waterproofing.jpg"
+
+[[outputs]]
+id = "lRYUM5VTVShX0sdGDOtRH"
+uri = "file://attached_assets/roofshield-review/main-2.jpg"
+type = "image"
+title = "2 — After: Seal Ridge Caps with Polyurethane"

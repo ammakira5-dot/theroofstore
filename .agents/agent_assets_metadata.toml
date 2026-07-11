@@ -269,3 +269,15 @@ id = "lRYUM5VTVShX0sdGDOtRH"
 uri = "file://attached_assets/roofshield-review/main-2.jpg"
 type = "image"
 title = "2 — After: Seal Ridge Caps with Polyurethane"
+
+[[outputs]]
+id = "9qu74Rehn7Ej9OVj9ec92"
+uri = "file://artifacts/roof-store/public/docs/roofprotect-brochure.pdf"
+type = "pdf"
+title = "RoofProtect Brochure"
+
+[[outputs]]
+id = "dIcz13QAZ6Mkele2Xz3vo"
+uri = "file://artifacts/roof-store/public/docs/roofprotect-product-presentation.pdf"
+type = "pdf"
+title = "RoofProtect Product Presentation"

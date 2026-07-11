@@ -462,6 +462,7 @@ app.use((req, res, next) => {
 
 const EXACT_REDIRECTS = {
   // Root-level PHP pages
+  "/index.php": "/",
   "/residential.php": "/roof-services",
   "/projects/reviews.php": "/reviews",
   "/affiliations.php": "/partner-network",

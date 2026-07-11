@@ -13,7 +13,7 @@ The site owner runs theroofstore.net (this codebase) plus several separate small
 
 - **bestroofpaint.com** ✅ CLEAN — no issues found in latest check. No action needed.
 
-- **roofpaintmiami.com** ⚠️ ONE FIX NEEDED — FAQ page shows "Broward (754) 367-3768" which is the ftlauderdale number, not Miami's. Correct number for this site is (786) 837-9064. Owner must edit the FAQ page in their CMS to fix. No duplicate product copy found.
+- **roofpaintmiami.com** ✅ FIXED (July 11 2026) — FAQ page wrong number (754) 367-3768 replaced with correct Miami number (786) 837-9064. Fixed by owner directly in file manager. No duplicate product copy found.
 
 - **roofrestorationsandwaterproofinginc.com** ✅ FIXED (July 11 2026) — edited directly via FTP (not WordPress). Product card names changed to generic ("Clear Anti-Fungal Roof Coating", "Color Reflective Waterproof Coating", "Full Weatherproof Membrane System"), body copy genericized, "A+ BBB Rated since 1994" removed. GMB verified clean — correct phone (877) 824-5823, no BBB claim, no product names in description. One "Roof Shield" remains in a customer testimonial quote (intentionally left intact).
 

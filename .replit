@@ -44,7 +44,7 @@ SMTP_TO = "theroofstore@gmail.com"
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = "465"
 ROOFPROTECT_FTP_HOST = "ftp.absolutecharters.com"
-ROOFPROTECT_FTP_USER = "theroofstore@theroofstore.net"
+ROOFPROTECT_FTP_USER = "Rajneet@roofprotectproducts.com"
 ROOFPROTECT_FTP_PORT = "21"
 
 [nix]

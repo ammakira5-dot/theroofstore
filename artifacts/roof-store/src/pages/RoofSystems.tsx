@@ -84,8 +84,6 @@ const systems: RoofSystem[] = [
       { src: "/api/storage/public-objects/smartshield/ss-ridge-caps.png", alt: "Ridge caps polyurethaned and pointings fiber coated on tile roof — Smart Shield prep" },
       { src: "/images/projects/spanish-tile-extra-3.png", alt: "Completed Smart Shield project — composite tile roof color system" },
       { src: "/images/projects/spanish-tile-extra-4.png", alt: "Completed Smart Shield project — cool pigment restored tile roof" },
-      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Completed Smart Shield project — close-up finish on tile roof" },
-      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Completed Smart Shield project — full home exterior tile roof" },
     ],
   },
   {

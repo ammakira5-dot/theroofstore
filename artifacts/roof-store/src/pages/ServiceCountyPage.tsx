@@ -53,7 +53,7 @@ const serviceBlocks = [
     icon: Wrench,
     title: "Roof Repair & Maintenance",
     body: (county: string) =>
-      `From cracked tiles to failed sealants, our repair and maintenance services address small problems in ${county} before they become costly emergencies — with free assessments and emergency repair availability.`,
+      `From cracked tiles to failed sealants, our repair and maintenance services address small problems in ${county} before they become costly emergencies — with free assessments and emergency repair availability. Clients are always alerted to any required repairs prior to application. Structural repairs are generally the responsibility of the property owner.`,
   },
 ];
 

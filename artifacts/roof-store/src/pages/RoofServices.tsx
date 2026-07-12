@@ -59,7 +59,7 @@ const services = [
     icon: Wrench,
     title: "Roof Repair & Maintenance",
     description:
-      "Don't let small problems become expensive emergencies. Our repair and maintenance services address cracked tiles, failed sealants, hairline fractures, and water infiltration before they compromise the structure of your roof. Clients are always alerted to any required repairs prior to application. Structural repairs are generally the responsibility of the property owner.",
+      "Don't let small problems become expensive emergencies. Repair and maintenance services address cracked tiles, failed sealants, hairline fractures, and water infiltration before they compromise the structure of your roof. Clients are always alerted to any required repairs prior to application. Structural repairs are generally the responsibility of the property owner.",
     benefits: ["Emergency repair available", "Leak detection and sealing", "Preventive maintenance plans", "Free assessment included"],
   },
 ];

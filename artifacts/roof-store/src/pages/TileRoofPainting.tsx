@@ -171,7 +171,7 @@ export default function TileRoofPainting() {
               What Is Tile Roof Painting?
             </h2>
             <p className="text-lg text-gray-700 mb-5">
-              Tile roof painting — also called elastomeric roof coating — is the process of applying a flexible, weather-resistant coating directly to your existing Spanish tile, flat cement tile, or clay barrel tile roof. It refreshes the color, seals the tile surface, and extends roof life without requiring a full replacement.
+              Tile roof painting — also called elastomeric roof coating — is the process of applying a flexible, weather-resistant coating directly to your existing Spanish tile, flat cement tile, clay barrel tile roof, or flat deck. It refreshes the color, seals the tile surface, and extends roof life without requiring a full replacement.
             </p>
             <p className="text-lg text-gray-700 mb-5">
               In South Florida, roof tiles fade and chalk from intense UV exposure, develop black streaks from algae and mold, and lose their color uniformity within a few years. Roof painting restores that appearance — and when done with a professional elastomeric system, it adds meaningful protection against Florida's heat, rain, and humidity.

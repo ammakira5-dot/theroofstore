@@ -22,6 +22,13 @@ const services = [
   },
   {
     icon: Paintbrush,
+    title: "Tile Roof Painting & Color Restoration",
+    description:
+      "Faded, chalky, or discolored tile gets a full professional repaint with SmartShield elastomeric coating — available in 3,000+ tintable colors including BASF Cool Pigment shades that reflect heat. Suitable for Spanish tile, flat cement tile, and clay barrel tile throughout South Florida.",
+    benefits: ["3,000+ color options", "BASF Cool Pigment Technology", "UV & mold resistant formula", "10–15 year performance life"],
+  },
+  {
+    icon: Paintbrush,
     title: "Roof Tile Restoration",
     description:
       "Our full tile restoration process goes beyond simple reglazing. We repair cracked tiles, repoint ridge caps, clean entire roof surfaces, and apply a multi-coat weatherproofing system that transforms aging roofs into like-new condition.",

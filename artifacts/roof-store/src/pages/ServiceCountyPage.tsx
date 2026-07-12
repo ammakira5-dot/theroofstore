@@ -21,6 +21,12 @@ const serviceBlocks = [
   },
   {
     icon: Paintbrush,
+    title: "Tile Roof Painting & Color Restoration",
+    body: (county: string) =>
+      `Faded or chalky tile roofs throughout ${county} get a full professional repaint with SmartShield elastomeric coating — available in 3,000+ tintable colors including BASF Cool Pigment shades that reflect heat and reduce cooling costs.`,
+  },
+  {
+    icon: Paintbrush,
     title: "Elastomeric & Acrylic Roof Coating",
     body: (county: string) =>
       `Our elastomeric and acrylic roof coating systems restore faded, chalky tile roofs throughout ${county} in 3,000+ tintable colors — a flexible, weatherproof membrane that outperforms standard roof paint in Florida's climate.`,

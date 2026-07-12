@@ -35,6 +35,7 @@ import SiliconeVsElastomeric from "@/pages/SiliconeVsElastomeric";
 import SiliconeRoofCoating from "@/pages/SiliconeRoofCoating";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
+import TileRoofPainting from "@/pages/TileRoofPainting";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
 import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
@@ -127,6 +128,7 @@ function Router() {
       <Route path="/silicone-roof-coating" component={SiliconeRoofCoating} />
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
+      <Route path="/tile-roof-painting" component={TileRoofPainting} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
       <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/trademark-monitoring-log" component={TrademarkMonitoringLog} />
@@ -135,8 +137,8 @@ function Router() {
       {/* ── Legacy WordPress redirects — service pages ── */}
       <Route path="/roof-painting-service-broward-county-florida" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-painting-service-broward-county" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/roof-painting" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/roof-painting-florida" component={() => <RedirectTo to="/roof-services" />} />
+      <Route path="/roof-painting" component={() => <RedirectTo to="/tile-roof-painting" />} />
+      <Route path="/roof-painting-florida" component={() => <RedirectTo to="/tile-roof-painting" />} />
       <Route path="/roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-coating-broward-county" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-coating-florida" component={() => <RedirectTo to="/roof-services" />} />

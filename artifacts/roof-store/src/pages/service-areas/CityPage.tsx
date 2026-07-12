@@ -133,7 +133,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
   return (
     <div className="w-full">
       <SEO
-        title={`Roof Coating Contractor in ${city}, FL | Roof Coating Systems — The Roof Store`}
+        title={`Roof Coating in ${city}, FL | The Roof Store`}
         description={`Looking for a roof coating contractor in ${city}, FL? The Roof Store offers professional elastomeric roof coating systems for tile, flat, shingle, and metal roofs that outperform standard roof paint — waterproof, hurricane-rated, and A+ BBB accredited since 1994. Free inspection: 954-210-9614.`}
         canonical={`/service-areas/${countySlug}/${citySlug}`}
         ogImage={image}

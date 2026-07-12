@@ -52,6 +52,14 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 - **Fix #1 roller icon embeds on roofprotectproducts.com** — RP1 FungalShield and RP3 RoofShield bucket #1 roller icons need their embed URLs updated. RP1 should use `https://www.theroofstore.net/pdf/fungalshield-info.pdf`; RP3 should use `https://www.theroofstore.net/pdf/roofshield-info.pdf`. RP2 SmartShield already works correctly.
 - **Fix product schemas on roofprotectproducts.com** — FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) Product schemas have brand = product name instead of "The Roof Store", missing `offers`, and no `image`. Google flags these as invalid Product snippets.
 
+- **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
+
+- **WordPress blog tagline fix** — blog.theroofstore.net (or blog subdirectory) shows "Just another WordPress site" in Google SERPs. Fix: WP Admin → Settings → General → change Tagline to "Roof Coating Knowledge Base" (or similar). User to action directly.
+
+- **Review count in schema** — aggregateRating in `Home.tsx` BUSINESS_CORE and `index.html` both show reviewCount: "10". Update to reflect actual Google/BBB review count once user confirms the number, then run a review collection campaign.
+
+- **Blog content refresh** — No posts since Sept 2024. Recommended: "2026 Hurricane Season Prep for South Florida Roofs" and "What Citizens Insurance Rule Changes Mean for Tile Roof Owners in 2026". User to write/publish in WordPress.
+
 ## Gotchas
 
 _Populate as you build — sharp edges, "always run X before Y" rules._

@@ -12,6 +12,8 @@ const schema = [
     headline: "Roof Replacement Alternative Florida — Coat It for Half the Cost",
     description:
       "Florida homeowners considering full roof replacement have a proven alternative: professional liquid rubber roof coating. Learn how coating vs. replacing stacks up on cost, lifespan, and hurricane protection.",
+    datePublished: "2024-09-01",
+    dateModified: "2026-07-12",
     author: {
       "@type": "Organization",
       name: "The Roof Store Waterproofing Products",

@@ -109,7 +109,7 @@ export default function Faq() {
   return (
     <div className="w-full">
       <SEO
-        title="FAQ — Roof Coating Questions Answered | The Roof Store"
+        title="Roof Coating FAQ — Florida Homeowners' Top Questions Answered | The Roof Store"
         description="Answers to common questions about roof coating systems: tile restoration, hurricane performance, warranties, and how coating compares to full roof replacement. The Roof Store — Davie, FL — 954-210-9614."
         schema={schema}
         canonical="/faq"
@@ -117,7 +117,7 @@ export default function Faq() {
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <h1 className="text-5xl font-serif font-bold mb-6">Frequently Asked Questions</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating FAQ — Florida Homeowners' Top Questions Answered</h1>
             <p className="text-xl text-white/80">
               Everything you need to know about roof coating, restoration, and weatherproofing.
             </p>

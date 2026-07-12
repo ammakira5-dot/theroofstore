@@ -59,6 +59,7 @@ const BUSINESS_CORE = {
   "@type": "RoofingContractor",
   name: "The Roof Store Waterproofing Products",
   alternateName: "The Roof Store",
+  legalName: "Storm Shield Paint Systems Inc.",
   url: BASE,
   telephone: "+19542109614",
   email: "theroofstore@gmail.com",
@@ -430,7 +431,7 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-4xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Common Questions</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Frequently Asked Questions About Roof Coating in Florida</h2>
             <p className="text-muted-foreground text-lg">Everything homeowners ask us before their free inspection.</p>
           </div>
           <div className="space-y-0 divide-y divide-border border border-border rounded-2xl overflow-hidden">

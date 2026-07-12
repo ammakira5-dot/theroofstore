@@ -213,6 +213,11 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                         <div>
                           <div className="font-bold text-foreground mb-1">{service.title}</div>
                           <div className="text-muted-foreground text-sm leading-relaxed">{service.desc}</div>
+                          {service.title.includes("Tile Roof Paint") && (
+                            <Link href="/tile-roof-painting" className="inline-flex items-center gap-1 text-accent text-sm font-semibold mt-2 hover:underline">
+                              Learn more about tile roof painting →
+                            </Link>
+                          )}
                         </div>
                       </div>
                     );

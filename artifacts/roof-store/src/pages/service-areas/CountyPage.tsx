@@ -158,6 +158,7 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                   {[
                     "Roof Pressure Cleaning & Soft Washing",
                     "Elastomeric Roof Coating",
+                    "Tile Roof Painting & Color Restoration",
                     "Tile Roof Restoration",
                     "Tile Reglazing",
                     "Flat Deck Waterproofing",
@@ -189,9 +190,14 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                   <p className="text-muted-foreground leading-relaxed">
                     <strong className="text-foreground">Our roof coating systems</strong> cure into a seamless rubber membrane that bonds to your roof and seals every seam, crack, and penetration — hurricane wind-uplift rated and warranted for 10–15 years at a cost comparable to repeated paint jobs.
                   </p>
-                  <Link href="/roof-painting-vs-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
-                    Learn more: Roof Paint vs. Roof Coating Systems →
-                  </Link>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Link href="/roof-painting-vs-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+                      Learn more: Roof Paint vs. Roof Coating Systems →
+                    </Link>
+                    <Link href="/tile-roof-painting" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+                      Tile Roof Painting & Color Restoration →
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
 

@@ -47,10 +47,11 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **RoofShield page — images done for now** — 2 prep before/after pairs added at top (from windproofroofsystems.com/roof-sheild.php main-section/1-4), flat roof retrofit before/after added at bottom. Label on first pair: "Preparation — We Retrofit a Monolithic Seamless System: Fill All Field Spaces, Ridge Caps & Open Valleys". Same flat roof images also added as last 2 in Roof Systems page gallery. Split-view comparators (clay tile, flat cement, Spanish tile) removed from Roof Systems page. More RoofShield photos expected from user.
 
-- **roofprotectproducts.com FTP access — blocked** — Tried FTP via `ftp.absolutecharters.com` port 21 with username `Rajneet@roofprotectproducts.com` — login denied (exit code 67). Password stored in `ROOFPROTECT_FTP_PASSWORD` secret but may be wrong. Next session: user to verify credentials work in FileZilla first, then retry. Alternatively try via WordPress admin panel (`roofprotectproducts.com/wp-admin`) instead of FTP. Things to fix on that site: (1) roller icon PDF embed URLs for RP1/RP3, (2) Product schema fixes (brand, offers, image).
+- **roofprotectproducts.com — FTP access working** — FTP server: `ftp.absolutecharters.com:21`, user: `muhammad@roofprotectproducts.com`, password: `ROOFPROTECT_FTP_PASSWORD` secret. Full SEO audit pending (see below items).
 
 - **Fix #1 roller icon embeds on roofprotectproducts.com** — RP1 FungalShield and RP3 RoofShield bucket #1 roller icons need their embed URLs updated. RP1 should use `https://www.theroofstore.net/pdf/fungalshield-info.pdf`; RP3 should use `https://www.theroofstore.net/pdf/roofshield-info.pdf`. RP2 SmartShield already works correctly.
 - **Fix product schemas on roofprotectproducts.com** — FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) Product schemas have brand = product name instead of "The Roof Store", missing `offers`, and no `image`. Google flags these as invalid Product snippets.
+- **roofprotectproducts.com full SEO audit** — check meta descriptions, canonicals, schema markup, links to theroofstore.net, phone numbers, OG tags, H1s across all pages. Audit in progress.
 
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
 

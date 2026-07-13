@@ -47,7 +47,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **RoofShield page — images done for now** — 2 prep before/after pairs added at top (from windproofroofsystems.com/roof-sheild.php main-section/1-4), flat roof retrofit before/after added at bottom. Label on first pair: "Preparation — We Retrofit a Monolithic Seamless System: Fill All Field Spaces, Ridge Caps & Open Valleys". Same flat roof images also added as last 2 in Roof Systems page gallery. Split-view comparators (clay tile, flat cement, Spanish tile) removed from Roof Systems page. More RoofShield photos expected from user.
 
-- **roofprotectproducts.com — FTP access working** — FTP server: `ftp.absolutecharters.com:21`, user: `muhammad@roofprotectproducts.com`, password: `ROOFPROTECT_FTP_PASSWORD` secret. Full SEO audit pending (see below items).
+- **roofprotectproducts.com — SEO audit complete (July 13 2026)** — All 10 issues fixed via FTP. FTP: `ftp.absolutecharters.com:21`, user: `muhammad@roofprotectproducts.com`, password: `ROOFPROTECT_FTP_PASSWORD`. **Phone note:** `954-900-1973` is intentionally kept — it is the Google Ads call-tracking number. `954-210-9614` (The Roof Store) appears only in the new footer backlink bar.
 
 - **Fix roller icon embeds on roofprotectproducts.com** — RP1 FungalShield and RP3 RoofShield bucket #1 roller icons need their embed URLs updated. RP1 should use `https://www.theroofstore.net/pdf/fungalshield-info.pdf`; RP3 should use `https://www.theroofstore.net/pdf/roofshield-info.pdf`. RP2 SmartShield already works correctly.
 

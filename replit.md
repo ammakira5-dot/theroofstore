@@ -53,6 +53,20 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
 
+- **No analytics installed — add GA4** — Confirmed July 9 2026: no Google Analytics, GA4, or GTM anywhere in the codebase. Without it, real traffic/channel data (organic vs paid vs referral) can't be measured. User to decide: (A) add GA4 tag directly (agent can do), or (B) use GTM container. Measurement ID needed from user.
+
+- **shopping.theroofstore.net — abandoned legacy subdomain** — A separate old (~2020) PHP shopping cart site still indexed by Google. Competes with the real site for brand searches. Fix: server-level 301 redirect `shopping.theroofstore.net` → `https://www.theroofstore.net/` (whoever controls DNS/hosting for that subdomain). If inaccessible: request removal via Google Search Console.
+
+- **windproofroofsystems.com — 4 content fixes pending** — Agent has FTP access (`WINDPROOF_FTP_PASSWORD`). (1) Remove "A+ BBB Rated since 1994" claim; (2) Fix tel href `tel:954-900-1973` → displays 954-743-0667 but href is wrong; (3) Replace verbatim FungalShield/SmartShield/RoofShield copy with tile-restoration-specific paragraph; (4) Remove shared testimonials (Don Godshall, Ana Arias, Arlene Kalb) — they should be exclusive to theroofstore.net. Once done: re-enable the partner link in `PartnerNetwork.tsx` (`linkPaused: true` → remove flag) and restore "owns" WebSite schema entry in `Home.tsx` + `index.html`.
+
+- **roofrestorationsandwaterproofinginc.com — 3 fixes pending** — Agent has FTP access (`RRSW_FTP_PASSWORD`). (1) Fix tel link: `tel:954-900-1973` → `tel:8778245823`; (2) Remove "A+ BBB Rated since 1994" claim; (3) Rewrite FungalShield/SmartShield/RoofShield section (currently verbatim copy from theroofstore.net).
+
+- **Lower-priority SEO items (theroofstore.net codebase)** — (A) Add a geo-keyword to a homepage H2 (currently none); (B) Verify city-page `og:image` values are absolute URLs not relative paths; (C) Add explicit Review-type schema snippets to individual review entries. None urgent — do after higher-priority items.
+
+- **Content gaps (owner must write)** — No content for: "how long does roof coating last Florida" (lifespan guide), "DIY vs pro roof coating" angle, hurricane-prep seasonal checklist (May–Oct window). Agent can draft outlines on request.
+
+- **Off-page / local authority (owner actions)** — Claim/create listings on Angi, HomeAdvisor, Houzz, Thumbtack, and local Broward directories. Verify Google Business Profile is fully optimized (photos, services, hours, Q&A). Target 50+ Google reviews in 60 days via text/email campaign to past customers.
+
 - **WordPress blog tagline fix** — blog.theroofstore.net (or blog subdirectory) shows "Just another WordPress site" in Google SERPs. Fix: WP Admin → Settings → General → change Tagline to "Roof Coating Knowledge Base" (or similar). User to action directly.
 
 - **Review count in schema** — aggregateRating in `Home.tsx` BUSINESS_CORE and `index.html` both show reviewCount: "10". Update to reflect actual Google/BBB review count once user confirms the number, then run a review collection campaign.

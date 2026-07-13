@@ -74,6 +74,7 @@ const schema = [
 ];
 
 const comparisonRows = [
+  // NOTE: keep in sync with itemListSchema below
   { label: "Average cost (1,500 sq ft roof)", replace: "$15,000–$30,000", coat: "$4,500–$10,500" },
   { label: "Disruption to home", replace: "Major — full tear-off", coat: "Minimal — applied over existing" },
   { label: "Time to complete", replace: "3–7 days", coat: "1–2 days" },
@@ -85,6 +86,20 @@ const comparisonRows = [
   { label: "Citizens Insurance certification", replace: "New roof qualifies", coat: "Coated roof can also qualify" },
   { label: "Warranty", replace: "Manufacturer warranty varies", coat: "10–15 year manufacturer warranty" },
 ];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Roof Coating vs. Full Replacement — Florida Comparison",
+  description:
+    "Side-by-side comparison of professional roof coating vs. full roof replacement for Florida homeowners on cost, disruption, lifespan, hurricane protection, and more.",
+  itemListElement: comparisonRows.map((row, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: row.label,
+    description: `Full Replacement: ${row.replace} | Roof Coating: ${row.coat}`,
+  })),
+};
 
 const whenCoatingWorks = [
   {
@@ -146,7 +161,7 @@ export default function RoofReplacementAlternative() {
         title="Roof Replacement Alternative Florida | The Roof Store"
         description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 40–60% less cost. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
-        schema={schema}
+        schema={[...schema, itemListSchema]}
       />
 
       {/* Hero */}
@@ -337,6 +352,9 @@ export default function RoofReplacementAlternative() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               The key word is <em>professionally applied</em>. This is not roof paint. Our proprietary systems — FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) — are 100% resin liquid rubber, no fillers, rated for ponding water, and tested under Florida's most demanding conditions including Dade County's TAS-106 hurricane wind-uplift standard.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mt-5 pl-5 border-l-4 border-accent/40">
+              Many Florida homeowners start by searching for <strong className="text-foreground">"roof painting"</strong> — and that search brings them to exactly the right place. What's commonly called roof painting in South Florida is, at the professional level, a liquid-applied elastomeric coating system. It outperforms standard paint in waterproofing, flexibility, and longevity by a wide margin. If roof painting is what brought you here, you're already one step ahead.
             </p>
           </motion.div>
         </div>

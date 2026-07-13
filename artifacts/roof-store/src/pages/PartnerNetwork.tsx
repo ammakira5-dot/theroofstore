@@ -96,6 +96,27 @@ const partners = [
       { author: "Christine G.", text: "My flat roof needed some work and got it all done in a couple of days. They took care of all the repairs before they applied the waterproofing." },
     ],
   },
+  {
+    name: "Roof Shield Coating Systems Inc",
+    url: "https://maps.google.com/?q=Roof+Shield+Coating+Systems+Inc,+Hollywood,+FL",
+    domain: "Google Business Profile",
+    phone: "954-302-5387",
+    specialty: "Licensed Roof Coating Installer",
+    territory: "Hollywood & Broward County, Florida",
+    description:
+      "Roof Shield Coating Systems Inc is our licensed installer serving Hollywood and Broward County. With 7+ years in business and a verified 5.0-star Google rating across 8 reviews, they bring proven hands-on experience applying our liquid rubber coating systems to tile, flat, and shingle roofs throughout South Florida.",
+    services: [
+      "Tile Roof Coating & Restoration",
+      "Flat Roof Waterproofing",
+      "Shingle Roof Sealing",
+      "Liquid Rubber Application",
+      "Hurricane-Rated Coating Systems",
+    ],
+    badge: "Hollywood",
+    linkPaused: false,
+    gmbOnly: true,
+    reviews: [] as { author: string; text: string }[],
+  },
 ];
 
 export default function PartnerNetwork() {
@@ -103,7 +124,7 @@ export default function PartnerNetwork() {
     <div className="w-full">
       <SEO
         title="Authorized Partner Network — The Roof Store Waterproofing Products"
-        description="The Roof Store maintains an authorized network of specialty partners serving South Florida. Windproof Roof Systems (tile restoration) and Roof Protect Products (product supply) are trained in our proprietary coating systems."
+        description="The Roof Store maintains an authorized network of licensed specialty partners serving South Florida. Windproof Roof Systems, Roof Protect Products, Storm Shield Roof Coating Systems, and Roof Shield Coating Systems — all factory trained in our proprietary coating systems."
         canonical="/partner-network"
         schema={schema}
       />

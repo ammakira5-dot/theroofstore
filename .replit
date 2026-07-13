@@ -43,6 +43,10 @@ SMTP_USER = "theroofstore@gmail.com"
 SMTP_TO = "theroofstore@gmail.com"
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = "465"
+WINDPROOF_FTP_HOST = "ftp.windproofroofsystems.com"
+WINDPROOF_FTP_USER = "windproof@windproofroofsystems.com"
+RRSW_FTP_HOST = "ftp.roofrestorationsandwaterproofinginc.com"
+RRSW_FTP_USER = "roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com"
 
 [nix]
 channel = "stable-25_05"

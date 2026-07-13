@@ -51,7 +51,17 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **Fix #1 roller icon embeds on roofprotectproducts.com** — RP1 FungalShield and RP3 RoofShield bucket #1 roller icons need their embed URLs updated. RP1 should use `https://www.theroofstore.net/pdf/fungalshield-info.pdf`; RP3 should use `https://www.theroofstore.net/pdf/roofshield-info.pdf`. RP2 SmartShield already works correctly.
 - **Fix product schemas on roofprotectproducts.com** — FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) Product schemas have brand = product name instead of "The Roof Store", missing `offers`, and no `image`. Google flags these as invalid Product snippets.
-- **roofprotectproducts.com full SEO audit** — check meta descriptions, canonicals, schema markup, links to theroofstore.net, phone numbers, OG tags, H1s across all pages. Audit in progress.
+- **roofprotectproducts.com SEO fixes (10 issues found July 13 2026):**
+  1. Fake phone `tel:123456789` in "free phone consultation" link → replace with `tel:9542109614`
+  2. Wrong phone `954-900-1973` in nav/footer → replace with `954-210-9614`
+  3. No links to theroofstore.net anywhere → add backlinks (footer + product pages)
+  4. No OG tags (og:title, og:description, og:image) → add to header.php
+  5. No H1 on product detail pages → add keyword-rich H1s
+  6. Canonical missing on /products.php → add canonical tag
+  7. Weak homepage H1 "Roofprotect Products" → improve with keywords
+  8. "Sherwin Williams" in products page title → remove competitor brand
+  9. Product schemas missing brand/offers/image (see separate item above)
+  10. Organization schema on homepage missing phone + address
 
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
 

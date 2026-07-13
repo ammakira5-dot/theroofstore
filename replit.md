@@ -59,6 +59,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **Blog content refresh** — No posts since Sept 2024. Recommended: "2026 Hurricane Season Prep for South Florida Roofs" and "What Citizens Insurance Rule Changes Mean for Tile Roof Owners in 2026". User to write/publish in WordPress.
 
+- **🔑 Need FTP access — roofpaintmiami.com & ftlauderdaleroofcoating.com** — Provide FTP credentials (host, username, password) for both sites so SEO fixes can be applied. Passwords will be stored as `ROOFPAINTMIAMI_FTP_PASSWORD` and `FTLAUDERDALE_FTP_PASSWORD` secrets.
+
 - **GSC network — add 2 missing properties** — bestroofpaint.com and roofpaintmiami.com not yet in Google Search Console. Both sites are clean (duplicate content already fixed July 11 2026). Owner to: (1) add both as properties in GSC, (2) submit sitemaps (WordPress auto-generates at `/wp-sitemap.xml` or `/sitemap_index.xml`). Full 7-property GSC network when done: theroofstore.net, ftlauderdaleroofcoating.com, windproofroofsystems.com, roofrestorationsandwaterproofinginc.com, flatroofsealants.com, bestroofpaint.com, roofpaintmiami.com.
 
 - **Keyword rank tracking dashboard** — 7 sites now in GSC covering same target keywords (tile roof coating, roof painting, Spanish tile, flat roof waterproofing, Broward/Miami). Options: (A) Looker Studio — free, connect all 7 GSC properties in one dashboard, 30-min setup by owner; (B) Local Falcon (~$29–49/mo) — GMB geo-grid rank tracking across Broward/Miami-Dade zip codes, best tool for local pack position monitoring; (C) Custom dashboard built into theroofstore.net admin area pulling GSC API. Recommend doing A + B first; C can be added later. Local Falcon is highest priority for GMB local pack visibility.

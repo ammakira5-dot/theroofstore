@@ -240,6 +240,31 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Don't Re-Roof CTA */}
+      <section className="py-16 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="bg-primary rounded-2xl p-10 flex flex-col md:flex-row items-center gap-8 text-white">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-accent/20 text-accent text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-widest mb-4">
+                Why Re-Roof?
+              </div>
+              <h2 className="text-3xl font-serif font-bold mb-3 leading-tight">
+                Weatherproof your existing roof for half the cost of replacement.
+              </h2>
+              <p className="text-white/75 leading-relaxed">
+                See a full side-by-side comparison — cost, lifespan, wind rating, warranty, and insurance — between a full re-roof and our liquid rubber coating system.
+              </p>
+            </div>
+            <Link
+              href="/roof-replacement-alternative-florida"
+              className="shrink-0 inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold px-8 py-4 rounded-lg transition-colors text-sm uppercase tracking-wider whitespace-nowrap"
+            >
+              See the Full Comparison <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="py-24 bg-muted">
         <div className="container px-4">

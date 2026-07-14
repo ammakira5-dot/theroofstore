@@ -42,6 +42,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **Roof Replacement Comparison page — add real "before" photo** — The `/roof-replacement-alternative-florida` page has a placeholder/stock before image. User will supply a real before photo of an aging roof job. When received: swap it into the before/after comparison section on that page.
+
 - **roofpaintmiami.com — Set up Google Business Profile (service-area business)** — No GMB exists for rpm. Steps: (1) Go to business.google.com, create new listing as "Roof Paint Miami", category: Roofing Contractor; (2) Set as service-area business covering Miami-Dade County; (3) Enter a real Miami-Dade address (kept private — never shown publicly); (4) Phone: (786) 837-9064; (5) Verify via video (film van/equipment/job site) or phone if eligible. Do NOT use same address as TRS. Instant verification may be available if same Google account already verified TRS in GSC.
 
 - **roofpaintmiami.com — Prepare GBP listing content** — Agent to draft: business description (750 chars), full services list, Q&A seed questions, and photo upload checklist once GMB account is created.

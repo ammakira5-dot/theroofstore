@@ -240,57 +240,6 @@ export default function Home() {
         </div>
       </section>
       
-      {/* Myth-buster — "Not a Bandaid" callout linking to detail page */}
-      <section className="py-20 bg-background">
-        <div className="container px-4 max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-5">
-                Let's set the record straight
-              </div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-5 leading-tight">
-                "Roof coating is just a bandaid."<br />
-                <span className="text-accent">That's a myth — and here's the truth.</span>
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-                Cheap roof paint? Yes — that's a bandaid. What we apply is a 100% resin liquid rubber membrane, engineered to bond permanently to your roof structure, rated for ponding water, and tested to withstand Dade County's TAS-106 hurricane wind-uplift standard.
-              </p>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Our clients have roofs we coated <strong className="text-foreground">over 20 years ago</strong> that have survived multiple hurricane seasons without a single leak. That's not a bandaid — that's a permanent weatherproofing system at half the cost of tearing off and rebuilding.
-              </p>
-              <Link
-                href="/roof-replacement-alternative-florida"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold px-7 py-4 rounded-lg transition-colors text-sm uppercase tracking-wider"
-              >
-                See the full comparison <ArrowRight className="h-4 w-4" />
-              </Link>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-4">
-              {[
-                { myth: "\"It won't last.\"", truth: "Our systems have documented 20+ year performance in Florida's harshest climate." },
-                { myth: "\"It's just paint.\"", truth: "100% resin liquid rubber — no fillers, no water-based shortcuts. Rated for ponding water." },
-                { myth: "\"It voids your warranty.\"", truth: "Our coating systems are designed to work with your existing materials, not against them." },
-                { myth: "\"My insurance won't cover it.\"", truth: "Florida homeowners often qualify for an Additional Roof Life Certification after coating." },
-                { myth: "\"A new tile roof is stronger.\"", truth: "New cement tile manufactured under current building codes is actually lighter-duty than older tile. Retrofit your existing tile with our liquid rubber system and the assembly is stronger — and more weatherproof — than new tile alone." },
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  className="bg-muted rounded-xl p-5 border border-border"
-                >
-                  <div className="text-sm font-bold text-destructive/80 mb-1">{item.myth}</div>
-                  <div className="text-sm text-foreground leading-relaxed">✓ {item.truth}</div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Overview */}
       <section className="py-24 bg-muted">
         <div className="container px-4">

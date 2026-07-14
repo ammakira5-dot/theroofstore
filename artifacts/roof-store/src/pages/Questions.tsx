@@ -91,6 +91,47 @@ const sections = [
       },
     ],
   },
+  {
+    letter: "D",
+    title: "Common Misconceptions — Setting the Record Straight",
+    content: [
+      {
+        type: "highlight",
+        title: "\"Roof coating is just a bandaid.\"",
+        text: "Cheap roof paint? Yes — that's a bandaid. What we apply is a 100% resin liquid rubber membrane, engineered to bond permanently to your roof structure, rated for ponding water, and independently tested to withstand Dade County's TAS-106 hurricane wind-uplift standard. Our clients have roofs we coated over 20 years ago that have survived multiple hurricane seasons without a single leak. That's not a bandaid — that's a permanent weatherproofing system at half the cost of tearing off and rebuilding.",
+      },
+      {
+        type: "highlight",
+        title: "\"It won't last.\"",
+        text: "Our systems have documented 20+ year performance in Florida's harshest climate — real roofs, real storms. No theoretical projections. We have installed roofs that are still performing today after two-plus decades of Florida heat, UV exposure, and hurricane-force winds.",
+      },
+      {
+        type: "highlight",
+        title: "\"It's just paint.\"",
+        text: "100% resin liquid rubber — no fillers, no water-based shortcuts, rated for ponding water. This is a fundamentally different product from anything sold at a hardware store. Run the freezer test: generic elastomeric products crack and break. Real rubber does not.",
+      },
+      {
+        type: "highlight",
+        title: "\"It voids my roof warranty.\"",
+        text: "Our coating systems are designed to work with your existing roof materials, not against them. The installation process is non-destructive and fully compatible with tile, flat, and metal roof assemblies. Our Roof Shield warranty is transferable and renewable — advantages no new-roof warranty offers.",
+      },
+      {
+        type: "highlight",
+        title: "\"My insurance won't cover it.\"",
+        text: "Florida homeowners often qualify for an Additional Roof Life Certification after a Roof Shield installation — which Citizens Insurance accepts in lieu of a full re-roof requirement. We have helped hundreds of homeowners keep their coverage without replacing a roof that still had useful life.",
+      },
+      {
+        type: "highlight",
+        title: "\"A new tile roof is stronger than a coated one.\"",
+        text: "New cement tile manufactured under current building codes is actually lighter-duty than the older tile it replaces. Retrofit your existing tile with our liquid rubber system and the assembly is measurably stronger — and more weatherproof — than new tile alone. The TAS-106 Dade County Pull Test confirms it.",
+      },
+      {
+        type: "highlight",
+        title: "\"The roof can't breathe under a coating.\"",
+        text: "Acrylic elastomeric and silicone roof coatings breathe — they allow water vapor to escape while blocking liquid water from entering. In roofing, \"breathing\" means vapor-permeable: trapped moisture inside the roof substrate can evaporate outward rather than being sealed in, which would cause blistering, bubbling, or rot. Our coatings are vapor-permeable by design. The real risk isn't breathability — it's coating over a roof with existing trapped moisture or unrepaired leaks, which is why every installation starts with a moisture inspection before a single gallon is applied.",
+      },
+    ],
+  },
 ];
 
 const pdfs = [

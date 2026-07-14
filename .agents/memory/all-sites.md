@@ -29,7 +29,7 @@ _Last updated: July 14, 2026 — confirmed by owner_
 | theroofstore.net | ✅ July 2026 | Main React SPA — full audit done |
 | roofprotectproducts.com | ✅ July 13 2026 | 10-issue audit done; roller icon PDFs fixed |
 | ftlauderdaleroofcoating.com | ✅ July 14 2026 | Title/desc/OG/canonical/schema/backlink + footer phone fixed |
-| roofpaintmiami.com | ✅ July 14 2026 | Title+desc were completely missing — added; OG/canonical/schema/backlink added |
+| roofpaintmiami.com | ✅ July 14 2026 | Full SEO audit done; banner replaced with Miami photo; FAQ/commercial pages still thin — expand next session |
 | bestroofpaint.com | ✅ July 14 2026 | Title cleaned, desc improved, OG/canonical/schema/backlink added |
 | flatroofsealants.com | ❓ Not yet audited | FTP access available via julius@ |
 | windproofroofsystems.com | ⚠️ Pending | 4 fixes needed; blocked on FTP host+user |

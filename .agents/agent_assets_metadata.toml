@@ -317,3 +317,21 @@ id = "VBEg3HStXYd2_TbPpZlWj"
 uri = "file://artifacts/mockup-sandbox/rpm-crop-50.jpg"
 type = "image"
 title = "Option C — lower (most roof surface)"
+
+[[outputs]]
+id = "P_cQ5_1yBbDJUsxr4z2oJ"
+uri = "file://artifacts/mockup-sandbox/rpm-photo-0.jpg"
+type = "image"
+title = "Option A — top (sky + start of roofer)"
+
+[[outputs]]
+id = "L_2w_Ci7xAVIxCCEs7YCp"
+uri = "file://artifacts/mockup-sandbox/rpm-photo-30.jpg"
+type = "image"
+title = "Option B — mid-high (roofer + roof)"
+
+[[outputs]]
+id = "Uigc-7KDbnwF_bACeYaiE"
+uri = "file://artifacts/mockup-sandbox/rpm-photo-60.jpg"
+type = "image"
+title = "Option C — mid (full roofer body + roof surface)"

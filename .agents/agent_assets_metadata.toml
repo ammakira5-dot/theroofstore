@@ -287,3 +287,9 @@ id = "km6gr9TgPsX79exohBCSO"
 uri = "file://attached_assets/factory-price-sheet.md"
 type = "text"
 title = "Factory Price Sheet — The Roof Store"
+
+[[outputs]]
+id = "SV0AyN5vVUcnpjf8N07So"
+uri = "file://artifacts/mockup-sandbox/rpm-banner-new.jpg"
+type = "image"
+title = "Roof Paint Miami — New Header Banner (755×174)"

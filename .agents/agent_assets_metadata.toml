@@ -293,3 +293,9 @@ id = "SV0AyN5vVUcnpjf8N07So"
 uri = "file://artifacts/mockup-sandbox/rpm-banner-new.jpg"
 type = "image"
 title = "Roof Paint Miami — New Header Banner (755×174)"
+
+[[outputs]]
+id = "Qk-6Dli6bBAvENv2OZFYc"
+uri = "file://artifacts/mockup-sandbox/rpm-banner-preview.jpg"
+type = "image"
+title = "Re-cropped banner — top-aligned (755×174) — approve to push live"

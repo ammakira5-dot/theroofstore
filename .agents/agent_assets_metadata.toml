@@ -299,3 +299,21 @@ id = "Qk-6Dli6bBAvENv2OZFYc"
 uri = "file://artifacts/mockup-sandbox/rpm-banner-preview.jpg"
 type = "image"
 title = "Re-cropped banner — top-aligned (755×174) — approve to push live"
+
+[[outputs]]
+id = "vNP_08SI_MPSU1ORH_CyH"
+uri = "file://artifacts/mockup-sandbox/rpm-crop-20.jpg"
+type = "image"
+title = "Option A — slight shift (most sky + text visible)"
+
+[[outputs]]
+id = "Ic1Kzo-gVRLaw4HwyA8V2"
+uri = "file://artifacts/mockup-sandbox/rpm-crop-35.jpg"
+type = "image"
+title = "Option B — middle (balanced)"
+
+[[outputs]]
+id = "VBEg3HStXYd2_TbPpZlWj"
+uri = "file://artifacts/mockup-sandbox/rpm-crop-50.jpg"
+type = "image"
+title = "Option C — lower (most roof surface)"

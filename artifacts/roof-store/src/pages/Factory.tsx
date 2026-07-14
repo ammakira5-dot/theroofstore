@@ -94,11 +94,12 @@ export default function Factory() {
               🛠️ Don't worry — we also install the products we sell.&nbsp;
               <span className="font-normal text-white/70">Licensed crew, same company.</span>
             </div>
-            <div className="mx-auto mb-6" style={{ maxWidth: 220 }}>
+            <div className="mb-6 flex justify-end max-w-2xl mx-auto">
               <img
                 src="/images/roof-replacement-alternative-truck.png"
                 alt="The Roof Store licensed installation crew — truck and trailer wrap"
-                className="w-full rounded-lg shadow-lg border border-white/10 opacity-90"
+                className="rounded-lg shadow-lg border border-white/10 opacity-90"
+                style={{ width: 280 }}
               />
             </div>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">

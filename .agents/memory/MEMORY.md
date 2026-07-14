@@ -2,6 +2,7 @@
 - [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.
 - [Roof Store entity structure](roof-store-entity-structure.md) — 3-tier model (storefront/manufacturer/installer) + "RoofProtect" one-word spelling; consult before editing company/product copy.
 - [Verification tool caches by URL](verification-tool-url-caching.md) — screenshot/webFetch tools can serve stale cached snapshots per exact URL; always add a cache-busting query param before trusting a "still broken in prod" result.
+- [All Sites](all-sites.md) — owner-confirmed master reference: all 10 listings, GMB/GSC/FTP/SEO status; update whenever anything changes.
 - [Sister-site duplicate content cleanup](sister-sites-duplicate-content.md) — tracks status of separate roofing-business sites; SEO fixes (title/desc/OG/canonical/schema/backlink) applied July 2026 to ftlauderdaleroofcoating.com, roofpaintmiami.com, bestroofpaint.com via julius@ FTP.
 - [Express req typing pitfall](express-request-typing.md) — never type a helper's `req` via `Parameters<Parameters<typeof router.use>[0]>[0]`; use `Request` from express directly.
 - [Don't Re-Roof keyword strategy](dont-reroof-keyword-strategy.md) — keyword research for "roof replacement alternative" niche; Tier 2 ($20–$55/click) is the sweet spot; landing page + SEO-first approach recommended; pending user review to action.

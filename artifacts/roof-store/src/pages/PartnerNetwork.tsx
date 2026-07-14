@@ -48,7 +48,19 @@ const partners = [
     badge: "Tile Specialist",
     linkPaused: false,
     gmbOnly: false,
-    reviews: [] as { author: string; text: string }[],
+    reviewsTitle: "Customer Reviews — Storm Shield Paint Systems Inc · ⭐ 5.0 · 10 Google Reviews",
+    reviews: [
+      { author: "Dr. Gary Enker", text: "Everyone with a roof should have this product applied to prevent future leaks and damage to your roof. Anthony the owner is a true perfectionist professional. The product is outstanding — able to pick from any color you prefer." },
+      { author: "Kathee Antezana", text: "Had a leak in my roof that I attempted to fix several times without success. Anthony came and sealed and painted the entire roof. Did a great job and my 50-year-old barrel tile roof looked great and was leak free." },
+      { author: "Jean Louis Sorondo", text: "We have a flat roof building in Miami Beach and got tired of playing whack-a-mole with random roof leaks — causing drywall damage and repair headaches in different condos each time. We finally got it resolved." },
+      { author: "Naeem Khan", text: "We were told our flat deck needed to be replaced but we tried the silicone roof restoration instead and even got our insurance to pass inspection — we were told it wouldn't. Great system and company, highly recommend." },
+      { author: "Clara Cushing", text: "Had our tile roof painted and they did a great job. Very professional crew — they covered everything I asked and didn't leave a mess like the last service we hired." },
+      { author: "Joel Bryan", text: "I was looking for a good alternative to the enormous expense of replacing my roof so we decided on having it Storm Shielded. They did a great job sealing all the tiles and my neighbors all think I got a new roof." },
+      { author: "Simon Addrison", text: "Great work. I was concerned about getting coating on the brick pavers around my house and these guys worked extremely cleanly — zero spillage or drips. Extremely happy with the roof system and repairs. I can wholeheartedly recommend this company." },
+      { author: "Robert R.", text: "They didn't charge us extra to cut the trees back that were laying on sections of our roof before they cleaned and sealed the roof tiles. It came out better than we could have imagined." },
+      { author: "Mary Farren", text: "Very impressed with the roof coating service provided. I would highly recommend them." },
+      { author: "Jaye Stone", text: "I don't usually refer anyone but had to leave this company a review — their employees were on time, did an excellent job, and my wife is really happy with the color we picked. It was a pleasure doing business with them." },
+    ],
   },
   {
     name: "Roof Protect Products",
@@ -260,7 +272,7 @@ export default function PartnerNetwork() {
 
               {partner.reviews.length > 0 && (
                 <div className="px-8 pb-8 border-t border-border pt-6">
-                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">Customer Reviews — ⭐ 5.0 Google Rating</div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">{partner.reviewsTitle ?? "Customer Reviews — ⭐ 5.0 Google Rating"}</div>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {partner.reviews.map((review, k) => (
                       <blockquote key={k} className="bg-background rounded-xl p-4 border border-border">

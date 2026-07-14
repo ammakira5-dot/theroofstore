@@ -94,17 +94,17 @@ export default function Factory() {
               🛠️ Don't worry — we also install the products we sell.&nbsp;
               <span className="font-normal text-white/70">Licensed crew, same company.</span>
             </div>
-            <div className="mb-6 flex justify-end max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row items-center gap-6 max-w-2xl mx-auto mb-2">
+              <p className="text-xl text-white/80 text-left flex-1">
+                Through proprietary manufacturing technology, RoofProtect Products formulates every gallon of material used in the Fungal Shield, Smart Shield, and Roof Shield systems as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
+              </p>
               <img
                 src="/images/roof-replacement-alternative-truck.png"
                 alt="The Roof Store licensed installation crew — truck and trailer wrap"
-                className="rounded-lg shadow-lg border border-white/10 opacity-90"
+                className="rounded-lg shadow-lg border border-white/10 opacity-90 shrink-0"
                 style={{ width: 280 }}
               />
             </div>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Through proprietary manufacturing technology, RoofProtect Products formulates every gallon of material used in the Fungal Shield, Smart Shield, and Roof Shield systems as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
-            </p>
           </motion.div>
         </div>
       </section>

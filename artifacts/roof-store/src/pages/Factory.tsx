@@ -75,7 +75,7 @@ export default function Factory() {
     <>
     <div className="w-full">
       <SEO
-        title="Our Manufacturing Partner — RoofProtect Products, Davie, Florida"
+        title="Our In-House Licensed Manufacturing Division — RoofProtect Products, Davie, Florida"
         description="RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
         canonical="/factory"
         ogImage={`${BASE}/images/factory/1.jpg`}
@@ -89,7 +89,18 @@ export default function Factory() {
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
               Manufactured by RoofProtect Products — Davie, Florida
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Our Manufacturing Partner</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Our In-House Licensed Manufacturing Division</h1>
+            <div className="inline-flex items-center gap-3 bg-accent/20 border border-accent/40 rounded-lg px-6 py-3 mb-6 text-sm font-semibold text-accent">
+              🛠️ Don't worry — we also install the products we sell.&nbsp;
+              <span className="font-normal text-white/70">Licensed crew, same company.</span>
+            </div>
+            <div className="max-w-lg mx-auto mb-6">
+              <img
+                src="/images/roof-replacement-alternative-truck.png"
+                alt="The Roof Store licensed installation crew — truck and trailer wrap"
+                className="w-full rounded-xl shadow-2xl border border-white/10"
+              />
+            </div>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Through proprietary manufacturing technology, RoofProtect Products formulates every gallon of material used in the Fungal Shield, Smart Shield, and Roof Shield systems as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
             </p>

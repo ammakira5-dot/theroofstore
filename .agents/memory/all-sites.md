@@ -21,23 +21,6 @@ _Last updated: July 14, 2026 — confirmed by owner_
 | 9 | Roof Paint Miami | roofpaintmiami.com | (786) 837-9064 | ❌ No GMB |
 | 10 | Fort Lauderdale Roof Coating | ftlauderdaleroofcoating.com | (877) 824-5823 | ❌ No GMB |
 
----
-
-## FTP Access
-
-| Domain | FTP User | Host | Secret |
-|--------|----------|------|--------|
-| theroofstore.net | n/a | Replit deploy | n/a |
-| roofprotectproducts.com | muhammad@roofprotectproducts.com | ftp.absolutecharters.com:21 | `ROOFPROTECT_FTP_PASSWORD` (note: stored value is wrong — use actual) |
-| ftlauderdaleroofcoating.com | julius@absolutecharters.com | ftp.absolutecharters.com:21 | `JULIUS_FTP_PASSWORD` |
-| roofpaintmiami.com | julius@absolutecharters.com | ftp.absolutecharters.com:21 | `JULIUS_FTP_PASSWORD` |
-| bestroofpaint.com | julius@absolutecharters.com | ftp.absolutecharters.com:21 | `JULIUS_FTP_PASSWORD` |
-| flatroofsealants.com | julius@absolutecharters.com | ftp.absolutecharters.com:21 | `JULIUS_FTP_PASSWORD` |
-| shopping.theroofstore.net | julius@absolutecharters.com | ftp.absolutecharters.com:21 | `JULIUS_FTP_PASSWORD` |
-| windproofroofsystems.com | ❌ Unknown | ❌ Unknown | `WINDPROOF_FTP_PASSWORD` (host+user needed) |
-| roofrestorationsandwaterproofinginc.com | ❌ Unknown | ❌ Unknown | `RRSW_FTP_PASSWORD` (host+user needed) |
-
----
 
 ## SEO Status
 

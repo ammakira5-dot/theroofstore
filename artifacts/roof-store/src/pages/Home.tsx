@@ -295,7 +295,7 @@ export default function Home() {
       <section className="py-24 bg-muted">
         <div className="container px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Our Premium Services</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Roof Coating Services in South Florida</h2>
             <p className="text-muted-foreground text-lg">We provide comprehensive restoration and weatherproofing systems that save you money while delivering superior protection.</p>
           </div>
           

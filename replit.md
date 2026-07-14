@@ -49,7 +49,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **roofprotectproducts.com — SEO audit complete (July 13 2026)** — All 10 issues fixed via FTP. FTP: `ftp.absolutecharters.com:21`, user: `muhammad@roofprotectproducts.com`, password: `ROOFPROTECT_FTP_PASSWORD`. **Phone note:** `954-900-1973` is intentionally kept — it is the Google Ads call-tracking number. `954-210-9614` (The Roof Store) appears only in the new footer backlink bar.
 
-- **Fix roller icon embeds on roofprotectproducts.com** — RP1 FungalShield and RP3 RoofShield bucket #1 roller icons need their embed URLs updated. RP1 should use `https://www.theroofstore.net/pdf/fungalshield-info.pdf`; RP3 should use `https://www.theroofstore.net/pdf/roofshield-info.pdf`. RP2 SmartShield already works correctly. **BLOCKED:** `ROOFPROTECT_FTP_PASSWORD` secret (12 chars) doesn't match the actual FTP password — please re-enter the correct password for `muhammad@roofprotectproducts.com` at `ftp.absolutecharters.com`.
+- ✅ **Fix roller icon embeds on roofprotectproducts.com — DONE July 14 2026** — RP1 now serves `fungalshield-info.pdf`, RP3 now serves `roofshield-info.pdf`. RP2 SmartShield unchanged. Verified live. Note: `ROOFPROTECT_FTP_PASSWORD` secret has wrong value stored — actual credentials used are different. Update the secret when convenient.
 
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
 

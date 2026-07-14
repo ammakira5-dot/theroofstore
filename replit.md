@@ -37,6 +37,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 ## User preferences
 
 - Always confirm the plan before making changes
+- Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"
 
 ## Pending to-dos

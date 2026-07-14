@@ -351,7 +351,7 @@ export default function Distributorships() {
           <div className="bg-muted rounded-2xl p-8 flex flex-col md:flex-row md:items-center gap-6">
             <div className="flex-1">
               <div className="text-xs font-bold text-accent uppercase tracking-widest mb-2">Already a Partner?</div>
-              <h3 className="text-2xl font-serif font-bold text-primary mb-2">View Our Authorized Partner Network</h3>
+              <h3 className="text-2xl font-serif font-bold text-primary mb-2">View Our Authorized Distributor & Licensed Installers Network</h3>
               <p className="text-muted-foreground leading-relaxed">
                 See our current authorized partners — Windproof Roof Systems and Roof Protect Products — and how they're listed on theroofstore.net.
               </p>
@@ -360,7 +360,7 @@ export default function Distributorships() {
               href="/partner-network"
               className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-lg transition-colors shrink-0"
             >
-              View Partner Network
+              View Distributor & Installer Network
             </Link>
           </div>
         </div>

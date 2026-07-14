@@ -20,7 +20,7 @@ const moreLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/videos", label: "Videos" },
   { href: "/distributorships", label: "Distributorships" },
-  { href: "/partner-network", label: "Partner Network" },
+  { href: "/partner-network", label: "Distributor & Installer Network" },
 ];
 
 const productDropdown = {

@@ -8,10 +8,10 @@ const BASE = "https://www.theroofstore.net";
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Authorized Partner Network — The Roof Store Waterproofing Products",
+  name: "Authorized Distributor & Licensed Installers Network — The Roof Store Waterproofing Products",
   url: `${BASE}/partner-network`,
   description:
-    "The Roof Store Waterproofing Products maintains an authorized partner network of specialty distributors serving South Florida. Each partner is trained in our proprietary coating systems and serves a defined territory.",
+    "The Roof Store Waterproofing Products maintains an authorized network of licensed distributor-installers serving South Florida. Each member is factory-trained in our proprietary coating systems, authorized to sell and install them, and serves a defined territory.",
   provider: {
     "@type": "Organization",
     name: "The Roof Store Waterproofing Products",
@@ -135,7 +135,7 @@ export default function PartnerNetwork() {
   return (
     <div className="w-full">
       <SEO
-        title="Authorized Partner Network — The Roof Store Waterproofing Products"
+        title="Authorized Distributor & Licensed Installers Network — The Roof Store Waterproofing Products"
         description="The Roof Store maintains an authorized network of licensed specialty partners serving South Florida. Windproof Roof Systems, Roof Protect Products, Storm Shield Roof Coating Systems, and Roof Shield Coating Systems — all factory trained in our proprietary coating systems."
         canonical="/partner-network"
         schema={schema}
@@ -150,12 +150,12 @@ export default function PartnerNetwork() {
               Authorized Partners
             </div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
-              Our Authorized Partner Network
+              Authorized Distributor & Licensed Installers Network
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl">
-              The Roof Store Waterproofing Products maintains a select network of authorized specialty partners
-              throughout South Florida — each trained in our proprietary coating systems and serving a defined
-              territory or product specialty.
+              The Roof Store Waterproofing Products maintains a select network of authorized distributor-installers
+              throughout South Florida — each factory-trained in our proprietary coating systems, licensed to sell
+              and install them, and serving a defined territory.
             </p>
           </motion.div>
         </div>

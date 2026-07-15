@@ -320,31 +320,25 @@ export default function RoofSystems() {
                         )}
                       </>
                     ) : system.gallery && system.gallery.length > 0 ? (
-                      <div className="rounded-2xl border border-border bg-card shadow-sm p-3">
-                        <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3 px-1">{system.name} — Photos</div>
-                        <div className="grid grid-cols-2 gap-3">
-                          {system.gallery.slice(0, 4).map((img, idx) => (
-                            <div
-                              key={idx}
-                              className="overflow-hidden rounded-xl aspect-[4/3] bg-muted relative group cursor-zoom-in"
-                              onClick={() => lb.open(galleryOffset(i) + idx)}
-                            >
-                              <img
-                                src={img.src}
-                                alt={img.alt}
-                                title={`${img.alt} — ${system.name} | The Roof Store`}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                loading="lazy"
-                              />
-                              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-                                <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
-                              </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        {system.gallery.map((img, idx) => (
+                          <div
+                            key={idx}
+                            className="overflow-hidden rounded-xl aspect-[4/3] bg-muted relative group cursor-zoom-in"
+                            onClick={() => lb.open(galleryOffset(i) + idx)}
+                          >
+                            <img
+                              src={img.src}
+                              alt={img.alt}
+                              title={`${img.alt} — ${system.name} | The Roof Store`}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
+                              <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
                             </div>
-                          ))}
-                        </div>
-                        {system.gallery.length > 4 && (
-                          <p className="text-xs text-muted-foreground text-right mt-2 pr-1">+{system.gallery.length - 4} more below ↓</p>
-                        )}
+                          </div>
+                        ))}
                       </div>
                     ) : null}
                   </div>
@@ -375,38 +369,6 @@ export default function RoofSystems() {
                     </Button>
                   </div>
                 </motion.div>
-
-                {!system.beforeSrc && system.gallery && system.gallery.length > 4 && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mt-12"
-                  >
-                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Photos — {system.name}</div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      {system.gallery.slice(4).map((img, gi) => (
-                        <div
-                          key={gi}
-                          className="overflow-hidden rounded-lg shadow-sm aspect-[4/3] bg-muted relative group cursor-zoom-in"
-                          onClick={() => lb.open(galleryOffset(i) + 4 + gi)}
-                        >
-                          <img
-                            src={img.src}
-                            alt={img.alt}
-                            title={`${img.alt} — ${system.name} | The Roof Store`}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors duration-300 flex items-center justify-center">
-                            <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
 
                 {system.beforeSrc && system.gallery && system.gallery.length > 0 && (
                   <motion.div

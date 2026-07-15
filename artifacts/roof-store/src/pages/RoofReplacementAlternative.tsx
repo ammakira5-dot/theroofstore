@@ -308,7 +308,7 @@ export default function RoofReplacementAlternative() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-4 flex flex-col items-center">
 
             {/* Before */}
-            <div className="relative rounded-2xl overflow-hidden border border-border bg-muted w-1/2">
+            <div className="relative rounded-2xl overflow-hidden border border-border bg-muted w-3/4">
               <img
                 src="/images/before-tile-roof-coating.jpg"
                 alt="South Florida tile roof before Roof Shield coating — original condition"
@@ -320,7 +320,7 @@ export default function RoofReplacementAlternative() {
             {/* After — click to enlarge */}
             <button
               onClick={() => setLightbox(true)}
-              className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted w-1/2"
+              className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted w-3/4"
               aria-label="View after photo full size"
             >
               <img

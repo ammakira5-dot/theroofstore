@@ -30,17 +30,6 @@ const videos: VideoEntry[] = [
     desc: "Don Godshall faced a choice: replace the roof or seal it with Roof Shield. He chose Roof Shield. When Hurricane Wilma hit, neighbor tiles were flying across his yard. His roof didn't lose a single tile. Watch his full story.",
   },
   {
-    id: "RrcGPZg7s6I",
-    title: "Customer Testimonial — Roof Shield System",
-    tag: "Customer Testimonial",
-    icon: Play,
-    testimonialImage: null,
-    customer: null,
-    location: null,
-    quote: null,
-    desc: "A real homeowner describes their experience with The Roof Store's Roof Shield liquid rubber membrane system — including performance through storm season.",
-  },
-  {
     id: "j33btx-TGXo",
     title: "TAS-106 Dade County Uplift Test",
     tag: "Certification Test",

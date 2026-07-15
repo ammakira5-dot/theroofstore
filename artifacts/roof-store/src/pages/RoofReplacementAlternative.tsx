@@ -468,7 +468,7 @@ export default function RoofReplacementAlternative() {
               ))}
             </ul>
             <p className="text-muted-foreground text-sm mt-5 italic">
-              Not sure which category your roof falls into? A free on-site inspection tells you definitively — no obligation.
+              Not sure which category your roof falls into? An on-site manufacturer's inspection tells you definitively — no obligation.
             </p>
           </motion.div>
         </div>

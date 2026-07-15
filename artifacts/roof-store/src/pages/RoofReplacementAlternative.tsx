@@ -121,7 +121,7 @@ const whenCoatingWorks = [
   {
     icon: DollarSign,
     title: "Roof replacement quote feels too high",
-    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 40–60% less cost.",
+    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 40–60% less cost. And depending on the system you choose, it has proven to be 5× stronger once installed on an older roof than a new roof alone.",
   },
 ];
 

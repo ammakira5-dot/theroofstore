@@ -151,9 +151,22 @@ export default function Videos() {
                   )}
                 </div>
                 <div className="lg:col-span-2 flex flex-col justify-center">
-                  <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4 w-fit">
-                    <video.icon className="h-3.5 w-3.5" />
-                    {video.tag}
+                  <div className="flex items-center gap-3 mb-4 flex-wrap">
+                    <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide w-fit">
+                      <video.icon className="h-3.5 w-3.5" />
+                      {video.tag}
+                    </div>
+                    {video.tag === "Certification Test" && (
+                      <a
+                        href="/docs/tas-106-uplift-test.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-primary underline underline-offset-2 hover:text-accent transition-colors"
+                      >
+                        <FileCheck className="h-3.5 w-3.5" />
+                        Download Uplift Test PDF
+                      </a>
+                    )}
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-primary mb-4">{video.title}</h2>
                   {video.quote && (
@@ -184,11 +197,6 @@ export default function Videos() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white h-14 px-10 text-lg">
               <Link href="/contact">Schedule Inspection</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg">
-              <a href="/docs/tas-106-uplift-test.pdf" target="_blank" rel="noopener noreferrer">
-                Download Uplift Test PDF
-              </a>
             </Button>
           </div>
         </div>

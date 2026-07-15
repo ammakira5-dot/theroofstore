@@ -177,13 +177,13 @@ export default function Videos() {
 
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4">Want to See It in Person?</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4">Roof Shield Requires a Manufacturer's Inspection</h2>
           <p className="text-muted-foreground text-lg mb-8">
-            Schedule a free roof inspection and we'll walk you through exactly what we do — no sales pressure, just an honest evaluation of your roof and what it needs.
+            Roof Shield is the only system out of the three main ones we install that requires the Manufacturer's Inspection.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white h-14 px-10 text-lg">
-              <Link href="/contact">Schedule Free Inspection</Link>
+              <Link href="/contact">Schedule Inspection</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg">
               <a href="/docs/tas-106-uplift-test.pdf" target="_blank" rel="noopener noreferrer">

@@ -156,7 +156,7 @@ const faqs = [
 ];
 
 export default function RoofReplacementAlternative() {
-  const [lightbox, setLightbox] = useState<"before" | "after" | false>(false);
+  const [lightbox, setLightbox] = useState(false);
 
   return (
     <div className="w-full">
@@ -305,58 +305,27 @@ export default function RoofReplacementAlternative() {
             </p>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="grid grid-cols-2 gap-3">
-            {/* Before */}
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-2xl overflow-hidden border border-border bg-muted">
             <button
-              onClick={() => setLightbox("before")}
-              className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted flex flex-col"
-              aria-label="View before photo full size"
+              onClick={() => setLightbox(true)}
+              className="relative w-full block group cursor-zoom-in"
+              aria-label="View full-size before and after photo"
             >
-              <div className="h-56 md:h-72 overflow-hidden">
-                <img
-                  src="/images/before-tile-roof-coating.jpg"
-                  alt="South Florida tile roof before Roof Shield coating — original condition"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "center 65%" }}
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center rounded-2xl">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-3 py-2 rounded-full flex items-center gap-2">
-                  <ZoomIn className="h-3 w-3" /> Enlarge
+              <img
+                src="/images/before-after-tile-roof-coating.jpg"
+                alt="South Florida tile roof before and after Roof Shield coating restoration — no replacement needed"
+                className="w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
+                  <ZoomIn className="h-4 w-4" /> Click to enlarge
                 </div>
               </div>
-              <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-bold px-3 py-1 rounded-full">BEFORE</span>
-              <div className="px-4 py-3 bg-muted border-t border-border">
-                <p className="text-xs text-muted-foreground text-center">Original tile condition</p>
-              </div>
             </button>
-
-            {/* After */}
-            <button
-              onClick={() => setLightbox("after")}
-              className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted flex flex-col"
-              aria-label="View after photo full size"
-            >
-              <div className="h-56 md:h-72 overflow-hidden">
-                <img
-                  src="/images/after-tile-roof-coating.jpg"
-                  alt="South Florida tile roof after Roof Shield coating restoration"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center rounded-2xl">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-3 py-2 rounded-full flex items-center gap-2">
-                  <ZoomIn className="h-3 w-3" /> Enlarge
-                </div>
-              </div>
-              <span className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">AFTER</span>
-              <div className="px-4 py-3 bg-muted border-t border-border">
-                <p className="text-xs text-muted-foreground text-center">After Roof Shield coating</p>
-              </div>
-            </button>
+            <div className="px-6 py-4 bg-muted border-t border-border">
+              <p className="text-sm text-muted-foreground text-center">South Florida tile roof — restored with Roof Shield coating. No tear-off. No replacement. Fully weatherproofed.</p>
+            </div>
           </motion.div>
-
-          <p className="text-sm text-muted-foreground text-center mt-3">South Florida tile roof — restored with Roof Shield coating. No tear-off. No replacement. Fully weatherproofed.</p>
 
           {/* Lightbox */}
           <AnimatePresence>
@@ -379,7 +348,7 @@ export default function RoofReplacementAlternative() {
                   initial={{ scale: 0.92, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.92, opacity: 0 }}
-                  src={lightbox === "before" ? "/images/before-tile-roof-coating.jpg" : "/images/after-tile-roof-coating.jpg"}
+                  src="/images/before-after-tile-roof-coating.jpg"
                   alt="South Florida tile roof before and after Roof Shield coating restoration"
                   className="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain"
                   onClick={(e) => e.stopPropagation()}

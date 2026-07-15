@@ -78,7 +78,7 @@ const comparisonRows = [
   // NOTE: keep in sync with itemListSchema below
   { label: "Average cost (1,500 sq ft roof)", replace: "$15,000–$30,000", coat: "$4,500–$10,500" },
   { label: "Disruption to home", replace: "Major — full tear-off", coat: "Minimal — applied over existing" },
-  { label: "Time to complete", replace: "3–7 days", coat: "1–2 days" },
+  { label: "Time to complete", replace: "5–10 days", coat: "2–3 days" },
   { label: "Waterproofing", replace: "Dependent on new materials", coat: "Seamless liquid rubber seal" },
   { label: "Hurricane wind-uplift rated", replace: "Depends on product", coat: "Yes — TAS-106 Dade County rated" },
   { label: "Lifespan added", replace: "New roof: 20–30 years", coat: "10–15+ years extension" },
@@ -559,12 +559,12 @@ export default function RoofReplacementAlternative() {
               <div className="bg-muted rounded-2xl p-7 border border-border">
                 <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">Full Roof Replacement</div>
                 <div className="text-4xl font-serif font-bold text-foreground mb-1">$15K–$30K</div>
-                <div className="text-sm text-muted-foreground">$10–$20 per sq ft · Major disruption · 3–7 days</div>
+                <div className="text-sm text-muted-foreground">$10–$20 per sq ft · Major disruption · 5–10 days</div>
               </div>
               <div className="bg-accent/5 rounded-2xl p-7 border-2 border-accent">
                 <div className="text-xs font-bold text-accent uppercase tracking-widest mb-2">Professional Roof Coating</div>
                 <div className="text-4xl font-serif font-bold text-accent mb-1">$4.5K–$10K</div>
-                <div className="text-sm text-muted-foreground">$3–$7 per sq ft · Minimal disruption · 1–2 days</div>
+                <div className="text-sm text-muted-foreground">$3–$7 per sq ft · Minimal disruption · 2–3 days</div>
               </div>
             </div>
             <p className="text-muted-foreground text-lg leading-relaxed">

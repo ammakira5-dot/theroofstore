@@ -31,7 +31,7 @@ const BASE = "https://www.theroofstore.net";
 const homeFaqs = [
   {
     q: "How does roof coating compare to full roof replacement in Florida?",
-    a: "Roof coating typically costs 40–60% less than a full roof replacement, can be applied directly over your existing roof without tear-off, and extends your roof's life by 10–25 years. For South Florida homeowners, a liquid elastomeric coating system also delivers hurricane wind-uplift performance that new tile alone cannot match — our Roof Shield system is 5× stronger than a new tile roof in pull-test resistance.",
+    a: "Roof coating typically costs 40–60% less than a full roof replacement, can be applied directly over your existing roof without tear-off, and extends your roof's life by 10–25 years. For South Florida homeowners, a liquid elastomeric coating system also delivers hurricane wind-uplift performance that new tile roof replacements simply can not match — our Roof Shield system is 5× stronger than a new tile roof in pull-test resistance.",
   },
   {
     q: "Will an elastomeric roof coating hold up to Florida hurricanes?",

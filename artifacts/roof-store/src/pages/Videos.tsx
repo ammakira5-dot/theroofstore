@@ -220,8 +220,8 @@ export default function Videos() {
               <Link href="/contact">Schedule Free Inspection</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg">
-              <a href="https://www.theroofstore.net/uplift-test.php" target="_blank" rel="noopener noreferrer">
-                See Uplift Test Documentation
+              <a href="/docs/tas-106-uplift-test.pdf" target="_blank" rel="noopener noreferrer">
+                Download Uplift Test PDF
               </a>
             </Button>
           </div>

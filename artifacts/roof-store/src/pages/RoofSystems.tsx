@@ -53,6 +53,8 @@ const systems: RoofSystem[] = [
     gallery: [
       { src: "/images/projects/flat-cement-extra-1.png", alt: "Spanish clay tile roof treated with Fungal Shield anti-fungal coating" },
       { src: "/images/projects/flat-cement-extra-2.png", alt: "Spanish cement tile roof restored with Fungal Shield anti-fungal system" },
+      { src: "/images/projects/spanish-tile-extra-1.png", alt: "Tile roof with biological growth before Fungal Shield anti-algae treatment" },
+      { src: "/images/projects/spanish-tile-extra-2.png", alt: "Spanish tile roof after Fungal Shield anti-fungal coating — black streaks eliminated" },
     ],
   },
   {

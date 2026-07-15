@@ -186,30 +186,6 @@ export default function Videos() {
         </div>
       </section>
 
-      {/* Don Godshall Photo Gallery */}
-      <section className="py-20 bg-muted">
-        <div className="container px-4 max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <div className="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-              Job Photos
-            </div>
-            <h2 className="text-3xl font-serif font-bold text-primary">Don Godshall's Roof — Before &amp; After</h2>
-            <p className="text-muted-foreground mt-3">Davie, FL · Cement tile roof · Roof Shield system</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {[
-              { src: "/images/godshall/rooftony-small.jpg", alt: "Don Godshall roof coating job — Davie FL" },
-              { src: "/images/godshall/godshall-cement-tile-roof-waterproofing.jpg", alt: "Cement tile roof waterproofing — Godshall project" },
-              { src: "/images/godshall/godshall-cement-tile-roofing.jpg", alt: "Cement tile roofing — Godshall project completed" },
-            ].map((photo, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
-                <img src={photo.src} alt={photo.alt} className="w-full rounded-xl shadow-md object-cover aspect-[4/3]" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4">Want to See It in Person?</h2>

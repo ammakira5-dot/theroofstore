@@ -120,8 +120,8 @@ const whenCoatingWorks = [
   },
   {
     icon: DollarSign,
-    title: "Replacement quote feels too high",
-    desc: "If you've received a replacement quote and it's straining your budget, coating delivers most of the same protection at 40–60% less cost.",
+    title: "Roof replacement quote feels too high",
+    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 40–60% less cost.",
   },
 ];
 

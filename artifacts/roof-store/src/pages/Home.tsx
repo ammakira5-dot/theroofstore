@@ -9,8 +9,8 @@ const heroSlides = [
   {
     headline: (
       <>
-        Elastomeric Roof Coating <span className="text-accent">South Florida</span><br />
-        Tile, Flat & Metal Roofs
+        Elastomeric Roof Coatings & Roof Paint<br />
+        <span className="text-accent">Product + Installation</span> — South Florida
       </>
     ),
     sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.",

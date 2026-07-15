@@ -10,7 +10,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Roof Restoration Solution Florida — Save Your Tiles, Flat Roof & More",
+    headline: "Roof Replacement Solution Florida — Save Your Tiles, Flat Roof & More",
     description:
       "Florida homeowners considering full roof replacement have a proven alternative: professional liquid rubber roof coating. Learn how coating vs. replacing stacks up on cost, lifespan, and hurricane protection.",
     datePublished: "2024-09-01",
@@ -161,7 +161,7 @@ export default function RoofReplacementAlternative() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Restoration Solution Florida | The Roof Store"
+        title="Roof Replacement Solution Florida | The Roof Store"
         description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 40–60% less cost. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
         schema={[...schema, itemListSchema]}
@@ -176,7 +176,7 @@ export default function RoofReplacementAlternative() {
               Don't Re-Roof It — Weatherproof It
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
-              Roof Restoration Solution<br />
+              Roof Replacement Solution<br />
               <span className="text-accent">Save Your Tiles, Flat Roof & More</span>
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl mb-4">
@@ -508,7 +508,7 @@ export default function RoofReplacementAlternative() {
             {/* Flat roof */}
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-background rounded-2xl p-8 border border-border">
               <div className="text-xs font-bold text-accent uppercase tracking-widest mb-3">Flat Roofs</div>
-              <h3 className="text-2xl font-serif font-bold text-primary mb-4">Flat Roof Coating as a Restoration Solution</h3>
+              <h3 className="text-2xl font-serif font-bold text-primary mb-4">Flat Roof Coating as a Replacement Solution</h3>
               <p className="text-muted-foreground leading-relaxed mb-5">
                 Flat roofs — common on commercial buildings, townhomes, and Florida additions — develop seam failures and ponding-water leaks as membranes age. Full flat roof replacement tears off and re-lays an entire membrane system. Coating avoids the tear-off entirely.
               </p>

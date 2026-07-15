@@ -335,3 +335,9 @@ id = "Uigc-7KDbnwF_bACeYaiE"
 uri = "file://artifacts/mockup-sandbox/rpm-photo-60.jpg"
 type = "image"
 title = "Option C — mid (full roofer body + roof surface)"
+
+[[outputs]]
+id = "vTnus_trvumDh-5-h8esu"
+uri = "file://artifacts/roof-store/public/images/roofprotect-presentation.jpg"
+type = "image"
+title = "RoofProtect Product Presentation — Image"

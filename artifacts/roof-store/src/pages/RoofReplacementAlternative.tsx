@@ -43,7 +43,7 @@ const schema = [
         name: "How much does roof coating cost per square foot in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Professional roof coating in Florida typically costs $3–$7 per square foot depending on roof type, condition, and coating system. Full roof replacement in Florida averages $10–$20 per square foot. Coating saves most homeowners 40–60% compared to a full tear-off and replacement.",
+          text: "Professional roof coating in Florida typically costs $3–$7 per square foot depending on roof type, condition, and coating system. Full roof replacement in Florida averages $10–$20 per square foot. Coating saves most homeowners 60 to 70% compared to a full tear-off and replacement.",
         },
       },
       {
@@ -121,7 +121,7 @@ const whenCoatingWorks = [
   {
     icon: DollarSign,
     title: "Roof replacement quote feels too high",
-    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 40–60% less cost. And depending on the system you choose, it has proven to be 5× stronger once installed on an older roof than a new roof alone.",
+    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 60 to 70% less cost than a full roof replacement. And depending on the system you choose, it has proven to be 5× stronger once installed on an older roof than a new roof alone.",
   },
 ];
 
@@ -139,7 +139,7 @@ const faqs = [
   },
   {
     q: "How much does roof coating cost per square foot in Florida?",
-    a: "Professional roof coating in Florida typically runs $3–$7 per square foot, compared to $10–$20 per square foot for full replacement. Most homeowners save 40–60% by coating instead of replacing.",
+    a: "Professional roof coating in Florida typically runs $3–$7 per square foot, compared to $10–$20 per square foot for full replacement. Most homeowners save 60 to 70% by coating instead of replacing.",
   },
   {
     q: "How long does a roof coating last in Florida?",
@@ -162,7 +162,7 @@ export default function RoofReplacementAlternative() {
     <div className="w-full">
       <SEO
         title="Roof Replacement Solution Florida | The Roof Store"
-        description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 40–60% less cost. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
+        description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 60 to 70% less cost than full replacement. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
         schema={[...schema, itemListSchema]}
       />
@@ -210,7 +210,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-3xl mx-auto">
             {[
-              { value: "40–60%", label: "Less than full replacement" },
+              { value: "60–70%", label: "Less than full replacement — on average" },
               { value: "10–15+", label: "Years of added roof life" },
               { value: "30+", label: "Years serving Florida" },
               { value: "TAS-106", label: "Dade County hurricane rated" },

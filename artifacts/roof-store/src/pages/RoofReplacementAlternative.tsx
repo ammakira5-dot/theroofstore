@@ -307,18 +307,19 @@ export default function RoofReplacementAlternative() {
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-4">
 
-            {/* Before — full width on top */}
-            <div className="rounded-2xl overflow-hidden border border-border bg-muted">
-              <div className="relative">
+            {/* Before — half-width thumbnail + description beside it */}
+            <div className="flex gap-5 items-start">
+              <div className="relative rounded-2xl overflow-hidden border border-border bg-muted w-1/2 shrink-0">
                 <img
                   src="/images/before-tile-roof-coating.jpg"
                   alt="South Florida tile roof before Roof Shield coating — original condition"
                   className="w-full object-cover"
                 />
-                <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-bold px-3 py-1 rounded-full">BEFORE</span>
+                <span className="absolute top-2 left-2 bg-black/60 text-white text-xs font-bold px-3 py-1 rounded-full">BEFORE</span>
               </div>
-              <div className="px-5 py-3 border-t border-border">
-                <p className="text-xs text-muted-foreground text-center">Original tile condition prior to restoration</p>
+              <div className="pt-1">
+                <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">Before Coating</div>
+                <p className="text-sm text-muted-foreground leading-relaxed">Original tile condition prior to Roof Shield restoration — same South Florida home.</p>
               </div>
             </div>
 

@@ -10,7 +10,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Roof Replacement Solution Florida — Save Your Tiles, Flat Roof & More",
+    headline: "The Roof Replacement Solution Florida — Save Your Tiles, Flat Roof & More",
     description:
       "Florida homeowners considering full roof replacement have a proven alternative: professional liquid rubber roof coating. Learn how coating vs. replacing stacks up on cost, lifespan, and hurricane protection.",
     datePublished: "2024-09-01",
@@ -161,7 +161,7 @@ export default function RoofReplacementAlternative() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Replacement Solution Florida | The Roof Store"
+        title="The Roof Replacement Solution Florida | The Roof Store"
         description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 40–60% less cost. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
         schema={[...schema, itemListSchema]}
@@ -176,7 +176,7 @@ export default function RoofReplacementAlternative() {
               Don't Re-Roof It — Weatherproof It
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
-              Roof Replacement Solution<br />
+              The Roof Replacement Solution<br />
               <span className="text-accent">Save Your Tiles, Flat Roof & More</span>
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl mb-4">

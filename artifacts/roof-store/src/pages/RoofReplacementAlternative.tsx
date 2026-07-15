@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
-import { CheckCircle2, XCircle, Phone, ArrowRight, DollarSign, ShieldCheck, Droplets, Sun, Clock, BookOpen } from "lucide-react";
+import { CheckCircle2, XCircle, Phone, ArrowRight, DollarSign, ShieldCheck, Droplets, Sun, Clock, BookOpen, X, ZoomIn } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { useState } from "react";
 
 const BASE = "https://www.theroofstore.net";
 
@@ -155,6 +156,8 @@ const faqs = [
 ];
 
 export default function RoofReplacementAlternative() {
+  const [lightbox, setLightbox] = useState(false);
+
   return (
     <div className="w-full">
       <SEO
@@ -303,15 +306,56 @@ export default function RoofReplacementAlternative() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="rounded-2xl overflow-hidden border border-border bg-muted">
-            <img
-              src="/images/before-after-tile-roof-coating.jpg"
-              alt="South Florida tile roof before and after Roof Shield coating restoration — no replacement needed"
-              className="w-full object-cover"
-            />
+            <button
+              onClick={() => setLightbox(true)}
+              className="relative w-full block group cursor-zoom-in"
+              aria-label="View full-size before and after photo"
+            >
+              <img
+                src="/images/before-after-tile-roof-coating.jpg"
+                alt="South Florida tile roof before and after Roof Shield coating restoration — no replacement needed"
+                className="w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
+                  <ZoomIn className="h-4 w-4" /> Click to enlarge
+                </div>
+              </div>
+            </button>
             <div className="px-6 py-4 bg-muted border-t border-border">
               <p className="text-sm text-muted-foreground text-center">South Florida tile roof — restored with Roof Shield coating. No tear-off. No replacement. Fully weatherproofed.</p>
             </div>
           </motion.div>
+
+          {/* Lightbox */}
+          <AnimatePresence>
+            {lightbox && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+                onClick={() => setLightbox(false)}
+              >
+                <button
+                  onClick={() => setLightbox(false)}
+                  className="absolute top-4 right-4 text-white/80 hover:text-white bg-black/50 rounded-full p-2 transition-colors"
+                  aria-label="Close"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+                <motion.img
+                  initial={{ scale: 0.92, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.92, opacity: 0 }}
+                  src="/images/before-after-tile-roof-coating.jpg"
+                  alt="South Florida tile roof before and after Roof Shield coating restoration"
+                  className="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain"
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </section>
 

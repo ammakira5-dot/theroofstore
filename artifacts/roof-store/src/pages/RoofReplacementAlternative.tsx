@@ -328,13 +328,11 @@ export default function RoofReplacementAlternative() {
               className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted w-full"
               aria-label="View after photo full size"
             >
-              <div className="h-56 md:h-72 overflow-hidden">
-                <img
-                  src="/images/lincoln-baker-after.png"
-                  alt="South Florida tile roof after Roof Shield coating — restored and weatherproofed"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
+              <img
+                src="/images/lincoln-baker-after.png"
+                alt="South Florida tile roof after Roof Shield coating — restored and weatherproofed"
+                className="w-full object-cover"
+              />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
                   <ZoomIn className="h-4 w-4" /> Click to enlarge

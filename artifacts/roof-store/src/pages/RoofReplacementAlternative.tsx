@@ -180,7 +180,7 @@ export default function RoofReplacementAlternative() {
               <span className="text-accent">for Florida Homeowners</span>
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl mb-4">
-              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you coat it instead?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at roughly half the cost.
+              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you restore it instead with a roof coating system that restores, protects and preserves it?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at roughly half the cost.
             </p>
             <p className="text-white/70 text-lg mb-10 max-w-2xl">
               The Roof Store has been Florida's roof coating alternative specialist since 1994. A+ BBB rated. TAS-106 Dade County hurricane rated. Serving Broward, Miami-Dade, and Palm Beach.

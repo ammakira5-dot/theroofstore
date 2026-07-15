@@ -305,7 +305,7 @@ export default function RoofReplacementAlternative() {
             </p>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-4 flex flex-col items-center">
 
             {/* Before */}
             <div className="relative rounded-2xl overflow-hidden border border-border bg-muted w-1/2">

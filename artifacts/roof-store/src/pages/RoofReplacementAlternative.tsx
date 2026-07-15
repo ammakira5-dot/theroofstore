@@ -322,30 +322,29 @@ export default function RoofReplacementAlternative() {
               </div>
             </div>
 
-            {/* After — thumbnail, click to enlarge */}
-            <div className="flex items-start gap-4">
-              <button
-                onClick={() => setLightbox(true)}
-                className="relative group cursor-zoom-in rounded-xl overflow-hidden border border-border bg-muted shrink-0 w-48 md:w-64"
-                aria-label="View after photo full size"
-              >
+            {/* After — larger thumbnail, click to enlarge */}
+            <button
+              onClick={() => setLightbox(true)}
+              className="relative group cursor-zoom-in rounded-2xl overflow-hidden border border-border bg-muted w-full"
+              aria-label="View after photo full size"
+            >
+              <div className="h-56 md:h-72 overflow-hidden">
                 <img
                   src="/images/lincoln-baker-after.png"
                   alt="South Florida tile roof after Roof Shield coating — restored and weatherproofed"
-                  className="w-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1.5">
-                    <ZoomIn className="h-3 w-3" /> Enlarge
-                  </div>
-                </div>
-                <span className="absolute top-2 left-2 bg-accent text-white text-xs font-bold px-2 py-0.5 rounded-full">AFTER</span>
-              </button>
-              <div className="pt-2">
-                <div className="text-xs font-bold text-accent uppercase tracking-widest mb-1">After Roof Shield Coating</div>
-                <p className="text-sm text-muted-foreground leading-relaxed">Lincoln Baker — South Florida. Dark tile restored and weatherproofed. No replacement needed.</p>
               </div>
-            </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-black/70 text-white text-xs font-bold px-4 py-2 rounded-full flex items-center gap-2">
+                  <ZoomIn className="h-4 w-4" /> Click to enlarge
+                </div>
+              </div>
+              <span className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">AFTER</span>
+              <div className="px-5 py-3 border-t border-border bg-muted">
+                <p className="text-xs text-muted-foreground text-center">After Roof Shield coating — Lincoln Baker, South Florida. No replacement needed.</p>
+              </div>
+            </button>
           </motion.div>
 
           {/* Lightbox — after photo */}

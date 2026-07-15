@@ -467,8 +467,9 @@ export default function RoofReplacementAlternative() {
                 </li>
               ))}
             </ul>
-            <p className="text-muted-foreground text-sm mt-5 italic">
-              Not sure which category your roof falls into? An on-site manufacturer's inspection tells you definitively — no obligation.
+            <p className="text-muted-foreground text-sm mt-5">
+              Not sure which category your roof falls into? An on-site manufacturer's inspection will help determine your roof suitability for our products.{" "}
+              <em className="text-xs">Manufacturer product warranty requires clean, dry and stable surfaces.</em>
             </p>
           </motion.div>
         </div>

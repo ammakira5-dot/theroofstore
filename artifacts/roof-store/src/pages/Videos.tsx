@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { Play, FileCheck } from "lucide-react";
+import { Play, ShieldCheck, FileCheck } from "lucide-react";
 
 interface VideoEntry {
   id: string;

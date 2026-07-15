@@ -40,17 +40,6 @@ const videos: VideoEntry[] = [
     quote: null,
     desc: "Watch the independent Dade County TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Certified, documented, and still standing 16 years later.",
   },
-  {
-    id: "DG7M1ckiMPM",
-    title: "Roof Shield Installation — How It's Applied",
-    tag: "Installation",
-    icon: Play,
-    testimonialImage: null,
-    customer: null,
-    location: null,
-    quote: null,
-    desc: "See the full Roof Shield liquid rubber membrane application from start to finish — surface prep, primer coat, rubber membrane, and top coat. Applied by our certified crews to a real South Florida tile roof.",
-  },
 ];
 
 const highlights = [

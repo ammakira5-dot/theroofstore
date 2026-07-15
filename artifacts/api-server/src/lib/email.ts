@@ -1,5 +1,7 @@
 import { Resend } from "resend";
 import nodemailer from "nodemailer";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
 function getResend(): Resend {
   const key = process.env.RESEND_API_KEY;
@@ -408,11 +410,23 @@ export async function sendAutoResponse(data: ContactSubmission): Promise<void> {
   const html = buildAutoResponseHtml(data.name);
 
   const from = process.env.RESEND_FROM ?? "The Roof Store <onboarding@resend.dev>";
+
+  // Attach the RoofProtect product presentation PDF
+  let attachments: { filename: string; content: Buffer }[] = [];
+  try {
+    const pdfPath = join(process.cwd(), "assets", "roofprotect-product-presentation.pdf");
+    const content = readFileSync(pdfPath);
+    attachments = [{ filename: "RoofProtect-Product-Presentation.pdf", content }];
+  } catch {
+    // Non-blocking — if PDF is missing, send email without attachment
+  }
+
   await resend.emails.send({
     from,
     to: [data.email],
     replyTo: "info@theroofstore.net",
     subject: `We received your request, ${firstName} — The Roof Store`,
     html,
+    attachments,
   });
 }

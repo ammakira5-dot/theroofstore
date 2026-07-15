@@ -353,9 +353,9 @@ export default function RoofSystems() {
 
                   <div className={i % 2 === 1 ? "order-1 lg:order-1" : "order-1 lg:order-2"}>
                     {system.worldsOnly && (
-                      <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+                      <Link href="/videos" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/85 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 transition-colors">
                         ★ World's Only TAS-106 Dade County Rated Coating
-                      </div>
+                      </Link>
                     )}
                     <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
                       <MapPin className="h-3.5 w-3.5" />

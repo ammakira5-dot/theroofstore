@@ -179,7 +179,7 @@ export default function RoofSystems() {
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
               The Original Since 1994
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Systems in South Florida — Tile, Flat &amp; Metal Roofs</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Systems in South Florida — Spanish Tile, Flat Tile, Shingle, Metal and Flat Roofs</h1>
             <p className="text-xl text-white/80">
               Three proprietary systems. Engineered in South Florida. Built to outperform and outlast.
             </p>

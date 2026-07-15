@@ -281,7 +281,7 @@ export default function RoofSystems() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start"
                 >
                   <div className={i % 2 === 1 ? "order-2 lg:order-2" : "order-2 lg:order-1"}>
                     {system.beforeSrc ? (
@@ -322,7 +322,7 @@ export default function RoofSystems() {
                     ) : system.gallery && system.gallery.length > 0 ? (
                       <div className="rounded-2xl border border-border bg-card shadow-sm p-3">
                         <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3 px-1">{system.name} — Photos</div>
-                        <div className="grid grid-cols-2 gap-3">
+                        <div className={`grid gap-3 ${system.gallery.slice(0, 4).length <= 2 ? "grid-cols-1" : "grid-cols-2"}`}>
                           {system.gallery.slice(0, 4).map((img, idx) => (
                             <div
                               key={idx}

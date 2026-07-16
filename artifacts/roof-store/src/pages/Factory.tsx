@@ -8,7 +8,7 @@ import { Lightbox, useLightbox } from "@/components/Lightbox";
 const BASE = "https://www.theroofstore.net";
 
 const factoryPhotos = [
-  { src: "/images/factory/exterior.png", alt: "The Roof Store manufacturing facility exterior — Davie Florida roof coating manufacturer since 1994", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
+  { src: "/images/factory/exterior.png", alt: "The Roof Store manufacturing facility exterior — Davie Florida roof coating manufacturer", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
   { src: "/images/factory/exterior2.png", alt: "The Roof Store MFG building exterior with team — roof coating manufacturer Davie Florida", title: "The Roof Store MFG — Davie Florida Manufacturing Facility" },
   { src: "/images/factory/exterior3.png", alt: "The Roof Store MFG sign — The Original Liquid Applied Rubber Roof Shield System, Davie Florida", title: "The Roof Store MFG Sign — Original Liquid Applied Rubber Roof Shield System" },
   { src: "/images/factory/4.jpg", alt: "Roof coating factory production floor — The Roof Store Davie Florida manufacturer", title: "Factory Production Floor — The Roof Store" },
@@ -54,7 +54,7 @@ export default function Factory() {
         postalCode: "33328",
         addressCountry: "US",
       },
-      description: "RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility since 1994. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      description: "RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
       makesOffer: [
         { "@type": "Offer", itemOffered: { "@type": "Product", name: "Fungal Shield (RP1)", description: "Anti-fungal roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
         { "@type": "Offer", itemOffered: { "@type": "Product", name: "Smart Shield (RP2)", description: "Tintable waterproof tile roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
@@ -75,8 +75,8 @@ export default function Factory() {
     <>
     <div className="w-full">
       <SEO
-        title="Our In-House Licensed Manufacturing Division — RoofProtect Products, Davie, Florida"
-        description="RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide. 135+ MPH wind resistance documented."
+        title="World's Only TAS-106 Dade County Uplift Tested Roof Coating | Florida"
+        description="The only TAS-106 Uplift-tested roof coating in the world — South Florida roofing specialists since 1994. Stops leaks, seals every tile gap, resists 135+ MPH winds. Free estimate: 954-210-9614."
         canonical="/factory"
         ogImage={`${BASE}/images/factory/1.jpg`}
         schema={schema}

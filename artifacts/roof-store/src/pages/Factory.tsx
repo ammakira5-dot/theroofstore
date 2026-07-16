@@ -170,15 +170,21 @@ export default function Factory() {
               </div>
               <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
                 <div className="text-primary font-bold text-sm uppercase tracking-wide">Already have a contractor?</div>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  We supply Fungal Shield, Smart Shield, and Roof Shield to licensed contractors throughout Florida. Product specs, volume pricing, and technical support available.
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                  Our authorized factory-trained installer network covers South Florida and the Treasure Coast. Find the right fit for your location:
                 </p>
+                <ul className="text-sm text-muted-foreground space-y-1.5">
+                  <li><span className="font-semibold text-foreground">Storm Shield Paint Systems Inc.</span> — South Florida (our in-house licensed installer)</li>
+                  <li><span className="font-semibold text-foreground">Windproof Roof Systems</span> — South Florida tile restoration specialist</li>
+                  <li><span className="font-semibold text-foreground">Storm Shield Roof Coating Systems</span> — Treasure Coast / Port St. Lucie</li>
+                  <li><span className="font-semibold text-foreground">Roof Protect Products</span> — factory-direct product supply, Broward County</li>
+                </ul>
                 <div className="flex flex-wrap gap-3 pt-1">
                   <Button asChild size="sm" variant="outline">
-                    <Link href="/products">View Products</Link>
+                    <Link href="/partner-network">View Authorized Partners</Link>
                   </Button>
                   <Button asChild size="sm" variant="outline">
-                    <Link href="/distributorships">Contractor Supply</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </Button>
                 </div>
               </div>

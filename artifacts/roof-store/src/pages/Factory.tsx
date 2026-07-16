@@ -87,9 +87,10 @@ export default function Factory() {
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
-              Manufactured by RoofProtect Products — Davie, Florida
+              South Florida · A+ BBB Since 1994
             </div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Our In-House Licensed Manufacturing Division</h1>
+            <h1 className="text-5xl font-serif font-bold mb-4">We Make It. We Install It.</h1>
+            <p className="text-xl text-white/70 mb-6">South Florida's only manufacturer-installer of TAS-106 hurricane-tested roof coating systems.</p>
             <div className="inline-flex items-center gap-3 bg-accent/20 border border-accent/40 rounded-lg px-6 py-3 mb-6 text-sm font-semibold text-accent">
               🛠️ We install the products we manufacture.&nbsp;
               <span className="font-normal text-white/70">Licensed crew, same company.</span>

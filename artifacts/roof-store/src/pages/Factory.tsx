@@ -91,7 +91,7 @@ export default function Factory() {
             </div>
             <h1 className="text-5xl font-serif font-bold mb-6">Our In-House Licensed Manufacturing Division</h1>
             <div className="inline-flex items-center gap-3 bg-accent/20 border border-accent/40 rounded-lg px-6 py-3 mb-6 text-sm font-semibold text-accent">
-              🛠️ Don't worry — we also install the products we sell.&nbsp;
+              🛠️ We install the products we manufacture.&nbsp;
               <span className="font-normal text-white/70">Licensed crew, same company.</span>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-6 max-w-2xl mx-auto mb-2">
@@ -124,6 +124,65 @@ export default function Factory() {
                 <div className="text-muted-foreground text-sm font-medium">{s.label}</div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background border-b">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <img
+                src="/images/roof-replacement-alternative-truck.png"
+                alt="The Roof Store licensed installation crew — truck and trailer, South Florida"
+                className="rounded-2xl shadow-xl w-full object-cover"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
+            >
+              <h2 className="text-3xl font-serif font-bold text-primary">What brings you here?</h2>
+              <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
+                <div className="text-accent font-bold text-sm uppercase tracking-wide">Need it installed?</div>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Spanish tile, flat roof, metal, shingle — our licensed crew installs every system we manufacture. South Florida's only TAS-106 hurricane-tested coating. See finished jobs, pick your system, get a free estimate.
+                </p>
+                <div className="flex flex-wrap gap-3 pt-1">
+                  <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white">
+                    <Link href="/projects">See Our Work</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/roof-systems">Choose a System</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/contact">Free Estimate</Link>
+                  </Button>
+                </div>
+              </div>
+              <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
+                <div className="text-primary font-bold text-sm uppercase tracking-wide">Already have a contractor?</div>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We supply Fungal Shield, Smart Shield, and Roof Shield to licensed contractors throughout Florida. Product specs, volume pricing, and technical support available.
+                </p>
+                <div className="flex flex-wrap gap-3 pt-1">
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/products">View Products</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/distributorships">Contractor Supply</Link>
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -181,6 +181,9 @@ export default function Factory() {
                   <li><a href="https://www.roofpaintmiami.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Roof Paint Miami</a> — Miami-Dade County coverage</li>
                 </ul>
                 <div className="flex flex-wrap gap-3 pt-1">
+                  <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white">
+                    <a href="https://www.roofprotectproducts.com" target="_blank" rel="noopener noreferrer">View Product Specs &amp; Buckets</a>
+                  </Button>
                   <Button asChild size="sm" variant="outline">
                     <Link href="/partner-network">View Authorized Partners</Link>
                   </Button>

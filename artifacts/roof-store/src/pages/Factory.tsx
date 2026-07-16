@@ -182,7 +182,7 @@ export default function Factory() {
                 </ul>
                 <div className="flex flex-wrap gap-3 pt-1">
                   <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white">
-                    <a href="https://www.roofprotectproducts.com" target="_blank" rel="noopener noreferrer">View Product Specs &amp; Buckets</a>
+                    <Link href="/roof-systems">View Product Specs &amp; Compare Systems</Link>
                   </Button>
                   <Button asChild size="sm" variant="outline">
                     <Link href="/partner-network">View Authorized Partners</Link>
@@ -191,6 +191,9 @@ export default function Factory() {
                     <Link href="/contact">Contact Us</Link>
                   </Button>
                 </div>
+                <a href="https://www.roofprotectproducts.com" target="_blank" rel="noopener noreferrer" className="inline-block text-xs text-muted-foreground hover:text-accent mt-2 transition-colors">
+                  Visit manufacturer site: roofprotectproducts.com →
+                </a>
               </div>
             </motion.div>
           </div>

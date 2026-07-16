@@ -1,19 +1,24 @@
 ---
 name: Sister-site FTP credentials
-description: FTP access status for roofprotectproducts.com, windproofroofsystems.com, and roofrestorationsandwaterproofinginc.com — what's known vs blocked.
+description: Confirmed FTP access for all 8 sites in the network — host, username, and secret name for each.
 ---
 
-## roofprotectproducts.com
-- FTP connection details are in `replit.md` (host, user). Password secret: `ROOFPROTECT_FTP_PASSWORD`.
-- **Status:** Secret value doesn't match actual password — use the same credentials that worked in previous sessions. Update the secret to match when convenient.
-- **Pending work:** None — roller icon fixes done July 14 2026.
+# FTP Master List — All Sites Confirmed
 
-## windproofroofsystems.com
-- Password secret: `WINDPROOF_FTP_PASSWORD` (set).
-- **Status (July 14 2026):** Blocked — FTP host and username unknown. Tried domain as host, both failed 530. Need user to provide FTP host + username from their cPanel.
-- **Pending work:** 4 content fixes (BBB claim, tel href, duplicate product copy, shared testimonials). Once done: re-enable partner link in `PartnerNetwork.tsx` + restore `"owns"` WebSite schema in `Home.tsx` + `index.html`.
+All passwords stored as Replit secrets — never stored here. Get values from the dashboard Secrets tab.
 
-## roofrestorationsandwaterproofinginc.com
-- Password secret: `RRSW_FTP_PASSWORD` (set).
-- **Status (July 14 2026):** Blocked — FTP host and username unknown. Same issue as above.
-- **Pending work:** 3 fixes (tel link correction, BBB claim removal, duplicate product copy rewrite).
+| Site | FTP Host | Port | Username | Secret Name | Status |
+|------|----------|------|----------|-------------|--------|
+| roofprotectproducts.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 16 2026 |
+| roofpaintmiami.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
+| ftlauderdaleroofcoating.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
+| bestroofpaint.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
+| theroofstore.net (old PHP) | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Folder visible in FTP root |
+| flatroofsealants.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Via julius@ |
+| windproofroofsystems.com | ftp.windproofroofsystems.com | 21 | Fullstack2@windproofroofsystems.com | WINDPROOF_FTP_PASSWORD | ✅ Confirmed July 14 2026 — password reset in cPanel |
+| roofrestorationsandwaterproofinginc.com | ftp.roofrestorationsandwaterproofinginc.com | 21 | roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com | RRSW_FTP_PASSWORD | ✅ Confirmed July 16 2026 |
+
+## Notes
+- ROOFPROTECT_FTP_PASSWORD secret has wrong/stale value — roofprotectproducts.com is accessible via julius@ instead, so this secret is not needed for day-to-day work.
+- All julius@ sites share one hosting account on absolutecharters.com — one login, many site folders in the root.
+- flatroofsealants.com confirmed via julius@ root listing (not yet audited).

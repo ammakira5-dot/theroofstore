@@ -171,7 +171,7 @@ export default function Factory() {
               <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
                 <div className="text-primary font-bold text-sm uppercase tracking-wide">Already have a contractor?</div>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-                  Our authorized factory-trained installer network covers South Florida and the Treasure Coast. Find the right fit for your location:
+                  Our authorized factory-trained installer network covers all of Florida — from South Florida and the Treasure Coast to Central and North Florida. Find the right fit for your location:
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1.5">
                   <li><span className="font-semibold text-foreground">Storm Shield Paint Systems Inc.</span> — South Florida (our in-house licensed installer)</li>

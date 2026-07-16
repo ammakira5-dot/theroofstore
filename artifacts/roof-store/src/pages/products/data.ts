@@ -272,7 +272,7 @@ export const roofShield: ProductData = {
     { title: "World's Only TAS-106 Rated Coating", desc: "The only Dade County TAS-106 Uplift Pull Test Resistance Rated roof coating system worldwide — the same standard required for new tile installations. Certified and updated 2023." },
     { title: "135+ MPH Documented Wind Resistance — 5× Stronger", desc: "Not simulated — real documented hurricane projects where treated roofs did not lose a single tile. 5× the wind uplift resistance of a new tile roof at half the cost." },
     { title: "Lifetime Product Warranty", desc: "Maintenance-free. Transferable to a new buyer when the property sells. Renewable. No standard new roof warranty offers all three." },
-    { title: "Additional Roof Life Certification", desc: "We can certify an additional 5–10 years of useful roof life post-installation — even on 50+ year old roofs. Recognized by the State of Florida and Citizens Insurance." },
+    { title: "Insurance Inspection Readiness", desc: "Florida homeowners have the legal right, per state statute, to request an independent Useful Life Exam. We help get your roof into its best possible condition before the inspector arrives — cleaned, repaired, and professionally coated. A well-maintained roof gives the insurance company very little to work with beyond age alone." },
     { title: "Rated for Ponding Water — Flat Roof Coating", desc: "Many generic roof paints and elastomeric coatings carry a 'not for use in ponding water' warranty exclusion, disqualifying them from flat roofs. Roof Shield's silicone-based formulation is built specifically to perform on flat decks where water sits after rain." },
     { title: "Full Metal Roof Coverage", desc: "Beyond tile, Roof Shield's multi-layer system applies to metal roofing as well — sealing seams and fasteners on metal panels the same way it seals tile gaps." },
   ],
@@ -330,7 +330,7 @@ export const roofShield: ProductData = {
     },
     {
       q: "Will this qualify my old roof for insurance continuation?",
-      a: "Yes — after a successful Roof Shield installation, we can certify an additional 5–10 years of useful roof life. The State of Florida recognizes this, and Citizens Property Insurance Corporation has accepted this certification for coverage continuation on roofs past normal eligibility age.",
+      a: "Yes — by being proactive. Under Florida law, homeowners have the legal right to request an independent Useful Life Exam on their roof. It is the report from that licensed inspector — not any product or contractor — that the insurance company recognizes for coverage continuation. What Roof Shield does is put your roof in its best possible condition before that exam: sealed, waterproofed, and demonstrably well-maintained. When the inspector arrives, a roof in good condition gives the insurer very little to work with beyond the age of the roof alone.",
     },
     {
       q: "How much cheaper is this than replacing my roof?",

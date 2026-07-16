@@ -108,7 +108,7 @@ const products = [
       "World's ONLY TAS-106 Dade County Uplift Pull Test Rated liquid coating",
       "135+ MPH documented real hurricane wind resistance — 5× stronger than a new roof",
       "½ the cost of full roof replacement — Lifetime Warranty, transferable & renewable",
-      "Additional Roof Life Certification up to 10 years (Citizens Insurance accepted)",
+      "Proactive maintenance puts homeowner in strongest position for an independent Useful Life Exam",
       "Rated for ponding water on flat roofs — no \"not for use in ponding water\" exclusion",
       "Also applies to metal roofing — seals seams and fasteners the same way it seals tile gaps",
     ],

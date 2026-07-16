@@ -36,12 +36,12 @@ const steps = [
   {
     number: "03",
     title: "Extended Roof Life",
-    description: "Our treatment demonstrably extends the functional and protective life of your roof, providing the evidence needed to support an extended life certification.",
+    description: "Our treatment restores your roof's protective performance — giving you the best possible foundation when you exercise your legal right to request an independent Useful Life Exam.",
   },
   {
     number: "04",
     title: "Keep Your Insurance",
-    description: "With a restored, professionally treated roof, you have the documentation to challenge cancellation and keep your homeowner's insurance policy in place.",
+    description: "With a professionally restored roof, you are in the strongest possible position when a licensed inspector assesses its condition. It is the inspector's report — not the contractor — that the insurance company recognizes.",
   },
 ];
 
@@ -49,7 +49,7 @@ const benefits = [
   "Avoid a $15,000–$40,000 full roof replacement",
   "Keep your existing homeowner's insurance policy",
   "100% acrylic elastomeric rubber coating — not just paint",
-  "Extends roof life by 10–25 years",
+  "Helps put your roof in its strongest condition before an independent Useful Life Exam",
   "Works on cement tile, barrel tile, shingle, flat, and metal roofs",
   "A+ BBB Rated — serving South Florida since 1994",
   "Licensed Florida roofing contractor",
@@ -64,7 +64,7 @@ export default function RoofLifeCertification() {
     "@type": "Service",
     name: "Additional Roof Life Certification & Roof Life Extension — The Roof Store",
     url: `${BASE}/roof-life-certification`,
-    description: "Professional roof coating treatment that provides a certified roof life extension for aging roofs in Florida, helping homeowners avoid forced re-roofing by insurance companies.",
+    description: "Professional roof restoration and coating for aging Florida roofs — helping homeowners take a proactive position before an independent Useful Life Exam and putting their roof in the strongest possible condition for insurance review.",
     provider: {
       "@type": "LocalBusiness",
       name: "The Roof Store Waterproofing Products",
@@ -83,7 +83,7 @@ export default function RoofLifeCertification() {
     <>
       <SEO
         title="Roof Life Extension & Certification Florida | The Roof Store"
-        description="Florida insurance company threatening to cancel because of your roof's age? Our professional rubber coating system provides a certified roof life extension — saving you $15,000–$40,000 vs. full replacement. Serving Broward, Miami-Dade & Palm Beach since 1994."
+        description="Florida insurance threatening to cancel your policy over your roof's age? Florida law gives homeowners the right to request an independent Useful Life Exam. We help get your roof in the strongest possible condition before the inspector arrives. Serving Broward, Miami-Dade & Palm Beach since 1994."
         canonical={`${BASE}/roof-life-certification`}
         schema={schema}
       />
@@ -105,7 +105,7 @@ export default function RoofLifeCertification() {
               <span className="text-accent">Force a Roof Replacement</span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mb-8">
-              If your Florida insurer is threatening to cancel your policy because of your roof's age, our professional rubber coating system provides a certified roof life extension — saving you tens of thousands of dollars.
+              If your Florida insurer is threatening to cancel your policy because of your roof's age, your best move is a proactive one. Florida law gives homeowners the right to request an independent Useful Life Exam — and a professionally restored, well-maintained roof puts you in the strongest possible position when the inspector arrives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -168,7 +168,7 @@ export default function RoofLifeCertification() {
               How Our Roof Life Extension Treatment Works
             </h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Our high-strength liquid rubber coating system restores your roof to like-new protective performance — providing the professional treatment documentation needed to support a certified roof life extension.
+              Our high-strength liquid rubber coating system restores your roof to peak protective performance — so when you exercise your legal right to request an independent Useful Life Exam, your roof speaks for itself.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -274,7 +274,7 @@ export default function RoofLifeCertification() {
             >
               Roof Condition Certification Form (CIT RCF-1)
             </a>
-            , the affidavit a licensed contractor completes to document a roof's condition and remaining serviceable life. That's the exact document our assessment and coating treatment are designed to support.
+            , the affidavit a licensed contractor completes to document a roof's condition and remaining serviceable life. It is that licensed contractor's report that the insurance company recognizes — and a proactively maintained, professionally coated roof is in the strongest position to support a favorable outcome.
           </p>
         </div>
       </section>

@@ -230,8 +230,8 @@ export default function Factory() {
                 <div className="text-white font-bold text-lg">135+ MPH — Documented Real Hurricane Performance</div>
               </div>
               <div className="bg-white/10 rounded-xl p-5">
-                <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Certification</div>
-                <div className="text-white font-bold text-lg">Additional Roof Life — up to 10 Years on 50+ Y/O Roofs</div>
+                <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Insurance Readiness</div>
+                <div className="text-white font-bold text-lg">Proactive Maintenance — Strongest Position for Useful Life Exam</div>
               </div>
               <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-white h-12">
                 <a href="https://www.theroofstore.net/uplift-test.php" target="_blank" rel="noopener noreferrer">

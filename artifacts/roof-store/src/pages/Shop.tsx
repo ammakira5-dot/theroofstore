@@ -74,7 +74,7 @@ const products = [
       "5× stronger than a new tile roof at ½ the cost",
       "100% seamless waterproof rubber membrane",
       "Lifetime Warranty — transferable & renewable",
-      "Additional Roof Life Certification up to 10 years",
+      "Supports proactive roof maintenance for insurance inspection readiness",
     ],
     featured: true,
   },

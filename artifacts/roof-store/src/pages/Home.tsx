@@ -47,7 +47,7 @@ const homeFaqs = [
   },
   {
     q: "Can roof coating help me keep my homeowners insurance?",
-    a: "Yes. After a successful Roof Shield installation, The Roof Store can certify an additional 5–10 years of useful roof life — a document recognized by the State of Florida and accepted by Citizens Property Insurance Corporation for coverage continuation on roofs that would otherwise be flagged for replacement. This certification is one of the most practical insurance tools available to South Florida homeowners with aging roofs.",
+    a: "Yes — by being proactive. Under Florida law, homeowners have the legal right to request an independent Useful Life Exam on their roof. It is that licensed inspector's report — not any product or contractor — that can support a determination of additional useful roof life for insurance purposes. What we do is help get your roof into its best possible condition before that exam: professionally cleaned, tiles repaired, and protected with a quality coating. When an insurance inspector comes out, a well-maintained roof in demonstrably good condition gives the insurer very little to work with beyond the age of the roof alone.",
   },
   {
     q: "How much does roof coating cost in Florida?",
@@ -369,10 +369,10 @@ export default function Home() {
             <div className="flex-1">
               <div className="inline-block bg-accent px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Florida Insurance Benefit</div>
               <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-4 leading-tight">
-                Additional Roof Life Certification
+                Protect Your Roof — And Your Insurance Policy
               </h2>
               <p className="text-primary-foreground/85 text-lg mb-4 leading-relaxed">
-                Florida homeowners with roofs 15–25 years old may qualify for an <strong className="text-white">Additional Roof Life Certification</strong> — a licensed inspection that can extend your roof's insurability by 5 years and help prevent policy cancellation. The Roof Store's weatherproof coating systems are specifically engineered to meet the structural standards required for this certification.
+                Florida homeowners have the legal right, per state statute, to request an independent Useful Life Exam on their roof. It is that licensed inspection report — not any contractor or product — that can support a determination of additional useful life and help prevent unnecessary policy cancellation. The most effective thing a homeowner can do is take a proactive position: get the roof professionally cleaned, tiles repaired, and a quality protective coating applied before the inspection.
               </p>
               <p className="text-primary-foreground/70 mb-8">
                 Serving Miami-Dade, Broward, and Palm Beach counties. Cement tile, flat, and shingle roofs eligible.

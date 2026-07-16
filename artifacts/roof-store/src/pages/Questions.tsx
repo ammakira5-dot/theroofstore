@@ -54,7 +54,7 @@ const sections = [
       },
       {
         type: "p",
-        text: "Citizens Insurance now requires that homes with a shingle roof of 25 years or cement tile roofs of 50 years must have the roof replaced to be eligible for coverage — UNLESS you can provide a Satisfactory Roof Condition Certification. This is exactly what we provide. With our Roof Shield (RP3) installation, we can certify an additional 5–10 years of useful roof life, legally recognized by the State of Florida and accepted by Citizens Insurance for coverage continuation.",
+        text: "Citizens Insurance now requires that homes with a shingle roof of 25 years or cement tile roofs of 50 years must have the roof replaced to be eligible for coverage — UNLESS a licensed inspection report confirms the roof has sufficient remaining useful life. Under Florida law, homeowners have the legal right to request that independent Useful Life Exam. It is the report from that licensed inspector — not any contractor or product — that the insurance company recognizes. The most effective thing a homeowner can do is be proactive: get the roof professionally cleaned, have damaged tiles repaired, and apply a quality protective coating before the exam. When the inspector arrives, a roof in demonstrably good condition puts the homeowner in the strongest possible position.",
       },
       {
         type: "highlight",

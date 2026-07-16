@@ -84,7 +84,7 @@ const comparisonRows = [
   { label: "Lifespan added", replace: "New roof: 20–30 years", coat: "10–15+ years extension" },
   { label: "Energy savings", replace: "Depends on color/material", coat: "Yes — FPL-documented up to 23%" },
   { label: "Fungal / algae protection", replace: "Not included", coat: "Yes — Fungal Shield antimicrobial" },
-  { label: "Citizens Insurance certification", replace: "New roof qualifies", coat: "Coated roof can also qualify" },
+  { label: "Insurance inspection readiness", replace: "New roof — meets age standard", coat: "Proactive coating puts homeowner in strongest position for Useful Life Exam" },
   { label: "Warranty", replace: "Manufacturer warranty varies", coat: "5 to 50 years — depending on product selection, system & condition report of the roof" },
 ];
 

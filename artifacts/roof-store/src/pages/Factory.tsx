@@ -92,7 +92,7 @@ export default function Factory() {
             <h1 className="text-5xl font-serif font-bold mb-4">We Make It. We Install It.</h1>
             <p className="text-xl text-white/70 mb-6">South Florida's only manufacturer-installer of TAS-106 hurricane-tested roof coating systems.</p>
             <div className="flex items-center justify-center gap-3 bg-accent/20 border border-accent/40 rounded-lg px-8 py-3 mb-6 text-lg font-semibold text-accent w-full max-w-2xl mx-auto">
-              <img src="/images/logo-badge.png" alt="Storm Shield" className="h-12 w-12 object-contain drop-shadow" />
+              <img src="/images/sss-logo.png" alt="Storm Shield Systems" className="h-10 w-10 object-contain" />
               We install the products we manufacture.
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-6 max-w-2xl mx-auto mb-2">

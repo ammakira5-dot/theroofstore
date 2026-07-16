@@ -241,6 +241,32 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <div className="bg-muted/50 border rounded-xl p-6">
+                  <h3 className="text-xl font-serif font-bold text-primary mb-4">Our Roof Coating Systems</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <Link href="/products/fungalshield" className="block bg-background border rounded-lg p-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                      <div className="text-xs font-bold text-green-700 uppercase tracking-wide mb-1">RP1</div>
+                      <div className="font-bold text-foreground group-hover:text-accent transition-colors">Fungal Shield</div>
+                      <div className="text-xs text-muted-foreground mt-1">Anti-fungal &amp; anti-algae coating</div>
+                    </Link>
+                    <Link href="/products/smartshield" className="block bg-background border rounded-lg p-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                      <div className="text-xs font-bold text-accent uppercase tracking-wide mb-1">RP2</div>
+                      <div className="font-bold text-foreground group-hover:text-accent transition-colors">Smart Shield</div>
+                      <div className="text-xs text-muted-foreground mt-1">Energy-reflective · most popular</div>
+                    </Link>
+                    <Link href="/products/roofshield" className="block bg-background border rounded-lg p-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                      <div className="text-xs font-bold text-primary uppercase tracking-wide mb-1">RP3</div>
+                      <div className="font-bold text-foreground group-hover:text-accent transition-colors">Roof Shield</div>
+                      <div className="text-xs text-muted-foreground mt-1">Hurricane-rated · TAS-106 certified</div>
+                    </Link>
+                  </div>
+                  <Link href="/roof-systems" className="inline-flex items-center gap-1 text-accent text-sm font-semibold mt-4 hover:underline">
+                    Compare all systems →
+                  </Link>
+                </div>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <div className="bg-primary/5 border border-primary/15 rounded-xl p-6 space-y-4">
                   <h3 className="text-2xl font-serif font-bold text-primary">
                     {paintVsCoating.heading}
@@ -301,6 +327,22 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                 <div className="text-3xl font-serif font-bold text-accent mb-1">A+</div>
                 <div className="text-sm font-bold text-foreground">BBB Accredited Business</div>
                 <div className="text-xs text-muted-foreground">Serving {city} since 1994</div>
+              </div>
+
+              <div className="bg-muted rounded-xl p-5 space-y-2">
+                <div className="text-sm font-bold text-foreground mb-3">Explore Our Systems</div>
+                <Link href="/products/smartshield" className="flex items-center justify-between bg-background border rounded-lg px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent transition-colors">
+                  Smart Shield <span className="text-xs text-muted-foreground">RP2 — Most Popular</span>
+                </Link>
+                <Link href="/products/roofshield" className="flex items-center justify-between bg-background border rounded-lg px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent transition-colors">
+                  Roof Shield <span className="text-xs text-muted-foreground">RP3 — Hurricane Rated</span>
+                </Link>
+                <Link href="/products/fungalshield" className="flex items-center justify-between bg-background border rounded-lg px-4 py-2.5 text-sm font-medium hover:border-accent hover:text-accent transition-colors">
+                  Fungal Shield <span className="text-xs text-muted-foreground">RP1 — Anti-Algae</span>
+                </Link>
+                <Link href="/roof-systems" className="block text-center text-xs text-accent font-semibold mt-1 hover:underline">
+                  Compare all systems →
+                </Link>
               </div>
 
               {/* Google Maps embed */}

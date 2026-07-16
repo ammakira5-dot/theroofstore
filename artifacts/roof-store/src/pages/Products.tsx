@@ -285,8 +285,8 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Coating Products — Metal, Flat & Tile | The Roof Store"
-        description="FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) — roof coating systems for tile, flat, shingle, and metal roofs. Clear roof tile sealer, direct-to-metal roof coating, and flat roof coating rated for ponding water — all manufactured by RoofProtect in Davie, FL. The only TAS-106 rated coating system in the world. FP&L confirmed energy savings. Free consultation 954-210-9614."
+        title="Florida Roof Coating Products — Tile, Flat & Metal | TAS-106 Rated"
+        description="The only TAS-106 (Dade County) Uplift Tested roof coating system in the world. Florida-made for tile, flat & metal roofs. Stops leaks, saves energy, hurricane-tested. Free estimate: 954-210-9614."
         canonical="/products"
         schema={schema}
       />

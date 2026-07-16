@@ -42,6 +42,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **Factory page — full distributor/partner network review** — roofpaintmiami.com added as Miami-Dade regional partner. Still to review and potentially add: roofrestorationsandwaterproofinginc.com, bestroofpaint.com, flatroofsealants.com. Decision needed: list individually on factory page vs. route all through /partner-network page (safer for Google compliance). Also review city page links and product/system cross-links from factory page.
+
 - **Email Auto Presentation** — RoofProtect product presentation PDF saved at `artifacts/roof-store/public/docs/roofprotect-product-presentation.pdf` (5.1MB). To-do: wire into the contact form auto-response email so new leads automatically receive this PDF. Requires Resend domain verification first (see priority item below).
 
 

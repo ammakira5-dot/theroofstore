@@ -178,6 +178,7 @@ export default function Factory() {
                   <li><span className="font-semibold text-foreground">Windproof Roof Systems</span> — South Florida tile restoration specialist</li>
                   <li><span className="font-semibold text-foreground">Storm Shield Roof Coating Systems</span> — Treasure Coast / Port St. Lucie</li>
                   <li><span className="font-semibold text-foreground">Roof Protect Products</span> — factory-direct product supply, Broward County</li>
+                  <li><a href="https://www.roofpaintmiami.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Roof Paint Miami</a> — Miami-Dade County coverage</li>
                 </ul>
                 <div className="flex flex-wrap gap-3 pt-1">
                   <Button asChild size="sm" variant="outline">

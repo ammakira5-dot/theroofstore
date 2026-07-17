@@ -35,7 +35,7 @@ const homeFaqs = [
   },
   {
     q: "Will an elastomeric roof coating hold up to Florida hurricanes?",
-    a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to hold Dade County TAS-106 Uplift Pull Test certification, with documented 135+ MPH performance on real hurricane events. The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
+    a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to hold Dade County TAS-106 Uplift Pull Test certification, with documented 135+ MPH performance on real hurricane events (per independent Dade County TAS-106 uplift certification testing). The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
   },
   {
     q: "How long does an elastomeric roof coating last in Florida's climate?",

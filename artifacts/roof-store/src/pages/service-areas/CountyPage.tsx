@@ -104,6 +104,12 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
         title={`Roof Coating Contractor in ${county}, FL — The Roof Store`}
         description={`Looking for a roof coating contractor in ${county}? The Roof Store provides professional elastomeric roof coating systems for tile, flat, shingle, and metal roofs that outperform standard paint — waterproof, hurricane-rated, licensed & insured, A+ BBB since 1994. Free inspection: 954-210-9614.`}
         canonical={`/service-areas/${slug}`}
+        ogImage={
+          slug === "broward-county" ? "/images/og/broward-county.jpg"
+          : slug === "miami-dade-county" ? "/images/og/miami-dade-county.jpg"
+          : slug === "palm-beach-county" ? "/images/og/palm-beach-county.jpg"
+          : undefined
+        }
         schema={schema}
         geo={{ region: "US-FL", placename: `${county}, FL` }}
       />

@@ -40,6 +40,10 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/roof-pressure-cleaning", changefreq: "monthly", priority: "0.7" },
   { loc: "/the-original-roof-store-florida", changefreq: "yearly", priority: "0.6" },
   { loc: "/manufacturers-report", changefreq: "yearly", priority: "0.5" },
+  { loc: "/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida", changefreq: "yearly", priority: "0.7" },
+  { loc: "/blog/new-florida-homeowners-insurance-laws", changefreq: "yearly", priority: "0.7" },
+  { loc: "/blog/citizens-insurance-for-older-tile-roofs-in-florida", changefreq: "yearly", priority: "0.7" },
+  { loc: "/blog/additional-roof-life-certification-benefits-meaning", changefreq: "yearly", priority: "0.7" },
 ];
 
 export const countyRoutes: UrlEntry[] = counties.flatMap(

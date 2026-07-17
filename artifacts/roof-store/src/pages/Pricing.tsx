@@ -150,6 +150,7 @@ export default function Pricing() {
         title="Roof Coating Prices per Sq Ft | South Florida | The Roof Store"
         description="Roof coating prices for South Florida: Fungal Shield from $0.50, Smart Shield from $1.90, Roof Shield from $2.70 /sq ft. Labor & materials included. Free estimate: 954-210-9614."
         canonical="/pricing"
+        ogImage="/images/og/pricing.jpg"
         schema={schema}
       />
 

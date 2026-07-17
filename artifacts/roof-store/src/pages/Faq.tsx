@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Do you offer silicone roof coating for flat or commercial roofs?",
-    a: "Yes. For commercial flat roofs and any roof that holds standing or ponding water, silicone is the strongest liquid-applied coating formulation available — it's the industry standard for that application. Our RoofShield (RP3) system is typically formulated with a proprietary premium silicone base ingredient for exactly this reason, and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating.",
+    a: "Yes. For commercial flat roofs and any roof that holds standing or ponding water, silicone is the strongest liquid-applied coating formulation available — it's the industry standard for that application. Our RoofShield (RP3) system is typically formulated with a proprietary premium silicone base ingredient for exactly this reason, and additionally holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid roof coating (independently tested and certified per Dade County, FL uplift standards).",
     link: { href: "/silicone-roof-coating", label: "Learn more about our silicone roof coating system" },
   },
   {
@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: "How do I waterproof a tile roof?",
-    a: "Tile roof waterproofing involves cleaning the roof surface, repairing any cracked or broken tiles, repointing ridge caps and hip areas, and applying a multi-coat coating system that seals every tile surface and fills every gap. The result is a continuous waterproof membrane over your existing tile roof that stops leaks permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating — the strongest waterproofing solution available for tile roofs in South Florida.",
+    a: "Tile roof waterproofing involves cleaning the roof surface, repairing any cracked or broken tiles, repointing ridge caps and hip areas, and applying a multi-coat coating system that seals every tile surface and fills every gap. The result is a continuous waterproof membrane over your existing tile roof that stops leaks permanently. Our RoofShield system is the world's only TAS-106 Dade County Uplift rated coating (per independent Dade County certification testing) — the strongest waterproofing solution available for tile roofs in South Florida.",
   },
   {
     q: "How do I seal a flat roof after pressure cleaning?",
@@ -113,6 +113,7 @@ export default function Faq() {
         description="Answers to common questions about roof coating systems: tile restoration, hurricane performance, warranties, and how coating compares to full roof replacement. The Roof Store — Davie, FL — 954-210-9614."
         schema={schema}
         canonical="/faq"
+        ogImage="/images/og/faq.jpg"
       />
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">

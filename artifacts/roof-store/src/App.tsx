@@ -23,6 +23,7 @@ import Videos from "@/pages/Videos";
 import Distributorships from "@/pages/Distributorships";
 import CommercialRoofs from "@/pages/CommercialRoofs";
 import Blog from "@/pages/Blog";
+import { BlogPostPage } from "@/pages/BlogPost";
 import Questions from "@/pages/Questions";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -320,8 +321,8 @@ function Router() {
       <Route path="/videos.php" component={() => <RedirectTo to="/videos" />} />
       <Route path="/blog.php" component={() => <RedirectTo to="/blog" />} />
 
-      {/* ── Legacy — blog post URLs ── */}
-      <Route path="/blog/:slug" component={() => <RedirectTo to="/blog" />} />
+      {/* ── Blog post pages ── */}
+      <Route path="/blog/:slug" component={({ params }) => <BlogPostPage params={params as { slug: string }} />} />
 
       {/* ── Catch-all ── */}
       <Route component={NotFound} />

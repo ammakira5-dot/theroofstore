@@ -791,42 +791,9 @@ app.use((req, res) => {
     return;
   }
 
-  const meta = resolvePageMeta(req.path);
-  const canonicalUrl = `${BASE}${meta.canonical}`;
-  const escaped = {
-    title: meta.title.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
-    description: meta.description.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
-    canonicalUrl: canonicalUrl.replace(/&/g, "&amp;").replace(/"/g, "&quot;"),
-  };
-
-  let html = getIndexHtml();
-
-  // Build the full meta block and insert it before </head> (single injection, no duplicates)
-  const metaTags = [
-    `<title>${escaped.title}</title>`,
-    `<meta name="description" content="${escaped.description}" />`,
-    `<link rel="canonical" href="${escaped.canonicalUrl}" />`,
-    `<meta property="og:type" content="website" />`,
-    `<meta property="og:site_name" content="The Roof Store" />`,
-    `<meta property="og:title" content="${escaped.title}" />`,
-    `<meta property="og:description" content="${escaped.description}" />`,
-    `<meta property="og:url" content="${escaped.canonicalUrl}" />`,
-    `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${escaped.title}" />`,
-    `<meta name="twitter:description" content="${escaped.description}" />`,
-  ];
-
-  if (meta.geo) {
-    metaTags.push(
-      `<meta name="geo.region" content="${meta.geo.region}" />`,
-      `<meta name="geo.placename" content="${meta.geo.placename}" />`,
-      `<meta name="geo.position" content="${meta.geo.position}" />`,
-      `<meta name="ICBM" content="${meta.geo.icbm}" />`,
-    );
-  }
-
-  html = html.replace("</head>", `    ${metaTags.join("\n    ")}\n  </head>`);
-
+  // Meta tags are managed exclusively by React Helmet (baked into prerendered HTML).
+  // Server-side injection was causing every meta tag to appear twice in source.
+  const html = getIndexHtml();
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.send(html);
 });

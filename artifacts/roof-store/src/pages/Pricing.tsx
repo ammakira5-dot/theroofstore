@@ -81,17 +81,74 @@ const systems: PriceSystem[] = [
 export default function Pricing() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "PriceSpecification",
-    name: "Factory Price Menu — The Roof Store",
-    description: "Per-square-foot pricing for Fungal Shield, Smart Shield, and Roof Shield roof coating systems. Prices vary by roof type and pitch. All prices include labor and materials.",
+    "@type": "Service",
+    name: "Roof Coating & Waterproofing Services — The Roof Store",
     url: `${BASE}/pricing`,
+    provider: {
+      "@type": "RoofingContractor",
+      name: "The Roof Store Waterproofing Products",
+      url: BASE,
+      telephone: "+19542109614",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "4801 S University Dr",
+        addressLocality: "Davie",
+        addressRegion: "FL",
+        postalCode: "33328",
+        addressCountry: "US",
+      },
+    },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Broward County, Florida" },
+      { "@type": "AdministrativeArea", name: "Miami-Dade County, Florida" },
+      { "@type": "AdministrativeArea", name: "Palm Beach County, Florida" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Roof Coating Price Menu",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Fungal Shield (RP1) — Clear Anti-Fungal Roof Coating" },
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "USD",
+            minPrice: "0.50",
+            maxPrice: "1.45",
+            unitText: "SQF",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Smart Shield (RP2) — Waterproofing Tile & Flat Roof Coating" },
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "USD",
+            minPrice: "1.90",
+            maxPrice: "2.75",
+            unitText: "SQF",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: "Roof Shield (RP3) — TAS-106 Certified Full Weatherproofing System" },
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "USD",
+            minPrice: "2.70",
+            maxPrice: "4.75",
+            unitText: "SQF",
+          },
+        },
+      ],
+    },
   };
 
   return (
     <div className="w-full">
       <SEO
-        title="Pricing — Factory Price Menu | The Roof Store"
-        description="Factory per-sq-ft pricing for Fungal Shield (RP1), Smart Shield (RP2), and Roof Shield (RP3) roof coating systems. All prices include labor & materials. Serving South Florida since 1994."
+        title="Roof Coating Prices per Sq Ft | South Florida | The Roof Store"
+        description="Roof coating prices for South Florida: Fungal Shield from $0.50, Smart Shield from $1.90, Roof Shield from $2.70 /sq ft. Labor & materials included. Free estimate: 954-210-9614."
         canonical="/pricing"
         schema={schema}
       />
@@ -100,7 +157,7 @@ export default function Pricing() {
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-block bg-accent/20 border border-accent/30 text-accent px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6">Factory Price Menu</div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Transparent Pricing</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Prices in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Per-square-foot rates by system, roof type, and pitch. All prices include labor &amp; materials. Exact quotes are finalized after a free onsite visit.
             </p>

@@ -137,7 +137,7 @@ export default function Faq() {
                 transition={{ delay: i * 0.04 }}
                 className="bg-card border rounded-xl px-6 py-6"
               >
-                <h2 className="font-serif font-bold text-lg text-foreground mb-3">{faq.q}</h2>
+                <h3 className="font-serif font-bold text-lg text-foreground mb-3">{faq.q}</h3>
                 <p className="text-muted-foreground leading-relaxed text-base">{faq.a}</p>
                 {faq.link && (
                   <Link

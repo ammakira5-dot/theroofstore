@@ -285,7 +285,7 @@ export default function Products() {
   return (
     <div className="w-full">
       <SEO
-        title="Florida Roof Coating Products — Tile, Flat & Metal | TAS-106 Rated"
+        title="Roof Coating Products — Tile, Flat & Metal | TAS-106 Rated | The Roof Store"
         description="The only TAS-106 (Dade County) Uplift Tested roof coating system in the world. Florida-made for tile, flat & metal roofs. Stops leaks, saves energy, hurricane-tested. Free estimate: 954-210-9614."
         canonical="/products"
         schema={schema}

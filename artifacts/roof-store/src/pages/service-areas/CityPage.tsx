@@ -68,16 +68,6 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
       },
       priceRange: "$$",
       description: `Professional roof coating, tile restoration, and weatherproofing in ${city}, FL. A+ BBB Rated since 1994.`,
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Roof Coating Services",
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
-        ],
-      },
     },
     {
       "@context": "https://schema.org",
@@ -116,16 +106,6 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
           "@type": "AdministrativeArea",
           name: `${county}, Florida`,
         },
-      },
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Roof Coating Services",
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Elastomeric Roof Coating" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Tile Roof Restoration" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hurricane Protection Coating" } },
-        ],
       },
     },
   ];

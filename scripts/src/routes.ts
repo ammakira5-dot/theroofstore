@@ -28,6 +28,7 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/distributorships", changefreq: "yearly", priority: "0.6" },
   { loc: "/factory", changefreq: "yearly", priority: "0.6" },
   { loc: "/shop", changefreq: "monthly", priority: "0.6" },
+  { loc: "/pricing", changefreq: "monthly", priority: "0.8" },
   { loc: "/contact", changefreq: "yearly", priority: "0.8" },
   { loc: "/silicone-vs-elastomeric-roof-coating", changefreq: "monthly", priority: "0.7" },
   { loc: "/roof-painting-vs-coating", changefreq: "monthly", priority: "0.7" },

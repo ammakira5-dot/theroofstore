@@ -138,16 +138,6 @@ export default function CommercialRoofs() {
       areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
       description: "Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. TAS-106 certified.",
       serviceType: "Commercial Roof Waterproofing",
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Commercial Roofing Services",
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Flat Deck Waterproofing" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Built-Up Roofing (BUR) Coating" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Modified Bitumen Waterproofing" } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Metal Roof Waterproofing" } },
-        ],
-      },
     },
     {
       "@context": "https://schema.org",

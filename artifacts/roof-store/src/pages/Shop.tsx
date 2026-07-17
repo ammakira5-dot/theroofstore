@@ -100,9 +100,11 @@ export default function Shop() {
           item: {
             "@type": "Product",
             name: "Fungal Shield (RP1) — Anti-Fungal Roof Coating",
+            description: "FungalShield (RP1) is a clear roof tile sealer that eliminates black streaking, algae, mold, and fungal growth on Florida tile, metal, and flat roofs. 5-Year Product Warranty.",
+            image: `${BASE}/images/products/fungalshield-pail.png`,
             url: `${BASE}/products/fungalshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
-            offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP1FungalShield" },
+            offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock", url: `${BASE}/products/fungalshield` },
           },
         },
         {
@@ -110,9 +112,11 @@ export default function Shop() {
           item: {
             "@type": "Product",
             name: "Smart Shield (RP2) — Tintable Waterproof Tile Roof Coating",
+            description: "SmartShield (RP2) is a reflective cool roof coating that waterproofs tile roofs in 3,000+ colors. 5× the thickness of standard roof paint, true waterproofing, energy savings. 5-Year Product Warranty.",
+            image: `${BASE}/images/products/smartshield-pail.png`,
             url: `${BASE}/products/smartshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
-            offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP2SmartShield" },
+            offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock", url: `${BASE}/products/smartshield` },
           },
         },
         {
@@ -120,9 +124,11 @@ export default function Shop() {
           item: {
             "@type": "Product",
             name: "Roof Shield (RP3) — Monolithic Hurricane Protection System",
+            description: "RoofShield (RP3) fills every gap between tiles with multiple product layers making your roof monolithic. TAS-106 Dade County rated, hurricane-proof. Lifetime warranty available.",
+            image: `${BASE}/images/products/roofshield-pail.png`,
             url: `${BASE}/products/roofshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
-            offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock", url: "https://www.roofprotectproducts.com/product/RP3RoofShield" },
+            offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock", url: `${BASE}/products/roofshield` },
           },
         },
       ],

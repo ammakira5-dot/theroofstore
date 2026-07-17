@@ -1,24 +1,19 @@
 ---
 name: Sister-site FTP credentials
-description: Confirmed FTP access for all 8 sites in the network — host, username, and secret name for each.
+description: Which Replit secret to use for each sister-site FTP connection — no usernames or hosts stored here.
 ---
 
-# FTP Master List — All Sites Confirmed
+# FTP Secret Lookup
 
-All passwords stored as Replit secrets — never stored here. Get values from the dashboard Secrets tab.
+All FTP hostnames, ports, and usernames are documented in `replit.md` (Pending to-dos section) — do NOT duplicate them here.
 
-| Site | FTP Host | Port | Username | Secret Name | Status |
-|------|----------|------|----------|-------------|--------|
-| roofprotectproducts.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 16 2026 |
-| roofpaintmiami.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
-| ftlauderdaleroofcoating.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
-| bestroofpaint.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Confirmed July 14 2026 |
-| theroofstore.net (old PHP) | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Folder visible in FTP root |
-| flatroofsealants.com | ftp.absolutecharters.com | 21 | julius@absolutecharters.com | JULIUS_FTP_PASSWORD | ✅ Via julius@ |
-| windproofroofsystems.com | ftp.windproofroofsystems.com | 21 | Fullstack2@windproofroofsystems.com | WINDPROOF_FTP_PASSWORD | ✅ Confirmed July 14 2026 — password reset in cPanel |
-| roofrestorationsandwaterproofinginc.com | ftp.roofrestorationsandwaterproofinginc.com | 21 | roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com | RRSW_FTP_PASSWORD | ✅ Confirmed July 16 2026 |
+Replit secret names by site group:
 
-## Notes
-- ROOFPROTECT_FTP_PASSWORD secret has wrong/stale value — roofprotectproducts.com is accessible via julius@ instead, so this secret is not needed for day-to-day work.
-- All julius@ sites share one hosting account on absolutecharters.com — one login, many site folders in the root.
-- flatroofsealants.com confirmed via julius@ root listing (not yet audited).
+| Site group | Secret name |
+|------------|-------------|
+| julius@ shared hosting (roofpaintmiami, ftlauderdale, bestroofpaint, flatroofsealants, theroofstore legacy PHP) | `JULIUS_FTP_PASSWORD` |
+| windproofroofsystems.com | `WINDPROOF_FTP_PASSWORD` |
+| roofrestorationsandwaterproofinginc.com | `RRSW_FTP_PASSWORD` |
+| roofprotectproducts.com | `ROOFPROTECT_FTP_PASSWORD` (note: value may be stale — use julius@ fallback per replit.md) |
+
+**Why:** Usernames, hostnames, and email-based login identifiers are credential-adjacent and must not be stored in memory files. Replit.md (visible to the user) is the correct place for operational FTP reference data.

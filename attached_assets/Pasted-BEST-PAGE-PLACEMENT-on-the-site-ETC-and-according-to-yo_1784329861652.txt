@@ -1,0 +1,30 @@
+BEST PAGE PLACEMENT on the site ETC...
+
+
+and according to your review of theroofstore.net site today what would be the best page to place this Pillar content
+18:55
+
+
+Worked for 28s
+Based on everything from today's audit, the answer is clear: publish it as a new standalone page at /roof-coating-florida — don't merge it into any existing page.
+
+Here's why each existing page is the wrong home for it:
+
+Existing Page	Why It's the Wrong Fit
+/ Homepage	Already strong at 1,757 words with its own schema. The homepage serves too many purposes to absorb a 4,500-word guide.
+/roof-systems	That page is specifically about the three formulation grades (Elastomeric/Polyurethane/Silicone) — a supporting topic, not the same intent as "what is roof coating in Florida."
+/products	Product collection page for RP1/RP2/RP3. Product browsing intent vs. educational guide intent — different buyer moment.
+/services or /roof-services	Services pages describe what you do; the pillar explains the entire topic category. Merging them dilutes both.
+/faq	Already 2,725 words and does its job well. The pillar is a different content type.
+The right placement: /roof-coating-florida as its own page, then do two things immediately:
+
+Add it to the main navigation — either as a direct nav item labeled "Roof Coating Guide" or nested under the existing 
+"Roof Systems" or "Services" menu. The audit showed your nav is: 
+Products · About Us · Roof Systems · Services · Service Areas · Projects · Reviews · FAQ · More — it fits cleanly as 
+a featured item under Services or alongside Roof Systems.
+
+Make it the internal link hub — update the homepage, /products, /pricing, /faq, and every city page to include at least 
+one contextual link pointing to /roof-coating-florida. That internal link network is what tells Google this is your most important non-homepage page.
+
+The pillar's job is to be the page every other page on the site flows toward and every external link flows into. 
+It only works if it has its own clean URL and sits independently in the architecture.

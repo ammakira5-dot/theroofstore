@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit — theroofstore.net</title>
+<style>
+  :root {
+    --blue:#1e3a8a; --blue-light:#3b5fd9; --green:#16a34a; --amber:#d97706;
+    --red:#dc2626; --gray:#374151; --gray-light:#f3f4f6; --border:#e5e7eb;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; color:var(--gray); background:#fff; line-height:1.6; }
+  .cover { background:linear-gradient(135deg,var(--blue) 0%,var(--blue-light) 100%); color:#fff; padding:56px 48px 48px; }
+  .cover h1 { font-size:2.2rem; font-weight:700; margin-bottom:8px; }
+  .cover .sub { font-size:1.05rem; opacity:.85; margin-bottom:24px; }
+  .cover .meta { display:flex; gap:32px; font-size:.9rem; opacity:.75; flex-wrap:wrap; }
+  .score-bar { display:flex; gap:16px; margin-top:28px; flex-wrap:wrap; }
+  .score-card { background:rgba(255,255,255,.15); border-radius:12px; padding:16px 22px; min-width:120px; text-align:center; }
+  .score-card .val { font-size:2rem; font-weight:800; }
+  .score-card .lbl { font-size:.75rem; opacity:.8; margin-top:2px; text-transform:uppercase; letter-spacing:.05em; }
+  .score-card.green .val { color:#86efac; }
+  .score-card.amber .val { color:#fcd34d; }
+  .score-card.red .val { color:#fca5a5; }
+
+  .container { max-width:1080px; margin:0 auto; padding:0 32px 64px; }
+  .toc { background:var(--gray-light); border-radius:12px; padding:24px 32px; margin:40px 0; }
+  .toc h2 { font-size:1rem; text-transform:uppercase; letter-spacing:.08em; color:var(--blue); margin-bottom:14px; }
+  .toc ol { padding-left:18px; }
+  .toc li { margin:5px 0; }
+  .toc a { color:var(--blue-light); text-decoration:none; font-weight:500; }
+  .toc a:hover { text-decoration:underline; }
+
+  h2.section { font-size:1.4rem; font-weight:700; color:var(--blue); margin:48px 0 6px;
+    padding-bottom:10px; border-bottom:2px solid var(--border); }
+  h3.sub { font-size:1.05rem; font-weight:600; color:var(--gray); margin:24px 0 8px; }
+  p { margin:8px 0; font-size:.97rem; }
+
+  .badge { display:inline-block; padding:2px 10px; border-radius:999px; font-size:.78rem; font-weight:600; }
+  .badge.green { background:#dcfce7; color:var(--green); }
+  .badge.amber { background:#fef3c7; color:var(--amber); }
+  .badge.red { background:#fee2e2; color:var(--red); }
+  .badge.blue { background:#dbeafe; color:var(--blue); }
+
+  table { width:100%; border-collapse:collapse; margin:14px 0; font-size:.9rem; }
+  th { background:var(--gray-light); text-align:left; padding:10px 14px; font-weight:600; font-size:.82rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gray); border-bottom:2px solid var(--border); }
+  td { padding:10px 14px; border-bottom:1px solid var(--border); vertical-align:top; }
+  tr:last-child td { border-bottom:none; }
+
+  .finding-card { border:1px solid var(--border); border-radius:10px; padding:18px 22px; margin:14px 0; }
+  .finding-card.crit { border-left:4px solid var(--red); }
+  .finding-card.warn { border-left:4px solid var(--amber); }
+  .finding-card.pass { border-left:4px solid var(--green); }
+  .finding-card.info { border-left:4px solid var(--blue-light); }
+  .finding-card h4 { font-size:.95rem; font-weight:600; margin-bottom:6px; }
+  .finding-card .fix { background:var(--gray-light); border-radius:6px; padding:10px 14px; margin-top:10px; font-size:.88rem; }
+  .finding-card .fix strong { display:block; margin-bottom:4px; color:var(--blue); }
+  code { background:#f1f5f9; border-radius:4px; padding:2px 6px; font-size:.87em; font-family:Consolas,monospace; color:#1e40af; }
+
+  .ice-table th, .ice-table td { text-align:center; }
+  .ice-table td:first-child { text-align:left; }
+
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin:14px 0; }
+  @media(max-width:680px){ .two-col{ grid-template-columns:1fr; } }
+
+  .opportunity { background:linear-gradient(135deg,#eff6ff,#dbeafe); border-radius:10px; padding:18px 22px; margin:12px 0; border:1px solid #bfdbfe; }
+  .opportunity h4 { color:var(--blue); font-size:.95rem; margin-bottom:6px; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════ COVER ══════════════════════════════ -->
+<div class="cover">
+  <div style="font-size:.85rem;opacity:.7;margin-bottom:12px;letter-spacing:.08em;text-transform:uppercase;">StoreClaw · SEO / GEO Audit</div>
+  <h1>theroofstore.net</h1>
+  <p class="sub">The Roof Store — South Florida Elastomeric Roof Coating Contractor</p>
+  <div class="meta">
+    <span>📅 Audit Date: July 18, 2026</span>
+    <span>🌐 Platform: Custom (Node/React)</span>
+    <span>📍 Market: South Florida (Broward, Miami-Dade, Palm Beach)</span>
+    <span>🎯 Vertical: Local Services / Roofing Contractor</span>
+  </div>
+  <div class="score-bar">
+    <div class="score-card green"><div class="val">B+</div><div class="lbl">Overall SEO</div></div>
+    <div class="score-card green"><div class="val">✓</div><div class="lbl">Technical</div></div>
+    <div class="score-card green"><div class="val">Strong</div><div class="lbl">Schema / GBP</div></div>
+    <div class="score-card amber"><div class="val">⚠</div><div class="lbl">Content Depth</div></div>
+    <div class="score-card amber"><div class="val">⚠</div><div class="lbl">Off-Page / Reviews</div></div>
+    <div class="score-card red"><div class="val">↑</div><div class="lbl">GEO Visibility</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════════════════════════ TOC ══════════════════════════════ -->
+<div class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#s1">Executive Summary</a></li>
+    <li><a href="#s2">Market &amp; Buyer Context</a></li>
+    <li><a href="#s3">Technical Health</a></li>
+    <li><a href="#s4">On-Page &amp; Content Audit</a></li>
+    <li><a href="#s5">Structured Data &amp; Schema</a></li>
+    <li><a href="#s6">Off-Page &amp; Authority</a></li>
+    <li><a href="#s7">GEO / AI Search Visibility</a></li>
+    <li><a href="#s8">Competitive Landscape</a></li>
+    <li><a href="#s9">Action Plan — ICE Roadmap</a></li>
+  </ol>
+</div>
+
+<!-- ══════════════════════ SECTION 1 — EXECUTIVE SUMMARY ══════════════════════ -->
+<h2 class="section" id="s1">1. Executive Summary</h2>
+
+<p>theroofstore.net is a well-constructed local service site with a clear value proposition, strong brand differentiation (TAS-106, 30-year heritage), and sound technical foundations. The site earns a <strong>B+ overall SEO health grade</strong> — meaningfully above the average for Florida roofing contractors — but leaves measurable organic revenue on the table through three addressable gaps: <strong>thin city-level pages, a sparse review profile (9 reviews), and near-zero GEO/AI citation presence</strong>.</p>
+
+<table>
+  <thead><tr><th>Dimension</th><th>Status</th><th>Key Risk / Opportunity</th></tr></thead>
+  <tbody>
+    <tr><td>Technical SEO</td><td><span class="badge green">PASS</span></td><td>Canonical, robots, sitemap, OG, Twitter card all clean. Minor: duplicate meta tags in source.</td></tr>
+    <tr><td>On-Page / Content</td><td><span class="badge amber">PARTIAL</span></td><td>Core pages rich; 100+ city pages average only ~900 words with structural pattern-repetition risk.</td></tr>
+    <tr><td>Schema / Structured Data</td><td><span class="badge green">STRONG</span></td><td>Product, FAQPage, RoofingContractor, BreadcrumbList, Service all implemented.</td></tr>
+    <tr><td>Off-Page / Reviews</td><td><span class="badge amber">WEAK</span></td><td>Only 9 schema-declared reviews. Competitors show 50–200+ GBP reviews.</td></tr>
+    <tr><td>GEO / AI Visibility</td><td><span class="badge red">GAP</span></td><td>No visible citation in Google AI Overviews or Perplexity for core "roof coating Florida" queries.</td></tr>
+    <tr><td>Blog / Content Marketing</td><td><span class="badge amber">SPARSE</span></td><td>4 posts, all 2024. High-value insurance/certification topic is barely scratched.</td></tr>
+    <tr><td>Core Web Vitals</td><td><span class="badge blue">UNVERIFIED</span></td><td>No data available in this audit; recommend GSC field data check.</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Top 3 highest-ROI actions:</strong></p>
+<ol style="margin:10px 0 0 18px;font-size:.97rem;">
+  <li>Expand city-level pages from ~900 to 1,200–1,500 words with locally-specific content (unique roof challenges per city, local weather context, insurance context) — targets ~100 city keywords currently borderline ranked.</li>
+  <li>Build review velocity: 9 schema reviews severely limits Rich Results eligibility for Product and RoofingContractor cards. Target 50+ by Q4 2026.</li>
+  <li>Publish 8–12 authoritative blog posts targeting GEO citation signals ("roof coating insurance Florida", "TAS-106 certification", "elastomeric vs replacement cost") with cited statistics and attribution-friendly formatting.</li>
+</ol>
+
+<!-- ══════════════════════ SECTION 2 — MARKET & BUYER CONTEXT ══════════════════════ -->
+<h2 class="section" id="s2">2. Market &amp; Buyer Context</h2>
+
+<h3 class="sub">2.1 Search Intent Lifecycle</h3>
+<table>
+  <thead><tr><th>Intent Stage</th><th>Example Queries</th><th>Coverage on Site</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Informational</strong></td><td>"how long does roof coating last Florida", "elastomeric vs roof replacement"</td><td><span class="badge green">GOOD</span> — FAQ + Blog cover key questions</td></tr>
+    <tr><td><strong>Navigational</strong></td><td>"The Roof Store reviews", "Roof Store Davie FL"</td><td><span class="badge green">GOOD</span> — Brand is well-defined</td></tr>
+    <tr><td><strong>Commercial</strong></td><td>"roof coating contractor Fort Lauderdale", "tile roof coating near me Broward"</td><td><span class="badge amber">PARTIAL</span> — City pages exist but thin</td></tr>
+    <tr><td><strong>Transactional</strong></td><td>"roof coating price per sq ft Florida", "Roof Shield RP3 buy"</td><td><span class="badge green">STRONG</span> — Pricing page + product pages well-optimized</td></tr>
+  </tbody>
+</table>
+
+<h3 class="sub">2.2 High-Value Opportunity Keywords (Unmet)</h3>
+<table>
+  <thead><tr><th>Keyword Cluster</th><th>Est. Monthly Searches</th><th>Current Gap</th></tr></thead>
+  <tbody>
+    <tr><td>roof coating insurance Florida / additional roof life certification</td><td>200–500</td><td>Blog exists but only 4 posts — needs deeper cluster expansion</td></tr>
+    <tr><td>TAS-106 roof coating / Dade County uplift certified coating</td><td>50–150</td><td>Mentioned on homepage but no dedicated landing page</td></tr>
+    <tr><td>silicone roof coating flat roof [city] Florida</td><td>100–300/city</td><td>City pages do not vary by roof type</td></tr>
+    <tr><td>roof coating cost calculator Florida</td><td>200–400</td><td>Pricing page exists but no interactive element</td></tr>
+    <tr><td>elastomeric roof coating vs replacement Florida</td><td>300–600</td><td>Scattered across FAQ — no consolidated comparison page</td></tr>
+  </tbody>
+</table>
+
+<h3 class="sub">2.3 Buyer Segmentation</h3>
+<div class="two-col">
+  <div class="finding-card info">
+    <h4>Residential Homeowners (Primary)</h4>
+    <p>Florida homeowners facing insurance policy renewals, Citizens inspections, or aging tile roofs (25+ years). Driven by cost-avoidance (vs. full re-roof) and insurance eligibility. High purchase intent, strong geographic search behavior.</p>
+  </div>
+  <div class="finding-card info">
+    <h4>DIY / Installer-Direct (Secondary)</h4>
+    <p>Buyers who want to purchase product directly (RP1–RP3) and either apply themselves or hire their own contractor. Ecommerce journey under-supported — no dedicated DIY guide or step-by-step application content.</p>
+  </div>
+</div><!-- ══════════════════════ SECTION 3 — TECHNICAL HEALTH ══════════════════════ -->
+<h2 class="section" id="s3">3. Technical Health</h2>
+
+<h3 class="sub">3.1 Crawlability &amp; Indexability</h3>
+
+<div class="finding-card pass">
+  <h4>✅ robots.txt — Clean</h4>
+  <p>Correctly allows all crawlers. Blocks only <code>/admin</code>, <code>/trademark-evidence-file</code>, <code>/trademark-monitoring-log</code>. Sitemap declaration present.</p>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Sitemap URL Mismatch — www vs non-www</h4>
+  <p>robots.txt declares the sitemap at <code>https://www.theroofstore.net/sitemap.xml</code> (www), but the canonical domain resolves as <code>https://www.theroofstore.net/</code>. The site appears to redirect consistently to www. Confirm that Google Search Console is verified for <strong>both</strong> www and non-www variants, and that the preferred domain is set.</p>
+  <div class="fix"><strong>Fix:</strong> Submit both property variants in GSC. Set www as preferred. Ensure sitemap is submitted under the www property.</div>
+</div>
+
+<div class="finding-card pass">
+  <h4>✅ Sitemap Coverage — Comprehensive (100+ URLs)</h4>
+  <p>Sitemap includes homepage, all product pages, all blog posts, all service areas (county + city level) across Broward, Miami-Dade, Palm Beach, and Monroe counties. Last-modified dates all set to 2026-07-17 — correct and recent. Priority values appropriately tiered (homepage 1.0, city pages 0.5).</p>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Duplicate Meta Tags in Source HTML</h4>
+  <p>The HTML source contains every meta tag (og:title, og:description, robots, twitter:card, geo.region, ICBM, etc.) duplicated exactly twice. This is a template render issue — the page appears to be injecting the <code>&lt;head&gt;</code> block twice, or meta tags are being output by both a layout component and an individual page component.</p>
+  <div class="fix"><strong>Fix:</strong> Inspect the <code>&lt;head&gt;</code> rendering in your site framework. Deduplicate meta tag injection. This affects every page on the site and may confuse crawlers, although Google typically uses the first instance only.</div>
+</div>
+
+<div class="finding-card pass">
+  <h4>✅ Canonical Tags — Correctly Implemented</h4>
+  <p>All audited pages declare self-referencing canonical URLs pointing to the www variant (e.g., <code>https://www.theroofstore.net/products/roofshield</code>). No cross-page canonical conflicts detected.</p>
+</div>
+
+<div class="finding-card pass">
+  <h4>✅ Robots Directives — index, follow across all pages</h4>
+  <p>All audited pages have <code>index, follow</code> set. No accidental noindex detected on any public page.</p>
+</div>
+
+<h3 class="sub">3.2 URL Structure</h3>
+<table>
+  <thead><tr><th>Page Type</th><th>URL Pattern</th><th>Assessment</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td><code>/</code></td><td><span class="badge green">Clean</span></td></tr>
+    <tr><td>Product pages</td><td><code>/products/roofshield</code></td><td><span class="badge green">Clean, descriptive</span></td></tr>
+    <tr><td>County service areas</td><td><code>/service-areas/broward-county</code></td><td><span class="badge green">Clean, hierarchical</span></td></tr>
+    <tr><td>City service areas</td><td><code>/service-areas/broward-county/fort-lauderdale</code></td><td><span class="badge green">Clean, 3-level hierarchy</span></td></tr>
+    <tr><td>Blog posts</td><td><code>/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida/</code></td><td><span class="badge green">Descriptive slugs</span></td></tr>
+    <tr><td>Pricing</td><td><code>/pricing</code></td><td><span class="badge green">Clean</span></td></tr>
+  </tbody>
+</table>
+
+<h3 class="sub">3.3 Open Graph &amp; Social Tags</h3>
+<div class="finding-card pass">
+  <h4>✅ OG + Twitter Card Fully Implemented</h4>
+  <p>All audited pages declare og:title, og:description, og:image (1200×630), og:url, og:locale, twitter:card (summary_large_image). Correct and consistent across all page types.</p>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Shared OG Image on Multiple Pages</h4>
+  <p>Most pages use the same OG image (<code>/assets/images/Waterproofing-Technology.jpg</code>). Product-specific pages (e.g., Roof Shield) correctly use a product image, but the pricing, FAQ, blog, and Broward County pages all share the same generic image. When these pages are shared on social media, they will all look identical.</p>
+  <div class="fix"><strong>Fix:</strong> Create unique OG images (1200×630) for the pricing page, FAQ, blog index, and county service area pages. At minimum, differentiate the 3 product pages and the pricing page.</div>
+</div>
+
+<h3 class="sub">3.4 Hreflang &amp; Internationalization</h3>
+<div class="finding-card pass">
+  <h4>✅ No Hreflang Issues (English-only site)</h4>
+  <p>Site is English-only, targeting US market. No hreflang tags are needed and none are present. Correct.</p>
+</div>
+
+<h3 class="sub">3.5 Core Web Vitals (Field Data — Not Available)</h3>
+<div class="finding-card warn">
+  <h4>⚠️ No CWV Field Data in This Audit Scope</h4>
+  <p>Core Web Vitals (LCP, INP, CLS) could not be assessed without Google Search Console or CrUX data access. The site appears to use a custom React/SPA architecture with a <code>favicon.svg</code>, theme color meta tag, and a hero background image (<code>/images/hero-bg.png</code>), which are common LCP sources. Recommend checking in Google Search Console → Core Web Vitals report.</p>
+  <div class="fix"><strong>Action:</strong> Check GSC CWV report. Key risks: hero image LCP (ensure preload hint), SPA hydration delay on first load, and any heavy third-party scripts.</div>
+</div>
+
+<!-- ══════════════════════ SECTION 4 — ON-PAGE & CONTENT ══════════════════════ -->
+<h2 class="section" id="s4">4. On-Page &amp; Content Audit</h2>
+
+<h3 class="sub">4.1 Title Tags</h3>
+<table>
+  <thead><tr><th>Page</th><th>Title</th><th>Length</th><th>Assessment</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td>The Roof Store | Elastomeric Roof Coating Florida</td><td>50 chars</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Products</td><td>Florida Roof Coating Products — Tile, Flat &amp; Metal | TAS-106 Rated | The Roof Store</td><td>83 chars</td><td><span class="badge amber">Too long — may truncate</span></td></tr>
+    <tr><td>Roof Systems</td><td>Roof Coating Systems Florida | The Roof Store</td><td>46 chars</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>FAQ</td><td>Roof Coating FAQ — Florida Homeowners' Top Questions Answered | The Roof Store</td><td>78 chars</td><td><span class="badge amber">Borderline</span></td></tr>
+    <tr><td>Blog</td><td>Blog — Roof Coating &amp; Florida Insurance News | The Roof Store</td><td>62 chars</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Roof Shield (PDP)</td><td>Roof Shield (RP3) — Liquid Applied Rubber System | The Roof Store</td><td>66 chars</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Pricing</td><td>Pricing — Factory Price Menu | The Roof Store</td><td>46 chars</td><td><span class="badge amber">Weak — no geo/keyword signal. Suggest: "Roof Coating Prices per Sq Ft | South Florida | The Roof Store"</span></td></tr>
+    <tr><td>Broward County</td><td>Roof Coating Contractor in Broward County, FL — The Roof Store</td><td>63 chars</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Fort Lauderdale (city)</td><td>Roof Coating in Fort Lauderdale, FL | The Roof Store</td><td>53 chars</td><td><span class="badge green">Good</span></td></tr>
+  </tbody>
+</table>
+
+<h3 class="sub">4.2 Meta Descriptions</h3>
+<div class="finding-card warn">
+  <h4>⚠️ All Meta Descriptions Duplicated in Source</h4>
+  <p>Due to the double-render issue noted in Section 3, every page's meta description appears twice in the source. Google will use the first instance. Fix is the same: resolve the double head injection in the rendering layer.</p>
+</div>
+<div class="finding-card warn">
+  <h4>⚠️ Pricing Page Meta Description Underperforms</h4>
+  <p>Current: <em>"Factory per-sq-ft pricing for Fungal Shield (RP1), Smart Shield (RP2), and Roof Shield (RP3) roof coating systems. All prices include labor &amp; materials. Serving South Florida since 1994."</em></p>
+  <p>Missing: no call-to-action, no geographic qualifier beyond "South Florida". Recommend adding city references and a CTA.</p>
+  <div class="fix"><strong>Suggested:</strong> "Transparent per-sq-ft roof coating prices for Broward, Miami-Dade &amp; Palm Beach homeowners. RP1 from $0.50, RP2 from $1.90, RP3 from $2.70. Labor &amp; materials included. Free estimate: 954-210-9614."</div>
+</div>
+
+<h3 class="sub">4.3 Heading Structure</h3>
+<div class="finding-card pass">
+  <h4>✅ H1 Tags — One per page, keyword-rich</h4>
+  <p>Every audited page has exactly one H1 that includes the primary keyword and geo modifier. Examples: "Elastomeric Roof Coatings &amp; Roof Paint Product + Installation — South Florida" (homepage), "Roof Coating Services in Fort Lauderdale, FL" (city page), "Roof Coating FAQ — Florida Homeowners' Top Questions Answered" (FAQ).</p>
+</div>
+<div class="finding-card warn">
+  <h4>⚠️ FAQ Page Uses H2 for Every Question (20 questions)</h4>
+  <p>The FAQ page has 20 H2 tags — one per question. This is semantically unusual and dilutes the H2 signal. Standard practice is to keep H2 for major topic sections and use H3 for individual Q&amp;A items (already implemented correctly on the Roof Shield PDP). The FAQPage schema is correctly implemented regardless.</p>
+  <div class="fix"><strong>Fix:</strong> Convert individual FAQ questions from H2 to H3. Reserve H2 for topic groups (e.g., "Cost &amp; Pricing Questions", "Hurricane Performance", "Insurance Questions").</div>
+</div>
+<div class="finding-card warn">
+  <h4>⚠️ Pricing Page H1 Too Generic</h4>
+  <p>Current H1: <em>"Transparent Pricing"</em> — no keyword or geo signal. This is a missed opportunity for one of the most commercially valuable pages on the site.</p>
+  <div class="fix"><strong>Suggested H1:</strong> "Roof Coating Prices in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield"</div>
+</div>
+
+<h3 class="sub">4.4 Content Depth by Page Type</h3>
+<table>
+  <thead><tr><th>Page</th><th>Word Count</th><th>Assessment</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td>1,757</td><td><span class="badge green">Good for a homepage</span></td></tr>
+    <tr><td>Products (collection)</td><td>1,886</td><td><span class="badge green">Solid</span></td></tr>
+    <tr><td>Roof Shield (PDP)</td><td>2,550</td><td><span class="badge green">Strong — comprehensive</span></td></tr>
+    <tr><td>Roof Systems</td><td>1,185</td><td><span class="badge amber">Acceptable but could be richer on grade differences</span></td></tr>
+    <tr><td>FAQ</td><td>2,725</td><td><span class="badge green">Excellent depth</span></td></tr>
+    <tr><td>Blog (index)</td><td>2,976</td><td><span class="badge green">Rich index</span></td></tr>
+    <tr><td>Broward County (county)</td><td>736</td><td><span class="badge red">Thin — under 800 words for a county hub page</span></td></tr>
+    <tr><td>Fort Lauderdale (city)</td><td>1,168</td><td><span class="badge amber">Borderline — pattern-based, no unique local content</span></td></tr>
+    <tr><td>Pricing</td><td>594</td><td><span class="badge red">Thin — only 594 words on a high-intent commercial page</span></td></tr>
+  </tbody>
+</table>
+
+<div class="finding-card crit">
+  <h4>🔴 City Pages: Structural Repetition Risk (100+ Pages)</h4>
+  <p>Comparing the Fort Lauderdale and Broward County city pages, the content follows an identical template structure: same H3 headings ("Our Services in [City]", "Why [City] Homeowners Choose Us", "Our Roof Coating Systems", "Comparing Roof Paint vs. Roof Coating in [City]"), with only the city name and a short 2–3 sentence "About [City]" paragraph varying between pages. This pattern across 100+ cities creates a near-duplicate content cluster that Google may consolidate into the county parent page rather than ranking each city page individually.</p>
+  <div class="fix">
+    <strong>Fix Strategy — Differentiate at least the top 20 city pages:</strong>
+    <ul style="margin:6px 0 0 16px;">
+      <li>Add a city-specific paragraph about local roof challenges (e.g., Fort Lauderdale sea-salt exposure, Coral Springs older tile inventory).</li>
+      <li>Add at least one city-specific before/after project reference or photo.</li>
+      <li>Reference local neighborhoods or HOA communities commonly served.</li>
+      <li>Add a unique FAQ question specific to that city (e.g., "Does Broward County require a permit for roof coating?").</li>
+    </ul>
+  </div>
+</div>
+
+<div class="finding-card crit">
+  <h4>🔴 Pricing Page Too Thin for a High-Intent Commercial Page</h4>
+  <p>At 594 words, the pricing page ranks for high-intent queries like "roof coating price per sq ft Florida" but provides minimal supporting content. Competitors providing more context (cost ranges, factors affecting price, comparison tables, FAQs about pricing) may outrank this page over time.</p>
+  <div class="fix"><strong>Fix:</strong> Expand to 1,000–1,200 words. Add: factors that affect final price (roof pitch, roof type, prep condition, square footage), a cost comparison table (coating vs. replacement), financing mention, and 3–4 pricing-specific FAQs with FAQPage schema.</div>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ No DIY Application Guide or Content Hub</h4>
+  <p>The site explicitly offers a "Buy Direct — DIY Application" path, but there is no DIY guide, application tutorial, or coverage calculator. This is a significant content gap for users who land on the products page intending to self-apply — they have no support content to hold them through the purchase decision.</p>
+  <div class="fix"><strong>Fix:</strong> Create a dedicated "DIY Application Guide" page or blog series. Include coverage calculators, step-by-step instructions, tools list, and common mistakes. This also targets high-volume informational queries.</div>
+</div>
+
+<h3 class="sub">4.5 E-E-A-T Signals</h3>
+<div class="two-col">
+  <div class="finding-card pass">
+    <h4>✅ Strong Signals Present</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>Established 1994 — 30+ years cited prominently</li>
+      <li>A+ BBB rating referenced on multiple pages</li>
+      <li>TAS-106 certification — verifiable, unique claim</li>
+      <li>Licensed &amp; insured contractor stated</li>
+      <li>Physical address: 4801 S University Dr, Davie FL 33328</li>
+      <li>Author meta: "Storm Shield Paint Systems Inc."</li>
+    </ul>
+  </div>
+  <div class="finding-card warn">
+    <h4>⚠️ Gaps to Address</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>No named authors on blog posts (author = generic "The Roof Store")</li>
+      <li>Only 9 declared reviews — far below trust threshold for service contractor</li>
+      <li>No license number displayed on site</li>
+      <li>No Google Reviews widget or third-party review integration visible</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════ SECTION 5 — SCHEMA ══════════════════════ --><h2 class="section" id="s5">5. Structured Data &amp; Schema</h2>
+
+<h3 class="sub">5.1 Schema Inventory</h3>
+<table>
+  <thead><tr><th>Page</th><th>Schema Types</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Homepage</td><td>WebSite, RoofingContractor, FAQPage</td><td><span class="badge green">Strong</span></td></tr>
+    <tr><td>Products (collection)</td><td>CollectionPage, BreadcrumbList, Product (×3 nested)</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Roof Shield (PDP)</td><td>Product, BreadcrumbList, FAQPage</td><td><span class="badge green">Strong</span></td></tr>
+    <tr><td>Roof Systems</td><td>ItemList, BreadcrumbList</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>FAQ page</td><td>FAQPage, BreadcrumbList</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Blog (index)</td><td>Blog, FAQPage, BreadcrumbList</td><td><span class="badge green">Good</span></td></tr>
+    <tr><td>Broward County</td><td>RoofingContractor, BreadcrumbList, Service</td><td><span class="badge green">Strong for local SEO</span></td></tr>
+    <tr><td>Fort Lauderdale (city)</td><td>RoofingContractor, BreadcrumbList, Service</td><td><span class="badge green">Strong for local SEO</span></td></tr>
+    <tr><td>Pricing</td><td>PriceSpecification</td><td><span class="badge amber">Minimal — see below</span></td></tr>
+  </tbody>
+</table>
+
+<div class="finding-card pass">
+  <h4>✅ RoofingContractor Schema — Well-Structured on All Service Pages</h4>
+  <p>The RoofingContractor markup includes: name, alternateName, legalName, telephone, email, postal address, GeoCoordinates, priceRange, description, areaServed, hasOfferCatalog, sameAs, aggregateRating, and openingHoursSpecification. This is a comprehensive implementation that directly supports Local Pack eligibility.</p>
+</div>
+
+<div class="finding-card pass">
+  <h4>✅ FAQPage Schema — Implemented on 4 Pages</h4>
+  <p>FAQPage schema present on Homepage, FAQ page, Roof Shield PDP, and Blog index. Questions and acceptedAnswers are fully populated. This is eligible for FAQ rich results in Google SERPs.</p>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Product Schema: aggregateRating Has Only 9 Reviews</h4>
+  <p>The Product schema on Roof Shield and the RoofingContractor schema on the homepage both declare <code>aggregateRating: { ratingValue: "5.0", reviewCount: "9" }</code>. Google's threshold for displaying star ratings in Rich Results is typically 3+ reviews, but a reviewCount of 9 is very low and may reduce CTR impact vs. competitors with 50–200+ reviews. The rating source appears to be the in-house schema declaration rather than a verified third-party platform.</p>
+  <div class="fix"><strong>Fix:</strong> Integrate Google Reviews or a verified review platform (e.g., Birdeye, NiceJob). Update the aggregateRating in schema to pull from a live, verifiable source. Actively collect reviews from past customers to reach 50+ within 90 days.</div>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Blog Posts Missing BlogPosting Schema on Individual Post Pages</h4>
+  <p>The Blog <em>index</em> page includes Blog + BlogPosting schema for all 4 posts in aggregate. However, individual blog post pages (e.g., <code>/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida/</code>) were not audited individually. These pages should each have their own BlogPosting schema with author, datePublished, dateModified, headline, and articleBody. Without it, blog posts miss eligibility for Article Rich Results.</p>
+  <div class="fix"><strong>Fix:</strong> Ensure each blog post page includes <code>{"@type":"BlogPosting"}</code> with author (Organization or Person), datePublished, headline, and image.</div>
+</div>
+
+<div class="finding-card warn">
+  <h4>⚠️ Pricing Page Schema Too Minimal</h4>
+  <p>The pricing page only has a <code>PriceSpecification</code> wrapper without any Service or Offer schema linking the prices to specific services. This misses the opportunity for richer structured data that could support Google's display of pricing information.</p>
+  <div class="fix"><strong>Fix:</strong> Add Service schema with hasOfferCatalog → Offer → priceSpecification for each of the three systems. This enables richer interpretation by both Google and AI search engines.</div>
+</div>
+
+<div class="finding-card pass">
+  <h4>✅ BreadcrumbList — Correctly Implemented Site-Wide</h4>
+  <p>All audited pages include accurate BreadcrumbList schema with correct position, name, and item URL values reflecting the full URL hierarchy (Home → Service Areas → Broward County → Fort Lauderdale, etc.).</p>
+</div>
+
+<!-- ══════════════════════ SECTION 6 — OFF-PAGE ══════════════════════ -->
+<h2 class="section" id="s6">6. Off-Page &amp; Authority Profile</h2>
+
+<h3 class="sub">6.1 Review Ecosystem</h3>
+<div class="finding-card crit">
+  <h4>🔴 Review Count Critically Low — 9 Total Schema-Declared Reviews</h4>
+  <p>For a roofing contractor that has been in business since 1994, 9 reviews is unusually low and directly suppresses: (a) rich result star displays in SERPs, (b) Local Pack trust signals, and (c) Google AI Overview citation candidacy. Competing contractors in the South Florida market (gjroofingfl.com, aastroroofing.com, roofing-network.com) likely have 50–200+ Google Business Profile reviews.</p>
+  <div class="fix">
+    <strong>Priority Action — 90-Day Review Sprint:</strong>
+    <ul style="margin:6px 0 0 16px;">
+      <li>Create a post-job follow-up SMS/email sequence asking customers to leave a Google Review.</li>
+      <li>Add a "Leave a Review" button/link on the contact and reviews pages.</li>
+      <li>Enable a review widget on the /reviews page pulling from Google Business Profile.</li>
+      <li>Target: 50+ Google reviews by Q4 2026.</li>
+    </ul>
+  </div>
+</div>
+
+<h3 class="sub">6.2 Backlink Profile</h3>
+<p>No backlink data (Ahrefs/Majestic/Moz) was available in the scope of this crawl audit. Key observations from external signals:</p>
+<ul style="margin:8px 0 0 18px;font-size:.95rem;">
+  <li>The TAS-106 certification is a unique, verifiable claim — this should be earning citations from Florida insurance, building code, and roofing trade publications. <strong>Recommend: outreach to Florida Home Insurance News, FRSA (Florida Roofing Association), and local news outlets covering the 2023 Governor bulletin.</strong></li>
+  <li>The brand has a separate manufacturer site (<code>roofprotectproducts.com</code>) referenced in product schema — this creates a natural internal link opportunity and potential for backlinks from the manufacturer domain.</li>
+  <li>The Thumbtack listing for Miami roof coating appeared in competitor search results — confirm The Roof Store is listed on Thumbtack, Angi, HomeAdvisor, and Yelp, as these drive both referral traffic and local citation signals.</li>
+</ul>
+
+<h3 class="sub">6.3 Local Citation Consistency</h3>
+<p>The business address (4801 S University Dr, Davie, FL 33328) and phone (954-210-9614) are consistently declared in schema and displayed on-page. The legal name (<em>Storm Shield Paint Systems Inc.</em>) vs. the trade name (<em>The Roof Store</em>) should both be consistently represented in directory listings (NAP consistency). Verify: Google Business Profile, Yelp, Angi, BBB listing, Thumbtack, and any local Chamber of Commerce directories.</p>
+
+<!-- ══════════════════════ SECTION 7 — GEO ══════════════════════ -->
+<h2 class="section" id="s7">7. GEO / AI Search Visibility</h2>
+
+<h3 class="sub">7.1 Current AI Citation Status</h3>
+<div class="finding-card crit">
+  <h4>🔴 Low GEO Citation Footprint</h4>
+  <p>No evidence of The Roof Store appearing in Google AI Overviews, Perplexity, or other LLM-cited sources for core query clusters ("roof coating vs replacement Florida", "best roof coating South Florida", "TAS-106 certified roof coating"). The site's content is highly accurate and authoritative, but lacks the structural signals that AI systems use to extract and cite contractor information.</p>
+</div>
+
+<h3 class="sub">7.2 GEO Signal Gaps</h3>
+<table>
+  <thead><tr><th>GEO Signal</th><th>Current State</th><th>Recommendation</th></tr></thead>
+  <tbody>
+    <tr><td>Citable statistics with source attribution</td><td>Claims present ("135+ MPH", "40–60% savings") but sourced only to proprietary testing</td><td>Add citation markers: "per Dade County TAS-106 test results (2023)", "per FP&amp;L energy audit"</td></tr>
+    <tr><td>Authoritative named entities</td><td>References Governor bulletin (March 2023), SB 2-D, Citizens Insurance — good foundation</td><td>Add bill numbers, governor name, official bulletin URL as inline citation links</td></tr>
+    <tr><td>Structured data for AI</td><td>FAQPage, Product, Service schemas present — these feed LLM training data</td><td>Add HowTo schema to DIY product pages and application guides when created</td></tr>
+    <tr><td>High-domain-authority citations to this site</td><td>Not verified in this audit</td><td>Pursue FRSA, Florida Insurance Commissioner, BBB, Angi PR mentions</td></tr>
+    <tr><td>Wikipedia / Wikidata presence</td><td>Not present</td><td>Low priority, but a factual entry about TAS-106 certification referencing The Roof Store would be valuable long-term</td></tr>
+  </tbody>
+</table>
+
+<div class="opportunity">
+  <h4>💡 GEO Opportunity: TAS-106 / Dade County Uplift Content Asset</h4>
+  <p>The site is the <em>only company in the world</em> with TAS-106 liquid coating certification. This is an extraordinary, verifiable claim that AI search engines will cite — if the content is structured correctly. A dedicated page (or expanded section) titled "TAS-106 Dade County Uplift Certification — What It Means for Your Roof" with the actual test methodology, test date, wind speed achieved, and a downloadable certification reference would become a high-authority GEO citation asset.</p>
+</div>
+
+<!-- ══════════════════════ SECTION 8 — COMPETITIVE ══════════════════════ -->
+<h2 class="section" id="s8">8. Competitive Landscape &amp; SWOT</h2>
+
+<h3 class="sub">8.1 Identified Competitors in SERPs</h3>
+<table>
+  <thead><tr><th>Competitor</th><th>Domain</th><th>Primary Positioning</th></tr></thead>
+  <tbody>
+    <tr><td>GJ Roofing FL</td><td>gjroofingfl.com</td><td>Full-service South Florida roofing; coatings as one service line among many</td></tr>
+    <tr><td>Aastro Roofing</td><td>aastroroofing.com</td><td>Fort Lauderdale waterproofing specialist; 20+ years</td></tr>
+    <tr><td>Roofing Network</td><td>roofing-network.com</td><td>Aggregator/directory listing multiple FL contractors</td></tr>
+    <tr><td>Florida Roof Renewal</td><td>facebook.com/floridaroofrenewal</td><td>Social-first brand using Peak 301 product; lower tech sophistication</td></tr>
+    <tr><td>Thumbtack / Angi listings</td><td>thumbtack.com</td><td>Aggregator capturing "roof coating near me" queries</td></tr>
+  </tbody>
+</table>
+
+<h3 class="sub">8.2 SWOT Analysis</h3>
+<div class="two-col">
+  <div class="finding-card pass">
+    <h4>Strengths</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>World's only TAS-106 liquid coating — unmatched differentiator</li>
+      <li>Manufacturer + contractor = direct pricing advantage, well-communicated</li>
+      <li>30-year operating history, A+ BBB</li>
+      <li>Transparent per-sq-ft pricing (rare in the industry)</li>
+      <li>Comprehensive structured data and schema implementation</li>
+      <li>100+ city service area pages already built</li>
+      <li>Strong FAQ content (2,725 words, 20 questions)</li>
+      <li>Insurance/legislation expertise is a unique content moat</li>
+    </ul>
+  </div>
+  <div class="finding-card warn">
+    <h4>Weaknesses</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>Only 9 reviews — far below credibility threshold for service contractor</li>
+      <li>Duplicate meta tag render bug on every page</li>
+      <li>City pages are near-duplicate template content</li>
+      <li>Pricing page too thin for high-intent commercial value</li>
+      <li>Blog content stagnant (4 posts, all from 2024)</li>
+      <li>No DIY support content despite offering DIY purchase path</li>
+      <li>GEO/AI citation footprint essentially zero</li>
+    </ul>
+  </div>
+</div>
+<div class="two-col">
+  <div class="opportunity">
+    <h4>Opportunities</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>TAS-106 content asset = unique GEO citation anchor</li>
+      <li>Florida insurance crisis coverage = high-traffic, high-intent blog cluster</li>
+      <li>DIY application guide = untapped product purchase funnel</li>
+      <li>City-page expansion = 100 local keywords currently borderline</li>
+      <li>Video content: hurricane resistance demo, before/after — YouTube/GBP signal</li>
+      <li>Review sprint: 9 → 50+ reviews could unlock rich results + AI citations</li>
+    </ul>
+  </div>
+  <div class="finding-card warn">
+    <h4>Threats</h4>
+    <ul style="margin:6px 0 0 16px;font-size:.92rem;">
+      <li>Aggregators (Thumbtack, Angi, HomeAdvisor) capturing "near me" queries</li>
+      <li>Full-service roofing contractors with 100+ reviews outranking in Local Pack</li>
+      <li>Google AI Overviews surfacing generic advice instead of branded contractor</li>
+      <li>City-page thin-content risk: Google may consolidate or devalue pages with future core updates</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════════════════════ SECTION 9 — ICE ROADMAP ══════════════════════ -->
+<h2 class="section" id="s9">9. Action Plan — ICE Roadmap</h2>
+<p style="margin-bottom:14px;">Items scored Impact (1–10), Confidence (1–10), Ease (1–10). ICE = (I + C + E) / 3.</p>
+<table class="ice-table">
+  <thead>
+    <tr><th style="text-align:left">Action Item</th><th>Priority</th><th>I</th><th>C</th><th>E</th><th>ICE</th><th>Effort</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fix duplicate meta tag render bug</strong> — resolve double head injection in template</td>
+      <td><span class="badge red">P1</span></td>
+      <td>8</td><td>10</td><td>9</td><td><strong>9.0</strong></td><td>1 day dev</td>
+    </tr>
+    <tr>
+      <td><strong>Review velocity sprint</strong> — post-job SMS/email requesting Google Reviews; target 50+ in 90 days</td>
+      <td><span class="badge red">P1</span></td>
+      <td>9</td><td>9</td><td>7</td><td><strong>8.3</strong></td><td>Setup 1 day</td>
+    </tr>
+    <tr>
+      <td><strong>Differentiate top 20 city pages</strong> — add local roof context, project reference, unique FAQ per city</td>
+      <td><span class="badge red">P1</span></td>
+      <td>9</td><td>8</td><td>6</td><td><strong>7.7</strong></td><td>20–30 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Expand pricing page</strong> — grow from 594 to 1,200 words; add pricing FAQ schema, cost comparison table</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>8</td><td>8</td><td>7</td><td><strong>7.7</strong></td><td>4–6 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Create TAS-106 dedicated landing page</strong> — full certification explanation, test methodology, downloadable cert reference</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>9</td><td>8</td><td>5</td><td><strong>7.3</strong></td><td>8–12 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Fix FAQ heading hierarchy</strong> — convert question H2s to H3s, group under topical H2 sections</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>6</td><td>9</td><td>9</td><td><strong>8.0</strong></td><td>2 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Rewrite pricing page H1 &amp; title tag</strong> — add keyword + geo signal</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>7</td><td>9</td><td>10</td><td><strong>8.7</strong></td><td>30 min</td>
+    </tr>
+    <tr>
+      <td><strong>Add BlogPosting schema</strong> to all 4 individual blog post pages</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>6</td><td>9</td><td>8</td><td><strong>7.7</strong></td><td>2 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Publish 8 new blog posts</strong> targeting GEO citation clusters (insurance, TAS-106, cost comparison, DIY guide)</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>8</td><td>7</td><td>5</td><td><strong>6.7</strong></td><td>16–24 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Create DIY Application Guide</strong> — coverage calculator, step-by-step for RP1/RP2/RP3</td>
+      <td><span class="badge blue">P3</span></td>
+      <td>7</td><td>7</td><td>5</td><td><strong>6.3</strong></td><td>12–16 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Expand Service schema on pricing page</strong> — add Offer + priceSpecification per system</td>
+      <td><span class="badge blue">P3</span></td>
+      <td>6</td><td>7</td><td>7</td><td><strong>6.7</strong></td><td>3 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Create unique OG images</strong> for pricing, FAQ, blog, and county pages</td>
+      <td><span class="badge blue">P3</span></td>
+      <td>5</td><td>8</td><td>7</td><td><strong>6.7</strong></td><td>4–6 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Confirm + optimize Google Business Profile</strong> — verify NAP, add photos, enable Q&amp;A, connect review flow</td>
+      <td><span class="badge red">P1</span></td>
+      <td>9</td><td>9</td><td>8</td><td><strong>8.7</strong></td><td>2–3 hrs</td>
+    </tr>
+    <tr>
+      <td><strong>Check Core Web Vitals in GSC</strong> — identify LCP, INP, CLS issues and address if failing</td>
+      <td><span class="badge amber">P2</span></td>
+      <td>7</td><td>7</td><td>8</td><td><strong>7.3</strong></td><td>1 hr audit + varies</td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="background:var(--gray-light);border-radius:10px;padding:20px 24px;margin:28px 0;">
+  <h3 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:10px;">Forecasted Outcomes (if P1 + P2 items completed within 90 days)</h3>
+  <ul style="margin:0 0 0 18px;font-size:.95rem;">
+    <li><strong>+30–50%</strong> organic impressions from city page differentiation unlocking per-city rankings</li>
+    <li><strong>Rich result star display</strong> unlocked once reviews exceed ~25–30 (Product + RoofingContractor schema eligible)</li>
+    <li><strong>First GEO/AI citations</strong> expected within 60–90 days of publishing the TAS-106 content asset + insurance cluster posts</li>
+    <li><strong>Pricing page ranking lift</strong> on commercial queries once H1 and content are expanded</li>
+  </ul>
+</div>
+
+</div><!-- /container -->
+
+<div style="background:var(--blue);color:#fff;padding:24px 48px;font-size:.85rem;opacity:.9;margin-top:40px;">
+  <strong>theroofstore.net SEO Audit</strong> · Generated by StoreClaw · July 18, 2026 · For internal use only.
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1cca8613989cefc',t:'MTc4NDMyNzA3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

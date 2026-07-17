@@ -61,7 +61,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: "5.0",
-        reviewCount: "10",
+        reviewCount: "9",
         bestRating: "5",
         worstRating: "1",
       },

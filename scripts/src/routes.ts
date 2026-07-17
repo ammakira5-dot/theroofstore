@@ -36,6 +36,10 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/roof-life-certification", changefreq: "monthly", priority: "0.7" },
   { loc: "/silicone-roof-coating", changefreq: "monthly", priority: "0.7" },
   { loc: "/tile-roof-painting", changefreq: "monthly", priority: "0.8" },
+  { loc: "/partner-network", changefreq: "monthly", priority: "0.7" },
+  { loc: "/roof-pressure-cleaning", changefreq: "monthly", priority: "0.7" },
+  { loc: "/the-original-roof-store-florida", changefreq: "yearly", priority: "0.6" },
+  { loc: "/manufacturers-report", changefreq: "yearly", priority: "0.5" },
 ];
 
 export const countyRoutes: UrlEntry[] = counties.flatMap(

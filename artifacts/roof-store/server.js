@@ -434,8 +434,19 @@ function getKnownRoutes() {
   return knownRoutes;
 }
 
+// Pages that are served but intentionally excluded from the sitemap
+// (utility/legal/admin routes — real pages, not 404s, but not for indexing).
+const SERVE_ONLY_ROUTES = new Set([
+  "/privacy",
+  "/terms",
+  "/admin",
+  "/trademark-evidence-file",
+  "/trademark-monitoring-log",
+]);
+
 function isKnownRoute(path) {
   if (getKnownRoutes().has(path)) return true;
+  if (SERVE_ONLY_ROUTES.has(path)) return true;
   // Dynamic patterns not enumerable in the static routes manifest but still
   // real, resolvable pages (mirrors resolvePageMeta's regex matches).
   if (/^\/service-areas\/[^/]+\/[^/]+$/.test(path)) return true;

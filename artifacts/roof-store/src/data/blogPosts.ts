@@ -91,4 +91,61 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "An Additional Roof Life Certification legally supersedes insurance age-based denials in Florida (per SB 2-D, 2022). Learn what it covers, how to get one, and how it can save you $20,000–$40,000.",
   },
+  {
+    slug: "2026-hurricane-season-roof-prep-south-florida",
+    title: "2026 Hurricane Season Roof Prep Checklist for South Florida Homeowners",
+    url: `${BASE}/blog/2026-hurricane-season-roof-prep-south-florida/`,
+    image: "/images/blog/post-5.png",
+    imageAlt: "South Florida home roof prepared for hurricane season — tile inspection and coating",
+    date: "July 2026",
+    dateISO: "2026-07-01",
+    tag: "Hurricane Prep",
+    excerpt:
+      "The Atlantic hurricane season runs June 1 through November 30. The window to prepare your roof is before the first watch — not after. Here is the complete pre-season checklist from 30 years of South Florida post-hurricane roof assessments: inspection, cleaning, repair, coating, and Citizens Insurance certification.",
+    body: [
+      "South Florida homeowners face a narrow but critical preparation window each spring. By the time June 1 arrives, your roof should be fully inspected, any cracked or loose tiles repaired, and — if you're applying a coating system — it should have had at least 24–72 hours of curing time. That means scheduling work in March or April at the latest. Pre-season booking fills up every year by mid-April. The homeowners who wait until May are consistently the ones we can't fit in before the season starts.",
+      "The four-step sequence that matters: (1) Professional inspection — look specifically for cracked tiles, loose ridge caps, open valleys, and any area where wind can get a purchase; (2) Pressure cleaning at 2,500+ PSI to remove all algae, mildew, and oxidation that would prevent proper adhesion; (3) Full crack and tile repair before any coating is applied — coating over damage extends it, not heals it; (4) Coating application — at minimum FungalShield for roof surface protection, or Roof Shield (RP3) if you want the world's only TAS-106 Dade County certified liquid system that fills all gaps between tiles into a monolithic hurricane-rated surface. Don Godshall, one of our Davie customers, chose Roof Shield before Hurricane Wilma. His neighbors' tiles were hitting his house. His roof came through without losing a single tile.",
+      "Two additional items that South Florida homeowners often overlook: first, trim any branches overhanging your roof before June 1 — falling limbs are one of the most common causes of post-storm roof damage, and no coating prevents impact damage. Second, if you have Citizens Insurance or a private carrier that has been pressuring you about your roof's age, a professionally applied coating combined with an Additional Roof Life Certification from our licensed team is often the fastest, least expensive path to satisfying their requirements under Florida law. Call 954-210-9614 to discuss your specific situation — free consultation, no obligation.",
+    ],
+    metaDescription:
+      "Complete 2026 pre-season roof checklist for South Florida homeowners — inspection, cleaning, repair, coating, and Citizens Insurance certification. Schedule before April; booking fills fast.",
+  },
+  {
+    slug: "how-long-does-roof-coating-last-florida",
+    title: "How Long Does Elastomeric Roof Coating Last in Florida?",
+    url: `${BASE}/blog/how-long-does-roof-coating-last-florida/`,
+    image: "/images/blog/post-6.png",
+    imageAlt: "Elastomeric roof coating applied to South Florida tile roof — long lifespan guide",
+    date: "July 2026",
+    dateISO: "2026-07-01",
+    tag: "Roof Coating Guide",
+    excerpt:
+      "Florida's combination of extreme UV, 60+ inches of annual rainfall, high humidity, and hurricane-force winds makes it one of the most demanding environments for roofing materials in North America. Here's exactly how long each of our three coating systems is designed to last — and what determines whether your coating hits the low end or the high end of that range.",
+    body: [
+      "The honest answer is: it depends on the system, the quality of the application, and what happens to it afterward. Our three systems have different design lifespans: FungalShield (RP1) is built for 5–7 years and is renewable; SmartShield (RP2) is designed for 10–15 years; Roof Shield (RP3) carries a Lifetime Transferable and Renewable Warranty. But in Florida specifically, two factors have an outsized impact on which end of those ranges a given installation hits: surface preparation and application thickness. A roof that is fully pressure-cleaned, repaired, and primed before coating will consistently outperform a roof where prep was rushed or skipped — sometimes by double the lifespan.",
+      "Florida's climate creates challenges that other regions don't have in the same combination. South Florida averages 3,000+ hours of annual sunshine — more than almost anywhere in the continental US — which causes standard coatings to oxidize, chalk, and degrade within 2–4 years. Pair that with 60+ inches of annual rainfall concentrated in a 5-month wet season (June–October), 90%+ humidity through summer, and hurricane-force wind events that test every seam and gap in your tile field. Our elastomeric formulas are specifically UV-stabilized, fully waterproof (not water-resistant), and — in the case of Roof Shield — independently certified under Dade County's TAS-106 Uplift standard for wind resistance. A standard acrylic or latex paint, even labeled 'roof coating,' will not perform at these standards in South Florida's conditions.",
+      "The practical guide to maximizing lifespan: schedule an annual 30-minute inspection. Most coating failures don't happen catastrophically — they start as small thin spots or hairline separation around a penetration, and catch them early with a spot repair costs a fraction of what a full recoat costs. Our customers on an annual maintenance check consistently get the high end of each system's range. FungalShield customers who maintain their roofs reach 7 years routinely; Roof Shield customers with maintained roofs have roofs that are 15+ years old and still performing. Call 954-210-9614 to schedule an annual check — it's free for existing customers.",
+    ],
+    metaDescription:
+      "How long does elastomeric roof coating last in Florida? FungalShield: 5–7 yrs. SmartShield: 10–15 yrs. RoofShield: Lifetime. The factors that determine lifespan in South Florida's extreme climate.",
+  },
+  {
+    slug: "diy-vs-professional-roof-coating-florida",
+    title: "DIY Roof Coating in Florida: What Pros Know That Homeowners Don't",
+    url: `${BASE}/blog/diy-vs-professional-roof-coating-florida/`,
+    image: "/images/blog/post-7.png",
+    imageAlt: "Professional roof coating crew applying elastomeric system to South Florida tile roof",
+    date: "July 2026",
+    dateISO: "2026-07-01",
+    tag: "DIY vs Professional",
+    excerpt:
+      "We've assessed hundreds of roofs where a homeowner applied a coating 2–5 years prior and is now dealing with peeling, delamination, or water intrusion. In almost every case, the failure wasn't the product — it was the process. Here is what professional installation actually involves, and why the gap between DIY and professional results is larger in Florida than anywhere else.",
+    body: [
+      "The most common DIY roof coating failure pattern we see in South Florida: a homeowner buys a 5-gallon bucket of coating at a home improvement store, rents a pressure washer, does a surface wash, and rolls or sprays the coating on. It looks good for 18 months. Then algae returns, the coating starts to peel at the edges, and a minor rain event reveals that moisture has been working its way under the coating for months. The problem is almost never the product — it's that surface preparation was insufficient. Professional-grade prep requires a 2,500+ PSI commercial washer with the correct nozzle angle and a mildewcide solution concentration that a standard home pressure washer can't deliver at that flow rate. When prep is cut short, the coating bonds to the algae or oxidation layer — not the tile — and that layer eventually releases.",
+      "There are also three Florida-specific factors that don't apply the same way in most other states. First: TAS-106 Uplift certification — the only hurricane-rated certification for a liquid roof coating — is tied to licensed installation. A DIY application of our Roof Shield materials would not carry this certification. The certification is issued based on the full system as professionally installed, not the materials alone. Second: an Additional Roof Life Certification, which carries legal weight with Citizens Insurance and private carriers under SB 2-D (Fla. 2022) and can prevent a forced roof replacement, must be signed by a licensed contractor. DIY-applied systems cannot receive this certification. Third: Florida's contractor licensing laws generally require a licensed roofing contractor for most commercial installations, and while residential owner-occupant DIY isn't prohibited, unlicensed work can create disclosure complications at the point of sale or refinance.",
+      "The equipment cost alone narrows the gap significantly. A commercial-grade pressure washer, professional nozzle set, appropriate mildewcide, commercial airless sprayer or heavy-duty roller system, fall-protection equipment, and all repair materials often add up to $2,000–$3,500 before you purchase any coating. That's before accounting for the value of a warranty, the TAS-106 certification, or the insurance certification. Our recommendation: for a small flat-roof section under 500 sq ft on a single-story home, a competent homeowner who does the prep correctly can get reasonable results with a quality coating. For a full tile roof on a two-story home in hurricane country — especially one where Citizens Insurance is a factor — the professional route delivers measurably better outcomes at a total cost that is closer to DIY than most homeowners expect. Call 954-210-9614 for a free written estimate and you'll have the real numbers to compare.",
+    ],
+    metaDescription:
+      "DIY roof coating in Florida: the honest guide from 30 years in the field. Surface prep failures, TAS-106 certification requirements, insurance certification, and true cost comparison. Call 954-210-9614.",
+  },
 ];

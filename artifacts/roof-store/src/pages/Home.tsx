@@ -95,7 +95,7 @@ const BUSINESS_CORE = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: "9",
+    reviewCount: "10",
     bestRating: "5",
     worstRating: "1",
   },
@@ -269,8 +269,8 @@ export default function Home() {
       <section className="py-24 bg-muted">
         <div className="container px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Roof Coating Services in South Florida</h2>
-            <p className="text-muted-foreground text-lg">We provide comprehensive restoration and weatherproofing systems that save you money while delivering superior protection.</p>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Roof Coating Services in Broward, Miami-Dade &amp; Palm Beach County</h2>
+            <p className="text-muted-foreground text-lg">We provide comprehensive restoration and weatherproofing systems that save you money while delivering superior protection across South Florida.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

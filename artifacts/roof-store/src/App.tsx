@@ -37,6 +37,9 @@ import SiliconeRoofCoating from "@/pages/SiliconeRoofCoating";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
 import TileRoofPainting from "@/pages/TileRoofPainting";
+import RoofCoatingLifespan from "@/pages/RoofCoatingLifespan";
+import DiyVsPro from "@/pages/DiyVsPro";
+import HurricaneRoofPrep from "@/pages/HurricaneRoofPrep";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
 import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
@@ -130,6 +133,9 @@ function Router() {
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/tile-roof-painting" component={TileRoofPainting} />
+      <Route path="/roof-coating-lifespan-florida" component={RoofCoatingLifespan} />
+      <Route path="/diy-vs-pro-roof-coating" component={DiyVsPro} />
+      <Route path="/hurricane-roof-prep" component={HurricaneRoofPrep} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
       <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/trademark-monitoring-log" component={TrademarkMonitoringLog} />

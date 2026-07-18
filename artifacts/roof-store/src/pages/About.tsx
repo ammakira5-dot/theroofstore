@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck, Youtube } from "lucide-react";
+import { Award, Shield, Users, Clock, CheckCircle2, Star, Factory, Hammer, ShoppingCart, UserCheck, Youtube, Network } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const BASE = "https://www.theroofstore.net";
@@ -14,6 +14,15 @@ const milestones = [
   { year: "Today", event: "30+ years and 10,000+ Florida homes later, we're still the same independently owned, family-run business — now with our own factory, our own crews, and an A+ BBB rating to show for it." },
 ];
 
+const credentials = [
+  { label: "Licensed Since", value: "1994 — Florida Roofing Coating Contractor" },
+  { label: "BBB Rating", value: "A+ Accredited" },
+  { label: "Certification", value: "Dade County TAS-106 Uplift — 2006" },
+  { label: "ARLC Authority", value: "Additional Roof Life Certifications under Florida SB 2-D (2022)" },
+  { label: "Manufacturing", value: "In-house, Davie, FL — RoofProtect Products" },
+  { label: "Service Area", value: "Broward · Miami-Dade · Palm Beach · Monroe counties" },
+];
+
 export default function About() {
   const schema = [
     {
@@ -21,11 +30,12 @@ export default function About() {
       "@type": "AboutPage",
       name: "About The Roof Store",
       url: `${BASE}/about`,
-      description: "30+ years protecting Florida homes. The Roof Store — pioneers of the liquid elastomeric roof shield system. Licensed & insured, A+ BBB rated since 1994.",
+      description: "Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994. A+ BBB. TAS-106 certified.",
       mainEntity: {
         "@context": "https://schema.org",
         "@type": "RoofingContractor",
         name: "The Roof Store",
+        legalName: "Storm Shield Paint Systems Inc.",
         url: BASE,
         telephone: "+19542109614",
         email: "theroofstore@gmail.com",
@@ -37,9 +47,9 @@ export default function About() {
           postalCode: "33328",
           addressCountry: "US",
         },
-        description: "The Roof Store is a Florida-licensed contractor and the exclusive seller of Fungal Shield, Smart Shield, and Roof Shield — proprietary roof coating systems built from products manufactured in-house by RoofProtect Products in Davie, FL. We sell these systems and install them with our own licensed crew.",
+        description: "Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. The company has operated under the same Florida license since 1994.",
         numberOfEmployees: { "@type": "QuantitativeValue", minValue: 10, maxValue: 50 },
-        areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
+        areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL", "Monroe County, FL"],
       },
     },
     {
@@ -59,47 +69,86 @@ export default function About() {
       uploadDate: "1999-06-01",
       embedUrl: "https://www.youtube.com/embed/IUcKj0nKNDc",
       contentUrl: "https://www.youtube.com/watch?v=IUcKj0nKNDc",
-      publisher: {
-        "@type": "Organization",
-        name: "The Roof Store",
-        url: BASE,
-      },
+      publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
     },
     {
       "@context": "https://schema.org",
       "@type": "VideoObject",
       name: "The Roof Store — Cement Tile Roof Repair, Ft. Lauderdale / Pompano Beach",
-      description: "Field footage of The Roof Store repairing a cement tile roof in Fort Lauderdale / Pompano Beach, Florida, showing our Don't Re-Roof, Waterproof-at-half-the-cost process in action.",
+      description: "Field footage of The Roof Store repairing a cement tile roof in Fort Lauderdale / Pompano Beach, Florida.",
       thumbnailUrl: "https://img.youtube.com/vi/_D-SYtBH-mQ/hqdefault.jpg",
       uploadDate: "2011-12-06",
       embedUrl: "https://www.youtube.com/embed/_D-SYtBH-mQ",
       contentUrl: "https://www.youtube.com/watch?v=_D-SYtBH-mQ",
-      publisher: {
-        "@type": "Organization",
-        name: "The Roof Store",
-        url: BASE,
-      },
+      publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
     },
   ];
+
   return (
     <div className="w-full">
       <SEO
         title="About The Roof Store — Florida Roof Coating Contractor Since 1994"
-        description="The Roof Store has protected Florida homes and businesses for 30+ years — pioneers of the liquid elastomeric roof coating system. FungalShield, SmartShield & RoofShield are built from products manufactured in-house by RoofProtect. Licensed & insured, A+ BBB rated since 1994. Davie, FL — 954-210-9614."
+        description="Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994. A+ BBB. TAS-106 certified. 954-210-9614."
         canonical="/about"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}
       />
+
+      {/* Hero */}
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <h1 className="text-5xl font-serif font-bold mb-6">About The Roof Store</h1>
-            <p className="text-xl text-white/80">30+ years of protecting Florida homes from the elements.</p>
+            <h1 className="text-5xl font-serif font-bold mb-5">About The Roof Store</h1>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994.
+            </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Our History — 30 years of growth */}
+      {/* Identity + Credentials */}
+      <section className="py-20 bg-background border-b">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+
+            <h2 className="text-4xl font-serif font-bold text-primary mb-8">The Manufacturer Is the Contractor.</h2>
+
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-lg mb-10">
+              <p>
+                Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. The company has operated under the same Florida license since 1994.
+              </p>
+              <p>
+                The Roof Store formulates, manufactures, and applies its own products, which means it controls every variable that determines how a coating system performs: chemistry, application protocol, layer thickness, cure conditions, and warranty terms. When a manufacturer's inspection determines that your roof qualifies for Roof Shield (RP3), the same organization that engineered the product installs it — and backs it with a maintenance-free Lifetime Warranty.
+              </p>
+              <p>
+                The Roof Store's{" "}
+                <Link href="/products/roofshield" className="text-accent hover:underline font-medium">Roof Shield (RP3)</Link>{" "}
+                system is the only liquid-applied roof coating in the world to hold Dade County{" "}
+                <Link href="/tas-106-certified-roof-coating" className="text-accent hover:underline font-medium">TAS-106 Uplift Certification</Link>{" "}
+                (2006, Miami-Dade Building Code Compliance Office). The company holds an A+ rating with the Better Business Bureau and is authorized to issue{" "}
+                <Link href="/roof-life-certification" className="text-accent hover:underline font-medium">Additional Roof Life Certifications</Link>{" "}
+                under Florida law — documentation that insurance companies are legally required to accept as evidence of a roof's remaining useful life.
+              </p>
+            </div>
+
+            {/* Credentials block */}
+            <div className="border rounded-xl overflow-hidden">
+              <div className="bg-muted px-5 py-3 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                Credentials
+              </div>
+              {credentials.map((row, i) => (
+                <div key={i} className={`grid grid-cols-2 px-5 py-3 text-sm ${i % 2 === 0 ? "bg-background" : "bg-muted/40"}`}>
+                  <span className="font-semibold text-foreground">{row.label}</span>
+                  <span className="text-muted-foreground">{row.value}</span>
+                </div>
+              ))}
+            </div>
+
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our History */}
       <section className="py-24 bg-background border-b">
         <div className="container px-4 max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
@@ -112,12 +161,7 @@ export default function About() {
             </p>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="max-w-5xl mx-auto mb-16"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-5xl mx-auto mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-black aspect-video mb-4">
@@ -129,9 +173,7 @@ export default function About() {
                     className="absolute inset-0 w-full h-full"
                   />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."
-                </p>
+                <p className="text-sm text-muted-foreground">Our original 1999 TV commercial — "Don't Re-Roof, Waterproof at 1/2 the Cost."</p>
               </div>
               <div>
                 <div className="relative w-full rounded-2xl overflow-hidden shadow-xl bg-black aspect-video mb-4">
@@ -143,18 +185,11 @@ export default function About() {
                     className="absolute inset-0 w-full h-full"
                   />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  2011 field footage — cement tile roof repair in Fort Lauderdale / Pompano Beach.
-                </p>
+                <p className="text-sm text-muted-foreground">2011 field footage — cement tile roof repair in Fort Lauderdale / Pompano Beach.</p>
               </div>
             </div>
             <div className="flex justify-center mt-6">
-              <a
-                href="https://www.youtube.com/@makira1111"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors shrink-0"
-              >
+              <a href="https://www.youtube.com/@makira1111" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent transition-colors">
                 <Youtube className="h-4 w-4" /> More videos on our YouTube channel
               </a>
             </div>
@@ -170,9 +205,7 @@ export default function About() {
                 transition={{ delay: i * 0.08 }}
                 className="bg-card rounded-2xl border border-border p-6 flex flex-col"
               >
-                <div className="bg-primary text-white rounded-lg px-3 py-1.5 text-sm font-bold w-fit mb-4">
-                  {m.year}
-                </div>
+                <div className="bg-primary text-white rounded-lg px-3 py-1.5 text-sm font-bold w-fit mb-4">{m.year}</div>
                 <p className="text-sm text-muted-foreground leading-relaxed">{m.event}</p>
               </motion.div>
             ))}
@@ -180,74 +213,55 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-background">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <h2 className="text-4xl font-serif font-bold text-primary mb-6">Our Story</h2>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Welcome to Theroofstore.net. For nearly 30 years, The Roof Store has been Florida's trusted source for <strong className="text-foreground">Fungal Shield, Smart Shield, and Roof Shield</strong> — three proprietary roof coating systems built from products formulated and produced in-house by RoofProtect Products in Davie, Florida. We're a licensed contractor and the exclusive seller of these systems, and we install them with our own licensed crew.
-              </p>
-              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                The Roof Store (Contracting &amp; Product Installation Division) is a licensed and insured Florida roofing contractor, A+ BBB Rated since 1994. Our team of certified professionals has protected thousands of Florida homes from hurricanes, tropical storms, and the relentless Florida sun. You can also buy the products direct online and apply them yourself, or use any licensed installer you choose.
-              </p>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                The Roof Store pioneered The Original Liquid Applied Rubber Roof Shield System, built using proprietary rubber roof coating products manufactured in-house by RoofProtect Products, and holds the world's only independent Dade County <strong className="text-foreground">TAS-106 Uplift Pull Test certification</strong> for a liquid roof coating — tested on real Spanish tile roofs. This means our Roof Shield system delivers provable tile attachment strength that withstands real hurricane-force winds and water damage without exception. Roof Shield, Smart Shield, and Fungal Shield use interchangeable elastomeric, polyurethane, or silicone base ingredients depending on your goals and price point — Roof Shield typically uses a proprietary premium silicone base. Our systems work equally well on <strong className="text-foreground">flat roofs, cement tile, shingle, barrel tile, S-tile, metal, gravel, and foam</strong> — any Florida roof type, including flat roofs that hold standing water.
-              </p>
-              <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
-                <Link href="/contact">Schedule Your Free Consultation</Link>
-              </Button>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { icon: Clock, label: "Years in Business", value: "30+" },
-                  { icon: Award, label: "BBB Rating", value: "A+" },
-                  { icon: Shield, label: "Homes Protected", value: "10,000+" },
-                  { icon: Users, label: "Satisfied Customers", value: "5,000+" },
-                ].map((stat, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                    className="bg-muted rounded-xl p-8 text-center"
-                  >
-                    <stat.icon className="h-10 w-10 text-accent mx-auto mb-4" />
-                    <div className="text-4xl font-serif font-bold text-primary mb-2">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
+      {/* Stats */}
+      <section className="py-20 bg-muted border-b">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { icon: Clock, label: "Years in Business", value: "30+" },
+              { icon: Award, label: "BBB Rating", value: "A+" },
+              { icon: Shield, label: "Homes Protected", value: "10,000+" },
+              { icon: Users, label: "Satisfied Customers", value: "5,000+" },
+            ].map((stat, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-card rounded-xl p-8 text-center border"
+              >
+                <stat.icon className="h-8 w-8 text-accent mx-auto mb-3" />
+                <div className="text-4xl font-serif font-bold text-primary mb-1">{stat.value}</div>
+                <div className="text-sm text-muted-foreground font-medium">{stat.label}</div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-muted">
-        <div className="container px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Why Choose Us</h2>
-            <p className="text-muted-foreground text-lg">We don't just sell products — we deliver peace of mind.</p>
+      {/* What this means for the customer */}
+      <section className="py-24 bg-background border-b">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">What the Manufacturer–Contractor Model Means for You</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: Shield,
-                title: "Guaranteed Performance",
-                desc: "Our products are guaranteed to perform under unusual and severe weather conditions, including hurricane force winds and torrential Florida rains.",
+                title: "One Organization — Full Accountability",
+                desc: "There is no distributor, no middleman, and no separate warranty administrator. The company that engineered the product is the company that installs it and backs it. When something needs attention, there is one phone number.",
               },
               {
                 icon: Star,
-                title: "Pioneer of the Industry",
-                desc: "We invented 'THE ORIGINAL LIQUID APPLIED RUBBER ROOF SHIELD SYSTEM' — and have been refining it for three decades.",
+                title: "The Original System — Since 1994",
+                desc: "The Roof Store invented The Original Liquid Applied Rubber Roof Shield System and has been refining it for three decades. The TAS-106 certification was earned on our own product, tested on our own installation, and has been current since 2006.",
               },
               {
                 icon: CheckCircle2,
-                title: "Save Up to 50%",
-                desc: "Our restoration and weatherproofing systems can save homeowners up to half the cost of a full roof replacement without compromising protection.",
+                title: "60–70% Less Than Roof Replacement",
+                desc: "A full tile roof replacement typically runs $10–$25 per square foot. The Roof Store's systems start at $0.50/sq ft (RP1) and $2.70/sq ft (RP3 full monolithic system) — installed, including labor and materials.",
               },
             ].map((item, i) => (
               <motion.div
@@ -262,33 +276,33 @@ export default function About() {
                   <item.icon className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-3 text-foreground">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Manufacturer + Contractor + Three Paths */}
+      {/* Four ways to work with us */}
       <section className="py-24 bg-background border-y">
         <div className="container px-4 max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
               <Factory className="h-3.5 w-3.5" />
-              Manufacturer · Contractor · Direct Seller
+              Manufacturer · Contractor · Direct Seller · Partner Network
             </div>
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Three Ways to Work With Us</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">Four Ways to Work With Us</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Because we make our own products and run our own installation crews, you're never boxed into a single option. Pick whichever path fits your project.
+              Because we make our own products and run our own installation crews, you're never boxed into a single option.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
                 Icon: Hammer,
                 step: "Option 1",
                 title: "Hire Us — Full Installation",
-                desc: "Our licensed crew handles everything end-to-end: roof inspection, surface prep, full product application, and warranty documentation. This is the path we guarantee.",
+                desc: "Our licensed crew handles everything end-to-end: manufacturer's inspection, surface prep, full product application, and warranty documentation. This is the path we guarantee with our Lifetime Warranty.",
                 cta: "Get a Free Quote",
                 href: "/contact",
                 dark: true,
@@ -311,13 +325,22 @@ export default function About() {
                 href: "/products",
                 dark: false,
               },
+              {
+                Icon: Network,
+                step: "Option 4",
+                title: "Work With an Authorized Partner",
+                desc: "The Roof Store's authorized distributor and partner network extends our reach across South Florida. Partners are not casual resellers — they have completed manufacturer training, met qualifying standards, and made a financial commitment to join the network. That means they carry real accountability for the work and the product. For homeowners, an authorized partner means faster scheduling and local coverage beyond our direct crew's capacity, without losing the product guarantee.",
+                cta: "View Partner Network",
+                href: "/partner-network",
+                dark: false,
+              },
             ].map(({ Icon, step, title, desc, cta, href, dark }, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
                 className={`rounded-2xl p-8 border-2 flex flex-col ${dark ? "bg-primary text-white border-primary" : "bg-card border-border"}`}
               >
                 <div className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full w-fit mb-5 ${dark ? "bg-accent text-white" : "bg-muted text-muted-foreground"}`}>{step}</div>
@@ -333,10 +356,11 @@ export default function About() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24 bg-primary text-white text-center">
         <div className="container px-4 max-w-3xl mx-auto">
-          <h2 className="text-4xl font-serif font-bold mb-6">Ready to Protect Your Home?</h2>
-          <p className="text-xl text-white/80 mb-10">Don't wait for the next hurricane season. Schedule a free consultation with our experts today.</p>
+          <h2 className="text-4xl font-serif font-bold mb-6">Schedule a Manufacturer's Inspection</h2>
+          <p className="text-xl text-white/80 mb-10">A licensed The Roof Store representative assesses your roof, confirms the right system, and provides a firm per-square-foot quote. No obligation.</p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
             <Link href="/contact">Call 954-210-9614</Link>
           </Button>

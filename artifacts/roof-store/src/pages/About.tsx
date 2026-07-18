@@ -111,16 +111,20 @@ export default function About() {
         <div className="container px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 
-            <h2 className="text-4xl font-serif font-bold text-primary mb-8">One Store. One Manufacturer. One Installer. One Organization.</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-8">The Manufacturer Is the Contractor.</h2>
 
             <div className="space-y-5 text-muted-foreground leading-relaxed text-lg mb-10">
               <p>
-                <strong className="text-foreground">The Roof Store</strong> is the retail storefront and network — the outlet through which the systems are sold and accessed.{" "}
-                <strong className="text-foreground">RoofProtect Products</strong> is the licensed in-house manufacturing operation that formulates and produces the coating materials.{" "}
-                <strong className="text-foreground">Storm Shield Paint Systems Inc.</strong> is the Florida-licensed contracting division that professionally installs those systems. All three operate under the same ownership from a single facility in Davie, Florida — continuously since 1994.
+                Storm Shield Paint Systems Inc. — trading as The Roof Store — has manufactured and installed its own roof coating systems from a single facility in Davie, Florida since 1994. That isn't a marketing line. It describes a specific legal and operational structure: a licensed Florida manufacturer that produces its own coating materials in-house, and a licensed Florida contracting entity that installs them. The same ownership. The same facility. The same accountability at every step.
               </p>
               <p>
-                Because the same organization manufactures the coating materials and installs them, it controls every variable that determines how a system performs: chemistry, application protocol, layer thickness, cure conditions, and warranty terms. When a manufacturer's inspection determines that your roof qualifies for Roof Shield (RP3), the same organization that engineered the product installs it — and backs it with a maintenance-free Lifetime Warranty.
+                That structure matters because most of the roofing industry does not work this way. A typical contractor buys materials from a separate manufacturer, applies them under a warranty administered by a third party, and carries limited liability if the system fails. With The Roof Store, there is no gap in that chain.{" "}
+                <strong className="text-foreground">RoofProtect Products</strong> manufactures the coating materials in-house.{" "}
+                <strong className="text-foreground">Storm Shield Paint Systems Inc.</strong> — our Florida-licensed contracting entity — installs them under the manufacturer's own tested protocol.{" "}
+                <strong className="text-foreground">The Roof Store</strong> is the retail network through which both are accessed. Three licensed entities. One ownership. No accountability gap.
+              </p>
+              <p>
+                Because the same organization that engineers the product installs it, it controls every variable that determines performance: chemistry, application protocol, layer thickness, cure conditions, and warranty terms. When a manufacturer's inspection qualifies your roof for Roof Shield (RP3), the organization that developed the system is the same one that shows up on your roof — and backs the work with a maintenance-free Lifetime Warranty.
               </p>
               <p>
                 The Roof Store's{" "}

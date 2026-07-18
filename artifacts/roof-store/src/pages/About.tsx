@@ -111,7 +111,7 @@ export default function About() {
         <div className="container px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 
-            <h2 className="text-4xl font-serif font-bold text-primary mb-8">The Manufacturer Is the Contractor.</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-8">South Florida's Original Roof Coating Manufacturer.</h2>
 
             <div className="space-y-5 text-muted-foreground leading-relaxed text-lg mb-10">
               <p>

@@ -534,6 +534,24 @@ export default function Tas106Certification() {
             Roof Shield (RP3) achieved TAS-106 certification by creating a fundamentally different roof assembly: instead of a surface coating applied over individual tiles, the Roof Shield system is applied in multiple layers that fill every gap, void, and overlapping joint between tiles — bonding the entire tile surface into a single continuous monolithic structure. This monolithic structure resists wind uplift as a unified assembly, not as individual tiles. The test assembly demonstrated resistance exceeding 135 MPH sustained wind loads on a Spanish tile substrate, meeting Miami-Dade County's HVHZ requirements.
           </AnswerBlock>
 
+          {/* Pull test video embed */}
+          <div className="my-6">
+            <div className="rounded-2xl overflow-hidden shadow-lg border aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/j33btx-TGXo"
+                title="TAS-106 Dade County Uplift Pull Test — Roof Shield (RP3)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1 bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">▶ VIDEO</span>
+              The independent Dade County TAS-106 Uplift Pull Test — watch the actual certification test being performed on the Roof Shield (RP3) system.{" "}
+              <Link href="/videos" className="text-accent hover:underline">See all videos →</Link>
+            </div>
+          </div>
+
           <h3 className="text-xl font-serif font-bold text-primary mb-4 mt-6">The Application Protocol That Makes Certification Possible</h3>
           <div className="space-y-4">
             {steps.map((step, i) => (
@@ -606,9 +624,27 @@ export default function Tas106Certification() {
           </GeoFact>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-4">What "5× Stronger" Means in a Hurricane</h3>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground leading-relaxed mb-5">
             Category 4 hurricanes produce sustained winds of 130–156 MPH. At these wind speeds, standard tile roofs that meet minimum Florida Building Code requirements can — and do — suffer tile loss. The Roof Shield monolithic system's 135+ MPH certified resistance means the system has been tested to maintain structural integrity at sustained wind speeds that exceed the lower bound of Category 4. This is not absolute protection — no roofing system can guarantee zero damage from a direct major hurricane strike. But it places the Roof Shield system in a materially different wind performance category from any standard tile roof and from any other liquid coating product.
           </p>
+
+          {/* Don Godshall real-world testimonial */}
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+            <div className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-3">Real-World Hurricane Proof — Customer Testimonial</div>
+            <div className="rounded-xl overflow-hidden shadow border aspect-video mb-3">
+              <iframe
+                src="https://www.youtube.com/embed/dYKcWoDVPns"
+                title="Don Godshall — Hurricane Wilma Survivor, Roof Shield Testimonial"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <blockquote className="italic text-sm text-foreground/80 border-l-4 border-primary pl-4 mb-1">
+              "During Hurricane Wilma my neighbors' tiles were hitting my house. The next morning after the storm passed we went outside to see what happened — our roof was still perfect."
+            </blockquote>
+            <div className="text-xs text-muted-foreground font-semibold mt-1">— Don Godshall · 5651 Thornbluff Ave., Davie FL</div>
+          </div>
         </motion.section>
 
         {/* Section 6 — Why No Others */}
@@ -716,6 +752,48 @@ export default function Tas106Certification() {
 
           <div className="bg-muted border-l-3 border-slate-400 rounded-r-lg px-4 py-3 text-sm text-muted-foreground italic mb-6">
             If a competitor claims TAS-106 certification for a liquid coating product and cannot provide a Miami-Dade County NOA number, the claim is not verified. The BCCO database is the authoritative source — any certified product must appear in it.
+          </div>
+
+          {/* PDF downloads */}
+          <div className="border border-border rounded-xl p-5">
+            <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">Documentation Downloads</div>
+            <div className="space-y-3">
+              {[
+                {
+                  href: "/docs/tas-106-uplift-test.pdf",
+                  icon: "📋",
+                  title: "TAS-106 Uplift Test — Official Test Document",
+                  sub: "The independent laboratory test report for the Roof Shield (RP3) TAS-106 certification",
+                },
+                {
+                  href: "/docs/roofshield-strength-data-sheet.pdf",
+                  icon: "📊",
+                  title: "Roof Shield Strength Data Sheet",
+                  sub: "Technical strength specifications and performance data for the RP3 system",
+                },
+                {
+                  href: "/docs/roofprotect-brochure.pdf",
+                  icon: "📄",
+                  title: "RoofProtect Product Brochure",
+                  sub: "Full product range overview — Fungal Shield (RP1), Smart Shield (RP2), Roof Shield (RP3)",
+                },
+              ].map((doc, i) => (
+                <a
+                  key={i}
+                  href={doc.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group"
+                >
+                  <span className="text-2xl leading-none mt-0.5">{doc.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">{doc.title}</div>
+                    <div className="text-xs text-muted-foreground mt-0.5">{doc.sub}</div>
+                  </div>
+                  <ExternalLink className="h-3.5 w-3.5 text-muted-foreground group-hover:text-accent mt-1 flex-shrink-0 transition-colors" />
+                </a>
+              ))}
+            </div>
           </div>
         </motion.section>
 

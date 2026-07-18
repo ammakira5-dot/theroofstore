@@ -100,7 +100,7 @@ export default function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h1 className="text-5xl font-serif font-bold mb-5">About The Roof Store</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994.
+              Manufacturing division RoofProtect Products and contracting division The Roof Store — two integrated operations, one ownership, one facility in Davie, Florida. Licensed since 1994.
             </p>
           </motion.div>
         </div>
@@ -111,11 +111,13 @@ export default function About() {
         <div className="container px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
 
-            <h2 className="text-4xl font-serif font-bold text-primary mb-8">The Manufacturer Is the Contractor.</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-8">Manufacturer. Contractor. One Organization.</h2>
 
             <div className="space-y-5 text-muted-foreground leading-relaxed text-lg mb-10">
               <p>
-                Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. The company has operated under the same Florida license since 1994.
+                Storm Shield Paint Systems Inc. operates two integrated divisions from its facility in Davie, Florida:{" "}
+                <strong className="text-foreground">RoofProtect Products</strong> — which formulates and manufactures the RP1, RP2, and RP3 coating systems — and{" "}
+                <strong className="text-foreground">The Roof Store</strong>, the licensed contracting division that sells and professionally installs those systems. Both divisions have operated under the same ownership and Florida license since 1994.
               </p>
               <p>
                 The Roof Store formulates, manufactures, and applies its own products, which means it controls every variable that determines how a coating system performs: chemistry, application protocol, layer thickness, cure conditions, and warranty terms. When a manufacturer's inspection determines that your roof qualifies for Roof Shield (RP3), the same organization that engineered the product installs it — and backs it with a maintenance-free Lifetime Warranty.

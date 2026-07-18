@@ -245,9 +245,14 @@ export default function PartnerNetwork() {
             {/* Warranty assurance bar */}
             <div className="mt-8 bg-primary/5 border border-primary/20 rounded-xl px-6 py-4 flex items-start gap-4">
               <ShieldCheck className="h-6 w-6 text-primary shrink-0 mt-0.5" />
-              <p className="text-sm text-foreground leading-relaxed">
-                <strong>Warranty assurance:</strong> Every authorized partner installs under Storm Shield's manufacturer warranty — the same warranty you receive when Storm Shield installs directly. Because they are legally bound to our materials and protocol, the warranty source does not change.
-              </p>
+              <div>
+                <p className="text-sm text-foreground leading-relaxed">
+                  <strong>Warranty assurance — professionally installed jobs:</strong> Every authorized partner installs under Storm Shield's manufacturer warranty — the same warranty you receive when Storm Shield installs directly. Because they are legally bound to our materials and protocol, the warranty source does not change.
+                </p>
+                <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
+                  <strong>Buy &amp; Owner-Applied:</strong> Product purchased for self-installation or third-party contractor application is subject to a limited warranty. Restrictions apply. Full manufacturer warranty terms are available upon request — call 954-210-9614 or contact us before purchase.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

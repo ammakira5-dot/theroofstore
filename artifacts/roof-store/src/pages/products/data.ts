@@ -84,6 +84,8 @@ export const fungalShield: ProductData = {
   sku: "RP1",
   mpn: "RP1",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
+  pdfUrl: "/docs/roofprotect-brochure.pdf",
+  pdfLabel: "RoofProtect Product Brochure (PDF)",
 };
 
 export const smartShield: ProductData = {
@@ -185,8 +187,8 @@ export const smartShield: ProductData = {
   sku: "RP2",
   mpn: "RP2",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
-  pdfUrl: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
-  pdfLabel: "Smart Shield Product Sheet (PDF)",
+  pdfUrl: "/docs/roofprotect-product-presentation.pdf",
+  pdfLabel: "RoofProtect Product Presentation (PDF)",
   galleryImages: [
     {
       src: `/api/storage/public-objects/smartshield/ss-tile-repair-before.png`,
@@ -347,8 +349,8 @@ export const roofShield: ProductData = {
   sku: "RP3",
   mpn: "RP3",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
-  pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
-  pdfLabel: "Roof Shield Product Sheet (PDF)",
+  pdfUrl: "/docs/roofshield-strength-data-sheet.pdf",
+  pdfLabel: "RoofShield Strength Data Sheet (PDF)",
   beforeAfterImages: [
     {
       label: "Preparation — We Retrofit a Monolithic Seamless System: Fill All Field Spaces, Ridge Caps & Open Valleys",

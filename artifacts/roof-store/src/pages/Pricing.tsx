@@ -162,6 +162,12 @@ export default function Pricing() {
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Per-square-foot rates by system, roof type, and pitch. All prices include labor &amp; materials. Exact quotes are finalized after a free onsite visit.
             </p>
+            <p className="mt-4 text-sm text-white/60">
+              Not sure which system is right for you?{" "}
+              <Link href="/roof-coating-florida" className="text-accent font-semibold hover:underline">
+                Read our complete Florida Roof Coating Guide →
+              </Link>
+            </p>
           </motion.div>
         </div>
       </section>

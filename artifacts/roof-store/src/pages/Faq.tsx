@@ -55,7 +55,8 @@ const faqs = [
   },
   {
     q: "How much does a roof coating cost in Florida?",
-    a: "Roof coating cost in Florida varies by system (FungalShield, SmartShield, or RoofShield), roof type (tile, flat deck, or metal), square footage, and pitch. As a general rule, a professional roof coating system runs a fraction of the cost of full roof replacement — often saving homeowners up to 50%. We provide a free on-site roof coating estimate with exact factory pricing for your property; see our Pricing page for guide rates by system and roof type, or call 954-210-9614 for a free quote.",
+    a: "Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). SmartShield (RP2) starts at $1.90/sq ft; RoofShield (RP3) starts at $2.70/sq ft. As a general rule, coating saves homeowners 60–70% vs. full roof replacement.",
+    link: { href: "/roof-coating-florida", label: "Complete Florida Roof Coating Cost Guide →" },
   },
   {
     q: "Can you paint a tile roof in South Florida?",

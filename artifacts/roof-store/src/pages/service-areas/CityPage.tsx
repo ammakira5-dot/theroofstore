@@ -240,9 +240,14 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                       <div className="text-xs text-muted-foreground mt-1">Hurricane-rated · TAS-106 certified</div>
                     </Link>
                   </div>
-                  <Link href="/roof-systems" className="inline-flex items-center gap-1 text-accent text-sm font-semibold mt-4 hover:underline">
-                    Compare all systems →
-                  </Link>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 mt-4">
+                    <Link href="/roof-systems" className="inline-flex items-center gap-1 text-accent text-sm font-semibold hover:underline">
+                      Compare all systems →
+                    </Link>
+                    <Link href="/roof-coating-florida" className="inline-flex items-center gap-1 text-accent text-sm font-semibold hover:underline">
+                      Florida Roof Coating Guide →
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
 

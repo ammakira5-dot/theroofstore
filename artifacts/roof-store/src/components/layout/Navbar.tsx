@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/roof-systems", label: "Roof Systems" },
+  { href: "/roof-coating-florida", label: "Roof Coating Guide" },
   { href: "/roof-services", label: "Services" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/projects", label: "Projects" },
@@ -14,7 +15,6 @@ const navLinks = [
 ];
 
 const moreLinks = [
-  { href: "/roof-coating-florida", label: "Roof Coating Guide" },
   { href: "/pricing", label: "Pricing" },
   { href: "/factory", label: "Factory" },
   { href: "/commercial-roofs", label: "Commercial Roofs" },
@@ -48,17 +48,17 @@ const productDropdown = {
       group: "Downloads",
       links: [
         {
-          href: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+          href: "/docs/roofprotect-product-presentation.pdf",
           label: "Smart Shield (RP2) PDF",
           icon: FileText,
-          desc: "Technical data sheet",
+          desc: "Product presentation",
           external: true,
         },
         {
-          href: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
+          href: "/docs/roofshield-strength-data-sheet.pdf",
           label: "Roof Shield (RP3) PDF",
           icon: FileText,
-          desc: "System technical data",
+          desc: "Strength data sheet",
           external: true,
         },
       ],

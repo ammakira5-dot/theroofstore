@@ -214,6 +214,8 @@ export default function Home() {
               <span>vs. $10–$25/sq ft to re-roof</span>
               <span className="text-white/30">·</span>
               <Link href="/pricing" className="text-accent font-semibold hover:underline">See pricing →</Link>
+              <span className="text-white/30">·</span>
+              <Link href="/roof-coating-florida" className="text-accent font-semibold hover:underline">Full guide →</Link>
             </div>
           </motion.div>
         </div>

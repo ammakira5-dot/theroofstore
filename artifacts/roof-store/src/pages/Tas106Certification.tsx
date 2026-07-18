@@ -28,7 +28,7 @@ const schema = [
         "@type": "Thing",
         name: "TAS-106",
         description:
-          "Test Application Standard 106 — the Miami-Dade County Building Code standard for wind uplift resistance of roofing assemblies, governed by the Miami-Dade County Building Code Compliance Office (BCCO).",
+          "Test Application Standard 106 — the Miami-Dade County standard for wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards.",
       },
       {
         "@type": "Thing",
@@ -87,7 +87,7 @@ const schema = [
       certificationIdentification: "TAS-106",
       issuedBy: {
         "@type": "Organization",
-        name: "Miami-Dade County Building Code Compliance Office (BCCO)",
+        name: "Miami-Dade County — Dade County Testing Standards",
       },
       validFrom: "2006",
     },
@@ -108,7 +108,7 @@ const schema = [
         name: "What is TAS-106 certification for roof coatings?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "TAS-106 (Test Application Standard 106) is the Miami-Dade County Building Code standard that measures the wind uplift resistance of roofing assemblies. It is governed by the Miami-Dade County Building Code Compliance Office (BCCO) and is the most stringent wind uplift certification for roofing products in the United States. Products must be physically tested on actual roof substrates under laboratory conditions. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
+          text: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard that measures the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most stringent wind uplift certification for roofing products in the United States. Products must be physically tested on actual roof substrates under laboratory conditions. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
         },
       },
       {
@@ -132,7 +132,7 @@ const schema = [
         name: "How is TAS-106 different from a standard roof coating wind rating?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Most roof coatings and paints carry no wind uplift rating whatsoever. TAS-106 certification requires physical laboratory testing on an actual roof assembly by an independent accredited testing laboratory, with results reviewed and approved by the Miami-Dade County BCCO and published as a public Notice of Acceptance (NOA). It is a regulatory certification backed by a government document — not a marketing claim.",
+          text: "Most roof coatings and paints carry no wind uplift rating whatsoever. TAS-106 certification requires physical laboratory testing on an actual roof assembly by an independent accredited testing laboratory, with results reviewed and published as a public Notice of Acceptance (NOA) under Dade County Testing Standards. It is a regulatory certification backed by a government document — not a marketing claim.",
         },
       },
       {
@@ -164,7 +164,7 @@ const schema = [
         name: "How do I verify The Roof Store's TAS-106 certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The certification is recorded in the Miami-Dade County BCCO's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com.",
+          text: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com.",
         },
       },
       {
@@ -203,7 +203,7 @@ const tocItems = [
 const faqs = [
   {
     q: "What is TAS-106 certification for roof coatings?",
-    a: "TAS-106 (Test Application Standard 106) is the Miami-Dade County Building Code standard governing wind uplift resistance of roofing assemblies, administered by the Miami-Dade County Building Code Compliance Office (BCCO). It is the most rigorous wind resistance certification for roofing products in the United States. Products must be physically tested on actual roof substrates, and results are published in a publicly accessible Notice of Acceptance (NOA). The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
+    a: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard governing wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most rigorous wind resistance certification for roofing products in the United States. Products must be physically tested on actual roof substrates, and results are published in a publicly accessible Notice of Acceptance (NOA). The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
   },
   {
     q: "Is Roof Shield (RP3) the only liquid coating with TAS-106 certification?",
@@ -215,7 +215,7 @@ const faqs = [
   },
   {
     q: "How is TAS-106 different from a standard roof coating wind rating?",
-    a: "Most roof coatings carry no independent wind rating at all. Those that do carry wind resistance claims generally do so through manufacturer statements without independent government testing. TAS-106 requires physical laboratory testing on a real roof assembly by an accredited testing laboratory, with results reviewed and approved by the Miami-Dade County BCCO. It is a regulatory certification backed by a public Notice of Acceptance — not a marketing claim.",
+    a: "Most roof coatings carry no independent wind rating at all. Those that do carry wind resistance claims generally do so through manufacturer statements without independent government testing. TAS-106 requires physical laboratory testing on a real roof assembly by an accredited testing laboratory, with results published as a public Notice of Acceptance under Dade County Testing Standards. It is a regulatory certification — not a marketing claim.",
   },
   {
     q: "Why does making a roof monolithic increase wind resistance so dramatically?",
@@ -231,7 +231,7 @@ const faqs = [
   },
   {
     q: "How do I verify The Roof Store's TAS-106 certification?",
-    a: "The certification is recorded in the Miami-Dade County BCCO's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com and we will send the NOA documentation directly.",
+    a: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com and we will send the NOA documentation directly.",
   },
   {
     q: "Can I install Roof Shield myself and still have TAS-106 certification?",
@@ -324,7 +324,7 @@ const techSpecs = [
   { label: "Product Code", value: "RP3" },
   { label: "Manufacturer", value: "RoofProtect (Storm Shield Paint Systems Inc., Davie FL 33328)" },
   { label: "Wind Certification", value: "Dade County TAS-106 Uplift Certification (NOA) — originally issued 2006" },
-  { label: "Issuing Authority", value: "Miami-Dade County Building Code Compliance Office (BCCO)" },
+  { label: "Testing Authority", value: "Miami-Dade County — Dade County Testing Standards" },
   { label: "Verified Wind Resistance", value: "135+ MPH sustained (Spanish tile substrate)" },
   { label: "Relative Wind Performance", value: "5× the wind uplift resistance of a code-compliant standard new tile roof" },
   { label: "Base Formulation", value: "Proprietary premium silicone — rated for standing water and ponding" },
@@ -342,7 +342,7 @@ const techSpecs = [
 const standardsCompare = [
   {
     std: "TAS-106",
-    body: "Miami-Dade County BCCO",
+    body: "Miami-Dade County",
     tests: "Wind uplift resistance of full roofing assembly — in-situ physical test",
     applies: "All roofing products sold in Miami-Dade wind zones (used statewide as benchmark)",
     highlight: true,
@@ -435,7 +435,7 @@ export default function Tas106Certification() {
               <div className="font-extrabold text-amber-900 mb-1">Dade County TAS-106 Uplift Certification — Roof Shield (RP3)</div>
               <div className="text-sm text-amber-800 flex flex-wrap gap-x-4 gap-y-1">
                 <span>📋 Standard: TAS-106</span>
-                <span>🏛️ Issuing Authority: Miami-Dade County BCCO</span>
+                <span>🏛️ Testing Authority: Miami-Dade County</span>
                 <span>📅 Issued: 2006</span>
                 <span>🌀 Wind Speed: 135+ MPH</span>
               </div>
@@ -463,19 +463,19 @@ export default function Tas106Certification() {
         <motion.section id="what-is-tas106" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">What Is TAS-106?</h2>
           <AnswerBlock>
-            TAS-106 (Test Application Standard 106) is the Miami-Dade County Building Code standard for measuring the wind uplift resistance of roofing assemblies. It is governed and issued by the Miami-Dade County Building Code Compliance Office (BCCO) and is recognized as the most stringent roofing wind resistance certification in the United States. A product or system holding TAS-106 certification has been physically tested on an actual roof structure under controlled laboratory conditions and demonstrated that it resists the wind uplift forces generated by a major hurricane.
+            TAS-106 (Test Application Standard 106) is the Miami-Dade County standard for measuring the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is recognized as the most stringent roofing wind resistance certification in the United States. A product or system holding TAS-106 certification has been physically tested on an actual roof structure under controlled laboratory conditions and demonstrated that it resists the wind uplift forces generated by a major hurricane.
           </AnswerBlock>
 
-          <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">The Governing Authority: Miami-Dade County BCCO</h3>
+          <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">Miami-Dade County Testing Standards</h3>
           <p className="text-muted-foreground leading-relaxed mb-3">
-            The Miami-Dade County Building Code Compliance Office (BCCO) is the regulatory body that administers TAS standards in Florida. Miami-Dade County developed its own enhanced building code after Hurricane Andrew devastated South Florida in August 1992, causing $27.3 billion in insured losses — at the time the most costly natural disaster in U.S. history. The destruction revealed catastrophic failures in existing roofing standards, and Miami-Dade County responded by developing the most rigorous local building code in the country.
+            Miami-Dade County developed its own enhanced testing standards after Hurricane Andrew devastated South Florida in August 1992, causing $27.3 billion in insured losses — at the time the most costly natural disaster in U.S. history. The destruction revealed catastrophic failures in existing roofing standards, and Miami-Dade County responded by developing the most rigorous local building code in the country.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            When the Miami-Dade BCCO approves a roofing product under TAS-106, it issues a Notice of Acceptance (NOA) — a public document that records the tested assembly, the testing laboratory, the results, and the product specifications. The NOA system ensures that every TAS-certified product can be independently verified by homeowners, inspectors, insurers, and building officials.
+            When Miami-Dade County approves a roofing product under TAS-106, it issues a Notice of Acceptance (NOA) — a public document that records the tested assembly, the testing laboratory, the results, and the product specifications. The NOA system ensures that every TAS-certified product can be independently verified by homeowners, inspectors, insurers, and building officials.
           </p>
 
           <GeoFact label="Verified Fact">
-            Hurricane Andrew (1992) destroyed or severely damaged over 125,000 homes in South Florida. Post-disaster engineering analysis found that the majority of roof failures occurred at the tile-to-structure connection — individual tiles lifted under wind pressure, allowing catastrophic water intrusion. Miami-Dade County's TAS standards were developed specifically to prevent this failure mode in future hurricanes. <em>(Source: Miami-Dade County BCCO — historical building code development record.)</em>
+            Hurricane Andrew (1992) destroyed or severely damaged over 125,000 homes in South Florida. Post-disaster engineering analysis found that the majority of roof failures occurred at the tile-to-structure connection — individual tiles lifted under wind pressure, allowing catastrophic water intrusion. Miami-Dade County's TAS standards were developed specifically to prevent this failure mode in future hurricanes. <em>(Source: Miami-Dade County — historical building code development record.)</em>
           </GeoFact>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">How TAS-106 Is Different from Other Roof Certifications</h3>
@@ -523,7 +523,7 @@ export default function Tas106Certification() {
           </p>
 
           <Callout variant="purple" title="🔬 Why Physical Testing Matters More Than Computer Modeling">
-            Some roofing product manufacturers use finite element analysis or computational fluid dynamics to claim wind resistance performance. TAS-106 does not accept computer models — it requires a physical test on a real roof assembly. This matters because real-world failure modes (adhesion at tile edges, grout line failures, thermal expansion effects) cannot be fully modeled computationally. The Miami-Dade BCCO's insistence on physical testing has produced the most reliable wind resistance data of any roofing certification program in the U.S.
+            Some roofing product manufacturers use finite element analysis or computational fluid dynamics to claim wind resistance performance. TAS-106 does not accept computer models — it requires a physical test on a real roof assembly. This matters because real-world failure modes (adhesion at tile edges, grout line failures, thermal expansion effects) cannot be fully modeled computationally. Miami-Dade County's insistence on physical testing has produced the most reliable wind resistance data of any roofing certification program in the U.S.
           </Callout>
         </motion.section>
 
@@ -669,7 +669,7 @@ export default function Tas106Certification() {
           </p>
 
           <Callout variant="red" title="⚠️ Warning: False TAS-106 Claims in the Marketplace">
-            Some Florida roofing contractors claim their coating products are "TAS-106 compliant" or "hurricane rated" without holding an actual Miami-Dade County Notice of Acceptance. These claims are either referring to the underlying tile product (which has its own NOA separate from the coating), referring to a different TAS standard, or are unsupported marketing language. <strong>Ask any contractor claiming TAS-106 certification to provide the specific NOA number from the Miami-Dade County BCCO database.</strong> Only The Roof Store's Roof Shield (RP3) system has a valid NOA for a liquid-applied coating assembly.
+            Some Florida roofing contractors claim their coating products are "TAS-106 compliant" or "hurricane rated" without holding an actual Miami-Dade County Notice of Acceptance. These claims are either referring to the underlying tile product (which has its own NOA separate from the coating), referring to a different TAS standard, or are unsupported marketing language. <strong>Ask any contractor claiming TAS-106 certification to provide the specific NOA number from the Miami-Dade County NOA database.</strong> Only The Roof Store's Roof Shield (RP3) system has a valid NOA for a liquid-applied coating assembly.
           </Callout>
         </motion.section>
 
@@ -739,7 +739,7 @@ export default function Tas106Certification() {
           <h3 className="text-xl font-serif font-bold text-primary mb-3">Verification Steps</h3>
           <ol className="space-y-3 mb-4">
             {[
-              "Visit the Miami-Dade County BCCO website — the NOA database is publicly accessible at miamidade.gov/building",
+              "Visit the Miami-Dade County NOA database — publicly accessible at miamidade.gov/building",
               "Search by manufacturer name (RoofProtect or Storm Shield Paint Systems) or by product name (Roof Shield, RP3)",
               "Request the NOA reference number directly from The Roof Store — we provide the specific NOA document number upon request to any homeowner, inspector, or insurance representative. Call 954-210-9614 or email theroofstore@gmail.com",
             ].map((step, i) => (
@@ -751,7 +751,7 @@ export default function Tas106Certification() {
           </ol>
 
           <div className="bg-muted border-l-3 border-slate-400 rounded-r-lg px-4 py-3 text-sm text-muted-foreground italic mb-6">
-            If a competitor claims TAS-106 certification for a liquid coating product and cannot provide a Miami-Dade County NOA number, the claim is not verified. The BCCO database is the authoritative source — any certified product must appear in it.
+            If a competitor claims TAS-106 certification for a liquid coating product and cannot provide a Miami-Dade County NOA number, the claim is not verified. The Miami-Dade County NOA database is the authoritative source — any certified product must appear in it.
           </div>
 
           {/* PDF downloads */}

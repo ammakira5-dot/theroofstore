@@ -316,7 +316,7 @@ export default function About() {
                 Icon: ShoppingCart,
                 step: "Option 2",
                 title: "Buy Direct — Apply Yourself",
-                desc: "Order RP1, RP2, or RP3 directly from roofprotectproducts.com and apply it yourself. Our team is available by phone at 954-210-9614 to guide you through the application at no charge.",
+                desc: "Order RP1, RP2, or RP3 directly from roofprotectproducts.com and apply it yourself. Our team is available by phone at 954-210-9614 to guide you through the application at no charge. Product warranty limitations may apply for self-applied installations — contact us for full warranty terms before purchase.",
                 cta: "Buy Online",
                 href: "/shop",
                 dark: false,

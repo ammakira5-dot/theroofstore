@@ -501,7 +501,7 @@ export default function Products() {
                 Icon: ShoppingCart,
                 step: "Option 2",
                 title: "Buy Direct — Apply Yourself",
-                desc: "Order RP1, RP2, or RP3 from our online store and apply it yourself. Call us at 954-210-9614 — our team walks you through the process at no extra charge.",
+                desc: "Order RP1, RP2, or RP3 from our online store and apply it yourself. Call us at 954-210-9614 — our team walks you through the process at no extra charge. Product warranty limitations may apply for self-applied installations — contact us for full warranty terms before purchase.",
                 cta: "Buy Online",
                 href: "/shop",
                 dark: false,

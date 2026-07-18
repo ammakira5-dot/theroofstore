@@ -40,6 +40,7 @@ import TileRoofPainting from "@/pages/TileRoofPainting";
 import RoofCoatingLifespan from "@/pages/RoofCoatingLifespan";
 import DiyVsPro from "@/pages/DiyVsPro";
 import HurricaneRoofPrep from "@/pages/HurricaneRoofPrep";
+import RoofCoatingFlorida from "@/pages/RoofCoatingFlorida";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
 import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
@@ -148,7 +149,7 @@ function Router() {
       <Route path="/roof-painting-florida" component={() => <RedirectTo to="/tile-roof-painting" />} />
       <Route path="/roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-coating-broward-county" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/roof-coating-florida" component={() => <RedirectTo to="/roof-services" />} />
+      <Route path="/roof-coating-florida" component={RoofCoatingFlorida} />
       <Route path="/elastomeric-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/liquid-rubber-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-waterproofing" component={() => <RedirectTo to="/roof-services" />} />

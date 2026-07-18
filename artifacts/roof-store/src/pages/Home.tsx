@@ -208,9 +208,36 @@ export default function Home() {
                 <Link href="/roof-systems">Explore Our Systems</Link>
               </Button>
             </div>
+            <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/70">
+              <span className="font-semibold text-white">Roof coating from $0.50/sq ft</span>
+              <span className="text-white/30">·</span>
+              <span>vs. $10–$25/sq ft to re-roof</span>
+              <span className="text-white/30">·</span>
+              <Link href="/pricing" className="text-accent font-semibold hover:underline">See pricing →</Link>
+            </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Stats Bar */}
+      <div className="bg-white border-b border-border">
+        <div className="container px-4">
+          <div className="flex flex-wrap items-stretch justify-center divide-x divide-border">
+            {[
+              { val: "30+", lbl: "Years Licensed in FL" },
+              { val: "A+", lbl: "BBB Accredited" },
+              { val: "TAS-106", lbl: "Hurricane Certified" },
+              { val: "3,000+", lbl: "Color Options" },
+              { val: "111+", lbl: "Cities Served" },
+            ].map((stat, i) => (
+              <div key={i} className="flex flex-col items-center px-6 py-4 text-center min-w-[100px]">
+                <div className="text-xl font-bold text-primary leading-tight">{stat.val}</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wide mt-0.5 whitespace-nowrap">{stat.lbl}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Value Prop Banner */}
       <section className="bg-primary text-white py-12">

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ExternalLink, MapPin, Phone, ShieldCheck, ArrowRight } from "lucide-react";
+import { ExternalLink, MapPin, Phone, ShieldCheck, ArrowRight, BadgeCheck, DollarSign, FileText, Scale } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
 const BASE = "https://www.theroofstore.net";
@@ -153,34 +153,102 @@ export default function PartnerNetwork() {
               Authorized Distributor & Licensed Installers Network
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl">
-              The Roof Store Waterproofing Products maintains a select network of authorized distributor-installers
-              throughout South Florida — each factory-trained in our proprietary coating systems, licensed to sell
-              and install them, and serving a defined territory.
+              Storm Shield Paint Systems Inc. installs directly throughout South Florida. Our authorized partner network
+              exists to expand scheduling availability — every partner is factory-trained, legally authorized, and
+              covered by the same manufacturer warranty as Storm Shield.
             </p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold px-7 py-3.5 rounded-lg transition-colors"
+              >
+                Schedule with Storm Shield Directly
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a
+                href="tel:9542109614"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-7 py-3.5 rounded-lg transition-colors border border-white/20"
+              >
+                <Phone className="h-4 w-4" />
+                954-210-9614
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* What authorized means */}
-      <section className="py-12 bg-muted/50 border-b border-border">
+      {/* We install directly — call us first */}
+      <section className="py-10 bg-accent/10 border-b border-accent/20">
         <div className="container px-4 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center"
-          >
-            {[
-              { label: "Factory Trained", desc: "All partners complete full on-site training at our Davie, FL facility before operating." },
-              { label: "System Certified", desc: "Partners are certified specifically in our Fungal Shield, Smart Shield, and Roof Shield systems." },
-              { label: "Backed by The Roof Store", desc: "Every partner carries the backing of our 30+ year reputation, Florida contractor licensing, and product warranties." },
-            ].map((item, i) => (
-              <div key={i} className="bg-background rounded-xl p-6">
-                <ShieldCheck className="h-8 w-8 text-accent mx-auto mb-3" />
-                <div className="font-bold text-foreground mb-2">{item.label}</div>
-                <div className="text-muted-foreground text-sm leading-relaxed">{item.desc}</div>
-              </div>
-            ))}
+          <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col md:flex-row md:items-center gap-6">
+            <div className="flex-1">
+              <div className="text-xs font-bold text-accent uppercase tracking-widest mb-2">Call Us First</div>
+              <h2 className="text-2xl font-serif font-bold text-primary mb-2">Storm Shield Paint Systems Inc. Installs Directly.</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                You are never required to go through a partner. Storm Shield Paint Systems Inc. — the licensed Florida manufacturer and contractor behind The Roof Store — performs direct installations throughout Broward, Miami-Dade, Palm Beach, and Monroe counties. Call us first to check availability. If our schedule cannot meet your timeline, our authorized partner network can get you on the calendar sooner — with the same product, the same protocol, and the same warranty.
+              </p>
+            </div>
+            <div className="shrink-0 flex flex-col gap-3">
+              <a href="tel:9542109614" className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent/90 text-white font-bold px-6 py-3 rounded-lg transition-colors">
+                <Phone className="h-4 w-4" />
+                Call 954-210-9614
+              </a>
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-primary/10 hover:bg-primary/20 text-primary font-bold px-6 py-3 rounded-lg transition-colors border border-primary/20">
+                Free Inspection Request
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why partners exist */}
+      <section className="py-14 bg-muted/40 border-b border-border">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-2xl font-serif font-bold text-primary mb-3">Why an Authorized Partner Network Exists</h2>
+            <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl">
+              South Florida's demand for our coating systems exceeds any single crew's scheduling capacity. Rather than turn homeowners away, Storm Shield established a legally authorized partner network — contractors who have met strict qualification standards and are legally bound to install our systems using the same materials, the same protocol, and the same quality controls as Storm Shield directly.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {[
+                {
+                  icon: BadgeCheck,
+                  title: "Specialized Manufacturer Product Training",
+                  desc: "Every authorized partner completes hands-on factory training at our Davie, FL facility. They are certified in our Fungal Shield, Smart Shield, and Roof Shield systems before installing a single job.",
+                },
+                {
+                  icon: DollarSign,
+                  title: "Hard Money Licensing & Product Investment",
+                  desc: "Partners must meet real financial qualifying thresholds — licensing fees, product inventory investment, and territorial commitment. They have skin in the game. This is not a loose referral arrangement.",
+                },
+                {
+                  icon: FileText,
+                  title: "Territorial Vetting & Business Review",
+                  desc: "Each partner territory is reviewed for market fit, licensing standing, and business history before authorization is granted. Territories are exclusive — only one authorized partner per defined area.",
+                },
+                {
+                  icon: Scale,
+                  title: "Legal Authorization Agreement with Storm Shield",
+                  desc: "Every partner operates under a formal legal agreement with Storm Shield Paint Systems Inc. They are contractually bound to our installation standards and authorized to issue the same manufacturer warranty as Storm Shield directly.",
+                },
+              ].map((item, i) => (
+                <div key={i} className="bg-background rounded-xl p-6 border border-border flex gap-4">
+                  <item.icon className="h-6 w-6 text-accent shrink-0 mt-0.5" />
+                  <div>
+                    <div className="font-bold text-foreground mb-1">{item.title}</div>
+                    <div className="text-muted-foreground text-sm leading-relaxed">{item.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Warranty assurance bar */}
+            <div className="mt-8 bg-primary/5 border border-primary/20 rounded-xl px-6 py-4 flex items-start gap-4">
+              <ShieldCheck className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+              <p className="text-sm text-foreground leading-relaxed">
+                <strong>Warranty assurance:</strong> Every authorized partner installs under Storm Shield's manufacturer warranty — the same warranty you receive when Storm Shield installs directly. Because they are legally bound to our materials and protocol, the warranty source does not change.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -342,6 +342,13 @@ export default function RoofCoatingFlorida() {
             </table>
           </div>
           <p className="text-xs text-muted-foreground italic mt-2">* Prices shown are for coating application only and may not include preparation work such as pressure cleaning, fungal treatment, or tile repairs required before application.</p>
+
+          <Callout variant="blue" title="💡 The 20-Cent Difference — Why Smart Shield (RP2) Is Actually Better Value Than Roof Paint">
+            At roughly $0.20 more per square foot, Smart Shield costs only slightly more than standard roof paint — but the comparison ends there. Here's what that extra $0.20 actually buys:<br /><br />
+            <strong>Thickness.</strong> Smart Shield applies at approximately <strong>10 dry mils</strong> per coat. Standard roof paint delivers only <strong>4–5 mils per coat</strong> — meaning you need two to three paint coats just to approach the same film thickness, with correspondingly more material cost. By the time a painter has applied enough product to come close to roofing-grade coverage, the price difference has reversed.<br /><br />
+            <strong>Flexibility.</strong> Roof paint is rigid. Florida tile roofs expand and contract with every temperature cycle. Smart Shield's elastomeric rubber formula moves with the roof: it stretches up to <strong>500% elongation</strong> under stress and returns to its original dimensions — a property standard roof paints simply cannot match. A rigid paint film cracks at the joints and valleys where movement is greatest; an elastomeric membrane bridges those movements without failing.<br /><br />
+            <strong>The real comparison isn't RP2 vs. paint. It's one coat of Smart Shield vs. two or three coats of paint — and the coating wins on film thickness, lifespan, flexibility, and total installed cost.</strong>
+          </Callout>
         </motion.section>
 
         {/* Section 2 — Why Florida */}

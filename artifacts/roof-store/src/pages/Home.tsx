@@ -299,7 +299,13 @@ export default function Home() {
         <div className="container px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-4xl font-serif font-bold text-primary mb-4">Roof Coating Services in Broward, Miami-Dade &amp; Palm Beach County</h2>
-            <p className="text-muted-foreground text-lg">We provide comprehensive restoration and weatherproofing systems that save you money while delivering superior protection across South Florida.</p>
+            <p className="text-muted-foreground text-lg mb-6">We provide comprehensive restoration and weatherproofing systems that save you money while delivering superior protection across South Florida.</p>
+            <ul className="text-sm text-muted-foreground text-left max-w-xl mx-auto space-y-2">
+              <li><span className="font-semibold text-foreground">Broward County</span> — Roof coating and tile restoration in Fort Lauderdale, Coral Springs, Pembroke Pines, Hollywood, Weston, Davie, Pompano Beach, Miramar, Plantation, and 30+ cities</li>
+              <li><span className="font-semibold text-foreground">Miami-Dade County</span> — Roof coating and waterproofing in Miami, Hialeah, Coral Gables, Doral, Homestead, Kendall, and 30+ cities</li>
+              <li><span className="font-semibold text-foreground">Palm Beach County</span> — Roof painting and elastomeric coating in West Palm Beach, Boca Raton, Delray Beach, Boynton Beach, Lake Worth, and 20+ cities</li>
+              <li><span className="font-semibold text-foreground">Monroe County</span> — Roof coating and hurricane protection in Key West and the Florida Keys</li>
+            </ul>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

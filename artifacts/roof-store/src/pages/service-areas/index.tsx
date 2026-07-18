@@ -13,6 +13,13 @@ const counties = countiesData.map((c) => ({
   cities: c.cities.map((city) => ({ name: city.name, slug: city.slug })),
 }));
 
+const countyKeywords: Record<string, string> = {
+  "Broward County": "Roof coating and tile restoration in Fort Lauderdale, Coral Springs, Pembroke Pines, Hollywood, Weston, Davie, Pompano Beach, Miramar, Plantation, and 30+ cities",
+  "Miami-Dade County": "Roof coating and waterproofing in Miami, Hialeah, Coral Gables, Doral, Homestead, Kendall, and 30+ cities",
+  "Palm Beach County": "Roof painting and elastomeric coating in West Palm Beach, Boca Raton, Delray Beach, Boynton Beach, Lake Worth, and 20+ cities",
+  "Monroe County": "Roof coating and hurricane protection in Key West and the Florida Keys",
+};
+
 export default function ServiceAreas() {
   return (
     <div className="w-full">
@@ -54,12 +61,18 @@ export default function ServiceAreas() {
                   />
                 </div>
                 <div className="p-8">
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-4">
                   <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <h2 className="text-2xl font-serif font-bold text-primary">{county.name}</h2>
                 </div>
+
+                {countyKeywords[county.name] && (
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {countyKeywords[county.name]}
+                  </p>
+                )}
 
                 <Link
                   href={`/service-areas/${county.slug}`}

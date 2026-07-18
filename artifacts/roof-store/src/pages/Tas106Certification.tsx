@@ -89,7 +89,7 @@ const schema = [
         "@type": "Organization",
         name: "Miami-Dade County Building Code Compliance Office (BCCO)",
       },
-      validFrom: "2023",
+      validFrom: "2006",
     },
     aggregateRating: {
       "@type": "AggregateRating",
@@ -116,7 +116,7 @@ const schema = [
         name: "Is Roof Shield (RP3) the only liquid coating with TAS-106 certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold Dade County TAS-106 Uplift Certification. The certification was most recently updated in 2023. No other liquid coating, elastomeric coating, or roof paint product holds TAS-106 certification, because standard coating products are not designed to bond roof tiles into a monolithic structure — the physical requirement for passing the TAS-106 uplift test.",
+          text: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold Dade County TAS-106 Uplift Certification. The certification was originally issued in 2006. No other liquid coating, elastomeric coating, or roof paint product holds TAS-106 certification, because standard coating products are not designed to bond roof tiles into a monolithic structure — the physical requirement for passing the TAS-106 uplift test.",
         },
       },
       {
@@ -207,7 +207,7 @@ const faqs = [
   },
   {
     q: "Is Roof Shield (RP3) the only liquid coating with TAS-106 certification?",
-    a: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold a current Dade County TAS-106 Uplift Certification (NOA), last updated in 2023. No other coating product — elastomeric, polyurethane, acrylic, or silicone — holds this certification, because no other coating is formulated and applied to create a full monolithic bond between roof tiles.",
+    a: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold a Dade County TAS-106 Uplift Certification (NOA), originally issued in 2006. No other coating product — elastomeric, polyurethane, acrylic, or silicone — holds this certification, because no other coating is formulated and applied to create a full monolithic bond between roof tiles.",
   },
   {
     q: "What wind speed does TAS-106 certified Roof Shield resist?",
@@ -323,7 +323,7 @@ const techSpecs = [
   { label: "Product Name", value: "Roof Shield — The Original Liquid Applied Rubber Roof Shield System" },
   { label: "Product Code", value: "RP3" },
   { label: "Manufacturer", value: "RoofProtect (Storm Shield Paint Systems Inc., Davie FL 33328)" },
-  { label: "Wind Certification", value: "Dade County TAS-106 Uplift Certification (NOA) — 2023" },
+  { label: "Wind Certification", value: "Dade County TAS-106 Uplift Certification (NOA) — originally issued 2006" },
   { label: "Issuing Authority", value: "Miami-Dade County Building Code Compliance Office (BCCO)" },
   { label: "Verified Wind Resistance", value: "135+ MPH sustained (Spanish tile substrate)" },
   { label: "Relative Wind Performance", value: "5× the wind uplift resistance of a code-compliant standard new tile roof" },
@@ -394,7 +394,7 @@ export default function Tas106Certification() {
           </nav>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/50 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-300 mb-4">
-              🏅 Dade County TAS-106 Uplift Certified · 2023
+              🏅 Dade County TAS-106 Uplift Certified · Since 2006
             </div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight text-white">
               TAS-106 Dade County Uplift Certification —<br className="hidden md:block" /> The Only Certified Liquid Roof Coating in the World
@@ -412,7 +412,7 @@ export default function Tas106Certification() {
               { val: "TAS-106", lbl: "Dade County Certified" },
               { val: "135+ MPH", lbl: "Verified wind resistance" },
               { val: "5×", lbl: "Stronger than new tile roof" },
-              { val: "2023", lbl: "Certification updated" },
+              { val: "2006", lbl: "Certification issued" },
               { val: "Worldwide", lbl: "Only liquid coating certified" },
             ].map((s, i) => (
               <div key={i} className="flex flex-col items-center px-4 py-4 text-center">
@@ -436,7 +436,7 @@ export default function Tas106Certification() {
               <div className="text-sm text-amber-800 flex flex-wrap gap-x-4 gap-y-1">
                 <span>📋 Standard: TAS-106</span>
                 <span>🏛️ Issuing Authority: Miami-Dade County BCCO</span>
-                <span>📅 Last Updated: 2023</span>
+                <span>📅 Issued: 2006</span>
                 <span>🌀 Wind Speed: 135+ MPH</span>
               </div>
             </div>

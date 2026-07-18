@@ -131,7 +131,7 @@ export default function About() {
                 <Link href="/products/roofshield" className="text-accent hover:underline font-medium">Roof Shield (RP3)</Link>{" "}
                 system is the only liquid-applied roof coating in the world to hold Dade County{" "}
                 <Link href="/tas-106-certified-roof-coating" className="text-accent hover:underline font-medium">TAS-106 Uplift Certification</Link>{" "}
-                (2006). The company holds an A+ rating with the Better Business Bureau.{" "}
+                (2006) — Miami-Dade County tested in compliance with Miami-Dade County Testing Standards. The company holds an A+ rating with the Better Business Bureau.{" "}
                 <Link href="/roof-life-certification" className="text-accent hover:underline font-medium font-semibold">See the Additional Roof Life Certification you may qualify for →</Link>
               </p>
             </div>

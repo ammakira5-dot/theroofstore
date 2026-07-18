@@ -264,7 +264,7 @@ export default function RoofCoatingFlorida() {
               { val: "60–70%", lbl: "Savings vs. Replacement" },
               { val: "10–25 yrs", lbl: "System Lifespan" },
               { val: "135+ MPH", lbl: "Wind-Rated (RP3)" },
-              { val: "Since 1994", lbl: "Licensed in Florida" },
+              { val: "Est. 1994", lbl: "Established in Florida" },
             ].map((s, i) => (
               <div key={i} className="flex flex-col items-center px-8 py-4 text-center min-w-[110px]">
                 <div className="text-xl font-bold text-primary leading-tight">{s.val}</div>

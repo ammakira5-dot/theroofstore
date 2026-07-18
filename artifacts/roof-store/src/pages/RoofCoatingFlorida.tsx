@@ -330,7 +330,7 @@ export default function RoofCoatingFlorida() {
                   ["Manufacturer Warranty", "✓ Yes (up to Lifetime on RP3)", "✗ No structural warranty"],
                   ["Wind Uplift Rating", "✓ TAS-106 on RP3 (135+ MPH)", "✗ None"],
                   ["Insurance Cert Eligible", "✓ Yes — ARLC available", "✗ Generally no"],
-                  ["Typical Cost (installed)", "$0.50–$3.50/sq ft", "$0.30–$0.80/sq ft"],
+                  ["Typical Cost (installed)*", "From $1.90/sq ft (RP2) · up to $3.90/sq ft (RP3)", "From $1.70/sq ft"],
                 ].map(([char, coating, paint], i) => (
                   <tr key={i} className="hover:bg-muted/30 transition-colors">
                     <td className="px-4 py-3 font-medium text-foreground">{char}</td>
@@ -341,6 +341,7 @@ export default function RoofCoatingFlorida() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-muted-foreground italic mt-2">* Prices shown are for coating application only and may not include preparation work such as pressure cleaning, fungal treatment, or tile repairs required before application.</p>
         </motion.section>
 
         {/* Section 2 — Why Florida */}

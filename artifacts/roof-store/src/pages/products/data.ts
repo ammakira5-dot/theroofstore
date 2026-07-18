@@ -348,6 +348,8 @@ export const roofShield: ProductData = {
   shopAvailable: true,
   sku: "RP3",
   mpn: "RP3",
+  certificationUrl: "/tas-106-certified-roof-coating",
+  certificationLabel: "TAS-106 Dade County Uplift Certification — Full Reference Page",
   productImage: `${BASE}/images/products/smartshield-pail.png`,
   pdfUrl: "/docs/roofshield-strength-data-sheet.pdf",
   pdfLabel: "RoofShield Strength Data Sheet (PDF)",

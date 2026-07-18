@@ -518,9 +518,15 @@ export default function RoofCoatingFlorida() {
             <p>The Roof Store's Roof Shield system achieves this by filling every gap, void, and overlapping joint between tiles with multiple product layers — binding the entire tile surface into a monolithic structure. A standard Spanish tile roof held down only by its own weight can lose individual tiles at sustained winds of 80–100 MPH. The Roof Shield monolithic system resists uplift at more than five times that force.</p>
             <p><strong className="text-foreground">Why No Other Coating Has TAS-106:</strong> TAS-106 testing costs tens of thousands of dollars to conduct and requires the product to be applied by the manufacturer's own licensed applicators. Generic elastomeric paints cannot bond tiles into a monolithic surface and therefore cannot pass the uplift test. The Roof Store invested in this certification because the company is both the product manufacturer and the contractor — giving full control over formulation, application protocol, and test compliance.</p>
           </div>
-          <Link href="/products/roofshield" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm mt-4">
-            Learn more about Roof Shield (RP3) <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
+          <div className="flex flex-wrap gap-3 mt-4">
+            <Link href="/products/roofshield" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">
+              Learn more about Roof Shield (RP3) <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+            <span className="text-muted-foreground text-sm">·</span>
+            <Link href="/tas-106-certified-roof-coating" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">
+              Full TAS-106 Certification Reference <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
         </motion.section>
 
         {/* Section 8 — Cost */}

@@ -41,6 +41,7 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/the-original-roof-store-florida", changefreq: "yearly", priority: "0.6" },
   { loc: "/manufacturers-report", changefreq: "yearly", priority: "0.5" },
   { loc: "/roof-coating-florida", changefreq: "monthly", priority: "0.9" },
+  { loc: "/tas-106-certified-roof-coating", changefreq: "monthly", priority: "0.9" },
   { loc: "/roof-coating-lifespan-florida", changefreq: "monthly", priority: "0.8" },
   { loc: "/diy-vs-pro-roof-coating", changefreq: "monthly", priority: "0.7" },
   { loc: "/hurricane-roof-prep", changefreq: "monthly", priority: "0.8" },

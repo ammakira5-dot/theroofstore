@@ -33,6 +33,8 @@ export interface ProductData {
   productImage?: string;
   pdfUrl?: string;
   pdfLabel?: string;
+  certificationUrl?: string;
+  certificationLabel?: string;
   beforeAfterImages?: { before: string; beforeAlt: string; after: string; afterAlt: string; label: string }[];
   galleryImages?: { src: string; alt: string; caption: string }[];
 }
@@ -274,6 +276,17 @@ export function ProductDetail({ product }: { product: ProductData }) {
                     </div>
                   ))}
                 </div>
+                {product.certificationUrl && (
+                  <Link href={product.certificationUrl} className="mt-4 flex items-start gap-3 bg-amber-50 border border-amber-300 rounded-xl p-4 hover:bg-amber-100 transition-colors group">
+                    <div className="text-2xl leading-none mt-0.5">🏅</div>
+                    <div>
+                      <div className="font-bold text-amber-900 text-sm">{product.certificationLabel ?? "View Full Certification Reference"}</div>
+                      <div className="text-xs text-amber-700 mt-0.5 flex items-center gap-1 group-hover:underline">
+                        {product.certificationUrl} <ArrowRight className="h-3 w-3" />
+                      </div>
+                    </div>
+                  </Link>
+                )}
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

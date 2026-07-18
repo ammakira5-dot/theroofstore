@@ -41,6 +41,7 @@ import RoofCoatingLifespan from "@/pages/RoofCoatingLifespan";
 import DiyVsPro from "@/pages/DiyVsPro";
 import HurricaneRoofPrep from "@/pages/HurricaneRoofPrep";
 import RoofCoatingFlorida from "@/pages/RoofCoatingFlorida";
+import Tas106Certification from "@/pages/Tas106Certification";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
 import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
@@ -150,6 +151,7 @@ function Router() {
       <Route path="/roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-coating-broward-county" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-coating-florida" component={RoofCoatingFlorida} />
+      <Route path="/tas-106-certified-roof-coating" component={Tas106Certification} />
       <Route path="/elastomeric-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/liquid-rubber-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-waterproofing" component={() => <RedirectTo to="/roof-services" />} />

@@ -56,7 +56,7 @@ const schema = [
         name: "How much does roof coating cost in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Roof coating in Florida costs between $0.50 and $3.50 per square foot installed, depending on the system and roof type. Anti-fungal coating (RP1) starts at $0.50/sq ft. Waterproof color coating (RP2) starts at $1.90/sq ft. The full monolithic hurricane protection system (RP3 Roof Shield) starts at $2.70/sq ft. All prices at The Roof Store include labor and materials. Full replacement in Florida typically runs $10–$25 per square foot, making coating 60–70% less expensive.",
+          text: "Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft. The full monolithic hurricane protection system (RP3 Roof Shield) starts at $2.70/sq ft. All prices at The Roof Store include labor and materials. Full replacement in Florida typically runs $10–$25 per square foot, making coating 60–70% less expensive.",
         },
       },
       {
@@ -161,7 +161,7 @@ const faqs = [
   },
   {
     q: "How much does roof coating cost in Florida?",
-    a: "Roof coating costs between $0.50 and $3.50 per square foot installed at The Roof Store. Anti-fungal treatment (RP1) starts at $0.50/sq ft; waterproof color coating (RP2) starts at $1.90/sq ft; the full hurricane-rated monolithic system (RP3 Roof Shield) starts at $2.70/sq ft. All prices include labor and materials.",
+    a: "Professional roof coating costs between $1.90 and $3.50 per square foot installed at The Roof Store, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft; the full hurricane-rated monolithic system (RP3 Roof Shield) starts at $2.70/sq ft. All prices include labor and materials.",
     link: { href: "/pricing", label: "View the full price menu →" },
   },
   {
@@ -527,7 +527,7 @@ export default function RoofCoatingFlorida() {
         <motion.section id="cost" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Roof Coating Cost in Florida</h2>
           <AnswerBlock>
-            Professional roof coating in Florida costs between $0.50 and $3.50 per square foot installed, including labor and materials. At The Roof Store — as the direct manufacturer and contractor — pricing starts at $0.50/sq ft for anti-fungal treatment (RP1), $1.90/sq ft for waterproof color coating (RP2), and $2.70/sq ft for the full monolithic hurricane protection system (RP3 Roof Shield). Full tile roof replacement typically costs $10–$25/sq ft, making coating 60–70% less expensive.
+            Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). At The Roof Store — as the direct manufacturer and contractor — pricing starts at $1.90/sq ft for waterproof color coating (RP2) and $2.70/sq ft for the full monolithic hurricane protection system (RP3 Roof Shield). Full tile roof replacement typically costs $10–$25/sq ft, making coating 60–70% less expensive.
           </AnswerBlock>
           <h3 className="text-xl font-serif font-bold text-primary mb-3">The Roof Store Factory Price Menu</h3>
           <p className="text-sm text-muted-foreground mb-4">Because The Roof Store manufactures its own products and employs its own crew, there is no distributor markup, contractor markup, or materials middleman. All prices include labor and materials.</p>

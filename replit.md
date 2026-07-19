@@ -36,6 +36,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## User preferences
 
+- **HARD RULE — Never build, edit, or create any file until the user has explicitly said "yes", "go ahead", "do it", or equivalent. Presenting a plan and receiving no clear approval is NOT permission to proceed. Ambiguous replies (e.g. "can you do that?", "i can send it in X format") must be treated as questions, not approvals. Always stop and ask: "Shall I go ahead and build this?"**
 - Always confirm the plan before making changes
 - Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"

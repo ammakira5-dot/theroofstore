@@ -45,7 +45,7 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - **🔴 PRIORITY — Internal linking strategy (site-wide)** — No systematic internal linking exists across the site. Every page should link to related pages (city pages → product pages, blog posts → service pages, HOA page → /commercial-roofs and /products, etc.). This is a major SEO lever — internal links pass authority, help Google understand site structure, and improve crawl coverage. Action: audit all content pages and add contextual internal links. Start with high-traffic pages: Home, Products, Commercial Roofs, Blog posts, and the new content pages (/diy-vs-pro-roof-coating, /hurricane-roof-prep, /roof-coating-lifespan-florida, /commercial-roof-coating-hoa).
 
-- **GSC Request Indexing — 2 pages remaining (quota hit July 19)** — All others submitted. Still to request indexing: /distributorships, /blog.
+- **GSC Request Indexing — 3 pages remaining (quota hit July 19)** — All others submitted. Still to request indexing: /distributorships, /blog, /commercial-roof-coating-hoa.
 
 - **Factory page — full distributor/partner network review** — roofpaintmiami.com added as Miami-Dade regional partner. Still to review and potentially add: roofrestorationsandwaterproofinginc.com, bestroofpaint.com, flatroofsealants.com. Decision needed: list individually on factory page vs. route all through /partner-network page (safer for Google compliance). Also review city page links and product/system cross-links from factory page.
 

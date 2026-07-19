@@ -43,6 +43,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **Long-tail keyword implementation — county & city pages** — 20 keywords identified across 4 counties. Add to H1/body copy on relevant city and county pages. Top priorities: (1) Monroe county page — add "salt air roof protection Key West" paragraph (unique environmental signal no inland competitor can claim); (2) Palm Beach county page — add HOA subsection targeting "HOA roof painting Boca Raton" and link to /commercial-roof-coating-hoa; (3) Pricing page — add "roof coating cost Palm Beach County" content (high purchase intent). Full keyword list in attached_assets/Pasted-Suggest-long-tail-keywords-for-each-county-14-51-Worked_1784487296471.txt
+
 - **🔴 PRIORITY — Internal linking strategy (site-wide)** — No systematic internal linking exists across the site. Every page should link to related pages (city pages → product pages, blog posts → service pages, HOA page → /commercial-roofs and /products, etc.). This is a major SEO lever — internal links pass authority, help Google understand site structure, and improve crawl coverage. Action: audit all content pages and add contextual internal links. Start with high-traffic pages: Home, Products, Commercial Roofs, Blog posts, and the new content pages (/diy-vs-pro-roof-coating, /hurricane-roof-prep, /roof-coating-lifespan-florida, /commercial-roof-coating-hoa).
 
 - **GSC Request Indexing — 3 pages remaining (quota hit July 19)** — All others submitted. Still to request indexing: /distributorships, /blog, /commercial-roof-coating-hoa.

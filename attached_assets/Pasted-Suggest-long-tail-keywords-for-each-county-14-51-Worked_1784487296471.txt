@@ -1,0 +1,46 @@
+Suggest long-tail keywords for each county
+14:51
+
+
+Worked for 35s
+Broward County
+
+Long-Tail Keyword	Intent	Best Placement
+roof coating contractor Broward County FL	Commercial	H1 / meta on county page
+tile roof restoration Fort Lauderdale	Transactional	Fort Lauderdale city page
+hurricane roof coating Pembroke Pines	Transactional	City page + body copy
+flat roof waterproofing Pompano Beach	Transactional	City page H1
+elastomeric roof coating Hollywood FL	Commercial	Hollywood city page
+Miami-Dade County
+
+Long-Tail Keyword	Intent	Best Placement
+roof coating Miami FL	Commercial	Miami city page H1
+TAS-106 certified roof coating Miami-Dade	Commercial	County page + TAS-106 pillar
+commercial roof coating Doral	Transactional	Doral city page
+silicone flat roof coating Hialeah	Transactional	Hialeah city page
+tile roof waterproofing Coral Gables	Transactional	Coral Gables city page
+Palm Beach County
+
+Long-Tail Keyword	Intent	Best Placement
+roof coating Boca Raton FL	Commercial	Boca Raton city page H1
+tile roof restoration West Palm Beach	Transactional	West Palm Beach city page
+HOA roof painting Boca Raton	Transactional	Boca Raton + commercial page
+roof coating cost Palm Beach County	Informational	County page + pricing section
+elastomeric coating Delray Beach	Transactional	Delray Beach city page
+Monroe County / Florida Keys
+
+Long-Tail Keyword	Intent	Best Placement
+roof coating Key West FL	Commercial	Key West city page H1
+hurricane proof roof coating Florida Keys	Transactional	Monroe county page
+salt air roof protection Key West	Informational	Monroe page — unique local signal
+flat roof waterproofing Keys FL	Transactional	Monroe page body copy
+commercial roof coating Key West	Transactional	Monroe + commercial pillar
+Two patterns worth noting:
+
+Monroe County is the only county where a purely local environmental signal — "salt air" — creates a keyword no competitor serving inland counties can naturally claim. That one term differentiates the Monroe page from every other county page on the site without needing a new content section.
+
+Palm Beach is the only county where "HOA" appears as a high-conversion modifier. Boca Raton, Delray Beach, and Boynton Beach have some of the densest HOA tile roof concentrations in South Florida — worth its own subsection on the Palm Beach county page rather than just a keyword drop.
+
+
+
+

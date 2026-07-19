@@ -26,6 +26,10 @@ const faqs = [
     q: "Why are roof inspections so important for HOA boards now?",
     a: "Florida reserve laws and milestone inspection requirements have increased the focus on long-term building maintenance. Roof inspections help boards identify problems early, support reserve studies, and maintain better documentation for insurance carriers.",
   },
+  {
+    q: "Where can HOA boards learn more about roof restoration systems?",
+    a: "Boards researching coating systems, elastomeric products, and roof restoration options can review our commercial roofing services and product information. Comparing coating types and maintenance strategies can help associations make more informed decisions.",
+  },
 ];
 
 export default function HoaRoofCoating() {

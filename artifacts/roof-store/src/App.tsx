@@ -40,6 +40,7 @@ import TileRoofPainting from "@/pages/TileRoofPainting";
 import RoofCoatingLifespan from "@/pages/RoofCoatingLifespan";
 import DiyVsPro from "@/pages/DiyVsPro";
 import HurricaneRoofPrep from "@/pages/HurricaneRoofPrep";
+import HoaRoofCoating from "@/pages/HoaRoofCoating";
 import RoofCoatingFlorida from "@/pages/RoofCoatingFlorida";
 import Tas106Certification from "@/pages/Tas106Certification";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
@@ -138,6 +139,7 @@ function Router() {
       <Route path="/roof-coating-lifespan-florida" component={RoofCoatingLifespan} />
       <Route path="/diy-vs-pro-roof-coating" component={DiyVsPro} />
       <Route path="/hurricane-roof-prep" component={HurricaneRoofPrep} />
+      <Route path="/commercial-roof-coating-hoa" component={HoaRoofCoating} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
       <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/trademark-monitoring-log" component={TrademarkMonitoringLog} />

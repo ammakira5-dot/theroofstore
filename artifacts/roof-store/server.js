@@ -55,6 +55,10 @@ const PAGE_META = {
     title: "Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida",
     description: "Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. TAS-106 certified. Call 954-210-9614.",
   },
+  "/commercial-roof-coating-hoa": {
+    title: "Commercial Roof Coating for HOA & Condo Properties in Florida | The Roof Store",
+    description: "Florida HOA boards and condo associations are turning to commercial roof coatings to extend roof life, reduce costs, and meet reserve funding requirements. TAS-106 rated systems. Free consultation: 954-210-9614.",
+  },
   "/reviews": {
     title: "5-Star Customer Reviews & Testimonials — The Roof Store Florida",
     description: "Real 5-star testimonials from South Florida homeowners — including Hurricane Wilma survival stories. A+ BBB Rated since 1994, one of South Florida's longest-standing roof coating contractors. RoofShield, SmartShield, FungalShield.",

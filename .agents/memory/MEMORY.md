@@ -1,5 +1,5 @@
 - [Deploy approval required](deploy-policy.md) — never suggest publishing unless the user explicitly says to publish/deploy.
-- [Resend email setup](resend-email-setup.md) — domain verification pending; Porkbun DNS needed to unlock customer auto-responses.
+- [Resend email setup](resend-email-setup.md) — DNS records added to oneworldhosting.com cPanel (NOT Porkbun) July 21 2026; status pending; once verified set RESEND_FROM env var.
 - [Roof Store entity structure](roof-store-entity-structure.md) — 3-tier model (storefront/manufacturer/installer) + "RoofProtect" one-word spelling; consult before editing company/product copy.
 - [Verification tool caches by URL](verification-tool-url-caching.md) — screenshot/webFetch tools can serve stale cached snapshots per exact URL; always add a cache-busting query param before trusting a "still broken in prod" result.
 - [All Sites](all-sites.md) — owner-confirmed master reference: all 10 listings, GMB/GSC/FTP/SEO status; update whenever anything changes.

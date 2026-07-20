@@ -45,6 +45,7 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/roof-coating-lifespan-florida", changefreq: "monthly", priority: "0.8" },
   { loc: "/diy-vs-pro-roof-coating", changefreq: "monthly", priority: "0.7" },
   { loc: "/hurricane-roof-prep", changefreq: "monthly", priority: "0.8" },
+  { loc: "/commercial-roof-coating-hoa", changefreq: "monthly", priority: "0.8" },
   { loc: "/blog/roof-coating-can-save-your-home-and-insurance-policy-in-florida", changefreq: "yearly", priority: "0.7" },
   { loc: "/blog/new-florida-homeowners-insurance-laws", changefreq: "yearly", priority: "0.7" },
   { loc: "/blog/citizens-insurance-for-older-tile-roofs-in-florida", changefreq: "yearly", priority: "0.7" },

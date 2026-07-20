@@ -580,7 +580,6 @@ const EXACT_REDIRECTS = {
   "/roof-painting-florida": "/roof-services",
   "/roof-coating": "/roof-services",
   "/roof-coating-broward-county": "/roof-services",
-  "/roof-coating-florida": "/roof-services",
   "/elastomeric-roof-coating": "/roof-services",
   "/liquid-rubber-roof-coating": "/roof-services",
   "/roof-waterproofing": "/roof-services",

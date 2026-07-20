@@ -47,6 +47,7 @@ WINDPROOF_FTP_HOST = "ftp.windproofroofsystems.com"
 WINDPROOF_FTP_USER = "windproof@windproofroofsystems.com"
 RRSW_FTP_HOST = "ftp.roofrestorationsandwaterproofinginc.com"
 RRSW_FTP_USER = "roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com"
+RESEND_FROM = "The Roof Store <leads@theroofstore.net>"
 
 [nix]
 channel = "stable-25_05"

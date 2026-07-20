@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Re-Audit — theroofstore.net — July 21, 2026</title>
+<style>
+  :root {
+    --blue:#1e3a8a;--blue-l:#3b82f6;--green:#15803d;--green-l:#dcfce7;
+    --amber:#b45309;--amber-l:#fef3c7;--red:#dc2626;--red-l:#fee2e2;
+    --gray:#374151;--gray-l:#f8fafc;--border:#e2e8f0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--gray);background:#f8fafc;line-height:1.65;}
+  .cover{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#2563eb 100%);color:#fff;padding:52px 48px 44px;}
+  .cover .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin-bottom:14px;}
+  .cover h1{font-size:2.2rem;font-weight:800;line-height:1.15;margin-bottom:8px;}
+  .cover .sub{font-size:1rem;opacity:.8;margin-bottom:24px;}
+  .cover .dates{display:flex;gap:24px;font-size:.82rem;opacity:.65;flex-wrap:wrap;}
+  .grade-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:28px;}
+  .grade-card{background:rgba(255,255,255,.1);border-radius:10px;padding:14px 18px;text-align:center;}
+  .grade-card .v{font-size:1.8rem;font-weight:800;}
+  .grade-card .l{font-size:.7rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+  .grade-card .delta{font-size:.8rem;margin-top:4px;}
+  .up{color:#86efac;}.dn{color:#fca5a5;}.same{color:#fcd34d;}
+
+  .container{max-width:1080px;margin:0 auto;padding:0 32px 64px;}
+
+  /* DELTA SUMMARY BAR */
+  .delta-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border);margin:0;}
+  .delta-item{background:#fff;padding:16px 20px;}
+  .delta-item .di-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:4px;}
+  .delta-item .di-val{font-size:1.1rem;font-weight:700;color:var(--blue);}
+  .delta-item .di-note{font-size:.78rem;color:#94a3b8;margin-top:2px;}
+
+  h2.sec{font-size:1.35rem;font-weight:800;color:#0f172a;margin:48px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+  h3.sub{font-size:1rem;font-weight:700;color:var(--blue);margin:22px 0 8px;}
+  p{font-size:.94rem;margin:6px 0;}
+
+  .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.75rem;font-weight:700;}
+  .badge.green{background:var(--green-l);color:var(--green);}
+  .badge.amber{background:var(--amber-l);color:var(--amber);}
+  .badge.red{background:var(--red-l);color:var(--red);}
+  .badge.blue{background:#dbeafe;color:var(--blue);}
+  .badge.new{background:#f0fdf4;color:#15803d;border:1px solid #86efac;}
+
+  table{width:100%;border-collapse:collapse;font-size:.87rem;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  th{background:#f1f5f9;text-align:left;padding:10px 14px;font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#64748b;border-bottom:2px solid var(--border);}
+  td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .tbl-wrap{overflow-x:auto;margin:12px 0;}
+
+  .card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card.green{border-left:4px solid #16a34a;}
+  .card.amber{border-left:4px solid #d97706;}
+  .card.red{border-left:4px solid #dc2626;}
+  .card.blue{border-left:4px solid #2563eb;}
+  .card h4{font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .card ul{margin:4px 0 0 16px;font-size:.88rem;}
+  .card ul li{margin:3px 0;}
+
+  .fix{background:var(--gray-l);border-radius:6px;padding:10px 14px;margin-top:8px;font-size:.86rem;}
+  .fix strong{display:block;margin-bottom:3px;color:var(--blue);}
+
+  .callout{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd;border-radius:10px;padding:18px 22px;margin:14px 0;}
+  .callout h4{color:var(--blue);font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .callout.gold{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fcd34d;}
+  .callout.gold h4{color:var(--amber);}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0;}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr;}}
+
+  .remains{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:10px 0;}
+  .remains h4{font-size:.9rem;font-weight:700;margin-bottom:8px;color:#dc2626;}
+  .remains ul{margin:0 0 0 16px;font-size:.88rem;}
+  .remains ul li{margin:3px 0;}
+
+  code{background:#f1f5f9;border-radius:4px;padding:1px 5px;font-size:.84em;font-family:Consolas,monospace;color:#1d4ed8;}
+  .footer{background:#0f172a;color:#64748b;padding:20px 48px;font-size:.8rem;margin-top:40px;}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <p class="eyebrow">StoreClaw · SEO Re-Audit</p>
+  <h1>theroofstore.net — Progress Audit</h1>
+  <p class="sub">Comparing site state against Audit #1 findings. What moved, what's fixed, what remains.</p>
+  <div class="dates">
+    <span>📋 Audit #1: July 18, 2026</span>
+    <span>🔄 Audit #2: July 21, 2026</span>
+    <span>⏱ 3 days between audits</span>
+  </div>
+  <div class="grade-row">
+    <div class="grade-card"><div class="v up">A−</div><div class="l">Overall SEO</div><div class="delta up">↑ from B+</div></div>
+    <div class="grade-card"><div class="v up">✓+</div><div class="l">Content Depth</div><div class="delta up">↑ Significant</div></div>
+    <div class="grade-card"><div class="v up">Strong</div><div class="l">Schema / GBP</div><div class="delta up">↑ Upgraded</div></div>
+    <div class="grade-card"><div class="v same">⚠</div><div class="l">Off-Page / Reviews</div><div class="delta same">→ Unchanged</div></div>
+    <div class="grade-card"><div class="v same">↑</div><div class="l">GEO Visibility</div><div class="delta same">→ In progress</div></div>
+    <div class="grade-card"><div class="v up">Fixed</div><div class="l">Technical</div><div class="delta up">↑ Key fixes done</div></div>
+  </div>
+</div>
+
+<!-- DELTA SUMMARY BAR -->
+<div class="delta-bar">
+  <div class="delta-item"><div class="di-label">New Pages Published</div><div class="di-val">1 pillar page</div><div class="di-note">/roof-coating-florida live</div></div>
+  <div class="delta-item"><div class="di-label">Blog Posts</div><div class="di-val">4 → 7</div><div class="di-note">+3 new posts (July 2026)</div></div>
+  <div class="delta-item"><div class="di-label">Sitemap Updated</div><div class="di-val">Jul 20, 2026</div><div class="di-note">Was Jul 17</div></div>
+  <div class="delta-item"><div class="di-label">Nav Updated</div><div class="di-val">+Roof Coating Guide</div><div class="di-note">Pillar added to main nav</div></div>
+  <div class="delta-item"><div class="di-label">Reviews (schema)</div><div class="di-val">9 → 10</div><div class="di-note">+1 review</div></div>
+  <div class="delta-item"><div class="di-label">Pricing H1 Fixed</div><div class="di-val">✓ Done</div><div class="di-note">Now keyword + geo optimised</div></div>
+  <div class="delta-item"><div class="di-label">OG Images Fixed</div><div class="di-val">3 pages</div><div class="di-note">Pricing, FAQ, Blog now unique</div></div>
+  <div class="delta-item"><div class="di-label">Homepage Words</div><div class="di-val">1,757 → 1,904</div><div class="di-note">+147 words added</div></div>
+</div>
+
+<div class="container">
+
+<!-- ═══════════════════════════════════
+     SECTION 1 — WHAT CHANGED
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s1">1. What Changed Since Audit #1</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>Item</th><th>Audit #1 State</th><th>Audit #2 State</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Pillar page /roof-coating-florida</strong></td>
+      <td>Did not exist</td>
+      <td>Live — resolves to /roof-services (redirect observed)</td>
+      <td><span class="badge amber">⚠ See below</span></td>
+    </tr>
+    <tr>
+      <td><strong>Main nav — "Roof Coating Guide"</strong></td>
+      <td>Not in nav</td>
+      <td>Added — visible in nav across all pages</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Blog posts</strong></td>
+      <td>4 posts (all Sep–Aug 2024)</td>
+      <td>7 posts — 3 new July 2026 posts added</td>
+      <td><span class="badge green">✓ Strong progress</span></td>
+    </tr>
+    <tr>
+      <td><strong>Pricing page H1</strong></td>
+      <td>"Transparent Pricing" — no keyword/geo</td>
+      <td>"Roof Coating Prices in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield"</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Pricing page title tag</strong></td>
+      <td>"Pricing — Factory Price Menu | The Roof Store"</td>
+      <td>"Roof Coating Prices per Sq Ft | South Florida | The Roof Store"</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Pricing page schema</strong></td>
+      <td>PriceSpecification only (minimal)</td>
+      <td>Service + OfferCatalog + PriceSpecification per system with minPrice/maxPrice/unitText</td>
+      <td><span class="badge green">✓ Significantly upgraded</span></td>
+    </tr>
+    <tr>
+      <td><strong>Pricing meta description</strong></td>
+      <td>Generic, no geo, no CTA</td>
+      <td>"Roof coating prices for South Florida: Fungal Shield from $0.50, Smart Shield from $1.90, Roof Shield from $2.70 /sq ft. Labor &amp; materials included."</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>OG images — Pricing</strong></td>
+      <td>Shared generic image</td>
+      <td>Unique: /images/og/pricing.jpg</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>OG images — FAQ</strong></td>
+      <td>Shared generic image</td>
+      <td>Unique: /images/og/faq.jpg</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>OG images — Blog</strong></td>
+      <td>Shared generic image</td>
+      <td>Unique: /images/og/blog.jpg</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Homepage H2 — Services section</strong></td>
+      <td>"Roof Coating Services in South Florida"</td>
+      <td>"Roof Coating Services in Broward, Miami-Dade &amp; Palm Beach County" — geo-expanded</td>
+      <td><span class="badge green">✓ Improved</span></td>
+    </tr>
+    <tr>
+      <td><strong>Homepage word count</strong></td>
+      <td>1,757 words</td>
+      <td>1,904 words (+147)</td>
+      <td><span class="badge green">✓ Expanded</span></td>
+    </tr>
+    <tr>
+      <td><strong>Homepage reviews (aggregateRating)</strong></td>
+      <td>reviewCount: 9</td>
+      <td>reviewCount: 10</td>
+      <td><span class="badge amber">↑ +1 (still very low)</span></td>
+    </tr>
+    <tr>
+      <td><strong>Blog word count</strong></td>
+      <td>2,976</td>
+      <td>4,515 (+1,539)</td>
+      <td><span class="badge green">✓ Significantly expanded</span></td>
+    </tr>
+    <tr>
+      <td><strong>FAQ heading structure</strong></td>
+      <td>All 20 questions as H2 — diluted signal</td>
+      <td>Questions now H3 — correctly subordinated</td>
+      <td><span class="badge green">✓ Fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Roof Services page</strong></td>
+      <td>Basic H1 "Roof Services", 7 service items</td>
+      <td>Expanded schema (ItemList with 7 Service items), richer content sections, "Roof Services By County" added</td>
+      <td><span class="badge green">✓ Upgraded</span></td>
+    </tr>
+    <tr>
+      <td><strong>Duplicate meta tag bug</strong></td>
+      <td>All meta tags rendered twice on every page</td>
+      <td>Still present — all meta tags still duplicated in source</td>
+      <td><span class="badge red">✗ Not yet fixed</span></td>
+    </tr>
+    <tr>
+      <td><strong>Individual blog post BlogPosting schema</strong></td>
+      <td>Missing from individual post pages</td>
+      <td>Not verified — blog index schema present, post-level pages not checked</td>
+      <td><span class="badge amber">⚠ Needs verification</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ═══════════════════════════════════
+     SECTION 2 — PILLAR PAGE ISSUE
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s2">2. Pillar Page — Critical Redirect Issue</h2>
+
+<div class="card red">
+  <h4>🔴 /roof-coating-florida Redirects to /roof-services — URL Conflict</h4>
+  <p>The crawl of <code>https://theroofstore.net/roof-coating-florida</code> returns the <strong>/roof-services page content</strong> — the canonical URL in the parsed data is <code>https://www.theroofstore.net/roof-services</code>, not <code>/roof-coating-florida</code>. This means one of two things is happening:</p>
+  <ul style="margin:8px 0 0 16px;font-size:.9rem;">
+    <li>The URL <code>/roof-coating-florida</code> is redirecting (301 or 302) to <code>/roof-services</code>, OR</li>
+    <li>The pillar page content was published under <code>/roof-services</code> instead of the intended <code>/roof-coating-florida</code> slug</li>
+  </ul>
+  <div class="fix">
+    <strong>Impact:</strong> The keyword target "roof coating Florida" is being served under the URL /roof-services — a weaker slug with no keyword signal. The nav item "Roof Coating Guide" points to this page, so the navigation is correct, but the URL itself is not optimal.
+    <br><br>
+    <strong>Fix option A (preferred):</strong> Publish the pillar content at <code>/roof-coating-florida</code> as a distinct page separate from /roof-services. The services page and the pillar guide serve different intents and both can exist.
+    <br><br>
+    <strong>Fix option B:</strong> If you intentionally merged the content into /roof-services, redirect <code>/roof-coating-florida</code> to <code>/roof-services</code> with a 301 and update all internal links and the sitemap entry to point to /roof-services as the canonical URL.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     SECTION 3 — WINS IN DETAIL
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s3">3. Confirmed Wins — What's Working</h2>
+
+<div class="grid2">
+  <div class="card green">
+    <h4>✅ Blog Content Sprint — 3 New High-Value Posts</h4>
+    <ul>
+      <li><strong>2026 Hurricane Season Roof Prep Checklist</strong> — seasonal, timely, checklist format ideal for rich results</li>
+      <li><strong>How Long Does Elastomeric Roof Coating Last in Florida?</strong> — directly targets a top informational query</li>
+      <li><strong>DIY Roof Coating in Florida: What Pros Know That Homeowners Don't</strong> — comparison intent, high conversion value</li>
+    </ul>
+    <p style="margin-top:8px;font-size:.87rem;">Blog index word count jumped from 2,976 to 4,515 — a 52% increase that signals active, maintained content to crawlers.</p>
+  </div>
+  <div class="card green">
+    <h4>✅ Pricing Page — Fully Transformed</h4>
+    <ul>
+      <li>H1 now keyword + geo optimised</li>
+      <li>Title tag now includes "per Sq Ft" + "South Florida"</li>
+      <li>Schema upgraded from bare PriceSpecification to full Service + OfferCatalog with per-system min/max price ranges</li>
+      <li>Unique OG image deployed</li>
+      <li>Meta description now specific, geo-targeted, and includes price anchors</li>
+    </ul>
+  </div>
+</div>
+
+<div class="grid2">
+  <div class="card green">
+    <h4>✅ Navigation — "Roof Coating Guide" Added</h4>
+    <p>The pillar is now visible in the main nav across every page of the site. This creates a site-wide internal link signal to the pillar and improves user discovery. The nav now reads: <em>Products · About Us · Roof Systems · Roof Coating Guide · Services · Service Areas…</em></p>
+  </div>
+  <div class="card green">
+    <h4>✅ FAQ Heading Structure Fixed</h4>
+    <p>All 20 FAQ questions correctly demoted from H2 to H3. The page now uses H2 for "Still Have Questions?" as the section break — cleaner semantic hierarchy and better heading signal distribution.</p>
+  </div>
+</div>
+
+<div class="card green">
+  <h4>✅ Roof Services Page — Schema and Content Upgraded</h4>
+  <p>The /roof-services page now has a proper ItemList schema with 7 individually typed Service items. New sections added include "Roof Services By County" (geo signal) and expanded service descriptions. The meta description now lists all service types explicitly — much richer for search snippet display than the previous generic version.</p>
+</div>
+
+<div class="card green">
+  <h4>✅ OG Image Differentiation — 3 Pages Fixed</h4>
+  <p>Pricing (<code>/images/og/pricing.jpg</code>), FAQ (<code>/images/og/faq.jpg</code>), and Blog (<code>/images/og/blog.jpg</code>) all now have unique Open Graph images. This improves social sharing CTR and removes the "identical preview" problem that made every shared page look the same on social media.</p>
+</div>
+
+<!-- ═══════════════════════════════════
+     SECTION 4 — STILL OPEN
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s4">4. Still Open — Remaining Issues</h2>
+
+<div class="card red">
+  <h4>🔴 Duplicate Meta Tag Bug — Still Present on All Pages</h4>
+  <p>Every page on the site still renders all meta tags twice in the <code>&lt;head&gt;</code>. This was P1 in Audit #1 and remains unfixed. Confirmed present on homepage, pricing, FAQ, blog, and roof-services pages.</p>
+  <div class="fix">
+    <strong>Fix:</strong> Find the component in your framework that injects meta tags and ensure it fires only once per render. Common cause: a layout component and a page component both calling the same meta injection function. This is the single most impactful remaining technical fix — it affects every page on the site.
+  </div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Review Count — 9 → 10 (Target: 50+)</h4>
+  <p>Only one review was added between audits. The aggregateRating in schema now shows reviewCount: 10. The 90-day sprint target of 50+ reviews is critical for unlocking Rich Result star displays and Local Pack competitiveness. At the current pace of ~1 review per 3 days, reaching 50 would take approximately 4 months. A systematic post-job review request process needs to be active.</p>
+  <div class="fix">
+    <strong>Action:</strong> Set up an automated SMS/email trigger 48 hours after job completion. One message, one direct Google Review link, no friction. This single workflow change should produce 5–10× the current review velocity.
+  </div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Pillar Page URL — Redirect Conflict Needs Resolution</h4>
+  <p>As documented in Section 2, <code>/roof-coating-florida</code> currently serves the /roof-services content. The pillar intent and the services page intent are different enough that they warrant separate pages. Resolved in the next sprint.</p>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Individual Blog Post Pages — BlogPosting Schema Unverified</h4>
+  <p>The three new July 2026 blog posts need individual-page verification. The blog index correctly includes BlogPosting schema for all 7 posts, but each individual post URL (<code>/blog/[slug]/</code>) should also have its own BlogPosting schema with author, datePublished, dateModified, headline, and image. Without it, individual posts are not eligible for Article Rich Results.</p>
+  <div class="fix">
+    <strong>Check:</strong> Visit any individual blog post URL, view source, and confirm <code>"@type":"BlogPosting"</code> is present in a JSON-LD script block on that page specifically.
+  </div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ City Pages — Differentiation Not Yet Started</h4>
+  <p>100+ city service area pages remain on the same template pattern. This was a P1 item in Audit #1. The content architecture and keyword work from this session provide everything needed to start differentiation — long-tail keywords per county, differentiation formula, and priority city list are all documented in the brand reference file.</p>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Pricing Page Word Count Still Low — 646 Words</h4>
+  <p>Despite the H1, title, schema, and meta improvements, the pricing page body content is still only 646 words. The target was 1,000–1,200 words with pricing-specific FAQs, a cost comparison section, and factors affecting price. The structural fixes are done; the content expansion remains.</p>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ TAS-106 Dedicated Page — Not Yet Created</h4>
+  <p>The most powerful GEO citation asset identified in Audit #1 — a standalone <code>/tas-106-certified-roof-coating</code> page — does not yet exist. This remains the single highest-value content creation opportunity on the site: a category monopoly no competitor can ever replicate.</p>
+</div>
+
+<!-- ═══════════════════════════════════
+     SECTION 5 — UPDATED SCORECARD
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s5">5. Updated Issue Scorecard</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead>
+    <tr><th>Issue</th><th>Audit #1</th><th>Audit #2</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Duplicate meta tag render bug</td><td><span class="badge red">P1 Open</span></td><td><span class="badge red">P1 Open</span></td><td>Not fixed</td></tr>
+    <tr><td>Pricing H1 — no keyword/geo</td><td><span class="badge red">P1 Open</span></td><td><span class="badge green">Fixed</span></td><td>✓ Resolved</td></tr>
+    <tr><td>Pricing title tag — weak</td><td><span class="badge red">P1 Open</span></td><td><span class="badge green">Fixed</span></td><td>✓ Resolved</td></tr>
+    <tr><td>Pricing schema — minimal</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge green">Fixed</span></td><td>✓ Resolved</td></tr>
+    <tr><td>Pricing meta description — weak</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge green">Fixed</span></td><td>✓ Resolved</td></tr>
+    <tr><td>Pricing word count — 594 words</td><td><span class="badge red">P1 Open</span></td><td><span class="badge amber">Partial — 646 words</span></td><td>Structure fixed, content pending</td></tr>
+    <tr><td>FAQ heading hierarchy — all H2</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge green">Fixed</span></td><td>✓ Resolved</td></tr>
+    <tr><td>OG images — shared across all pages</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge amber">Partial — 3 pages fixed</span></td><td>Pricing, FAQ, Blog done; others remain</td></tr>
+    <tr><td>Blog — only 4 posts (2024)</td><td><span class="badge red">P1 Open</span></td><td><span class="badge green">Improved — 7 posts</span></td><td>✓ 3 new posts added; continue cadence</td></tr>
+    <tr><td>BlogPosting schema on post pages</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge amber">Unverified</span></td><td>Needs spot-check</td></tr>
+    <tr><td>Review count — 9 (target 50+)</td><td><span class="badge red">P1 Open</span></td><td><span class="badge red">10 — still critical</span></td><td>+1 in 3 days; velocity too slow</td></tr>
+    <tr><td>City pages — template repetition</td><td><span class="badge red">P1 Open</span></td><td><span class="badge red">P1 Open</span></td><td>Not started</td></tr>
+    <tr><td>TAS-106 dedicated page</td><td><span class="badge amber">P2 Open</span></td><td><span class="badge amber">P2 Open</span></td><td>Not started</td></tr>
+    <tr><td>GBP optimization</td><td><span class="badge red">P1 Open</span></td><td><span class="badge amber">Unknown</span></td><td>Not verifiable via crawl</td></tr>
+    <tr><td>Pillar /roof-coating-florida</td><td><span class="badge red">Missing</span></td><td><span class="badge amber">URL conflict</span></td><td>Published but redirect issue</td></tr>
+    <tr><td>Nav — Roof Coating Guide link</td><td><span class="badge red">Missing</span></td><td><span class="badge green">Fixed</span></td><td>✓ Visible site-wide</td></tr>
+    <tr><td>Homepage geo signal in headings</td><td><span class="badge amber">Weak</span></td><td><span class="badge green">Improved</span></td><td>H2 now includes county names</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ═══════════════════════════════════
+     SECTION 6 — NEXT SPRINT PRIORITIES
+     ═══════════════════════════════════ -->
+<h2 class="sec" id="s6">6. Next Sprint — Priority Order</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>#</th><th>Action</th><th>Effort</th><th>Impact</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><span class="badge red">1</span></td>
+      <td><strong>Fix duplicate meta tag bug</strong> — deduplicate head injection in framework</td>
+      <td>2–4 hrs dev</td>
+      <td>Affects all 100+ pages; clean crawl signals site-wide</td>
+    </tr>
+    <tr>
+      <td><span class="badge red">2</span></td>
+      <td><strong>Resolve pillar page URL</strong> — either publish /roof-coating-florida as standalone or 301 /roof-services and update sitemap + nav</td>
+      <td>1–2 hrs</td>
+      <td>Keyword-targeted URL for highest-value pillar page</td>
+    </tr>
+    <tr>
+      <td><span class="badge red">3</span></td>
+      <td><strong>Launch review request workflow</strong> — automated post-job SMS with direct Google Review link</td>
+      <td>1 day setup</td>
+      <td>Review velocity from ~1/3 days to 5–10/week; unlocks rich result stars</td>
+    </tr>
+    <tr>
+      <td><span class="badge red">4</span></td>
+      <td><strong>Verify BlogPosting schema</strong> on 3 new blog post individual pages</td>
+      <td>2 hrs</td>
+      <td>Article rich results eligibility for 3 new high-value posts</td>
+    </tr>
+    <tr>
+      <td><span class="badge amber">5</span></td>
+      <td><strong>Create /tas-106-certified-roof-coating</strong> — standalone GEO citation page</td>
+      <td>8–12 hrs content</td>
+      <td>Category monopoly; highest GEO/AI citation potential on the site</td>
+    </tr>
+    <tr>
+      <td><span class="badge amber">6</span></td>
+      <td><strong>Differentiate top 20 city pages</strong> — local context, unique FAQ, project reference per city</td>
+      <td>20–30 hrs content</td>
+      <td>Unlocks 100+ local city keywords currently borderline ranked</td>
+    </tr>
+    <tr>
+      <td><span class="badge amber">7</span></td>
+      <td><strong>Expand pricing page</strong> to 1,200 words — add cost comparison, pricing FAQ schema, factors affecting price</td>
+      <td>4–6 hrs content</td>
+      <td>Converts high-intent commercial visitors who need more context before calling</td>
+    </tr>
+    <tr>
+      <td><span class="badge blue">8</span></td>
+      <td><strong>Publish next 2 blog posts</strong> from the content calendar — DIY guide and insurance law update</td>
+      <td>8–12 hrs content</td>
+      <td>Maintains publishing cadence; feeds GEO citation clusters</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout gold">
+  <h4>📈 Trajectory Assessment</h4>
+  <p>In 3 days, 11 of 18 audit issues were fully or partially addressed — a very strong execution pace. The site has moved from <strong>B+ to A−</strong> overall. The remaining gap to an <strong>A / A+</strong> rating is almost entirely in three areas: the duplicate meta bug (technical, quick fix), the review count (operational, needs a process), and city page differentiation (content, takes time). None of the remaining items require new strategy — just execution of what's already planned.</p>
+</div>
+
+</div>
+<div class="footer">
+  theroofstore.net SEO Re-Audit · StoreClaw · July 21, 2026 · Audit #2 of ongoing series
+</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1e52f10fcb14c89',t:'MTc4NDU4NDI1MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

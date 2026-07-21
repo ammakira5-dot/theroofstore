@@ -5,16 +5,17 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "/about", label: "About Us" },
-  { href: "/roof-systems", label: "Roof Systems" },
-  { href: "/roof-coating-florida", label: "Roof Coating Guide" },
   { href: "/roof-services", label: "Services" },
   { href: "/service-areas", label: "Service Areas" },
-  { href: "/projects", label: "Projects" },
   { href: "/reviews", label: "Reviews" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 const moreLinks = [
+  { href: "/roof-systems", label: "Roof Systems" },
+  { href: "/roof-coating-florida", label: "Roof Coating Guide" },
+  { href: "/projects", label: "Projects" },
+  { href: "/faq", label: "FAQ" },
   { href: "/pricing", label: "Pricing" },
   { href: "/factory", label: "Factory" },
   { href: "/commercial-roofs", label: "Commercial Roofs" },

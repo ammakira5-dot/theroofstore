@@ -318,6 +318,8 @@ export default function RoofCoatingLifespan() {
               { href: "/roof-systems", label: "FungalShield, SmartShield & RoofShield — System Breakdown" },
               { href: "/roof-replacement-alternative-florida", label: "Coating vs. Replacement — Full Cost Comparison" },
               { href: "/hurricane-roof-prep", label: "Hurricane Season Roof Prep Checklist" },
+              { href: "/products", label: "Browse Our Coating Products" },
+              { href: "/pricing", label: "Roof Coating Pricing Guide" },
             ].map((link, i) => (
               <Link key={i} href={link.href} className="flex items-center gap-2 text-sm font-medium text-primary hover:text-accent transition-colors p-4 bg-muted rounded-lg border hover:border-accent">
                 <ArrowRight className="h-4 w-4 shrink-0" />

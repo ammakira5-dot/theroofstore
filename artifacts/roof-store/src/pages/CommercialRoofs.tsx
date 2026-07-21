@@ -353,6 +353,17 @@ export default function CommercialRoofs() {
         </div>
       </section>
 
+      <section className="py-10 bg-background border-y">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 text-center">Explore More</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/products" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">Our Coating Products →</Link>
+            <Link href="/pricing" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">Pricing Guide →</Link>
+            <Link href="/commercial-roof-coating-hoa" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">HOA &amp; Condo Roof Coating →</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-muted">
         <div className="container px-4 max-w-4xl mx-auto">
           <div className="bg-card rounded-2xl p-10 border shadow-sm flex flex-col md:flex-row items-center gap-8">

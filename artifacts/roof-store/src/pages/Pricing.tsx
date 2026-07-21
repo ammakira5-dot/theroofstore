@@ -281,6 +281,18 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* RELATED LINKS */}
+      <section className="py-10 bg-muted border-y">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4 text-center">Explore More</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/products" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">Browse Our Products →</Link>
+            <Link href="/commercial-roofs" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">Commercial Roofing →</Link>
+            <Link href="/roof-services" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-accent border rounded-lg px-4 py-2 hover:border-accent transition-colors bg-card">Services Overview →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 bg-primary text-white text-center">
         <div className="container px-4 max-w-3xl mx-auto">

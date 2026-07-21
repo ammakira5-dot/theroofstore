@@ -277,6 +277,8 @@ export default function DiyVsPro() {
               { href: "/roof-coating-lifespan-florida", label: "How Long Does Roof Coating Last in Florida?" },
               { href: "/roof-systems", label: "FungalShield, SmartShield & RoofShield Systems" },
               { href: "/pricing", label: "Roof Coating Pricing Guide" },
+              { href: "/products", label: "Browse Our Coating Products" },
+              { href: "/roof-services", label: "Professional Roof Coating Services" },
             ].map((link, i) => (
               <Link key={i} href={link.href} className="flex items-center gap-2 text-sm font-medium text-primary hover:text-accent transition-colors p-4 bg-muted rounded-lg border hover:border-accent">
                 <ArrowRight className="h-4 w-4 shrink-0" />

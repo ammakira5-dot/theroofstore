@@ -311,6 +311,8 @@ export default function HurricaneRoofPrep() {
               { href: "/roof-coating-lifespan-florida", label: "How Long Does Roof Coating Last in Florida?" },
               { href: "/roof-life-certification", label: "Additional Roof Life Certification Guide" },
               { href: "/products/roofshield", label: "Roof Shield (RP3) — TAS-106 Certified System" },
+              { href: "/pricing", label: "Roof Coating Pricing Guide" },
+              { href: "/roof-services", label: "Professional Roof Coating Services" },
             ].map((link, i) => (
               <Link key={i} href={link.href} className="flex items-center gap-2 text-sm font-medium text-primary hover:text-accent transition-colors p-4 bg-muted rounded-lg border hover:border-accent">
                 <ArrowRight className="h-4 w-4 shrink-0" />

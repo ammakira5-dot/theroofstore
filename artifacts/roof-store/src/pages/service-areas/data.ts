@@ -801,7 +801,7 @@ export const counties: CountyEntry[] = [
       "The Roof Store extends service to Monroe County, FL — protecting Keys homes from the harshest marine climate in Florida. Our elastomeric roof coating systems are engineered for salt air, high humidity, and hurricane-force wind exposure.",
     extraSections: [
       {
-        heading: "Salt Air Roof Protection in Key West & the Florida Keys",
+        heading: "Comparing Roof Paint vs. Roof Coating in Key West",
         body: "Salt air roof protection in Key West is not optional — it is an ongoing maintenance requirement for every property in Monroe County. The Florida Keys sit entirely surrounded by saltwater, which means roofs here face chloride-laden air from all directions, 365 days a year. Standard roof paints and sealants break down rapidly in this environment: salt crystals work into micro-cracks, grout joints, and tile pores, accelerating corrosion and water intrusion far faster than inland South Florida. Our elastomeric rubber coating system forms a seamless, salt-resistant membrane over the entire roof surface — sealing every joint and penetration against both the marine atmosphere and hurricane-force wind-driven rain. For homeowners in Key West, Marathon, Islamorada, and throughout the Keys, this level of protection is what separates a roof that lasts 15 years from one that needs attention every 3. We are one of the few contractors in South Florida who regularly works in Monroe County and understands the specific maintenance cycle and material selection that the Keys environment demands.",
         linkHref: "/products/roofshield",
         linkLabel: "Learn about our hurricane-rated RoofShield system →",

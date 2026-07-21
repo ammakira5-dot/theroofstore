@@ -42,9 +42,12 @@ router.post("/contact", async (req, res) => {
       await sendLeadEmail(submission);
       req.log.info({ name: data.name }, "lead email sent via Resend");
       if (data.email) {
-        sendAutoResponse(submission).catch((err) =>
-          req.log.error({ err }, "auto-response email failed (non-blocking)")
-        );
+        req.log.info({ name: data.name, email: data.email }, "sending auto-response to client");
+        sendAutoResponse(submission)
+          .then(() => req.log.info({ name: data.name, email: data.email }, "auto-response sent successfully"))
+          .catch((err) => req.log.error({ err }, "auto-response email failed (non-blocking)"));
+      } else {
+        req.log.info({ name: data.name }, "no client email provided — auto-response skipped");
       }
       res.json({ ok: true });
     } catch (err) {

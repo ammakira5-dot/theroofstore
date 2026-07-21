@@ -172,6 +172,26 @@ export default function Pricing() {
         </div>
       </section>
 
+      <section className="py-14 bg-muted">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="bg-card border rounded-2xl p-8 space-y-4">
+            <h2 className="text-2xl font-serif font-bold text-primary">Roof Coating Cost in Palm Beach County</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Roof coating cost in Palm Beach County typically runs between <strong className="text-foreground">$1.50 and $4.50 per square foot</strong> depending on the system, roof type, pitch, and surface condition — significantly less than the $10–$25 per square foot cost of a full roof replacement. Palm Beach County's large stock of barrel tile, S-tile, and flat-deck homes makes our three-system lineup especially well suited to the county's diverse roofing needs.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Our entry-level <strong className="text-foreground">FungalShield (RP1)</strong> system starts from $0.50/sq ft and targets algae, fungus, and UV fading — a common problem on tile roofs throughout Boca Raton, Delray Beach, and Boynton Beach. The mid-range <strong className="text-foreground">SmartShield (RP2)</strong> system from $1.90/sq ft adds BASF Cool Pigment energy-reflective technology, meeting HOA color standards while reducing cooling costs — particularly valuable in Palm Beach County's densely HOA-governed communities. Our premium <strong className="text-foreground">RoofShield (RP3)</strong> system from $2.70/sq ft delivers a seamless rubber membrane with TAS-106 hurricane wind-uplift certification — the strongest protection available for Palm Beach County's coastal and lakefront properties.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Exact pricing is finalized after a free onsite visit. Palm Beach County pricing may vary slightly from Broward due to travel distance — call us at <a href="tel:954-210-9614" className="text-accent font-bold hover:underline">954-210-9614</a> for a county-specific quote.
+            </p>
+            <Link href="/service-areas/palm-beach-county" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+              Palm Beach County service area page →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-background">
         <div className="container px-4 max-w-5xl mx-auto space-y-10">
           {systems.map((sys, i) => (

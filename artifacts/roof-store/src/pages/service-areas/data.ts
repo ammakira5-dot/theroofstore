@@ -5,12 +5,20 @@ export interface CityEntry {
   blurb?: string;
 }
 
+export interface CountyExtraSection {
+  heading: string;
+  body: string;
+  linkHref?: string;
+  linkLabel?: string;
+}
+
 export interface CountyEntry {
   name: string;
   slug: string;
   description: string;
   image: string;
   cities: CityEntry[];
+  extraSections?: CountyExtraSection[];
 }
 
 // All images are served from object storage (App Storage / GCS) via the CDN.
@@ -500,6 +508,14 @@ export const counties: CountyEntry[] = [
     image: "/api/storage/public-objects/cities/1664829018245-04b94e17b8aa.jpg",
     description:
       "From Boca Raton to Jupiter, The Roof Store serves all of Palm Beach County with our elastomeric roof coating and tile restoration systems. Protecting Palm Beach County homes from Florida's harsh climate since 1994.",
+    extraSections: [
+      {
+        heading: "HOA Roof Painting in Boca Raton & Palm Beach County Communities",
+        body: "HOA roof painting in Boca Raton and across Palm Beach County is one of the most common inquiries we receive — and one of the most misunderstood services in the roofing industry. Most HOA governing documents specify approved roof colors and finishes, but they rarely distinguish between cosmetic roof paint and a performance-rated roof coating system. That distinction matters enormously in South Florida. Standard exterior paint fades, peels, and fails within 2–3 years in Palm Beach County's UV intensity and humidity. Our SmartShield (RP2) system uses BASF Cool Pigment Technology to deliver HOA-compliant color — including the darker tones trending in Boca Raton and Delray Beach — while also reflecting heat and forming a waterproof membrane that lasts 10–15 years. We work directly with HOA property managers and board members throughout Palm Beach County, providing documentation packages that include color samples, warranty letters, and technical data sheets to satisfy architectural review committees. Communities in Boca Raton, Palm Beach Gardens, Wellington, and Boynton Beach regularly engage us for whole-community re-coating projects and reserve-study-backed maintenance programs.",
+        linkHref: "/commercial-roof-coating-hoa",
+        linkLabel: "HOA & condo association roof coating services →",
+      },
+    ],
     cities: [
       {
         name: "Atlantis",
@@ -783,6 +799,14 @@ export const counties: CountyEntry[] = [
     image: "/api/storage/public-objects/cities/1519500900873-696f4e3171de.jpg",
     description:
       "The Roof Store extends service to Monroe County, FL — protecting Keys homes from the harshest marine climate in Florida. Our elastomeric roof coating systems are engineered for salt air, high humidity, and hurricane-force wind exposure.",
+    extraSections: [
+      {
+        heading: "Salt Air Roof Protection in Key West & the Florida Keys",
+        body: "Salt air roof protection in Key West is not optional — it is an ongoing maintenance requirement for every property in Monroe County. The Florida Keys sit entirely surrounded by saltwater, which means roofs here face chloride-laden air from all directions, 365 days a year. Standard roof paints and sealants break down rapidly in this environment: salt crystals work into micro-cracks, grout joints, and tile pores, accelerating corrosion and water intrusion far faster than inland South Florida. Our elastomeric rubber coating system forms a seamless, salt-resistant membrane over the entire roof surface — sealing every joint and penetration against both the marine atmosphere and hurricane-force wind-driven rain. For homeowners in Key West, Marathon, Islamorada, and throughout the Keys, this level of protection is what separates a roof that lasts 15 years from one that needs attention every 3. We are one of the few contractors in South Florida who regularly works in Monroe County and understands the specific maintenance cycle and material selection that the Keys environment demands.",
+        linkHref: "/products/roofshield",
+        linkLabel: "Learn about our hurricane-rated RoofShield system →",
+      },
+    ],
     cities: [
       {
         name: "Key West",

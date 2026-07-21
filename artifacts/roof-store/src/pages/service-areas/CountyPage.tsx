@@ -4,17 +4,25 @@ import { MapPin, Phone, ArrowRight, ShieldCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 
+interface CountyExtraSection {
+  heading: string;
+  body: string;
+  linkHref?: string;
+  linkLabel?: string;
+}
+
 interface CountyPageProps {
   county: string;
   slug: string;
   description: string;
   image: string;
   cities: { name: string; slug: string }[];
+  extraSections?: CountyExtraSection[];
 }
 
 const BASE = "https://www.theroofstore.net";
 
-export function CountyPage({ county, slug, description, image, cities }: CountyPageProps) {
+export function CountyPage({ county, slug, description, image, cities, extraSections }: CountyPageProps) {
   const countyUrl = `${BASE}/service-areas/${slug}`;
 
   const schema = [
@@ -206,6 +214,20 @@ export function CountyPage({ county, slug, description, image, cities }: CountyP
                   </div>
                 </div>
               </motion.div>
+
+              {extraSections && extraSections.map((section, i) => (
+                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 space-y-3">
+                    <h3 className="text-2xl font-serif font-bold text-primary">{section.heading}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{section.body}</p>
+                    {section.linkHref && section.linkLabel && (
+                      <Link href={section.linkHref} className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+                        {section.linkLabel}
+                      </Link>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Cities We Serve in {county}</h3>

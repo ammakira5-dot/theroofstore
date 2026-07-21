@@ -69,7 +69,7 @@ function ScrollToTop() {
 function CountyRoute({ params }: { params: { county: string } }) {
   const county = findCounty(params.county);
   if (!county) return <NotFound />;
-  return <CountyPage county={county.name} slug={county.slug} description={county.description} image={county.image} cities={county.cities} />;
+  return <CountyPage county={county.name} slug={county.slug} description={county.description} image={county.image} cities={county.cities} extraSections={county.extraSections} />;
 }
 
 function CityRoute({ params }: { params: { county: string; city: string } }) {

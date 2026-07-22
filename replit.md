@@ -43,13 +43,15 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
-- **Long-tail keyword implementation — county & city pages** — 20 keywords identified across 4 counties. Add to H1/body copy on relevant city and county pages. Top priorities: (1) Monroe county page — add "salt air roof protection Key West" paragraph (unique environmental signal no inland competitor can claim); (2) Palm Beach county page — add HOA subsection targeting "HOA roof painting Boca Raton" and link to /commercial-roof-coating-hoa; (3) Pricing page — add "roof coating cost Palm Beach County" content (high purchase intent). Full keyword list in attached_assets/Pasted-Suggest-long-tail-keywords-for-each-county-14-51-Worked_1784487296471.txt
+- ✅ **Long-tail keyword implementation — DONE July 21 2026** — (1) Monroe county page: new section "Comparing Roof Paint vs. Roof Coating in Key West" targeting "salt air roof protection Key West". (2) Palm Beach county page: HOA subsection targeting "HOA roof painting Boca Raton", links to /commercial-roof-coating-hoa. (3) Pricing page: "Roof Coating Cost in Palm Beach County" section with RP1/RP2/RP3 price ranges.
 
-- **🔴 PRIORITY — Internal linking strategy (site-wide)** — No systematic internal linking exists across the site. Every page should link to related pages (city pages → product pages, blog posts → service pages, HOA page → /commercial-roofs and /products, etc.). This is a major SEO lever — internal links pass authority, help Google understand site structure, and improve crawl coverage. Action: audit all content pages and add contextual internal links. Start with high-traffic pages: Home, Products, Commercial Roofs, Blog posts, and the new content pages (/diy-vs-pro-roof-coating, /hurricane-roof-prep, /roof-coating-lifespan-florida, /commercial-roof-coating-hoa).
+- ✅ **Internal linking strategy — DONE July 21 2026** — 27 new internal links added across 9 pages: CommercialRoofs, Products, Home, HoaRoofCoating, DiyVsPro, HurricaneRoofPrep, RoofCoatingLifespan, Pricing, RoofServices.
 
-- ✅ **GSC Request Indexing — DONE July 21 2026** — All pages submitted: /distributorships, /blog, /commercial-roof-coating-hoa, /roof-coating-florida.
+- ✅ **GSC Request Indexing — DONE July 21 2026** — All pages submitted: /distributorships, /blog, /commercial-roof-coating-hoa, /roof-coating-florida. Also submit: /service-areas/monroe-county, /service-areas/palm-beach-county, /pricing (updated July 21 2026).
 
-- **Factory page — full distributor/partner network review** — roofpaintmiami.com added as Miami-Dade regional partner. Still to review and potentially add: roofrestorationsandwaterproofinginc.com, bestroofpaint.com, flatroofsealants.com. Decision needed: list individually on factory page vs. route all through /partner-network page (safer for Google compliance). Also review city page links and product/system cross-links from factory page.
+- ✅ **Factory page — city links + product cross-links — DONE July 21 2026** — Service areas strip added (3 county cards + "See all cities" link). Pricing + Commercial/HOA buttons added to "Need it installed?" section. All 5 partner installer names now linked (Windproof → windproofroofsystems.com, Storm Shield Treasure Coast → flatroofsealants.com, Roof Protect Products → roofprotectproducts.com, Roof Paint Miami → roofpaintmiami.com).
+
+- **Factory page — partner decision still open** — Still to decide: add roofrestorationsandwaterproofinginc.com, bestroofpaint.com individually to factory page vs. route through /partner-network page (safer for Google compliance). User said keep on to-do for now.
 
 - ✅ **Factory price sheet auto-response — FULLY LIVE July 21 2026** — Resend domain verified, RESEND_FROM set to `The Roof Store <leads@theroofstore.net>`. Auto-response emails (RP1/RP2/RP3 pricing + RoofProtect PDF) now deliver to all client emails. Built in `artifacts/api-server/src/lib/email.ts` → `buildAutoResponseHtml()`.
 
@@ -73,6 +75,12 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — RoofingContractor schema in `Home.tsx` (BUSINESS_CORE.sameAs) currently has only 2 Google Maps links. Need to add: BBB profile URL, Facebook page URL, Yelp page URL. User to provide these URLs.
 
 - **No analytics installed — add GA4** — Confirmed July 9 2026: no Google Analytics, GA4, or GTM anywhere in the codebase. Without it, real traffic/channel data (organic vs paid vs referral) can't be measured. User to decide: (A) add GA4 tag directly (agent can do), or (B) use GTM container. Measurement ID needed from user.
+
+- **Re-enable windproofroofsystems.com "owns" schema** — All 4 windproof site fixes are done (July 14 2026). Still need to re-add the `"owns"` WebSite entry for windproofroofsystems.com back into `Home.tsx` and `index.html` (was removed as a precaution while their duplicate content was live). Agent can do this immediately — just say go ahead.
+
+- **RoofShield schema image check (audit item #12)** — Audit claimed `smartshield-pail.png` was used on the RoofShield product page in error. Quick code check needed to confirm or close out. Agent can verify immediately.
+
+- **Review count in schema** — aggregateRating in `Home.tsx` BUSINESS_CORE and `index.html` both show reviewCount: "10". Update to reflect actual Google/BBB review count once user confirms the number, then run a review collection campaign.
 
 - **shopping.theroofstore.net — abandoned legacy subdomain** — A separate old (~2020) PHP shopping cart site still indexed by Google. Competes with the real site for brand searches. Fix: server-level 301 redirect `shopping.theroofstore.net` → `https://www.theroofstore.net/` (whoever controls DNS/hosting for that subdomain). If inaccessible: request removal via Google Search Console.
 

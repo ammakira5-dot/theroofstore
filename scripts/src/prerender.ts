@@ -94,12 +94,6 @@ async function main() {
   const browser = await chromium.launch(
     executablePath ? { executablePath } : undefined,
   );
-  const page = await browser.newPage();
-
-  // Block third-party network calls (Google Maps, fonts CDNs, analytics) —
-  // irrelevant to the crawlable text/schema content we're snapshotting, and
-  // they can otherwise stall page load waiting on external network activity.
-  await page.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => route.abort());
 
   let ok = 0;
   let failed = 0;
@@ -114,6 +108,17 @@ async function main() {
       ok++;
       continue;
     }
+
+    // Fresh page per route — ensures <head> is always clean with no leftover
+    // tags from previous routes. React Helmet adds but does not reliably remove
+    // tags across in-page navigations, so reusing one page causes duplicate
+    // <title> and <meta> tags that corrupt every prerendered page's head.
+    const page = await browser.newPage();
+
+    // Block third-party network calls (Google Maps, fonts CDNs, analytics) —
+    // irrelevant to the crawlable text/schema content we're snapshotting, and
+    // they can otherwise stall page load waiting on external network activity.
+    await page.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => route.abort());
 
     try {
       await page.goto(`${baseUrl}${route.loc}`, {
@@ -130,6 +135,8 @@ async function main() {
     } catch (err) {
       failed++;
       console.error(`Failed to prerender ${route.loc}:`, err);
+    } finally {
+      await page.close();
     }
   }
 

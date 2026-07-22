@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { Leaf, Sun, ShieldCheck, Info, Mail } from "lucide-react";
+import { Leaf, Sun, ShieldCheck, Info, Mail, ChevronDown } from "lucide-react";
 
 const BASE = "https://www.theroofstore.net";
 
@@ -78,71 +79,111 @@ const systems: PriceSystem[] = [
   },
 ];
 
+const pricingFaqs = [
+  {
+    q: "How much does roof coating cost per square foot in South Florida?",
+    a: "Roof coating in South Florida ranges from $0.50/sq ft (FungalShield RP1, flat cement tile, low pitch) to $4.75/sq ft (RoofShield RP3, barrel tile, steep pitch). Our most popular system — SmartShield (RP2) — runs $1.90–$2.75/sq ft for most tile roofs. All prices include labor and materials.",
+  },
+  {
+    q: "What does a typical South Florida roof coating job cost in total?",
+    a: "A 2,000 sq ft tile roof typically costs $3,800–$5,500 with our SmartShield (RP2) system, and $5,400–$9,500 with our premium RoofShield (RP3) — compared to $20,000–$50,000 for a full roof replacement. Your exact figure depends on pitch, tile type, surface condition, and which warranty tier you select.",
+  },
+  {
+    q: "Do roof coating prices include labor and materials?",
+    a: "Yes — every price on our menu includes labor and materials with no hidden add-ons. Minor prep items such as cracked mortar, failed ridge caps, or open valleys are noted in your written estimate and quoted as a separate line item — never buried in the coating price.",
+  },
+  {
+    q: "How does roof coating compare to a full re-roof in cost?",
+    a: "A full tear-off and re-roof in South Florida typically runs $10–$25 per square foot — five to ten times more than our coating systems. Coating also preserves your existing tile, avoids permit delays, generates no landfill waste, and qualifies structurally sound roofs for warranties and insurance documentation that a re-roof cannot match at the same price.",
+  },
+  {
+    q: "Will roof coating help with my homeowners insurance?",
+    a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Uplift Certification — the highest wind resistance standard in the United States. Florida SB 2-D requires insurers to offer discounts for certified roof systems, and an Additional Roof Life Certification (ARLC) documenting the restored condition can help retain coverage on aging roofs. Ask us about the inspection documentation package during your free estimate.",
+  },
+  {
+    q: "How do I get an exact roof coating quote?",
+    a: "Submit a contact request on this page and our full factory price sheet is emailed to you instantly — every system, every roof type, every pitch range laid out clearly. For an exact project price we schedule a free onsite assessment where we measure your roof, note the tile type and pitch, and confirm surface condition. No sales pressure, no commitment required.",
+  },
+];
+
 export default function Pricing() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Roof Coating & Waterproofing Services — The Roof Store",
-    url: `${BASE}/pricing`,
-    provider: {
-      "@type": "RoofingContractor",
-      name: "The Roof Store Waterproofing Products",
-      url: BASE,
-      telephone: "+19542109614",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "4801 S University Dr",
-        addressLocality: "Davie",
-        addressRegion: "FL",
-        postalCode: "33328",
-        addressCountry: "US",
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: "Roof Coating & Waterproofing Services — The Roof Store",
+      url: `${BASE}/pricing`,
+      provider: {
+        "@type": "RoofingContractor",
+        name: "The Roof Store Waterproofing Products",
+        url: BASE,
+        telephone: "+19542109614",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "4801 S University Dr",
+          addressLocality: "Davie",
+          addressRegion: "FL",
+          postalCode: "33328",
+          addressCountry: "US",
+        },
+      },
+      areaServed: [
+        { "@type": "AdministrativeArea", name: "Broward County, Florida" },
+        { "@type": "AdministrativeArea", name: "Miami-Dade County, Florida" },
+        { "@type": "AdministrativeArea", name: "Palm Beach County, Florida" },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Roof Coating Price Menu",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Fungal Shield (RP1) — Clear Anti-Fungal Roof Coating" },
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              priceCurrency: "USD",
+              minPrice: "0.50",
+              maxPrice: "1.45",
+              unitText: "SQF",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Smart Shield (RP2) — Waterproofing Tile & Flat Roof Coating" },
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              priceCurrency: "USD",
+              minPrice: "1.90",
+              maxPrice: "2.75",
+              unitText: "SQF",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Roof Shield (RP3) — TAS-106 Certified Full Weatherproofing System" },
+            priceSpecification: {
+              "@type": "PriceSpecification",
+              priceCurrency: "USD",
+              minPrice: "2.70",
+              maxPrice: "4.75",
+              unitText: "SQF",
+            },
+          },
+        ],
       },
     },
-    areaServed: [
-      { "@type": "AdministrativeArea", name: "Broward County, Florida" },
-      { "@type": "AdministrativeArea", name: "Miami-Dade County, Florida" },
-      { "@type": "AdministrativeArea", name: "Palm Beach County, Florida" },
-    ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Roof Coating Price Menu",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Fungal Shield (RP1) — Clear Anti-Fungal Roof Coating" },
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            priceCurrency: "USD",
-            minPrice: "0.50",
-            maxPrice: "1.45",
-            unitText: "SQF",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Smart Shield (RP2) — Waterproofing Tile & Flat Roof Coating" },
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            priceCurrency: "USD",
-            minPrice: "1.90",
-            maxPrice: "2.75",
-            unitText: "SQF",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Roof Shield (RP3) — TAS-106 Certified Full Weatherproofing System" },
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            priceCurrency: "USD",
-            minPrice: "2.70",
-            maxPrice: "4.75",
-            unitText: "SQF",
-          },
-        },
-      ],
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: pricingFaqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
-  };
+  ];
 
   return (
     <div className="w-full">
@@ -334,6 +375,34 @@ export default function Pricing() {
             <Link href="/diy-vs-pro-roof-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
               DIY vs. Professional Roof Coating — what changes and why →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-muted">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-8">Roof Coating Pricing — Frequently Asked Questions</h2>
+          <div className="space-y-3">
+            {pricingFaqs.map((faq, i) => (
+              <div key={i} className="border rounded-xl overflow-hidden bg-card">
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left font-semibold text-foreground hover:bg-muted/50 transition-colors"
+                  aria-expanded={openFaq === i}
+                >
+                  <span>{faq.q}</span>
+                  <ChevronDown
+                    className={`h-4 w-4 text-accent shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {openFaq === i && (
+                  <div className="px-6 pb-5 text-muted-foreground leading-relaxed text-sm border-t bg-muted/20 pt-4">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>

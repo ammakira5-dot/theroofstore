@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { MapPin, Phone, ShieldCheck, Star, Waves, Paintbrush, Droplets, Wind, Wrench } from "lucide-react";
+import { MapPin, Phone, ShieldCheck, Star, Waves, Paintbrush, Droplets, Wind, Wrench, ChevronDown } from "lucide-react";
+import { useState } from "react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 import { cityCoords } from "./coords";
 import { variantIndex, introVariants, serviceVariants, whyChooseVariants, paintVsCoatingVariants } from "./contentVariants";
+import { getCityFaqs } from "./cityFAQs";
 
 interface CityPageProps {
   city: string;
@@ -32,6 +34,9 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
   const services = serviceVariants[serviceIdx](city);
   const whyChoose = whyChooseVariants[whyIdx](city);
   const paintVsCoating = paintVsCoatingVariants[paintIdx](city);
+
+  const faqs = getCityFaqs(citySlug, city, county);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const schema = [
     {
@@ -107,6 +112,15 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
           name: `${county}, Florida`,
         },
       },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ];
 
@@ -270,6 +284,33 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                   <Link href="/roof-painting-vs-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
                     Learn more: Roof Paint vs. Roof Coating Systems →
                   </Link>
+                </div>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <h3 className="text-2xl font-serif font-bold text-primary mb-5">
+                  Frequently Asked Questions — {city} Roof Coating
+                </h3>
+                <div className="space-y-3">
+                  {faqs.map((faq, i) => (
+                    <div key={i} className="border rounded-xl overflow-hidden bg-card">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left font-semibold text-foreground hover:bg-muted/50 transition-colors"
+                        aria-expanded={openFaq === i}
+                      >
+                        <span>{faq.q}</span>
+                        <ChevronDown
+                          className={`h-4 w-4 text-accent shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                      {openFaq === i && (
+                        <div className="px-6 pb-5 text-muted-foreground leading-relaxed text-sm border-t bg-muted/20 pt-4">
+                          {faq.a}
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </motion.div>
 

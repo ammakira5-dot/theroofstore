@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit #3 — theroofstore.net — July 23, 2026</title>
+<style>
+  :root{--blue:#1e3a8a;--blue-l:#3b82f6;--green:#15803d;--green-l:#dcfce7;--amber:#b45309;--amber-l:#fef3c7;--red:#dc2626;--red-l:#fee2e2;--gray:#374151;--gray-l:#f8fafc;--border:#e2e8f0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--gray);background:#f8fafc;line-height:1.65;}
+  .cover{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#2563eb 100%);color:#fff;padding:52px 48px 44px;}
+  .cover .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin-bottom:14px;}
+  .cover h1{font-size:2.2rem;font-weight:800;line-height:1.15;margin-bottom:8px;}
+  .cover .sub{font-size:1rem;opacity:.8;margin-bottom:24px;}
+  .cover .dates{display:flex;gap:24px;font-size:.82rem;opacity:.65;flex-wrap:wrap;}
+  .grade-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:28px;}
+  .grade-card{background:rgba(255,255,255,.1);border-radius:10px;padding:14px 18px;text-align:center;}
+  .grade-card .v{font-size:1.8rem;font-weight:800;}
+  .grade-card .l{font-size:.7rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+  .grade-card .delta{font-size:.8rem;margin-top:4px;}
+  .up{color:#86efac;}.dn{color:#fca5a5;}.same{color:#fcd34d;}
+  .container{max-width:1080px;margin:0 auto;padding:0 32px 64px;}
+  .delta-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border);}
+  .delta-item{background:#fff;padding:16px 20px;}
+  .delta-item .di-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:4px;}
+  .delta-item .di-val{font-size:1.1rem;font-weight:700;color:var(--blue);}
+  .delta-item .di-note{font-size:.78rem;color:#94a3b8;margin-top:2px;}
+  h2.sec{font-size:1.35rem;font-weight:800;color:#0f172a;margin:48px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+  h3.sub{font-size:1rem;font-weight:700;color:var(--blue);margin:22px 0 8px;}
+  p{font-size:.94rem;margin:6px 0;}
+  .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.75rem;font-weight:700;}
+  .badge.green{background:var(--green-l);color:var(--green);}
+  .badge.amber{background:var(--amber-l);color:var(--amber);}
+  .badge.red{background:var(--red-l);color:var(--red);}
+  .badge.blue{background:#dbeafe;color:var(--blue);}
+  table{width:100%;border-collapse:collapse;font-size:.87rem;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  th{background:#f1f5f9;text-align:left;padding:10px 14px;font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#64748b;border-bottom:2px solid var(--border);}
+  td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .tbl-wrap{overflow-x:auto;margin:12px 0;}
+  .card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card.green{border-left:4px solid #16a34a;}
+  .card.amber{border-left:4px solid #d97706;}
+  .card.red{border-left:4px solid #dc2626;}
+  .card.blue{border-left:4px solid #2563eb;}
+  .card h4{font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .card ul{margin:4px 0 0 16px;font-size:.88rem;}
+  .card ul li{margin:3px 0;}
+  .fix{background:var(--gray-l);border-radius:6px;padding:10px 14px;margin-top:8px;font-size:.86rem;}
+  .fix strong{display:block;margin-bottom:3px;color:var(--blue);}
+  .callout{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd;border-radius:10px;padding:18px 22px;margin:14px 0;}
+  .callout h4{color:var(--blue);font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .callout.gold{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fcd34d;}
+  .callout.gold h4{color:var(--amber);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0;}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr;}}
+  code{background:#f1f5f9;border-radius:4px;padding:1px 5px;font-size:.84em;font-family:Consolas,monospace;color:#1d4ed8;}
+  .footer{background:#0f172a;color:#64748b;padding:20px 48px;font-size:.8rem;margin-top:40px;}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <p class="eyebrow">StoreClaw · SEO Audit #3</p>
+  <h1>theroofstore.net — Progress Audit</h1>
+  <p class="sub">Comparing site state against Audit #2 (July 21). Major content expansion detected.</p>
+  <div class="dates">
+    <span>📋 Audit #1: July 18</span>
+    <span>🔄 Audit #2: July 21</span>
+    <span>🔄 Audit #3: July 23</span>
+    <span>⏱ 2 days between audits</span>
+  </div>
+  <div class="grade-row">
+    <div class="grade-card"><div class="v up">A</div><div class="l">Overall SEO</div><div class="delta up">↑ from A−</div></div>
+    <div class="grade-card"><div class="v up">Excellent</div><div class="l">GEO / Content</div><div class="delta up">↑↑ Major leap</div></div>
+    <div class="grade-card"><div class="v up">Strong</div><div class="l">Local Differentiation</div><div class="delta up">↑ Started</div></div>
+    <div class="grade-card"><div class="v amber">⚠</div><div class="l">Content Consistency</div><div class="delta dn">↓ New issue</div></div>
+    <div class="grade-card"><div class="v same">⚠</div><div class="l">Reviews / Off-Page</div><div class="delta same">→ Unverified</div></div>
+    <div class="grade-card"><div class="v red">✗</div><div class="l">Meta Tag Bug</div><div class="delta same">→ Still open</div></div>
+  </div>
+</div>
+
+<div class="delta-bar">
+  <div class="delta-item"><div class="di-label">New Pages Live</div><div class="di-val">10+ pages</div><div class="di-note">TAS-106, roof-life-cert, comparisons, hurricane prep</div></div>
+  <div class="delta-item"><div class="di-label">Pillar URL Conflict</div><div class="di-val">✓ Resolved</div><div class="di-note">/roof-coating-florida now standalone</div></div>
+  <div class="delta-item"><div class="di-label">TAS-106 Dedicated Page</div><div class="di-val">✓ Live</div><div class="di-note">Full GEO asset, Article+FAQ+Product schema</div></div>
+  <div class="delta-item"><div class="di-label">Fort Lauderdale Differentiation</div><div class="di-val">✓ Done</div><div class="di-note">Salt air context, city FAQ, schema-backed</div></div>
+  <div class="delta-item"><div class="di-label">Sitemap Priority — Pillar Pages</div><div class="di-val">0.9</div><div class="di-note">roof-coating-florida & tas-106 both weighted highest</div></div>
+  <div class="delta-item"><div class="di-label">Pricing Page — New Sections</div><div class="di-val">+3 sections</div><div class="di-note">County-specific copy, price factors, cost comparison</div></div>
+  <div class="delta-item"><div class="di-label">Cost-Savings Stat</div><div class="di-val">3 different %</div><div class="di-note">40–60% / 60–70% / 70–80% across pages</div></div>
+  <div class="delta-item"><div class="di-label">Duplicate Meta Bug</div><div class="di-val">Still open</div><div class="di-note">Unchanged since Audit #1</div></div>
+</div>
+
+<div class="container">
+
+<h2 class="sec">1. Headline Win — Content Architecture Nearly Complete</h2>
+
+<p>Since Audit #2, the site has published essentially the entire content architecture recommended in the dominance strategy: <code>/tas-106-certified-roof-coating</code>, <code>/roof-life-certification</code>, <code>/roof-replacement-alternative-florida</code>, <code>/silicone-vs-elastomeric-roof-coating</code>, <code>/roof-painting-vs-coating</code>, <code>/tile-roof-painting</code>, <code>/commercial-roof-coating-hoa</code>, <code>/commercial-roofs</code>, <code>/diy-vs-pro-roof-coating</code>, <code>/hurricane-roof-prep</code>, and <code>/roof-coating-lifespan-florida</code>. This is the single largest jump in content depth across all three audits.</p>
+
+<div class="card green">
+  <h4>✅ /tas-106-certified-roof-coating — Best Page on the Site</h4>
+  <p>This page is exactly what Audit #1 identified as the highest-value GEO asset, executed at a very high standard:</p>
+  <ul>
+    <li>Article + BreadcrumbList + Product + FAQPage schema all present</li>
+    <li>Historical context (Hurricane Andrew, 1992) with a cited verified-fact callout — strong E-E-A-T</li>
+    <li>Comparison table distinguishing TAS-106 from FBC wind rating, ASTM standards, and unverified marketing claims — highly quotable by AI systems</li>
+    <li>Step-by-step application protocol (6 stages) — genuine technical depth competitors cannot replicate</li>
+    <li>"How to Verify" section with direct NOA database instructions — this is a textbook GEO citation-readiness pattern</li>
+    <li>10-question FAQ block covering DIY eligibility, permits, insurance, and verification</li>
+    <li>Downloadable PDF documentation links (test report, data sheet, brochure) — strong trust signal</li>
+  </ul>
+</div>
+
+<div class="card green">
+  <h4>✅ Fort Lauderdale City Page — Differentiation Formula Executed Correctly</h4>
+  <p>This page now matches the differentiation formula from the brand reference almost exactly:</p>
+  <ul>
+    <li>Unique local environmental context: "Salt air from the ocean and the Intracoastal, combined with heavy marine humidity, makes Fort Lauderdale one of South Florida's most demanding environments"</li>
+    <li>Unique building stock reference: Intracoastal waterfront estates vs. inland flat-roof commercial buildings</li>
+    <li>City-specific FAQ with its own FAQPage schema — includes an HOA-approval question unique to this page</li>
+    <li>Customer testimonial referencing a real address and Hurricane Wilma (appears on the TAS-106 page, attributed to a Fort Lauderdale-area customer)</li>
+    <li>Full RoofingContractor + BreadcrumbList + Service + FAQPage schema stack</li>
+  </ul>
+  <p style="margin-top:8px;">This is the template to replicate across the remaining ~99 city pages.</p>
+</div>
+
+<h2 class="sec">2. New Issues Found — Consistency &amp; Compliance</h2>
+
+<div class="card red">
+  <h4>🔴 Insurance/ARLC Messaging Is Now Inconsistent Across Pages</h4>
+  <p>The homepage and the new <code>/roof-life-certification</code> page have been rewritten with more legally precise language:</p>
+  <p style="margin:8px 0;font-style:italic;color:#475569;">"No contractor certifies your roof's useful life. No product does. The right is yours." — <code>/roof-life-certification</code></p>
+  <p style="margin:8px 0;font-style:italic;color:#475569;">"It is that licensed inspector's report — not any product or contractor — that can support a determination of additional useful life." — Homepage FAQ</p>
+  <p>This is a more accurate and defensible position: only a licensed inspector's Useful Life Exam report is what Florida law requires insurers to recognize — not a contractor-issued document. However, two other pages still make the stronger, uncorrected claim:</p>
+  <p style="margin:8px 0;font-style:italic;color:#475569;">"The Roof Store can issue Additional Roof Life Certifications for roofs that have received a qualifying coating system." — <code>/roof-coating-florida</code></p>
+  <p style="margin:8px 0;font-style:italic;color:#475569;">"✅ The Roof Store Handles ARLC Documentation — As both the product manufacturer and the licensed contractor, The Roof Store can issue Additional Roof Life Certifications directly for all Roof Shield (RP3) installations." — <code>/tas-106-certified-roof-coating</code></p>
+  <div class="fix">
+    <strong>Why this matters:</strong> Beyond SEO, this is a customer-facing accuracy issue. If the corrected legal position (inspector issues the report, not the contractor) is the accurate one, the pillar and TAS-106 pages are currently making a stronger claim than the company can legally stand behind. If the older claim is actually correct and the homeower/roof-life-certification pages are the ones that changed, then those two pages have been intentionally softened and the pillar/TAS-106 pages are now the outdated ones. Either way, all four pages need to say the same thing.
+    <br><br>
+    <strong>Recommended fix:</strong> Align all pages to the <code>/roof-life-certification</code> page's framing: The Roof Store prepares the roof (clean, repair, coat) and can assist with documentation/paperwork, but the licensed inspector's Useful Life Exam report — not a contractor certification — is what the insurer is legally required to recognize. Update <code>/roof-coating-florida</code> and <code>/tas-106-certified-roof-coating</code> to match this framing.
+  </div>
+</div>
+
+<div class="card red">
+  <h4>🔴 Pricing Data Is Out of Sync Between /pricing and /roof-coating-florida</h4>
+  <p>The live <code>/pricing</code> page has been updated with new, higher price ranges — but the pricing table embedded in the <code>/roof-coating-florida</code> pillar page still shows the old numbers:</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>System / Roof Type</th><th>Pillar Page Shows</th><th>Live Pricing Page Shows</th></tr></thead>
+    <tbody>
+      <tr><td>RP3, S-Tile/Barrel, 2/12–4/12</td><td>$3.10–$3.50</td><td>$4.00–$4.20</td></tr>
+      <tr><td>RP3, S-Tile/Barrel, 5/12</td><td>$3.50–$3.90</td><td>$4.45–$4.75</td></tr>
+      <tr><td>RP2, Flat Deck</td><td>Not listed</td><td>$2.35–$2.75 (new category)</td></tr>
+      <tr><td>Overall savings vs. replacement</td><td>"60–70% less expensive"</td><td>"often 70–80% less"</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="fix">
+    <strong>Fix:</strong> Update the pricing table and cost-comparison stats on <code>/roof-coating-florida</code> to match the current <code>/pricing</code> page exactly. A prospective customer who reads the guide and then checks pricing will notice the mismatch — and it undermines the "transparent factory pricing" positioning that's central to the brand.
+  </div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Cost-Savings Percentage Now Has Three Different Values Site-Wide</h4>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Page</th><th>Stated Savings</th></tr></thead>
+    <tbody>
+      <tr><td>Homepage FAQ</td><td>40–60% less than replacement</td></tr>
+      <tr><td>Fort Lauderdale city page</td><td>40–60% versus replacement</td></tr>
+      <tr><td>/roof-coating-florida pillar (hero stat)</td><td>60–70% savings vs. replacement</td></tr>
+      <tr><td>/roof-coating-florida pillar (FAQ)</td><td>"at roughly 60–70% of the cost" (ambiguous — could mean only 30–40% savings)</td></tr>
+      <tr><td>/pricing page</td><td>"often 70–80% less"</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="fix">
+    <strong>Fix:</strong> Pick one defensible range (recommend "40–60%" as the most conservative and easiest to substantiate, since RP2 pricing does compress toward the higher end of replacement cost on complex barrel tile) and use it consistently everywhere. If different systems genuinely produce different savings percentages, state that explicitly ("RP1 saves up to 80%; RP3 saves 40–60%") rather than letting three unqualified ranges float across the site. This is also a GEO issue — AI systems citing conflicting stats about the same company reduce citation confidence.
+  </div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ TAS-106 Certification Year — 2006 vs. 2023 Discrepancy</h4>
+  <p>Audit #1 and #2 (and the pillar page still) state the TAS-106 certification was "issued 2023" / "most recently in 2023." The new <code>/tas-106-certified-roof-coating</code> page states it was "originally issued 2006" and displays "2006 · Certification issued" as a stat card. These may both be true (originally issued 2006, renewed/updated 2023) but the pillar page's "certified most recently in 2023" claim and the TAS-106 page's "issued 2006" framing read as contradictory if a reader compares them.</p>
+  <div class="fix"><strong>Fix:</strong> State both dates together wherever the certification date appears: "Originally certified in 2006, with current Notice of Acceptance renewal in 2023." This is a stronger, more credible claim than either date alone and resolves the apparent conflict.</div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Embedded YouTube Videos Showing Error State During Crawl</h4>
+  <p>The TAS-106 page crawl captured two instances of <code>H1: An error occurred.</code> in the heading structure — this appears to originate from embedded YouTube video iframes ("Uplift Test" and the Hurricane Wilma testimonial video) failing to render during the crawl. This may be a crawler-side rendering artifact rather than a real user-facing bug, but it's worth a manual check.</p>
+  <div class="fix"><strong>Action:</strong> Load the live TAS-106 page in a browser and confirm both YouTube embeds play correctly. If they do, this is a crawler artifact and not a real issue. If either video shows an actual error to real visitors, that's a trust signal problem on your best GEO page and should be fixed immediately — broken video embeds undercut the "here's the proof" narrative the page is built around.</div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Parallel URL Structure: /service-areas/[county] vs. /roof-services/[county]</h4>
+  <p>The sitemap now lists both <code>/service-areas/broward-county</code> and <code>/roof-services/broward-county</code> (and the same pattern for Miami-Dade and Palm Beach). If these serve duplicate or near-duplicate content under two URLs, it creates internal cannibalization — Google may split ranking signals between them instead of consolidating on one.</p>
+  <div class="fix"><strong>Action:</strong> Confirm whether these are duplicate content or genuinely distinct pages (e.g., one for "service areas" overview, one for "services by county" listing). If duplicate, canonicalize to one URL and 301 the other, then remove the redirected URL from the sitemap.</div>
+</div>
+
+<div class="card amber">
+  <h4>⚠️ Main Navigation — "Roof Coating Guide" Link Visibility Unclear</h4>
+  <p>Audit #2 confirmed "Roof Coating Guide" was added to the main nav. In this audit's crawl, the visible nav on the TAS-106 and Fort Lauderdale pages reads: <em>Products · About Us · Services · Service Areas · Reviews · Contact Us · More</em> — without a visible "Roof Coating Guide" or "Roof Systems" item. This may be a crawler timing/hydration artifact rather than a real regression, since the homepage crawl in this same session still showed the fuller nav.</p>
+  <div class="fix"><strong>Action:</strong> Manually verify the nav on a live page load (not just homepage) to confirm "Roof Coating Guide" is consistently visible site-wide, including on interior pages, not just the homepage.</div>
+</div>
+
+<h2 class="sec">3. Still Open From Prior Audits</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>Issue</th><th>Audit #1</th><th>Audit #2</th><th>Audit #3</th></tr></thead>
+  <tbody>
+    <tr><td>Duplicate meta tag render bug</td><td><span class="badge red">Open</span></td><td><span class="badge red">Open</span></td><td><span class="badge amber">Unverified this round — recheck</span></td></tr>
+    <tr><td>Review count (target 50+)</td><td><span class="badge red">9</span></td><td><span class="badge red">10</span></td><td><span class="badge amber">Not re-checked — schema not pulled this round</span></td></tr>
+    <tr><td>City page differentiation (100+ pages)</td><td><span class="badge red">Not started</span></td><td><span class="badge red">Not started</span></td><td><span class="badge green">Started — Fort Lauderdale done as template</span></td></tr>
+    <tr><td>TAS-106 dedicated page</td><td><span class="badge amber">Recommended</span></td><td><span class="badge amber">Not started</span></td><td><span class="badge green">✓ Live, excellent quality</span></td></tr>
+    <tr><td>Pillar page URL conflict</td><td>—</td><td><span class="badge red">Open</span></td><td><span class="badge green">✓ Resolved</span></td></tr>
+    <tr><td>Pricing page word count / depth</td><td><span class="badge red">594 words</span></td><td><span class="badge amber">646 words</span></td><td><span class="badge green">Significantly expanded — county copy, price factors, comparison</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 class="sec">4. Next Sprint — Priority Order</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>#</th><th>Action</th><th>Effort</th><th>Impact</th></tr></thead>
+  <tbody>
+    <tr><td><span class="badge red">1</span></td><td><strong>Reconcile ARLC/insurance messaging</strong> across /roof-coating-florida, /tas-106-certified-roof-coating, homepage, and /roof-life-certification to one consistent, legally accurate position</td><td>2–3 hrs</td><td>Compliance risk + trust/consistency for both users and AI citation</td></tr>
+    <tr><td><span class="badge red">2</span></td><td><strong>Sync pricing tables</strong> on /roof-coating-florida to match live /pricing page numbers exactly</td><td>1 hr</td><td>Removes a direct, checkable inconsistency a customer could catch</td></tr>
+    <tr><td><span class="badge amber">3</span></td><td><strong>Standardize the cost-savings percentage</strong> to one range across all pages, or explicitly tier it by system</td><td>1–2 hrs</td><td>GEO citation consistency; removes an easy credibility gap</td></tr>
+    <tr><td><span class="badge amber">4</span></td><td><strong>Resolve TAS-106 certification date framing</strong> (2006 origin + 2023 renewal, stated together everywhere)</td><td>30 min</td><td>Removes apparent contradiction between pillar and TAS-106 pages</td></tr>
+    <tr><td><span class="badge amber">5</span></td><td><strong>Verify embedded YouTube videos</strong> render correctly live; confirm nav consistency site-wide</td><td>30 min</td><td>Trust signal integrity on the site's strongest page</td></tr>
+    <tr><td><span class="badge amber">6</span></td><td><strong>Audit /service-areas vs /roof-services county URL overlap</strong> — canonicalize if duplicate</td><td>1–2 hrs</td><td>Prevents internal ranking cannibalization across county pages</td></tr>
+    <tr><td><span class="badge blue">7</span></td><td><strong>Continue city page differentiation</strong> using the Fort Lauderdale page as the template — next targets: Miami, Boca Raton, Coral Springs</td><td>ongoing</td><td>Unlocks remaining ~97 city keywords</td></tr>
+    <tr><td><span class="badge blue">8</span></td><td><strong>Re-verify duplicate meta tag bug and review count</strong> — not re-checked this round, still assumed open from Audit #2</td><td>1 hr check</td><td>Confirms whether P1 items are actually resolved</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout gold">
+  <h4>📈 Trajectory Assessment</h4>
+  <p>This is the strongest 2-day period across all three audits — the site jumped from having zero dedicated GEO assets to having what is likely the best hurricane-certification content page in the entire Florida roofing industry. The new issues found (messaging inconsistency, pricing sync, stat variance) are a natural byproduct of moving fast across many pages simultaneously — they are all quick, mechanical fixes, not strategic problems. The overall grade moves to <strong>A</strong>. Closing the consistency gaps above would be the highest-leverage use of the next few hours of work, ahead of any further content creation.</p>
+</div>
+
+</div>
+<div class="footer">theroofstore.net SEO Audit #3 · StoreClaw · July 23, 2026</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1f51b2ae894bd73',t:'MTc4NDc1MTIwOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

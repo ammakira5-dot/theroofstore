@@ -696,11 +696,6 @@ app.use((req, res, next) => {
     return res.redirect(301, "/");
   }
 
-  // /blog/:slug → /blog
-  if (req.path.startsWith("/blog/") && req.path.length > 6) {
-    return res.redirect(301, "/blog");
-  }
-
   // /projects/:slug, /project/:slug, /gallery/:slug → /projects
   if (
     (req.path.startsWith("/projects/") ||

@@ -281,6 +281,63 @@ export default function Pricing() {
         </div>
       </section>
 
+      {/* What affects price */}
+      <section className="py-16 bg-muted">
+        <div className="container px-4 max-w-4xl mx-auto space-y-6">
+          <h2 className="text-3xl font-serif font-bold text-primary">What Affects Your Roof Coating Price?</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Four main factors determine where your project lands within our published ranges.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-5">
+            <div className="bg-card border rounded-xl p-5 space-y-2">
+              <h3 className="font-bold text-primary">Roof Type &amp; Pitch</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Flat smooth concrete tile is the quickest to coat — no valleys or ridges to fill. S-tile (barrel / Spanish tile) requires more material and labor to seal every channel, so it sits at the top of each range. Steeper pitches (5/12 and above) add a safety and access premium.
+              </p>
+            </div>
+            <div className="bg-card border rounded-xl p-5 space-y-2">
+              <h3 className="font-bold text-primary">Surface Condition</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                A clean, sound roof with no broken tiles or exposed field spaces goes straight to application. Heavy algae, cracked mortar, or multiple broken tiles require prep work — repair costs are quoted separately and never buried in the coating price.
+              </p>
+            </div>
+            <div className="bg-card border rounded-xl p-5 space-y-2">
+              <h3 className="font-bold text-primary">System Selected</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Fungal Shield (RP1) is a single-coat anti-fungal application. Smart Shield (RP2) adds a BASF waterproofing membrane and color. Roof Shield (RP3) is a full multi-layer rubber retrofit system — more coats, more material, more labor, and a manufacturer-backed lifetime warranty.
+              </p>
+            </div>
+            <div className="bg-card border rounded-xl p-5 space-y-2">
+              <h3 className="font-bold text-primary">Roof Size &amp; Access</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Larger roofs benefit from economies of scale — the per-square-foot rate can decrease as total area grows. Difficult access (minimal setback, pool enclosures directly below, or second-story overhangs) adds a modest surcharge that is always disclosed up front.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Coating vs. replacement */}
+      <section className="py-16 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="bg-card border rounded-2xl p-8 space-y-4">
+            <h2 className="text-3xl font-serif font-bold text-primary">Roof Coating vs. Full Replacement: A Cost Comparison</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              A full roof replacement in South Florida costs between <strong className="text-foreground">$10 and $25 per square foot</strong> — and that's before the permit fees, dumpster haul-away, and the weeks of scheduling lag with a roofing crew. Our coating systems start at <strong className="text-foreground">$1.90 per square foot for RP2</strong> and top out at <strong className="text-foreground">$4.75 per square foot for the heaviest RP3 barrel tile application</strong>. That puts a fully waterproofed, color-coated, warranty-backed tile roof at a fraction of replacement cost — often 70–80% less.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The structural tile underneath a coated roof is also left intact. Tear-offs remove decades of good tile along with the bad. Coating restores, seals, and recolors the existing surface — nothing goes to the landfill, and there's no waiting on back-ordered tile to match an aging style. For roofs that are structurally sound but cosmetically aged or beginning to show water intrusion, coating is almost always the more cost-effective path.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Not every roof is a coating candidate. Our free onsite assessment tells you plainly whether coating is the right call or whether the deck has deteriorated beyond what a surface system can address. We'd rather tell you that up front than sell you a coating that won't last.
+            </p>
+            <Link href="/diy-vs-pro-roof-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+              DIY vs. Professional Roof Coating — what changes and why →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Email callout */}
       <section className="py-14 bg-background">
         <div className="container px-4 max-w-3xl mx-auto">

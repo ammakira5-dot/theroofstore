@@ -341,3 +341,9 @@ id = "vTnus_trvumDh-5-h8esu"
 uri = "file://artifacts/roof-store/public/images/roofprotect-presentation.jpg"
 type = "image"
 title = "RoofProtect Presentation — Full View"
+
+[[outputs]]
+id = "lgDXuZmZRdFAUJBhtXB4V"
+uri = "file://attached_assets/Brand_Evidence_File_theroofstore_1784750473135.pdf"
+type = "pdf"
+title = "Brand Evidence File — The Roof Store v. theroof.store"

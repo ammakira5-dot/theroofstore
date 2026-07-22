@@ -647,12 +647,12 @@ const EXACT_REDIRECTS = {
   "/questions-to-ask-your-roofing-contractor": "/questions",
 
   // Legacy service area pages
-  "/broward-county": "/service-areas/broward",
-  "/broward": "/service-areas/broward",
-  "/miami-dade": "/service-areas/miami-dade",
-  "/miami-dade-county": "/service-areas/miami-dade",
-  "/palm-beach": "/service-areas/palm-beach",
-  "/palm-beach-county": "/service-areas/palm-beach",
+  "/broward-county": "/service-areas/broward-county",
+  "/broward": "/service-areas/broward-county",
+  "/miami-dade": "/service-areas/miami-dade-county",
+  "/miami-dade-county": "/service-areas/miami-dade-county",
+  "/palm-beach": "/service-areas/palm-beach-county",
+  "/palm-beach-county": "/service-areas/palm-beach-county",
   "/service-area": "/service-areas",
   "/areas-we-serve": "/service-areas",
   "/locations": "/service-areas",

@@ -55,6 +55,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - ✅ **City pages — meta description uniqueness + intro variants — DONE July 22 2026** — Meta description now derived from each city's unique `blurb` (105/109 cities get a distinct description); fallback for 4 blurb-less cities is a tighter generic. `introVariants` expanded from 4 → 8 (halves collision rate). 157/157 pages prerendered.
 
+- **Re-enable windproofroofsystems.com "owns" schema** — Add the `"owns"` WebSite entry for windproofroofsystems.com back into `Home.tsx` (BUSINESS_CORE.sameAs / "owns" array) and `index.html`. Was removed as a precaution while their duplicate content was live. All 4 windproof fixes are done (July 14 2026) so it is safe to restore. Agent can do immediately — just say go ahead.
+
 - **🔴 GSC resubmit — OWNER ACTION NEEDED July 22 2026** — After the July 22 publish, resubmit all affected pages in Google Search Console → URL Inspection → Request Indexing. Pages to resubmit: all 109 city pages (e.g. /service-areas/broward-county/fort-lauderdale), all 7 blog post pages (/blog/*), plus /blog index. Priority: city pages first as they benefit most from unique meta descriptions.
 
 - ✅ **Factory page — city links + product cross-links — DONE July 21 2026** — Service areas strip added (3 county cards + "See all cities" link). Pricing + Commercial/HOA buttons added to "Need it installed?" section. All 5 partner installer names now linked (Windproof → windproofroofsystems.com, Storm Shield Treasure Coast → flatroofsealants.com, Roof Protect Products → roofprotectproducts.com, Roof Paint Miami → roofpaintmiami.com).

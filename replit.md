@@ -43,7 +43,16 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
-- **🔴 #1 PRIORITY — GSC resubmit after July 22 publish — OWNER ACTION IN PROGRESS** — Resubmit all pages updated in the July 22 publish via GSC → URL Inspection → Request Indexing. Pages to resubmit: (1) all 109 city pages — /service-areas/broward-county/fort-lauderdale etc (benefit most from unique meta descriptions); (2) all 7 blog post pages — /blog/*; (3) /blog index. Do in batches — GSC allows ~10 manual resubmits per day. Sitemap also resubmitted (or pending re-crawl). Sitemap "come back later" message is a GSC timing delay, not a file error — the file is valid.
+- **🔴 #1 PRIORITY — GSC resubmit after July 22 publish — OWNER ACTION IN PROGRESS** — Sitemap resubmitted July 22 (157 pages queued). Still submit these manually via GSC → URL Inspection → Request Indexing (blog posts were broken in prod until July 22 publish — need immediate recrawl):
+  - https://www.theroofstore.net/blog/florida-sb-2d-roof-insurance-law
+  - https://www.theroofstore.net/blog/how-roof-age-affects-insurance-florida
+  - https://www.theroofstore.net/blog/roof-insurance-claims-florida-tips
+  - https://www.theroofstore.net/blog/tile-roof-coating-vs-replacement
+  - https://www.theroofstore.net/blog/2026-hurricane-season-roof-prep-south-florida
+  - https://www.theroofstore.net/blog/how-long-does-roof-coating-last-florida
+  - https://www.theroofstore.net/blog/diy-vs-professional-roof-coating-florida
+  - https://www.theroofstore.net/blog
+  - Then next day: /residential.php, /projects/reviews.php, /fl/Miami-roof-restoration.php (redirect errors)
 
 - ✅ **Long-tail keyword implementation — DONE July 21 2026** — (1) Monroe county page: new section "Comparing Roof Paint vs. Roof Coating in Key West" targeting "salt air roof protection Key West". (2) Palm Beach county page: HOA subsection targeting "HOA roof painting Boca Raton", links to /commercial-roof-coating-hoa. (3) Pricing page: "Roof Coating Cost in Palm Beach County" section with RP1/RP2/RP3 price ranges.
 

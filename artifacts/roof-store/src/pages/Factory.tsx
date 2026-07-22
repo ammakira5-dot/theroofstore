@@ -167,6 +167,12 @@ export default function Factory() {
                     <Link href="/roof-systems">Choose a System</Link>
                   </Button>
                   <Button asChild size="sm" variant="outline">
+                    <Link href="/pricing">View Pricing</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/commercial-roof-coating-hoa">Commercial &amp; HOA</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
                     <Link href="/contact">Free Estimate</Link>
                   </Button>
                 </div>
@@ -178,9 +184,9 @@ export default function Factory() {
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1.5">
                   <li><span className="font-semibold text-foreground">Storm Shield Paint Systems Inc.</span> — South Florida (our in-house licensed installer)</li>
-                  <li><span className="font-semibold text-foreground">Windproof Roof Systems</span> — South Florida tile restoration specialist</li>
-                  <li><span className="font-semibold text-foreground">Storm Shield Roof Coating Systems</span> — Treasure Coast / Port St. Lucie</li>
-                  <li><span className="font-semibold text-foreground">Roof Protect Products</span> — factory-direct product supply, Broward County</li>
+                  <li><a href="https://www.windproofroofsystems.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Windproof Roof Systems</a> — South Florida tile restoration specialist</li>
+                  <li><a href="https://www.flatroofsealants.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Storm Shield Roof Coating Systems</a> — Treasure Coast / Port St. Lucie</li>
+                  <li><a href="https://www.roofprotectproducts.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Roof Protect Products</a> — factory-direct product supply, Broward County</li>
                   <li><a href="https://www.roofpaintmiami.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-accent transition-colors">Roof Paint Miami</a> — Miami-Dade County coverage</li>
                 </ul>
                 <div className="flex flex-wrap gap-3 pt-1">
@@ -343,6 +349,39 @@ export default function Factory() {
                 </Link>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-background border-t">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-serif font-bold text-primary mb-2">Service Areas</h2>
+            <p className="text-muted-foreground">We install our systems throughout South Florida — find your county or city below.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            {[
+              { name: "Broward County", slug: "broward-county", cities: "Fort Lauderdale, Coral Springs, Hollywood, Weston, Davie & more" },
+              { name: "Miami-Dade County", slug: "miami-dade-county", cities: "Miami, Hialeah, Coral Gables, Doral, Homestead & more" },
+              { name: "Palm Beach County", slug: "palm-beach-county", cities: "Boca Raton, West Palm Beach, Delray Beach, Boynton Beach & more" },
+            ].map((county) => (
+              <Link
+                key={county.slug}
+                href={`/service-areas/${county.slug}`}
+                className="block bg-card border rounded-xl p-5 hover:shadow-md hover:-translate-y-0.5 transition-all group"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <MapPin className="h-4 w-4 text-accent shrink-0" />
+                  <span className="font-bold text-foreground group-hover:text-accent transition-colors">{county.name}</span>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed">{county.cities}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link href="/service-areas" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
+              See all cities we serve →
+            </Link>
           </div>
         </div>
       </section>

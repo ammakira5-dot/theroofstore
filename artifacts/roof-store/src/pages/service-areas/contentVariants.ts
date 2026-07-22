@@ -31,6 +31,26 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
     `Between intense UV, heavy seasonal rain, high humidity, and hurricane risk, ${city} is a demanding place for a roof to survive. Our coating systems are engineered around those exact conditions rather than a generic climate.`,
     `Property owners in ${city} typically cut roofing costs by 40–60% by choosing our liquid-applied rubber roof shield system over full replacement — a seamless, weatherproof membrane installed with minimal disruption and zero landfill waste.`,
   ],
+  (city, county) => [
+    `The Roof Store has served ${city} and the rest of ${county} for nearly 30 years — the same certified crew on every roof maintenance, coating, restoration, and waterproofing job, no subcontracting, no shortcuts.`,
+    `Roofs in ${city} contend with some of the harshest conditions in North America: 3,000+ hours of annual UV, tropical downpours, thick humidity, and hurricane-force wind season after season. Our coating systems are built around those exact conditions, not transplanted from a general-climate formula.`,
+    `Most ${city} property owners who choose our liquid-applied rubber coating system over a full replacement save 60–70% on cost — and end up with a seamless, warranted, hurricane-rated roof that often outperforms what a new installation would have delivered.`,
+  ],
+  (city, county) => [
+    `Storm Shield Paint Systems Inc. — The Roof Store — has protected roofs across ${county}, including ${city}, since 1994. Every coating, restoration, and waterproofing project is handled by our own certified technicians from start to finish.`,
+    `Hurricane season defines roofing requirements in ${city}. Between June and November, your roof's ability to shed wind-driven rain, resist uplift, and stay sealed is tested directly. Our Roof Shield system carries the world's only TAS-106 Dade County Uplift certification for a liquid coating — engineered specifically for this climate.`,
+    `Beyond hurricane protection, ${city} roofs face daily UV degradation, algae and fungal growth from the humidity, and the cumulative stress of heavy summer rainfall. Our three-system lineup addresses every level of those demands, starting from 50¢ per square foot.`,
+  ],
+  (city, county) => [
+    `For nearly three decades, ${city} homeowners and property managers have relied on The Roof Store for professional roof coating, tile restoration, and waterproofing — work performed by the same licensed, insured team on every job since 1994.`,
+    `If you've received pressure from Citizens Insurance or a private carrier about your ${city} roof's age, a professionally applied coating system paired with an Additional Roof Life Certification can satisfy their requirements under Florida law — often at a fraction of the cost of a forced replacement.`,
+    `Our three coating systems — FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) — cover every level of protection a ${city} home or commercial building might need, from anti-algae surface treatment to a full hurricane-rated rubber membrane retrofit.`,
+  ],
+  (city, county) => [
+    `The Roof Store has been a licensed and insured roofing contractor in ${county} — serving ${city} and surrounding communities — since 1994, with the same certified team handling every project from pressure washing through final warranty coat.`,
+    `South Florida's roofing environment is uniquely demanding: relentless UV, seasonal flooding-level rain, persistent humidity, and a direct hurricane corridor that tests every weak point in a roof's surface. In ${city}, that means your coating system has to be engineered for this climate specifically — which is exactly how ours are built.`,
+    `Choosing a professional coating system over full replacement is a decision ${city} property owners make for three reasons: cost (typically 60–70% less), disruption (no tear-off, no dumpster, no weeks of noise), and performance (our systems outperform standard paint and many traditional roof systems under Florida conditions).`,
+  ],
 ];
 
 export const serviceVariants: ((city: string) => { title: string; desc: string }[])[] = [

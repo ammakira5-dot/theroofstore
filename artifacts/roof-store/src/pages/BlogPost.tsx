@@ -56,14 +56,7 @@ export function BlogPostPage({ params }: BlogPostRouteProps) {
         "@id": post.url,
       },
       articleBody: post.body.join(" "),
-      keywords: [
-        "roof coating Florida",
-        "Florida homeowners insurance",
-        "Additional Roof Life Certification",
-        "Senate Bill 2-D",
-        "Citizens Insurance roof",
-        "South Florida roofing",
-      ].join(", "),
+      keywords: post.keywords.join(", "),
     },
     {
       "@context": "https://schema.org",

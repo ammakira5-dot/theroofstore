@@ -49,6 +49,12 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 - ✅ **GSC Request Indexing — DONE July 21 2026** — All pages submitted: /distributorships, /blog, /commercial-roof-coating-hoa, /roof-coating-florida. Also submit: /service-areas/monroe-county, /service-areas/palm-beach-county, /pricing (updated July 21 2026).
 
+- ✅ **BlogPosting schema keywords — DONE July 22 2026** — Added `keywords: string[]` field to `BlogPost` interface and all 7 posts. Posts 1–4 retain insurance/SB 2-D keywords (correct for those posts); posts 5–7 now have accurate hurricane prep / lifespan / DIY keywords. `BlogPost.tsx` uses `post.keywords.join(", ")` in schema instead of hardcoded array.
+
+- ✅ **City pages — meta description uniqueness + intro variants — DONE July 22 2026** — Meta description now derived from each city's unique `blurb` (105/109 cities get a distinct description); fallback for 4 blurb-less cities is a tighter generic. `introVariants` expanded from 4 → 8 (halves collision rate). 157/157 pages prerendered.
+
+- **🔴 GSC resubmit — OWNER ACTION NEEDED July 22 2026** — After the July 22 publish, resubmit all affected pages in Google Search Console → URL Inspection → Request Indexing. Pages to resubmit: all 109 city pages (e.g. /service-areas/broward-county/fort-lauderdale), all 7 blog post pages (/blog/*), plus /blog index. Priority: city pages first as they benefit most from unique meta descriptions.
+
 - ✅ **Factory page — city links + product cross-links — DONE July 21 2026** — Service areas strip added (3 county cards + "See all cities" link). Pricing + Commercial/HOA buttons added to "Need it installed?" section. All 5 partner installer names now linked (Windproof → windproofroofsystems.com, Storm Shield Treasure Coast → flatroofsealants.com, Roof Protect Products → roofprotectproducts.com, Roof Paint Miami → roofpaintmiami.com).
 
 - **Factory page — partner decision still open** — Still to decide: add roofrestorationsandwaterproofinginc.com, bestroofpaint.com individually to factory page vs. route through /partner-network page (safer for Google compliance). User said keep on to-do for now.

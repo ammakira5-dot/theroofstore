@@ -12,6 +12,7 @@ export interface BlogPost {
   excerpt: string;
   body: string[];
   metaDescription: string;
+  keywords: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -33,6 +34,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "Florida's Governor issued a March 2023 bulletin protecting homeowners' right to an Additional Roof Life Certification. Roof coating does NOT void your insurance — here's what the law actually says.",
+    keywords: ["roof coating Florida", "Florida homeowners insurance", "Additional Roof Life Certification", "Senate Bill 2-D", "Citizens Insurance roof", "South Florida roofing"],
   },
   {
     slug: "new-florida-homeowners-insurance-laws",
@@ -52,6 +54,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "Senate Bill 2-D (Fla. 2022) changed what Florida insurers can demand from homeowners with older roofs. Learn who has legal authority to assess your roof — and it's not your insurance agent.",
+    keywords: ["Florida homeowners insurance laws", "Senate Bill 2-D", "roof inspection rights Florida", "Citizens Insurance roof", "roofing contractor assessment", "South Florida roofing"],
   },
   {
     slug: "citizens-insurance-for-older-tile-roofs-in-florida",
@@ -71,6 +74,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "Citizens Insurance changed its rules for older tile roofs after SB 2-D (2022). A professional coating + Additional Roof Life Certification can protect your coverage. Here's the step-by-step process.",
+    keywords: ["Citizens Insurance tile roof", "older tile roof Florida", "Additional Roof Life Certification", "SB 2-D roof coverage", "tile roof insurance Florida", "roof coating Citizens Insurance"],
   },
   {
     slug: "additional-roof-life-certification-benefits-meaning",
@@ -90,6 +94,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "An Additional Roof Life Certification legally supersedes insurance age-based denials in Florida (per SB 2-D, 2022). Learn what it covers, how to get one, and how it can save you $20,000–$40,000.",
+    keywords: ["Additional Roof Life Certification", "roof life extension affidavit Florida", "Florida roof certification insurance", "Citizens Insurance roof compliance", "roof coating warranty Florida", "South Florida roofing contractor"],
   },
   {
     slug: "2026-hurricane-season-roof-prep-south-florida",
@@ -109,6 +114,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "Complete 2026 pre-season roof checklist for South Florida homeowners — inspection, cleaning, repair, coating, and Citizens Insurance certification. Schedule before April; booking fills fast.",
+    keywords: ["hurricane roof prep South Florida", "2026 hurricane season checklist", "roof inspection before hurricane season", "tile roof hurricane protection", "TAS-106 roof coating", "roof coating Citizens Insurance certification"],
   },
   {
     slug: "how-long-does-roof-coating-last-florida",
@@ -128,6 +134,7 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "How long does elastomeric roof coating last in Florida? FungalShield: 5–7 yrs. SmartShield: 10–15 yrs. RoofShield: Lifetime. The factors that determine lifespan in South Florida's extreme climate.",
+    keywords: ["elastomeric roof coating lifespan Florida", "how long does roof coating last", "FungalShield lifespan", "SmartShield warranty", "RoofShield lifetime warranty", "Florida roof coating durability"],
   },
   {
     slug: "diy-vs-professional-roof-coating-florida",
@@ -147,5 +154,6 @@ export const blogPosts: BlogPost[] = [
     ],
     metaDescription:
       "DIY roof coating in Florida: the honest guide from 30 years in the field. Surface prep failures, TAS-106 certification requirements, insurance certification, and true cost comparison. Call 954-210-9614.",
+    keywords: ["DIY roof coating Florida", "professional roof coating vs DIY", "TAS-106 certification requirements", "roof coating surface preparation", "Citizens Insurance roof certification", "South Florida roof coating contractor"],
   },
 ];

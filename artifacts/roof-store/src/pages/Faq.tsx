@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "How does roof coating compare to full roof replacement?",
-    a: "Roof coating typically costs 40–60% less than full replacement, can be applied over your existing roof (avoiding landfill waste), and can extend the life of your roof by 10–25 years. It also qualifies as a roofing maintenance cost in many tax and insurance scenarios. However, if your roof has severe structural damage, replacement may be the better option — our team will give you an honest assessment.",
+    a: "Roof coating typically costs 60–70% less than full replacement, can be applied over your existing roof (avoiding landfill waste), and can extend the life of your roof by 10–25 years. It also qualifies as a roofing maintenance cost in many tax and insurance scenarios. However, if your roof has severe structural damage, replacement may be the better option — our team will give you an honest assessment.",
   },
   {
     q: "Will a roof coating hold up to Florida hurricanes?",

@@ -488,6 +488,38 @@ export default function TrademarkEvidenceFile() {
             <p className="text-xs font-sans text-gray-600 leading-relaxed">
               <strong>Source:</strong> Google Search Console, verified property theroofstore.net, 3-month data window ending July 22, 2026. Data extracted and recorded by site administrator. Full GSC export available upon request in discovery.
             </p>
+            <div className="border border-amber-300 bg-amber-50 rounded p-4 text-sm font-sans text-amber-900 leading-relaxed mt-4">
+              <strong>GSC Data Retention Caveat (for counsel):</strong> Google Search Console retains query-level data for a maximum of 16 months. Pre-August 2021 baseline data — which would establish the brand search position before theroof.store launched — is no longer available within GSC. Establishing the August 2021 inflection point requires a third-party historical tool (Ahrefs, SEMrush, or Moz) capable of reconstructing historical keyword ranking data. All data available to the site administrator has been produced above; third-party tool comparison is recommended to counsel as the next evidentiary step.
+            </div>
+            <div className="mt-6 border-t border-gray-300 pt-4">
+              <h4 className="text-sm font-bold uppercase tracking-wide mb-3">Recommended Damages Quantification Methodology</h4>
+              <p className="text-xs font-sans text-gray-700 mb-3 leading-relaxed">The following five-step methodology, once executed with available data sources, will convert the current CPC-modeled projection in Exhibit E into a defensible, auditable damages figure suitable for demand letter, UDRP filing, or litigation support:</p>
+              <table className="w-full text-xs font-sans border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-gray-900">
+                    <th className="text-left py-2 pr-3 w-8">Step</th>
+                    <th className="text-left py-2 pr-3">Metric</th>
+                    <th className="text-left py-2">How It Becomes a Damages Figure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["1", "Baseline branded search volume for "the roof store" + FL variants, pre-Aug 2021 vs. post", "Establishes whether search demand for the brand name split after theroof.store launched — requires Ahrefs/SEMrush historical data"],
+                    ["2", "GSC impression share for branded terms, month-by-month, Aug 2021–present", "Shows the actual erosion curve, not a flat CPC estimate — 16-month window available now, pre-2025 window requires third-party tool"],
+                    ["3", "Apply real Florida roofing CPC (Exhibit E: $8–$15/click) to the measured impression/click erosion", "Converts real search data into a defensible dollar figure — replaces the modeled volume assumption in the current Exhibit E"],
+                    ["4", "Cross-reference with GA4 direct traffic and conversion trend over the same window", "Corroborates the search-data finding with a second, independent metric — NOTE: GA4 not yet installed on theroofstore.net; installation recommended immediately to begin building the record"],
+                    ["5", "Layer in Ahrefs/SEMrush keyword cannibalization data", "Shows specific queries lost, not just aggregate volume — converts a range into a number opposing counsel must address"],
+                  ].map(([step, metric, how]) => (
+                    <tr key={step as string} className="border-b border-gray-200">
+                      <td className="py-2 pr-3 font-bold text-gray-900">{step}</td>
+                      <td className="py-2 pr-3 text-gray-800">{metric}</td>
+                      <td className="py-2 text-gray-600 italic">{how}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <p className="text-xs font-sans text-gray-500 mt-3 italic">Methodology source: Supplementary Impact Analysis Memo, July 22, 2026. Does not constitute legal advice. All damages figures should be reviewed by counsel before inclusion in any filing or demand letter.</p>
+            </div>
           </section>
 
           {/* Exhibit L — Public Prior Rights Notice Page */}

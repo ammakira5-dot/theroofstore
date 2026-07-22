@@ -56,7 +56,7 @@ const schema = [
         name: "How much does roof coating cost in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft. The full monolithic hurricane protection system (RP3 Roof Shield) starts at $2.70/sq ft. All prices at The Roof Store include labor and materials. Full replacement in Florida typically runs $10–$25 per square foot, making coating 60–70% less expensive.",
+          text: "Professional roof coating in Florida costs between $1.90 and $4.75 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft. The full monolithic hurricane protection system (RP3 Roof Shield) starts at $2.70/sq ft. All prices at The Roof Store include labor and materials. Full replacement in Florida typically runs $10–$25 per square foot, making coating 60–70% less expensive.",
         },
       },
       {
@@ -330,7 +330,7 @@ export default function RoofCoatingFlorida() {
                   ["Manufacturer Warranty", "✓ Yes (up to Lifetime on RP3)", "✗ No structural warranty"],
                   ["Wind Uplift Rating", "✓ TAS-106 on RP3 (135+ MPH)", "✗ None"],
                   ["Insurance Cert Eligible", "✓ Yes — ARLC available", "✗ Generally no"],
-                  ["Typical Cost (installed)*", "From $1.90/sq ft (RP2) · up to $3.90/sq ft (RP3)", "From $1.70/sq ft"],
+                  ["Typical Cost (installed)*", "From $1.90/sq ft (RP2) · up to $4.75/sq ft (RP3)", "From $1.70/sq ft"],
                 ].map(([char, coating, paint], i) => (
                   <tr key={i} className="hover:bg-muted/30 transition-colors">
                     <td className="px-4 py-3 font-medium text-foreground">{char}</td>
@@ -507,11 +507,11 @@ export default function RoofCoatingFlorida() {
         <motion.section id="hurricane" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">TAS-106 — The Only Hurricane-Certified Liquid Coating in the World</h2>
           <AnswerBlock>
-            The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating system in the world to hold Dade County TAS-106 Uplift Certification. TAS-106 is Florida's highest wind resistance standard for roofing products. The Roof Shield system was certified most recently in 2023 and has been validated at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates.
+            The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating system in the world to hold Dade County TAS-106 Uplift Certification. TAS-106 is Florida's highest wind resistance standard for roofing products. The Roof Shield system was originally certified in 2006 — the only liquid coating to ever achieve this standard — with current NOA renewal in 2023, and has been validated at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates.
           </AnswerBlock>
           <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 rounded-xl px-4 py-3 mb-4 text-sm font-bold text-amber-800">
             <Medal className="h-5 w-5 text-amber-600" />
-            Dade County TAS-106 Uplift Certified — Roof Shield (RP3) — 2023
+            Dade County TAS-106 Uplift Certified — Roof Shield (RP3) — Originally 2006 · Current NOA 2023
           </div>
           <div className="space-y-3 text-sm text-muted-foreground">
             <p><strong className="text-foreground">What TAS-106 Means:</strong> TAS-106 (Test Application Standard 106) is the Florida Building Code's standard for measuring wind uplift resistance of roof assemblies. Products must be physically tested on actual roof substrates under controlled conditions.</p>
@@ -533,7 +533,7 @@ export default function RoofCoatingFlorida() {
         <motion.section id="cost" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Roof Coating Cost in Florida</h2>
           <AnswerBlock>
-            Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). At The Roof Store — as the direct manufacturer and contractor — pricing starts at $1.90/sq ft for waterproof color coating (RP2) and $2.70/sq ft for the full monolithic hurricane protection system (RP3 Roof Shield). Full tile roof replacement typically costs $10–$25/sq ft, making coating 60–70% less expensive.
+            Professional roof coating in Florida costs between $1.90 and $4.75 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). At The Roof Store — as the direct manufacturer and contractor — pricing starts at $1.90/sq ft for waterproof color coating (RP2) and $2.70/sq ft for the full monolithic hurricane protection system (RP3 Roof Shield). Full tile roof replacement typically costs $10–$25/sq ft, making coating 60–70% less expensive.
           </AnswerBlock>
           <h3 className="text-xl font-serif font-bold text-primary mb-3">The Roof Store Factory Price Menu</h3>
           <p className="text-sm text-muted-foreground mb-4">Because The Roof Store manufactures its own products and employs its own crew, there is no distributor markup, contractor markup, or materials middleman. All prices include labor and materials.</p>
@@ -554,9 +554,9 @@ export default function RoofCoatingFlorida() {
                 <tr><td className="px-4 py-3 font-bold text-accent" rowSpan={3}>Smart Shield (RP2)<br /><span className="text-xs font-normal text-muted-foreground">Waterproof, 3,000+ colors</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$1.90–$2.20</td><td className="px-4 py-3 font-semibold text-foreground">$2.20–$2.50</td></tr>
                 <tr><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.10–$2.40</td><td className="px-4 py-3 font-semibold text-foreground">$2.40–$2.70</td></tr>
                 <tr><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$2.30–$2.70</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.10</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 font-bold text-primary" rowSpan={3}>Roof Shield (RP3)<br /><span className="text-xs font-normal text-muted-foreground">TAS-106, Lifetime Warranty</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.10</td><td className="px-4 py-3 font-semibold text-foreground">$3.10–$3.50</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.90–$3.30</td><td className="px-4 py-3 font-semibold text-foreground">$3.30–$3.70</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$3.10–$3.50</td><td className="px-4 py-3 font-semibold text-foreground">$3.50–$3.90</td></tr>
+                <tr className="bg-primary/5"><td className="px-4 py-3 font-bold text-primary" rowSpan={3}>Roof Shield (RP3)<br /><span className="text-xs font-normal text-muted-foreground">TAS-106, Lifetime Warranty</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.00</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.00</td></tr>
+                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$3.25–$3.50</td><td className="px-4 py-3 font-semibold text-foreground">$3.65–$3.85</td></tr>
+                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$4.00–$4.20</td><td className="px-4 py-3 font-semibold text-foreground">$4.45–$4.75</td></tr>
               </tbody>
             </table>
           </div>

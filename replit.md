@@ -43,6 +43,14 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **🔴 Exhibit N — theroof.store intake form screenshot (OWNER ACTION)** — Screenshot the theroof.store B2B intake form showing "Dmitry Lipinskiy" as a selectable option in the "How Did You Hear About Us?" dropdown. This proves his personal brand audience is a deliberate, CRM-tracked acquisition channel for theroof.store — strongest new evidence item. Once screenshot in hand, agent can add as Exhibit N to TrademarkEvidenceFile.tsx immediately.
+
+- **🔴 Exhibit O — Facebook shipping post screenshot (OWNER ACTION)** — Screenshot the Facebook post from theroof.store/Dmitry Lipinskiy stating "Delivering within a week anywhere south (Atlanta, Florida, California)." Proves geographic market competition in Florida from an independent third-party source. Once screenshot, agent adds as Exhibit O.
+
+- **GA4 — Install Google Analytics immediately to build traffic damage record** — No GA4 or GTM installed anywhere on theroofstore.net (confirmed). Without it there is zero first-party traffic history for the damages case. To install: (1) Go to analytics.google.com → create a GA4 property for theroofstore.net → copy the Measurement ID (format: G-XXXXXXXXXX). (2) Give the Measurement ID to the agent — 15-minute install. Every month without GA4 is a month of traffic data lost permanently to the damages case. PRIORITY: do this before the next GSC cycle.
+
+- **GSC → Google Sheets export for damages analysis** — To turn GSC data into defensible exhibit-quality evidence: In Google Search Console → Performance → set date range to max (16 months) → filter by "the roof store" and variants → Export → Google Sheets. Share the sheet with the agent and a full branded-query trend analysis (impression/click erosion chart, month-by-month) can be built as Exhibit K-2 with no additional tools needed.
+
 - **🔴 #1 PRIORITY — GSC resubmit after July 22 publish — OWNER ACTION IN PROGRESS** — Sitemap resubmitted July 22 (157 pages queued). Still submit these manually via GSC → URL Inspection → Request Indexing (blog posts were broken in prod until July 22 publish — need immediate recrawl):
   - https://www.theroofstore.net/blog/florida-sb-2d-roof-insurance-law
   - https://www.theroofstore.net/blog/how-roof-age-affects-insurance-florida

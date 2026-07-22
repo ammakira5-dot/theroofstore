@@ -14,22 +14,22 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   (city, county) => [
     `The Roof Store has been serving ${city}, ${county} homeowners and commercial property owners for nearly 30 years. Our certified technicians provide professional roof maintenance, rubber roof coating, tile restoration, and weatherproofing services throughout the ${city} area.`,
     `Living in ${city}, FL means dealing with intense UV exposure, heavy rainfall, high humidity, and the constant threat of hurricanes. Our roof coating systems are specifically engineered for South Florida's demanding climate — protecting your home without the cost of a full roof replacement.`,
-    `Most homeowners in ${city} save 40–60% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.`,
+    `Most homeowners in ${city} save 60–70% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.`,
   ],
   (city, county) => [
     `For nearly three decades, ${city} and the rest of ${county} have relied on The Roof Store for professional roof maintenance, roof coating, tile restoration, and waterproofing — work carried out by the same certified crew of technicians on every job.`,
     `${city} homeowners face a familiar set of challenges: relentless UV, tropical downpours, thick humidity, and hurricane season every year. We build our coating systems specifically to hold up against exactly that, so your roof stays protected without a full tear-off.`,
-    `A liquid-applied rubber membrane goes on seamless, cures fast, and typically saves ${city} property owners 40–60% versus replacement — all while keeping the old roof out of the landfill and your property free of demolition mess.`,
+    `A liquid-applied rubber membrane goes on seamless, cures fast, and typically saves ${city} property owners 60–70% versus replacement — all while keeping the old roof out of the landfill and your property free of demolition mess.`,
   ],
   (city, county) => [
     `Since 1994, The Roof Store has protected roofs across ${county}, including ${city} — the same certified technicians handling every roof maintenance, coating, restoration, and waterproofing job from start to finish.`,
     `South Florida throws everything at a roof: harsh sun, torrential rain, thick humidity, and hurricane-force wind. In ${city}, that means a roof coating system needs to be engineered for the climate, not just applied to it — which is exactly how ours are built.`,
-    `Rather than a full roof replacement, most ${city} property owners choose our liquid-applied rubber system: a seamless membrane bonded directly to the existing roof, saving 40–60% on cost with none of the waste or disruption of a tear-off.`,
+    `Rather than a full roof replacement, most ${city} property owners choose our liquid-applied rubber system: a seamless membrane bonded directly to the existing roof, saving 60–70% on cost with none of the waste or disruption of a tear-off.`,
   ],
   (city, county) => [
     `${city} sits within ${county}, one of the markets The Roof Store has served for almost 30 years with professional roof maintenance, rubber roof coating, tile restoration, and weatherproofing — always performed by our own certified technicians.`,
     `Between intense UV, heavy seasonal rain, high humidity, and hurricane risk, ${city} is a demanding place for a roof to survive. Our coating systems are engineered around those exact conditions rather than a generic climate.`,
-    `Property owners in ${city} typically cut roofing costs by 40–60% by choosing our liquid-applied rubber roof shield system over full replacement — a seamless, weatherproof membrane installed with minimal disruption and zero landfill waste.`,
+    `Property owners in ${city} typically cut roofing costs by 60–70% by choosing our liquid-applied rubber roof shield system over full replacement — a seamless, weatherproof membrane installed with minimal disruption and zero landfill waste.`,
   ],
   (city, county) => [
     `The Roof Store has served ${city} and the rest of ${county} for nearly 30 years — the same certified crew on every roof maintenance, coating, restoration, and waterproofing job, no subcontracting, no shortcuts.`,

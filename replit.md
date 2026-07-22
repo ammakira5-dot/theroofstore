@@ -43,6 +43,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **🔴 #1 PRIORITY — GSC resubmit after July 22 publish — OWNER ACTION IN PROGRESS** — Resubmit all pages updated in the July 22 publish via GSC → URL Inspection → Request Indexing. Pages to resubmit: (1) all 109 city pages — /service-areas/broward-county/fort-lauderdale etc (benefit most from unique meta descriptions); (2) all 7 blog post pages — /blog/*; (3) /blog index. Do in batches — GSC allows ~10 manual resubmits per day. Sitemap also resubmitted (or pending re-crawl). Sitemap "come back later" message is a GSC timing delay, not a file error — the file is valid.
+
 - ✅ **Long-tail keyword implementation — DONE July 21 2026** — (1) Monroe county page: new section "Comparing Roof Paint vs. Roof Coating in Key West" targeting "salt air roof protection Key West". (2) Palm Beach county page: HOA subsection targeting "HOA roof painting Boca Raton", links to /commercial-roof-coating-hoa. (3) Pricing page: "Roof Coating Cost in Palm Beach County" section with RP1/RP2/RP3 price ranges.
 
 - ✅ **Internal linking strategy — DONE July 21 2026** — 27 new internal links added across 9 pages: CommercialRoofs, Products, Home, HoaRoofCoating, DiyVsPro, HurricaneRoofPrep, RoofCoatingLifespan, Pricing, RoofServices.

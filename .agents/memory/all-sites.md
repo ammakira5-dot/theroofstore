@@ -16,7 +16,7 @@ _Last updated: July 23, 2026_
 | 4 | Storm Shield Paint Systems Inc | windproofroofsystems.com | (954) 743-0667 | ✅ Has GMB — 4700 Sheridan St Ste G, Hollywood FL 33021 |
 | 5 | Roof Shield Coating System | (no website) | (954) 302-5387 | ✅ Has GMB — MapQuest: 4700 Sheridan St, Hollywood FL 33021-3420. Facebook: https://www.facebook.com/p/Roof-Shield-Coating-Systems-100068045314754/ — same factory photos, truck/trailer |
 | 6 | Storm Shield Coating Systems Inc | flatroofsealants.com | (561) 328-4770 | ⚠️ GMB exists but LOCKED OUT — cannot access or edit |
-| 7 | RoofProtect Products | roofprotectproducts.com | (954) 900-1973 | ⚠️ Has GMB (possibly Bing too) |
+| 7 | RoofProtect Products | roofprotectproducts.com | (954) 900-1973 | ✅ Has GMB — **no address listed** (service-area business) |
 | 8 | Roof Paint Miami | roofpaintmiami.com | (786) 837-9064 | ❌ No GMB yet |
 | 9 | Fort Lauderdale Roof Coating | ftlauderdaleroofcoating.com | (754) 367-3768 | ❌ No GMB |
 

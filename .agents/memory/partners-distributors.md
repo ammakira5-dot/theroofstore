@@ -91,6 +91,18 @@ _Last confirmed by owner: July 23, 2026_
 
 ---
 
+## Locked GMB Recovery Steps
+
+**Roof Shield Coating System** (no account access):
+- Quick fix: Google Maps → search listing → "Suggest an edit" → change website to https://www.theroofstore.net (anyone can do this, approved in 24–48 hrs)
+- Full reclaim: business.google.com → "Manage now" → search listing → request access → if no response in 7 days, Google transfers ownership
+
+**flatroofsealants.com / Storm Shield Coating Systems** (locked out):
+- Try video verification: business.google.com → Get Verified → video option
+- Or: Google support chat for reinstatement
+
+---
+
 ## Remaining Action Items
 
 | Site | Action | Priority |

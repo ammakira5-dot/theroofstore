@@ -504,7 +504,7 @@ export default function TrademarkEvidenceFile() {
                 </thead>
                 <tbody>
                   {[
-                    ["1", "Baseline branded search volume for "the roof store" + FL variants, pre-Aug 2021 vs. post", "Establishes whether search demand for the brand name split after theroof.store launched — requires Ahrefs/SEMrush historical data"],
+                    ["1", "Baseline branded search volume for 'the roof store' + FL variants, pre-Aug 2021 vs. post", "Establishes whether search demand for the brand name split after theroof.store launched — requires Ahrefs/SEMrush historical data"],
                     ["2", "GSC impression share for branded terms, month-by-month, Aug 2021–present", "Shows the actual erosion curve, not a flat CPC estimate — 16-month window available now, pre-2025 window requires third-party tool"],
                     ["3", "Apply real Florida roofing CPC (Exhibit E: $8–$15/click) to the measured impression/click erosion", "Converts real search data into a defensible dollar figure — replaces the modeled volume assumption in the current Exhibit E"],
                     ["4", "Cross-reference with GA4 direct traffic and conversion trend over the same window", "Corroborates the search-data finding with a second, independent metric — NOTE: GA4 not yet installed on theroofstore.net; installation recommended immediately to begin building the record"],

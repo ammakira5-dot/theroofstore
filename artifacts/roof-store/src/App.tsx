@@ -46,6 +46,7 @@ import Tas106Certification from "@/pages/Tas106Certification";
 import OriginalRoofStore from "@/pages/OriginalRoofStore";
 import TrademarkEvidenceFile from "@/pages/TrademarkEvidenceFile";
 import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
+import RedemptionEvidenceGoogle1 from "@/pages/RedemptionEvidenceGoogle1";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -143,6 +144,7 @@ function Router() {
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
       <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/trademark-monitoring-log" component={TrademarkMonitoringLog} />
+      <Route path="/redemption-evidence-google-1" component={RedemptionEvidenceGoogle1} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

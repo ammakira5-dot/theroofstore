@@ -87,7 +87,7 @@ const partners = [
     name: "Storm Shield Roof Coating Systems",
     url: "https://maps.google.com/?q=Storm+Shield+Roof+Coating+Systems,+2049+SW+Cranberry+St,+Port+St.+Lucie,+FL+34953",
     domain: "Google Business Profile",
-    phone: "754-273-4744",
+    phone: "561-328-4770",
     specialty: "Flat Roof Waterproofing & Coating",
     territory: "Port St. Lucie & Treasure Coast, Florida",
     description:

@@ -116,6 +116,55 @@ _Last confirmed by owner: July 23, 2026_
 
 ---
 
+## Content Plan — Thin Sites (from Document 2 templates, July 23, 2026)
+
+**Rule for all sites:** unique positioning angle + unique intro + unique FAQ per site. Only the shared disclosure block can be reused verbatim.
+
+**Shared Disclosure Block (safe to reuse on all sites — not duplicate content):**
+> "[Business Name] is [an authorized distributor of / a factory-trained, licensed installer for] roof coating systems manufactured by RoofProtect Products and distributed through The Roof Store Waterproofing Products (theroofstore.net), a Florida-licensed manufacturer and contractor operating since 1994. [Installers only: All installations follow the manufacturer's protocol and are covered by the same warranty issued for direct installations by Storm Shield Paint Systems Inc.]"
+
+### roofpaintmiami.com — PRIORITY 1
+- **Label:** Distributor
+- **Angle:** Miami-Dade Condo & HOA Specialist
+- **H1:** Roof Coating for Miami-Dade's Condos, HOAs & High-Density Communities
+- **Differentiators:** HOA color matching + board approval sample boards, phased scheduling for occupied buildings, reflective coatings for cooling cost reduction, manufacturer-backed HOA/insurance documentation
+- **Service area:** Miami, Miami Beach, Coral Gables, Coconut Grove, Hialeah, Doral, Kendall, Pinecrest, Homestead, Florida City, North Miami, Aventura, Sunny Isles Beach
+- **Status:** Already links to theroofstore.net and roofprotectproducts.com on its own. Needs GMB + thicker content.
+
+### ftlauderdaleroofcoating.com — PRIORITY 2
+- **Label:** Partner (installer)
+- **Angle:** Legacy Fort Lauderdale Specialist
+- **H1:** Fort Lauderdale's Longest-Serving Roof Coating Specialist
+- **Differentiators:** Two decades local service, waterfront/Intracoastal salt air expertise, Spanish barrel tile + cement flat tile specialist, established local name
+- **Service area:** Fort Lauderdale, Rio Vista, Victoria Park, Coral Ridge, Harbor Beach, Intracoastal communities
+- **Note:** Phone (754) 367-3768 documented on theroofstore.net in 2005 Wayback Machine — 21 years of continuity. Strong trademark evidence.
+
+### bestroofpaint.com — PRIORITY 3
+- **Label:** Distributor
+- **Angle:** Technical Buyer's Guide / Informed Buyer's Resource
+- **H1:** How to Evaluate a Roof Coating Contractor — A Technical Buyer's Guide
+- **Differentiators:** Dry film thickness education (20+ mils vs 2–5 mils decorative), ponding water ratings, written warranty terms, surface prep requirements
+- **Service area:** Martin County, St. Lucie, Palm Beach, Broward, Miami-Dade (Treasure Coast focus)
+- **⚠️ Remove:** "1350 psi vs. 300 psi" comparison — unverified, no cited test standard, must come out before site is linked
+
+### Positioning angles for existing partner page sites
+| Site | Angle |
+|---|---|
+| roofrestorationsandwaterproofinginc.com | Insurance Certification & Tile Reglazing Specialist |
+| flatroofsealants.com | Treasure Coast Regional Specialist |
+| windproofroofsystems.com | Tile Restoration & Wind-Uplift Specialist |
+| roofprotectproducts.com | Factory-Direct Supply Channel (B2B/contractor-facing) |
+
+---
+
+## Storm Shield Paint Systems Inc. GMB — Clarification
+- GMB registered under the exact core legal entity name (Storm Shield Paint Systems Inc.)
+- Address: 4700 Sheridan St Ste G, Hollywood FL — this is the executive office / factory
+- No access currently but owner is not concerned — it is the owner's own entity
+- No Google conflict as long as it remains consistent with the entity's actual operations
+
+---
+
 ## Locked GMB Recovery Steps
 
 **Roof Shield Coating System** (no account access):

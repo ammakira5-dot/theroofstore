@@ -10,7 +10,7 @@ _Last updated: July 23, 2026_
 
 | # | Business Name | Website | Phone | GMB Status |
 |---|---------------|---------|-------|------------|
-| 1 | The Roof Store Waterproofing Products | theroofstore.net | (954) 210-9614 | ✅ Has GMB |
+| 1 | The Roof Store Waterproofing Products | theroofstore.net | (954) 210-9614 | ✅ Has GMB — **Davie, FL** (owner has full access) |
 | 2 | Best Roof Paint and Waterproofing Service | bestroofpaint.com | (954) 400-1324 | ✅ Has GMB |
 | 3 | Roof Restorations and Waterproofing Inc | roofrestorationsandwaterproofinginc.com | (877) 824-5823 | ✅ Has GMB |
 | 4 | Storm Shield Paint Systems Inc | windproofroofsystems.com | (954) 743-0667 | ✅ Has GMB — 4700 Sheridan St Ste G, Hollywood FL 33021 |

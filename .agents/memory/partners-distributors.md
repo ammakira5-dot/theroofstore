@@ -12,7 +12,7 @@ _Last confirmed by owner: July 23, 2026_
 
 | # | Business Name | Website | Phone | GMB |
 |---|---------------|---------|-------|-----|
-| 1 | **The Roof Store** (HQ) | theroofstore.net | (954) 210-9614 | ✅ Has GMB |
+| 1 | **The Roof Store** (HQ) | theroofstore.net | (954) 210-9614 | ✅ Has GMB — **Davie, FL** (owner has full access) |
 | 2 | **Roof Restorations and Waterproofing Inc** | roofrestorationsandwaterproofinginc.com | (877) 824-5823 | ✅ Has GMB |
 | 3 | **Best Roof Paint and Waterproofing Service** | bestroofpaint.com | (954) 400-1324 | ✅ Has GMB |
 | 4 | **Storm Shield Coating Systems Inc** | flatroofsealants.com | (561) 328-4770 | ✅ Has GMB — LOCKED OUT |

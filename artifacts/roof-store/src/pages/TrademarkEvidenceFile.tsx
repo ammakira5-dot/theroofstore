@@ -412,6 +412,40 @@ export default function TrademarkEvidenceFile() {
             </p>
           </section>
 
+          {/* Exhibit H-2 — Prior Federal Trademark Registration (USPTO) */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">X-B. Exhibit H-2 — Prior Federal Trademark Registration (USPTO Serial #78903590 / Reg. #3633280)</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              The prior rights holder obtained a <strong>federal trademark registration</strong> from the United States Patent and Trademark Office (USPTO) covering the core branded system used in connection with theroofstore.net. The registration covered the identical goods and services now offered by theroof.store — elastomeric roof coatings (IC 002), roofing installation and repair (IC 037), and waterproofing treatment of roof surfaces (IC 040).
+            </p>
+            <table className="w-full text-sm font-sans border-collapse mb-4">
+              <tbody>
+                {[
+                  ["USPTO Serial Number", "78903590"],
+                  ["Registration Number", "3633280"],
+                  ["Registered Mark", `DON'T REROOF - WEATHERPROOF AT 1/2 THE COST "THE ORIGINAL LIQUID APPLIED RUBBER ROOF SHIELD SYSTEM" ROOFPROTECT SEALS, RESTORES AND PRESERVES`],
+                  ["International Classes", "IC 002 — Elastomeric-based liquid roof and tile weatherproofing coating (cement, metal, clay tile); IC 037 — Roofing installation and roofing repair services; IC 040 — Waterproofing and weatherproofing treatment of roof surfaces"],
+                  ["Current Status", "Registration lapsed — maintenance declaration not timely filed. Underlying commercial use never ceased. Common law rights remain fully intact (see attorney confirmation note below)."],
+                  ["USPTO Record", "https://tmsearch.uspto.gov/search/search-results/78903590"],
+                ].map(([label, value]) => (
+                  <tr key={label} className="border-b border-gray-200">
+                    <td className="py-2 pr-4 font-semibold text-xs w-48 align-top">{label}</td>
+                    <td className="py-2 text-xs leading-relaxed">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="border border-blue-400 bg-blue-50 rounded p-4 text-xs font-sans text-blue-900 leading-relaxed mb-3">
+              <strong>Evidentiary significance — "Don't Reroof" tagline cross-reference:</strong> The registered mark includes the literal phrase <em>"Don't Reroof — Weatherproof at 1/2 the Cost"</em> — the <strong>exact same tagline</strong> featured in the circa-1999 TV commercial (Exhibit I) and the December 2011 field footage (Exhibit J). USPTO's acceptance of this registration is official government confirmation that this tagline was in active commercial use in connection with roofing goods and services at the time of filing — independently corroborating the authenticity and commercial nature of those exhibits. This is federal-level, government-sourced corroboration, not self-published.
+            </div>
+            <div className="border border-green-500 bg-green-50 rounded p-4 text-xs font-sans text-green-900 leading-relaxed mb-3">
+              <strong>Goods and services overlap with theroof.store (critical for UDRP and Lanham Act):</strong> The registered classes (IC 002: roof coatings; IC 037: roofing installation/repair; IC 040: waterproofing) directly and completely overlap with the goods and services offered by theroof.store. The prior rights holder not only used the name first — they had a federal registration in the identical goods/services categories <strong>12 years before theroof.store was registered</strong>. Respondent has no USPTO registration of his own for any mark relating to "The Roof Store" or its variations.
+            </div>
+            <div className="border border-amber-400 bg-amber-50 rounded p-4 text-xs font-sans text-amber-900 leading-relaxed">
+              <strong>Note for counsel — registration status and refiling:</strong> The federal registration lapsed due to a missed maintenance filing. Under USPTO rules and Lanham Act § 45, a lapsed registration does not constitute abandonment of the underlying mark if continuous commercial use was maintained — and the record here (Wayback Machine captures through 2007, active website, ongoing commercial operations, 5-star reviews) amply demonstrates continuous use. Common law trademark rights in "The Roof Store" name and in the branded system described in the registered mark have been <strong>independently confirmed by a trademark attorney</strong> as intact. A <strong>new federal trademark application is in preparation</strong> and will include "The Roof Store" as a named mark in addition to the system marks. When filed and registered, the new application will formalize rights that already exist at common law, with priority dating to first use in commerce (1994 for the business, 2002 for the domain). Recommend counsel reference the prior registration number (3633280) in any UDRP or Lanham Act filing as evidence of prior commercial use acknowledged by the federal government in the same goods/services categories.
+            </div>
+          </section>
+
           {/* Exhibit I — Circa-1999 TV Commercial */}
           <section className="mb-10">
             <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI. Exhibit I — Circa-1999 Television Commercial: "Don't Re-Roof, Waterproof at 1/2 the Cost"</h3>
@@ -703,7 +737,7 @@ export default function TrademarkEvidenceFile() {
               </tbody>
             </table>
             <p className="text-sm font-sans mt-4 leading-relaxed">
-              Additionally, respondent holds no trademark registration of his own for "The Roof Store" (none located in USPTO or Florida Sunbiz trademark records as of the documentation date), and his own on-camera statement (Exhibit D) confirms the name was adopted as a deliberate brand-strategy decision — undercutting any argument that use of the identical name was coincidental, generic, or independently developed. Taken together, the record supports a prima facie finding that respondent lacks any right or legitimate interest in the name, shifting the burden to him to justify his use — a burden the public record gives him no apparent means to meet.
+              Additionally, respondent holds no trademark registration of his own for "The Roof Store" (none located in USPTO or Florida Sunbiz trademark records as of the documentation date) — while the prior rights holder previously held an actual federal registration (USPTO Reg. #3633280, Serial #78903590) covering the identical goods and services categories (IC 002: roof coatings; IC 037: roofing installation/repair; IC 040: waterproofing), now lapsed but with common law rights confirmed by trademark attorney and a new federal application in preparation. Respondent's own on-camera statement (Exhibit D) confirms the name was adopted as a deliberate brand-strategy decision — undercutting any argument that use of the identical name was coincidental, generic, or independently developed. Taken together, the record supports a prima facie finding that respondent lacks any right or legitimate interest in the name, shifting the burden to him to justify his use — a burden the public record gives him no apparent means to meet.
             </p>
           </section>
 

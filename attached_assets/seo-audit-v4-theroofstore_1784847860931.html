@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Audit #4 — theroofstore.net — July 24, 2026</title>
+<style>
+  :root{--blue:#1e3a8a;--blue-l:#3b82f6;--green:#15803d;--green-l:#dcfce7;--amber:#b45309;--amber-l:#fef3c7;--red:#dc2626;--red-l:#fee2e2;--gray:#374151;--gray-l:#f8fafc;--border:#e2e8f0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--gray);background:#f8fafc;line-height:1.65;}
+  .cover{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#2563eb 100%);color:#fff;padding:52px 48px 44px;}
+  .cover .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;opacity:.55;margin-bottom:14px;}
+  .cover h1{font-size:2.2rem;font-weight:800;line-height:1.15;margin-bottom:8px;}
+  .cover .sub{font-size:1rem;opacity:.8;margin-bottom:24px;}
+  .cover .dates{display:flex;gap:24px;font-size:.82rem;opacity:.65;flex-wrap:wrap;}
+  .grade-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:28px;}
+  .grade-card{background:rgba(255,255,255,.1);border-radius:10px;padding:14px 18px;text-align:center;}
+  .grade-card .v{font-size:1.8rem;font-weight:800;}
+  .grade-card .l{font-size:.7rem;opacity:.7;text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+  .grade-card .delta{font-size:.8rem;margin-top:4px;}
+  .up{color:#86efac;}.dn{color:#fca5a5;}.same{color:#fcd34d;}
+  .container{max-width:1080px;margin:0 auto;padding:0 32px 64px;}
+  .delta-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border);}
+  .delta-item{background:#fff;padding:16px 20px;}
+  .delta-item .di-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:4px;}
+  .delta-item .di-val{font-size:1.1rem;font-weight:700;color:var(--blue);}
+  .delta-item .di-note{font-size:.78rem;color:#94a3b8;margin-top:2px;}
+  h2.sec{font-size:1.35rem;font-weight:800;color:#0f172a;margin:48px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+  h3.sub{font-size:1rem;font-weight:700;color:var(--blue);margin:22px 0 8px;}
+  p{font-size:.94rem;margin:6px 0;}
+  .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.75rem;font-weight:700;}
+  .badge.green{background:var(--green-l);color:var(--green);}
+  .badge.amber{background:var(--amber-l);color:var(--amber);}
+  .badge.red{background:var(--red-l);color:var(--red);}
+  .badge.blue{background:#dbeafe;color:var(--blue);}
+  table{width:100%;border-collapse:collapse;font-size:.87rem;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  th{background:#f1f5f9;text-align:left;padding:10px 14px;font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:#64748b;border-bottom:2px solid var(--border);}
+  td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .tbl-wrap{overflow-x:auto;margin:12px 0;}
+  .card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:10px 0;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card.green{border-left:4px solid #16a34a;}
+  .card.amber{border-left:4px solid #d97706;}
+  .card.red{border-left:4px solid #dc2626;}
+  .card.blue{border-left:4px solid #2563eb;}
+  .card h4{font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .card ul{margin:4px 0 0 16px;font-size:.88rem;}
+  .card ul li{margin:3px 0;}
+  .fix{background:var(--gray-l);border-radius:6px;padding:10px 14px;margin-top:8px;font-size:.86rem;}
+  .fix strong{display:block;margin-bottom:3px;color:var(--blue);}
+  .callout{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #93c5fd;border-radius:10px;padding:18px 22px;margin:14px 0;}
+  .callout h4{color:var(--blue);font-size:.93rem;font-weight:700;margin-bottom:6px;}
+  .callout.gold{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fcd34d;}
+  .callout.gold h4{color:var(--amber);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0;}
+  @media(max-width:680px){.grid2{grid-template-columns:1fr;}}
+  code{background:#f1f5f9;border-radius:4px;padding:1px 5px;font-size:.84em;font-family:Consolas,monospace;color:#1d4ed8;}
+  .footer{background:#0f172a;color:#64748b;padding:20px 48px;font-size:.8rem;margin-top:40px;}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <p class="eyebrow">StoreClaw · SEO Audit #4</p>
+  <h1>theroofstore.net — Progress Audit</h1>
+  <p class="sub">Comparing site state against Audit #3 (July 23). Core-site fixes confirmed; network-side work still pending.</p>
+  <div class="dates">
+    <span>📋 Audit #1: July 18</span>
+    <span>🔄 Audit #2: July 21</span>
+    <span>🔄 Audit #3: July 23</span>
+    <span>🔄 Audit #4: July 24</span>
+  </div>
+  <div class="grade-row">
+    <div class="grade-card"><div class="v same">A</div><div class="l">Overall SEO</div><div class="delta same">→ Stable vs. Audit #3</div></div>
+    <div class="grade-card"><div class="v up">✓✓</div><div class="l">Pricing Consistency</div><div class="delta up">↑ Fixed</div></div>
+    <div class="grade-card"><div class="v up">✓</div><div class="l">TAS-106 Date Framing</div><div class="delta up">↑ Fixed</div></div>
+    <div class="grade-card"><div class="v red">✗</div><div class="l">ARLC Messaging</div><div class="delta same">→ Still open</div></div>
+    <div class="grade-card"><div class="v red">✗</div><div class="l">Partner Network Page</div><div class="delta same">→ Unchanged</div></div>
+    <div class="grade-card"><div class="v amber">⚠</div><div class="l">Satellite Sites</div><div class="delta same">→ Fixes drafted, not yet live</div></div>
+  </div>
+</div>
+
+<div class="delta-bar">
+  <div class="delta-item"><div class="di-label">Pillar vs. Pricing Sync</div><div class="di-val">✓ Matched</div><div class="di-note">RP3 barrel tile now identical on both pages</div></div>
+  <div class="delta-item"><div class="di-label">Cost-Savings Stat</div><div class="di-val">60–70%</div><div class="di-note">Standardized across main content</div></div>
+  <div class="delta-item"><div class="di-label">TAS-106 Certification Date</div><div class="di-val">2006 + 2023</div><div class="di-note">Dual-date framing now live, as recommended</div></div>
+  <div class="delta-item"><div class="di-label">New Finding</div><div class="di-val">Same-page drift</div><div class="di-note">Pillar's own FAQ section wasn't updated with the body</div></div>
+  <div class="delta-item"><div class="di-label">Partner Page Entities</div><div class="di-val">4 of 9</div><div class="di-note">No new entities added since Audit #3</div></div>
+  <div class="delta-item"><div class="di-label">Port St. Lucie Phone</div><div class="di-val">Still wrong</div><div class="di-note">754-273-4744 vs. GMB-verified 561-328-4770</div></div>
+  <div class="delta-item"><div class="di-label">Satellite Site Content</div><div class="di-val">0 of 3 updated</div><div class="di-note">bestroofpaint.com, ftlauderdaleroofcoating.com, roofpaintmiami.com unchanged</div></div>
+  <div class="delta-item"><div class="di-label">Sitemap Last Modified</div><div class="di-val">Jul 23, 2026</div><div class="di-note">No new pages since Audit #3</div></div>
+</div>
+
+<div class="container">
+
+<h2 class="sec">1. Confirmed Fixes Since Audit #3</h2>
+
+<div class="card green">
+  <h4>✅ Pricing Table Sync — Fully Resolved</h4>
+  <p>Audit #3 found the <code>/roof-coating-florida</code> pillar page showing outdated pricing ($3.10–$3.90 for RP3 barrel tile) while the live <code>/pricing</code> page had moved to higher rates ($4.00–$4.75). Both pages now show identical numbers across every system, roof type, and pitch combination. This was a P1 item — fully closed.</p>
+</div>
+
+<div class="card green">
+  <h4>✅ Cost-Savings Percentage — Standardized</h4>
+  <p>Audit #3 found three different savings percentages floating across the site (40–60% / 60–70% / 70–80%). The main content on both <code>/roof-coating-florida</code> and <code>/pricing</code> now consistently states <strong>60–70%</strong>. This is the single number that should now propagate to any remaining pages still showing 40–60% (homepage FAQ, city pages) — worth a final sweep.</p>
+</div>
+
+<div class="card green">
+  <h4>✅ TAS-106 Certification Date — Fixed Exactly as Recommended</h4>
+  <p>Audit #3 flagged an apparent contradiction: the pillar page said "certified most recently in 2023" while the dedicated TAS-106 page said "originally issued 2006." The pillar page now reads: <em>"The Roof Shield system was originally certified in 2006 — the only liquid coating to ever achieve this standard — with current NOA renewal in 2023."</em> This is precisely the dual-date framing recommended — resolved cleanly.</p>
+</div>
+
+<h2 class="sec">2. New Finding — Same-Page Drift on the Pillar</h2>
+
+<div class="card amber">
+  <h4>⚠️ The Fixes Above Didn't Propagate to the Pillar Page's Own FAQ Section</h4>
+  <p>This is a smaller-scope version of the Audit #3 finding — but it's now happening <em>within a single page</em> rather than across two different pages:</p>
+  <div class="tbl-wrap">
+  <table>
+    <thead><tr><th>Element</th><th>Main Body Content (fixed)</th><th>FAQ Section, same page (not updated)</th></tr></thead>
+    <tbody>
+      <tr><td>Price range stated</td><td>"$1.90 and $4.75 per square foot"</td><td>"$1.90 and $3.50 per square foot"</td></tr>
+      <tr><td>TAS-106 certification date</td><td>"originally certified in 2006... current NOA renewal in 2023"</td><td>"Dade County TAS-106 Uplift Certification (2023)" — single date only</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="fix"><strong>Fix:</strong> Whoever updated the main body content on this page didn't touch the FAQ block at the bottom of the same page — likely because it's a separately managed content block in the page builder. A quick pass to sync the FAQ answers to match the body content above them closes this out completely.</div>
+</div>
+
+<h2 class="sec">3. Still Open From Prior Audits</h2>
+
+<div class="card red">
+  <h4>🔴 ARLC / Insurance Messaging — Unchanged</h4>
+  <p>The pillar page still states: <em>"The Roof Store can issue Additional Roof Life Certifications for roofs that have received a qualifying coating system."</em> This is the same stronger claim flagged in Audit #3 as inconsistent with the more legally precise framing already used on <code>/roof-life-certification</code> ("no contractor certifies your roof's useful life... it is the inspector's report"). No change detected on either the pillar page or the TAS-106 page.</p>
+</div>
+
+<div class="card red">
+  <h4>🔴 Duplicate Meta Tag Bug — Not Re-Verified This Round</h4>
+  <p>This P1 item from Audit #1 was still open as of Audit #3. It wasn't specifically re-checked in this round's crawl — recommend a direct verification pass since it's the oldest unresolved item across all four audits.</p>
+</div>
+
+<h2 class="sec">4. Network &amp; Satellite Site Track — Status Check</h2>
+
+<p>This is a separate, larger workstream from the core site, so it's tracked here distinctly rather than mixed into the core scorecard above.</p>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>Item</th><th>Status</th><th>Note</th></tr></thead>
+  <tbody>
+    <tr><td>Partner-network page — entity count</td><td><span class="badge red">4 of 9 listed</span></td><td>Roof Restorations and Waterproofing Inc, Best Roof Paint, Roof Paint Miami, Fort Lauderdale Roof Coating still not added</td></tr>
+    <tr><td>Port St. Lucie phone number</td><td><span class="badge red">Still wrong</span></td><td>Page shows 754-273-4744; GMB-verified number is 561-328-4770</td></tr>
+    <tr><td>GMB recovery (3 locked/inaccessible profiles)</td><td><span class="badge amber">Unknown — not verifiable via crawl</span></td><td>Includes the profile registered under the exact legal entity name "Storm Shield Paint Systems Inc." — recommend direct confirmation</td></tr>
+    <tr><td>bestroofpaint.com content update</td><td><span class="badge red">Not started</span></td><td>Still has the unsupported "1350 psi vs. 300 psi" claim and original typos</td></tr>
+    <tr><td>ftlauderdaleroofcoating.com content update</td><td><span class="badge red">Not started</span></td><td>Same broken sentence fragments as prior audits</td></tr>
+    <tr><td>roofpaintmiami.com content update</td><td><span class="badge red">Not started</span></td><td>Shared boilerplate intro paragraph still live</td></tr>
+    <tr><td>Content templates for all of the above</td><td><span class="badge green">Drafted, ready to publish</span></td><td>Delivered in the last two rounds — awaiting implementation on your side</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout">
+  <h4>📋 Reading This Correctly</h4>
+  <p>None of the network-track items above are "regressions" — they were only identified and drafted into recommendations within the last few conversation turns, so there's been no real window to implement them yet. They're tracked here so progress is visible on the next audit, not as a criticism of this round.</p>
+</div>
+
+<h2 class="sec">5. Four-Audit Scorecard</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>Issue</th><th>Audit #1</th><th>Audit #2</th><th>Audit #3</th><th>Audit #4</th></tr></thead>
+  <tbody>
+    <tr><td>Duplicate meta tag bug</td><td><span class="badge red">Open</span></td><td><span class="badge red">Open</span></td><td><span class="badge red">Open</span></td><td><span class="badge amber">Not re-checked</span></td></tr>
+    <tr><td>Pricing page depth/structure</td><td><span class="badge red">594 words</span></td><td><span class="badge amber">646 words</span></td><td><span class="badge green">Significantly expanded</span></td><td><span class="badge green">Stable</span></td></tr>
+    <tr><td>Pricing ↔ Pillar sync</td><td>—</td><td>—</td><td><span class="badge red">Out of sync</span></td><td><span class="badge green">✓ Fixed</span></td></tr>
+    <tr><td>Cost-savings % consistency</td><td>—</td><td>—</td><td><span class="badge red">3 different values</span></td><td><span class="badge green">✓ Standardized</span></td></tr>
+    <tr><td>TAS-106 date framing</td><td>—</td><td>—</td><td><span class="badge amber">Apparent contradiction</span></td><td><span class="badge green">✓ Fixed</span></td></tr>
+    <tr><td>ARLC/insurance messaging consistency</td><td>—</td><td>—</td><td><span class="badge red">Inconsistent</span></td><td><span class="badge red">Still inconsistent</span></td></tr>
+    <tr><td>TAS-106 dedicated page</td><td><span class="badge amber">Recommended</span></td><td><span class="badge red">Not started</span></td><td><span class="badge green">✓ Live, excellent</span></td><td><span class="badge green">Stable</span></td></tr>
+    <tr><td>City page differentiation</td><td><span class="badge red">Not started</span></td><td><span class="badge red">Not started</span></td><td><span class="badge green">Started (Fort Lauderdale)</span></td><td><span class="badge amber">Not re-verified this round</span></td></tr>
+    <tr><td>Partner-network page accuracy</td><td>—</td><td>—</td><td>—</td><td><span class="badge red">Wrong phone number, incomplete entity list</span></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="callout gold">
+  <h4>📈 Trajectory Assessment</h4>
+  <p>The core theroofstore.net site is executing well on flagged issues — three of Audit #3's four findings are fully resolved, and the one new issue found (FAQ drift on the pillar page) is minor and mechanical. The grade holds at <strong>A</strong>. The real work ahead is on the network track: recovering the three locked GMB profiles, fixing the Port St. Lucie NAP mismatch, and publishing the content templates already drafted for the three satellite sites. None of that requires new strategy — it's execution of what's already been planned.</p>
+</div>
+
+</div>
+<div class="footer">theroofstore.net SEO Audit #4 · StoreClaw · July 24, 2026</div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1fe52419feaad1f',t:'MTc4NDg0NzgzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

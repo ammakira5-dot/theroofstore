@@ -8,6 +8,31 @@ _Last confirmed by owner: July 23, 2026_
 
 ---
 
+## Firm Structure
+
+**Storm Shield Paint Systems Inc.**
+- Legal entity — Florida-licensed manufacturer and contractor since 1994
+- Davie, Florida. A+ BBB. TAS-106 certified.
+- Trades publicly as The Roof Store
+
+**The Roof Store**
+- Public-facing retail storefront and network
+- theroofstore.net
+
+**RoofProtect Products**
+- In-house manufacturing division
+- Produces all coating materials used in the three systems
+- County-level occupational license held
+- MSDS/SDS compliant — required by law for chemical coating products
+- Government-verified, date-stamped records of legitimate licensed operation
+
+**The Partner & Distributor Network**
+- Factory-trained authorized installers and distributors
+- Legally bound to the same materials, protocol, and warranty
+- Extends coverage across South Florida
+
+---
+
 ## Full Network — GMB Status
 
 | # | Business Name | Website | Phone | GMB |

@@ -146,21 +146,22 @@ export default function RedemptionEvidenceGoogle1() {
           <section className="mb-10">
             <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">Exhibit R — Google Search Console: Brand Name Suppression Data</h3>
             <p className="text-sm font-sans mb-3 leading-relaxed">
-              The following data is drawn directly from the complainant's verified Google Search Console property (theroofstore.net), covering a 3-month trailing window through July 22, 2026.
+              The following data is drawn directly from the complainant's verified Google Search Console property (theroofstore.net), covering the full 16-month window available from GSC (March 2025 – July 23, 2026) — the maximum retention period Google provides. GA4 installed July 23, 2026; linked to GSC since January 30, 2024.
             </p>
             <table className="w-full text-sm font-sans border-collapse mb-4">
               <thead>
                 <tr className="border-b-2 border-gray-900">
                   <th className="text-left py-2 pr-4">Search Query</th>
                   <th className="text-left py-2 pr-4">Avg. Position</th>
-                  <th className="text-left py-2 pr-4">Impressions (3 mo.)</th>
-                  <th className="text-left py-2 pr-4">Clicks (3 mo.)</th>
+                  <th className="text-left py-2 pr-4">Impressions (16 mo.)</th>
+                  <th className="text-left py-2 pr-4">Clicks (16 mo.)</th>
                   <th className="text-left py-2">Expected (Prior Rights)</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ["the roof store", "20.1", "161", "3", "#1 — own brand name"],
+                  ["the roof store", "11.24", "797", "11", "#1 — own brand name"],
+                  ["the roof store reviews", "10.20", "44", "0", "#1–2 — own brand + reviews"],
                   ["roof coating", "67.1", "2,782", "0", "Page 1 for primary service"],
                   ["waterproof roof coating", "46.7", "—", "—", "Page 1–3"],
                   ["roof paint miami", "4.1", "—", "—", "Top 3 (local)"],
@@ -175,8 +176,11 @@ export default function RedemptionEvidenceGoogle1() {
                 ))}
               </tbody>
             </table>
+            <div className="border border-red-300 bg-red-50 rounded p-3 text-sm font-sans text-red-900 leading-relaxed mb-3">
+              <strong>Key finding:</strong> Over 16 months, "the roof store" generated 797 impressions at position 11.24 (page 2) — with only 11 clicks (1.38% CTR). At normal branded CTR (30%), theroofstore.net should have received ~239 clicks. It received 11. That is a <strong>~95% click-capture loss</strong> on its own brand name.
+            </div>
             <p className="text-xs font-sans text-gray-600">
-              <strong>Source:</strong> Google Search Console, verified property theroofstore.net, 3-month window ending July 22, 2026. Full export available upon request.
+              <strong>Source:</strong> Google Search Console, verified property theroofstore.net, full 16-month window (March 2025 – July 23, 2026). Raw .xlsx export on file. Full export available upon request in discovery.
             </p>
           </section>
 
@@ -199,7 +203,7 @@ export default function RedemptionEvidenceGoogle1() {
                 {[
                   [
                     "1 — Conservative",
-                    "Brand name suppression only — GSC data showing 'the roof store' at position 20.1 vs. expected #1 (73% CTR gap, 644 impressions/year, $8–$15 FL roofing CPC)",
+                    "Brand name suppression only — GSC data (16-month, platform-native): 'the roof store' at position 11.24 vs. expected #1; 797 impressions, 11 clicks (1.38% actual CTR vs. 30% expected = ~228 lost clicks over 16 months); $8–$15 FL roofing CPC",
                     "$1,250–$2,350/mo",
                     "$15,000–$28,000",
                   ],
@@ -252,7 +256,7 @@ export default function RedemptionEvidenceGoogle1() {
               },
               {
                 q: "How is this content infringing?",
-                a: "theroof.store operates under an identical name in the same industry (roofing) causing consumer confusion in Google Search. Google Search Console data shows our domain — the prior rights holder — ranking at position 20.1 for our own exact brand name 'the roof store,' with 161 impressions and only 3 clicks in a 3-month window. Independent third-party analysis (Moz, July 22, 2026) confirms our 24-year-old domain with 207 linking root domains ranks for only 139 keywords, while the 4-year-old infringing domain with 161 linking root domains ranks for 1,300 keywords — a 9× gap consistent with Google's authority signals being split by brand confusion. Additionally, our Google Merchant Center / Shopping account was suspended without explanation approximately 2022–2023, shortly after theroof.store's launch — eliminating our Google Shopping presence without notice, reason, or remedy."
+                a: "theroof.store operates under an identical name in the same industry (roofing) causing consumer confusion in Google Search. Google Search Console data (verified property theroofstore.net, full 16-month window March 2025 – July 2026) shows our domain — the prior rights holder — ranking at position 11.24 for our own exact brand name 'the roof store,' with 797 impressions and only 11 clicks (1.38% CTR vs. 30% expected for a branded search). This represents an estimated 95% click-capture loss on our own brand name. Independent third-party analysis (Moz, July 22, 2026) confirms our 24-year-old domain with 207 linking root domains ranks for only 139 keywords, while the 4-year-old infringing domain with 161 linking root domains ranks for 1,300 keywords — a 9× gap consistent with Google's authority signals being split by brand confusion. Additionally, our Google Merchant Center / Shopping account was suspended without explanation approximately 2022–2023, shortly after theroof.store's launch — eliminating our Google Shopping presence without notice, reason, or remedy."
               },
               {
                 q: "What remedy are you requesting?",

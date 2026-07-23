@@ -105,26 +105,49 @@ export default function TrademarkEvidencePrint() {
           </Section>
 
           {/* VII. Search Engine Brand Confusion */}
-          <Section title="VII. Search Engine Brand Confusion (Exhibit K)">
-            <p className="text-sm font-sans mb-2">Google Search Console data (verified property, theroofstore.net, 3-month window ending July 22, 2026):</p>
-            <table className="w-full text-xs font-sans border-collapse">
+          <Section title="VII. Search Engine Brand Confusion (Exhibit K + Exhibit E-2)">
+            <p className="text-sm font-sans mb-2">Google Search Console data (verified property, theroofstore.net, full 16-month window: March 2025 – July 23, 2026). GA4 installed July 23, 2026; linked to GSC since January 30, 2024.</p>
+            <table className="w-full text-xs font-sans border-collapse mb-3">
               <thead>
                 <tr className="border-b-2 border-gray-900">
                   <th className="text-left py-2 pr-3">Query</th>
                   <th className="text-left py-2 pr-3">Avg. Position</th>
-                  <th className="text-left py-2 pr-3">Impressions</th>
-                  <th className="text-left py-2 pr-3">Clicks</th>
+                  <th className="text-left py-2 pr-3">Impressions (16 mo.)</th>
+                  <th className="text-left py-2 pr-3">Clicks (16 mo.)</th>
                   <th className="text-left py-2">Expected</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-200 bg-red-50 font-semibold"><td className="py-2 pr-3 font-mono">the roof store</td><td className="py-2 pr-3 text-red-700">20.1</td><td className="py-2 pr-3">161</td><td className="py-2 pr-3">3</td><td className="py-2 italic font-normal">#1 — own brand</td></tr>
+                <tr className="border-b border-gray-200 bg-red-50 font-semibold"><td className="py-2 pr-3 font-mono">the roof store</td><td className="py-2 pr-3 text-red-700">11.24</td><td className="py-2 pr-3">797</td><td className="py-2 pr-3">11</td><td className="py-2 italic font-normal">#1 — own brand</td></tr>
+                <tr className="border-b border-gray-200"><td className="py-2 pr-3 font-mono">the roof store reviews</td><td className="py-2 pr-3 text-red-700">10.20</td><td className="py-2 pr-3">44</td><td className="py-2 pr-3">0</td><td className="py-2 italic">#1–2 — own brand</td></tr>
                 <tr className="border-b border-gray-200"><td className="py-2 pr-3 font-mono">roof coating</td><td className="py-2 pr-3 text-red-700">67.1</td><td className="py-2 pr-3">2,782</td><td className="py-2 pr-3">0</td><td className="py-2 italic">Page 1</td></tr>
                 <tr className="border-b border-gray-200"><td className="py-2 pr-3 font-mono">waterproof roof coating</td><td className="py-2 pr-3">46.7</td><td className="py-2 pr-3">—</td><td className="py-2 pr-3">—</td><td className="py-2 italic">Page 1–3</td></tr>
                 <tr className="border-b border-gray-200"><td className="py-2 pr-3 font-mono">roof paint miami</td><td className="py-2 pr-3">4.1</td><td className="py-2 pr-3">—</td><td className="py-2 pr-3">—</td><td className="py-2 italic">Top 3 local</td></tr>
               </tbody>
             </table>
-            <p className="text-xs font-sans text-gray-600 mt-2 italic">A 24-year-old domain ranking at position 20.1 for its own exact brand name is direct, platform-native evidence of brand confusion attributable to the respondent's identical name use.</p>
+            <p className="text-xs font-sans text-gray-700 font-semibold mb-2">Exhibit E-2 — Month-by-Month Branded Search Trend ("the roof store")</p>
+            <table className="w-full text-xs font-sans border-collapse mb-2">
+              <thead>
+                <tr className="border-b border-gray-900">
+                  <th className="text-left py-1 pr-3">Month</th><th className="text-left py-1 pr-3">Impr.</th><th className="text-left py-1 pr-3">Clicks</th>
+                  <th className="text-left py-1 pr-3">Month</th><th className="text-left py-1 pr-3">Impr.</th><th className="text-left py-1">Clicks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Mar 2025</td><td className="py-1 pr-3">21</td><td className="py-1 pr-3">0</td><td className="py-1 pr-3">Oct 2025</td><td className="py-1 pr-3">31</td><td className="py-1">0</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Apr 2025</td><td className="py-1 pr-3">44</td><td className="py-1 pr-3">2</td><td className="py-1 pr-3">Nov 2025</td><td className="py-1 pr-3">35</td><td className="py-1">1</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">May 2025</td><td className="py-1 pr-3">51</td><td className="py-1 pr-3">0</td><td className="py-1 pr-3">Dec 2025</td><td className="py-1 pr-3">44</td><td className="py-1">1</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Jun 2025</td><td className="py-1 pr-3">48</td><td className="py-1 pr-3">1</td><td className="py-1 pr-3">Jan 2026</td><td className="py-1 pr-3">64</td><td className="py-1">0</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Jul 2025</td><td className="py-1 pr-3">32</td><td className="py-1 pr-3">0</td><td className="py-1 pr-3">Feb 2026</td><td className="py-1 pr-3">69</td><td className="py-1">1</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Aug 2025</td><td className="py-1 pr-3">30</td><td className="py-1 pr-3">1</td><td className="py-1 pr-3 bg-red-50 font-semibold">Mar 2026</td><td className="py-1 pr-3 bg-red-50 font-semibold">94</td><td className="py-1 bg-red-50 font-semibold">0</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3">Sep 2025</td><td className="py-1 pr-3">35</td><td className="py-1 pr-3">0</td><td className="py-1 pr-3">Apr 2026</td><td className="py-1 pr-3">47</td><td className="py-1">2</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3">May 2026</td><td className="py-1 pr-3">53</td><td className="py-1">2</td></tr>
+                <tr className="border-b border-gray-100"><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3">Jun 2026</td><td className="py-1 pr-3">36</td><td className="py-1">0</td></tr>
+                <tr className="border-b border-gray-900 font-bold"><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1 pr-3">Jul 2026</td><td className="py-1 pr-3">63</td><td className="py-1">0</td></tr>
+                <tr className="font-bold"><td className="py-1 pr-3">TOTAL</td><td className="py-1 pr-3">797</td><td className="py-1 pr-3 text-red-700">11</td><td className="py-1 pr-3"></td><td className="py-1 pr-3"></td><td className="py-1"></td></tr>
+              </tbody>
+            </table>
+            <p className="text-xs font-sans text-gray-600 mt-1 italic">A 24-year-old domain ranking at position 11.24 (page 2) for its own exact brand name, with 797 impressions and only 11 clicks over 16 months (1.38% CTR vs. 30% expected), is direct platform-native evidence of brand confusion. At expected CTR, theroofstore.net should have received ~239 clicks — it received 11 (~95% click-capture loss).</p>
           </Section>
 
           {/* VIII. Prior Rights Notice */}
@@ -163,8 +186,8 @@ export default function TrademarkEvidencePrint() {
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit Q — Google Merchant Center / Shopping Account Removal (~2022–2023)</h4>
             <p className="text-xs font-sans mb-2">The complainant's established Google Shopping account was removed without explanation, without notice of specific policy violation, and without any offered remedy — approximately 12–18 months after theroof.store launched under the same brand name. Three probable causes: (1) automated brand-conflict detection treating the prior-rights holder as a duplicate; (2) competitor-initiated impersonation complaint; (3) Google Knowledge Graph entity conflation reversing chronological priority. Impact: full Google Shopping presence eliminated, direct e-commerce revenue channel cut off. <strong>Owner to confirm exact date and any Google support ticket/case reference numbers.</strong></p>
 
-            <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit R — GSC Brand Search Suppression</h4>
-            <p className="text-xs font-sans mb-4">See Exhibit K table above. Key figure: "the roof store" at position 20.1, 161 impressions, 3 clicks over 3 months — for the domain that has used the name since 1994.</p>
+            <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit R — GSC Brand Search Suppression (16-Month Window)</h4>
+            <p className="text-xs font-sans mb-4">See Exhibit K + Exhibit E-2 tables above. Key figure: "the roof store" at position 11.24, 797 impressions, 11 clicks over 16 months (1.38% CTR vs. 30% expected = ~95% click-capture loss) — for the domain that has used the name since 1994.</p>
 
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Google Platform Financial Damages — Three-Tier Estimate</h4>
             <table className="w-full text-xs font-sans border-collapse mb-3">

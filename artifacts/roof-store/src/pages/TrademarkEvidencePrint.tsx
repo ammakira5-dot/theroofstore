@@ -205,7 +205,26 @@ export default function TrademarkEvidencePrint() {
                 <tr className="border-b border-gray-200"><td className="py-2 pr-3 font-bold">3 — Upper</td><td className="py-2 pr-3">Full keyword gap (1,161) × FL share × CTR × CPC + Roofing Insights brand multiplier</td><td className="py-2 pr-3 font-semibold">$18K–$45K</td><td className="py-2 font-bold text-red-800">$864K–$2.16M</td></tr>
               </tbody>
             </table>
-            <p className="text-xs font-sans text-gray-500 italic">Preliminary estimates only. Review by counsel and forensic economic expert required before use in any proceeding. Google Shopping removal (Exhibit Q) represents an additional unquantified category not included above.</p>
+            <p className="text-xs font-sans text-gray-500 italic mb-3">Preliminary estimates only. Review by counsel and forensic economic expert required before use in any proceeding. Google Shopping removal (Exhibit Q) represents an additional unquantified category not included above.</p>
+
+            <h4 className="text-xs font-bold uppercase tracking-wide text-gray-800 mb-2">Monetary Value of Measured Click Loss (GSC Data — July 23, 2026)</h4>
+            <table className="w-full text-xs font-sans border-collapse mb-2">
+              <thead>
+                <tr className="border-b-2 border-gray-900">
+                  <th className="text-left py-1 pr-3">Methodology</th>
+                  <th className="text-left py-1 pr-3">Calculation</th>
+                  <th className="text-left py-1 pr-3">16-Month Loss</th>
+                  <th className="text-left py-1">48-Month Loss</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-200"><td className="py-1 pr-3 font-semibold">Ad-equivalent (CPC)</td><td className="py-1 pr-3">228 lost clicks × $8–$15 FL roofing CPC</td><td className="py-1 pr-3">$1,824–$3,420</td><td className="py-1">$5,472–$10,260</td></tr>
+                <tr className="border-b border-gray-200 bg-red-50"><td className="py-1 pr-3 font-semibold">Actual job value (low)</td><td className="py-1 pr-3">228 clicks × 2% conv. × $2,000 avg. job</td><td className="py-1 pr-3 font-semibold">~$9,120</td><td className="py-1 font-bold text-red-800">~$27,360</td></tr>
+                <tr className="border-b border-gray-200 bg-red-50"><td className="py-1 pr-3 font-semibold">Actual job value (high)</td><td className="py-1 pr-3">228 clicks × 2% conv. × $15,000 avg. job</td><td className="py-1 pr-3 font-semibold">~$68,400</td><td className="py-1 font-bold text-red-800">~$205,200</td></tr>
+              </tbody>
+            </table>
+            <p className="text-xs font-sans text-gray-600 italic mb-1">GSC only goes back 16 months — 3+ years of damage (Aug 2021–Mar 2025) not captured above. Full 4-year loss requires Ahrefs/SEMrush historical data.</p>
+            <p className="text-xs font-sans text-gray-700 mb-3"><strong>Fastest path to relief: UDRP</strong> ($1,500–$2,500, 60–90 days, can force domain transfer). Trademark lawsuit costs $30K–$100K+. File UDRP first; litigation is the escalation if UDRP fails.</p>
 
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mt-4 mb-2">Google Legal Troubleshooter — Pre-Written Submission</h4>
             <p className="text-xs font-sans mb-2">File at: support.google.com/legal/troubleshooter/1114905</p>

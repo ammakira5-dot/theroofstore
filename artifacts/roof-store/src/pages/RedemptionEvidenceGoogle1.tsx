@@ -229,9 +229,53 @@ export default function RedemptionEvidenceGoogle1() {
                 ))}
               </tbody>
             </table>
-            <p className="text-xs font-sans text-gray-500 italic">
+            <p className="text-xs font-sans text-gray-500 italic mb-4">
               Tier 2 is the primary anchor figure — it is now supported by independent third-party data (Moz, July 22, 2026) rather than CPC modeling alone. The Google Shopping removal (Exhibit Q) represents an additional, unquantified category of platform-access damages not included in any tier above.
             </p>
+
+            {/* Monetary Value of Click Loss */}
+            <div className="border border-gray-300 rounded p-4 bg-gray-50">
+              <h4 className="text-sm font-bold uppercase tracking-wide text-gray-800 mb-3">Monetary Value of Measured Click Loss (GSC Data — July 23, 2026)</h4>
+              <p className="text-xs font-sans text-gray-700 mb-3 leading-relaxed">
+                Converts the 228 measured lost branded clicks (Exhibit E-2, 16-month GSC window) into estimated business damages using two methodologies. The actual job-value methodology is the legally relevant figure.
+              </p>
+              <table className="w-full text-xs font-sans border-collapse mb-3">
+                <thead>
+                  <tr className="border-b-2 border-gray-900">
+                    <th className="text-left py-2 pr-3">Methodology</th>
+                    <th className="text-left py-2 pr-3">Calculation</th>
+                    <th className="text-left py-2 pr-3">16-Month Loss</th>
+                    <th className="text-left py-2">48-Month Loss</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-2 pr-3 font-semibold text-xs">Ad-equivalent (CPC)</td>
+                    <td className="py-2 pr-3 text-xs text-gray-700">228 lost clicks × $8–$15 FL roofing CPC</td>
+                    <td className="py-2 pr-3 text-xs font-semibold">$1,824–$3,420</td>
+                    <td className="py-2 text-xs font-bold text-gray-700">$5,472–$10,260</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 bg-red-50">
+                    <td className="py-2 pr-3 font-semibold text-xs">Actual job value (low)</td>
+                    <td className="py-2 pr-3 text-xs text-gray-700">228 lost clicks × 2% conversion × $2,000 avg. coating job</td>
+                    <td className="py-2 pr-3 text-xs font-semibold">~$9,120</td>
+                    <td className="py-2 text-xs font-bold text-red-800">~$27,360</td>
+                  </tr>
+                  <tr className="border-b border-gray-200 bg-red-50">
+                    <td className="py-2 pr-3 font-semibold text-xs">Actual job value (high)</td>
+                    <td className="py-2 pr-3 text-xs text-gray-700">228 lost clicks × 2% conversion × $15,000 avg. job</td>
+                    <td className="py-2 pr-3 text-xs font-semibold">~$68,400</td>
+                    <td className="py-2 text-xs font-bold text-red-800">~$205,200</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div className="border border-amber-300 bg-amber-50 rounded p-3 text-xs font-sans text-amber-900 leading-relaxed mb-3">
+                <strong>GSC window is only 16 months:</strong> theroof.store launched ~August 2021. Google retains GSC data for 16 months maximum — meaning 3+ years of brand confusion damage (Aug 2021 – Mar 2025) is not captured above. These figures represent only the measurable tail. Full 4-year loss requires Ahrefs/SEMrush historical data.
+              </div>
+              <div className="border border-blue-300 bg-blue-50 rounded p-3 text-xs font-sans text-blue-900 leading-relaxed">
+                <strong>Litigation vs. UDRP:</strong> A trademark lawsuit costs $30,000–$100,000+ in attorney fees. The branded-search click-loss alone may not justify litigation in isolation — but combined with Tier 2 keyword suppression ($450K–$845K) and the Google Shopping removal, the full damages picture likely does. However, the <strong>fastest and cheapest path is UDRP</strong> — costs $1,500–$2,500, decided in 60–90 days, and can force domain transfer without a federal lawsuit. File UDRP first; litigation is the escalation path if UDRP fails.
+              </div>
+            </div>
           </section>
 
           {/* Google Legal Troubleshooter — Pre-Filled Answers */}

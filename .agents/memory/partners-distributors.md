@@ -16,7 +16,7 @@ _Last confirmed by owner: July 23, 2026_
 | 2 | **Roof Restorations and Waterproofing Inc** | roofrestorationsandwaterproofinginc.com | (877) 824-5823 | ✅ Has GMB — **110 E Broward Blvd, Fort Lauderdale, FL 33301** (located inside Atlantic Institute of Oriental Medicine Intern Clinic — shared/virtual address) — 5.0 ⭐ (9 reviews) |
 | 3 | **Best Roof Paint and Waterproofing Service** | bestroofpaint.com | (954) 400-1324 | ✅ Has GMB — **5079 SW 48th St, Davie, FL 33314** — 5.0 ⭐ (5 reviews) |
 | 4 | **Storm Shield Coating Systems Inc** | flatroofsealants.com | (561) 328-4770 | ✅ Has GMB — LOCKED OUT |
-| 5 | **Roof Shield Coating System** | (no website) | (954) 302-5387 | ✅ Has GMB — MapQuest + Facebook |
+| 5 | **Roof Shield Coating System** | (no website) | (954) 302-5387 | ⚠️ Has GMB — **NO ACCESS** — GMB website field currently points to Facebook Business Manager login URL (broken for prospects). Fix: "Suggest an edit" on Google Maps to change website to theroofstore.net, OR reclaim listing at business.google.com. MapQuest: 4700 Sheridan St, Hollywood FL. Facebook: https://www.facebook.com/p/Roof-Shield-Coating-Systems-100068045314754/ |
 | 6 | **Storm Shield Paint Systems Inc** | windproofroofsystems.com | (954) 743-0667 | ✅ Has GMB |
 | 7 | **RoofProtect Products** | roofprotectproducts.com | (954) 900-1973 | ✅ Has GMB — **no address listed** (service-area business) — **licensed entity**: holds county-level occupational license + MSDS/SDS compliance required for chemical coating products; works directly with The Roof Store as manufacturer/distributor |
 | 8 | **Roof Paint Miami** | roofpaintmiami.com | (786) 837-9064 | ❌ No GMB |

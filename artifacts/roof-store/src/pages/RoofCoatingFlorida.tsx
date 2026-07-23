@@ -161,12 +161,12 @@ const faqs = [
   },
   {
     q: "How much does roof coating cost in Florida?",
-    a: "Professional roof coating costs between $1.90 and $3.50 per square foot installed at The Roof Store, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft; the full hurricane-rated monolithic system (RP3 Roof Shield) starts at $2.70/sq ft. All prices include labor and materials.",
+    a: "Professional roof coating costs between $1.90 and $4.75 per square foot installed at The Roof Store, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft; the full hurricane-rated monolithic system (RP3 Roof Shield) starts at $2.70/sq ft. All prices include labor and materials.",
     link: { href: "/pricing", label: "View the full price menu →" },
   },
   {
     q: "Does roof coating void homeowners insurance in Florida?",
-    a: "No. Florida SB 2-D (2022) and a Governor's Bulletin issued in March 2023 establish homeowners' legal right to an Additional Roof Life Certification from a licensed contractor or engineer. This certification protects your insurance coverage and legally supersedes any insurance agent's opinion about roof condition. The Roof Store can issue ARLC documentation for qualifying coated roofs.",
+    a: "No. Florida SB 2-D (2022) and a Governor's Bulletin issued in March 2023 establish homeowners' legal right to an Additional Roof Life Certification from a licensed contractor or engineer. This certification protects your insurance coverage and legally supersedes any insurance agent's opinion about roof condition. The Roof Store provides ARLC-supporting installation documentation for qualifying coated roofs — the inspector or licensed engineer issues the final certification affidavit.",
   },
   {
     q: "What is the difference between roof coating and roof paint?",
@@ -178,7 +178,7 @@ const faqs = [
   },
   {
     q: "Is roof coating hurricane-rated in Florida?",
-    a: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating in the world with Dade County TAS-106 Uplift Certification (2023). It has been validated at 135+ MPH sustained wind and creates a monolithic roof structure with 5× the uplift resistance of a standard new tile roof.",
+    a: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating in the world with Dade County TAS-106 Uplift Certification — originally certified in 2006, with current NOA renewal in 2023. It has been validated at 135+ MPH sustained wind and creates a monolithic roof structure with 5× the uplift resistance of a standard new tile roof.",
   },
   {
     q: "Can commercial properties use roof coating in Florida?",

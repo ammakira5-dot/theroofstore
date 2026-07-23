@@ -129,6 +129,90 @@ const partners = [
     gmbOnly: true,
     reviews: [] as { author: string; text: string }[],
   },
+  {
+    name: "Fort Lauderdale Roof Coating",
+    url: "https://www.ftlauderdaleroofcoating.com",
+    domain: "ftlauderdaleroofcoating.com",
+    phone: "754-367-3768",
+    specialty: "Coastal & Waterfront Tile Roof Specialist",
+    territory: "Fort Lauderdale & Broward Intracoastal Communities",
+    description:
+      "Fort Lauderdale Roof Coating is our authorized specialist for coastal and Intracoastal roofing projects in Fort Lauderdale and Broward County. Operating since 2005, they bring two decades of hands-on experience with Spanish barrel tile, cement tile, and flat roofs in salt-air environments — where surface preparation and coating chemistry differ significantly from inland projects.",
+    services: [
+      "Spanish Tile Roof Coating & Restoration",
+      "Cement Tile Waterproofing",
+      "Flat Roof Liquid Rubber Membrane",
+      "Metal Roof Coating",
+      "Hurricane Pre-Season Sealing",
+    ],
+    badge: "Fort Lauderdale",
+    linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
+  },
+  {
+    name: "Best Roof Paint",
+    url: "https://www.bestroofpaint.com",
+    domain: "bestroofpaint.com",
+    phone: "954-400-1324",
+    specialty: "Roofing-Grade Coating — Broward, Palm Beach & Treasure Coast",
+    territory: "Broward, Palm Beach, Martin, St. Lucie & Miami-Dade Counties",
+    description:
+      "Best Roof Paint is our authorized distributor-installer serving the broadest geographic footprint in the network — from Miami-Dade through the Treasure Coast. Their focus is on helping homeowners and property managers distinguish roofing-grade coatings from consumer paint products, and they carry our full RoofProtect coating line for residential tile, flat, and metal roofs.",
+    services: [
+      "Elastomeric Roof Coating",
+      "Flat Roof Waterproofing",
+      "Metal Roof Coating",
+      "Tile Roof Restoration",
+      "Contractor Product Supply",
+    ],
+    badge: "Broward / Palm Beach",
+    linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
+  },
+  {
+    name: "Roof Paint Miami",
+    url: "https://www.roofpaintmiami.com",
+    domain: "roofpaintmiami.com",
+    phone: "786-837-9064",
+    specialty: "Miami-Dade HOA & Condo Roof Coating Specialist",
+    territory: "Miami-Dade County — including Condominiums & HOA Communities",
+    description:
+      "Roof Paint Miami is our authorized specialist for multi-unit and high-density roofing projects in Miami-Dade County. They specialize in condo towers, HOA-governed communities, and gated neighborhoods — providing color sample boards for board approval, phased scheduling around occupied units, and manufacturer-backed documentation packages for HOA insurance and resale requirements.",
+    services: [
+      "Condo & HOA Roof Coating",
+      "Flat Roof Waterproofing",
+      "Barrel Tile & Cement Tile Restoration",
+      "Metal Roof Coating",
+      "Reflective Coating for Energy Code Compliance",
+    ],
+    badge: "Miami-Dade",
+    linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
+  },
+  {
+    name: "Roof Restorations and Waterproofing Inc",
+    url: "https://www.roofrestorationsandwaterproofinginc.com",
+    domain: "roofrestorationsandwaterproofinginc.com",
+    phone: "877-824-5823",
+    specialty: "Roof Restoration & Waterproofing — South Florida",
+    territory: "Fort Lauderdale & Greater South Florida",
+    description:
+      "Roof Restorations and Waterproofing Inc is our authorized restoration and waterproofing partner serving the greater Fort Lauderdale area. With a verified 5.0-star Google rating across 9 reviews, they bring proven hands-on experience in liquid rubber waterproofing for residential and commercial roofs throughout South Florida.",
+    services: [
+      "Roof Restoration",
+      "Liquid Rubber Waterproofing",
+      "Flat Roof Membrane Application",
+      "Tile Roof Sealing",
+      "Commercial Roof Coating",
+    ],
+    badge: "South Florida",
+    linkPaused: false,
+    gmbOnly: false,
+    reviews: [] as { author: string; text: string }[],
+  },
 ];
 
 export default function PartnerNetwork() {
@@ -136,7 +220,7 @@ export default function PartnerNetwork() {
     <div className="w-full">
       <SEO
         title="Authorized Distributor & Licensed Installers Network — The Roof Store Waterproofing Products"
-        description="The Roof Store maintains an authorized network of licensed specialty partners serving South Florida. Windproof Roof Systems, Roof Protect Products, Storm Shield Roof Coating Systems, and Roof Shield Coating Systems — all factory trained in our proprietary coating systems."
+        description="The Roof Store maintains an authorized network of licensed specialty partners serving South Florida. Windproof Roof Systems, Roof Protect Products, Fort Lauderdale Roof Coating, Best Roof Paint, Roof Paint Miami, Roof Restorations and Waterproofing Inc, and others — all factory trained in our proprietary coating systems."
         canonical="/partner-network"
         schema={schema}
       />

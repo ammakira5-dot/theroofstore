@@ -43,6 +43,8 @@ _Describe the high-level user-facing capabilities of this app once they exist._
 
 ## Pending to-dos
 
+- **🔴 GSC URL SUBMISSIONS — DO TODAY (OWNER ACTION)** — Open Google Search Console → URL Inspection → Request Indexing for the new evidence pages just published: (1) theroofstore.net/trademark-evidence-print; (2) theroofstore.net/google-complaint-steps; (3) theroofstore.net/redemption-evidence-google-1. Also resubmit any pages from the July 22 list still pending. These pages are now live and Google-readable.
+
 - **🔴 FILE GOOGLE COMPLAINT — OWNER ACTION** — All filing materials are built and ready at theroofstore.net/google-complaint-steps. Step-by-step: (1) Google Legal Trademark Complaint → support.google.com/legal/troubleshooter/1114905 (pre-written answers on page, copy-paste ready); (2) Google Search Spam Report → search.google.com/search-console/report/spam (same day); (3) Google Merchant Center reinstatement → support.google.com/merchants (attach date/ticket # of suspension); (4) Google Ads complaint if ads are running → support.google.com/adspolicy/troubleshooter/4578507; (5) WIPO UDRP after attorney review → wipo.int/amc/en/domains/filing/. Full evidence for Google: theroofstore.net/trademark-evidence-print.
 
 - **🔴 Exhibit N — theroof.store intake form screenshot (OWNER ACTION)** — Screenshot the theroof.store B2B intake form showing "Dmitry Lipinskiy" as a selectable option in the "How Did You Hear About Us?" dropdown. This proves his personal brand audience is a deliberate, CRM-tracked acquisition channel for theroof.store — strongest new evidence item. Once screenshot in hand, agent can add as Exhibit N to TrademarkEvidenceFile.tsx immediately.

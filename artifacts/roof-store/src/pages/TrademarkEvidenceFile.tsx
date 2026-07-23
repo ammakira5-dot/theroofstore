@@ -60,6 +60,25 @@ export default function TrademarkEvidenceFile() {
             </div>
           </div>
 
+          {/* Companion Documents */}
+          <div className="mb-8 border border-blue-200 bg-blue-50 rounded p-4 font-sans text-sm">
+            <p className="text-xs uppercase tracking-widest text-blue-600 font-bold mb-2">Companion Evidence Files</p>
+            <div className="flex flex-col gap-2">
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-blue-500 font-bold text-base leading-none">→</span>
+                <div>
+                  <a
+                    href="/redemption-evidence-google-1"
+                    className="font-semibold text-blue-800 underline hover:text-blue-600"
+                  >
+                    Redemption Evd Google File 1
+                  </a>
+                  <span className="text-gray-600 ml-2">— Google Platform Complaint &amp; Brand Confusion Evidence: Exhibit P (Moz domain authority gap, 9× keyword suppression), Exhibit Q (Google Merchant Center / Shopping account removal ~2022–2023), Exhibit R (GSC brand search suppression data), three-tier financial damages table, pre-written Google Legal Troubleshooter form answers, and direct filing links.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Summary of Claim */}
           <section className="mb-10">
             <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">I. Summary of Claim</h3>

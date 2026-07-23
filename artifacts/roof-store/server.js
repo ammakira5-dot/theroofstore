@@ -445,7 +445,9 @@ const SERVE_ONLY_ROUTES = new Set([
   "/terms",
   "/admin",
   "/trademark-evidence-file",
+  "/trademark-evidence-print",
   "/trademark-monitoring-log",
+  "/redemption-evidence-google-1",
 ]);
 
 function isKnownRoute(path) {

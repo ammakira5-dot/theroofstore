@@ -67,13 +67,19 @@ export default function TrademarkEvidenceFile() {
               <div className="flex items-start gap-3">
                 <span className="mt-0.5 text-blue-500 font-bold text-base leading-none">→</span>
                 <div>
-                  <a
-                    href="/redemption-evidence-google-1"
-                    className="font-semibold text-blue-800 underline hover:text-blue-600"
-                  >
+                  <a href="/redemption-evidence-google-1" className="font-semibold text-blue-800 underline hover:text-blue-600">
                     Redemption Evd Google File 1
                   </a>
                   <span className="text-gray-600 ml-2">— Google Platform Complaint &amp; Brand Confusion Evidence: Exhibit P (Moz domain authority gap, 9× keyword suppression), Exhibit Q (Google Merchant Center / Shopping account removal ~2022–2023), Exhibit R (GSC brand search suppression data), three-tier financial damages table, pre-written Google Legal Troubleshooter form answers, and direct filing links.</span>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 mt-2">
+                <span className="mt-0.5 text-blue-500 font-bold text-base leading-none">→</span>
+                <div>
+                  <a href="/google-complaint-steps" className="font-semibold text-blue-800 underline hover:text-blue-600">
+                    Google Complaint Steps — Access &amp; Fill-In Ready
+                  </a>
+                  <span className="text-gray-600 ml-2">— Step-by-step Google filing guide: 5 pre-written form answers for Google Legal Troubleshooter, Search Spam Report, Merchant Center reinstatement request, Ads complaint, and WIPO UDRP — all copy-paste ready with direct URLs.</span>
                 </div>
               </div>
             </div>

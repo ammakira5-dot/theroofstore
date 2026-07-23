@@ -44,63 +44,58 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"
 
-## Pending to-dos
+## Pending To-Dos
 
-### 🔴 Owner actions — do these now
+---
 
-- **GSC URL SUBMISSIONS** — Request Indexing for new evidence pages: theroofstore.net/trademark-evidence-print, /google-complaint-steps, /redemption-evidence-google-1. Also resubmit any July 22 pages still pending.
+### 🔴 A — Owner actions (you do these — no agent needed)
 
+**Legal / Evidence case:**
 - **FILE GOOGLE COMPLAINT** — All materials ready at theroofstore.net/google-complaint-steps: (1) Google Legal Trademark Complaint → support.google.com/legal/troubleshooter/1114905; (2) Google Search Spam Report → search.google.com/search-console/report/spam; (3) Google Merchant Center reinstatement → support.google.com/merchants; (4) WIPO UDRP after attorney review → wipo.int/amc/en/domains/filing/.
-
-- **GSC resubmit (July 22 publish)** — Submit via URL Inspection → Request Indexing: all 109 city pages, all 7 blog posts (/blog/*), /blog index. Also still pending from earlier: /residential.php, /projects/reviews.php, /fl/Miami-roof-restoration.php (redirect errors).
-
-- **GA4 Install (15 min)** — analytics.google.com → create GA4 property → copy Measurement ID (G-XXXXXXXXXX) → give to agent. Every month without it = lost traffic damage evidence.
-
-- **GSC → Google Sheets export (damages evidence)** — GSC → Performance → max 16 months → filter "the roof store" → Export → Google Sheets → share with agent. Agent builds month-by-month impressions/clicks erosion chart as Exhibit K-2.
-
-- **GBP optimization** — business.google.com: (1) Upload 10+ job photos; (2) Complete services list; (3) 750-char business description; (4) Seed 5–6 Q&A; (5) Confirm hours; (6) Google Posts with new blog articles; (7) 50+ reviews in 60 days. Agent can draft description + Q&A on request.
-
 - **Exhibit N** — Screenshot theroof.store B2B intake form showing "Dmitry Lipinskiy" in the "How Did You Hear About Us?" dropdown. Send to agent → adds as Exhibit N immediately.
-
 - **Exhibit O** — Screenshot Facebook post from theroof.store/Dmitry Lipinskiy: "Delivering within a week anywhere south (Atlanta, Florida, California)." Send to agent → adds as Exhibit O.
 
-### Open to-dos (agent-actionable on request)
+**GSC / Analytics:**
+- **GSC URL SUBMISSIONS** — Request Indexing for: theroofstore.net/trademark-evidence-print, /google-complaint-steps, /redemption-evidence-google-1. Also resubmit July 22 pages still pending.
+- **GSC resubmit (July 22 publish)** — URL Inspection → Request Indexing: all 109 city pages, all 7 blog posts (/blog/*), /blog index. Pending legacy redirects: /residential.php, /projects/reviews.php, /fl/Miami-roof-restoration.php.
+- **GSC network — add 2 missing properties** — Add bestroofpaint.com and roofpaintmiami.com to GSC. Submit sitemaps at /wp-sitemap.xml or /sitemap_index.xml.
+- **GA4 Install (15 min)** — analytics.google.com → create GA4 property → copy Measurement ID (G-XXXXXXXXXX) → give to agent. Every month without it = lost traffic damage evidence.
+- **GSC → Google Sheets export (damages evidence)** — GSC → Performance → max 16 months → filter "the roof store" → Export → Google Sheets → share with agent. Agent builds impressions/clicks erosion chart as Exhibit K-2.
 
-- **flatroofsealants.com — unique content/angle needed** — Only remaining network site with no content differentiation. Natural angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Detailed audit pending before drafting.
+**GMB / GBP:**
+- **GBP optimization** — business.google.com: (1) Upload 10+ job photos; (2) Complete services list; (3) 750-char description; (4) Seed 5–6 Q&A; (5) Confirm hours; (6) Google Posts; (7) 50+ reviews in 60 days. Agent can draft description + Q&A on request.
+- **roofpaintmiami.com — GMB setup** — No GMB exists. Create at business.google.com: name "Roof Paint Miami," category Roofing Contractor, service-area Miami-Dade, phone (786) 837-9064. Agent drafts description + Q&A once account created.
+- **flatroofsealants.com GMB stuck** — Google won't deliver postcard to 2049 SW Cranberry St, Port St. Lucie. Try video verification or Google support chat.
 
-- **Partner network page — update JSON-LD schema** — `PartnerNetwork.tsx` schema object still lists only the original 4 partners. Needs updating to include all 8: + Fort Lauderdale Roof Coating, Best Roof Paint, Roof Paint Miami, Roof Restorations and Waterproofing Inc.
+---
 
-- **Re-enable windproofroofsystems.com "owns" schema** — Add `"owns"` WebSite entry for windproofroofsystems.com back into `Home.tsx` and `index.html`. All 4 windproof fixes done July 14 2026. Just say go ahead.
+### 🟡 B — Agent-ready (just say go ahead)
 
-- **RoofShield schema image check** — Audit item #12 claimed `smartshield-pail.png` used on RoofShield page in error. Quick grep to confirm or close. Agent can verify immediately.
+**theroofstore.net codebase:**
+- **Partner network — update JSON-LD schema** — `PartnerNetwork.tsx` schema object still lists only the original 4 partners. Needs all 8: add Fort Lauderdale Roof Coating, Best Roof Paint, Roof Paint Miami, Roof Restorations and Waterproofing Inc.
+- **Re-enable windproofroofsystems.com "owns" schema** — Add `"owns"` WebSite entry back into `Home.tsx` and `index.html`.
+- **RoofShield schema image check** — Quick grep to confirm/close: Audit #1 claimed `smartshield-pail.png` used on RoofShield page in error.
+- **Add BBB/Facebook/Yelp URLs to sameAs schema** — `Home.tsx` BUSINESS_CORE.sameAs has only 2 Google Maps links. User to provide URLs first.
+- **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
+- **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
+- **shopping.theroofstore.net** — Old PHP cart still indexed. Fix: 301 redirect at hosting/DNS level, or GSC removal request.
+- **WordPress blog tagline** — blog.theroofstore.net shows "Just another WordPress site." Fix: WP Admin → Settings → General → Tagline → "Roof Coating Knowledge Base."
 
-- **Add BBB/Facebook/Yelp URLs to sameAs schema** — `Home.tsx` BUSINESS_CORE.sameAs currently only has 2 Google Maps links. User to provide URLs.
+**Sister sites (FTP):**
+- **flatroofsealants.com — unique content/angle** — Last network site with no differentiation. Angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Awaiting detailed audit before drafting.
+- **roofpaintmiami.com — Replace Broward commercial photos** — 8 photos on commercial.php still show Broward job sites. Replace with real Miami-Dade photos. FTP: julius@absolutecharters.com / JULIUS_FTP_PASSWORD.
 
-- **Review count in schema** — `Home.tsx` and `index.html` both show `reviewCount: "10"`. Update once owner confirms actual Google/BBB count.
+**Photos still pending (user to send):**
+- **SmartShield gallery** — 13 images live. Still to add: primer sealer, top coat, reflective color comparison, color mixing, custom color samples. Storage prefix: `smartshield/`.
+- **RoofShield page** — 3 before/after pairs live. More photos expected from owner.
 
-- **SmartShield gallery — more photos pending** — 13 images live. Still to add: primer sealer, top coat, reflective color comparison, color mixing, custom color samples. Source: windproofroofsystems.com/smart-sheild.php. Storage prefix: `smartshield/`.
+---
 
-- **RoofShield page — more photos expected** — Current state: 2 prep before/after pairs + flat roof retrofit pair. User sending more photos.
-
-- **Factory page — partner decision** — Still to decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to factory page directly vs. route through /partner-network.
-
-- **roofpaintmiami.com — GMB setup** — No GMB exists. Steps: business.google.com → "Roof Paint Miami," category Roofing Contractor, service-area business covering Miami-Dade, phone (786) 837-9064. Agent can draft business description + Q&A once account created.
-
-- **roofpaintmiami.com — Replace Broward commercial photos** — 8 commercial photos on commercial.php were renamed but still show Broward job sites. Replace with real Miami-Dade photos. FTP: `julius@absolutecharters.com`, `ftp.absolutecharters.com:21`, secret `JULIUS_FTP_PASSWORD`.
-
-- **flatroofsealants.com GMB verification stuck** — Google won't deliver postcard to 2049 SW Cranberry St, Port St. Lucie. Try: video verification or Google support chat. Schema already has correct phone 561-328-4770.
-
-- **GSC network — add 2 missing properties** — bestroofpaint.com and roofpaintmiami.com not yet in GSC. Submit sitemaps at /wp-sitemap.xml or /sitemap_index.xml.
-
-- **shopping.theroofstore.net** — Old ~2020 PHP shopping cart still indexed. Fix: 301 redirect to https://www.theroofstore.net/ at the hosting/DNS level, or GSC removal request.
-
-- **WordPress blog tagline** — blog.theroofstore.net shows "Just another WordPress site" in SERPs. Fix: WP Admin → Settings → General → Tagline → "Roof Coating Knowledge Base."
+### 🔵 C — Strategy / longer-horizon
 
 - **Off-page authority** — Claim listings on Angi, HomeAdvisor, Houzz, Thumbtack, local Broward directories.
-
-- **Keyword rank tracking** — Options: (A) Looker Studio free — connect all 7 GSC properties; (B) Local Falcon ~$29–49/mo for GMB geo-grid rank tracking across Broward/Miami-Dade zip codes (highest priority for local pack); (C) Custom GSC API dashboard (agent can build later).
-
-- **roofprotectproducts.com FTP note** — FTP: `ftp.absolutecharters.com:21`, user `muhammad@roofprotectproducts.com`. Secret `ROOFPROTECT_FTP_PASSWORD` stored value is wrong — actual password differs. Update secret when convenient.
+- **Keyword rank tracking** — Options: (A) Looker Studio free (all 7 GSC properties); (B) Local Falcon ~$29–49/mo for GMB geo-grid (highest priority for local pack); (C) Custom GSC API dashboard (agent can build).
+- **roofprotectproducts.com FTP** — Secret `ROOFPROTECT_FTP_PASSWORD` is incorrect. Update when convenient. FTP: ftp.absolutecharters.com:21, user muhammad@roofprotectproducts.com.
 
 ## Gotchas
 

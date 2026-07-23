@@ -18,7 +18,7 @@ _Last confirmed by owner: July 23, 2026_
 | 4 | **Storm Shield Coating Systems Inc** | flatroofsealants.com | (561) 328-4770 | ✅ Has GMB — LOCKED OUT |
 | 5 | **Roof Shield Coating System** | (no website) | (954) 302-5387 | ✅ Has GMB — MapQuest + Facebook |
 | 6 | **Storm Shield Paint Systems Inc** | windproofroofsystems.com | (954) 743-0667 | ✅ Has GMB |
-| 7 | **RoofProtect Products** | roofprotectproducts.com | (954) 900-1973 | ✅ Has GMB — **no address listed** (service-area business) |
+| 7 | **RoofProtect Products** | roofprotectproducts.com | (954) 900-1973 | ✅ Has GMB — **no address listed** (service-area business) — **licensed entity**: holds county-level occupational license + MSDS/SDS compliance required for chemical coating products; works directly with The Roof Store as manufacturer/distributor |
 | 8 | **Roof Paint Miami** | roofpaintmiami.com | (786) 837-9064 | ❌ No GMB |
 | 9 | **Fort Lauderdale Roof Coating** | ftlauderdaleroofcoating.com | (754) 367-3768 | ❌ No GMB |
 

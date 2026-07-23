@@ -66,6 +66,10 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 ### Open to-dos (agent-actionable on request)
 
+- **flatroofsealants.com — unique content/angle needed** — Only remaining network site with no content differentiation. Natural angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Detailed audit pending before drafting.
+
+- **Partner network page — update JSON-LD schema** — `PartnerNetwork.tsx` schema object still lists only the original 4 partners. Needs updating to include all 8: + Fort Lauderdale Roof Coating, Best Roof Paint, Roof Paint Miami, Roof Restorations and Waterproofing Inc.
+
 - **Re-enable windproofroofsystems.com "owns" schema** — Add `"owns"` WebSite entry for windproofroofsystems.com back into `Home.tsx` and `index.html`. All 4 windproof fixes done July 14 2026. Just say go ahead.
 
 - **RoofShield schema image check** — Audit item #12 claimed `smartshield-pail.png` used on RoofShield page in error. Quick grep to confirm or close. Agent can verify immediately.

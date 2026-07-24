@@ -73,14 +73,11 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 **theroofstore.net codebase:**
 - **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
-- **Partner-network page — add 4 missing entities** — Currently only 4 of 9 listed. Missing: Roof Restorations and Waterproofing Inc, Best Roof Paint, Roof Paint Miami, Fort Lauderdale Roof Coating. Also fix Port St. Lucie phone: page shows 754-273-4744 but GMB-verified number is 561-328-4770.
 - **ARLC/insurance messaging consistency** — Messaging is inconsistent across pages. Needs audit + alignment pass.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
 
 **Sister sites (FTP):**
-- **bestroofpaint.com — content update** — Remove unsupported "1350 psi vs. 300 psi" claim; fix original typos still live.
-- **ftlauderdaleroofcoating.com — content update** — Fix broken sentence fragments from prior audits still live.
-- **roofpaintmiami.com — content update** — Fix shared boilerplate intro paragraph (still live) + replace 8 Broward commercial photos on commercial.php with real Miami-Dade photos.
+- **roofpaintmiami.com — Replace Broward commercial photos** — 8 photos on commercial.php still show Broward job sites. Replace with real Miami-Dade photos (user to provide). FTP: julius@absolutecharters.com / JULIUS_FTP_PASSWORD.
 - **flatroofsealants.com — unique content/angle** — Last network site with no differentiation. Angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Awaiting detailed audit before drafting.
 
 **Photos still pending (user to send):**

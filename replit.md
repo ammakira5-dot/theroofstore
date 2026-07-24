@@ -78,7 +78,6 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — `Home.tsx` BUSINESS_CORE.sameAs has only 2 Google Maps links. User to provide URLs first.
 - **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
-- **WordPress blog tagline** — blog.theroofstore.net shows "Just another WordPress site." Fix: WP Admin → Settings → General → Tagline → "Roof Coating Knowledge Base."
 
 **Sister sites (FTP):**
 - **flatroofsealants.com — unique content/angle** — Last network site with no differentiation. Angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Awaiting detailed audit before drafting.

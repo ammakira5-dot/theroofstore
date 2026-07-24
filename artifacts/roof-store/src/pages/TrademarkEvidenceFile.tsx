@@ -1112,14 +1112,14 @@ export default function TrademarkEvidenceFile() {
               </ol>
             </div>
             <a
-              href="/udrp-complaint-draft.html"
+              href="/ref/8f3k-2m9x-771q"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded font-sans text-sm font-semibold hover:bg-gray-700 transition-colors print:hidden"
             >
               Open Full Complaint Brief ↗
             </a>
-            <p className="text-xs text-gray-400 mt-2 font-sans print:hidden">Formatted standalone document — marked noindex/nofollow, excluded from search engines.</p>
+            <p className="text-xs text-gray-400 mt-2 font-sans print:hidden">Password-protected document — requires attorney or admin access. Excluded from search engines.</p>
           </section>
 
           {/* Reservation */}

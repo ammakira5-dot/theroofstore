@@ -49,6 +49,7 @@ import TrademarkMonitoringLog from "@/pages/TrademarkMonitoringLog";
 import RedemptionEvidenceGoogle1 from "@/pages/RedemptionEvidenceGoogle1";
 import TrademarkEvidencePrint from "@/pages/TrademarkEvidencePrint";
 import GoogleComplaintSteps from "@/pages/GoogleComplaintSteps";
+import UdrpDraftGate from "@/pages/UdrpDraftGate";
 import Shop from "@/pages/Shop";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
@@ -149,6 +150,7 @@ function Router() {
       <Route path="/redemption-evidence-google-1" component={RedemptionEvidenceGoogle1} />
       <Route path="/trademark-evidence-print" component={TrademarkEvidencePrint} />
       <Route path="/google-complaint-steps" component={GoogleComplaintSteps} />
+      <Route path="/ref/8f3k-2m9x-771q" component={UdrpDraftGate} />
       <Route path="/admin" component={Admin} />
 
       {/* ── Legacy WordPress redirects — service pages ── */}

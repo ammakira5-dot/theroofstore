@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /trademark-monitoring-log
+Disallow: /rpt-88291-b.html
+Disallow: /ref/8f3k-2m9x-771q
 
 Sitemap: https://www.theroofstore.net/sitemap.xml

@@ -148,4 +148,13 @@ router.post("/trademark-monitoring/check-now", async (req, res) => {
   res.json(response);
 });
 
+router.get("/trademark-monitoring/verify", (req, res) => {
+  const role = checkAuth(req);
+  if (!role) {
+    res.status(401).json({ ok: false, error: "Unauthorized" });
+    return;
+  }
+  res.json({ ok: true, role });
+});
+
 export default router;

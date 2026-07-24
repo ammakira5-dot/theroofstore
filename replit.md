@@ -72,7 +72,6 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
-- **Add BBB/Facebook/Yelp URLs to sameAs schema** — All URLs ready. Facebook: https://www.facebook.com/profile.php?id=100068045314754 — BBB: https://www.bbb.org/us/fl/hollywood/profile/painting-contractors/storm-shield-paint-systems-inc-0633-90131779 — Yelp: https://www.yelp.com/biz/the-roof-store-davie — also update foundingDate to 1994 (BBB shows "est. 2002" but actual founding is 1994/1995). Agent-ready: just say go ahead.
 - **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
 

@@ -91,6 +91,9 @@ const BUSINESS_CORE = {
     "https://www.theroofstore.net",
     "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",
     "https://share.google/D1EDyrzQhB4vW1fdz",
+    "https://www.facebook.com/profile.php?id=100068045314754",
+    "https://www.bbb.org/us/fl/hollywood/profile/painting-contractors/storm-shield-paint-systems-inc-0633-90131779",
+    "https://www.yelp.com/biz/the-roof-store-davie",
   ],
   owns: {
     "@type": "WebSite",

@@ -168,6 +168,7 @@ export default function Blog() {
                       src={post.image}
                       alt={post.title}
                       className="w-full aspect-video object-cover"
+                      style={{ objectPosition: post.imagePosition ?? "center" }}
                     />
                   </Link>
                   <div className="p-7">

@@ -6,6 +6,7 @@ export interface BlogPost {
   url: string;
   image: string;
   imageAlt: string;
+  imagePosition?: string;
   date: string;
   dateISO: string;
   tag: string;
@@ -62,6 +63,7 @@ export const blogPosts: BlogPost[] = [
     url: `${BASE}/blog/citizens-insurance-for-older-tile-roofs-in-florida/`,
     image: "/images/blog/post-3.png",
     imageAlt: "Older Spanish tile roof in South Florida — Citizens Insurance coverage options",
+    imagePosition: "top",
     date: "September 2024",
     dateISO: "2024-09-01",
     tag: "Citizens Insurance",

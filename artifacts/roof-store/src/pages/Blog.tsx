@@ -167,7 +167,7 @@ export default function Blog() {
                     <img
                       src={post.image}
                       alt={post.title}
-                      className="w-full aspect-video object-cover"
+                      className={`w-full aspect-video ${post.imageFit === "contain" ? "object-contain bg-gray-100" : "object-cover"}`}
                       style={{ objectPosition: post.imagePosition ?? "center" }}
                     />
                   </Link>

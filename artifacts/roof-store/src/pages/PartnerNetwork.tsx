@@ -25,6 +25,16 @@ const schema = {
       postalCode: "33328",
       addressCountry: "US",
     },
+    member: [
+      { "@type": "Organization", name: "Windproof Roof Systems", url: "https://www.windproofroofsystems.com", telephone: "+19547430667" },
+      { "@type": "Organization", name: "Roof Protect Products", url: "https://www.roofprotectproducts.com", telephone: "+19549001973" },
+      { "@type": "Organization", name: "Storm Shield Roof Coating Systems", telephone: "+15613284770" },
+      { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387" },
+      { "@type": "Organization", name: "Fort Lauderdale Roof Coating", url: "https://www.ftlauderdaleroofcoating.com", telephone: "+17543673768" },
+      { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324" },
+      { "@type": "Organization", name: "Roof Paint Miami", url: "https://www.roofpaintmiami.com", telephone: "+17868379064" },
+      { "@type": "Organization", name: "Roof Restorations and Waterproofing Inc", url: "https://www.roofrestorationsandwaterproofinginc.com", telephone: "+18778245823" },
+    ],
   },
 };
 

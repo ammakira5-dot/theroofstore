@@ -92,6 +92,11 @@ const BUSINESS_CORE = {
     "https://maps.app.goo.gl/EtoKtkspkEtLBmGi9",
     "https://share.google/D1EDyrzQhB4vW1fdz",
   ],
+  owns: {
+    "@type": "WebSite",
+    name: "Windproof Roof Systems",
+    url: "https://www.windproofroofsystems.com",
+  },
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",

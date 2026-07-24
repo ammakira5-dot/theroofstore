@@ -72,9 +72,6 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
-- **Partner network — update JSON-LD schema** — `PartnerNetwork.tsx` schema object still lists only the original 4 partners. Needs all 8: add Fort Lauderdale Roof Coating, Best Roof Paint, Roof Paint Miami, Roof Restorations and Waterproofing Inc.
-- **Re-enable windproofroofsystems.com "owns" schema** — Add `"owns"` WebSite entry back into `Home.tsx` and `index.html`.
-- **RoofShield schema image check** — Quick grep to confirm/close: Audit #1 claimed `smartshield-pail.png` used on RoofShield page in error.
 - **Add BBB/Facebook/Yelp URLs to sameAs schema** — `Home.tsx` BUSINESS_CORE.sameAs has only 2 Google Maps links. User to provide URLs first.
 - **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.

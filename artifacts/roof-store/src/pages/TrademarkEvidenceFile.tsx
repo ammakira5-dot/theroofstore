@@ -1097,9 +1097,34 @@ export default function TrademarkEvidenceFile() {
             </ol>
           </section>
 
+          {/* UDRP Complaint Brief */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XVIII. Draft UDRP Complaint Brief — ICANN / WIPO Filing</h3>
+            <p className="text-sm font-sans leading-relaxed text-gray-700 mb-4">
+              A full-structure UDRP complaint brief has been prepared for attorney review, organized per the ICANN Uniform Domain-Name Dispute-Resolution Policy three-element test. The brief is not a final legal filing — it requires review and finalization by licensed IP counsel before submission to WIPO or The Forum.
+            </p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-5 text-sm font-sans">
+              <p className="font-semibold text-blue-900 mb-3">Three-Element Test Summary (UDRP ¶4(a)):</p>
+              <ol className="list-decimal list-inside space-y-2 text-blue-800 leading-relaxed">
+                <li><strong>Identical / confusingly similar mark</strong> — theroof.store incorporates the entirety of "THE ROOF STORE." The .store TLD is semantically meaningful, heightening — not reducing — confusing similarity. Common law rights established since 1994; federal registration 2009–2016 covering identical goods/services classes (IC 002, 037, 040).</li>
+                <li><strong>No legitimate rights or interests</strong> — All three Policy ¶4(c) safe harbors fail. Respondent's own identity ("Dmitry Lipinskiy" / "Roofing Insights") predated the domain by four years under a different name; the domain was adopted deliberately for commercial use in the identical industry.</li>
+                <li><strong>Bad faith registration and use</strong> — Supported by five independent factors: competitive disruption (¶4(b)(iii)); intentional confusion for commercial gain (¶4(b)(iv)); privacy/proxy registration combined with other bad-faith indicators; constructive knowledge given a 19-year priority gap; and continuing use after documented public notice (Exhibit L, July 7 2026).</li>
+              </ol>
+            </div>
+            <a
+              href="/udrp-complaint-draft.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded font-sans text-sm font-semibold hover:bg-gray-700 transition-colors print:hidden"
+            >
+              Open Full Complaint Brief ↗
+            </a>
+            <p className="text-xs text-gray-400 mt-2 font-sans print:hidden">Formatted standalone document — marked noindex/nofollow, excluded from search engines.</p>
+          </section>
+
           {/* Reservation */}
           <section className="mb-12">
-            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XVIII. Reservation of Rights</h3>
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XIX. Reservation of Rights</h3>
             <p className="text-sm font-sans leading-relaxed text-gray-700">
               The Roof Store / Storm Shield Paint Systems Inc. expressly reserves all rights under the Lanham Act, ACPA, Florida common law, and ICANN UDRP with respect to the domain theroof.store and any other domain names or social media handles using "The Roof Store" brand. This document does not constitute a waiver of any right or remedy. All evidence herein was captured from publicly accessible web pages and represents the live state of the respondent's commercial operations as of the documentation date.
             </p>

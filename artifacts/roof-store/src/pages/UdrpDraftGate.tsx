@@ -39,7 +39,7 @@ export default function UdrpDraftGate() {
         <iframe
           src="/rpt-88291-b.html"
           title="UDRP Complaint Draft"
-          style={{ width: "100vw", height: "100vh", border: "none", display: "block" }}
+          style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", border: "none", zIndex: 9999 }}
         />
       </>
     );

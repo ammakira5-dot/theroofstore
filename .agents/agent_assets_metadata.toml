@@ -353,3 +353,15 @@ id = "J7PP_m_bqwxCsFOQt_EaT"
 uri = "file://artifacts/roof-store/public/images/roofshield-product.webp"
 type = "image"
 title = "roofshield-product.webp — used in Product schema"
+
+[[outputs]]
+id = "qKfTV1SBcdpVeamGmlNnm"
+uri = "file://artifacts/roof-store/public/images/rp-new-product-check.png"
+type = "image"
+title = "Option A — new-product.png (large/hi-res)"
+
+[[outputs]]
+id = "caoRYQKCKlHBk1NbIUD5y"
+uri = "file://artifacts/roof-store/public/images/rp-product-img-check.png"
+type = "image"
+title = "Option B — product-img.png (small)"

@@ -98,7 +98,7 @@ const pricingFaqs = [
   },
   {
     q: "Will roof coating help with my homeowners insurance?",
-    a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Uplift Certification — the highest wind resistance standard in the United States. Florida SB 2-D requires insurers to offer discounts for certified roof systems, and an Additional Roof Life Certification (ARLC) documenting the restored condition can help retain coverage on aging roofs. Ask us about the inspection documentation package during your free estimate.",
+    a: "Yes — two ways. First, our RoofShield (RP3) system carries TAS-106 Dade County Uplift Certification, which Florida SB 2-D requires insurers to discount. Second, Florida law gives every homeowner the right to request an independent Useful Life Exam — an inspection by a licensed contractor or engineer. It is that inspector's report, not any contractor or product, that the insurance company is legally required to recognize. The most effective thing you can do is put your roof in the best possible condition before that exam: professionally cleaned, repaired, and coated. That is exactly what we do.",
   },
   {
     q: "How do I get an exact roof coating quote?",

@@ -50,8 +50,12 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 ### 🔴 A — Owner actions (you do these — no agent needed)
 
-**Legal / Evidence case:**
+**⚡ NEXT PRIORITY — do these first:**
+- **GA4 Install (15 min)** — analytics.google.com → create GA4 property → copy Measurement ID (G-XXXXXXXXXX) → give to agent. Every month without it = lost traffic damage evidence.
 - **FILE GOOGLE COMPLAINT** — All materials ready at theroofstore.net/google-complaint-steps: (1) Google Legal Trademark Complaint → support.google.com/legal/troubleshooter/1114905; (2) Google Search Spam Report → search.google.com/search-console/report/spam; (3) Google Merchant Center reinstatement → support.google.com/merchants; (4) WIPO UDRP after attorney review → wipo.int/amc/en/domains/filing/.
+
+**Legal / Evidence case:**
+- **FILE GOOGLE COMPLAINT** — (see above ⚡)
 - **Exhibit N** — Screenshot theroof.store B2B intake form showing "Dmitry Lipinskiy" in the "How Did You Hear About Us?" dropdown. Send to agent → adds as Exhibit N immediately.
 - **Exhibit O** — Screenshot Facebook post from theroof.store/Dmitry Lipinskiy: "Delivering within a week anywhere south (Atlanta, Florida, California)." Send to agent → adds as Exhibit O.
 

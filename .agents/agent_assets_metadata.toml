@@ -365,3 +365,9 @@ id = "caoRYQKCKlHBk1NbIUD5y"
 uri = "file://artifacts/roof-store/public/images/rp-product-img-check.png"
 type = "image"
 title = "Option B — product-img.png (small)"
+
+[[outputs]]
+id = "Gc3GG30C5WqWwmhqqJE4_"
+uri = "file://artifacts/roof-store/public/images/roofshield-bucket.webp"
+type = "image"
+title = "roofshield-bucket.webp — 133KB — used in Product schema"

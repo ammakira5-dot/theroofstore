@@ -59,7 +59,7 @@ const schema = [
     name: "Roof Shield (RP3)",
     description:
       "The world's only liquid-applied roof coating system certified under Dade County TAS-106 Uplift Standard. Multi-layer monolithic system. 135+ MPH wind resistance. Lifetime Warranty.",
-    image: "https://www.theroofstore.net/images/roofshield-bucket.png",
+    image: "https://www.theroofstore.net/images/roofshield-bucket.webp",
     sku: "RP3",
     brand: { "@type": "Brand", name: "RoofProtect" },
     manufacturer: {

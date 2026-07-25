@@ -1,0 +1,17 @@
+describing — that image grid with price/seller name that shows up for commercial searches like "roof coating" — that specific surface is Merchant-Center-sourced. It pulls from Google's Shopping graph, either through:
+
+Free listings (no ad spend required, but still requires an active Merchant Center account + product feed), or
+Paid Shopping ads (Merchant Center + Google Ads campaign)
+So for that exact result type, yes — you need Merchant Center back. This is exactly why the Merchant Center reinstatement is already Priority 7 in the action plan. Once that's restored and a product feed is submitted (title, image, price, availability, and ideally GTIN/brand), your Fungal Shield / Smart Shield / Roof Shield buckets become eligible to appear in that grid again.
+
+But there's a separate, achievable-right-now path that doesn't depend on Merchant Center at all: regular Google Images results. Those come from on-page signals, not a feed:
+
+What's needed	Status on your product pages
+Product schema with image, offers, price, sku	✅ Already present on the Roof Shield (RP3) page, confirmed in our first audit
+Descriptive image file names (not IMG_4471.jpg)	Worth checking — generic filenames hurt image SEO
+Descriptive alt text on each product image	Worth verifying on all three product pages
+Image sitemap or images referenced in the main sitemap	Worth adding if not present
+Sufficient page authority/relevance for the query	Already reasonably strong given the pillar content built
+So to directly confirm your question: it is not only possible after Merchant Center is set up. Getting your bucket images into regular Google Images results for "roof coating" can be pursued now, independent of the Shopping-grid path — but the specific price-tagged product carousel you're picturing does require Merchant Center to come back online first.
+
+Practical next step: since the schema groundwork already exists on the Roof Shield page, the fastest wins are (1) confirm alt text and file naming on all three product images, and (2) move Merchant Center reinstatement up if getting back into that Shopping grid specifically is the priority — it's already drafted and ready to file.

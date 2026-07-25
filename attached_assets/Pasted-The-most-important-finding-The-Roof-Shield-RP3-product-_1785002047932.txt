@@ -1,0 +1,36 @@
+The most important finding: The Roof Shield (RP3) product's structured data — the schema.org markup Google actually reads to identify product images — points to a file called smartshield-pail.png, not a Roof Shield-specific image. That's a real mismatch: Google's product-image system is being told the Roof Shield bucket photo is actually a Smart Shield file. This alone could be undermining correct image attribution for your flagship product.
+
+Second finding: none of the three product pages currently have a clean, standalone bucket/product photo as the primary hero image.
+
+Product	Hero Image File	Problem
+Fungal Shield	homeshow-small.JPG	Generic leftover filename (looks like an event photo), not a product shot
+Smart Shield	Waterproofing-Technology.jpg	This is the same generic stock image reused site-wide as the default OG/social image on FAQ, pricing, and other pages — not a unique Smart Shield product photo
+Roof Shield	roof-shield-system.jpg	Decent filename, but schema still references the wrong file (see above)
+Third finding: hero image alt text is written like a title tag, not a description. All three read as marketing taglines with | The Roof Store Florida stapled on the end (e.g., "Smart Shield — Waterproof. Weatherproof. 3,000+ Colors... | The Roof Store Florida"). Google's own image guidelines want alt text that concisely describes what's actually in the image — this pattern is a known anti-pattern that dilutes rather than helps image relevance.
+
+What's actually working well: the before/after installation galleries on the Smart Shield and Roof Shield pages (roughly 20 images total) have genuinely excellent, unique, descriptive alt text and reasonably semantic filenames (clay-tile-before.png, ss-softwash-truck.jpg, etc.). No gaps or generic filenames found there.
+
+To directly fix the "bucket image in search" goal: you need one dedicated, professionally-lit bucket photo per product — RP1, RP2, RP3 — with a filename like fungal-shield-rp1-bucket.jpg, correct matching schema image reference, and alt text like "Fungal Shield RP1 clear anti-fungal roof coating, 5-gallon bucket". Right now, no such image exists on any of the three pages — every image is either an installation photo or a generic graphic.
+
+
+theroofstore.net
+1 sources
+
+
+
+Plan photoshoot for dedicated product bucket shots
+13:41
+
+
+Worked for 1 min 9s
+The plan covers all three products with 6 shots each (36 images total) plus one group lineup shot, and it's built to directly fix what the audit found — not just add nice photos.
+
+The shot list per product: primary hero (white background), 3/4 angle, label close-up, lid-off texture shot, scale-reference shot, and a jobsite/lifestyle shot.
+
+The technical spec that matters most: white background, 1:1 aspect ratio, no text/badges baked into the hero image — that's what makes these eligible for Google Merchant Center's Shopping feed once it's reinstated, not just for the website itself. The lighting note is worth flagging: glossy plastic buckets glare under hard light, so a light tent or diffused softboxes are the one piece of equipment that actually matters here — everything else is straightforward, even with a smartphone camera.
+
+Naming convention is spelled out exactly (fungal-shield-rp1-bucket-hero.jpg, etc.) so this doesn't repeat the generic-filename problem found on the current pages, and I've drafted ready-to-use alt text for each hero shot.
+
+One thing worth confirming before the shoot: actual packaging size (the alt text draft assumes 5-gallon based on context — worth verifying against real packaging before finalizing).
+
+The post-production checklist ends with the step that fixes the root cause from the audit: updating each product's schema image field at upload time, in the same pass as the alt text — that's exactly the step that got skipped before, which is how the Roof Shield page ended up pointing to a Smart Shield file.

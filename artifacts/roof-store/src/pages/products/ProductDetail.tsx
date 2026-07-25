@@ -116,7 +116,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
         title={product.seoTitle}
         description={product.seoDescription}
         canonical={`/products/${product.slug}`}
-        ogImage={product.heroImage}
+        ogImage={product.productImage ?? product.heroImage}
         schema={schema}
       />
 

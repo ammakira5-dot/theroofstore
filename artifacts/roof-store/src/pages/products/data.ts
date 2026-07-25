@@ -15,6 +15,7 @@ export const fungalShield: ProductData = {
   seoDescription: "Fungal Shield (RP1) is a clear roof tile sealer that eliminates black streaking, algae, mold, and fungal growth on Florida tile, metal, and flat roofs. Also works as a protective clear metal roof coating. A stronger alternative to standard roof painting for tile and metal roofs. Mildew resistant. 5-Year Product Warranty. $190 — Free quote 954-210-9614.",
   heroDesc: "Sheds water, prevents staining, eliminates black streaking — and keeps tiles looking new.",
   heroImage: `${BASE}/images/homeshow-small.JPG`,
+  heroImageAlt: "Fungal Shield RP1 clear anti-fungal roof coating applied to Florida tile roof — eliminates black streaking and algae",
   overview: [
     "Fungal Shield (RP1) is RoofProtect's clear anti-fungal roof coating, available exclusively through The Roof Store — the answer to South Florida's most common roof complaint: black streaks, green algae patches, and mold colonies that make a perfectly sound roof look like it needs replacing. These aren't cosmetic issues — they are living biological organisms actively breaking down your roofing substrate.",
     "Fungal Shield starts from a clear elastomeric base, to which additional active ingredients are added to create its biocide formula. It penetrates and bonds to clay tile, concrete tile, metal, and flat roof surfaces, killing existing biological growth while creating a long-lasting barrier against future infestations. It sheds water away from the tile surface, prevents staining, and provides UV protection — all in a clear finish that preserves the original look of your roof.",
@@ -83,7 +84,7 @@ export const fungalShield: ProductData = {
   shopAvailable: false,
   sku: "RP1",
   mpn: "RP1",
-  productImage: `${BASE}/images/products/smartshield-pail.png`,
+  productImage: `${BASE}/images/fungalshield-product.webp`,
   pdfUrl: "/docs/roofprotect-brochure.pdf",
   pdfLabel: "RoofProtect Product Brochure (PDF)",
 };
@@ -100,6 +101,7 @@ export const smartShield: ProductData = {
   seoDescription: "Smart Shield is a reflective cool roof coating that waterproofs tile roofs in 3,000+ colors. The professional evolution of roof painting — 5× the thickness, true waterproofing, 3,000+ colors. BASF Cool Pigment means the darker the color, the more it reflects. Base can be elastomeric or polyurethane, or blended with ceramic for a flatter, less-reflective look. FP&L confirmed energy savings. Free quote — 954-210-9614.",
   heroDesc: "A full waterproof, weatherproof coating system for tile roofs — in over 3,000 tintable colors. As a reflective cool roof coating, the darker the color, the more it reflects. FP&L confirmed energy savings. Exclusively available through The Roof Store.",
   heroImage: `${BASE}/images/Waterproofing-Technology.jpg`,
+  heroImageAlt: "Smart Shield RP2 waterproof cool roof coating applied to Florida tile roof — 3,000+ colors, BASF cool pigment",
   overview: [
     "Smart Shield (RP2) is RoofProtect Products' most popular system, available exclusively through The Roof Store — a complete waterproof and weatherproof roof coating engineered specifically for Florida tile roofs. Its base formula is typically elastomeric, tuned for darker tile colors, and it seals the tile surface against wind-driven rain, UV degradation, moisture intrusion, and mildew growth. It is 5× thicker than standard roof paint and bonds directly to the tile, forming a durable protective barrier that extends tile life significantly.",
     "Smart Shield's base can also be formulated as polyurethane instead of elastomeric, or blended with ceramic for a flatter, less-reflective look on tile roofs where a matte finish is preferred, or for certain flat roof applications — the right formulation depends on the roof deck's drainage and the project's price point. It is important to understand what Smart Shield is and is not. For the main field tiles, Smart Shield is a surface coating — it protects the tile face and waterproofs the roof without filling the spaces between individual tiles. That full gap-filling monolithic treatment is the job of our Roof Shield (RP3) system. Where Smart Shield does add structural reinforcement is at the ridge caps: during every installation, the ridge caps are polyurethaned and fiber coated as a minimum standard. Ridge caps are the most wind-vulnerable section of any tile roof in South Florida, and this treatment gives them meaningful additional hurricane wind-lift protection — even on a Smart Shield-only job.",
@@ -186,7 +188,7 @@ export const smartShield: ProductData = {
   shopAvailable: true,
   sku: "RP2",
   mpn: "RP2",
-  productImage: `${BASE}/images/products/smartshield-pail.png`,
+  productImage: `${BASE}/images/smartshield-product.webp`,
   pdfUrl: "/docs/roofprotect-product-presentation.pdf",
   pdfLabel: "RoofProtect Product Presentation (PDF)",
   galleryImages: [
@@ -260,6 +262,7 @@ export const roofShield: ProductData = {
   seoDescription: "Roof Shield — The Original Liquid Applied Rubber Roof Shield System — fills every gap and void between your tiles with multiple product layers — making your roof monolithic. The professional evolution of roof painting — monolithic, hurricane-rated, lifetime warranty. Typically formulated with a silicone base for all roof types, including flat roofs that hold water. TAS-106 rated, 5× stronger, lifetime warranty. 954-210-9614.",
   heroDesc: "A multi-layer system using several of our proprietary products to fill every space between your tiles — creating a single monolithic roof structure. No gaps. No wind or rain entry. The world's only TAS-106 Dade County Pull Test Rated liquid roof coating.",
   heroImage: `${BASE}/images/roof-shield-system.jpg`,
+  heroImageAlt: "Roof Shield RP3 liquid applied rubber roof system — multi-layer monolithic hurricane coating, TAS-106 certified, Davie Florida",
   overview: [
     "Roof Shield (RP3) — officially The Original Liquid Applied Rubber Roof Shield System — is fundamentally different from any roof coating on the market, because it is not just a coating. It is a multi-layer system that uses several of RoofProtect's proprietary products in combination to physically fill every void, gap, and space between your tiles: under the overlaps, in the grout joints, between barrel tile ribs, in every penetration point. Before treatment, your tile roof has hundreds of open spaces that wind and rain can enter. After Roof Shield, those spaces are gone — sealed solid.",
     "Roof Shield, Smart Shield, and Fungal Shield are interchangeable systems built from elastomeric, polyurethane, or silicone base ingredients depending on a customer's goals and price point. Roof Shield specifically is usually formulated around a proprietary premium silicone base ingredient to achieve its monolithic barrier — which is what makes it suitable for every roof type, including flat roofs that hold standing water. The result is a monolithic roof: instead of hundreds of individual tiles sitting on mortar and clips — each one a potential wind or water entry point — the entire roof surface becomes one continuous sealed structure. Wind cannot lift individual tiles because they are bonded into a single unit. Rain cannot penetrate between tiles because there are no gaps left to enter. Before and after photos of the process show the dramatic difference: tile voids that were once open to the sky are completely filled and sealed.",
@@ -350,7 +353,7 @@ export const roofShield: ProductData = {
   mpn: "RP3",
   certificationUrl: "/tas-106-certified-roof-coating",
   certificationLabel: "TAS-106 Dade County Uplift Certification — Full Reference Page",
-  productImage: `${BASE}/images/products/smartshield-pail.png`,
+  productImage: `${BASE}/images/roofshield-bucket.webp`,
   pdfUrl: "/docs/roofshield-strength-data-sheet.pdf",
   pdfLabel: "RoofShield Strength Data Sheet (PDF)",
   beforeAfterImages: [

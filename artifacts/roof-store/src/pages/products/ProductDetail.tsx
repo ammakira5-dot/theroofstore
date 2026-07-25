@@ -19,6 +19,7 @@ export interface ProductData {
   seoDescription: string;
   heroDesc: string;
   heroImage?: string;
+  heroImageAlt?: string;
   overview: string[];
   features: { title: string; desc: string }[];
   specs: { label: string; value: string }[];
@@ -122,7 +123,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
       <section className="relative bg-primary text-white overflow-hidden">
         {product.heroImage && (
           <div className="absolute inset-0">
-            <img src={product.heroImage} alt={`${product.name} — ${product.tagline} | The Roof Store Florida`} title={`${product.name} Roof Coating System — The Roof Store`} className="w-full h-full object-cover opacity-20" />
+            <img src={product.heroImage} alt={product.heroImageAlt ?? `${product.name} roof coating system — The Roof Store Florida`} title={`${product.name} Roof Coating System — The Roof Store`} className="w-full h-full object-cover opacity-20" />
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
           </div>
         )}

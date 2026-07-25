@@ -347,3 +347,9 @@ id = "lgDXuZmZRdFAUJBhtXB4V"
 uri = "file://attached_assets/Brand_Evidence_File_theroofstore_1784750473135.pdf"
 type = "pdf"
 title = "Brand Evidence File — The Roof Store v. theroof.store"
+
+[[outputs]]
+id = "J7PP_m_bqwxCsFOQt_EaT"
+uri = "file://artifacts/roof-store/public/images/roofshield-product.webp"
+type = "image"
+title = "roofshield-product.webp — used in Product schema"

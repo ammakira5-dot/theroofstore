@@ -36,6 +36,8 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - City images removed from repo — served from App Storage CDN (`/api/storage/public-objects/cities/`)
 - theroofstore.net DNS managed by **oneworldhosting.com cPanel** (NOT Porkbun) — all DNS changes go there
 - Resend live: `RESEND_FROM = The Roof Store <leads@theroofstore.net>` — factory price sheet auto-response emails active
+- **Crawler protection rule**: Evidence pages (TrademarkEvidenceFile, TrademarkEvidencePrint, TrademarkMonitoringLog, GoogleComplaintSteps, RedemptionEvidenceGoogle1, UdrpDraftGate) are all noindexed AND in robots.txt Disallow. Content stays intact for attorney/private access via direct URL. Never submit these to GSC.
+- **Disambiguation rule**: Any schema or copy that distinguishes The Roof Store from similarly-named entities must describe us only — positively, factually, with founding/domain dates. Never name or reference theroof.store or any competitor on theroofstore.net. Legal risk + co-occurrence signal.
 
 ## User preferences
 
@@ -60,29 +62,40 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - **Exhibit O** — Screenshot Facebook post from theroof.store/Dmitry Lipinskiy: "Delivering within a week anywhere south (Atlanta, Florida, California)." Send to agent → adds as Exhibit O.
 
 **GSC / Analytics:**
-- **GSC URL SUBMISSIONS** — Request Indexing for: theroofstore.net/trademark-evidence-print, /google-complaint-steps, /redemption-evidence-google-1. Also resubmit July 22 pages still pending.
+- **GSC sitemap** — Submit https://www.theroofstore.net/sitemap.xml to GSC. Then individually request indexing for: `/`, `/roof-coating-florida`, `/tas-106-certified-roof-coating`, `/blog`, `/factory`, `/pricing`.
+- **DO NOT submit** `/trademark-evidence`, `/trademark-evidence-print`, `/google-complaint-steps`, `/redemption-evidence-google-1` — these are now crawler-blocked (robots.txt Disallow + noindex). Submit only public pages.
 - **GSC resubmit (July 22 publish)** — URL Inspection → Request Indexing: all 109 city pages, all 7 blog posts (/blog/*), /blog index. Pending legacy redirects: /residential.php, /projects/reviews.php, /fl/Miami-roof-restoration.php.
 - **GSC network — add 2 missing properties** — Add bestroofpaint.com and roofpaintmiami.com to GSC. Submit sitemaps at /wp-sitemap.xml or /sitemap_index.xml.
-- **GA4 Install (15 min)** — analytics.google.com → create GA4 property → copy Measurement ID (G-XXXXXXXXXX) → give to agent. Every month without it = lost traffic damage evidence.
 - **GSC → Google Sheets export (damages evidence)** — GSC → Performance → max 16 months → filter "the roof store" → Export → Google Sheets → share with agent. Agent builds impressions/clicks erosion chart as Exhibit K-2.
 
 **GMB / GBP:**
-- **GBP optimization** — business.google.com: (1) Upload 10+ job photos; (2) Complete services list; (3) 750-char description; (4) Seed 5–6 Q&A; (5) Confirm hours; (6) Google Posts; (7) 50+ reviews in 60 days. Agent can draft description + Q&A on request.
-- **roofpaintmiami.com — GMB setup** — No GMB exists. Create at business.google.com: name "Roof Paint Miami," category Roofing Contractor, service-area Miami-Dade, phone (786) 837-9064. Agent drafts description + Q&A once account created.
+- **GBP optimization — theroofstore.net** — business.google.com: (1) Upload 10+ job photos; (2) Complete services list; (3) Paste GBP description (agent drafted — ask for it); (4) Seed 5–6 Q&A (agent drafted — ask for it); (5) Confirm hours; (6) Google Posts; (7) 50+ reviews in 60 days.
+- **Claim Knowledge Panel** — Search "The Roof Store" while logged into the GMB account. If a Knowledge Panel appears, click "Claim this knowledge panel." This is a sanctioned Google channel for correcting entity confusion.
+- **3 locked-out GMB profiles** — Use Google's "Request Access" flow to recover the profiles, including the one registered under the exact legal entity name. Recovery runs independently in the background.
+- **roofpaintmiami.com — GMB setup** — No GMB exists. Create at business.google.com: name "Roof Paint Miami," category Roofing Contractor, service-area Miami-Dade, phone (786) 837-9064. Agent drafted description + Q&A — ask for it when ready.
 - **flatroofsealants.com GMB stuck** — Google won't deliver postcard to 2049 SW Cranberry St, Port St. Lucie. Try video verification or Google support chat.
+
+**Reviews:**
+- **Review count** — Target 50+ reviews. Current ~10. Each verified review tied to a NAP-consistent GMB profile is a strong "established business" signal. Ask agent to set up review automation workflow — need to confirm which post-job contact channel (text, email, or both).
+- **Review count in schema** — `Home.tsx` shows `reviewCount: "10"`. Update once you confirm actual count.
 
 ---
 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
-- **Review count in schema** — `Home.tsx` and `index.html` show `reviewCount: "10"`. Update once owner confirms actual count.
-- **ARLC/insurance messaging consistency** — Messaging is inconsistent across pages. Needs audit + alignment pass.
+- **sameAs array — YouTube channel** — Add the historical YouTube channel URL to the Organization schema sameAs array. Provide the YouTube channel URL.
+- **City page differentiation** — 99 pages still on templated pattern (Fort Lauderdale is the only differentiated one). Decision needed: differentiate all 109 at once, or top 20 by search volume first?
+- **Duplicate URL audit** — `/service-areas/[county]` vs. `/roof-services/[county]` may be cannibalizing each other. Agent can audit and report before any changes.
+- **Hub-and-spoke link audit** — Confirm no spoke-to-spoke cross-links with commercial anchor text exist between network sites. Agent can check code.
+- **Port St. Lucie NAP on partner-network page** — Phone shows 754-273-4744, GMB-verified is 561-328-4770. On hold per user instruction — revisit when ready.
+- **Review automation workflow** — Was in progress. Restart: confirm post-job contact channel (text, email, or both) and agent sets it up.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
 
 **Sister sites (FTP):**
+- **flatroofsealants.com SEO plugin** — mu-plugin drafted at `/tmp/frs-seo.php`. Adds Port St. Lucie / Treasure Coast title, meta description, schema, and removes BBB/1994 footer claim. Preview shown — say "push it" to upload.
 - **roofpaintmiami.com — Replace Broward commercial photos** — 8 photos on commercial.php still show Broward job sites. Replace with real Miami-Dade photos (user to provide). FTP: julius@absolutecharters.com / JULIUS_FTP_PASSWORD.
-- **flatroofsealants.com — unique content/angle** — Last network site with no differentiation. Angle: flat roof sealant specialist for Treasure Coast / Port St. Lucie. Awaiting detailed audit before drafting.
+- **Angle copy for 4 remaining network sites** — Directions defined for Roof Restorations, Storm Shield Coating Systems, Windproof, RoofProtect. Agent writes copy on request, then FTP push after approval.
 
 **Photos still pending (user to send):**
 - **SmartShield gallery** — 13 images live. Still to add: primer sealer, top coat, reflective color comparison, color mixing, custom color samples. Storage prefix: `smartshield/`.
@@ -95,12 +108,14 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - **Off-page authority** — Claim listings on Angi, HomeAdvisor, Houzz, Thumbtack, local Broward directories.
 - **Keyword rank tracking** — Options: (A) Looker Studio free (all 7 GSC properties); (B) Local Falcon ~$29–49/mo for GMB geo-grid (highest priority for local pack); (C) Custom GSC API dashboard (agent can build).
 - **roofprotectproducts.com FTP** — Secret `ROOFPROTECT_FTP_PASSWORD` is incorrect. Update when convenient. FTP: ftp.absolutecharters.com:21, user muhammad@roofprotectproducts.com.
+- **GSC → Google Sheets export (Exhibit K-2)** — Once GSC has 16 months of data, export "the roof store" keyword impressions/clicks → share with agent → builds erosion chart as damages evidence.
 
 ## Gotchas
 
 - theroofstore.net DNS is at **oneworldhosting.com cPanel** — NOT Porkbun. All DNS records (MX, TXT, CNAME) go there.
 - City images are NOT in the repo — served from App Storage CDN only.
 - `ROOFPROTECT_FTP_PASSWORD` secret value is incorrect — actual credentials differ (see roofprotectproducts.com FTP note above).
+- Evidence pages are crawler-blocked (robots.txt + noindex) — do NOT submit to GSC. Access via direct URL only for attorney/private use.
 
 ## Pointers
 

@@ -223,7 +223,7 @@ const faqs = [
   },
   {
     q: "Does TAS-106 certification help with homeowners insurance in Florida?",
-    a: "Yes. TAS-106 certification provides government-documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates compliance with Miami-Dade and Broward County HVHZ requirements. The Roof Store issues ARLC documentation for all professionally installed Roof Shield (RP3) projects.",
+    a: "Yes. TAS-106 certification provides government-documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates compliance with Miami-Dade and Broward County HVHZ requirements. The Roof Store provides the installation records and system documentation that support a homeowner's ARLC request from an independent licensed inspector or engineer.",
   },
   {
     q: "What roof types can receive TAS-106 certified Roof Shield installation?",
@@ -687,7 +687,7 @@ export default function Tas106Certification() {
 
           <h3 className="text-xl font-serif font-bold text-primary mb-2">2. Stronger Foundation for Additional Roof Life Certification</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Under Florida Senate Bill 2-D (2022), a licensed contractor's Additional Roof Life Certification (ARLC) protects homeowners' insurance coverage when insurers question roof age. A roof coated with the TAS-106 certified Roof Shield (RP3) system supports a materially stronger ARLC claim than a non-certified coating — because the contractor can document the roof's certified wind performance, not just its cosmetic condition. The Roof Store can issue ARLC documentation for all professionally installed Roof Shield projects.
+            Under Florida Senate Bill 2-D (2022), an Additional Roof Life Certification (ARLC) protects homeowners' insurance coverage when insurers question roof age. A roof coated with the TAS-106 certified Roof Shield (RP3) system supports a materially stronger ARLC than a non-certified coating — because the installation records include certified wind performance data, not just cosmetic condition. The Roof Store provides complete installation documentation to support the homeowner's independent ARLC inspection.
           </p>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-2">3. Compliance With Miami-Dade and Broward HVHZ Requirements</h3>
@@ -695,8 +695,8 @@ export default function Tas106Certification() {
             Because Roof Shield (RP3) holds a current Miami-Dade County NOA, it is a code-compliant roofing product for the High Velocity Hurricane Zone — the area covering all of Miami-Dade and Broward counties. Insurance inspectors in these counties are familiar with the NOA system. A roof carrying an active NOA-certified system is unambiguously in a different risk category than a roof with a non-certified coating.
           </p>
 
-          <Callout variant="green" title="✅ The Roof Store Handles ARLC Documentation">
-            As both the product manufacturer and the licensed contractor, The Roof Store can issue Additional Roof Life Certifications directly for all Roof Shield (RP3) installations. We provide the documentation your insurance company needs — including reference to the TAS-106 Notice of Acceptance — as part of every professional installation.
+          <Callout variant="green" title="✅ The Roof Store Provides Full ARLC Support Documentation">
+            As both the product manufacturer and the licensed contractor, The Roof Store provides complete installation records for every Roof Shield (RP3) project — including reference to the TAS-106 Notice of Acceptance. This gives your independent inspector the strongest possible foundation for issuing the ARLC affidavit your insurance company needs.
           </Callout>
         </motion.section>
 

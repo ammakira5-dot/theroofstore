@@ -76,6 +76,7 @@ const BUSINESS_CORE = {
   image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   logo: `${BASE}/assets/images/logo.png`,
   foundingDate: "1994",
+  disambiguatingDescription: "The Roof Store (Storm Shield Paint Systems Inc.), Florida's original elastomeric roof coating manufacturer and contractor, founded 1994 in Davie, Florida. Continuously operating under this name at theroofstore.net since 2002.",
   description: "South Florida's original elastomeric roof coating company, serving homeowners and businesses since 1994. FungalShield, SmartShield & RoofShield systems weatherproof tile, flat, and metal roofs at half the cost of replacement.",
   areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
   hasOfferCatalog: {

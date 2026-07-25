@@ -4,5 +4,9 @@ Disallow: /admin
 Disallow: /trademark-monitoring-log
 Disallow: /rpt-88291-b.html
 Disallow: /ref/8f3k-2m9x-771q
+Disallow: /trademark-evidence
+Disallow: /trademark-evidence-print
+Disallow: /google-complaint-steps
+Disallow: /redemption-evidence-google-1
 
 Sitemap: https://www.theroofstore.net/sitemap.xml

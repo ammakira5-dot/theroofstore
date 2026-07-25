@@ -493,7 +493,7 @@ export default function RoofCoatingFlorida() {
           <div className="space-y-3 text-sm text-muted-foreground mb-4">
             <p><strong className="text-foreground">Florida Senate Bill 2-D (2022)</strong> prohibits insurance companies from refusing to issue or renew a policy solely because a roof has less than 25% of its useful life remaining, provided that useful life is certified by a licensed Florida roofing contractor or engineer — not estimated by an insurer.</p>
             <p><strong className="text-foreground">Florida Governor's Bulletin (March 2023)</strong> reaffirmed homeowners' legal right to an Additional Roof Life Certification (ARLC). An ARLC is a signed affidavit from a licensed contractor or engineer stating the coated roof's remaining certified useful life. Insurance companies are legally required to accept a valid ARLC as documentation of roof condition.</p>
-            <p>The Roof Store can issue Additional Roof Life Certifications for roofs that have received a qualifying coating system — certifying an additional 15–25 years of useful life without replacing the roof.</p>
+            <p>After a qualifying coating system is installed, the homeowner requests a Useful Life Exam from an independent licensed inspector or engineer — not the contractor. The Roof Store provides the installation documentation and system records that support that exam. The inspector or licensed engineer issues the final ARLC affidavit certifying an additional 15–25 years of useful life.</p>
           </div>
           <Callout variant="gold" title="⚠️ Warning: The Misinformation to Watch Out For">
             Some insurance agents tell homeowners "if you seal or paint your roof, you'll lose your coverage." This is false — and contradicted by Florida statute and the Governor's official bulletin. If you have been told this, request the legal basis in writing. A licensed roofing contractor's ARLC affidavit carries legal authority that an agent's verbal opinion does not.
@@ -622,7 +622,7 @@ export default function RoofCoatingFlorida() {
                 "🏭 <strong>Manufacturer + Contractor</strong> — We make our own products and apply them. No distributor markup. Full quality control from formulation to application.",
                 "📋 <strong>A+ BBB Rated since 1994</strong> — Over 30 years of verified track record in South Florida's roofing market.",
                 "🏅 <strong>World's Only TAS-106 Certified Liquid Coating</strong> — The Roof Shield (RP3) is the only liquid-applied system in the world with Dade County TAS-106 Uplift Certification.",
-                "📝 <strong>ARLC Eligible</strong> — We can issue Additional Roof Life Certifications to support insurance policy retention.",
+                "📝 <strong>ARLC Eligible</strong> — We provide the installation documentation that supports your independent Useful Life Exam and ARLC affidavit for insurance policy retention.",
                 "🔍 <strong>Manufacturer's Inspection First</strong> — We inspect before specifying. Every project starts with an on-site evaluation — not a sales call.",
               ].map((item, i) => (
                 <li key={i} dangerouslySetInnerHTML={{ __html: item }} />

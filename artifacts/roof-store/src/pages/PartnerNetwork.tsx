@@ -137,7 +137,12 @@ const partners = [
     badge: "Hollywood",
     linkPaused: false,
     gmbOnly: true,
-    reviews: [] as { author: string; text: string }[],
+    reviewsTitle: "Customer Reviews — Roof Shield Coating System · ⭐ 5.0 · 8 Google Reviews",
+    reviews: [
+      { author: "Abdullah Imran", text: "The Roof was old and we have had a couple of leaks in the past, this system was new to us since we dont have this type in up state New York, we tried the roof coating process, it was simple and sealed all our roof tiles in one piece, looks great, they did an excellent job" },
+      { author: "Ann Jordan", text: "Great Products our Roof Coating project was done on time and within our Budget." },
+      { author: "Carl Rader", text: "Roof Shield was the solution to getting our roof life certification and it looks like a new roof again." },
+    ],
   },
   {
     name: "Fort Lauderdale Roof Coating",

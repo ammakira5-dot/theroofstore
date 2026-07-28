@@ -267,9 +267,9 @@ export default function Products() {
       url: `${BASE}/products`,
       description: "RP1 Fungal Shield, RP2 Smart Shield, RP3 Roof Shield — manufactured in Davie FL. The only TAS-106 rated coating in the world.",
       hasPart: [
-        { "@type": "Product", name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock" } },
-        { "@type": "Product", name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock" } },
-        { "@type": "Product", name: "Roof Shield (RP3)", url: `${BASE}/products/roofshield`, offers: { "@type": "Offer", priceCurrency: "USD", price: "325", availability: "https://schema.org/InStock" } },
+        { "@type": "WebPage", name: "Fungal Shield (RP1)", url: `${BASE}/products/fungalshield` },
+        { "@type": "WebPage", name: "Smart Shield (RP2)", url: `${BASE}/products/smartshield` },
+        { "@type": "WebPage", name: "Roof Shield (RP3)", url: `${BASE}/products/roofshield` },
       ],
     },
     {

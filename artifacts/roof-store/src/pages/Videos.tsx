@@ -28,6 +28,7 @@ const videos: VideoEntry[] = [
     location: "5651 Thornbluff Ave., Davie FL",
     quote: "During Hurricane Wilma my neighbors' tiles were hitting my house. The next morning after the storm passed we went outside to see what happened — our roof was still perfect.",
     desc: "Don Godshall faced a choice: replace the roof or seal it with Roof Shield. He chose Roof Shield. When Hurricane Wilma hit, neighbor tiles were flying across his yard. His roof didn't lose a single tile. Watch his full story.",
+    uploadDate: "2011-02-28T11:13:21-08:00",
   },
   {
     id: "j33btx-TGXo",
@@ -39,6 +40,7 @@ const videos: VideoEntry[] = [
     location: null,
     quote: null,
     desc: "Watch the independent Dade County TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Certified, documented, and still standing 16 years later.",
+    uploadDate: "2020-12-31T11:22:54-08:00",
   },
 ];
 
@@ -66,7 +68,7 @@ export default function Videos() {
           description: v.desc,
           thumbnailUrl: `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
           embedUrl: `https://www.youtube.com/embed/${v.id}`,
-          uploadDate: v.uploadDate ?? "2024-01-01",
+          ...(v.uploadDate ? { uploadDate: v.uploadDate } : {}),
           publisher: { "@type": "Organization", name: "The Roof Store", url: BASE },
         },
       })),

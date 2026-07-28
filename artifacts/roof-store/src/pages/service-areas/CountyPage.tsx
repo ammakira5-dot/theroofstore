@@ -159,7 +159,7 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
                   The Roof Store has been protecting homes and commercial properties throughout {county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at 60–70% less than the cost of replacement. All work is performed by our licensed and insured team, backed by our A+ BBB rating and comprehensive performance warranties.
+                  We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to 60–70% less than the cost of replacement. All work is performed by our licensed and insured team, backed by our A+ BBB rating and comprehensive performance warranties.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right roof coating system for your specific needs.

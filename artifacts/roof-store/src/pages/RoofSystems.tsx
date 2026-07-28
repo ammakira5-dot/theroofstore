@@ -98,7 +98,7 @@ const systems: RoofSystem[] = [
     color: "bg-primary/10 text-primary",
     worldsOnly: true,
     description:
-      "Roof Shield — The Original Liquid Applied Rubber Roof Shield System — is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Typically formulated with a proprietary premium silicone base ingredient (interchangeable with elastomeric or polyurethane depending on the project), it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at 60–70% less cost. One 100% seamless membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
+      "Roof Shield — The Original Liquid Applied Rubber Roof Shield System — is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification — the exact same test required for new tile roof installations in Florida. Typically formulated with a proprietary premium silicone base ingredient (interchangeable with elastomeric or polyurethane depending on the project), it mechanically bonds every tile to the substrate, delivering 5× the wind uplift resistance of a brand-new tile roof at up to 60–70% less cost. One 100% seamless membrane. No joints. No seams. No weak points. Lifetime Warranty — transferable and renewable.",
     features: [
       "World's ONLY TAS-106 Dade County Uplift Pull Test certified roof coating",
       "Tested on real Spanish & concrete tile — adds true tile attachment to substrate",

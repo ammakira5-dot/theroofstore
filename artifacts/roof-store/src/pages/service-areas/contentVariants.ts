@@ -14,7 +14,7 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   (city, county) => [
     `The Roof Store has been serving ${city}, ${county} homeowners and commercial property owners for nearly 30 years. Our certified technicians provide professional roof maintenance, rubber roof coating, tile restoration, and weatherproofing services throughout the ${city} area.`,
     `Living in ${city}, FL means dealing with intense UV exposure, heavy rainfall, high humidity, and the constant threat of hurricanes. Our roof coating systems are specifically engineered for South Florida's demanding climate — protecting your home without the cost of a full roof replacement.`,
-    `Most homeowners in ${city} save 60–70% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.`,
+    `Most homeowners in ${city} save up to 60–70% compared to full roof replacement costs while getting better long-term protection. Our liquid-applied rubber roof shield system creates a seamless, weatherproof membrane over your existing roof — with no landfill waste and minimal disruption to your property.`,
   ],
   (city, county) => [
     `For nearly three decades, ${city} and the rest of ${county} have relied on The Roof Store for professional roof maintenance, roof coating, tile restoration, and waterproofing — work carried out by the same certified crew of technicians on every job.`,
@@ -24,7 +24,7 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   (city, county) => [
     `Since 1994, The Roof Store has protected roofs across ${county}, including ${city} — the same certified technicians handling every roof maintenance, coating, restoration, and waterproofing job from start to finish.`,
     `South Florida throws everything at a roof: harsh sun, torrential rain, thick humidity, and hurricane-force wind. In ${city}, that means a roof coating system needs to be engineered for the climate, not just applied to it — which is exactly how ours are built.`,
-    `Rather than a full roof replacement, most ${city} property owners choose our liquid-applied rubber system: a seamless membrane bonded directly to the existing roof, saving 60–70% on cost with none of the waste or disruption of a tear-off.`,
+    `Rather than a full roof replacement, most ${city} property owners choose our liquid-applied rubber system: a seamless membrane bonded directly to the existing roof, saving up to 60–70% on cost with none of the waste or disruption of a tear-off.`,
   ],
   (city, county) => [
     `${city} sits within ${county}, one of the markets The Roof Store has served for almost 30 years with professional roof maintenance, rubber roof coating, tile restoration, and weatherproofing — always performed by our own certified technicians.`,
@@ -34,7 +34,7 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   (city, county) => [
     `The Roof Store has served ${city} and the rest of ${county} for nearly 30 years — the same certified crew on every roof maintenance, coating, restoration, and waterproofing job, no subcontracting, no shortcuts.`,
     `Roofs in ${city} contend with some of the harshest conditions in North America: 3,000+ hours of annual UV, tropical downpours, thick humidity, and hurricane-force wind season after season. Our coating systems are built around those exact conditions, not transplanted from a general-climate formula.`,
-    `Most ${city} property owners who choose our liquid-applied rubber coating system over a full replacement save 60–70% on cost — and end up with a seamless, warranted, hurricane-rated roof that often outperforms what a new installation would have delivered.`,
+    `Most ${city} property owners who choose our liquid-applied rubber coating system over a full replacement save up to 60–70% on cost — and end up with a seamless, warranted, hurricane-rated roof that often outperforms what a new installation would have delivered.`,
   ],
   (city, county) => [
     `Storm Shield Paint Systems Inc. — The Roof Store — has protected roofs across ${county}, including ${city}, since 1994. Every coating, restoration, and waterproofing project is handled by our own certified technicians from start to finish.`,
@@ -93,7 +93,7 @@ export const whyChooseVariants: ((city: string) => { title: string; desc: string
     { title: "Nearly 30 Years in South Florida", desc: "Established in 1994, we understand Florida's climate and building codes better than anyone." },
     { title: "Licensed & Insured", desc: "The Roof Store is a fully licensed and insured Florida roofing contractor — every job is covered." },
     { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
-    { title: "Save 60–70%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
+    { title: "Save up to 60–70%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
     { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },
     { title: "Free Roof Inspection", desc: `No-cost, no-obligation assessment by a certified technician — we come to your ${city} property.` },
   ],
@@ -101,7 +101,7 @@ export const whyChooseVariants: ((city: string) => { title: string; desc: string
     { title: "Serving Florida Since 1994", desc: "Three decades of hands-on experience with Florida's climate, codes, and roofing quirks." },
     { title: "Fully Licensed & Insured", desc: "Every job is backed by our Florida contractor license and full insurance coverage." },
     { title: "A+ Rated with the BBB", desc: "Our Better Business Bureau rating is the result of consistent, honest work since the 90s." },
-    { title: "Cut Costs by 60–70%", desc: "Restoration and coating systems typically run a fraction of the price of a full roof tear-off." },
+    { title: "Cut Costs by Up to 60–70%", desc: "Restoration and coating systems typically run a fraction of the price of a full roof tear-off." },
     { title: "Built for Hurricane Season", desc: "Every coating system we install is tested and guaranteed for Florida's hurricane conditions." },
     { title: "No-Cost Roof Inspection", desc: `A certified technician evaluates your ${city} property in person, free and with no obligation.` },
   ],
@@ -109,7 +109,7 @@ export const whyChooseVariants: ((city: string) => { title: string; desc: string
     { title: "Nearly Three Decades of Experience", desc: "Founded in 1994 — we know Florida's climate, codes, and roofs inside and out." },
     { title: "Fully Licensed Florida Contractor", desc: "Every project is performed under full state licensing and insurance coverage." },
     { title: "A+ BBB Rating", desc: "Earned over nearly 30 years of consistent, high-quality workmanship." },
-    { title: "Save 60–70% of the Cost", desc: "Our systems are a fraction of the price of a complete roof replacement." },
+    { title: "Save Up to 60–70% of the Cost", desc: "Our systems are a fraction of the price of a complete roof replacement." },
     { title: "Guaranteed Hurricane Performance", desc: "All coating systems are tested and warrantied against Florida's hurricane conditions." },
     { title: "Complimentary Roof Inspection", desc: `A certified technician visits your ${city} property at no cost, with zero obligation.` },
   ],
@@ -117,7 +117,7 @@ export const whyChooseVariants: ((city: string) => { title: string; desc: string
     { title: "In Business Since 1994", desc: "Almost 30 years of direct experience with Florida roofing conditions and code requirements." },
     { title: "State-Licensed & Fully Insured", desc: "Every job we perform is fully licensed and insured under Florida contractor requirements." },
     { title: "A+ Better Business Bureau Rating", desc: "Reflecting close to three decades of reliable, quality work for Florida homeowners." },
-    { title: "60–70% Savings vs. Replacement", desc: "Our systems deliver comparable protection at a fraction of full roof replacement cost." },
+    { title: "Up to 60–70% Savings vs. Replacement", desc: "Our systems deliver comparable protection at a fraction of full roof replacement cost." },
     { title: "Hurricane-Tested Systems", desc: "Every coating we install is tested and guaranteed to hold up under Florida hurricane conditions." },
     { title: "Free, No-Obligation Inspection", desc: `Our certified technician comes directly to your ${city} property at no charge.` },
   ],

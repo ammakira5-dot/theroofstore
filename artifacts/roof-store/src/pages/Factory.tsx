@@ -316,9 +316,9 @@ export default function Factory() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-sm font-bold uppercase tracking-wider text-accent mb-4">The Proof</div>
-              <h2 className="text-4xl font-serif font-bold mb-4">5× Stronger Than a New Roof at 60–70% Less Cost</h2>
+              <h2 className="text-4xl font-serif font-bold mb-4">5× Stronger Than a New Roof at Up to 60–70% Less Cost</h2>
               <p className="text-white/75 text-lg leading-relaxed mb-4">
-                The original Roof Shield System has been independently tested and documented to be five times stronger in wind uplift resistance than a standard new tile roof installation — at 60–70% less cost and a fraction of the installation time.
+                The original Roof Shield System has been independently tested and documented to be five times stronger in wind uplift resistance than a standard new tile roof installation — at up to 60–70% less cost and a fraction of the installation time.
               </p>
               <p className="text-white/75 leading-relaxed">
                 Our documented projects include roofs that survived real Category-force hurricane winds without a single tile displaced. Not simulated. Not theoretical. Real roofs, real storms.

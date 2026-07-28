@@ -298,7 +298,7 @@ export default function About() {
               },
               {
                 icon: CheckCircle2,
-                title: "60–70% Less Than Roof Replacement",
+                title: "Up to 60–70% Less Than Roof Replacement",
                 desc: "A full tile roof replacement typically runs $10–$25 per square foot. The Roof Store's systems start at $0.50/sq ft (RP1) and $2.70/sq ft (RP3 full monolithic system) — installed, including labor and materials.",
               },
             ].map((item, i) => (

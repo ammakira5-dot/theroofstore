@@ -116,7 +116,7 @@ export const counties: CountyEntry[] = [
         slug: "lauderhill",
         image: "/api/storage/public-objects/cities/1560518883-ce09059eeffa.jpg",
         blurb:
-          "Lauderhill is one of Broward's most affordable communities, and homeowners here are keenly aware of the value of protecting their investment without overspending. Our elastomeric roof coating systems deliver the same long-term protection as a full replacement at 60–70% less cost — a significant benefit for Lauderhill's budget-conscious property owners.",
+          "Lauderhill is one of Broward's most affordable communities, and homeowners here are keenly aware of the value of protecting their investment without overspending. Our elastomeric roof coating systems deliver the same long-term protection as a full replacement at up to 60–70% less cost — a significant benefit for Lauderhill's budget-conscious property owners.",
       },
       {
         name: "Lauderdale-by-the-Sea",

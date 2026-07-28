@@ -254,7 +254,7 @@ export default function RoofServices() {
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-6">Don't Re-Roof. Weatherproof.</h2>
           <p className="text-xl text-white/80 mb-10">
-            Save 60–70% compared to full roof replacement. Call us today for a free evaluation.
+            Save up to 60–70% compared to full roof replacement. Call us today for a free evaluation.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">

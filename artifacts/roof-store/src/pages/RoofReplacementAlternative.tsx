@@ -35,7 +35,7 @@ const schema = [
         name: "Can I coat my roof instead of replacing it?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — in most cases. If your roof deck is structurally sound and there is no widespread rot or failure, a professional liquid rubber coating system is a proven alternative to full replacement. It seals your existing roof, adds waterproofing, and can extend roof life by 10–15 years or more at 60–70% less than the cost of a new roof.",
+          text: "Yes — in most cases. If your roof deck is structurally sound and there is no widespread rot or failure, a professional liquid rubber coating system is a proven alternative to full replacement. It seals your existing roof, adds waterproofing, and can extend roof life by 10–15 years or more at up to 60–70% less than the cost of a new roof.",
         },
       },
       {
@@ -121,7 +121,7 @@ const whenCoatingWorks = [
   {
     icon: DollarSign,
     title: "Roof replacement quote feels too high",
-    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at 60 to 70% less cost than a full roof replacement. And depending on the system you choose, it has proven to be 5× stronger once installed on an older roof than a new roof alone.",
+    desc: "If you've received a roof replacement quote and it's straining your budget — and your roof is still in good shape, it's just an older roof — coating delivers most of the same protection at up to 60 to 70% less cost than a full roof replacement. And depending on the system you choose, it has proven to be 5× stronger once installed on an older roof than a new roof alone.",
   },
 ];
 
@@ -135,11 +135,11 @@ const whenReplaceNeeded = [
 const faqs = [
   {
     q: "Can I coat my roof instead of replacing it?",
-    a: "Yes — in most cases. If your roof deck is structurally sound, a professional liquid rubber coating system is a proven alternative. It seals, waterproofs, and extends your existing roof's life by 10–15+ years at 60–70% less than the cost of a new roof.",
+    a: "Yes — in most cases. If your roof deck is structurally sound, a professional liquid rubber coating system is a proven alternative. It seals, waterproofs, and extends your existing roof's life by 10–15+ years at up to 60–70% less than the cost of a new roof.",
   },
   {
     q: "How much does roof coating cost per square foot in Florida?",
-    a: "Professional roof coating in Florida typically runs $3–$7 per square foot, compared to $10–$20 per square foot for full replacement. Most homeowners save 60 to 70% by coating instead of replacing.",
+    a: "Professional roof coating in Florida typically runs $3–$7 per square foot, compared to $10–$20 per square foot for full replacement. Most homeowners save up to 60 to 70% by coating instead of replacing.",
   },
   {
     q: "How long does a roof coating last in Florida?",
@@ -162,7 +162,7 @@ export default function RoofReplacementAlternative() {
     <div className="w-full">
       <SEO
         title="Roof Replacement Solution Florida | The Roof Store"
-        description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at 60 to 70% less cost than full replacement. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
+        description="Considering a full roof replacement in Florida? There's a proven alternative: professional liquid rubber roof coating at up to 60 to 70% less cost than full replacement. Tile roofs, flat roofs, and more. TAS-106 hurricane rated. A+ BBB since 1994. Call 954-210-9614."
         canonical="/roof-replacement-alternative-florida"
         schema={[...schema, itemListSchema]}
       />
@@ -180,7 +180,7 @@ export default function RoofReplacementAlternative() {
               <span className="text-accent">Save Your Tiles, Flat Roof & More</span>
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl mb-4">
-              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you restore it instead with a roof coating system that restores, protects and preserves it?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at 60–70% less cost.
+              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you restore it instead with a roof coating system that restores, protects and preserves it?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at up to 60–70% less cost.
             </p>
             <p className="text-white/70 text-lg mb-10 max-w-2xl">
               The Roof Store has been Florida's roof coating alternative specialist since 1994. A+ BBB rated. TAS-106 Dade County hurricane rated. Serving Broward, Miami-Dade, and Palm Beach.
@@ -210,7 +210,7 @@ export default function RoofReplacementAlternative() {
         <div className="container px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-3xl mx-auto">
             {[
-              { value: "60–70%", label: "Less than full replacement — on average" },
+              { value: "Up to 60–70%", label: "Less than full replacement" },
               { value: "10–15+", label: "Years of added roof life" },
               { value: "30+", label: "Years serving Florida" },
               { value: "TAS-106", label: "Dade County hurricane rated" },
@@ -496,7 +496,7 @@ export default function RoofReplacementAlternative() {
                 Our SmartShield (RP2) and RoofShield (RP3) systems coat directly over existing tile, sealing every surface and filling every void. Available in 3,000+ colors. TAS-106 hurricane wind-uplift tested.
               </p>
               <ul className="space-y-2">
-                {["Barrel tile · cement tile · S-tile", "Fungal and algae elimination", "3,000+ color options", "Hurricane wind-uplift rated", "60–70% less than tile replacement"].map((item, i) => (
+                {["Barrel tile · cement tile · S-tile", "Fungal and algae elimination", "3,000+ color options", "Hurricane wind-uplift rated", "up to 60–70% less than tile replacement"].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm">
                     <CheckCircle2 className="h-4 w-4 text-accent shrink-0" />
                     <span className="text-foreground">{item}</span>

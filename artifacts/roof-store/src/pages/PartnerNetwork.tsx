@@ -140,6 +140,7 @@ const partners = [
     reviewsTitle: "Customer Reviews — Roof Shield Coating System · ⭐ 5.0 · 8 Google Reviews",
     reviews: [
       { author: "Abdullah Imran", text: "The Roof was old and we have had a couple of leaks in the past, this system was new to us since we dont have this type in up state New York, we tried the roof coating process, it was simple and sealed all our roof tiles in one piece, looks great, they did an excellent job" },
+      { author: "Zachary Doherty", text: "My insurance man suggested I get the roof cleaned and sealed, we had The Roof Shield System done and then got the roof exam performed and received an additional 5 year roof life certification, we were very pleased with the final outcome." },
       { author: "Amber Phillips", text: "Our insurance company wanted to drop us but we found this company and they literally saved us thousands of dollars on not being forced to do a complete roof replacement, our roof was in good shape and it is only 15 years old, long story short we had it certified after the work was done and that ended the scam the insurance company was trying to pull on us, great service." },
       { author: "Kim Jackson", text: "My roof is only 15 years old had a couple miner leaks, I really didn't think I had to replace it yet so we got the Roof coating applied and no more leaks, they didn't charge extra for the color added to the final layer and it looks wonderful." },
       { author: "Ann Jordan", text: "Great Products our Roof Coating project was done on time and within our Budget." },

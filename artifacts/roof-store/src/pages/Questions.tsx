@@ -98,7 +98,7 @@ const sections = [
       {
         type: "highlight",
         title: "\"Roof coating is just a bandaid.\"",
-        text: "Cheap roof paint? Yes — that's a bandaid. What we apply is a 100% resin liquid rubber membrane, engineered to bond permanently to your roof structure, rated for ponding water, and independently tested to withstand Dade County's TAS-106 hurricane wind-uplift standard. Our clients have roofs we coated over 20 years ago that have survived multiple hurricane seasons without a single leak. That's not a bandaid — that's a permanent weatherproofing system at half the cost of tearing off and rebuilding.",
+        text: "Cheap roof paint? Yes — that's a bandaid. What we apply is a 100% resin liquid rubber membrane, engineered to bond permanently to your roof structure, rated for ponding water, and independently tested to withstand Dade County's TAS-106 hurricane wind-uplift standard. Our clients have roofs we coated over 20 years ago that have survived multiple hurricane seasons without a single leak. That's not a bandaid — that's a permanent weatherproofing system at 60–70% less than the cost of tearing off and rebuilding.",
       },
       {
         type: "highlight",

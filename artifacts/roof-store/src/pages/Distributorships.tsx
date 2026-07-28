@@ -24,7 +24,7 @@ const systemBenefits = [
   "FPL-documented up to 23% annual electric bill savings",
   "Pays for itself over time",
   "Easy to install — complete on-site training provided",
-  "Half the cost of roof replacement",
+  "60–70% less than roof replacement",
   "Stronger than a new roof",
   "Virtually sells itself",
 ];

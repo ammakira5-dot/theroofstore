@@ -87,7 +87,7 @@ const BUSINESS_CORE = {
   logo: `${BASE}/assets/images/logo.png`,
   foundingDate: "1994",
   disambiguatingDescription: "The Roof Store (Storm Shield Paint Systems Inc.), Florida's original elastomeric roof coating manufacturer and contractor, founded 1994 in Davie, Florida. Continuously operating under this name at theroofstore.net since 2002.",
-  description: "South Florida's original elastomeric roof coating company, serving homeowners and businesses since 1994. FungalShield, SmartShield & RoofShield systems weatherproof tile, flat, and metal roofs at half the cost of replacement.",
+  description: "South Florida's original elastomeric roof coating company, serving homeowners and businesses since 1994. FungalShield, SmartShield & RoofShield systems weatherproof tile, flat, and metal roofs at 60–70% less than the cost of replacement.",
   areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
   hasPOS: {
     "@type": "Place",
@@ -177,7 +177,7 @@ export default function Home() {
     <div className="w-full">
       <SEO
         title="The Roof Store | Elastomeric Roof Coating Florida"
-        description="Florida's original elastomeric roof coating system. Save up to 50% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
+        description="Florida's original elastomeric roof coating system. Save 60–70% vs. replacement. A+ BBB rated since 1994. Serving Broward, Miami-Dade & Palm Beach. Free consultation."
         canonical="/"
         ogImage="https://www.theroofstore.net/images/hero-bg.png"
         schema={schema}
@@ -326,7 +326,7 @@ export default function Home() {
                 Why Re-Roof?
               </div>
               <h2 className="text-3xl font-serif font-bold mb-3 leading-tight">
-                Weatherproof your existing roof for half the cost of replacement.
+                Weatherproof your existing roof for 60–70% less than the cost of replacement.
               </h2>
               <p className="text-white/75 leading-relaxed">
                 See a full side-by-side comparison — cost, lifespan, wind rating, warranty, and insurance — between a full re-roof and our liquid rubber coating system.

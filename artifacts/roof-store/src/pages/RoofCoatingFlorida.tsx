@@ -438,7 +438,7 @@ export default function RoofCoatingFlorida() {
             {[
               {
                 title: "Tile Roof Restoration",
-                body: "Cement tile and clay barrel tile roofs are the dominant residential roof type across Broward, Miami-Dade, and Palm Beach counties. After 15–25 years of Florida sun, humidity, and hurricane seasons, these roofs typically show faded glaze, biological streaking, and hairline cracks. The Smart Shield (RP2) system restores the roof in over 3,000 color options while providing a full waterproof membrane — at roughly half the cost of tile replacement.",
+                body: "Cement tile and clay barrel tile roofs are the dominant residential roof type across Broward, Miami-Dade, and Palm Beach counties. After 15–25 years of Florida sun, humidity, and hurricane seasons, these roofs typically show faded glaze, biological streaking, and hairline cracks. The Smart Shield (RP2) system restores the roof in over 3,000 color options while providing a full waterproof membrane — at 60–70% less than the cost of tile replacement.",
               },
               {
                 title: "Full Monolithic Hurricane Protection (Roof Shield RP3)",

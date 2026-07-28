@@ -35,7 +35,7 @@ const schema = [
         name: "Can I coat my roof instead of replacing it?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — in most cases. If your roof deck is structurally sound and there is no widespread rot or failure, a professional liquid rubber coating system is a proven alternative to full replacement. It seals your existing roof, adds waterproofing, and can extend roof life by 10–15 years or more at roughly half the cost of a new roof.",
+          text: "Yes — in most cases. If your roof deck is structurally sound and there is no widespread rot or failure, a professional liquid rubber coating system is a proven alternative to full replacement. It seals your existing roof, adds waterproofing, and can extend roof life by 10–15 years or more at 60–70% less than the cost of a new roof.",
         },
       },
       {
@@ -135,7 +135,7 @@ const whenReplaceNeeded = [
 const faqs = [
   {
     q: "Can I coat my roof instead of replacing it?",
-    a: "Yes — in most cases. If your roof deck is structurally sound, a professional liquid rubber coating system is a proven alternative. It seals, waterproofs, and extends your existing roof's life by 10–15+ years at roughly half the cost of a new roof.",
+    a: "Yes — in most cases. If your roof deck is structurally sound, a professional liquid rubber coating system is a proven alternative. It seals, waterproofs, and extends your existing roof's life by 10–15+ years at 60–70% less than the cost of a new roof.",
   },
   {
     q: "How much does roof coating cost per square foot in Florida?",
@@ -180,7 +180,7 @@ export default function RoofReplacementAlternative() {
               <span className="text-accent">Save Your Tiles, Flat Roof & More</span>
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl mb-4">
-              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you restore it instead with a roof coating system that restores, protects and preserves it?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at roughly half the cost.
+              Before you spend $15,000–$30,000 on a new roof, there's a question worth asking: <strong className="text-white">can you restore it instead with a roof coating system that restores, protects and preserves it?</strong> For most Florida tile roofs and flat roofs, the answer is yes — at 60–70% less cost.
             </p>
             <p className="text-white/70 text-lg mb-10 max-w-2xl">
               The Roof Store has been Florida's roof coating alternative specialist since 1994. A+ BBB rated. TAS-106 Dade County hurricane rated. Serving Broward, Miami-Dade, and Palm Beach.
@@ -496,7 +496,7 @@ export default function RoofReplacementAlternative() {
                 Our SmartShield (RP2) and RoofShield (RP3) systems coat directly over existing tile, sealing every surface and filling every void. Available in 3,000+ colors. TAS-106 hurricane wind-uplift tested.
               </p>
               <ul className="space-y-2">
-                {["Barrel tile · cement tile · S-tile", "Fungal and algae elimination", "3,000+ color options", "Hurricane wind-uplift rated", "Half the cost of tile replacement"].map((item, i) => (
+                {["Barrel tile · cement tile · S-tile", "Fungal and algae elimination", "3,000+ color options", "Hurricane wind-uplift rated", "60–70% less than tile replacement"].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm">
                     <CheckCircle2 className="h-4 w-4 text-accent shrink-0" />
                     <span className="text-foreground">{item}</span>

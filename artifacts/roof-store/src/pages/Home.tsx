@@ -331,6 +331,26 @@ export default function Home() {
               <p className="text-white/75 leading-relaxed">
                 See a full side-by-side comparison — cost, lifespan, wind rating, warranty, and insurance — between a full re-roof and our liquid rubber coating system.
               </p>
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <figure>
+                  <img
+                    src="/images/roof-replacement-alternative-truck.png"
+                    alt="The Roof Store truck and trailer wrap — Don't Re-Roof It, Weatherproof It — South Florida roof coating"
+                    className="rounded-xl w-full h-36 object-cover border border-white/20"
+                    loading="lazy"
+                  />
+                  <figcaption className="text-white/60 text-xs mt-2">Our truck &amp; trailer — you'll see us around South Florida</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="/images/factory/mixing.png"
+                    alt="Owner mixing custom color roof coating in-house at The Roof Store factory in Davie Florida"
+                    className="rounded-xl w-full h-36 object-cover border border-white/20"
+                    loading="lazy"
+                  />
+                  <figcaption className="text-white/60 text-xs mt-2">We make every gallon ourselves — custom colors mixed in-house</figcaption>
+                </figure>
+              </div>
             </div>
             <Link
               href="/roof-replacement-alternative-florida"

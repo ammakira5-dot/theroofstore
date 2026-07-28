@@ -267,19 +267,19 @@ export default function Home() {
               </figure>
               <figure>
                 <img
-                  src="/images/factory/mixing.png"
-                  alt="Owner mixing custom color roof coating in-house at The Roof Store factory in Davie Florida"
+                  src="/images/factory/liquid-rubber-blending-tank-davie.png"
+                  alt="Owner blending the liquid rubber coating base at The Roof Store factory in Davie Florida"
                   className="rounded-xl w-full h-32 object-cover border border-white/20"
                 />
-                <figcaption className="text-white/70 text-xs mt-2">We make every gallon ourselves — custom colors mixed in-house</figcaption>
+                <figcaption className="text-white/70 text-xs mt-2">We make every gallon — blending the coating at our Davie, FL factory</figcaption>
               </figure>
               <figure>
                 <img
-                  src="/images/factory/liquid-rubber-blending-tank-davie.png"
-                  alt="Owner operating the liquid rubber blending tank at The Roof Store factory in Davie Florida"
+                  src="/images/factory/mixing.png"
+                  alt="Owner tinting custom color roof coating in 5-gallon pails at The Roof Store factory in Davie Florida"
                   className="rounded-xl w-full h-32 object-cover border border-white/20"
                 />
-                <figcaption className="text-white/70 text-xs mt-2">Blending liquid rubber at our Davie, FL factory</figcaption>
+                <figcaption className="text-white/70 text-xs mt-2">Then tinted to your custom color in 5-gallon pails</figcaption>
               </figure>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/70">

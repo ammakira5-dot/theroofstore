@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>theroofstore.net — SEO & GEO Audit (Follow-Up)</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:960px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.55}
+h1{color:#1e3a8a;border-bottom:3px solid #1e3a8a;padding-bottom:8px}
+h2{color:#1e3a8a;margin-top:36px;border-bottom:1px solid #ccc;padding-bottom:6px}
+h3{color:#374151;margin-top:22px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1e3a8a;color:#fff}
+tr:nth-child(even){background:#f3f4f6}
+.status-good{color:#0a7a2f;font-weight:bold}
+.status-warn{color:#b45309;font-weight:bold}
+.status-risk{color:#b91c1c;font-weight:bold}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:bold;color:#fff}
+.badge-good{background:#0a7a2f}
+.badge-warn{background:#b45309}
+.badge-risk{background:#b91c1c}
+.note{background:#eef2ff;border-left:4px solid #1e3a8a;padding:10px 14px;margin:14px 0;font-size:14px}
+.scope{background:#fff7ed;border-left:4px solid #b45309;padding:10px 14px;margin:14px 0;font-size:14px}
+</style>
+</head>
+<body>
+
+<h1>theroofstore.net — SEO & GEO Follow-Up Audit</h1>
+<p><strong>Date:</strong> July 29, 2026 &nbsp;|&nbsp; <strong>Domain:</strong> theroofstore.net &nbsp;|&nbsp; <strong>Type:</strong> Follow-up audit against prior work (pillar page publish, partner-network page, confidential-page protection)</p>
+
+<div class="scope">
+<strong>Scope of this audit:</strong> Live crawl of the homepage, the new <code>/roof-coating-florida</code> pillar page, the <code>/partner-network</code> page, <code>robots.txt</code>, and <code>sitemap.xml</code> — the assets tied directly to recent work. Traffic, ranking, backlink, and Core Web Vitals data require analytics/Search Console access not available in this session, so those sections report structural readiness rather than live performance numbers.
+</div>
+
+<h2>1. Executive Summary</h2>
+<table>
+<tr><th>Area</th><th>Status</th><th>Finding</th></tr>
+<tr><td>New pillar page (/roof-coating-florida)</td><td><span class="badge badge-good">Live &amp; Strong</span></td><td>Published as planned. 4,582 words, full Article/BreadcrumbList/FAQPage/RoofingContractor schema, TOC, comparison tables, direct-answer blocks — well-built for both classic SEO and AI answer engines.</td></tr>
+<tr><td>Confidential page protection</td><td><span class="badge badge-good">Robots.txt layer confirmed</span></td><td>All trademark-evidence and monitoring-log paths are correctly disallowed in robots.txt. Meta noindex and password-gate layers can't be verified from outside the login wall — recommend a manual spot-check.</td></tr>
+<tr><td>Competitor domain red line</td><td><span class="badge badge-good">Clean</span></td><td>No mention of theroof.store found anywhere in the crawled pages or schema.</td></tr>
+<tr><td>Partner-network entity data</td><td><span class="badge badge-warn">Good, room to strengthen</span></td><td>All 8 partners are listed as schema.org Organization members with name/URL/phone — solid for GEO, but missing address/areaServed fields that would sharpen local entity signals.</td></tr>
+<tr><td>Sitemap freshness signals</td><td><span class="badge badge-warn">Needs attention</span></td><td>All 150+ sitemap URLs share the identical lastmod date (2026-07-28), which reads as batch-generated rather than reflecting real per-page edits.</td></tr>
+</table>
+
+<h2>2. Market & Buyer Context</h2>
+<p>Not independently re-assessed in this pass — no new competitor or buyer-segment data was pulled. The pillar page's insurance-law section (Florida SB 2-D / ARLC) remains a strong differentiator versus generic roof-coating competitors, since it directly answers a top-of-funnel buyer concern ("will this void my insurance?").</p>
+
+<h2>3. eCommerce / Site Asset Diagnosis</h2>
+
+<h3>3.1 Technical Health</h3>
+<table>
+<tr><th>Item</th><th>Status</th><th>Detail</th></tr>
+<tr><td>robots.txt</td><td class="status-good">Good</td><td>Allows crawling of all standard content; disallows <code>/admin</code>, <code>/trademark-monitoring-log</code>, <code>/trademark-evidence</code>, <code>/trademark-evidence-print</code>, <code>/google-complaint-steps</code>, <code>/redemption-evidence-google-1</code>, plus two obfuscated one-off paths. Sitemap correctly declared.</td></tr>
+<tr><td>Sitemap coverage</td><td class="status-good">Good</td><td>150+ URLs indexed: core pages, 3 product pages, blog, and full city-level pages for Broward, Miami-Dade, Palm Beach, and Monroe counties. <code>/roof-coating-florida</code> is present at priority 0.9.</td></tr>
+<tr><td>Sitemap lastmod accuracy</td><td class="status-warn">Fix recommended</td><td>Every URL — homepage, city pages, blog posts — shares the exact same lastmod timestamp. Search engines can discount this as a non-signal, reducing its usefulness for prioritizing re-crawl of genuinely updated pages.</td></tr>
+<tr><td>Canonical tags</td><td class="status-good">Good</td><td>Homepage, pillar page, and partner-network page each self-canonicalize correctly.</td></tr>
+<tr><td>Robots meta directive</td><td class="status-good">Good</td><td><code>index, follow</code> confirmed on all three checked pages.</td></tr>
+<tr><td>Core Web Vitals / script bloat</td><td class="status-warn">Not verifiable this pass</td><td>Requires rendered performance tooling beyond this session's access — recommend a follow-up Core Web Vitals check via Search Console or PageSpeed Insights.</td></tr>
+</table>
+
+<h3>3.2 On-Page & Content Quality</h3>
+<table>
+<tr><th>Page</th><th>Title Tag</th><th>Meta Description</th><th>Word Count</th><th>Notes</th></tr>
+<tr><td>Homepage</td><td>"The Roof Store | Elastomeric Roof Coating Florida"</td><td>155 characters, benefit-led, includes brand proof points</td><td>2,049</td><td>Clean H1→H2→H3 hierarchy; FAQ section present.</td></tr>
+<tr><td>/roof-coating-florida</td><td>"Roof Coating in Florida: Complete Homeowner & Business Guide | The Roof Store"</td><td>Keyword-rich, mentions counties served</td><td>4,582</td><td>11-section TOC, 3 comparison tables, 7 lists, "Direct Answer" callouts on every major H2 — strong for both classic SEO and AI Overviews.</td></tr>
+<tr><td>/partner-network</td><td>"Authorized Distributor & Licensed Installers Network — The Roof Store Waterproofing Products"</td><td>Names several partners directly — good for entity association</td><td>2,053</td><td>Each partner name is set as an H2. Consider nesting partner names as H3 under a single H2 ("Authorized Partners") so the page's heading hierarchy stays anchored to one primary topic.</td></tr>
+</table>
+
+<h3>3.3 Structured Data (Schema)</h3>
+<table>
+<tr><th>Page</th><th>Schema Types Found</th><th>Assessment</th></tr>
+<tr><td>Homepage</td><td>WebSite, RoofingContractor, FAQPage</td><td>RoofingContractor block includes full NAP, geo-coordinates, foundingDate, and an OfferCatalog of the three coating systems — strong LocalBusiness-style entity signal.</td></tr>
+<tr><td>/roof-coating-florida</td><td>Article, BreadcrumbList, FAQPage, RoofingContractor</td><td>Well-formed for a pillar guide. <code>datePublished</code> and <code>dateModified</code> are currently identical (2026-07-18) — update <code>dateModified</code> independently whenever the page content is actually revised, to keep the freshness signal meaningful.</td></tr>
+<tr><td>/partner-network</td><td>WebPage (with 8 member Organizations)</td><td>Each partner is listed with name, URL, and phone. Adding <code>address</code> and <code>areaServed</code> per partner (where public) would strengthen the entity graph and align the schema with the GMB Services work already drafted for these same partners.</td></tr>
+</table>
+
+<h3>3.4 GEO / AI Search Visibility</h3>
+<ul>
+<li><strong>Direct-answer content blocks</strong> on the pillar page (e.g., "Direct Answer" callouts under "What Is Roof Coating?", "TAS-106", "Roof Coating Cost") are exactly the format AI Overviews and answer engines extract from — this is a genuine strength.</li>
+<li><strong>FAQPage schema</strong> is present on both the homepage and the pillar page, increasing eligibility for AI-generated answer citations.</li>
+<li><strong>Partner entity graph</strong> (8 named Organizations with URLs/phones) helps AI systems and Google understand the authorized-network relationship — reinforcing the "who is behind this business" trust signal important for YMYL-adjacent home-improvement queries.</li>
+</ul>
+
+<h2>4. Competitive & Brand-Protection Check</h2>
+<table>
+<tr><th>Check</th><th>Result</th></tr>
+<tr><td>Mentions of theroof.store anywhere in crawled content/schema</td><td class="status-good">None found — red line intact</td></tr>
+<tr><td>Trademark-evidence / monitoring-log paths blocked from crawlers</td><td class="status-good">Confirmed via robots.txt</td></tr>
+<tr><td>Password-gate and noindex meta layers on those same confidential pages</td><td class="status-warn">Not verifiable externally — recommend manual confirmation</td></tr>
+</table>
+
+<h2>5. Plugin / Script & Performance Debt</h2>
+<p>Not assessable from this session's crawl output alone (requires rendered-page network waterfall or Core Web Vitals field data). No evidence of third-party script bloat was surfaced in the retrieved HTML head/body content, but this should not be treated as a clean bill of health — flag as an open item for a dedicated performance pass.</p>
+
+<h2>6. Action Plan (ICE-Prioritized)</h2>
+<table>
+<tr><th>Priority</th><th>Action</th><th>Impact</th><th>Confidence</th><th>Ease</th></tr>
+<tr><td>1</td><td>Replace the uniform sitemap lastmod value with real per-page modification dates</td><td>Medium</td><td>High</td><td>Easy</td></tr>
+<tr><td>2</td><td>Add <code>address</code> / <code>areaServed</code> fields to each partner in the partner-network member schema</td><td>Medium</td><td>High</td><td>Easy</td></tr>
+<tr><td>3</td><td>Restructure partner-network heading hierarchy (H2 wrapper + H3 partner names)</td><td>Low–Medium</td><td>Medium</td><td>Easy</td></tr>
+<tr><td>4</td><td>Update <code>dateModified</code> independently going forward whenever pillar/guide content changes</td><td>Low–Medium</td><td>High</td><td>Easy</td></tr>
+<tr><td>5</td><td>Manually confirm noindex meta + password gate are active on trademark-evidence pages</td><td>High (risk mitigation)</td><td>Medium</td><td>Easy</td></tr>
+<tr><td>6</td><td>Run a Core Web Vitals / script-bloat check via Search Console or PageSpeed Insights</td><td>Unknown until measured</td><td>Medium</td><td>Medium</td></tr>
+</table>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a226d57d6b015d37',t:'MTc4NTI3MjY0Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

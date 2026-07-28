@@ -325,6 +325,7 @@ function Router() {
       <Route path="/energy-incentives.php" component={() => <RedirectTo to="/roof-systems" />} />
       <Route path="/Roof_Painting_Service_Broward_County_for_Smart_Shield.php" component={() => <RedirectTo to="/products/smartshield" />} />
       <Route path="/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf" component={() => <RedirectTo to="/products/smartshield" />} />
+      <Route path="/roof_waterproofing_Lauderdale_broward.pdf" component={() => <RedirectTo to="/products/roofshield" />} />
       <Route path="/assets/files/basic-colors-smart-shield.pdf" component={() => <RedirectTo to="/products/smartshield" />} />
       <Route path="/roof-shield-system.php" component={() => <RedirectTo to="/products/roofshield" />} />
       <Route path="/factory.php" component={() => <RedirectTo to="/factory" />} />

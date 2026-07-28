@@ -84,8 +84,8 @@ const products = [
     ],
     bestFor: "Any tile roof homeowner who wants proven waterproof protection in a chosen color — dark or light — while also reflecting the Florida heat.",
     extra: "Developed in collaboration with BASF — the world's largest chemical producer — Smart Shield passed full tensile, flexural, DSC, TGA, and viscosity testing. The BASF Cool Pigment breakthrough: choose any color you want and the darker you go, the more heat reflects away from your home. Exclusively available through The Roof Store.",
-    pdfUrl: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
-    pdfLabel: "Smart Shield Product Sheet",
+    pdfUrl: "/docs/roofprotect-brochure.pdf",
+    pdfLabel: "RoofProtect Product Brochure (PDF)",
   },
   {
     code: "RP3",
@@ -129,8 +129,8 @@ const products = [
     ],
     bestFor: "Any tile roof where hurricane wind or rain intrusion between tiles is a risk — and any roof approaching replacement age that deserves a structural solution rather than a simple re-roof.",
     featured: true,
-    pdfUrl: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
-    pdfLabel: "Roof Shield Product Sheet",
+    pdfUrl: "/docs/roofshield-strength-data-sheet.pdf",
+    pdfLabel: "Roof Shield Strength Data Sheet (PDF)",
   },
 ];
 

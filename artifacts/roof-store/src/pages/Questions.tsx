@@ -136,16 +136,16 @@ const sections = [
 
 const pdfs = [
   {
-    name: "Smart Shield (RP2) — Technical Data Sheet",
-    url: "https://www.theroofstore.net/Roof_Painting_Service_Broward_County_for_Smart_Shield.pdf",
+    name: "RoofProtect Product Brochure (RP2 Smart Shield)",
+    url: "/docs/roofprotect-brochure.pdf",
     product: "RP2",
-    desc: "Smart Shield color coating technical information, BASF chemistry details, and performance data.",
+    desc: "Smart Shield color coating information, BASF chemistry details, and the full RoofProtect product line overview.",
   },
   {
-    name: "Roof Shield (RP3) — System Technical Data",
-    url: "https://www.theroofstore.net/roof_waterproofing_Lauderdale_broward.pdf",
+    name: "Roof Shield (RP3) — Strength Data Sheet",
+    url: "/docs/roofshield-strength-data-sheet.pdf",
     product: "RP3",
-    desc: "Roof Shield waterproofing system technical data — TAS-106 certification, application guide, and warranty details.",
+    desc: "Roof Shield waterproofing system strength data — TAS-106 certification, wind uplift performance, and technical details.",
   },
 ];
 

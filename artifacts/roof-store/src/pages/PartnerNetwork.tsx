@@ -126,7 +126,7 @@ const partners = [
     specialty: "Licensed Roof Coating Installer",
     territory: "Hollywood & Broward County, Florida",
     description:
-      "Roof Shield Coating Systems Inc is our licensed installer serving Hollywood and Broward County. With 7+ years in business and a verified 5.0-star Google rating, they bring proven hands-on experience applying our liquid rubber coating systems to tile, flat, and shingle roofs throughout South Florida.",
+      "Roof Shield Coating Systems Inc is our licensed installer serving Hollywood and Broward County. With 7+ years in business and a verified 5.0-star Google rating across 8 reviews, they bring proven hands-on experience applying our liquid rubber coating systems to tile, flat, and shingle roofs throughout South Florida.",
     services: [
       "Tile Roof Coating & Restoration",
       "Flat Roof Waterproofing",

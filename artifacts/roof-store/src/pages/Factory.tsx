@@ -323,6 +323,26 @@ export default function Factory() {
               <p className="text-white/75 leading-relaxed">
                 Our documented projects include roofs that survived real Category-force hurricane winds without a single tile displaced. Not simulated. Not theoretical. Real roofs, real storms.
               </p>
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <figure>
+                  <img
+                    src="/images/roof-replacement-alternative-truck.png"
+                    alt="The Roof Store truck and trailer — Don't Re-Roof It, Weatherproof It — factory-direct roof coating, South Florida"
+                    className="rounded-xl w-full h-40 object-cover border border-white/20"
+                    loading="lazy"
+                  />
+                  <figcaption className="text-white/60 text-xs mt-2">Our truck &amp; trailer — the statement on wheels</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="/images/factory/mixing.png"
+                    alt="Custom color tinting and mixing roof coating in-house at The Roof Store factory in Davie Florida"
+                    className="rounded-xl w-full h-40 object-cover border border-white/20"
+                    loading="lazy"
+                  />
+                  <figcaption className="text-white/60 text-xs mt-2">Making the product — custom colors mixed in-house</figcaption>
+                </figure>
+              </div>
             </div>
             <div className="space-y-4">
               <div className="bg-white/10 rounded-xl p-5">

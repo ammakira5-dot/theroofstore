@@ -31,7 +31,7 @@ const schema = {
       { "@type": "Organization", name: "Storm Shield Roof Coating Systems", telephone: "+15613284770", areaServed: ["Port St. Lucie FL", "Treasure Coast FL"], address: { "@type": "PostalAddress", addressLocality: "Port St. Lucie", addressRegion: "FL", addressCountry: "US" } },
       { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387", areaServed: ["Hollywood FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Hollywood", addressRegion: "FL", addressCountry: "US" } },
       { "@type": "Organization", name: "Fort Lauderdale Roof Coating", url: "https://www.ftlauderdaleroofcoating.com", telephone: "+17543673768", areaServed: ["Fort Lauderdale FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Fort Lauderdale", addressRegion: "FL", addressCountry: "US" } },
-      { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324", areaServed: ["Broward County FL", "Palm Beach County FL", "Martin County FL", "St. Lucie County FL", "Miami-Dade County FL"] },
+      { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324", areaServed: ["Broward County FL", "Palm Beach County FL", "Martin County FL", "St. Lucie County FL", "Miami-Dade County FL"], address: { "@type": "PostalAddress", streetAddress: "5079 SW 48th St", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" } },
       { "@type": "Organization", name: "Roof Paint Miami", url: "https://www.roofpaintmiami.com", telephone: "+17868379064", areaServed: ["Miami-Dade County FL"], address: { "@type": "PostalAddress", addressLocality: "Miami", addressRegion: "FL", addressCountry: "US" } },
       { "@type": "Organization", name: "Roof Restorations and Waterproofing Inc", url: "https://www.roofrestorationsandwaterproofinginc.com", telephone: "+18778245823", areaServed: ["Fort Lauderdale FL", "South Florida"], address: { "@type": "PostalAddress", streetAddress: "110 E Broward Blvd", addressLocality: "Fort Lauderdale", addressRegion: "FL", postalCode: "33301", addressCountry: "US" } },
     ],
@@ -101,7 +101,7 @@ const partners = [
     specialty: "Flat Roof Waterproofing & Coating",
     territory: "Port St. Lucie & Treasure Coast, Florida",
     description:
-      "Storm Shield Roof Coating Systems is our authorized distributor and installer serving the Treasure Coast region of Florida. Operating from Port St. Lucie, they specialize in liquid-applied rubber waterproofing for flat, shingle, and tile roofs — and have earned a verified 5.0-star Google rating from local customers.",
+      "Storm Shield Roof Coating Systems is our authorized distributor and installer serving the Treasure Coast region of Florida. Operating from Port St. Lucie, they specialize in liquid-applied rubber waterproofing for flat, shingle, and tile roofs — and have earned a verified 5.0-star Google rating across 6 reviews from local customers.",
     services: [
       "Flat Roof Waterproofing",
       "Shingle Roof Sealing",
@@ -126,7 +126,7 @@ const partners = [
     specialty: "Licensed Roof Coating Installer",
     territory: "Hollywood & Broward County, Florida",
     description:
-      "Roof Shield Coating Systems Inc is our licensed installer serving Hollywood and Broward County. With 7+ years in business and a verified 5.0-star Google rating across 8 reviews, they bring proven hands-on experience applying our liquid rubber coating systems to tile, flat, and shingle roofs throughout South Florida.",
+      "Roof Shield Coating Systems Inc is our licensed installer serving Hollywood and Broward County. With 7+ years in business and a verified 5.0-star Google rating, they bring proven hands-on experience applying our liquid rubber coating systems to tile, flat, and shingle roofs throughout South Florida.",
     services: [
       "Tile Roof Coating & Restoration",
       "Flat Roof Waterproofing",
@@ -168,7 +168,7 @@ const partners = [
     specialty: "Roofing-Grade Coating — Broward, Palm Beach & Treasure Coast",
     territory: "Broward, Palm Beach, Martin, St. Lucie & Miami-Dade Counties",
     description:
-      "Best Roof Paint is our authorized distributor-installer serving the broadest geographic footprint in the network — from Miami-Dade through the Treasure Coast. Their focus is on helping homeowners and property managers distinguish roofing-grade coatings from consumer paint products, and they carry our full RoofProtect coating line for residential tile, flat, and metal roofs.",
+      "Best Roof Paint is our authorized distributor-installer serving the broadest geographic footprint in the network — from Miami-Dade through the Treasure Coast. Their focus is on helping homeowners and property managers distinguish roofing-grade coatings from consumer paint products, and they carry our full RoofProtect coating line for residential tile, flat, and metal roofs. Verified 5.0-star Google rating across 5 reviews.",
     services: [
       "Elastomeric Roof Coating",
       "Roof Painting",

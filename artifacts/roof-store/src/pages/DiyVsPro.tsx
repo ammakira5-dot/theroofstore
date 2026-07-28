@@ -49,7 +49,7 @@ const diyFaqs = [
   },
   {
     q: "What equipment would I need to DIY a roof coating in Florida?",
-    a: "At minimum: a commercial-grade pressure washer (2,500+ PSI), professional nozzles and mildewcide detergent, a commercial airless sprayer or heavy-duty roller system, appropriate coating materials ($190–$325/gallon depending on system), roofing safety harness and anchor system, and all necessary repair materials (hydraulic cement, caulk, mesh, replacement tiles). The equipment cost alone often approaches $1,500–$3,000 before any materials are purchased.",
+    a: "At minimum: a commercial-grade pressure washer (2,500+ PSI), professional nozzles and mildewcide detergent, a commercial airless sprayer or heavy-duty roller system, appropriate coating materials ($190–$325 per 5-gallon pail depending on system), roofing safety harness and anchor system, and all necessary repair materials (hydraulic cement, caulk, mesh, replacement tiles). The equipment cost alone often approaches $1,500–$3,000 before any materials are purchased.",
   },
   {
     q: "Why does a professional roof coating cost more than DIY materials?",

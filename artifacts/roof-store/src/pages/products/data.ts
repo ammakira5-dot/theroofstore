@@ -41,7 +41,7 @@ export const fungalShield: ProductData = {
     { label: "Compatible Substrates", value: "Clay tile, concrete tile, metal roofing, flat deck" },
     { label: "Product Warranty", value: "5 Years" },
     { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
-    { label: "Price", value: "$190" },
+    { label: "Price", value: "$190 per 5-gallon pail" },
   ],
   applications: [
     "Tile roofs with black streaking and algae growth",
@@ -133,7 +133,7 @@ export const smartShield: ProductData = {
     { label: "Availability", value: "Exclusive — not available in any retail store" },
     { label: "Compatible Substrates", value: "Cement tile, clay tile, S-tile, flat tile, shingle, metal roofing" },
     { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
-    { label: "Price", value: "$285" },
+    { label: "Price", value: "$285 per 5-gallon pail" },
   ],
   applications: [
     "Tile roofs needing waterproofing and weatherproofing protection — primary use case",
@@ -296,7 +296,7 @@ export const roofShield: ProductData = {
     { label: "Ponding Water Rating", value: "Rated for standing/ponding water on flat roofs — no exclusion" },
     { label: "Compatible Substrates", value: "Concrete tile, barrel tile, S-tile, flat deck (including water-holding flat roofs), metal roofing, gravel, foam — any Florida roof" },
     { label: "Manufactured", value: "Davie, Florida — RoofProtect" },
-    { label: "Price", value: "$325" },
+    { label: "Price", value: "$325 per 5-gallon pail" },
   ],
   applications: [
     "Tile roofs where individual tiles are at risk of wind uplift in hurricane conditions",

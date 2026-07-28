@@ -61,7 +61,7 @@ const homeFaqs = [
   },
   {
     q: "How much does roof coating cost in Florida?",
-    a: "Cost depends on the system (Fungal Shield, Smart Shield, or Roof Shield), roof type, square footage, and current condition. As a guide, our systems start from $190 per gallon for Fungal Shield through to $325 per gallon for Roof Shield — with most residential projects costing significantly less than a full roof replacement. We provide a free on-site inspection and written estimate at no charge. Call 954-210-9614 or use our contact form to schedule.",
+    a: "Cost depends on the system (Fungal Shield, Smart Shield, or Roof Shield), roof type, square footage, and current condition. As a guide, installed pricing starts from 50¢/sq ft for Fungal Shield through to $2.70+/sq ft for Roof Shield (labor and materials included), and factory-direct products run $190–$325 per 5-gallon pail — with most residential projects costing significantly less than a full roof replacement. We provide a free on-site inspection and written estimate at no charge. Call 954-210-9614 or use our contact form to schedule.",
   },
 ];
 

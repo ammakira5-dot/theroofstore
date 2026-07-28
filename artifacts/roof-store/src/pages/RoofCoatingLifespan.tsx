@@ -117,7 +117,7 @@ const schema = [
       logo: { "@type": "ImageObject", url: `${BASE}/assets/images/logo.png` },
     },
     datePublished: "2026-07-01",
-    dateModified: "2026-07-01",
+    dateModified: "2026-07-21",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE}/roof-coating-lifespan-florida` },
     image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   },

@@ -13,7 +13,7 @@ const schema = [
     url: `${BASE}/the-original-roof-store-florida`,
     description: "The Roof Store has operated continuously from theroofstore.net since July 29, 2002. Florida's original liquid rubber roof coating company, founded in Davie, FL in 1994. Official trademark and domain rights notice.",
     datePublished: "2026-07-07",
-    dateModified: "2026-07-07",
+    dateModified: "2026-07-08",
     publisher: {
       "@type": "Organization",
       name: "The Roof Store",

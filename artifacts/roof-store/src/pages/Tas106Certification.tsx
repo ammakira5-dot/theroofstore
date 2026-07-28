@@ -15,7 +15,7 @@ const schema = [
       "Comprehensive reference on Dade County TAS-106 Uplift Certification for liquid-applied roof coatings, including what the standard tests, why Roof Shield (RP3) is the only liquid coating to hold it, and what it means for Florida homeowners.",
     url: `${BASE}/tas-106-certified-roof-coating`,
     datePublished: "2026-07-18",
-    dateModified: "2026-07-18",
+    dateModified: "2026-07-28",
     author: { "@type": "Organization", name: "The Roof Store", url: BASE },
     publisher: {
       "@type": "Organization",

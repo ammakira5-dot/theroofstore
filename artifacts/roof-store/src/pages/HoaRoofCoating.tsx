@@ -41,7 +41,7 @@ export default function HoaRoofCoating() {
       description: "Florida HOA boards and condo associations are turning to commercial roof coatings to extend roof life, reduce costs, and meet new reserve funding requirements. A complete guide for property managers and board members.",
       url: `${BASE}/commercial-roof-coating-hoa`,
       datePublished: "2026-07-19",
-      dateModified: "2026-07-19",
+      dateModified: "2026-07-21",
       author: { "@type": "Organization", name: "The Roof Store", url: BASE },
       publisher: {
         "@type": "Organization",

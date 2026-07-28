@@ -78,7 +78,7 @@ const schema = [
       logo: { "@type": "ImageObject", url: `${BASE}/assets/images/logo.png` },
     },
     datePublished: "2026-07-01",
-    dateModified: "2026-07-01",
+    dateModified: "2026-07-28",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE}/diy-vs-pro-roof-coating` },
     image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   },

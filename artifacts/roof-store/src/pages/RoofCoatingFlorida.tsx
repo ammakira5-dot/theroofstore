@@ -15,7 +15,7 @@ const schema = [
       "A comprehensive guide to roof coating in Florida covering types, costs, hurricane performance, insurance impact, and how to choose a licensed contractor.",
     url: `${BASE}/roof-coating-florida`,
     datePublished: "2026-07-18",
-    dateModified: "2026-07-18",
+    dateModified: "2026-07-28",
     author: { "@type": "Organization", name: "The Roof Store", url: BASE },
     publisher: {
       "@type": "Organization",

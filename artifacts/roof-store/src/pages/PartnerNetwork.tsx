@@ -26,10 +26,10 @@ const schema = {
       addressCountry: "US",
     },
     member: [
-      { "@type": "Organization", name: "Windproof Roof Systems", url: "https://www.windproofroofsystems.com", telephone: "+19547430667", areaServed: ["Broward County FL", "Miami-Dade County FL", "Palm Beach County FL"] },
+      { "@type": "Organization", name: "Windproof Roof Systems", url: "https://www.windproofroofsystems.com", telephone: "+19547430667", areaServed: ["Broward County FL", "Miami-Dade County FL", "Palm Beach County FL"], address: { "@type": "PostalAddress", streetAddress: "4700 Sheridan St Ste G", addressLocality: "Hollywood", addressRegion: "FL", postalCode: "33021", addressCountry: "US" } },
       { "@type": "Organization", name: "Roof Protect Products", url: "https://www.roofprotectproducts.com", telephone: "+19549001973", areaServed: ["South Florida", "United States"] },
       { "@type": "Organization", name: "Storm Shield Roof Coating Systems", telephone: "+15613284770", areaServed: ["Port St. Lucie FL", "Treasure Coast FL"], address: { "@type": "PostalAddress", addressLocality: "Port St. Lucie", addressRegion: "FL", addressCountry: "US" } },
-      { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387", areaServed: ["Hollywood FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Hollywood", addressRegion: "FL", addressCountry: "US" } },
+      { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387", areaServed: ["Hollywood FL", "Broward County FL"], address: { "@type": "PostalAddress", streetAddress: "4700 Sheridan St", addressLocality: "Hollywood", addressRegion: "FL", postalCode: "33021", addressCountry: "US" } },
       { "@type": "Organization", name: "Fort Lauderdale Roof Coating", url: "https://www.ftlauderdaleroofcoating.com", telephone: "+17543673768", areaServed: ["Fort Lauderdale FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Fort Lauderdale", addressRegion: "FL", addressCountry: "US" } },
       { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324", areaServed: ["Broward County FL", "Palm Beach County FL", "Martin County FL", "St. Lucie County FL", "Miami-Dade County FL"], address: { "@type": "PostalAddress", streetAddress: "5079 SW 48th St", addressLocality: "Davie", addressRegion: "FL", postalCode: "33314", addressCountry: "US" } },
       { "@type": "Organization", name: "Roof Paint Miami", url: "https://www.roofpaintmiami.com", telephone: "+17868379064", areaServed: ["Miami-Dade County FL"], address: { "@type": "PostalAddress", addressLocality: "Miami", addressRegion: "FL", addressCountry: "US" } },
@@ -381,6 +381,9 @@ export default function PartnerNetwork() {
       {/* Partner cards */}
       <section className="py-16 bg-background">
         <div className="container px-4 max-w-4xl mx-auto space-y-10">
+          <h2 className="text-3xl font-serif font-bold text-primary text-center">
+            Authorized Partner Directory
+          </h2>
           {partners.map((partner, i) => (
             <motion.div
               key={i}
@@ -396,7 +399,7 @@ export default function PartnerNetwork() {
                   <div className="inline-flex items-center bg-accent/20 text-accent text-xs font-bold px-3 py-1 rounded-full mb-2">
                     {partner.badge}
                   </div>
-                  <h2 className="text-2xl font-serif font-bold">{partner.name}</h2>
+                  <h3 className="text-2xl font-serif font-bold">{partner.name}</h3>
                   <div className="text-white/70 text-sm mt-1">{partner.specialty}</div>
                 </div>
                 {!partner.linkPaused && (

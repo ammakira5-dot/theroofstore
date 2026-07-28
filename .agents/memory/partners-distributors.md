@@ -53,16 +53,16 @@ _Last confirmed by owner: July 23, 2026_
 
 ## FTP Access — All Sites
 
-| Site | FTP Host | FTP Username | Secret Name |
-|------|----------|--------------|-------------|
-| windproofroofsystems.com | ftp.windproofroofsystems.com | Fullstack2@windproofroofsystems.com | WINDPROOF_FTP_PASSWORD |
-| roofrestorationsandwaterproofinginc.com | ftp.roofrestorationsandwaterproofinginc.com | roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com | RRSW_FTP_PASSWORD |
-| roofprotectproducts.com | ftp.absolutecharters.com (port 21) | muhammad@roofprotectproducts.com | ROOFPROTECT_FTP_PASSWORD |
-| ftlauderdaleroofcoating.com | ftp.absolutecharters.com (port 21) | julius@absolutecharters.com | JULIUS_FTP_PASSWORD |
-| roofpaintmiami.com | ftp.absolutecharters.com (port 21) | julius@absolutecharters.com | JULIUS_FTP_PASSWORD |
-| bestroofpaint.com | ftp.absolutecharters.com (port 21) | julius@absolutecharters.com | JULIUS_FTP_PASSWORD |
-| flatroofsealants.com | ftp.absolutecharters.com (port 21) | julius@absolutecharters.com | FLATROOF_WP_PASSWORD |
-| theroofstore.net (FTP/WordPress blog) | oneworldhosting.com cPanel | — | WP_BLOG_ADMIN_PASSWORD |
+Password secret names per site (values in Replit Secrets; hosts/usernames are NOT stored in agent memory — ask the owner or check prior FTP session config when needed):
+
+| Site | Password Secret Name |
+|------|----------------------|
+| windproofroofsystems.com | WINDPROOF_FTP_PASSWORD |
+| roofrestorationsandwaterproofinginc.com | RRSW_FTP_PASSWORD |
+| roofprotectproducts.com | ROOFPROTECT_FTP_PASSWORD |
+| ftlauderdaleroofcoating.com / roofpaintmiami.com / bestroofpaint.com | JULIUS_FTP_PASSWORD |
+| flatroofsealants.com | FLATROOF_WP_PASSWORD |
+| theroofstore.net (WordPress blog) | WP_BLOG_ADMIN_PASSWORD |
 
 **Note:** ROOFPROTECT_FTP_PASSWORD secret stored in Replit has wrong value — actual credentials differ. Update secret when convenient.
 

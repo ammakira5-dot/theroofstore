@@ -142,6 +142,7 @@ const partners = [
       { author: "Abdullah Imran", text: "The Roof was old and we have had a couple of leaks in the past, this system was new to us since we dont have this type in up state New York, we tried the roof coating process, it was simple and sealed all our roof tiles in one piece, looks great, they did an excellent job" },
       { author: "Amber Phillips", text: "Our insurance company wanted to drop us but we found this company and they literally saved us thousands of dollars on not being forced to do a complete roof replacement, our roof was in good shape and it is only 15 years old, long story short we had it certified after the work was done and that ended the scam the insurance company was trying to pull on us, great service." },
       { author: "Ann Jordan", text: "Great Products our Roof Coating project was done on time and within our Budget." },
+      { author: "Ryan Turnstall", text: "We needed a solution to replacement of our tile Roof and went with restoring them with the Coating and it came better than we expected and we saved money doing this instead." },
       { author: "Carl Rader", text: "Roof Shield was the solution to getting our roof life certification and it looks like a new roof again." },
     ],
   },

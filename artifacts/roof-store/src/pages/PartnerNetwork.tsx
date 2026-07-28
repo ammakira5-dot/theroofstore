@@ -241,6 +241,7 @@ const partners = [
     reviews: [
       { author: "Marcia Londa", text: "The soft wash was done on our Spanish Roof Tiles and our roof looked like new and they didn't break any, we are going to get it waterproofed next season by this company we know we can trust." },
       { author: "Steve Oddo", text: "We applied the Roof Coating Special Restoration Process to our Spanish Tile Roof and was very impressed with the final results our Roof looks like new again." },
+      { author: "Patty Holman", text: "We wanted to get the roof Tiles painted a dark color and some repairs done, this company did a great job. Thanks" },
       { author: "William Keegan", text: "Needed to get my roof tiles sealed and wanted a dark Color to match Trim, they did a great job and I don.t worry about my roof Tiles Cracking anymore." },
       { author: "Jeffrey Gaines", text: "They did a great job, fixed all the cracked tile with the Roof Restoration process and the roof is like new" },
       { author: "Charles Jon", text: "I was looking for an alternative to a full roof replacement since it didn't seem like it was needed and my insurance accepted it as regular maintenance, the coating they put on looks great.." },

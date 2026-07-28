@@ -158,7 +158,7 @@ export default function Videos() {
                     </div>
                     {video.tag === "Certification Test" && (
                       <a
-                        href="/docs/tas-106-uplift-test.pdf"
+                        href="/docs/miami-dade-tas-106-roof-coating-uplift-test.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-xs font-bold text-primary underline underline-offset-2 hover:text-accent transition-colors"

@@ -328,6 +328,14 @@ export default function Factory() {
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">TAS-106 Pull Test</div>
                 <div className="text-white font-bold text-lg">Dade County Approved — Only Rated Coating Worldwide</div>
+                <a
+                  href="/docs/miami-dade-tas-106-roof-coating-uplift-test.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-sm text-accent font-semibold hover:underline mt-2"
+                >
+                  Download the TAS-106 Uplift Test Report (PDF) →
+                </a>
               </div>
               {ROOF_SHIELD_NOA && (
                 <div className="bg-white/10 rounded-xl p-5">

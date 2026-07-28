@@ -761,7 +761,7 @@ export default function Tas106Certification() {
             <div className="space-y-3">
               {[
                 {
-                  href: "/docs/tas-106-uplift-test.pdf",
+                  href: "/docs/miami-dade-tas-106-roof-coating-uplift-test.pdf",
                   icon: "📋",
                   title: "TAS-106 Uplift Test — Official Test Document",
                   sub: "The independent laboratory test report for the Roof Shield (RP3) TAS-106 certification",

@@ -45,6 +45,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - Always confirm the plan before making changes
 - Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"
+- Review quotes on the site must use exact GMB review wording only — never paraphrase or use text truncated with "… More"; each profile's reviews stay with its own card
 
 ## Pending To-Dos
 

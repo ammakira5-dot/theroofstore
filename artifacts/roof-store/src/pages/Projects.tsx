@@ -11,10 +11,12 @@ const beforeAfterProjects = [
     title: "Spanish Tile Roof Restoration",
     type: "Roof Shield Liquid Rubber Membrane System",
     location: "Davie, FL",
+    city: "Davie",
+    substrate: "Spanish & Barrel Tile",
     size: "Residential",
     saved: "$22,000+",
     description:
-      "Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps. After a full surface clean, crack repair, and multi-coat Roof Shield application, the tiles were restored, sealed, and protected against wind uplift — at a fraction of re-roof cost.",
+      "A 3-coat-layer Roof Shield elastomeric roof painting and waterproofing project on a residential home in Davie, Florida, using our TAS-106 hurricane-rated liquid rubber system. Cement tile roofs are vulnerable to UV degradation, algae staining, and hairline cracking at the ridge caps — after a full surface clean, crack repair, and multi-coat Roof Shield application, the tiles were restored, sealed, and bonded against wind uplift at a fraction of re-roof cost.",
     beforeSrc: "/images/projects/clay-tile-before.png",
     afterSrc: "/images/projects/clay-tile-after.png",
     beforeLabel: "Before",
@@ -30,6 +32,8 @@ const beforeAfterProjects = [
     title: "Older Spanish Tile Full Restoration",
     type: "Full Tile Removal, Deck Repair & Roof Shield System",
     location: "South Florida",
+    city: "South Florida",
+    substrate: "Spanish & Barrel Tile",
     size: "Residential",
     saved: "$25,000+",
     description:
@@ -43,6 +47,8 @@ const beforeAfterProjects = [
     title: "Residential Flat Roof Waterproofing",
     type: "Full Rubber Elastomeric Membrane System",
     location: "South Florida",
+    city: "South Florida",
+    substrate: "Flat Deck & Silicone",
     size: "Residential Flat Deck",
     saved: "$15,000+",
     description:
@@ -56,6 +62,8 @@ const beforeAfterProjects = [
     title: "Flat Deck Rubber Roof Installation",
     type: "Liquid Rubber Membrane — Full Flat Deck",
     location: "South Florida",
+    city: "South Florida",
+    substrate: "Flat Deck & Silicone",
     size: "Residential Flat Deck",
     saved: "$18,000+",
     description:
@@ -71,6 +79,8 @@ const beforeAfterProjects = [
     title: "Flat Cement Tile Eave Repair",
     type: "Required Repair Before Roof Shield System Application",
     location: "South Florida",
+    city: "South Florida",
+    substrate: "Flat Cement Tile",
     size: "Residential",
     saved: "$8,000+",
     description:
@@ -84,10 +94,12 @@ const beforeAfterProjects = [
     title: "Flat Cement Tile Waterproofing System",
     type: "Fungal Shield + Roof Shield Two-Coat System",
     location: "Broward County, FL",
+    city: "Broward County",
+    substrate: "Flat Cement Tile",
     size: "Residential",
     saved: "$30,000+",
     description:
-      "A two-coat system starting with Fungal Shield (RP1) to kill mold and prevent regrowth, followed by Roof Shield (RP3) as the waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
+      "A two-coat flat cement tile roof painting and waterproofing project on a residential home in Broward County, Florida — starting with Fungal Shield (RP1) to kill mold and prevent regrowth, followed by Roof Shield (RP3), our TAS-106 hurricane-rated waterproof topcoat. The finished surface sheds water, reflects UV, and carries a lifetime transferable warranty — fully documented for insurance and resale.",
     beforeSrc: "/images/projects/flat-cement-before.png",
     afterSrc: "/images/projects/flat-cement-after.png",
     beforeLabel: "Before",
@@ -127,6 +139,11 @@ const caseStudies = [
 ];
 
 const BASE = "https://www.theroofstore.net";
+
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+const cityGroups = Array.from(new Set(beforeAfterProjects.map((p) => p.city)));
+const substrateGroups = Array.from(new Set(beforeAfterProjects.map((p) => p.substrate)));
 
 const allGalleryImages: LightboxImage[] = beforeAfterProjects.flatMap(
   (p) => (p.gallery ?? []).map((img) => ({ src: img.src, alt: img.alt }))
@@ -171,10 +188,10 @@ export default function Projects() {
       name: "Roof Coating Before & After Project Gallery — The Roof Store",
       url: `${BASE}/projects`,
       associatedMedia: [
-        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-after.png`, name: "Spanish Tile Roof Restoration After — Roof Shield System Davie FL", description: "Spanish tile roof after Roof Shield liquid rubber membrane restoration in Davie, FL. Saved owner $22,000+ vs. re-roofing.", caption: "Spanish Tile Roof Restoration — After" },
-        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-before.png`, name: "Spanish Tile Roof Before Coating — Algae Staining and Cracking", description: "Spanish tile roof before Roof Shield application showing UV damage, algae staining, and hairline cracking at ridge caps.", caption: "Spanish Tile Roof Restoration — Before" },
-        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-deck-extra-3.jpg`, name: "Flat Deck Rubber Roof Seam Sealing In Progress — South Florida", description: "Flat deck rubber roof seam sealing in progress with liquid rubber coating system applied by The Roof Store.", caption: "Flat Deck Rubber Roof Installation" },
-        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-cement-after.png`, name: "Flat Cement Tile Roof After Fungal Shield Roof Shield Two-Coat System", description: "Flat cement tile roof after Fungal Shield (RP1) + Roof Shield (RP3) two-coat waterproofing system in Broward County, FL.", caption: "Flat Cement Tile Waterproofing — After" },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-after.png`, name: "Spanish Tile Roof Restoration After — Roof Shield System Davie FL", description: "Spanish tile roof after Roof Shield liquid rubber membrane restoration in Davie, FL. Saved owner $22,000+ vs. re-roofing.", caption: "Spanish Tile Roof Restoration — After", contentLocation: { "@type": "Place", name: "Davie, Florida", geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 } } },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/clay-tile-before.png`, name: "Spanish Tile Roof Before Coating — Algae Staining and Cracking", description: "Spanish tile roof before Roof Shield application showing UV damage, algae staining, and hairline cracking at ridge caps.", caption: "Spanish Tile Roof Restoration — Before", contentLocation: { "@type": "Place", name: "Davie, Florida", geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 } } },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-deck-extra-3.jpg`, name: "Flat Deck Rubber Roof Seam Sealing In Progress — South Florida", description: "Flat deck rubber roof seam sealing in progress with liquid rubber coating system applied by The Roof Store.", caption: "Flat Deck Rubber Roof Installation", contentLocation: { "@type": "Place", name: "South Florida" } },
+        { "@type": "ImageObject", url: `${BASE}/images/projects/flat-cement-after.png`, name: "Flat Cement Tile Roof After Fungal Shield Roof Shield Two-Coat System", description: "Flat cement tile roof after Fungal Shield (RP1) + Roof Shield (RP3) two-coat waterproofing system in Broward County, FL.", caption: "Flat Cement Tile Waterproofing — After", contentLocation: { "@type": "Place", name: "Broward County, Florida" } },
       ],
     },
   ];
@@ -201,11 +218,43 @@ export default function Projects() {
         </div>
       </section>
 
+      <section className="py-10 bg-background border-b border-border">
+        <div className="container px-4 max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-12 justify-center">
+            <div>
+              <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3">Our Roof Coating Projects by City</div>
+              <div className="flex flex-wrap gap-2">
+                {cityGroups.map((c) => (
+                  <a key={c} href={`#city-${slugify(c)}`} className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-accent border rounded-full px-4 py-1.5 hover:border-accent transition-colors bg-card">
+                    <MapPin className="h-3.5 w-3.5" /> {c}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3">Projects by Roof Type</div>
+              <div className="flex flex-wrap gap-2">
+                {substrateGroups.map((s) => (
+                  <a key={s} href={`#substrate-${slugify(s)}`} className="inline-flex items-center text-sm font-medium text-primary hover:text-accent border rounded-full px-4 py-1.5 hover:border-accent transition-colors bg-card">
+                    {s}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-background">
         <div className="container px-4">
           <div className="space-y-24">
-            {beforeAfterProjects.map((project, i) => (
-              <div key={i}>
+            {beforeAfterProjects.map((project, i) => {
+              const firstOfCity = beforeAfterProjects.findIndex((p) => p.city === project.city) === i;
+              const firstOfSubstrate = beforeAfterProjects.findIndex((p) => p.substrate === project.substrate) === i;
+              return (
+              <div key={i} className="scroll-mt-28">
+                {firstOfCity && <span id={`city-${slugify(project.city)}`} className="block relative -top-28" aria-hidden="true" />}
+                {firstOfSubstrate && <span id={`substrate-${slugify(project.substrate)}`} className="block relative -top-28" aria-hidden="true" />}
                 {i > 0 && <div className="border-t border-border mb-24" />}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
@@ -282,7 +331,7 @@ export default function Projects() {
                   </motion.div>
                 )}
               </div>
-            ))}
+            );})}
           </div>
         </div>
       </section>

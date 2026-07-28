@@ -9,11 +9,20 @@ const heroSlides = [
   {
     headline: (
       <>
-        Elastomeric Roof Coatings & Roof Paint<br />
-        <span className="text-accent">Product + Installation</span> — South Florida
+        The Only TAS-106 Uplift-Tested<br />
+        <span className="text-accent">Roof Coating</span> — Factory-Direct
       </>
     ),
-    sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. The Original Liquid Applied Rubber Roof Shield System. Works on Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs. Designed for Florida's Hurricane Force Winds and Water Damage.",
+    sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. Roof Shield is the world's only liquid roof coating with Dade County TAS-106 Uplift certification — made in our Davie, FL factory and sold direct. Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs.",
+  },
+  {
+    headline: (
+      <>
+        Factory-Direct Pricing.<br />
+        <span className="text-accent">No Middlemen.</span>
+      </>
+    ),
+    sub: "We manufacture our elastomeric coatings in Davie, Florida and sell them straight from the factory floor — the savings distributors and retailers would take stay in your pocket, whether we install or you do.",
   },
   {
     headline: (
@@ -79,6 +88,20 @@ const BUSINESS_CORE = {
   disambiguatingDescription: "The Roof Store (Storm Shield Paint Systems Inc.), Florida's original elastomeric roof coating manufacturer and contractor, founded 1994 in Davie, Florida. Continuously operating under this name at theroofstore.net since 2002.",
   description: "South Florida's original elastomeric roof coating company, serving homeowners and businesses since 1994. FungalShield, SmartShield & RoofShield systems weatherproof tile, flat, and metal roofs at half the cost of replacement.",
   areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
+  hasPOS: {
+    "@type": "Place",
+    name: "The Roof Store — Factory-Direct Coating Store, Davie FL",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "4801 S University Dr",
+      addressLocality: "Davie",
+      addressRegion: "FL",
+      postalCode: "33328",
+      addressCountry: "US",
+    },
+    geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
+    telephone: "+19542109614",
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Roof Coating Systems",
@@ -211,11 +234,21 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
-                <Link href="/contact">Schedule Your Free Consultation</Link>
+                <Link href="/contact">
+                  <Hammer className="h-5 w-5 mr-2" />
+                  Get a Free Installation Quote
+                </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20 h-14 px-8 text-lg w-full sm:w-auto backdrop-blur-sm">
-                <Link href="/roof-systems">Explore Our Systems</Link>
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-14 px-8 text-lg w-full sm:w-auto font-bold">
+                <Link href="/shop">
+                  <ShoppingCart className="h-5 w-5 mr-2" />
+                  Buy Factory-Direct Coatings
+                </Link>
               </Button>
+            </div>
+            <div className="mt-3 flex flex-col sm:flex-row gap-x-8 gap-y-1 text-sm text-white/60">
+              <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
+              <span>Contractors &amp; DIY — factory pricing, shipped or picked up in Davie</span>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/70">
               <span className="font-semibold text-white">Roof coating from $0.50/sq ft</span>

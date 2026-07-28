@@ -72,6 +72,20 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
         },
       },
       priceRange: "$$",
+      hasPOS: {
+        "@type": "Place",
+        name: "The Roof Store — Factory-Direct Coating Store, Davie FL",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "4801 S University Dr",
+          addressLocality: "Davie",
+          addressRegion: "FL",
+          postalCode: "33328",
+          addressCountry: "US",
+        },
+        geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
+        telephone: "+19542109614",
+      },
       description: `Professional roof coating, tile restoration, and weatherproofing in ${city}, FL. A+ BBB Rated since 1994.`,
     },
     {

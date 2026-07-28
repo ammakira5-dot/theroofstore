@@ -66,6 +66,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - **GSC sitemap** — Submit https://www.theroofstore.net/sitemap.xml to GSC. Then individually request indexing for: `/`, `/roof-coating-florida`, `/tas-106-certified-roof-coating`, `/blog`, `/factory`, `/pricing`.
 - **DO NOT submit** `/trademark-evidence`, `/trademark-evidence-print`, `/google-complaint-steps`, `/redemption-evidence-google-1` — these are now crawler-blocked (robots.txt Disallow + noindex). Submit only public pages.
 - **GSC resubmit (July 22 publish)** — URL Inspection → Request Indexing: all 109 city pages, all 7 blog posts (/blog/*), /blog index. Pending legacy redirects: /residential.php, /projects/reviews.php, /fl/Miami-roof-restoration.php.
+- **GSC resubmit (July 28 publish)** — URL Inspection → Request Indexing for pages changed today: `/` (factory-direct dual-pitch hero + dual CTAs), `/partner-network` (review counts + 19 verbatim GMB review quotes + schema addresses/territories), `/factory` (wording fix + TAS-106 PDF download link), `/products` and `/questions` (fixed PDF links), `/tas-106-certified-roof-coating` and `/videos` (renamed TAS-106 PDF), `/projects` (browse chips + contentLocation schema).
 - **GSC network — add 2 missing properties** — Add bestroofpaint.com and roofpaintmiami.com to GSC. Submit sitemaps at /wp-sitemap.xml or /sitemap_index.xml.
 - **GSC → Google Sheets export (damages evidence)** — GSC → Performance → max 16 months → filter "the roof store" → Export → Google Sheets → share with agent. Agent builds impressions/clicks erosion chart as Exhibit K-2.
 
@@ -87,6 +88,8 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
+- **Image SEO — factory photo renames (AWAITING APPROVAL)** — Full audit at `docs/image-seo-audit.md`. 11 /factory photos have numeric filenames (1.jpg, 2.jpg…) with zero SEO value; proposed keyword-location names drafted in the doc. Renames change URLs so need explicit approval; agent will verify each photo visually, rename, and update Factory.tsx in one pass.
+- **Image SEO — alt-text rewrite (AWAITING APPROVAL)** — Localized keyword pattern (substrate + system + city, only where truthful) across Projects gallery (16 images), Factory photo array, and commercial pages. Plan in `docs/image-seo-audit.md` §2. Extend same treatment to services/product page images. City page images already localized — no change.
 - **sameAs array — YouTube channel** — Add the historical YouTube channel URL to the Organization schema sameAs array. Provide the YouTube channel URL.
 - **City page differentiation** — 99 pages still on templated pattern (Fort Lauderdale is the only differentiated one). Decision needed: differentiate all 109 at once, or top 20 by search volume first?
 - **Duplicate URL audit** — `/service-areas/[county]` vs. `/roof-services/[county]` may be cannibalizing each other. Agent can audit and report before any changes.

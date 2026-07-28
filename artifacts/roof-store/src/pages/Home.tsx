@@ -5,13 +5,13 @@ import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Wind, Wrench, Award, ArrowRight, Factory, Hammer, ShoppingCart, UserCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 
-const heroSlides = [
+const heroSlides: { kicker?: string; headline: React.ReactNode; sub: string }[] = [
   {
+    kicker: "The World's Only Miami\u2011Dade TAS\u2011106 Uplift\u2011Tested Coating",
     headline: (
       <>
-        The World's Only<br />
-        Miami&#8209;Dade TAS&#8209;106 Uplift-Tested<br />
-        <span className="text-accent">Roof Coating</span>
+        Elastomeric Roof Coating & Roof Paint<br />
+        <span className="text-accent">Factory-Direct</span> — South Florida
       </>
     ),
     sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. Roof Shield is the world's only roof coating tested to Miami-Dade County's TAS-106 uplift standard — the global benchmark for hurricane roofing — made in our Davie, FL factory and sold direct. Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs.",
@@ -214,6 +214,11 @@ export default function Home() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.6 }}
                 >
+                  {slide.kicker && (
+                    <div className="text-accent text-sm md:text-base font-bold tracking-widest uppercase mb-3">
+                      {slide.kicker}
+                    </div>
+                  )}
                   <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
                     {slide.headline}
                   </h1>

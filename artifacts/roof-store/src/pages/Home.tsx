@@ -9,8 +9,9 @@ const heroSlides = [
   {
     headline: (
       <>
-        The World's Only Miami-Dade<br />
-        TAS-106 Uplift-Tested <span className="text-accent">Roof Coating</span>
+        The World's Only<br />
+        Miami&#8209;Dade TAS&#8209;106 Uplift-Tested<br />
+        <span className="text-accent">Roof Coating</span>
       </>
     ),
     sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. Roof Shield is the world's only roof coating tested to Miami-Dade County's TAS-106 uplift standard — the global benchmark for hurricane roofing — made in our Davie, FL factory and sold direct. Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs.",
@@ -183,7 +184,7 @@ export default function Home() {
         geo={{ region: "US-FL", placename: "Davie, FL", position: "26.0765;-80.2521" }}
       />
       {/* Hero Section */}
-      <section className="relative h-[85dvh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85dvh] flex items-center justify-center overflow-hidden py-16">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-primary/70 mix-blend-multiply z-10" />
           <img 
@@ -204,7 +205,7 @@ export default function Home() {
             <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
               A+ BBB Rated Since 1994
             </div>
-            <div className="relative min-h-[220px] md:min-h-[260px] mb-6">
+            <div className="relative min-h-[260px] md:min-h-[320px] mb-6">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={slideIndex}
@@ -213,7 +214,7 @@ export default function Home() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.6 }}
                 >
-                  <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
+                  <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
                     {slide.headline}
                   </h1>
                   <p className="text-xl md:text-2xl text-white/90 font-medium">

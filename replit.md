@@ -78,7 +78,9 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 **Reviews:**
 - **Review count** — Target 50+ reviews. Current ~10. Each verified review tied to a NAP-consistent GMB profile is a strong "established business" signal. Ask agent to set up review automation workflow — need to confirm which post-job contact channel (text, email, or both).
-- **Review count in schema** — `Home.tsx` shows `reviewCount: "10"`. Update once you confirm actual count.
+- **Review count in schema** — ✅ Confirmed July 28: `Home.tsx` `reviewCount: "10"` matches main Storm Shield GMB. Re-update only when count grows.
+- **GMB Services rollout (July 28 — not completed, next session)** — Drafts banked in attached_assets (GMB-Services-RoofRestorationsWaterproofing + GMB-Services-Remaining-Partners). Agreed order: (1) Roof Restorations → (2) Best Roof Paint → (3) Roof Paint Miami (create profile) → (4) live-GMB pair (screenshot first). Space profile updates days apart. Ask agent for each draft when ready to paste into business.google.com.
+- **RoofProtect Products reviews** — Its GMB review count/text never sent. Paste its listing panel + reviews to add count/quotes to its partner card.
 
 ---
 

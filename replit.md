@@ -89,6 +89,11 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
+- **Sitemap lastmod fix — DONE July 28 (awaiting publish)** — generator now derives real per-page dates from git history (11 distinct dates, July 4–28) instead of stamping today on all 153 URLs. Fixes Storeclaw audit warning. All 109 city pages honestly show July 28 (copy standardization changed them all today); they diverge naturally going forward. Goes live on next publish → then resubmit sitemap in GSC.
+- **Evidence pages noindex — VERIFIED July 28** — all 6 evidence pages confirmed noindex in source, UDRP gate password intact, live prod serving `noindex, follow`. Clean.
+- **Storeclaw audit remaining items (deferred to next session):** #2 partner schema address/areaServed — report which of 8 partners missing data first; #3 partner-network H2→H3 restructure; #4 dateModified discipline on page schemas; #6 Core Web Vitals — owner runs PageSpeed/GSC report.
+- **"60–70%" cost claims — DONE July 28** — hedged with "up to" sitewide; DiyVsPro.tsx "Surface Preparation Is 60–70% of the Job" left as-is (labor claim, not cost).
+- **Home hero 3-photo process block — DONE + published July 28** — blending tank / custom color tinting / truck & trailer under CTAs.
 - **Schema fix bundle — PARTIALLY DONE July 28** — ✅ Done (approved "fix what you can"): /products de-dup 6→3 Product schemas (CollectionPage hasPart now plain WebPage refs); /videos real YouTube uploadDates (Wilma 2011-02-28, TAS-106 2020-12-31, ISO w/ timezone). ⏳ Still pending: `shippingDetails` + `hasMerchantReturnPolicy` on Offers — NEED owner's shipping + return policy wording; optional `certificationRating` (may not apply — pass/fail). Needs publish + GSC re-inspect of /products and /videos to confirm cleared.
 - **Duplicate URL fix — DONE July 28** — /roof-services/[county] now redirects to /service-areas/[county]; 4 roof-services county URLs removed from sitemap + prerender routes (sitemap now 153 URLs). Needs publish to go live.
 - **Hub-and-spoke audit — DONE July 28, clean** — all spokes link to hub; only spoke-to-spoke links are brand-anchor "RoofProtect" links to roofprotectproducts.com (safe, leave). Minor: roofrestorationsandwaterproofinginc.com reuses windproof-logo.png (cosmetic footprint, low priority).

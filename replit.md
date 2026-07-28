@@ -46,6 +46,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"
 - Review quotes on the site must use exact GMB review wording only — never paraphrase or use text truncated with "… More"; each profile's reviews stay with its own card
+- **End-of-session routine (carry-forward fix, agreed July 28):** before the user signs off, (1) update the Pending To-Dos in this file with anything new, in-progress, or awaiting approval; (2) push the repo to the GitHub backup (github.com/ammakira5-dot/theroofstore). This file is the single source of truth for open items — the next session must read it first.
 
 ## Pending To-Dos
 

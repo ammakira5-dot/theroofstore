@@ -11,7 +11,7 @@ const schema = {
   name: "Authorized Distributor & Licensed Installers Network — The Roof Store Waterproofing Products",
   url: `${BASE}/partner-network`,
   description:
-    "The Roof Store Waterproofing Products maintains an authorized network of licensed distributor-installers serving South Florida. Each member is factory-trained in our proprietary coating systems, authorized to sell and install them, and serves a defined territory.",
+    "The Roof Store Waterproofing Products maintains an authorized network of licensed partners serving South Florida. Each installer partner is factory-trained in our proprietary coating systems, authorized to sell and install them, and serves a defined territory; Roof Protect Products, our manufacturing and supply division, supplies product only and does not perform installations.",
   provider: {
     "@type": "Organization",
     name: "The Roof Store Waterproofing Products",
@@ -26,14 +26,14 @@ const schema = {
       addressCountry: "US",
     },
     member: [
-      { "@type": "Organization", name: "Windproof Roof Systems", url: "https://www.windproofroofsystems.com", telephone: "+19547430667" },
-      { "@type": "Organization", name: "Roof Protect Products", url: "https://www.roofprotectproducts.com", telephone: "+19549001973" },
-      { "@type": "Organization", name: "Storm Shield Roof Coating Systems", telephone: "+15613284770" },
-      { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387" },
-      { "@type": "Organization", name: "Fort Lauderdale Roof Coating", url: "https://www.ftlauderdaleroofcoating.com", telephone: "+17543673768" },
-      { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324" },
-      { "@type": "Organization", name: "Roof Paint Miami", url: "https://www.roofpaintmiami.com", telephone: "+17868379064" },
-      { "@type": "Organization", name: "Roof Restorations and Waterproofing Inc", url: "https://www.roofrestorationsandwaterproofinginc.com", telephone: "+18778245823" },
+      { "@type": "Organization", name: "Windproof Roof Systems", url: "https://www.windproofroofsystems.com", telephone: "+19547430667", areaServed: ["Broward County FL", "Miami-Dade County FL", "Palm Beach County FL"] },
+      { "@type": "Organization", name: "Roof Protect Products", url: "https://www.roofprotectproducts.com", telephone: "+19549001973", areaServed: ["South Florida", "United States"] },
+      { "@type": "Organization", name: "Storm Shield Roof Coating Systems", telephone: "+15613284770", areaServed: ["Port St. Lucie FL", "Treasure Coast FL"], address: { "@type": "PostalAddress", addressLocality: "Port St. Lucie", addressRegion: "FL", addressCountry: "US" } },
+      { "@type": "Organization", name: "Roof Shield Coating Systems Inc", telephone: "+19543025387", areaServed: ["Hollywood FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Hollywood", addressRegion: "FL", addressCountry: "US" } },
+      { "@type": "Organization", name: "Fort Lauderdale Roof Coating", url: "https://www.ftlauderdaleroofcoating.com", telephone: "+17543673768", areaServed: ["Fort Lauderdale FL", "Broward County FL"], address: { "@type": "PostalAddress", addressLocality: "Fort Lauderdale", addressRegion: "FL", addressCountry: "US" } },
+      { "@type": "Organization", name: "Best Roof Paint", url: "https://www.bestroofpaint.com", telephone: "+19544001324", areaServed: ["Broward County FL", "Palm Beach County FL", "Martin County FL", "St. Lucie County FL", "Miami-Dade County FL"] },
+      { "@type": "Organization", name: "Roof Paint Miami", url: "https://www.roofpaintmiami.com", telephone: "+17868379064", areaServed: ["Miami-Dade County FL"], address: { "@type": "PostalAddress", addressLocality: "Miami", addressRegion: "FL", addressCountry: "US" } },
+      { "@type": "Organization", name: "Roof Restorations and Waterproofing Inc", url: "https://www.roofrestorationsandwaterproofinginc.com", telephone: "+18778245823", areaServed: ["Fort Lauderdale FL", "South Florida"], address: { "@type": "PostalAddress", streetAddress: "110 E Broward Blvd", addressLocality: "Fort Lauderdale", addressRegion: "FL", postalCode: "33301", addressCountry: "US" } },
     ],
   },
 };
@@ -47,7 +47,7 @@ const partners = [
     specialty: "Tile Roof Restoration & Reglazing",
     territory: "South Florida — Broward, Miami-Dade, Palm Beach",
     description:
-      "Windproof Roof Systems is our authorized specialist for tile roof restoration, reglazing, and decorative color changes. Their technicians are trained in our full Roof Shield coating system and focus on barrel tile, cement tile, and S-tile roofs throughout South Florida. Dade County TAS-106 wind uplift tested.",
+      "Windproof Roof Systems is our authorized specialist for tile roof restoration, reglazing, and decorative color changes. Their technicians are trained in our full Roof Shield coating system — the Dade County TAS-106 uplift-tested system — and focus on barrel tile, cement tile, and S-tile roofs throughout South Florida.",
     services: [
       "Tile Roof Restoration",
       "Tile Reglazing",
@@ -80,7 +80,7 @@ const partners = [
     specialty: "Roofing Product Supply & Distribution",
     territory: "South Florida & National Distribution",
     description:
-      "Roof Protect Products is our authorized product supply and distribution partner — operating under our in-house RoofProtect factory license, the manufacturing label behind FungalShield, SmartShield, and RoofShield. Contractors and property managers can purchase our full range of rubber roof coating products, sealants, and primers direct from the factory in Broward County, Florida.",
+      "Roof Protect Products is our authorized product supply and distribution partner — operating under our in-house RoofProtect factory license, the manufacturing label behind FungalShield, SmartShield, and RoofShield. Contractors and property managers can purchase our full range of rubber roof coating products, sealants, and primers direct from the factory in Broward County, Florida. Roof Protect Products manufactures under strict factory licensing requirements and does not perform installations — installation is handled by Storm Shield directly or by the authorized installer partners on this page.",
     services: [
       "Wholesale Product Supply",
       "Elastomeric Roof Coating Products",
@@ -171,6 +171,7 @@ const partners = [
       "Best Roof Paint is our authorized distributor-installer serving the broadest geographic footprint in the network — from Miami-Dade through the Treasure Coast. Their focus is on helping homeowners and property managers distinguish roofing-grade coatings from consumer paint products, and they carry our full RoofProtect coating line for residential tile, flat, and metal roofs.",
     services: [
       "Elastomeric Roof Coating",
+      "Roof Painting",
       "Flat Roof Waterproofing",
       "Metal Roof Coating",
       "Tile Roof Restoration",
@@ -192,6 +193,7 @@ const partners = [
       "Roof Paint Miami is our authorized specialist for multi-unit and high-density roofing projects in Miami-Dade County. They specialize in condo towers, HOA-governed communities, and gated neighborhoods — providing color sample boards for board approval, phased scheduling around occupied units, and manufacturer-backed documentation packages for HOA insurance and resale requirements.",
     services: [
       "Condo & HOA Roof Coating",
+      "Roof Painting",
       "Flat Roof Waterproofing",
       "Barrel Tile & Cement Tile Restoration",
       "Metal Roof Coating",
@@ -217,6 +219,10 @@ const partners = [
       "Flat Roof Membrane Application",
       "Tile Roof Sealing",
       "Commercial Roof Coating",
+      "Roof Painting",
+      "Elastomeric Roof Coating Installation",
+      "Roof Cleaning & Mildewcide Prep",
+      "Hurricane Pre-Season Sealing",
     ],
     badge: "South Florida",
     linkPaused: false,
@@ -248,7 +254,7 @@ export default function PartnerNetwork() {
             </h1>
             <p className="text-xl text-white/85 leading-relaxed max-w-3xl">
               Storm Shield Paint Systems Inc. installs directly throughout South Florida. Our authorized partner network
-              exists to expand scheduling availability — every partner is factory-trained, legally authorized, and
+              exists to expand scheduling availability — every installer partner is factory-trained, legally authorized, and
               covered by the same manufacturer warranty as Storm Shield.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -301,7 +307,7 @@ export default function PartnerNetwork() {
           <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-2xl font-serif font-bold text-primary mb-3">Why an Authorized Partner Network Exists</h2>
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl">
-              South Florida's demand for our coating systems exceeds any single crew's scheduling capacity. Rather than turn homeowners away, Storm Shield established a legally authorized partner network — contractors who have met strict qualification standards and are legally bound to install our systems using the same materials, the same protocol, and the same quality controls as Storm Shield directly.
+              South Florida's demand for our coating systems exceeds any single crew's scheduling capacity. Rather than turn homeowners away, Storm Shield established a legally authorized partner network — installer partners who have met strict qualification standards and are legally bound to install our systems using the same materials, the same protocol, and the same quality controls as Storm Shield directly. The network also includes Roof Protect Products, our manufacturing and supply division, which supplies product but does not perform installations.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {[
@@ -341,7 +347,7 @@ export default function PartnerNetwork() {
               <ShieldCheck className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <p className="text-sm text-foreground leading-relaxed">
-                  <strong>Warranty assurance — professionally installed jobs:</strong> Every authorized partner installs under Storm Shield's manufacturer warranty — the same warranty you receive when Storm Shield installs directly. Because they are legally bound to our materials and protocol, the warranty source does not change.
+                  <strong>Warranty assurance — professionally installed jobs:</strong> Every authorized installer partner installs under Storm Shield's manufacturer warranty — the same warranty you receive when Storm Shield installs directly. Because they are legally bound to our materials and protocol, the warranty source does not change.
                 </p>
                 <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
                   <strong>Buy &amp; Owner-Applied:</strong> Product purchased for self-installation or third-party contractor application is subject to a limited warranty. Restrictions apply. Full manufacturer warranty terms are available upon request — call 954-210-9614 or contact us before purchase.

@@ -289,7 +289,7 @@ export default function Factory() {
               {
                 icon: Users,
                 title: "Manufacturer + Retailer + Installer = Accountability",
-                desc: "RoofProtect Products manufactures the materials, The Roof Store sells the systems (A+ BBB Rated since 1994), and our exclusive licensed contracting partner, Storm Shield Paint Systems Inc., can install it on your roof. One connected family of companies — full accountability, zero gap.",
+                desc: "RoofProtect Products manufactures the materials, The Roof Store sells the systems (A+ BBB Rated since 1994), and Storm Shield Paint Systems Inc., our licensed contracting arm, can install it on your roof — or an authorized partner from our installer network can. One connected family of companies — full accountability, zero gap.",
               },
             ].map((item, i) => (
               <motion.div

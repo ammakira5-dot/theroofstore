@@ -9,11 +9,11 @@ const heroSlides = [
   {
     headline: (
       <>
-        The Only TAS-106 Uplift-Tested<br />
-        <span className="text-accent">Roof Coating</span> — Factory-Direct
+        The World's Only Miami-Dade<br />
+        TAS-106 Uplift-Tested <span className="text-accent">Roof Coating</span>
       </>
     ),
-    sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. Roof Shield is the world's only liquid roof coating with Dade County TAS-106 Uplift certification — made in our Davie, FL factory and sold direct. Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs.",
+    sub: "Don't Re-Roof. Weatherproof at 1/2 the Cost. Roof Shield is the world's only roof coating tested to Miami-Dade County's TAS-106 uplift standard — the global benchmark for hurricane roofing — made in our Davie, FL factory and sold direct. Flat, Cement Tile, Shingle, Barrel Tile, S-Tile, Metal & Foam Roofs.",
   },
   {
     headline: (

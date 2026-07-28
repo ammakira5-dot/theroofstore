@@ -2,10 +2,15 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { Leaf, Sun, ShieldCheck, Award, Users, MapPin } from "lucide-react";
+import { Leaf, Sun, ShieldCheck, Award, Users, MapPin, Hammer, ShoppingCart } from "lucide-react";
 import { Lightbox, useLightbox } from "@/components/Lightbox";
 
 const BASE = "https://www.theroofstore.net";
+
+// Miami-Dade NOA for the Roof Shield (Silicone) system.
+// When the NOA number is confirmed, set it here (e.g. "NOA 23-0101.01")
+// and the approval card will automatically appear in "The Proof" section.
+const ROOF_SHIELD_NOA: string | null = null;
 
 const factoryPhotos = [
   { src: "/images/factory/exterior.png", alt: "The Roof Store manufacturing facility exterior — Davie Florida roof coating manufacturer", title: "The Roof Store — Roof Coating Manufacturer Davie FL" },
@@ -107,6 +112,24 @@ export default function Factory() {
                 className="rounded-lg shadow-lg border border-white/10 opacity-90 shrink-0"
                 style={{ width: 280 }}
               />
+            </div>
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
+                <Link href="/contact">
+                  <Hammer className="h-5 w-5 mr-2" />
+                  Get a Free Installation Quote
+                </Link>
+              </Button>
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-14 px-8 text-lg w-full sm:w-auto font-bold">
+                <Link href="/shop">
+                  <ShoppingCart className="h-5 w-5 mr-2" />
+                  Buy Factory-Direct Coatings
+                </Link>
+              </Button>
+            </div>
+            <div className="mt-3 flex flex-col sm:flex-row justify-center gap-x-8 gap-y-1 text-sm text-white/60">
+              <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
+              <span>Contractors &amp; DIY — factory pricing, shipped or picked up in Davie</span>
             </div>
           </motion.div>
         </div>
@@ -306,6 +329,12 @@ export default function Factory() {
                 <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">TAS-106 Pull Test</div>
                 <div className="text-white font-bold text-lg">Dade County Approved — Only Rated Coating Worldwide</div>
               </div>
+              {ROOF_SHIELD_NOA && (
+                <div className="bg-white/10 rounded-xl p-5">
+                  <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Miami-Dade Product Approval</div>
+                  <div className="text-white font-bold text-lg">Roof Shield (Silicone) — {ROOF_SHIELD_NOA}</div>
+                </div>
+              )}
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">Wind Rating</div>
                 <div className="text-white font-bold text-lg">135+ MPH — Documented Real Hurricane Performance</div>

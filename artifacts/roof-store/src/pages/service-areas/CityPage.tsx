@@ -237,6 +237,11 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                     );
                   })}
                 </div>
+                <p className="text-sm text-muted-foreground mt-4">
+                  Explore our complete range of{" "}
+                  <Link href="/roof-services" className="text-accent font-semibold hover:underline">roof coating and restoration services</Link>{" "}
+                  available in {city} and throughout South Florida.
+                </p>
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

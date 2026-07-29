@@ -250,6 +250,11 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 </motion.div>
               )}
 
+              <p className="text-sm text-muted-foreground">
+                Every {product.name} installation begins with professional pressure cleaning and surface preparation — explore our full range of{" "}
+                <Link href="/roof-services" className="text-accent font-semibold hover:underline">roof coating and restoration services</Link>.
+              </p>
+
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">Key Benefits</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

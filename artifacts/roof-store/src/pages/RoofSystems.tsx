@@ -279,7 +279,11 @@ export default function RoofSystems() {
             ))}
           </div>
 
-          <p className="text-center text-xs text-muted-foreground mt-8 max-w-2xl mx-auto">
+          <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Every installation starts with professional pressure cleaning and surface preparation — see our full range of{" "}
+            <Link href="/roof-services" className="text-accent font-semibold hover:underline">roof coating and restoration services</Link>.
+          </p>
+          <p className="text-center text-xs text-muted-foreground mt-4 max-w-2xl mx-auto">
             Formulation is determined by our licensed manufacturer's inspection — not every surface qualifies for
             every product. We recommend only what is realistic and best for the roof, the client's goals, and the budget.
           </p>

@@ -41,7 +41,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 ## User preferences
 
-- **HARD RULE — Never build, edit, or create any file until the user has explicitly said "yes", "go ahead", "do it", or equivalent. Presenting a plan and receiving no clear approval is NOT permission to proceed. Ambiguous replies must be treated as questions, not approvals.**
+- **HARD RULE — PRODUCTION PROTOCOL (re-confirmed July 29 after a violation): Never build, edit, or create any file until the user has explicitly said "yes", "go ahead", "do it", or equivalent. This applies to EVERY request — even ones that sound like direct instructions (e.g. "add links to X"). The required flow is: (1) present the plan / flow chart of exactly what will change and where; (2) wait for explicit agreement; (3) only then build. Presenting a plan and receiving no clear approval is NOT permission to proceed. Ambiguous replies must be treated as questions, not approvals. No exceptions.**
 - Always confirm the plan before making changes
 - Always confirm before pushing ANY file live to any FTP server — show a preview first, wait for explicit approval
 - Do NOT suggest deploying unless the user explicitly says "publish" or "deploy"

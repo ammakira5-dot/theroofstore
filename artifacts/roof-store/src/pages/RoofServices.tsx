@@ -20,7 +20,10 @@ const services = [
     description:
       "Over time, roof tiles lose their protective glaze and become porous, faded, and vulnerable to water absorption. Our professional reglazing service restores the tile's original protective barrier — available as a clear coating (built on our Fungal Shield clear sealer) that seals and protects while preserving your roof's original color, or as a tinted finish for full color restoration. Ideal for concrete and cement tile roofs.",
     benefits: ["Restores original color vibrancy", "Clear finish option — no color change", "Seals porous surfaces", "Prevents algae and mold growth", "Extends tile life significantly"],
-    links: [{ label: "Fits this need: Fungal Shield (RP1)", href: "/products/fungalshield" }],
+    links: [
+      { label: "Fits this need: Fungal Shield (RP1)", href: "/products/fungalshield" },
+      { label: "Spanish tile repair & maintenance", href: "/spanish-tile-roof-maintenance" },
+    ],
   },
   {
     icon: Paintbrush,
@@ -28,7 +31,11 @@ const services = [
     description:
       "Faded, chalky, or discolored tile gets a full professional repaint with SmartShield elastomeric coating — available in 3,000+ tintable colors including BASF Cool Pigment shades that reflect heat. Suitable for Spanish tile, flat cement tile, and clay barrel tile throughout South Florida.",
     benefits: ["3,000+ color options", "BASF Cool Pigment Technology", "UV & mold resistant formula", "10–15 year performance life"],
-    links: [{ label: "Fits this need: Smart Shield (RP2)", href: "/products/smartshield" }],
+    links: [
+      { label: "Fits this need: Smart Shield (RP2)", href: "/products/smartshield" },
+      { label: "Spanish tile (S-tile / barrel tile) roof painting", href: "/spanish-tile-roof-painting" },
+      { label: "Spanish tile roof coating", href: "/spanish-tile-roof-coating" },
+    ],
   },
   {
     icon: Paintbrush,
@@ -36,7 +43,11 @@ const services = [
     description:
       "Our full tile restoration process goes beyond simple reglazing. We repair cracked tiles, repoint ridge caps, clean entire roof surfaces, and apply a multi-coat weatherproofing system that transforms aging roofs into like-new condition.",
     benefits: ["Structural crack repairs", "Ridge cap repointing", "Full surface deep cleaning", "Multi-coat protective system"],
-    links: [{ label: "Fits this need: Roof Shield (RP3)", href: "/products/roofshield" }],
+    links: [
+      { label: "Fits this need: Roof Shield (RP3)", href: "/products/roofshield" },
+      { label: "Cement tile roof restoration", href: "/cement-tile-roof-restoration" },
+      { label: "Spanish tile roof waterproofing", href: "/spanish-tile-roof-waterproofing" },
+    ],
   },
   {
     icon: Droplets,

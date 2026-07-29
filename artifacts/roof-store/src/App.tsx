@@ -37,6 +37,8 @@ import SiliconeRoofCoating from "@/pages/SiliconeRoofCoating";
 import PartnerNetwork from "@/pages/PartnerNetwork";
 import RoofReplacementAlternative from "@/pages/RoofReplacementAlternative";
 import TileRoofPainting from "@/pages/TileRoofPainting";
+import TileServicePage from "@/pages/tile-services/TileServicePage";
+import { getTileServicePage } from "@/pages/tile-services/data";
 import RoofCoatingLifespan from "@/pages/RoofCoatingLifespan";
 import DiyVsPro from "@/pages/DiyVsPro";
 import HurricaneRoofPrep from "@/pages/HurricaneRoofPrep";
@@ -133,6 +135,12 @@ function Router() {
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/tile-roof-painting" component={TileRoofPainting} />
+      {["spanish-tile-roof-coating", "spanish-tile-roof-painting", "spanish-tile-roof-waterproofing", "spanish-tile-roof-maintenance", "cement-tile-roof-restoration"].map((slug) => (
+        <Route key={slug} path={`/${slug}`} component={() => {
+          const page = getTileServicePage(slug);
+          return page ? <TileServicePage page={page} /> : <NotFound />;
+        }} />
+      ))}
       <Route path="/roof-coating-lifespan-florida" component={RoofCoatingLifespan} />
       <Route path="/diy-vs-pro-roof-coating" component={DiyVsPro} />
       <Route path="/hurricane-roof-prep" component={HurricaneRoofPrep} />
@@ -166,10 +174,10 @@ function Router() {
       <Route path="/roof-sealing-broward-county" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-restoration" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/roof-repair" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/tile-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/tile-roof-restoration" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/cement-tile-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
-      <Route path="/barrel-tile-roof-coating" component={() => <RedirectTo to="/roof-services" />} />
+      <Route path="/tile-roof-coating" component={() => <RedirectTo to="/spanish-tile-roof-coating" />} />
+      <Route path="/tile-roof-restoration" component={() => <RedirectTo to="/cement-tile-roof-restoration" />} />
+      <Route path="/cement-tile-roof-coating" component={() => <RedirectTo to="/cement-tile-roof-restoration" />} />
+      <Route path="/barrel-tile-roof-coating" component={() => <RedirectTo to="/spanish-tile-roof-coating" />} />
       <Route path="/roof-certification" component={() => <RedirectTo to="/roof-services" />} />
       <Route path="/additional-roof-life-certification" component={() => <RedirectTo to="/roof-services" />} />
 
@@ -254,9 +262,9 @@ function Router() {
       <Route path="/fl/Lauderdale-Lakes-roof-coating.php" component={() => <RedirectTo to="/service-areas/broward-county/lauderdale-lakes" />} />
       <Route path="/fl/Margate-shingle-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/margate" />} />
       <Route path="/fl/North-Lauderdale-metal-roof-restoration.php" component={() => <RedirectTo to="/service-areas/broward-county/north-lauderdale" />} />
-      <Route path="/fl/Miramar-cement-tile-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/miramar" />} />
+      <Route path="/fl/Miramar-cement-tile-roof-painting.php" component={() => <RedirectTo to="/cement-tile-roof-restoration" />} />
       <Route path="/fl/Lighthouse-Point-roof-waterproofing.php" component={() => <RedirectTo to="/service-areas/broward-county/lighthouse-point" />} />
-      <Route path="/fl/Sunrise-Tamarac-spanish-tile-roof-painting.php" component={() => <RedirectTo to="/service-areas/broward-county/sunrise" />} />
+      <Route path="/fl/Sunrise-Tamarac-spanish-tile-roof-painting.php" component={() => <RedirectTo to="/spanish-tile-roof-painting" />} />
       <Route path="/fl/Jupiter-roof-painting.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/jupiter" />} />
       <Route path="/fl/Palm-Beach-roof-painting.php" component={() => <RedirectTo to="/service-areas/palm-beach-county" />} />
       <Route path="/fl/Boca-Raton-roof-restoration.php" component={() => <RedirectTo to="/service-areas/palm-beach-county/boca-raton" />} />
@@ -302,9 +310,9 @@ function Router() {
       <Route path="/services/commercial-metal-roof-restoration.php" component={() => <RedirectTo to="/commercial-roofs" />} />
       <Route path="/services/commercial-metal-roof-painting.php" component={() => <RedirectTo to="/commercial-roofs" />} />
       <Route path="/services/additional-roof-life-certification.php" component={() => <RedirectTo to="/roof-life-certification" />} />
-      <Route path="/services/spanish-tile-roof-coating.php" component={() => <RedirectTo to="/roof-systems" />} />
-      <Route path="/services/residential-spanish-tile-roof-waterproofing.php" component={() => <RedirectTo to="/roof-systems" />} />
-      <Route path="/services/cement-tile-roof-restoration.php" component={() => <RedirectTo to="/roof-systems" />} />
+      <Route path="/services/spanish-tile-roof-coating.php" component={() => <RedirectTo to="/spanish-tile-roof-coating" />} />
+      <Route path="/services/residential-spanish-tile-roof-waterproofing.php" component={() => <RedirectTo to="/spanish-tile-roof-waterproofing" />} />
+      <Route path="/services/cement-tile-roof-restoration.php" component={() => <RedirectTo to="/cement-tile-roof-restoration" />} />
       <Route path="/services/:slug" component={() => <RedirectTo to="/roof-services" />} />
 
       {/* ── Legacy — root-level .php pages ── */}

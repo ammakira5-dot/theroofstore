@@ -18,8 +18,8 @@ const services = [
     icon: Star,
     title: "Roof Tile Reglazing",
     description:
-      "Over time, roof tiles lose their protective glaze and become porous, faded, and vulnerable to water absorption. Our professional reglazing service restores the tile's original protective barrier, sealing out moisture and restoring color uniformity.",
-    benefits: ["Restores original color vibrancy", "Seals porous surfaces", "Prevents algae and mold growth", "Extends tile life significantly"],
+      "Over time, roof tiles lose their protective glaze and become porous, faded, and vulnerable to water absorption. Our professional reglazing service restores the tile's original protective barrier — available as a clear coating (built on our Fungal Shield clear sealer) that seals and protects while preserving your roof's original color, or as a tinted finish for full color restoration. Ideal for concrete and cement tile roofs.",
+    benefits: ["Restores original color vibrancy", "Clear finish option — no color change", "Seals porous surfaces", "Prevents algae and mold growth", "Extends tile life significantly"],
     links: [{ label: "Fits this need: Fungal Shield (RP1)", href: "/products/fungalshield" }],
   },
   {

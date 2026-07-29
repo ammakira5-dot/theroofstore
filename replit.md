@@ -89,6 +89,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 ### 🟡 B — Agent-ready (just say go ahead)
 
 **theroofstore.net codebase:**
+- **Nav swap — DONE July 29 (needs publish)** — "Roof Systems" promoted to main horizontal navbar; "Services" (/roof-services) moved into the More dropdown (desktop + mobile), per owner.
 - **Roof Shield gallery on /roof-systems — DONE July 29 (needs publish)** — rebuilt as 7 before/after pairs with red BEFORE / green AFTER badges, same photos + labels + layout style as /products/roofshield (owner's preferred look). First 2 pairs beside the text, remaining 5 in a "More Before & After" grid below. Lightbox still works.
 - **Visible bucket product photos — DONE July 28 (needs publish)** — /products and /shop cards previously had NO visible product images (bucket was schema-only). Added the 5-gal bucket photo (roofshield-bucket.webp) as a visible image in the right column of all 3 product cards on both pages, per owner ("space to the right"). Schema/OG images for all 3 products also unified to the bucket photo. Note: bucket label reads "Smart Shield Coating" — owner OK using it for all three.
 - **Sitemap lastmod fix — DONE + LIVE July 28** — generator now derives real per-page dates from git history (11 distinct dates, July 4–28) instead of stamping today on all 153 URLs. Verified live on prod. Owner: resubmit sitemap.xml in GSC.

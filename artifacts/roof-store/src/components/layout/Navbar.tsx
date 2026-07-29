@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "/about", label: "About Us" },
-  { href: "/roof-services", label: "Services" },
+  { href: "/roof-systems", label: "Roof Systems" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/reviews", label: "Reviews" },
   { href: "/contact", label: "Contact Us" },
 ];
 
 const moreLinks = [
-  { href: "/roof-systems", label: "Roof Systems" },
+  { href: "/roof-services", label: "Services" },
   { href: "/roof-coating-florida", label: "Roof Coating Guide" },
   { href: "/projects", label: "Projects" },
   { href: "/faq", label: "FAQ" },

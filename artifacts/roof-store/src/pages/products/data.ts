@@ -84,7 +84,7 @@ export const fungalShield: ProductData = {
   shopAvailable: false,
   sku: "RP1",
   mpn: "RP1",
-  productImage: `${BASE}/images/fungalshield-product.webp`,
+  productImage: `${BASE}/images/roofshield-bucket.webp`,
   pdfUrl: "/docs/roofprotect-brochure.pdf",
   pdfLabel: "RoofProtect Product Brochure (PDF)",
 };
@@ -188,7 +188,7 @@ export const smartShield: ProductData = {
   shopAvailable: true,
   sku: "RP2",
   mpn: "RP2",
-  productImage: `${BASE}/images/smartshield-product.webp`,
+  productImage: `${BASE}/images/roofshield-bucket.webp`,
   pdfUrl: "/docs/roofprotect-product-presentation.pdf",
   pdfLabel: "RoofProtect Product Presentation (PDF)",
   galleryImages: [

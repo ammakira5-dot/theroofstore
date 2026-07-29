@@ -285,7 +285,7 @@ export default function Products() {
       "@type": "Product",
       name: "Fungal Shield (RP1)",
       description: "Florida's clear roof tile sealer and anti-fungal coating — kills black streaking, mold, algae, and fungal growth at the cellular level. Bonds to tile, metal, and flat deck surfaces. 5-year product warranty.",
-      image: `${BASE}/images/fungalshield-product.webp`,
+      image: `${BASE}/images/roofshield-bucket.webp`,
       url: `${BASE}/products/fungalshield`,
       sku: "RP1",
       brand: { "@type": "Brand", name: "RoofProtect Products" },
@@ -296,7 +296,7 @@ export default function Products() {
       "@type": "Product",
       name: "Smart Shield (RP2)",
       description: "Mid-grade elastomeric roof coating with BASF Cool Pigment Technology. Available in 3,000+ colors. FP&L utility-validated energy savings. 10-year product warranty.",
-      image: `${BASE}/images/smartshield-product.webp`,
+      image: `${BASE}/images/roofshield-bucket.webp`,
       url: `${BASE}/products/smartshield`,
       sku: "RP2",
       brand: { "@type": "Brand", name: "RoofProtect Products" },
@@ -461,6 +461,13 @@ export default function Products() {
 
                     {/* Right column — specs */}
                     <div>
+                      <img
+                        src="/images/roofshield-bucket.webp"
+                        alt={`${product.name} roof coating 5-gallon pail — RoofProtect liquid rubber, manufactured in Davie FL`}
+                        loading="lazy"
+                        className="w-full max-w-xs mx-auto mb-6 drop-shadow-md"
+                        data-testid={`product-image-${i}`}
+                      />
                       <div className="text-xs font-bold uppercase tracking-wider text-foreground mb-4">Technical Specifications</div>
                       <div className="divide-y border rounded-xl overflow-hidden mb-6">
                         {product.specs.map((spec, j) => (

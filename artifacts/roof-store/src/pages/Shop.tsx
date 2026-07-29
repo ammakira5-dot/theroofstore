@@ -101,7 +101,7 @@ export default function Shop() {
             "@type": "Product",
             name: "Fungal Shield (RP1) — Anti-Fungal Roof Coating",
             description: "FungalShield (RP1) is a clear roof tile sealer that eliminates black streaking, algae, mold, and fungal growth on Florida tile, metal, and flat roofs. 5-Year Product Warranty.",
-            image: `${BASE}/images/fungalshield-product.webp`,
+            image: `${BASE}/images/roofshield-bucket.webp`,
             url: `${BASE}/products/fungalshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
             offers: { "@type": "Offer", priceCurrency: "USD", price: "190", availability: "https://schema.org/InStock", url: `${BASE}/products/fungalshield` },
@@ -113,7 +113,7 @@ export default function Shop() {
             "@type": "Product",
             name: "Smart Shield (RP2) — Tintable Waterproof Tile Roof Coating",
             description: "SmartShield (RP2) is a reflective cool roof coating that waterproofs tile roofs in 3,000+ colors. 5× the thickness of standard roof paint, true waterproofing, energy savings. 5-Year Product Warranty.",
-            image: `${BASE}/images/smartshield-product.webp`,
+            image: `${BASE}/images/roofshield-bucket.webp`,
             url: `${BASE}/products/smartshield`,
             brand: { "@type": "Brand", name: "The Roof Store" },
             offers: { "@type": "Offer", priceCurrency: "USD", price: "285", availability: "https://schema.org/InStock", url: `${BASE}/products/smartshield` },
@@ -253,6 +253,13 @@ export default function Shop() {
 
                     {/* Right — price + buy */}
                     <div className="lg:border-l lg:pl-10">
+                      <img
+                        src="/images/roofshield-bucket.webp"
+                        alt={`${product.name} roof coating 5-gallon pail — RoofProtect liquid rubber, manufactured in Davie FL`}
+                        loading="lazy"
+                        className="w-full max-w-[200px] mx-auto mb-6 drop-shadow-md"
+                        data-testid={`shop-product-image-${i}`}
+                      />
                       <div className="text-center mb-6">
                         <div className="text-xs text-muted-foreground uppercase tracking-widest mb-1">Price per 5-gallon</div>
                         <div className="text-5xl font-bold text-primary">{product.price}</div>

@@ -12,6 +12,7 @@ const services = [
     description:
       "Professional roof pressure cleaning and soft washing are the essential first step before any tile roof painting, waterproofing, or flat roof sealing. We use calibrated low-pressure washing and chemical soft wash treatments to safely deep-clean Spanish tile, flat cement tile, clay barrel tile, and flat decks — removing algae, mold, black streaking, and biological buildup without damaging the tile surface.",
     benefits: ["Soft wash treatment safe for aged or fragile tile", "Safe for all tile types — clay, cement, and composite", "Required before any painting, coating, or sealing", "Removes algae, mold, moss, and black streaking"],
+    links: [{ label: "Learn more about pressure cleaning & soft washing", href: "/roof-pressure-cleaning" }],
   },
   {
     icon: Star,
@@ -19,6 +20,7 @@ const services = [
     description:
       "Over time, roof tiles lose their protective glaze and become porous, faded, and vulnerable to water absorption. Our professional reglazing service restores the tile's original protective barrier, sealing out moisture and restoring color uniformity.",
     benefits: ["Restores original color vibrancy", "Seals porous surfaces", "Prevents algae and mold growth", "Extends tile life significantly"],
+    links: [{ label: "Fits this need: Fungal Shield (RP1)", href: "/products/fungalshield" }],
   },
   {
     icon: Paintbrush,
@@ -26,6 +28,7 @@ const services = [
     description:
       "Faded, chalky, or discolored tile gets a full professional repaint with SmartShield elastomeric coating — available in 3,000+ tintable colors including BASF Cool Pigment shades that reflect heat. Suitable for Spanish tile, flat cement tile, and clay barrel tile throughout South Florida.",
     benefits: ["3,000+ color options", "BASF Cool Pigment Technology", "UV & mold resistant formula", "10–15 year performance life"],
+    links: [{ label: "Fits this need: Smart Shield (RP2)", href: "/products/smartshield" }],
   },
   {
     icon: Paintbrush,
@@ -33,6 +36,7 @@ const services = [
     description:
       "Our full tile restoration process goes beyond simple reglazing. We repair cracked tiles, repoint ridge caps, clean entire roof surfaces, and apply a multi-coat weatherproofing system that transforms aging roofs into like-new condition.",
     benefits: ["Structural crack repairs", "Ridge cap repointing", "Full surface deep cleaning", "Multi-coat protective system"],
+    links: [{ label: "Fits this need: Roof Shield (RP3)", href: "/products/roofshield" }],
   },
   {
     icon: Droplets,
@@ -40,6 +44,7 @@ const services = [
     description:
       "Flat and low-slope roofs demand a different solution — our roof coating creates a seamless, fully adhered membrane that eliminates every potential leak point. No seams, no joints, no weak spots.",
     benefits: ["Seamless waterproof membrane", "Handles ponding water", "Thermal shock resistant", "Commercial and residential grade"],
+    links: [{ label: "Fits this need: Roof Shield (RP3)", href: "/products/roofshield" }],
   },
   {
     icon: ShieldCheck,
@@ -47,6 +52,10 @@ const services = [
     description:
       "Our premium multi-layer elastomeric and acrylic roof coating systems are engineered for maximum longevity and protection. Applied in multiple coats over a prepared substrate, these reflective cool roof coating systems provide decades of reliable weatherproof performance.",
     benefits: ["Multi-layer elastomeric application system", "10–25 year performance warranty", "Reflective cool roof coating finish", "Full roof system approach"],
+    links: [
+      { label: "Compare all 3 roof coating systems", href: "/roof-systems" },
+      { label: "Reflective color coating: Smart Shield (RP2)", href: "/products/smartshield" },
+    ],
   },
   {
     icon: Layers,
@@ -54,6 +63,7 @@ const services = [
     description:
       "Metal roofs face their own set of challenges in South Florida — rust, corrosion, seam leaks, and intense heat gain. Our metal roof coating systems seal seams and fasteners, stop corrosion before it spreads, and reflect solar heat to lower cooling costs, all without the expense of a full metal roof replacement.",
     benefits: ["Corrosion & rust prevention", "Seam and fastener sealing", "Reflective heat-reducing finish", "Extends metal roof lifespan"],
+    links: [{ label: "See which system fits your metal roof", href: "/roof-systems" }],
   },
   {
     icon: Wind,
@@ -61,6 +71,10 @@ const services = [
     description:
       "Florida's hurricane season demands more than ordinary roofing. Our hurricane protection services reinforce your existing roof's weakest points — ridge caps, eave areas, tile edges — sealing them against the force of tropical storm winds.",
     benefits: ["Ridge and hip reinforcement", "Edge sealing and flashing", "Wind uplift resistance", "Pre-season inspections available"],
+    links: [
+      { label: "Fits this need: Roof Shield (RP3) — TAS-106 uplift rated", href: "/products/roofshield" },
+      { label: "About the TAS-106 certification", href: "/tas-106-certified-roof-coating" },
+    ],
   },
   {
     icon: Wrench,
@@ -68,6 +82,7 @@ const services = [
     description:
       "Don't let small problems become expensive emergencies. Repair and maintenance services address cracked tiles, failed sealants, hairline fractures, and water infiltration before they compromise the structure of your roof. Clients are always alerted to any required repairs prior to application. Structural repairs are generally the responsibility of the property owner.",
     benefits: ["Preventive maintenance plans", "Free assessment included"],
+    links: [{ label: "Schedule a free assessment", href: "/contact" }],
   },
 ];
 
@@ -145,6 +160,15 @@ export default function RoofServices() {
                     </li>
                   ))}
                 </ul>
+                {service.links && service.links.length > 0 && (
+                  <div className="mt-5 pt-4 border-t space-y-2">
+                    {service.links.map((l, j) => (
+                      <Link key={j} href={l.href} className="flex items-center gap-1.5 text-sm text-accent font-semibold hover:underline">
+                        {l.label} <ArrowRight className="h-3.5 w-3.5 shrink-0" />
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

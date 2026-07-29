@@ -108,6 +108,10 @@ const systems: RoofSystem[] = [
       "Lifetime Warranty — maintenance-free, transferable & renewable",
     ],
     gallery: [
+      { src: "/api/storage/public-objects/roofshield/rs-prep-1-before.jpg", alt: "Roof Shield preparation — filling open valleys between tiles with coating" },
+      { src: "/api/storage/public-objects/roofshield/rs-prep-2-after.jpg", alt: "Ridge caps sealed with polyurethane as part of Roof Shield multi-layer system" },
+      { src: "/api/storage/public-objects/roofshield/rs-prep-3-before.jpg", alt: "Roof before final Roof Shield top coat application" },
+      { src: "/api/storage/public-objects/roofshield/rs-prep-4-after.jpg", alt: "Roof after Roof Shield top coat — monolithic sealed surface, job completed" },
       { src: "/images/projects/clay-tile-before.png", alt: "Composite clay tile roof before Roof Shield waterproof coating" },
       { src: "/images/projects/clay-tile-after.png", alt: "Composite clay tile roof after Roof Shield waterproof coating" },
       { src: "/images/projects/flat-cement-before.png", alt: "Flat cement tile roof before Roof Shield waterproof coating" },

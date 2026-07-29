@@ -113,6 +113,7 @@ export default function TrademarkEvidenceFile() {
               <tbody>
                 {[
                   { date: "1994", event: "The Roof Store founded in Davie, Florida. First liquid rubber roof coating system introduced to the South Florida market under this name.", party: "Prior Rights Holder" },
+                  { date: "1998–1999", event: "Fort Lauderdale Home Show trade booth photographed — Anthony's Enterprises Inc. dba All Surface Restorations & Preservations booth displays the banner \"Don't Reroof — Waterproof! ½ THE COST OF A REROOF\" with the founder present. Dated physical-world proof of public commercial use of the brand slogan 22+ years before respondent's domain registration. See Exhibit G-2.", party: "Prior Rights Holder" },
                   { date: "July 29, 2002", event: "theroofstore.net domain registered. Continuous, unbroken commercial use begins online.", party: "Prior Rights Holder" },
                   { date: "2010s", event: "RoofProtect Products established as manufacturing entity. FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) systems developed and commercialized under The Roof Store brand.", party: "Prior Rights Holder" },
                   { date: "2017", event: "Dmitry Lipinskiy founds Roofing Insights YouTube channel. Begins building national roofing contractor audience that will later be used to amplify the theroof.store brand.", party: "Respondent (background)" },
@@ -370,6 +371,31 @@ export default function TrademarkEvidenceFile() {
             </p>
             <div className="border border-amber-400 bg-amber-50 rounded p-4 text-xs font-sans text-amber-900 leading-relaxed mt-3">
               <strong>Note for counsel — address discrepancy to clarify before filing:</strong> Exhibit G's brochure lists the business address as <strong>4700 Sheridan Street, Suite J, Hollywood, FL 33021</strong>. Current live schema on theroofstore.net lists the address as <strong>4801 S University Dr, Davie, FL 33328</strong>. This reflects a physical relocation of the business HQ from Hollywood to Davie at some point after this brochure version was in circulation — both addresses are legitimate, they simply correspond to different periods of operation. Recommend adding a date-of-relocation qualifier to Exhibit G's framing (e.g., "address current as of [year of brochure distribution]") before filing. A utility bill, lease agreement, or Florida Sunbiz registered agent address update showing the move date would formally close this gap and prevent opposing counsel from characterizing the discrepancy as inconsistency.
+            </div>
+          </section>
+
+          {/* Exhibit G-2 — 1998/1999 Fort Lauderdale Home Show Booth Photograph */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX-B. Exhibit G-2 — Fort Lauderdale Home Show Booth Photograph (1998–1999)</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              Original photograph of the company's trade show booth at the <strong>Fort Lauderdale Home Show, 1998–1999</strong>, with the founder present at the booth. The booth signage displays: (1) the corporate banner <strong>"Anthony's Enterprises, Inc. — All Surface Restorations &amp; Preservations"</strong>; (2) the brand slogan banner <strong>"Don't Reroof —" / "Waterproof!" / "½ THE COST OF A REROOF"</strong>; (3) an overhead placard reading <strong>"All Surface Restorations &amp; Preservation"</strong>; and (4) before/after roof coating display boards and product buckets — the same product category and value proposition marketed by The Roof Store today.
+            </p>
+            <div className="border-2 border-gray-300 rounded overflow-hidden">
+              <div className="bg-gray-100 px-4 py-2 text-xs font-sans flex justify-between items-center border-b border-gray-300">
+                <span className="font-semibold">EXHIBIT G-2 — Fort Lauderdale Home Show Booth, 1998–1999</span>
+                <span className="text-gray-500">Source: Company photo archive · Added: July 29, 2026</span>
+              </div>
+              <img
+                src="/images/ft-lauderdale-home-show-1998-1999-booth.png"
+                alt="Exhibit G-2: 1998–1999 Fort Lauderdale Home Show booth of Anthony's Enterprises Inc. dba All Surface Restorations & Preservations displaying the Don't Reroof — Waterproof at half the cost of a reroof banner"
+                className="w-full max-w-lg mx-auto"
+              />
+            </div>
+            <p className="text-xs font-sans text-gray-500 mt-2 italic">
+              Note: Banner reads "Anthony's Enterprises, Inc. / All Surface Restorations &amp; Preservations" above the slogan "Don't Reroof — Waterproof! ½ THE COST OF A REROOF." Founder pictured at right. Before/after coating sample boards and 5-gallon product buckets visible in booth.
+            </p>
+            <div className="border border-green-500 bg-green-50 rounded p-4 text-xs font-sans text-green-900 leading-relaxed mt-3">
+              <strong>Evidentiary value:</strong> This photograph is dated physical-world proof that the exact slogan still used by The Roof Store today — "Don't Re-Roof, Waterproof at ½ the Cost" (see the 1999 TV commercial, Exhibit I, and the current homepage) — was in public commercial use at a major consumer trade show <strong>22–23 years before the respondent registered theroof.store (August 2021)</strong>. The corporate name on the banner, <strong>Anthony's Enterprises, Inc.</strong>, is the same entity independently confirmed by Florida Sunbiz records (Exhibit H) and by the 2002–2005 domain registration records (Exhibit F) as owned by the same individual who owns The Roof Store / Storm Shield Paint Systems Inc. today — directly corroborating the unbroken chain of title from the 1990s to the present. The photograph also corroborates the "Fort Lauderdale Home Show, 1994" reference in the printed brochure (Exhibit G), establishing a pattern of recurring Home Show presence across the 1990s.
             </div>
           </section>
 
@@ -810,6 +836,7 @@ export default function TrademarkEvidenceFile() {
                   ["Jul 22, 2026", "Exhibit K, L, M added to evidence file", "Google Search Console brand impact data (Exhibit K), public prior rights notice page (Exhibit L), and automated monitoring system description (Exhibit M) added to this evidence file. Document date updated from July 8 to July 22, 2026."],
                   ["Jul 23, 2026", "GA4 installed; GSC linked since Jan 30, 2024 confirmed", "Google Analytics 4 (Measurement ID: G-8XWMZHZ7E0) installed on theroofstore.net. GSC already linked to GA4 since January 30, 2024. GA4 will now begin building a corroborating traffic record for ongoing damages measurement."],
                   ["Jul 23, 2026", "Exhibit K upgraded to full 16-month GSC data; Exhibit E-2 created", "GSC Performance export (.xlsx) obtained for query 'the roof store', 16-month window (March 2025 – July 2026) — the maximum retention period Google provides. Results: 797 impressions, 11 clicks, position 11.24, CTR 1.38%. At expected branded CTR (30%), site should have received ~239 clicks — it received 11 (~95% click-capture loss). Month-by-month breakdown added as Exhibit E-2. All three evidence files (TrademarkEvidenceFile, TrademarkEvidencePrint, RedemptionEvidenceGoogle1) updated with real measured numbers replacing prior 3-month estimates. Google Legal Troubleshooter answer updated with 16-month data."],
+                  ["Jul 29, 2026", "1998–1999 Home Show booth photograph located and added", "Original photograph of the Fort Lauderdale Home Show booth (1998–1999) located in company archive and added as Exhibit G-2. Booth banner shows \"Anthony's Enterprises, Inc. — All Surface Restorations & Preservations\" with the slogan \"Don't Reroof — Waterproof! ½ THE COST OF A REROOF\" and the founder present. Corroborates chain of title (Exhibits F, H), the 1999 TV commercial slogan (Exhibit I), and pre-2000 public commercial use — 22+ years before respondent's domain registration. Timeline (Section II) updated with 1998–1999 entry."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>

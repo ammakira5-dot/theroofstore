@@ -8,6 +8,7 @@ const BASE = "https://www.theroofstore.net";
 
 const milestones = [
   { year: "1994", event: "Founded in Davie, Florida, bringing the first liquid elastomeric roof coating system to the South Florida market — the same family-run business that operates The Roof Store today." },
+  { year: "1998–99", event: "Our booth at the Fort Lauderdale Home Show carries the banner that still defines us today: \"Don't Reroof — Waterproof! ½ the Cost of a Reroof\" — with before-and-after coating boards and our founder on hand to talk roofs." },
   { year: "1999", event: "Our \"Don't Re-Roof, Waterproof at 1/2 the Cost\" television commercial airs across Broward County, putting a live Roof Shield installation — and our founder's own voice — in front of thousands of Florida homeowners." },
   { year: "2002", event: "We launch theroofstore.net, extending our reach from local TV and print into a full digital presence that has run continuously ever since." },
   { year: "2010s", event: "We grow our in-house manufacturing capability, standing up RoofProtect Products to formulate FungalShield (RP1), SmartShield (RP2), and RoofShield (RP3) ourselves — bringing production in-house alongside our sales and installation teams." },
@@ -233,7 +234,21 @@ export default function About() {
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-3xl mx-auto mb-16">
+            <div className="rounded-2xl overflow-hidden shadow-xl border">
+              <img
+                src="/images/ft-lauderdale-home-show-1998-1999-booth.png"
+                alt="The Roof Store's founder at the company booth, Fort Lauderdale Home Show 1998–1999, with the banner Don't Reroof — Waterproof at half the cost of a reroof"
+                className="w-full"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-sm text-muted-foreground mt-4 text-center">
+              Our founder at the Fort Lauderdale Home Show, 1998–1999 — the same "Don't Reroof — Waterproof! ½ the Cost of a Reroof" message we still stand behind today, with before-and-after coating boards on display.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {milestones.map((m, i) => (
               <motion.div
                 key={i}

@@ -18,6 +18,7 @@ interface RoofSystem {
   description: string;
   features: string[];
   gallery?: { src: string; alt: string }[];
+  pairLabels?: string[];
   beforeSrc?: string;
   afterSrc?: string;
   beforeLabel?: string;
@@ -122,6 +123,15 @@ const systems: RoofSystem[] = [
       { src: "/images/projects/flat-deck-after-2.png", alt: "Commercial built-up flat deck roof fully restored after Roof Shield waterproof coating" },
       { src: "/api/storage/public-objects/roofshield/rs-flat-seams-before.png", alt: "Flat roof retrofit — all seams taped to create a monolithic seamless system" },
       { src: "/api/storage/public-objects/roofshield/rs-flat-coated-after.png", alt: "Flat roof after Roof Shield retrofit — fully coated monolithic seamless waterproof system completed" },
+    ],
+    pairLabels: [
+      "Preparation — We Retrofit a Monolithic Seamless System: Fill All Field Spaces, Ridge Caps & Open Valleys",
+      "Top Coat — Job Completed",
+      "Composite Clay Tile Roof",
+      "Flat Cement Tile Roof",
+      "Spanish Tile Roof",
+      "Flat Deck Roof",
+      "Flat Roof Retrofit — All Seams Taped to Create a Monolithic Seamless System",
     ],
   },
 ];
@@ -325,6 +335,40 @@ export default function RoofSystems() {
                           </div>
                         )}
                       </>
+                    ) : system.pairLabels && system.gallery ? (
+                      <div className="rounded-2xl border border-border bg-card shadow-sm p-4">
+                        <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4 px-1">{system.name} — Before &amp; After</div>
+                        <div className="space-y-6">
+                          {system.pairLabels.slice(0, 2).map((label, pi) => (
+                            <div key={pi}>
+                              <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-3">{label}</div>
+                              <div className="grid grid-cols-2 gap-3">
+                                <div
+                                  className="relative rounded-xl overflow-hidden border shadow-sm cursor-zoom-in group"
+                                  onClick={() => lb.open(galleryOffset(i) + pi * 2)}
+                                >
+                                  <img src={system.gallery![pi * 2].src} alt={system.gallery![pi * 2].alt} title={`${system.gallery![pi * 2].alt} — ${system.name} | The Roof Store`} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                                  <div className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                                    Before
+                                  </div>
+                                </div>
+                                <div
+                                  className="relative rounded-xl overflow-hidden border shadow-sm cursor-zoom-in group"
+                                  onClick={() => lb.open(galleryOffset(i) + pi * 2 + 1)}
+                                >
+                                  <img src={system.gallery![pi * 2 + 1].src} alt={system.gallery![pi * 2 + 1].alt} title={`${system.gallery![pi * 2 + 1].alt} — ${system.name} | The Roof Store`} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                                  <div className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                                    After
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        {system.pairLabels.length > 2 && (
+                          <p className="text-xs text-muted-foreground text-right mt-3 pr-1">+{system.pairLabels.length - 2} more before &amp; after pairs below ↓</p>
+                        )}
+                      </div>
                     ) : system.gallery && system.gallery.length > 0 ? (
                       <div className="rounded-2xl border border-border bg-card shadow-sm p-3">
                         <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3 px-1">{system.name} — Photos</div>
@@ -382,7 +426,49 @@ export default function RoofSystems() {
                   </div>
                 </motion.div>
 
-                {!system.beforeSrc && system.gallery && system.gallery.length > 4 && (
+                {!system.beforeSrc && system.pairLabels && system.gallery && system.pairLabels.length > 2 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="mt-12"
+                  >
+                    <div className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4">More Before &amp; After — {system.name}</div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+                      {system.pairLabels.slice(2).map((label, pj) => {
+                        const pairIdx = pj + 2;
+                        return (
+                          <div key={pj}>
+                            <div className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-3">{label}</div>
+                            <div className="grid grid-cols-2 gap-3">
+                              <div
+                                className="relative rounded-xl overflow-hidden border shadow-sm cursor-zoom-in group"
+                                onClick={() => lb.open(galleryOffset(i) + pairIdx * 2)}
+                              >
+                                <img src={system.gallery![pairIdx * 2].src} alt={system.gallery![pairIdx * 2].alt} title={`${system.gallery![pairIdx * 2].alt} — ${system.name} | The Roof Store`} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                                <div className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                                  Before
+                                </div>
+                              </div>
+                              <div
+                                className="relative rounded-xl overflow-hidden border shadow-sm cursor-zoom-in group"
+                                onClick={() => lb.open(galleryOffset(i) + pairIdx * 2 + 1)}
+                              >
+                                <img src={system.gallery![pairIdx * 2 + 1].src} alt={system.gallery![pairIdx * 2 + 1].alt} title={`${system.gallery![pairIdx * 2 + 1].alt} — ${system.name} | The Roof Store`} className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                                <div className="absolute top-3 left-3 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wide shadow">
+                                  After
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                )}
+
+                {!system.beforeSrc && !system.pairLabels && system.gallery && system.gallery.length > 4 && (
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

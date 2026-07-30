@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 
-const today = "July 22, 2026";
+const today = "July 30, 2026";
 
 export default function TrademarkEvidenceFile() {
   return (
@@ -114,6 +114,7 @@ export default function TrademarkEvidenceFile() {
                 {[
                   { date: "1994", event: "The Roof Store founded in Davie, Florida. First liquid rubber roof coating system introduced to the South Florida market under this name.", party: "Prior Rights Holder" },
                   { date: "1998–1999", event: "Fort Lauderdale Home Show trade booth photographed — Anthony's Enterprises Inc. dba All Surface Restorations & Preservations booth displays the banner \"Don't Reroof — Waterproof! ½ THE COST OF A REROOF\" with the founder present. Dated physical-world proof of public commercial use of the brand slogan 22+ years before respondent's domain registration. See Exhibit G-2.", party: "Prior Rights Holder" },
+                  { date: "Circa 2000", event: "Original \"Anthony Enterprises\" online store launches — a functioning HTML shopping-cart storefront selling Thermocoat roof coating under the \"Don't Reroof — Weatherproof at ½ the Cost\" banner, with the Roofshield™ SSS-shield bucket displayed. Recovered intact from the hosting server July 30, 2026. See Exhibit G-3.", party: "Prior Rights Holder" },
                   { date: "July 29, 2002", event: "theroofstore.net domain registered. Continuous, unbroken commercial use begins online.", party: "Prior Rights Holder" },
                   { date: "2010s", event: "RoofProtect Products established as manufacturing entity. FungalShield (RP1), SmartShield (RP2), RoofShield (RP3) systems developed and commercialized under The Roof Store brand.", party: "Prior Rights Holder" },
                   { date: "2017", event: "Dmitry Lipinskiy founds Roofing Insights YouTube channel. Begins building national roofing contractor audience that will later be used to amplify the theroof.store brand.", party: "Respondent (background)" },
@@ -396,6 +397,31 @@ export default function TrademarkEvidenceFile() {
             </p>
             <div className="border border-green-500 bg-green-50 rounded p-4 text-xs font-sans text-green-900 leading-relaxed mt-3">
               <strong>Evidentiary value:</strong> This photograph is dated physical-world proof that the exact slogan still used by The Roof Store today — "Don't Re-Roof, Waterproof at ½ the Cost" (see the 1999 TV commercial, Exhibit I, and the current homepage) — was in public commercial use at a major consumer trade show <strong>22–23 years before the respondent registered theroof.store (August 2021)</strong>. The corporate name on the banner, <strong>Anthony's Enterprises, Inc.</strong>, is the same entity independently confirmed by Florida Sunbiz records (Exhibit H) and by the 2002–2005 domain registration records (Exhibit F) as owned by the same individual who owns The Roof Store / Storm Shield Paint Systems Inc. today — directly corroborating the unbroken chain of title from the 1990s to the present. The photograph also corroborates the "Fort Lauderdale Home Show, 1994" reference in the printed brochure (Exhibit G), establishing a pattern of recurring Home Show presence across the 1990s.
+            </div>
+          </section>
+
+          {/* Exhibit G-3 — Circa-2000 Original Online Store (Recovered from Hosting Server) */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">IX-C. Exhibit G-3 — Original "Anthony Enterprises" Online Store, Circa 2000 (Recovered from Hosting Server)</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              On July 30, 2026, the complainant's original HTML-era online store was located <strong>fully intact on the company's hosting server</strong>, in the <code>/store/</code> directory of the legacy theroofstore.net web root — 12 .htm pages and 52 supporting graphics files (64 files total), untouched since being superseded by later site versions. The storefront homepage (<code>index.htm</code>, reproduced below as rendered in a browser) displays: (1) the site title <strong>"Anthony Enterprises."</strong>; (2) the banner slogan <strong>"DON'T REROOF — WEATHERPROOF at ½ the Cost"</strong>; (3) a <strong>Roofshield™-branded 5-gallon product bucket bearing the SSS shield logo</strong>; (4) a functioning shopping cart (Show Basket / Checkout buttons, PayPal payment graphic) selling <strong>Thermocoat roof coating at $129.25</strong>; and (5) a copyright footer reading "Anthony Enterprises. All rights reserved." The page source contains the year <strong>2000</strong>.
+            </p>
+            <div className="border-2 border-gray-300 rounded overflow-hidden">
+              <div className="bg-gray-100 px-4 py-2 text-xs font-sans flex justify-between items-center border-b border-gray-300">
+                <span className="font-semibold">EXHIBIT G-3 — "Anthony Enterprises" Online Store Homepage (index.htm), Circa 2000</span>
+                <span className="text-gray-500">Source: Recovered from hosting server /store/ directory · Added: July 30, 2026</span>
+              </div>
+              <img
+                src="/images/anthony-enterprises-online-store-circa-2000.jpg"
+                alt="Exhibit G-3: circa-2000 Anthony Enterprises online store homepage with Don't Reroof — Weatherproof at half the cost banner, Roofshield bucket with SSS shield logo, and Thermocoat product for sale with shopping cart"
+                className="w-full max-w-lg mx-auto"
+              />
+            </div>
+            <p className="text-xs font-sans text-gray-500 mt-2 italic">
+              Note: The complete 64-file snapshot (12 .htm pages: index, aboutus, catalog, basket, order01, search, contact, condit, confirm, tool01, 31, c35 — plus all original graphics) was preserved unaltered from the server on July 30, 2026 and archived in the project repository. Server file timestamps show the files as last modified December 7, 2019, when they were migrated onto the current hosting account with content intact.
+            </p>
+            <div className="border border-green-500 bg-green-50 rounded p-4 text-xs font-sans text-green-900 leading-relaxed mt-3">
+              <strong>Evidentiary value:</strong> This is first-party primary-source proof — recovered directly from the company's own hosting server, not from a third-party archive — that the complainant operated a functioning <strong>e-commerce roofing products store around the year 2000, approximately 21 years before the respondent registered theroof.store (August 2021)</strong>. The store is branded to <strong>Anthony Enterprises</strong>, the same entity documented in the Sunbiz records (Exhibit H), the 2002–2005 WHOIS records (Exhibit F), and the 1998–1999 Home Show booth banner (Exhibit G-2) — extending the unbroken chain of title into online retail commerce. The banner slogan is the same "Don't Reroof" message shown at the 1998–1999 Home Show booth and in the 1999 TV commercial (Exhibit I), and the <strong>Roofshield™ bucket with the SSS shield logo</strong> ties the store directly to the product line still sold by The Roof Store today. This exhibit independently corroborates the Wayback Machine archive record (Exhibit F) with physical files under the complainant's continuous custody.
             </div>
           </section>
 
@@ -713,7 +739,7 @@ export default function TrademarkEvidenceFile() {
                 </ul>
               </div>
               <div className="border border-gray-300 rounded p-4 bg-gray-50">
-                <p className="font-semibold mb-2">Log Entries to Date (as of July 22, 2026)</p>
+                <p className="font-semibold mb-2">Log Entries to Date (as of July 30, 2026)</p>
                 <ul className="space-y-1 text-xs text-gray-700">
                   <li>Jul 8, 2026 10:25 AM — Baseline snapshot captured (first automated check)</li>
                   <li>Jul 8, 2026 11:37 AM — Automated check failed to reach target site</li>
@@ -837,6 +863,7 @@ export default function TrademarkEvidenceFile() {
                   ["Jul 23, 2026", "GA4 installed; GSC linked since Jan 30, 2024 confirmed", "Google Analytics 4 (Measurement ID: G-8XWMZHZ7E0) installed on theroofstore.net. GSC already linked to GA4 since January 30, 2024. GA4 will now begin building a corroborating traffic record for ongoing damages measurement."],
                   ["Jul 23, 2026", "Exhibit K upgraded to full 16-month GSC data; Exhibit E-2 created", "GSC Performance export (.xlsx) obtained for query 'the roof store', 16-month window (March 2025 – July 2026) — the maximum retention period Google provides. Results: 797 impressions, 11 clicks, position 11.24, CTR 1.38%. At expected branded CTR (30%), site should have received ~239 clicks — it received 11 (~95% click-capture loss). Month-by-month breakdown added as Exhibit E-2. All three evidence files (TrademarkEvidenceFile, TrademarkEvidencePrint, RedemptionEvidenceGoogle1) updated with real measured numbers replacing prior 3-month estimates. Google Legal Troubleshooter answer updated with 16-month data."],
                   ["Jul 29, 2026", "1998–1999 Home Show booth photograph located and added", "Original photograph of the Fort Lauderdale Home Show booth (1998–1999) located in company archive and added as Exhibit G-2. Booth banner shows \"Anthony's Enterprises, Inc. — All Surface Restorations & Preservations\" with the slogan \"Don't Reroof — Waterproof! ½ THE COST OF A REROOF\" and the founder present. Corroborates chain of title (Exhibits F, H), the 1999 TV commercial slogan (Exhibit I), and pre-2000 public commercial use — 22+ years before respondent's domain registration. Timeline (Section II) updated with 1998–1999 entry."],
+                  ["Jul 30, 2026", "Circa-2000 original online store recovered from hosting server and added", "The original \"Anthony Enterprises\" HTML online store located fully intact in the /store/ directory of the legacy theroofstore.net web root — 12 .htm pages + 52 graphics (64 files). Homepage shows the \"Don't Reroof — Weatherproof at ½ the Cost\" banner, Roofshield™ SSS-shield bucket, and a working shopping cart selling Thermocoat at $129.25; page source contains the year 2000. Complete snapshot preserved unaltered in the project repository. Added as Exhibit G-3; timeline (Section II) updated with circa-2000 entry."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>

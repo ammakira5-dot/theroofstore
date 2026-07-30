@@ -371,3 +371,9 @@ id = "Gc3GG30C5WqWwmhqqJE4_"
 uri = "file://artifacts/roof-store/public/images/roofshield-bucket.webp"
 type = "image"
 title = "roofshield-bucket.webp — 133KB — used in Product schema"
+
+[[outputs]]
+id = "ogj_UBrOcHg5BU3LCYSBZ"
+uri = "file://screenshots/old-store-index-htm-2000.jpg"
+type = "image"
+title = "Your original online store, circa 2000 — Anthony Enterprises (index.htm as rendered)"

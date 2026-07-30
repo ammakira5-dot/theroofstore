@@ -145,25 +145,6 @@ export default function Factory() {
         </div>
       </section>
 
-      <section className="py-14 bg-muted">
-        <div className="container px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {stats.map((s, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">{s.value}</div>
-                <div className="text-muted-foreground text-sm font-medium">{s.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-16 bg-background border-b">
         <div className="container px-4 max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -187,13 +168,17 @@ export default function Factory() {
               className="space-y-6"
             >
               <h2 className="text-3xl font-serif font-bold text-primary">What brings you here?</h2>
-              <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
+              <div className="bg-card border-2 border-accent rounded-xl p-6 shadow-md space-y-3 relative">
+                <div className="absolute -top-3 left-5 bg-accent text-white text-[11px] font-bold uppercase tracking-wide px-2.5 py-0.5 rounded-full">Most Popular</div>
                 <div className="text-accent font-bold text-sm uppercase tracking-wide">Need it installed?</div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Spanish tile, flat roof, metal, shingle — our licensed crew installs every system we manufacture. South Florida's only TAS-106 hurricane-tested coating. See finished jobs, pick your system, get a free estimate.
                 </p>
                 <div className="flex flex-wrap gap-3 pt-1">
-                  <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white">
+                  <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white font-bold">
+                    <Link href="/contact">Get a Free Estimate</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
                     <Link href="/projects">See Our Work</Link>
                   </Button>
                   <Button asChild size="sm" variant="outline">
@@ -204,9 +189,6 @@ export default function Factory() {
                   </Button>
                   <Button asChild size="sm" variant="outline">
                     <Link href="/commercial-roof-coating-hoa">Commercial &amp; HOA</Link>
-                  </Button>
-                  <Button asChild size="sm" variant="outline">
-                    <Link href="/contact">Free Estimate</Link>
                   </Button>
                 </div>
               </div>
@@ -238,6 +220,25 @@ export default function Factory() {
                 </a>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 bg-muted">
+        <div className="container px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {stats.map((s, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">{s.value}</div>
+                <div className="text-muted-foreground text-sm font-medium">{s.label}</div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

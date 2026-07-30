@@ -138,6 +138,8 @@ const STATIC_FILES: Record<string, string[]> = {
   "/spanish-tile-roof-waterproofing": [p("tile-services/data.ts"), p("tile-services/TileServicePage.tsx")],
   "/spanish-tile-roof-maintenance": [p("tile-services/data.ts"), p("tile-services/TileServicePage.tsx")],
   "/cement-tile-roof-restoration": [p("tile-services/data.ts"), p("tile-services/TileServicePage.tsx")],
+  "/shingle-roof-coating": [p("tile-services/data.ts"), p("tile-services/TileServicePage.tsx")],
+  "/metal-roof-coating": [p("tile-services/data.ts"), p("tile-services/TileServicePage.tsx")],
   "/partner-network": [p("PartnerNetwork.tsx")],
   "/roof-pressure-cleaning": [p("RoofPressureCleaning.tsx")],
   "/the-original-roof-store-florida": [p("OriginalRoofStore.tsx")],

@@ -66,6 +66,7 @@ const services = [
     links: [
       { label: "Compare all 3 roof coating systems", href: "/roof-systems" },
       { label: "Reflective color coating: Smart Shield (RP2)", href: "/products/smartshield" },
+      { label: "Shingle roof coating & restoration", href: "/shingle-roof-coating" },
     ],
   },
   {
@@ -74,7 +75,10 @@ const services = [
     description:
       "Metal roofs face their own set of challenges in South Florida — rust, corrosion, seam leaks, and intense heat gain. Our metal roof coating systems seal seams and fasteners, stop corrosion before it spreads, and reflect solar heat to lower cooling costs, all without the expense of a full metal roof replacement.",
     benefits: ["Corrosion & rust prevention", "Seam and fastener sealing", "Reflective heat-reducing finish", "Extends metal roof lifespan"],
-    links: [{ label: "See which system fits your metal roof", href: "/roof-systems" }],
+    links: [
+      { label: "Commercial metal roof coating & restoration", href: "/metal-roof-coating" },
+      { label: "See which system fits your metal roof", href: "/roof-systems" },
+    ],
   },
   {
     icon: Wind,

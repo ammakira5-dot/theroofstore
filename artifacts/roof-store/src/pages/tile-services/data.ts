@@ -40,6 +40,7 @@ export interface TileServicePageData {
   faqs: TileServiceFaq[];
   legacyCities?: { heading: string; body: string; cities: TileServiceCity[] };
   related: { href: string; label: string }[];
+  ctaHeading?: string;
 }
 
 const SHARED_PROCESS: TileServiceStep[] = [
@@ -575,6 +576,210 @@ export const tileServicePages: TileServicePageData[] = [
       { href: "/roof-replacement-alternative-florida", label: "Roof Replacement Alternative" },
       { href: "/roof-services", label: "All Roof Coating & Restoration Services" },
     ],
+  },
+  {
+    slug: "shingle-roof-coating",
+    title: "Shingle Roof Coating, Painting & Waterproofing — South Florida | The Roof Store",
+    description:
+      "Professional shingle roof coating, painting, waterproofing, and restoration for South Florida homes. Elastomeric systems that seal aging asphalt shingles, restore color, and extend roof life — up to 50–60% less than replacement. Since 1994 — 954-210-9614.",
+    serviceType: "Shingle Roof Coating",
+    badge: "Shingle Roof Coating — South Florida",
+    h1: "Shingle Roof Coating, Painting & Waterproofing",
+    heroSub:
+      "Restore and waterproof your asphalt shingle roof with professional elastomeric coating — sealing granule loss, restoring color, and extending roof life. Serving Broward, Miami-Dade, and Palm Beach Counties since 1994.",
+    introHeading: "Why Coat a Shingle Roof?",
+    intro: [
+      "Asphalt shingle is the most common roof type in Florida — and the one that ages fastest under our sun. UV exposure dries out the asphalt, granules wash into the gutters, and shingles curl, crack, and fade. Most homeowners are told the only fix is a full replacement.",
+      "There is another option. A professional-grade elastomeric shingle roof coating seals the shingle surface, locks down remaining granules, and builds a flexible waterproof membrane over the entire roof — restoring color and weather protection without a tear-off.",
+      "Applied correctly, shingle roof coating extends the serviceable life of the roof, reflects heat to lower cooling bills, and can save up to 50–60% of the cost of a full shingle roof replacement. The Roof Store has provided residential shingle roof coating, painting, and waterproofing in South Florida since 1994.",
+    ],
+    benefits: [
+      {
+        heading: "Extends shingle roof life",
+        body: "Coating seals out the UV and moisture that dry, curl, and crack asphalt shingles — adding years of serviceable life to an aging roof.",
+      },
+      {
+        heading: "Seals granule loss",
+        body: "The elastomeric membrane locks down remaining granules and covers exposed asphalt, stopping the wear cycle that ends in replacement.",
+      },
+      {
+        heading: "True waterproofing",
+        body: "Shingle roof waterproofing creates a seamless flexible membrane across the field of the roof — sealing hairline gaps, nail heads, and worn tabs.",
+      },
+      {
+        heading: "Restores color",
+        body: "Shingle roof painting with SmartShield's 3,000+ tintable colors takes a faded, blotchy shingle roof back to a uniform, like-new finish.",
+      },
+      {
+        heading: "Reduces cooling bills",
+        body: "Reflective cool-pigment coating lowers roof surface temperature — dark shingle roofs are among Florida's biggest attic heat collectors.",
+      },
+      {
+        heading: "Fraction of replacement cost",
+        body: "Restoring with a coating system can save up to 50–60% of the money that would otherwise go into a complete shingle roof replacement.",
+      },
+    ],
+    process: [
+      {
+        step: "1",
+        title: "Roof Inspection & Assessment",
+        desc: "We assess shingle condition — granule loss, curling, cracked or missing tabs — and identify any repairs needed before coating. You are informed of all findings prior to the start of work.",
+      },
+      {
+        step: "2",
+        title: "Soft Washing & Surface Cleaning",
+        desc: "Shingle roofs are soft-washed — never high-pressure blasted — to remove algae, mold, and dirt without stripping granules. A clean surface means maximum adhesion.",
+      },
+      {
+        step: "3",
+        title: "Repairs & Priming",
+        desc: "Damaged tabs are repaired or replaced, exposed nail heads sealed, and a primer/sealer locks down the porous shingle surface so the coating bonds properly.",
+      },
+      {
+        step: "4",
+        title: "Multi-Coat Application",
+        desc: "The elastomeric coating is applied in multiple coats to the manufacturer's mil-thickness specification, building a seamless flexible membrane across the entire shingle field.",
+      },
+    ],
+    systemName: "SmartShield",
+    systemHref: "/products/smartshield",
+    systemHeading: "Our Shingle Roof Coating System",
+    systemBody:
+      "For shingle roofs we install SmartShield (RP2) — a reflective elastomeric coating in 3,000+ colors with BASF Cool Pigment Technology, manufactured in-house by RoofProtect Products in Davie, FL. It flexes with the shingle through Florida's daily heat cycles instead of cracking like standard paint, and its anti-fungal formula stops the black streaking common on aging shingle roofs.",
+    systemPoints: [
+      "SmartShield: 3,000+ tintable colors, cool-pigment reflectance, true waterproofing",
+      "About 5× the thickness of standard roof paint — a real membrane, not a cosmetic film",
+      "Anti-fungal, mold-resistant — stops black streaking on shingle roofs",
+      "Elastomeric formula flexes with the roof through Florida's heat cycles",
+      "Manufactured in-house — factory-direct pricing, no middleman markup",
+    ],
+    faqs: [
+      {
+        q: "Can you coat or paint an asphalt shingle roof?",
+        a: "Yes — with the right product and preparation. Professional elastomeric coatings like SmartShield are applied directly over asphalt shingles after soft washing, repairs, and priming. Unlike standard paint, they flex with the shingle, resist UV, and truly waterproof the surface.",
+      },
+      {
+        q: "How much does shingle roof coating save vs. replacement?",
+        a: "Restoring a shingle roof with a professional coating system typically saves up to 50–60% compared to the cost of a complete shingle roof replacement — and avoids days of tear-off construction and landfill waste.",
+      },
+      {
+        q: "How long does a coated shingle roof last?",
+        a: "A professional elastomeric application typically lasts 10–15 years in Florida depending on the system, number of coats, and roof condition at the time of application.",
+      },
+      {
+        q: "Is every shingle roof a candidate for coating?",
+        a: "No — a shingle roof with widespread structural damage, saturated decking, or extensive missing shingles may need repairs first or may not be a candidate. Every job starts with an honest inspection, and you are told exactly what we find before any work begins.",
+      },
+    ],
+    related: [
+      { href: "/metal-roof-coating", label: "Metal Roof Coating & Restoration" },
+      { href: "/spanish-tile-roof-coating", label: "Spanish Tile Roof Coating" },
+      { href: "/roof-replacement-alternative-florida", label: "Roof Replacement Alternative" },
+      { href: "/roof-services", label: "All Roof Coating & Restoration Services" },
+    ],
+    ctaHeading: "Ready to Protect Your Shingle Roof?",
+  },
+  {
+    slug: "metal-roof-coating",
+    title: "Commercial Metal Roof Coating, Painting & Waterproofing — South Florida | The Roof Store",
+    description:
+      "Commercial metal roof coating, painting, waterproofing, and restoration in South Florida. Elastomeric systems that stop rust, seal seams and fasteners, and reflect heat — without a metal roof replacement. Since 1994 — 954-210-9614.",
+    serviceType: "Metal Roof Coating",
+    badge: "Commercial Metal Roof Coating — South Florida",
+    h1: "Commercial Metal Roof Coating, Painting & Waterproofing",
+    heroSub:
+      "Stop rust, seal seams, and reflect South Florida heat with professional elastomeric metal roof coating — for warehouses, commercial buildings, and metal-roofed homes. Serving Broward, Miami-Dade, and Palm Beach Counties since 1994.",
+    introHeading: "Why Coat a Metal Roof?",
+    intro: [
+      "Metal roofs face their own set of challenges in South Florida — salt air corrosion, rust creep at cut edges and fasteners, seam leaks from daily thermal movement, and intense heat gain that drives cooling costs up.",
+      "A professional elastomeric metal roof coating system addresses all of them at once: rust-inhibiting preparation stops corrosion before it spreads, seam and fastener sealing eliminates the leak points that fail first, and a reflective top coat drops the roof surface temperature dramatically.",
+      "Applied correctly, commercial metal roof restoration extends the roof's serviceable life for a fraction of the cost of a metal roof replacement — with no tenant disruption, no tear-off, and no weeks of construction. The Roof Store has coated, painted, and waterproofed metal roofs across South Florida since 1994.",
+    ],
+    benefits: [
+      {
+        heading: "Stops rust & corrosion",
+        body: "Rust-inhibiting preparation and coating seal the metal surface against South Florida's salt air — stopping corrosion before it spreads.",
+      },
+      {
+        heading: "Seals seams & fasteners",
+        body: "Seams, laps, and fastener heads — the points where every metal roof leaks first — are individually sealed before the field coating goes on.",
+      },
+      {
+        heading: "Reflective heat reduction",
+        body: "A reflective coating dramatically lowers metal roof surface temperature — cutting heat gain and air conditioning costs for the building below.",
+      },
+      {
+        heading: "Handles thermal movement",
+        body: "Metal roofs expand and contract more than any other roof type. Elastomeric coating flexes with that daily movement instead of cracking.",
+      },
+      {
+        heading: "No replacement, no disruption",
+        body: "Restoration happens over the existing roof — no tear-off, no tenant disruption, and a fraction of the cost of metal roof replacement.",
+      },
+      {
+        heading: "Commercial & residential grade",
+        body: "The same systems protect warehouses, strip centers, and industrial buildings as well as metal-roofed South Florida homes.",
+      },
+    ],
+    process: [
+      {
+        step: "1",
+        title: "Roof Inspection & Assessment",
+        desc: "We assess the metal panel type and condition — rust, seam separation, fastener back-out, coating failure — and identify repairs needed before work begins. You are informed of all findings prior to the start of work.",
+      },
+      {
+        step: "2",
+        title: "Pressure Cleaning & Rust Treatment",
+        desc: "The roof is pressure cleaned to remove dirt, chalking, and loose coating, and rust areas are mechanically prepared and treated with rust-inhibiting primer.",
+      },
+      {
+        step: "3",
+        title: "Seam & Fastener Sealing",
+        desc: "Every seam, lap, penetration, and fastener head is individually sealed — eliminating the leak points that fail first on metal roofs.",
+      },
+      {
+        step: "4",
+        title: "Multi-Coat Application",
+        desc: "The elastomeric coating is applied in multiple coats to the manufacturer's mil-thickness specification, building a seamless reflective membrane across the entire roof.",
+      },
+    ],
+    systemName: "SmartShield & RoofShield",
+    systemHref: "/products/smartshield",
+    systemHeading: "Our Metal Roof Coating Systems",
+    systemBody:
+      "For metal roofs we install SmartShield (RP2) — a reflective elastomeric coating in 3,000+ colors with BASF Cool Pigment Technology — or, where maximum waterproofing is needed, RoofShield (RP3), the original liquid applied rubber roof shield system. Both are manufactured in-house by RoofProtect Products in Davie, FL — the installer and the factory are the same company.",
+    systemPoints: [
+      "SmartShield: 3,000+ tintable colors, cool-pigment reflectance, true waterproofing",
+      "RoofShield: seamless liquid-applied rubber membrane for maximum waterproofing",
+      "Rust-inhibiting preparation and primers for corroded panels",
+      "Elastomeric formulas flex with metal's daily expansion and contraction",
+      "Manufactured in-house — factory-direct pricing, no middleman markup",
+    ],
+    faqs: [
+      {
+        q: "Can you paint or coat a rusted metal roof?",
+        a: "Yes — surface rust is mechanically prepared, treated with rust-inhibiting primer, and then coated. Widespread structural rust-through requires panel repairs first; every job starts with an honest inspection and you are told exactly what we find.",
+      },
+      {
+        q: "How much does metal roof coating save vs. replacement?",
+        a: "Restoring a metal roof with a professional coating system typically saves up to 50–60% compared to the cost of a complete metal roof replacement — with no tear-off and no business disruption.",
+      },
+      {
+        q: "Does coating stop metal roof seam leaks?",
+        a: "Yes — seams, laps, and fastener heads are individually sealed before the field coats go on, and the finished elastomeric membrane flexes with the roof's daily thermal movement so the seal lasts.",
+      },
+      {
+        q: "How much cooler is a coated metal roof?",
+        a: "A reflective coating can lower metal roof surface temperature dramatically — reflective cool-pigment finishes reflect sunlight and UV instead of absorbing it, reducing heat transferred into the building and lowering cooling costs.",
+      },
+    ],
+    related: [
+      { href: "/commercial-roofs", label: "Commercial Roof Systems" },
+      { href: "/shingle-roof-coating", label: "Shingle Roof Coating & Restoration" },
+      { href: "/roof-systems", label: "Compare All Roof Coating Systems" },
+      { href: "/roof-services", label: "All Roof Coating & Restoration Services" },
+    ],
+    ctaHeading: "Ready to Protect Your Metal Roof?",
   },
 ];
 

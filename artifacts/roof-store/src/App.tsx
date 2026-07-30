@@ -135,7 +135,7 @@ function Router() {
       <Route path="/partner-network" component={PartnerNetwork} />
       <Route path="/roof-replacement-alternative-florida" component={RoofReplacementAlternative} />
       <Route path="/tile-roof-painting" component={TileRoofPainting} />
-      {["spanish-tile-roof-coating", "spanish-tile-roof-painting", "spanish-tile-roof-waterproofing", "spanish-tile-roof-maintenance", "cement-tile-roof-restoration"].map((slug) => (
+      {["spanish-tile-roof-coating", "spanish-tile-roof-painting", "spanish-tile-roof-waterproofing", "spanish-tile-roof-maintenance", "cement-tile-roof-restoration", "shingle-roof-coating", "metal-roof-coating"].map((slug) => (
         <Route key={slug} path={`/${slug}`} component={() => {
           const page = getTileServicePage(slug);
           return page ? <TileServicePage page={page} /> : <NotFound />;

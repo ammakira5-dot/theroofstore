@@ -644,9 +644,21 @@ const EXACT_REDIRECTS = {
   "/fl/West-Miami-roof-sealing.php": "/service-areas/miami-dade-county/west-miami",
 
   // /services/ PHP pages — specific matches
-  "/services/commercial-metal-roof-coating.php": "/commercial-roofs",
-  "/services/commercial-metal-roof-restoration.php": "/commercial-roofs",
-  "/services/commercial-metal-roof-painting.php": "/commercial-roofs",
+  "/services/commercial-metal-roof-coating.php": "/metal-roof-coating",
+  "/services/commercial-metal-roof-restoration.php": "/metal-roof-coating",
+  "/services/commercial-metal-roof-painting.php": "/metal-roof-coating",
+  "/services/commercial-metal-roof-waterproofing.php": "/metal-roof-coating",
+  "/services/commercial-metal-roof-repairandmaintenance.php": "/metal-roof-coating",
+  "/services/shingle-roof-waterproofing.php": "/shingle-roof-coating",
+  "/services/shingle-roof-painting.php": "/shingle-roof-coating",
+  "/services/shingle-roof-restoration.php": "/shingle-roof-coating",
+  "/services/shingle-roof-repairandmaintenance.php": "/shingle-roof-coating",
+  "/services/residential-shingle-roof-coating.php": "/shingle-roof-coating",
+  "/services/cement-tile-roof-painting.php": "/cement-tile-roof-restoration",
+  "/services/cement-tile-roof-waterproofing.php": "/cement-tile-roof-restoration",
+  "/projects/commercial-shingle-roof-waterproofing.php": "/shingle-roof-coating",
+  "/projects/commercial-flat-metal-roof-waterproofing.php": "/metal-roof-coating",
+  "/projects/commercial-flat-metal-roof-waterproofing08102021.php.php": "/metal-roof-coating",
   "/services/additional-roof-life-certification.php": "/roof-life-certification",
   "/services/spanish-tile-roof-coating.php": "/spanish-tile-roof-coating",
   "/services/residential-spanish-tile-roof-waterproofing.php": "/spanish-tile-roof-waterproofing",
@@ -691,6 +703,22 @@ const EXACT_REDIRECTS = {
   "/residential-spanish-tile-roof-waterproofing": "/spanish-tile-roof-waterproofing",
   "/spanishs-or-Barrel-tile-roof-waterproofing": "/spanish-tile-roof-waterproofing",
   "/residential-cement-tile-roof-waterproofing": "/cement-tile-roof-restoration",
+  "/cement-tile-roof-painting": "/cement-tile-roof-restoration",
+  "/cement-tile-roof-waterproofing": "/cement-tile-roof-restoration",
+  "/shingle-roof-waterproofing": "/shingle-roof-coating",
+  "/shingle-roof-painting": "/shingle-roof-coating",
+  "/shingle-roof-restoration": "/shingle-roof-coating",
+  "/shingle-roof-repairandmaintenance": "/shingle-roof-coating",
+  "/shingle-roof-repair": "/shingle-roof-coating",
+  "/residential-shingle-roof-coating": "/shingle-roof-coating",
+  "/commercial-metal-roof-coating": "/metal-roof-coating",
+  "/commercial-metal-roof-painting": "/metal-roof-coating",
+  "/commercial-metal-roof-waterproofing": "/metal-roof-coating",
+  "/commercial-metal-roof-restoration": "/metal-roof-coating",
+  "/commercial-metal-roof-repairandmaintenance": "/metal-roof-coating",
+  "/metal-roof-painting": "/metal-roof-coating",
+  "/metal-roof-restoration": "/metal-roof-coating",
+  "/metal-roof-waterproofing": "/metal-roof-coating",
   "/roof-certification": "/roof-services",
   "/additional-roof-life-certification": "/roof-services",
 
@@ -742,6 +770,145 @@ const EXACT_REDIRECTS = {
   "/questions-to-ask": "/questions",
   "/questions-to-ask-your-roofing-contractor": "/questions",
 
+  // ── Ancient .htm/.html-era pages (pre-PHP site, found via Wayback Machine
+  // archive July 30 2026 — see docs/wayback-results-2026-07-30.txt). These
+  // URLs were indexed for years and may still hold aged backlinks; each 301s
+  // to its closest modern equivalent instead of 404ing.
+  // Home / index variants
+  "/123.html": "/",
+  "/home.htm": "/",
+  "/index.html": "/",
+  "/index3.html": "/",
+  "/indextest.html": "/",
+  "/sitemap.html": "/",
+  // About / company
+  "/aboutus2.htm": "/about",
+  "/about-us.html": "/about",
+  // FAQ / questions / warranty
+  "/faq.htm": "/questions",
+  "/faq.html": "/questions",
+  "/faqs2.htm": "/questions",
+  "/questions.html": "/questions",
+  "/warranty.htm": "/questions",
+  "/warranty2.htm": "/questions",
+  "/warranty.html": "/questions",
+  // Pricing
+  "/prices.html": "/pricing",
+  "/prices2.htm": "/pricing",
+  "/pricing.htm": "/pricing",
+  // Contact
+  "/contact.htm": "/contact",
+  "/contactform2.htm": "/contact",
+  "/contact-us.html": "/contact",
+  // Reviews / references / clients
+  "/testamonials.htm": "/reviews",
+  "/testimonials.html": "/reviews",
+  "/references.html": "/reviews",
+  "/clients1.htm": "/reviews",
+  "/clients2.htm": "/reviews",
+  "/clients3.htm": "/reviews",
+  "/commercialclients.htm": "/reviews",
+  "/commercial-clients.html": "/reviews",
+  "/residentialclients.htm": "/reviews",
+  "/miamidaderef.htm": "/reviews",
+  "/miami-dade-references.html": "/reviews",
+  "/palmbeachref.htm": "/reviews",
+  "/palm-beach-references.html": "/reviews",
+  // Commercial
+  "/com_01.htm": "/commercial-roofs",
+  "/commercial.htm": "/commercial-roofs",
+  "/commercial.html": "/commercial-roofs",
+  "/commercial22.htm": "/commercial-roofs",
+  "/commercial_main.htm": "/commercial-roofs",
+  "/commercial.swf": "/commercial-roofs",
+  // Residential / services
+  "/res_02.htm": "/roof-services",
+  "/residential22.htm": "/roof-services",
+  "/residential-roofing.html": "/roof-services",
+  "/roofing-contractors.html": "/roof-services",
+  "/roof-maintenance.html": "/roof-services",
+  "/service1.htm": "/roof-services",
+  "/types-of-roofing-materials.html": "/roof-services",
+  "/shingleroofsystems.htm": "/shingle-roof-coating",
+  "/roof-replacement-vs-reroofing-roof-repair.html": "/roof-replacement-alternative-florida",
+  // Old product catalog pages
+  "/50rubber.html": "/products",
+  "/rp40rubber.html": "/products",
+  "/rp40rubber-mini-fiber.html": "/products",
+  "/rp-rubber-cualking-tube.html": "/products",
+  "/calcium-carbonate.html": "/products",
+  "/cement-catalyst.html": "/products",
+  "/construction-grade.html": "/products",
+  "/elastomeric.html": "/products",
+  "/gloss-enamel.html": "/products",
+  "/gravel-lock.html": "/products",
+  "/grey-cement.html": "/products",
+  "/micro-white.html": "/products",
+  "/polyester-reinforcing.html": "/products",
+  "/sealer-200.html": "/products",
+  "/semi-gloss.html": "/products",
+  "/thermocoat.html": "/products",
+  "/wall-trim.html": "/products",
+  "/weather-proof-sealer.html": "/products",
+  "/white-cement.html": "/products",
+  "/roofproducts.html": "/products",
+  "/roofing-products.html": "/products",
+  "/residential-products.html": "/products",
+  "/products.htm": "/products",
+  "/products2.htm": "/products",
+  "/smartshield/smartshield.html": "/products/smartshield",
+  "/storm-shield-system.html": "/roof-systems",
+  // Old photo-gallery pages
+  "/dainaboatyardpics.htm": "/projects",
+  "/gardeniaterpic.htm": "/projects",
+  "/godshall_photos.htm": "/projects",
+  "/godshall-photos.html": "/projects",
+  "/guypics.htm": "/projects",
+  "/hamptonpic.htm": "/projects",
+  "/lilly_ray_photos.htm": "/projects",
+  "/lilly-ray-photos.html": "/projects",
+  "/scarpone_photos.htm": "/projects",
+  "/spade_photos.htm": "/projects",
+  "/spade-photos.html": "/projects",
+  "/roof-godshall.html": "/projects",
+  "/roof_godshall.html": "/projects",
+  // Videos
+  "/install-video.html": "/videos",
+  "/install_video.html": "/videos",
+  "/roofvideo.htm": "/videos",
+  // News / press
+  "/news.htm": "/blog",
+  "/Pressrl.htm": "/blog",
+  "/blog/readme.html": "/blog",
+  // Energy / tax / insurance benefit pages
+  "/energy-incentives.html": "/roof-coating-florida",
+  "/energy-star-roof-coating-products.html": "/roof-coating-florida",
+  "/energy-tax-credit.html": "/roof-coating-florida",
+  "/fpl-participating-contractors-energy-star-compliant-roof.html": "/roof-coating-florida",
+  "/tax-incentives.html": "/roof-coating-florida",
+  "/insurance-premiums.html": "/roof-coating-florida",
+  "/mortgage-refinance.html": "/roof-coating-florida",
+  "/real-estate-purchases.html": "/roof-coating-florida",
+  "/home-star-program-retrofit.htm": "/roof-coating-florida",
+  "/my-safe-florida-home.htm": "/roof-coating-florida",
+  "/weatherizing.html": "/roof-coating-florida",
+  // Uplift test / certification
+  "/uplift-test.html": "/tas-106-certified-roof-coating",
+  "/uplift_test.html": "/tas-106-certified-roof-coating",
+  // Affiliations / distribution / franchise
+  "/affiliationclients.htm": "/partner-network",
+  "/affiliations.html": "/partner-network",
+  "/distribution.htm": "/distributorships",
+  "/distributorships/version_1.html": "/distributorships",
+  "/distributorships/version_2.html": "/distributorships",
+  "/distributorships/version_3.html": "/distributorships",
+  "/franchise-business-opportunity.html": "/distributorships",
+  "/investor.html": "/partner-network",
+  "/procurement.htm": "/contact",
+  // Licenses
+  "/broward-county-roof-protect-contracting-license.html": "/factory",
+  "/broward-county-roof-protect-manufacturing-license.html": "/factory",
+
   // Legacy service area pages
   "/broward-county": "/service-areas/broward-county",
   "/broward": "/service-areas/broward-county",
@@ -786,9 +953,23 @@ app.use((req, res, next) => {
     return res.redirect(301, "/roof-services");
   }
 
+  // Old /store/ shopping-cart pages (pre-2010 site) → modern shop page
+  // (must run before the generic .php catch-all — cart URLs were .php)
+  if (req.path.startsWith("/store/")) {
+    return res.redirect(301, "/shop");
+  }
+
   // General .php catch-all — any unmapped .php URL → homepage
   // (prevents sirv from returning a hard 404 for file-extension paths)
   if (req.path.endsWith(".php")) {
+    return res.redirect(301, "/");
+  }
+
+  // Ancient .htm/.html/.swf catch-all — any unmapped page from the pre-PHP
+  // site era → homepage, so no archived/indexed legacy URL can ever 404.
+  // (Prerendered pages are extensionless dirs and "/index.html" is excluded
+  // by the exact-match table above mapping it to "/".)
+  if (/\.(html?|swf)$/i.test(req.path)) {
     return res.redirect(301, "/");
   }
 

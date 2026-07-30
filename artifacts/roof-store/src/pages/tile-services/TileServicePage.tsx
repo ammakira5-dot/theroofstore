@@ -339,7 +339,7 @@ export default function TileServicePage({ page }: { page: TileServicePageData })
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-bold mb-4">Ready to Protect Your Tile Roof?</h2>
+            <h2 className="text-3xl font-bold mb-4">{page.ctaHeading ?? "Ready to Protect Your Tile Roof?"}</h2>
             <p className="text-green-100 text-lg mb-8">
               Get a free roof assessment and quote. We serve Broward, Miami-Dade, and Palm Beach
               Counties — call or submit a request online.

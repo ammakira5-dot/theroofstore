@@ -1,0 +1,71 @@
+<html>
+
+<head><META NAME="DESCRIPTION" CONTENT=" ">
+<meta http-equiv='Page-Enter' content='blendTrans(Duration=1)'>
+<title>Anthony Enterprises </title>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+seconds=5;
+x=seconds*1000;
+window.setInterval('updateTime()',x);
+function updateTime(){
+      if (top.location==self.location)
+      top.location.href = 'index.htm?catalog.htm&1';
+}
+// -->
+</SCRIPT>
+
+<style TYPE="text/css" TITLE="header style">
+.on	{
+text-decoration: underline;
+}
+A	{
+text-decoration: none;
+}
+.off	{
+text-decoration: none;
+color: #ffd700;
+}
+</style>
+</head>
+
+<body leftmargin="5" topmargin="0" text="#FFFFFF" link="#FFFFFF" vlink="#FFFFFF"
+bgcolor="#FFFFFF" alink="#FFFFFF" background="bg3.gif">
+<div align="center"><center>
+
+<table BORDER="0" bordercolor="#FFFFFF" cellpadding="2">
+  <tr>
+    <td VALIGN="top"><a HREF="catalog.htm" TARGET="content2"
+    onMouseOver="this.className ='on';" onMouseOut="this.className = 'off';"><font
+    color="#FFFFFF"><img src="firstp.gif" border="0" width="85" height="20"> </font></a></td>
+    <script LANGUAGE="JavaScript">
+<!--
+if (parent.total_price  >= 0)
+{
+document.write("<form name='frm' >");
+document.write("<TD VALIGN='TOP'>");
+document.write('<img src="in2.gif" border="0"> ');
+document.write('<input type="Text"');
+document.write(' name="basket"'+' value=" '+parent.round_amount(parent.total_price)+'"');
+document.write(' align="MIDDLE"'+' size="8" notab readonly></td>');
+document.write("</form>");
+document.writeln('<TD VALIGN="top"><A HREF="basket.htm"'+'  TARGET="content2"  onMouseOver = "this.className ='+"'on'"
++';" onMouseOut = "this.className = '+"'off';"+'"><img src="sh1.gif" border="0"> </A></TD>');
+document.writeln('<TD VALIGN="top"><A HREF="order01.htm"'+' TARGET="content2" onMouseOver = "this.className ='+"'on'"
++';" onMouseOut = "this.className = '+"'off';"+'"><img src="ch1.gif" border="0"></A></TD>');
+}
+else
+{
+document.writeln('<TD VALIGN="top"><img src="in1.gif" border="0"> </td>');
+document.writeln('<TD VALIGN="top"><img src="sh2.gif" border="0"></TD>');
+document.writeln('<TD VALIGN="top"><img src="ch2.gif" border="0"></TD>');
+}
+// -->
+</script>
+
+  </tr>
+</table>
+</center></div>
+</body>
+</html>
+<!--FIM-->

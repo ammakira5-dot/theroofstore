@@ -654,6 +654,12 @@ const EXACT_REDIRECTS = {
   "/services/spanish-tile-roof-painting.php": "/spanish-tile-roof-painting",
   "/services/spanish-tile-roof-maintenance.php": "/spanish-tile-roof-maintenance",
   "/services/spanish-tile-roof-repair.php": "/spanish-tile-roof-maintenance",
+  "/services/spanish-tile-roof-restoration.php": "/spanish-tile-roof-coating",
+  "/services/spanish-tile-roof-repairandmaintenance.php": "/spanish-tile-roof-maintenance",
+  "/services/cement-tile-roof-repairandmaintenance.php": "/cement-tile-roof-restoration",
+  "/services/residential-cement-tile-roof-coating.php": "/cement-tile-roof-restoration",
+  "/projects/spanishs-or-Barrel-tile-roof-waterproofing.php": "/spanish-tile-roof-waterproofing",
+  "/projects/residential-cement-tile-roof-waterproofing.php": "/cement-tile-roof-restoration",
 
   // Legacy non-PHP service pages
   "/roof-painting-service-broward-county-florida": "/roof-services",
@@ -678,6 +684,13 @@ const EXACT_REDIRECTS = {
   "/cement-tile-roof-coating": "/cement-tile-roof-restoration",
   "/barrel-tile-roof-coating": "/spanish-tile-roof-coating",
   "/spanish-tile-roof-repair": "/spanish-tile-roof-maintenance",
+  "/spanish-tile-roof-restoration": "/spanish-tile-roof-coating",
+  "/spanish-tile-roof-repairandmaintenance": "/spanish-tile-roof-maintenance",
+  "/cement-tile-roof-repairandmaintenance": "/cement-tile-roof-restoration",
+  "/residential-cement-tile-roof-coating": "/cement-tile-roof-restoration",
+  "/residential-spanish-tile-roof-waterproofing": "/spanish-tile-roof-waterproofing",
+  "/spanishs-or-Barrel-tile-roof-waterproofing": "/spanish-tile-roof-waterproofing",
+  "/residential-cement-tile-roof-waterproofing": "/cement-tile-roof-restoration",
   "/roof-certification": "/roof-services",
   "/additional-roof-life-certification": "/roof-services",
 

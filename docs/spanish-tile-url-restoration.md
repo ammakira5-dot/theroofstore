@@ -23,6 +23,16 @@ Restored the old theroofstore.net Spanish-tile and cement-tile keyword URLs as 5
 | /services/spanish-tile-roof-maintenance.php | /spanish-tile-roof-maintenance |
 | /services/spanish-tile-roof-repair.php | /spanish-tile-roof-maintenance |
 | /services/cement-tile-roof-restoration.php | /cement-tile-roof-restoration |
+| /services/spanish-tile-roof-restoration.php | /spanish-tile-roof-coating |
+| /services/spanish-tile-roof-repairandmaintenance.php | /spanish-tile-roof-maintenance |
+| /services/cement-tile-roof-repairandmaintenance.php | /cement-tile-roof-restoration |
+| /services/residential-cement-tile-roof-coating.php | /cement-tile-roof-restoration |
+
+### Legacy /projects/ URLs
+| Old | New |
+|---|---|
+| /projects/spanishs-or-Barrel-tile-roof-waterproofing.php | /spanish-tile-roof-waterproofing |
+| /projects/residential-cement-tile-roof-waterproofing.php | /cement-tile-roof-restoration |
 
 ### Legacy /fl/ city-keyword URLs (tile-specific)
 | Old | New |

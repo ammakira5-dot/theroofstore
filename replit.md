@@ -60,8 +60,9 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 
 **Legal / Evidence case:**
 - **FILE GOOGLE COMPLAINT** — (see above ⚡)
-- **Exhibit N** — Screenshot theroof.store B2B intake form showing "Dmitry Lipinskiy" in the "How Did You Hear About Us?" dropdown. Send to agent → adds as Exhibit N immediately.
-- **Exhibit O** — Screenshot Facebook post from theroof.store/Dmitry Lipinskiy: "Delivering within a week anywhere south (Atlanta, Florida, California)." Send to agent → adds as Exhibit O.
+- **Exhibit N** — Screenshot theroof.store B2B intake form with the "How Did You Hear About Us?" dropdown OPEN showing "Dmitry Lipinskiy". Full window — URL bar + clock visible, no crop. Bonus: save form page at web.archive.org/save. Send to agent → adds as Exhibit N immediately.
+- **Exhibit O** — Screenshot Facebook post from theroof.store/Dmitry Lipinskiy: "Delivering within a week anywhere south (Atlanta, Florida, California)." Click the post timestamp first (opens permanent URL); capture post text, author, date, URL bar; send the permanent URL too so it can be archived before deletion. Send to agent → adds as Exhibit O. Do soon — posts can vanish.
+  - *Screenshot how-to (older Dell/Windows):* Windows+PrtScn saves to Pictures → Screenshots (best — full screen w/ URL bar); or PrtScn (maybe Fn+PrtScn) then Ctrl+V into Paint → Save As JPEG; or Windows+Shift+S snip if PrtScn is dead.
 
 **GSC / Analytics:**
 - **GSC sitemap** — Submit https://www.theroofstore.net/sitemap.xml to GSC. Then individually request indexing for: `/`, `/roof-coating-florida`, `/tas-106-certified-roof-coating`, `/blog`, `/factory`, `/pricing`.

@@ -753,6 +753,31 @@ export default function TrademarkEvidenceFile() {
             </p>
           </section>
 
+          {/* Exhibit S — Respondent's Direct Commercial Solicitation Email */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XI-E. Exhibit S — Respondent's Direct Commercial Solicitation Email Received by the Prior Rights Holder (July 28, 2026)</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              On <strong>July 28, 2026 at 11:57 AM</strong>, the prior rights holder — a South Florida roof coating business owner — received a direct commercial solicitation email from <strong>Dmitry Lipinskiy (dmitry@roofinginsights.com)</strong>, the respondent and operator of theroof.store. The email, titled <em>"Hire our entire media team for August - $2,500,"</em> markets Roofing Insights Business School media and content-marketing services to roofing companies: unlimited video editing, daily content planning, content strategy, posting support, and platform optimization for a $2,500 one-time fee. The email footer lists the respondent's corporate address: Roofing Insights, 7600 Boone Ave N Suite #65, Minneapolis, MN 55428.
+            </p>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              The email was preserved as a Gmail print-to-PDF on July 30, 2026, with full headers, sender/recipient addresses, timestamps, and the Gmail URL visible on every page. All four pages are reproduced below.
+            </p>
+            {[1, 2, 3, 4].map((n) => (
+              <figure key={n} className="border border-gray-300 rounded overflow-hidden mb-4">
+                <img
+                  src={`/images/dmitry-solicitation-email-2026-07-28-${n}.png`}
+                  alt={`Exhibit S page ${n}: July 28 2026 solicitation email from Dmitry Lipinskiy (Roofing Insights) received by the prior rights holder, preserved with full Gmail headers`}
+                  className="w-full"
+                  loading="lazy"
+                />
+                <figcaption className="text-xs font-sans text-gray-500 px-3 py-2 bg-gray-50 border-t border-gray-200">Exhibit S — page {n} of 4 (Gmail print-to-PDF, captured July 30, 2026)</figcaption>
+              </figure>
+            ))}
+            <p className="text-sm font-sans mt-4 leading-relaxed">
+              <strong>Evidentiary value:</strong> (1) <strong>Commercial reach into the complainant's market is proven, not theoretical</strong> — the respondent's marketing machine delivered a paid-services solicitation directly into the inbox of the South Florida mark owner, undercutting any claim that his commercial activity does not reach Florida. (2) <strong>Respondent's sophistication is documented</strong> — his core business is selling professional brand-building, content marketing, and search visibility services to roofing contractors; a marketer of this caliber cannot credibly claim innocent or coincidental adoption of the identical mark "The Roof Store" (see also Exhibit D, his on-camera brand-strategy statement). (3) <strong>Structural B2B capture</strong> — the respondent simultaneously operates the media/referral channels where roofing contractors discover suppliers (Roofing Insights, 200,000+ audience; the Directorii referral network; the Roofing Insights Podcast, where Episode #29 promotes his own "The Roof Store" operation) and a competing supply business under the complainant's exact mark. The practical effect: to compete for B2B visibility under its own trade name, the mark owner would have to become a paying customer of the infringer. This exhibit is preserved in the append-only Monitoring &amp; Defense Log as entries #118 and #121.
+            </p>
+          </section>
+
           {/* No Legitimate Rights Analysis */}
           <section className="mb-10">
             <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">XII. UDRP Element Analysis — Respondent Has No Legitimate Rights or Interest</h3>
@@ -864,6 +889,7 @@ export default function TrademarkEvidenceFile() {
                   ["Jul 23, 2026", "Exhibit K upgraded to full 16-month GSC data; Exhibit E-2 created", "GSC Performance export (.xlsx) obtained for query 'the roof store', 16-month window (March 2025 – July 2026) — the maximum retention period Google provides. Results: 797 impressions, 11 clicks, position 11.24, CTR 1.38%. At expected branded CTR (30%), site should have received ~239 clicks — it received 11 (~95% click-capture loss). Month-by-month breakdown added as Exhibit E-2. All three evidence files (TrademarkEvidenceFile, TrademarkEvidencePrint, RedemptionEvidenceGoogle1) updated with real measured numbers replacing prior 3-month estimates. Google Legal Troubleshooter answer updated with 16-month data."],
                   ["Jul 29, 2026", "1998–1999 Home Show booth photograph located and added", "Original photograph of the Fort Lauderdale Home Show booth (1998–1999) located in company archive and added as Exhibit G-2. Booth banner shows \"Anthony's Enterprises, Inc. — All Surface Restorations & Preservations\" with the slogan \"Don't Reroof — Waterproof! ½ THE COST OF A REROOF\" and the founder present. Corroborates chain of title (Exhibits F, H), the 1999 TV commercial slogan (Exhibit I), and pre-2000 public commercial use — 22+ years before respondent's domain registration. Timeline (Section II) updated with 1998–1999 entry."],
                   ["Jul 30, 2026", "Circa-2000 original online store recovered from hosting server and added", "The original \"Anthony Enterprises\" HTML online store located fully intact in the /store/ directory of the legacy theroofstore.net web root — 12 .htm pages + 52 graphics (64 files). Homepage shows the \"Don't Reroof — Weatherproof at ½ the Cost\" banner, Roofshield™ SSS-shield bucket, and a working shopping cart selling Thermocoat at $129.25; page source contains the year 2000. Complete snapshot preserved unaltered in the project repository. Added as Exhibit G-3; timeline (Section II) updated with circa-2000 entry."],
+                  ["Jul 30, 2026", "Respondent solicitation email received and preserved", "Direct commercial solicitation email from Dmitry Lipinskiy (dmitry@roofinginsights.com), dated July 28, 2026 — \"Hire our entire media team for August - $2,500\" — received by the prior rights holder in South Florida and preserved as a Gmail print-to-PDF with full headers. Added as Exhibit S. Monitoring & Defense Log entries #118 and #121 record the email and its exhibit-grade preservation; entry #119 records the respondent's Podcast Episode #29 self-promotion of \"The Roof Store\"; entry #120 records the national-expansion pattern analysis."],
                 ].map(([date, check, finding]) => (
                   <tr key={date + check} className="border-b border-gray-200 align-top">
                     <td className="py-2 pr-4 font-semibold text-xs">{date}</td>

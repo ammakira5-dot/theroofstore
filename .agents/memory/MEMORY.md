@@ -9,6 +9,7 @@
 - [Evidentiary log multi-role auth](evidentiary-log-multi-role-auth.md) — pattern for adding a read-only attorney/viewer role to an admin-only evidentiary log without weakening chain-of-custody.
 - [AI Overview claims need verification](ai-overview-claims-need-verification.md) — AI Mode/Overview answers can invent confident specifics; verify each atom against primary sources (e.g. Sunbiz) before treating as evidence.
 - [Prerender static-server shell bug](prerender-static-server-shell-bug.md) — never use the mutable on-disk index.html as the SPA-fallback "pristine shell" in a resumable prerender script; snapshot a real backup once.
+- [Prerender stalls on large batches](prerender-stall-resume.md) — script silently hangs after ~20–40 pages; kill by PID and rerun without PRERENDER_FORCE to resume until N/N.
 - [Prerender fresh page per route](prerender-fresh-page.md) — must create a new browser page per route inside the loop; reusing one page causes Helmet tag bleed across all 157 prerendered files.
 - [SEO to-do list](seo-todo-list.md) — master prioritized list from July 9 2026 audit: 6 codebase fixes + owner action items + sister site pending fixes.
 - [roofpaintmiami.com next steps](rpm-next-steps.md) — FTP secret + task queue: FAQ expand, dead footer links, commercial page, city pages, GMB setup. Host/user in replit.md.

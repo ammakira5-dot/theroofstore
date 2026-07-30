@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>theroofstore.net — Legacy Content Recovery: Value &amp; Capture Plan</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:960px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.55}
+h1{color:#1e3a8a;border-bottom:3px solid #1e3a8a;padding-bottom:8px}
+h2{color:#1e3a8a;margin-top:36px;border-bottom:1px solid #ccc;padding-bottom:6px}
+h3{color:#374151;margin-top:22px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#1e3a8a;color:#fff}
+tr:nth-child(even){background:#f3f4f6}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:bold;color:#fff}
+.badge-good{background:#0a7a2f}
+.badge-warn{background:#b45309}
+.badge-risk{background:#b91c1c}
+.note{background:#eef2ff;border-left:4px solid #1e3a8a;padding:10px 14px;margin:14px 0;font-size:14px}
+.timeline{font-family:monospace;background:#f8fafc;border:1px solid #d1d5db;padding:12px;font-size:13px;white-space:pre-wrap}
+</style>
+</head>
+<body>
+
+<h1>Legacy Content Recovery — Value &amp; Capture Plan</h1>
+<p><strong>Date:</strong> July 30, 2026 &nbsp;|&nbsp; <strong>Domain:</strong> theroofstore.net &nbsp;|&nbsp; <strong>Trigger:</strong> Confirmed 25-year archived history across three site generations (original HTML → PHP, started ~2014 → current build), with legacy files still live on the host and gaps recovered via the Wayback Machine.</p>
+
+<h2>1. What the Archive Actually Shows</h2>
+<p>Pulled directly from the Wayback Machine's index for theroofstore.net — this confirms the timeline is real and gives a starting inventory, not just an estimate.</p>
+<div class="timeline">2001–2005  Original HTML era — homepage ~1-1.3 KB, bare-bones pages
+2007–2014  Expanded HTML era — about-us.html, aboutus2.htm, affiliations.html,
+           affiliationclients.htm, calcium-carbonate.html, broward-county
+           licensing pages, brochure PDFs (2008, 2011)
+2016–2021  PHP era begins — aboutus.php, affiliations.php, calcium-carbonate.php,
+           by-the-yard.php (matches your ~2014 PHP build timeline)
+2024–2026  Current build + a separate WordPress /blog subdirectory
+           (running Elementor Pro — a distinct CMS from the main site)</div>
+<div class="note"><strong>Notable finds:</strong> two Broward County licensing-proof pages (contracting + manufacturing licenses) and a calcium-carbonate ingredient page survived from HTML through PHP — these read like credibility/differentiation content, not filler pages. A few pages (<code>123.html</code>, <code>captcha.php</code>) are clearly low-value test artifacts, not worth reviving.</div>
+
+<h2>2. The Actual Value Here</h2>
+<table>
+<tr><th>Value Type</th><th>Why It Matters</th></tr>
+<tr><td><strong>Recoverable link equity</strong></td><td>Any external site that linked to an old <code>.html</code>/<code>.htm</code>/<code>.php</code> URL over the last 25 years still points at that exact URL. If it 404s today, that decades-old link's value is being thrown away. A proper 301 to the closest current-equivalent page recovers most of it.</td></tr>
+<tr><td><strong>Proof of longevity (E-E-A-T)</strong></td><td>25 years of continuous archived snapshots is stronger, independently-verifiable evidence of "established since the 1990s/2001" than a claim alone — this is exactly the kind of third-party-verifiable signal that strengthens trust with both search engines and AI answer engines.</td></tr>
+<tr><td><strong>Ready-made differentiation copy</strong></td><td>The old licensing pages and the calcium-carbonate ingredient page likely contain specific, factual differentiation language (what's <em>in</em> the product, what license numbers back the claims) that's more concrete than a lot of current marketing copy — this is raw material, not just history.</td></tr>
+<tr><td><strong>Content-gap filler</strong></td><td>Some old pages may map directly onto gaps already flagged in the last audit (e.g., historical repair/restoration language could seed the missing light-repairs page).</td></tr>
+</table>
+<div class="note">There's also a brand-protection angle: this same archived history is exactly the kind of evidence trademark counsel would want for a continuous-use defense. That's a legal matter, not an SEO one — flagging it here only so it doesn't get lost, not as legal advice.</div>
+
+<h2>3. Triage — Not Everything Old Is Gold</h2>
+<table>
+<tr><th>Bucket</th><th>Examples</th><th>Action</th></tr>
+<tr><td><span class="badge badge-good">Revive &amp; redirect</span></td><td>Licensing pages, calcium-carbonate ingredient page, brochure PDFs, about-us history</td><td>Pull the real historical copy, update it for current systems/branding, publish as new or merged content, then 301 the old URL straight to it</td></tr>
+<tr><td><span class="badge badge-warn">Redirect only, no content revival needed</span></td><td>Old affiliations pages, aboutus2.htm duplicates</td><td>301 to the closest current-equivalent page (e.g., <code>/about</code> or <code>/partner-network</code>) purely to recover link equity — no need to recreate the exact content</td></tr>
+<tr><td><span class="badge badge-risk">Skip</span></td><td><code>123.html</code>, <code>captcha.php</code></td><td>Low/no external value — leave as 404 or redirect to homepage only if something is actually still linking to it</td></tr>
+</table>
+
+<h2>4. Capture Plan (Step by Step)</h2>
+<ol>
+<li><strong>Full inventory:</strong> Pull the complete (uncollapsed) CDX list for every unique path ever archived across all three eras — this is the master worksheet everything else works from.</li>
+<li><strong>Backlink check:</strong> For each legacy URL, check Search Console's Links report (or a backlink tool) for real inbound links. Anything with external links pointing at it goes to the top of the redirect priority list — that's where the actual "gold" is.</li>
+<li><strong>Map 1:1, not many-to-one:</strong> Each legacy URL should redirect to its closest topical match on the current site — not a blanket redirect-everything-to-homepage, which wastes the equity and can look like a soft-404 pattern.</li>
+<li><strong>Collapse redirect chains:</strong> Since the path is HTML → PHP → current build, some URLs may already hop through 2-3 redirects. Rewrite every legacy URL to a single-hop 301 straight to the final current URL.</li>
+<li><strong>Mine the content, don't just redirect it:</strong> For the "Revive" bucket, pull the actual Wayback-archived text/images, rewrite for current voice and current product names (RP1/RP2/RP3), and fold into existing pages or new supportive pages already identified as gaps.</li>
+<li><strong>Handle the WordPress /blog separately:</strong> It's a distinct CMS from the main site — inventory and redirect-map its own historical posts independently if that subdirectory ever migrates.</li>
+<li><strong>Validate:</strong> After redirects go live, watch Search Console for previously-404 URLs shifting to "indexed" and monitor organic traffic to the revived pages over the following weeks.</li>
+</ol>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a230ef8aefb14bff',t:'MTc4NTM3ODU2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

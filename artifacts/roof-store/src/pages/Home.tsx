@@ -67,6 +67,7 @@ const homeFaqs = [
 
 const BUSINESS_CORE = {
   "@type": "RoofingContractor",
+  "@id": `${BASE}/#business`,
   name: "The Roof Store Waterproofing Products",
   alternateName: "The Roof Store",
   legalName: "Storm Shield Paint Systems Inc.",

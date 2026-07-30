@@ -48,18 +48,28 @@ export default function Factory() {
   const schema = [
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "RoofProtect Products — Manufacturing Facility",
+      "@type": "RoofingContractor",
+      "@id": `${BASE}/#business`,
+      name: "The Roof Store Waterproofing Products",
+      alternateName: "The Roof Store",
+      legalName: "Storm Shield Paint Systems Inc.",
       url: `${BASE}/factory`,
       telephone: "+19542109614",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "4801 S University Dr",
         addressLocality: "Davie",
         addressRegion: "FL",
         postalCode: "33328",
         addressCountry: "US",
       },
-      description: "RoofProtect Products manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems sold by The Roof Store, at our Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      description: "The Roof Store Waterproofing Products manufactures its liquid rubber roof coating materials in-house through its manufacturing division, RoofProtect Products, at its Davie, Florida facility. The only TAS-106 Dade County Pull Test Rated roof coating system worldwide.",
+      department: {
+        "@type": "Organization",
+        name: "RoofProtect Products",
+        description: "In-house manufacturing division of The Roof Store Waterproofing Products. Manufactures the liquid rubber coating materials used in the Fungal Shield, Smart Shield, and Roof Shield systems. County-licensed and MSDS/SDS compliant.",
+        parentOrganization: { "@id": `${BASE}/#business` },
+      },
       makesOffer: [
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fungal Shield (RP1)", description: "Anti-fungal roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Smart Shield (RP2)", description: "Tintable waterproof tile roof coating system — materials manufactured in-house by RoofProtect Products in Davie, FL" } },

@@ -1,0 +1,21 @@
+old_url,new_url,status_code,notes
+/about-us.html,/about,301,HTML-era about page — merge into current About/History timeline
+/aboutus2.htm,/about,301,Secondary HTML-era about page — same target as about-us.html
+/aboutus.php,/about,301,PHP-era about page — same target
+/affiliations.html,/partner-network,301,HTML-era affiliates list — equivalent to current authorized partner network
+/affiliations.php,/partner-network,301,PHP-era affiliates list — same target
+/affiliationclients.htm,/partner-network,301,HTML-era client/affiliate list — same target
+/broward-county-roof-protect-contracting-license.html,/about,301,Licensing proof page — matches the "Credentials" block already on /about (Licensed Since 1994)
+/broward-county-roof-protect-manufacturing-license.html,/about,301,Manufacturing license proof page — same target; content can also inform /the-original-roof-store-florida
+/calcium-carbonate.html,/products,301,Ingredient/filler differentiation page — maps to the "Read a Label Like a Pro" comparison table on /products
+/calcium-carbonate.php,/products,301,PHP-era version of the same content — same target
+/by-the-yard.php,/shop,301,Bulk/volume purchase format page — maps to current purchase options on /shop
+/50rubber.html,/factory,301,"100% pure rubber formula" content — matches the existing "100% Pure Liquid Rubber Formula" section on /factory
+/Brochure_2008_pdf.pdf,/products,301,Old brochure PDF — redirect to /products where the current brochure PDF is linked
+/Brochure_2011xs.pdf,/products,301,Old brochure PDF — same target
+/123.html,,skip,"Low-value test page, no known backlinks — leave as 404 rather than redirect"
+/captcha.php,,skip,"Internal artifact (image), not content — leave as 404"
+http://theroofstore.net/,https://www.theroofstore.net/,301,Confirm legacy non-www/HTTP homepage variants all normalize to the current canonical
+http://www.theroofstore.net/,https://www.theroofstore.net/,301,Confirm legacy www/HTTP homepage variant normalizes to canonical
+/blog,/blog,none,Already live at the same URL on the current build — no redirect needed
+/blog/new-florida-homeowners-insurance-laws,/blog/new-florida-homeowners-insurance-laws,none,Already live at the same URL — confirmed continuity, no action needed

@@ -115,6 +115,7 @@ South Florida roof coating storefront, SEO hub, and brand-infringement evidence 
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
 
 **Sister sites (FTP):**
+- **Old-site subdomain 301 — DONE + LIVE July 29** — entire old site at theroofstore.absolutecharters.com (auto-created cPanel addon subdomain, all files intact) now 301s path-preserving to theroofstore.net via new .htaccess; new site's server maps all 237 legacy pages (231 verified 301, 5 junk 404s). Old files untouched. Backups: `docs/old-site-backups/theroofstore.net-htaccess-backup-2026-07-29.txt` (repo) + `.htaccess-backup-2026-07-29` (on server, same folder). To restore old site: replace .htaccess with the backup.
 - **flatroofsealants.com SEO plugin** — mu-plugin drafted at `/tmp/frs-seo.php`. Adds Port St. Lucie / Treasure Coast title, meta description, schema, and removes BBB/1994 footer claim. Preview shown — say "push it" to upload.
 - **roofpaintmiami.com — Replace Broward commercial photos** — 8 photos on commercial.php still show Broward job sites. Replace with real Miami-Dade photos (user to provide). FTP: julius@absolutecharters.com / JULIUS_FTP_PASSWORD.
 - **Angle copy for 4 remaining network sites** — Directions defined for Roof Restorations, Storm Shield Coating Systems, Windproof, RoofProtect. Agent writes copy on request, then FTP push after approval.

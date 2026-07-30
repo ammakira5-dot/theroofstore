@@ -534,6 +534,8 @@ const EXACT_REDIRECTS = {
   "/faq.php": "/faq",
   "/questions.php": "/questions",
   "/aboutus.php": "/about",
+  "/calcium-carbonate.php": "/products",
+  "/by-the-yard.php": "/shop",
   "/contact.php": "/contact",
   "/distributorships.php": "/distributorships",
   "/videos.php": "/videos",
@@ -832,7 +834,7 @@ const EXACT_REDIRECTS = {
   "/shingleroofsystems.htm": "/shingle-roof-coating",
   "/roof-replacement-vs-reroofing-roof-repair.html": "/roof-replacement-alternative-florida",
   // Old product catalog pages
-  "/50rubber.html": "/products",
+  "/50rubber.html": "/factory",
   "/rp40rubber.html": "/products",
   "/rp40rubber-mini-fiber.html": "/products",
   "/rp-rubber-cualking-tube.html": "/products",
@@ -906,8 +908,10 @@ const EXACT_REDIRECTS = {
   "/investor.html": "/partner-network",
   "/procurement.htm": "/contact",
   // Licenses
-  "/broward-county-roof-protect-contracting-license.html": "/factory",
+  "/broward-county-roof-protect-contracting-license.html": "/about",
   "/broward-county-roof-protect-manufacturing-license.html": "/factory",
+  "/Brochure_2008_pdf.pdf": "/products",
+  "/Brochure_2011xs.pdf": "/products",
 
   // Legacy service area pages
   "/broward-county": "/service-areas/broward-county",

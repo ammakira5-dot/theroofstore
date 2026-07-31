@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { MapPin, ArrowRight } from "lucide-react";
@@ -12,6 +13,47 @@ const counties = countiesData.map((c) => ({
   image: c.image,
   cities: c.cities.map((city) => ({ name: city.name, slug: city.slug })),
 }));
+
+function ScrollableCityList({ children }: { children: React.ReactNode }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [showFade, setShowFade] = useState(false);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const update = () => {
+      const canScroll = el.scrollHeight > el.clientHeight + 1;
+      const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 8;
+      setShowFade(canScroll && !atBottom);
+    };
+
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    const resizeObserver = new ResizeObserver(update);
+    resizeObserver.observe(el);
+
+    return () => {
+      el.removeEventListener("scroll", update);
+      resizeObserver.disconnect();
+    };
+  }, []);
+
+  return (
+    <div className="relative">
+      <div
+        ref={scrollRef}
+        className="overflow-y-auto h-60 pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-accent/40 hover:[&::-webkit-scrollbar-thumb]:bg-accent/70"
+      >
+        {children}
+      </div>
+      <div
+        aria-hidden="true"
+        className={`pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-card to-transparent transition-opacity duration-300 ${showFade ? "opacity-100" : "opacity-0"}`}
+      />
+    </div>
+  );
+}
 
 const countyKeywords: Record<string, string> = {
   "Broward County": "Roof coating and tile restoration in Fort Lauderdale, Coral Springs, Pembroke Pines, Hollywood, Weston, Davie, Pompano Beach, Miramar, Plantation, and 30+ cities",
@@ -88,7 +130,7 @@ export default function ServiceAreas() {
                   Roof coating services in {county.name} <ArrowRight className="h-4 w-4" />
                 </Link>
 
-                <div className="overflow-y-auto h-60 pr-2 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-accent/40 hover:[&::-webkit-scrollbar-thumb]:bg-accent/70">
+                <ScrollableCityList>
                   <ul className="space-y-2">
                     {county.cities.map((city, j) => (
                       <li key={j}>
@@ -102,7 +144,7 @@ export default function ServiceAreas() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </ScrollableCityList>
                 </div>
               </motion.div>
             ))}

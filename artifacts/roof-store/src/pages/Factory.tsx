@@ -176,21 +176,20 @@ export default function Factory() {
 
       <section className="py-16 bg-background border-b">
         <div className="container px-4 max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="flex flex-col justify-between gap-6 h-full"
             >
               <img
                 src="/images/roof-replacement-alternative-truck.png"
                 alt="The Roof Store licensed installation crew — truck and trailer wrap, South Florida"
                 className="rounded-2xl shadow-xl w-full object-cover"
               />
-              <div className="mt-6">
-                <FactorySlideshow />
-              </div>
+              <FactorySlideshow />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}

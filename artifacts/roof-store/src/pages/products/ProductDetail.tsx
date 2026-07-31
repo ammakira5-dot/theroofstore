@@ -189,6 +189,39 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 ))}
               </motion.div>
 
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <h2 className="text-3xl font-serif font-bold text-primary mb-6">Technical Specifications</h2>
+                <div className="border rounded-xl overflow-hidden">
+                  {product.specs.map((s, i) => (
+                    <div key={i} className={`grid grid-cols-2 px-6 py-3 ${i % 2 === 0 ? "bg-muted" : "bg-background"}`}>
+                      <span className="font-semibold text-sm text-muted-foreground uppercase tracking-wide">{s.label}</span>
+                      <span className="text-foreground text-sm font-medium">{s.value}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {product.pdfUrl && (
+                    <a href={product.pdfUrl} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline">
+                        <Download className="h-4 w-4 mr-2" />
+                        {product.pdfLabel ?? "Product Tech Sheet (PDF)"}
+                      </Button>
+                    </a>
+                  )}
+                </div>
+                {product.certificationUrl && (
+                  <Link href={product.certificationUrl} className="mt-4 flex items-start gap-3 bg-amber-50 border border-amber-300 rounded-xl p-4 hover:bg-amber-100 transition-colors group">
+                    <div className="text-2xl leading-none mt-0.5">🏅</div>
+                    <div>
+                      <div className="font-bold text-amber-900 text-sm">{product.certificationLabel ?? "View Full Certification Reference"}</div>
+                      <div className="text-xs text-amber-700 mt-0.5 flex items-center gap-1 group-hover:underline">
+                        {product.certificationUrl} <ArrowRight className="h-3 w-3" />
+                      </div>
+                    </div>
+                  </Link>
+                )}
+              </motion.div>
+
               {product.beforeAfterImages && product.beforeAfterImages.length > 0 && (
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                   <div className="mb-4">
@@ -270,29 +303,6 @@ export function ProductDetail({ product }: { product: ProductData }) {
                     </div>
                   ))}
                 </div>
-              </motion.div>
-
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                <h2 className="text-3xl font-serif font-bold text-primary mb-6">Technical Specifications</h2>
-                <div className="border rounded-xl overflow-hidden">
-                  {product.specs.map((s, i) => (
-                    <div key={i} className={`grid grid-cols-2 px-6 py-3 ${i % 2 === 0 ? "bg-muted" : "bg-background"}`}>
-                      <span className="font-semibold text-sm text-muted-foreground uppercase tracking-wide">{s.label}</span>
-                      <span className="text-foreground text-sm font-medium">{s.value}</span>
-                    </div>
-                  ))}
-                </div>
-                {product.certificationUrl && (
-                  <Link href={product.certificationUrl} className="mt-4 flex items-start gap-3 bg-amber-50 border border-amber-300 rounded-xl p-4 hover:bg-amber-100 transition-colors group">
-                    <div className="text-2xl leading-none mt-0.5">🏅</div>
-                    <div>
-                      <div className="font-bold text-amber-900 text-sm">{product.certificationLabel ?? "View Full Certification Reference"}</div>
-                      <div className="text-xs text-amber-700 mt-0.5 flex items-center gap-1 group-hover:underline">
-                        {product.certificationUrl} <ArrowRight className="h-3 w-3" />
-                      </div>
-                    </div>
-                  </Link>
-                )}
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

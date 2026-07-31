@@ -7,8 +7,11 @@ const router = Router();
 
 const ContactSchema = z.object({
   name: z.string().min(1, "Name is required"),
-  phone: z.string().min(7, "Phone is required"),
-  email: z.string().email().optional().or(z.literal("")),
+  phone: z
+    .string()
+    .transform((v) => v.replace(/\D/g, ""))
+    .refine((v) => v.length === 10, "Phone must be a 10-digit number"),
+  email: z.string().email("A valid email is required"),
   address: z.string().optional(),
   roofType: z.string().optional(),
   message: z.string().optional(),

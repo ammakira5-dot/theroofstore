@@ -21,6 +21,11 @@ export function LocalQuoteForm({ location, source = "service-area-form" }: Local
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const phoneDigits = form.phone.replace(/\D/g, "");
+    if (phoneDigits.length !== 10) {
+      setError("Please enter a 10-digit phone number, e.g. 954 333 4444.");
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
@@ -89,12 +94,13 @@ export function LocalQuoteForm({ location, source = "service-area-form" }: Local
       </div>
       <div className="space-y-1.5">
         <Label htmlFor={`sq-email-${source}`} className="text-white/80 text-xs font-semibold uppercase tracking-wide">
-          Email
+          Email *
         </Label>
         <Input
           id={`sq-email-${source}`}
           name="email"
           type="email"
+          required
           value={form.email}
           onChange={handleChange}
           placeholder="john@email.com"

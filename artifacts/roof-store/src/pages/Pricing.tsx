@@ -203,6 +203,17 @@ export default function Pricing() {
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Per-square-foot rates by system, roof type, and pitch. All prices include labor &amp; materials. Exact quotes are finalized after a free onsite visit.
             </p>
+            <div className="mt-8 bg-accent/15 border border-accent/40 rounded-2xl p-6 text-left max-w-2xl mx-auto">
+              <p className="text-white font-bold mb-2">How to get your Factory Price Sheet:</p>
+              <p className="text-white/85 text-sm leading-relaxed mb-4">
+                Fill out our contact form and the Factory Price Sheet is emailed to you. You'll also receive a follow-up
+                EagleView measurement of your roof, priced with the system you tell us you want installed — just mention
+                it in the "Tell Us About Your Roof" section of the form.
+              </p>
+              <Button asChild className="bg-accent hover:bg-accent/90 text-white">
+                <Link href="/contact">Fill Out the Contact Form →</Link>
+              </Button>
+            </div>
             <p className="mt-4 text-sm text-white/60">
               Not sure which system is right for you?{" "}
               <Link href="/roof-coating-florida" className="text-accent font-semibold hover:underline">
@@ -419,12 +430,12 @@ export default function Pricing() {
               <Mail className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-primary mb-2">Get the Full Price Sheet by Email — Instantly</h3>
+              <h3 className="text-xl font-bold text-primary mb-2">Get the Factory Price Sheet by Email</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Submit a contact request and our factory price sheet is emailed to you automatically — with every system, roof type, and pitch combination laid out clearly. No waiting, no sales call required to see the numbers.
+                Fill out the contact form and the Factory Price Sheet is emailed to you — every system, roof type, and pitch combination laid out clearly. You'll also receive a follow-up EagleView measurement of your roof, priced with the system you mention in the form.
               </p>
               <Button asChild className="bg-accent hover:bg-accent/90 text-white">
-                <Link href="/contact">Send Me the Price Sheet</Link>
+                <Link href="/contact">Fill Out the Contact Form →</Link>
               </Button>
             </div>
           </div>

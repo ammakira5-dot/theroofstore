@@ -21,6 +21,11 @@ export default function Contact() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const phoneDigits = form.phone.replace(/\D/g, "");
+    if (phoneDigits.length !== 10) {
+      setError("Please enter a 10-digit phone number, e.g. 954 333 4444.");
+      return;
+    }
     setLoading(true);
     setError(null);
     try {
@@ -198,15 +203,16 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="address">Property Address</Label>
-                    <Input id="address" name="address" value={form.address} onChange={handleChange} placeholder="123 Main St, Fort Lauderdale, FL" />
+                    <Label htmlFor="address">Property Address *</Label>
+                    <Input id="address" name="address" required value={form.address} onChange={handleChange} placeholder="123 Main St, Fort Lauderdale, FL" />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="roofType">Roof Type</Label>
+                    <Label htmlFor="roofType">Roof Type *</Label>
                     <select
                       id="roofType"
                       name="roofType"
+                      required
                       value={form.roofType}
                       onChange={handleChange}
                       className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
@@ -222,13 +228,14 @@ export default function Contact() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Tell Us About Your Roof</Label>
+                    <Label htmlFor="message">Tell Us About Your Roof *</Label>
                     <Textarea
                       id="message"
                       name="message"
+                      required
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="Describe any issues you're experiencing — leaks, damaged tiles, age of roof, etc."
+                      placeholder="Describe any issues — leaks, damaged tiles, roof age — and mention which system you want installed to receive your EagleView roof measurement."
                       className="min-h-[120px]"
                     />
                   </div>

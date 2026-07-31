@@ -32,7 +32,7 @@ const productDropdown = {
     {
       group: "Product Lines",
       links: [
-        { href: "/products", label: "All Products", icon: LayoutGrid, desc: "Overview of all three systems" },
+        { href: "/products", label: "All Products", icon: LayoutGrid, desc: "" },
         { href: "/products/fungalshield", label: "Fungal Shield (RP1)", icon: Leaf, desc: "Anti-fungal & anti-algae coating" },
         { href: "/products/smartshield", label: "Smart Shield (RP2)", icon: Sun, desc: "Energy-reflective cool pigment coating" },
         { href: "/products/roofshield", label: "Roof Shield (RP3)", icon: ShieldCheck, desc: "Hurricane-proof waterproofing system" },
@@ -164,7 +164,7 @@ export function Navbar() {
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <div className="font-bold text-sm text-foreground group-hover:text-accent transition-colors leading-tight">{item.label}</div>
-                                  <div className="text-xs text-muted-foreground truncate">{item.desc}</div>
+                                  {item.desc && <div className="text-xs text-muted-foreground truncate">{item.desc}</div>}
                                 </div>
                                 {isExt && <Download className="h-3.5 w-3.5 text-muted-foreground shrink-0" />}
                               </div>
@@ -309,7 +309,7 @@ export function Navbar() {
                           <item.icon className="h-4 w-4 text-accent shrink-0" />
                           <div>
                             <div className="text-sm font-medium text-foreground">{item.label}</div>
-                            <div className="text-xs text-muted-foreground">{item.desc}</div>
+                            {item.desc && <div className="text-xs text-muted-foreground">{item.desc}</div>}
                           </div>
                           {isExt && <Download className="h-3.5 w-3.5 text-muted-foreground ml-auto shrink-0" />}
                         </div>

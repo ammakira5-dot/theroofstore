@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, Loader2 } from "lucide-react";
 
-const initialForm = { name: "", email: "", phone: "", address: "", roofType: "", message: "" };
+const initialForm = { name: "", email: "", phone: "", address: "", roofType: "", roofAge: "", isOwner: "", startWhen: "", message: "" };
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -32,7 +32,15 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, source: "contact-form" }),
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          address: form.address,
+          roofType: form.roofType,
+          message: `${form.message}\n\nRoof age: ${form.roofAge}\nProperty owner: ${form.isOwner}\nWants to start: ${form.startWhen}`,
+          source: "contact-form",
+        }),
       });
       if (!res.ok) throw new Error("Server error");
       setSubmitted(true);
@@ -225,6 +233,59 @@ export default function Contact() {
                       <option value="foam">Foam / SPF</option>
                       <option value="other">Other / Not Sure</option>
                     </select>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="roofAge">How Old Is the Roof? *</Label>
+                      <select
+                        id="roofAge"
+                        name="roofAge"
+                        required
+                        value={form.roofAge}
+                        onChange={handleChange}
+                        className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                      >
+                        <option value="">Select...</option>
+                        <option value="0-5 years">0–5 years</option>
+                        <option value="6-10 years">6–10 years</option>
+                        <option value="11-20 years">11–20 years</option>
+                        <option value="20+ years">20+ years</option>
+                        <option value="Not sure">Not sure</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="isOwner">Are You the Owner? *</Label>
+                      <select
+                        id="isOwner"
+                        name="isOwner"
+                        required
+                        value={form.isOwner}
+                        onChange={handleChange}
+                        className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                      >
+                        <option value="">Select...</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="startWhen">When Do You Want to Start? *</Label>
+                      <select
+                        id="startWhen"
+                        name="startWhen"
+                        required
+                        value={form.startWhen}
+                        onChange={handleChange}
+                        className="w-full h-10 px-3 py-2 rounded-md border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                      >
+                        <option value="">Select...</option>
+                        <option value="As soon as possible">As soon as possible</option>
+                        <option value="Within 1 month">Within 1 month</option>
+                        <option value="1-3 months">1–3 months</option>
+                        <option value="Just researching">Just researching</option>
+                      </select>
+                    </div>
                   </div>
 
                   <div className="space-y-2">

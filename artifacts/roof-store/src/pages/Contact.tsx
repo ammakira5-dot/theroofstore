@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
@@ -100,7 +101,7 @@ export default function Contact() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free Roof Evaluation &amp; Contractor Installation Estimate</h1>
             <p className="text-xl text-white/80">
-              It starts with a conversation — talk with our experts first, then we evaluate your roof and provide a detailed contractor estimate. No cost, no obligation.
+              It starts with a conversation — talk with our experts first, then we evaluate your roof and provide a detailed contractor estimate. No cost, no obligation. Or if you prefer, go to our <Link href="/pricing" className="underline font-semibold text-white hover:text-white/90">Prices</Link> page — fill out the form there and we'll email you the info instead.
             </p>
           </motion.div>
         </div>

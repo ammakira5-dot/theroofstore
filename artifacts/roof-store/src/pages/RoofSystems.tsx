@@ -424,9 +424,19 @@ export default function RoofSystems() {
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
-                      <Link href="/contact">Get a Free Quote</Link>
-                    </Button>
+                    <div className="flex flex-wrap gap-3">
+                      <Button asChild className="bg-accent hover:bg-accent/90 text-white" size="lg">
+                        <Link href="/contact">Get a Free Quote</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="lg">
+                        <Link href={`/products/${system.name.includes("Fungal") ? "fungalshield" : system.name.includes("Smart") ? "smartshield" : "roofshield"}`}>
+                          Full Product Details
+                        </Link>
+                      </Button>
+                      <Button asChild variant="outline" size="lg">
+                        <Link href="/shop">Buy Factory-Direct</Link>
+                      </Button>
+                    </div>
                   </div>
                 </motion.div>
 

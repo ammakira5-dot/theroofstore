@@ -256,6 +256,10 @@ export default function Pricing() {
                       {sys.name} <span className="text-base font-normal text-muted-foreground">({sys.code})</span>
                     </h2>
                     <p className="text-sm text-muted-foreground mt-0.5">{sys.tagline}</p>
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-sm font-semibold">
+                      <Link href={`/products/${sys.id}`} className="text-accent hover:underline">Full product details →</Link>
+                      <Link href="/shop" className="text-primary hover:underline">Buy factory-direct →</Link>
+                    </div>
                   </div>
                 </div>
                 <div className="text-right shrink-0">

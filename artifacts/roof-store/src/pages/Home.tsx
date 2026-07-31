@@ -409,6 +409,13 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold font-serif mb-3 text-foreground">{s.title}</h3>
                 <p className="text-muted-foreground mb-6">{s.desc}</p>
+                {i === 2 && (
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 mb-4 text-sm font-semibold">
+                    <Link href="/products/fungalshield" className="text-accent hover:underline">RP1 Fungal Shield</Link>
+                    <Link href="/products/smartshield" className="text-accent hover:underline">RP2 Smart Shield</Link>
+                    <Link href="/products/roofshield" className="text-accent hover:underline">RP3 Roof Shield</Link>
+                  </div>
+                )}
                 <Link href="/roof-systems" className="text-primary font-bold flex items-center gap-2 hover:text-accent transition-colors">
                   Learn more <ArrowRight className="h-4 w-4" />
                 </Link>

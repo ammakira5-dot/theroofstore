@@ -337,10 +337,19 @@ export default function Products() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-10">
               {products.map(p => (
-                <div key={p.code} className="bg-white/10 px-5 py-3 rounded-lg text-center">
+                <a
+                  key={p.code}
+                  href={`#product-${p.code}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById(`product-${p.code}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="bg-white/10 hover:bg-white/20 transition-colors px-5 py-3 rounded-lg text-center cursor-pointer"
+                >
                   <div className="text-xs text-white/60 uppercase tracking-widest">{p.code}</div>
                   <div className="text-lg font-bold">{p.name}</div>
-                </div>
+                  <div className="text-[11px] text-white/70 underline mt-0.5">View details ↓</div>
+                </a>
               ))}
             </div>
           </motion.div>
@@ -360,11 +369,19 @@ export default function Products() {
                 { code: "RP2", name: "Smart Shield", coverage: "90 sq ft/gal" },
                 { code: "RP3", name: "Roof Shield", coverage: "50 sq ft/gal" },
               ].map(p => (
-                <div key={p.code} className="text-center">
+                <a
+                  key={p.code}
+                  href={`#product-${p.code}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById(`product-${p.code}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="text-center hover:opacity-80 transition-opacity cursor-pointer"
+                >
                   <div className="text-xs font-bold opacity-70 uppercase tracking-wide">{p.code}</div>
-                  <div className="font-bold">{p.name}</div>
+                  <div className="font-bold underline underline-offset-2">{p.name}</div>
                   <div className="text-xs opacity-80">{p.coverage}</div>
-                </div>
+                </a>
               ))}
             </div>
             <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/20 shrink-0">
@@ -395,7 +412,8 @@ export default function Products() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`bg-card rounded-2xl border-2 ${product.accentClass} overflow-hidden shadow-sm`}
+                id={`product-${product.code}`}
+                className={`bg-card rounded-2xl border-2 ${product.accentClass} overflow-hidden shadow-sm scroll-mt-24`}
                 data-testid={`product-card-${i}`}
               >
                 {product.featured && (

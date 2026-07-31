@@ -88,7 +88,7 @@ export function QuoteModal() {
             </div>
 
             <h2 className="text-2xl font-serif font-bold leading-tight mb-2">
-              Free Roof Evaluation &amp; Contractor Estimate
+              Free Roof Evaluation &amp; Contractor Installation Estimate
             </h2>
             <p className="text-white/75 text-sm">
               No pressure. No obligation. Our expert comes to you and gives you an honest assessment — free.

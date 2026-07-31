@@ -155,9 +155,9 @@ export default function Factory() {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/roof-replacement-alternative-truck.png"
-                alt="The Roof Store licensed installation crew — truck and trailer, South Florida"
-                className="rounded-2xl shadow-xl w-full object-cover"
+                src="/images/products/smartshield-pail.png"
+                alt="Smart Shield roof coating 5-gallon pail with Don't Reroof — Weatherproof label, made by RoofProtect Products in Davie Florida"
+                className="rounded-2xl shadow-xl w-full object-contain bg-white p-4"
               />
             </motion.div>
             <motion.div

@@ -16,6 +16,14 @@ const ContactSchema = z.object({
   roofType: z.string().optional(),
   message: z.string().optional(),
   source: z.enum(["contact-form", "quote-modal", "city-page-form", "county-page-form", "service-area-form"]).default("contact-form"),
+}).superRefine((data, ctx) => {
+  // The full contact form requires every field; other lead forms (quote modal,
+  // city/county/service-area forms) only collect name, phone, and email.
+  if (data.source === "contact-form") {
+    if (!data.address?.trim()) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["address"], message: "Address is required" });
+    if (!data.roofType?.trim()) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["roofType"], message: "Roof type is required" });
+    if (!data.message?.trim()) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["message"], message: "Message is required" });
+  }
 });
 
 router.post("/contact", async (req, res) => {

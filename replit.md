@@ -95,6 +95,8 @@ Finished items are archived in `docs/completed-work-log.md` — only open/action
 
 ### 🟡 B — Agent-ready (just say go ahead)
 
+- **Option 3 link consistency (from July 31 buyer-navigation audit)** — homepage "Buy & Use Your Own Installer" links to /products, but the Products page's same Option 3 links to /products/roofshield only. Make both point to the same destination everywhere (audit recommends /shop or the full catalog).
+
 **theroofstore.net codebase:**
 *(July 30 publish went live — Exhibit S, factory GMB schema alignment, 301 CSV refinements, Exhibits G-2/G-3, Wayback + shingle/metal pages, Spanish/S-tile pages, service-card links, duplicate-URL fix all archived to docs/completed-work-log.md.)*
 - **GA4 install** — still waiting on owner's GA4 Measurement ID (see owner actions ⚡).

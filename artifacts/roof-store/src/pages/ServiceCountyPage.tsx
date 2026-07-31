@@ -112,9 +112,9 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
   return (
     <div className="w-full">
       <SEO
-        title={`Roof Coating Contractor in ${county}, FL — The Roof Store`}
-        description={`Roof coating contractor in ${county}, FL — elastomeric, acrylic, and reflective cool roof coating services. Tile, flat, and metal roof coating, waterproofing, and hurricane protection — licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`}
-        canonical={`/service-areas/${slug}`}
+        title={`Roof Coating Services in ${county}, FL — Full Service Menu | The Roof Store`}
+        description={`Every roof coating service we offer in ${county}, FL: pressure cleaning, tile painting, elastomeric & reflective coatings, waterproofing, metal roof coating, hurricane protection, and repairs — licensed & insured, A+ BBB rated since 1994. Free quote: 954-210-9614.`}
+        canonical={`/roof-services/${slug}`}
         schema={schema}
         geo={{ region: "US-FL", placename: `${county}, FL` }}
       />

@@ -57,6 +57,7 @@ import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
 
 import { CountyPage } from "@/pages/service-areas/CountyPage";
+import { ServiceCountyPage } from "@/pages/ServiceCountyPage";
 import { CityPage } from "@/pages/service-areas/CityPage";
 import { getCityImage } from "@/pages/service-areas/data";
 import { findCounty, findCity } from "@/pages/service-areas/data";
@@ -69,6 +70,12 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [location]);
   return null;
+}
+
+function ServiceCountyRoute({ params }: { params: { county: string } }) {
+  const county = findCounty(params.county);
+  if (!county) return <NotFound />;
+  return <ServiceCountyPage county={county.name} slug={county.slug} cities={county.cities} />;
 }
 
 function CountyRoute({ params }: { params: { county: string } }) {
@@ -103,7 +110,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/roof-systems" component={RoofSystems} />
       <Route path="/roof-services" component={RoofServices} />
-      <Route path="/roof-services/:county" component={({ params }: { params: { county: string } }) => <RedirectTo to={`/service-areas/${params.county}`} />} />
+      <Route path="/roof-services/:county" component={ServiceCountyRoute} />
       <Route path="/service-areas" component={ServiceAreas} />
       <Route path="/service-areas/:county" component={CountyRoute} />
       <Route path="/service-areas/:county/:city" component={CityRoute} />

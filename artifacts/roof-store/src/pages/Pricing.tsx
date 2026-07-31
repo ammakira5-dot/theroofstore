@@ -199,7 +199,7 @@ export default function Pricing() {
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-block bg-accent/20 border border-accent/30 text-accent px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6">Factory Price Menu</div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Prices in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Prices (Included Products Installed) in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
               Per-square-foot rates by system, roof type, and pitch. All prices include labor &amp; materials. Exact quotes are finalized after a free onsite visit.
             </p>

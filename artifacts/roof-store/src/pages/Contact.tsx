@@ -55,7 +55,7 @@ export default function Contact() {
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      name: "Contact The Roof Store — Free Evaluation & Contractor Estimate",
+      name: "Contact The Roof Store — Free Roof Evaluation & Contractor Estimate",
       url: "https://www.theroofstore.net/contact",
       description: "Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida.",
       mainEntity: {
@@ -88,7 +88,7 @@ export default function Contact() {
   return (
     <div className="w-full">
       <SEO
-        title="Contact Us — Free Evaluation & Contractor Estimate"
+        title="Contact Us — Free Roof Evaluation & Contractor Estimate"
         description="Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
         canonical="/contact"
         schema={schema}
@@ -98,7 +98,7 @@ export default function Contact() {
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free Evaluation &amp; Contractor Estimate</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free Roof Evaluation &amp; Contractor Estimate</h1>
             <p className="text-xl text-white/80">
               It starts with a conversation — talk with our experts first, then we evaluate your roof and provide a detailed contractor estimate. No cost, no obligation.
             </p>
@@ -192,7 +192,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-card border rounded-2xl p-8 shadow-sm space-y-6">
-                  <h3 className="text-2xl font-serif font-bold text-primary">Request Your Free Evaluation &amp; Contractor Estimate</h3>
+                  <h3 className="text-2xl font-serif font-bold text-primary">Request Your Free Roof Evaluation &amp; Contractor Estimate</h3>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">

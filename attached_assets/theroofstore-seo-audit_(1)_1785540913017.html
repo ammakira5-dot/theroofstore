@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>theroofstore.net — SEO Audit: Site-Wide, City Pages & Service Pages</title>
+<style>
+  :root{
+    --ink:#1e293b; --muted:#64748b; --line:#e2e8f0; --primary:#1e3a8a; --accent:#c2410c;
+    --high-bg:#fef2f2; --high-border:#dc2626;
+    --med-bg:#fff7ed; --med-border:#d97706;
+    --good-bg:#f0fdf4; --good-border:#16a34a;
+    --info-bg:#eff6ff; --info-border:#2563eb;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f8fafc;line-height:1.6;}
+  .page{max-width:880px;margin:0 auto;background:#fff;padding:48px 56px 64px;}
+  header.doc-head{border-bottom:3px solid var(--primary);padding-bottom:20px;margin-bottom:28px;}
+  header.doc-head .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);background:#eef2ff;border-radius:999px;padding:4px 12px;margin-bottom:10px;}
+  header.doc-head h1{margin:0 0 6px;font-size:25px;color:var(--primary);}
+  header.doc-head p.sub{margin:0;color:var(--muted);font-size:14px;}
+  .print-btn{position:fixed;top:20px;right:24px;background:var(--primary);color:#fff;border:none;padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.15);}
+  .print-btn:hover{background:#16306e;}
+  h2{font-size:19px;color:var(--primary);margin-top:38px;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--line);}
+  h3{font-size:15px;margin:18px 0 8px;}
+  p{font-size:14.5px;}
+  table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13.5px;}
+  th,td{border:1px solid var(--line);padding:8px 12px;text-align:left;vertical-align:top;}
+  th{background:#f1f5f9;font-weight:700;color:var(--primary);}
+  .kpi-row{display:flex;gap:12px;margin:16px 0 8px;flex-wrap:wrap;}
+  .kpi{background:#f1f5f9;border-radius:8px;padding:10px 16px;text-align:center;flex:1;min-width:110px;}
+  .kpi .num{font-size:20px;font-weight:800;color:var(--primary);}
+  .kpi .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .note{background:var(--info-bg);border-left:4px solid var(--info-border);padding:12px 18px;border-radius:6px;margin:14px 0;font-size:13.5px;}
+  .verdict{background:#eef2ff;border-left:4px solid var(--primary);padding:14px 18px;border-radius:6px;margin:16px 0 8px;font-size:15px;}
+  .verdict b{color:var(--primary);}
+  .finding{border-radius:8px;padding:16px 20px;margin:14px 0;border-left-width:5px;border-left-style:solid;page-break-inside:avoid;}
+  .finding .badge{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:3px 10px;margin-bottom:8px;}
+  .finding p{margin:6px 0 0;}
+  .finding.high{background:var(--high-bg);border-color:var(--high-border);}
+  .finding.high .badge{background:var(--high-border);color:#fff;}
+  .finding.medium{background:var(--med-bg);border-color:var(--med-border);}
+  .finding.medium .badge{background:var(--med-border);color:#fff;}
+  .finding.good{background:var(--good-bg);border-color:var(--good-border);}
+  .finding.good .badge{background:var(--good-border);color:#fff;}
+  .rank-list{list-style:none;padding:0;margin:14px 0;}
+  .rank-list li{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin-bottom:10px;page-break-inside:avoid;}
+  .rank-list li .r{display:inline-block;width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;font-size:12px;font-weight:700;text-align:center;line-height:24px;margin-right:8px;}
+  .rank-list li .title{font-weight:700;font-size:14.5px;}
+  .rank-list li p{margin:6px 0 0 32px;font-size:13.5px;color:var(--ink);}
+  .rank-list.weak li .r{background:var(--muted);}
+  ol.fixes{padding-left:22px;font-size:14.5px;}
+  ol.fixes li{margin-bottom:10px;}
+  ol.fixes li b{color:var(--accent);}
+  footer.doc-foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);}
+  @media print{
+    body{background:#fff;} .page{max-width:100%;padding:0 8mm;} .print-btn{display:none;}
+    .finding, table, .rank-list li{page-break-inside:avoid;} a{color:inherit;text-decoration:none;}
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+<div class="page">
+
+  <header class="doc-head">
+    <span class="tag">SEO Audit</span>
+    <h1>theroofstore.net — Site-Wide, City Pages &amp; Service Pages</h1>
+    <p class="sub">On-page and technical SEO diagnosis, plus a ranked read on which city pages and service pages are strongest — and weakest — from an SEO standpoint.</p>
+  </header>
+
+  <div class="note">
+    <b>Scope note:</b> This audit is based on direct crawling of the site, its sitemap, and a representative sample of pages (no connected Google Search Console / Analytics / rank-tracking data). Traffic, ranking position, and competitor-benchmark claims are therefore structural/on-page assessments, not measured search performance. Connect GA4 or a rank tracker to validate these calls with real data.
+  </div>
+
+  <h2>Site at a Glance</h2>
+  <div class="kpi-row">
+    <div class="kpi"><div class="num">~150</div><div class="lbl">Indexed URLs</div></div>
+    <div class="kpi"><div class="num">113</div><div class="lbl">City pages</div></div>
+    <div class="kpi"><div class="num">4</div><div class="lbl">County hubs</div></div>
+    <div class="kpi"><div class="num">~25</div><div class="lbl">Topic/service pages</div></div>
+    <div class="kpi"><div class="num">4</div><div class="lbl">Pages missing from sitemap</div></div>
+  </div>
+
+  <div class="verdict">
+    <b>Verdict:</b> The foundation is solid — clean robots.txt, sitemap linked correctly, LocalBusiness/FAQ schema on the homepage, and two genuinely excellent pillar pages. The main risk is <b>scale-driven duplicate content</b>: 113 city pages share roughly 85–90% identical boilerplate text, and a set of county-level pages exists outside the sitemap entirely. Fixing indexing gaps and thinning out low-value micro-city pages will do more for rankings than any new content.
+  </div>
+
+  <h2>Site-Wide Technical &amp; On-Page Findings</h2>
+
+  <div class="finding high">
+    <span class="badge">High priority</span>
+    <h3>1. Four county-level service pages are missing from the sitemap</h3>
+    <p><code>/roof-services/broward-county</code>, <code>/roof-services/miami-dade-county</code>, <code>/roof-services/palm-beach-county</code>, and <code>/roof-services/monroe-county</code> are live, real pages — internally linked from <code>/service-areas</code> and <code>/roof-services</code> — but none appear in <code>sitemap.xml</code>. That's a direct indexing gap: search engines are less likely to discover and prioritize crawling these pages.</p>
+  </div>
+
+  <div class="finding high">
+    <span class="badge">High priority</span>
+    <h3>2. 113 city pages are ~85–90% duplicate boilerplate</h3>
+    <p>Fort Lauderdale, Miami, West Palm Beach, Islandia, and Key West pages were compared directly: the challenges paragraph, services list, "Why homeowners choose us" block, and FAQ questions are word-for-word identical except for the city name swap. Only the "About [City]" paragraph is genuinely unique per page. At 113 pages, this is the kind of pattern that can suppress the ranking ability of the whole city-page section, not just the weak individual pages — search engines evaluate templated location pages as a set.</p>
+  </div>
+
+  <div class="finding medium">
+    <span class="badge">Medium priority</span>
+    <h3>3. <code>/service-areas/{county}</code> and <code>/roof-services/{county}</code> compete for the same intent</h3>
+    <p>Both page types target "roof coating services in [county]" for the same four counties. Right now they split ranking signals across two URLs instead of consolidating authority into one strong county-level page — a self-cannibalization risk.</p>
+  </div>
+
+  <div class="finding medium">
+    <span class="badge">Medium priority</span>
+    <h3>4. Some boilerplate repetition inside the Spanish-tile topic cluster</h3>
+    <p><code>/spanish-tile-roof-coating</code> and <code>/spanish-tile-roof-painting</code> (and likely <code>-waterproofing</code> / <code>-maintenance</code>) share an identical 4-step "How It Works" block and identical city-list footers. The core pitch is different enough per page (waterproofing/hurricane vs. color restoration) to justify separate URLs, but the shared blocks add unnecessary duplicate text across the cluster.</p>
+  </div>
+
+  <div class="finding good">
+    <span class="badge">Working well</span>
+    <h3>5. Two flagship pages are genuinely excellent</h3>
+    <p><code>/roof-coating-florida</code> and <code>/tas-106-certified-roof-coating</code> both use a real content strategy: table of contents with jump links, a "Direct Answer" callout under every H2 (built for AI Overviews / GEO citation), comparison tables, dated freshness ("Updated July 2026"), FAQ blocks, and dense internal linking to every city and product page. These are the site's strongest SEO and AI-search assets — worth using as the template for other pages.</p>
+  </div>
+
+  <h2>City Pages — Best to Weakest, SEO-Wise</h2>
+  <p>Since almost all city pages share the same template, ranking potential comes down to two things: how much genuinely unique local content the page has, and how much realistic local search demand exists for that city.</p>
+
+  <ol class="rank-list">
+    <li><span class="r">1</span><span class="title">Miami &amp; Fort Lauderdale</span><p>The two largest anchor cities. Genuinely distinct "About" paragraphs (Art Deco South Beach flat roofs / Coconut Grove clay tile vs. Intracoastal estates and salt-air exposure) plus the highest realistic search volume for "roof coating + city" queries in the whole site.</p></li>
+    <li><span class="r">2</span><span class="title">West Palm Beach</span><p>The only city-page intro that leads with a distinct, high-intent hook — Citizens Insurance roof-age pressure and the Additional Roof Life Certification — instead of generic weather boilerplate. That's a real differentiation signal, not just a name swap.</p></li>
+    <li><span class="r">3</span><span class="title">Key West</span><p>Weak population/search volume on paper, but it captures 100% of Monroe County's demand with zero internal competition (it's the only city page in that county), and its "southernmost city / extreme marine environment" narrative is a genuinely unique angle other city pages don't share.</p></li>
+  </ol>
+
+  <ol class="rank-list weak">
+    <li><span class="r">✕</span><span class="title">Micro-population towns (e.g. Islandia, Cloud Lake, Golfview, Briny Breezes)</span><p>Islandia and Key West share a near word-for-word opening paragraph. Towns with populations in the dozens to low hundreds have negligible realistic search demand for "roof coating in [town] FL," so they carry the same duplicate-content cost as a major city with almost none of the potential upside — diluting the section's overall content quality without a matching ranking payoff.</p></li>
+  </ol>
+
+  <h2>Service / Topic Pages — Best to Weakest, SEO-Wise</h2>
+  <ol class="rank-list">
+    <li><span class="r">1</span><span class="title">/roof-coating-florida</span><p>The site's pillar guide. Best structure on the site: TOC, Direct-Answer format, comparison tables, dated freshness, FAQ, and links to every city and product page. This is the page most likely to rank for broad "roof coating Florida" queries and to get cited in AI search answers.</p></li>
+    <li><span class="r">2</span><span class="title">/tas-106-certified-roof-coating</span><p>A defensible authority topic competitors literally cannot copy (a real, verifiable government certification). Deep, well-sourced content — Hurricane Andrew history, NOA verification steps, technical spec table, embedded video, customer testimonial. Strong candidate for featured snippets and AI citations on hurricane/wind-rating queries.</p></li>
+    <li><span class="r">3</span><span class="title">/roof-life-certification &amp; /roof-replacement-alternative-florida</span><p>Reinforce the same unique insurance/legal differentiator (ARLC, SB 2-D) that competitors generally don't cover — a real content moat, not just another service description.</p></li>
+  </ol>
+
+  <ol class="rank-list weak">
+    <li><span class="r">✕</span><span class="title">/service-areas/{county} vs. /roof-services/{county}</span><p>Same target intent, split across two URL sets, with one set missing from the sitemap entirely — the weakest structural pairing on the site.</p></li>
+  </ol>
+
+  <h2>Recommended Fixes, in Priority Order</h2>
+  <ol class="fixes">
+    <li><b>Add the four missing <code>/roof-services/{county}</code> URLs to sitemap.xml</b> — quick technical fix, immediate indexing benefit.</li>
+    <li><b>Resolve the <code>/service-areas/{county}</code> vs. <code>/roof-services/{county}</code> overlap</b> — either merge into one strong county page per county, or clearly split the intent (coverage/location vs. service menu) so they stop competing with each other.</li>
+    <li><b>Add 1–2 more genuinely unique local details</b> to the top 15–20 highest-population city pages (permit notes, common local roof types, HOA specifics) — and consider noindexing or consolidating the lowest-population micro-town pages rather than diluting the section with near-duplicate content.</li>
+    <li><b>Reuse the <code>/tas-106-certified-roof-coating</code> format</b> (Direct Answer + data table + FAQ) on more mid-tier service pages to standardize GEO/AI-citation strength across the site.</li>
+  </ol>
+
+  <footer class="doc-foot">Prepared for internal review · theroofstore.net SEO audit</footer>
+
+</div>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a24064fefde40c57',t:'MTc4NTU0MDY2NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

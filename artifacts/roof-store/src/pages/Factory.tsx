@@ -150,18 +150,41 @@ export default function Factory() {
 
       <section className="py-16 bg-background border-b">
         <div className="container px-4 max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="space-y-6"
             >
               <img
                 src="/images/roof-replacement-alternative-truck.png"
                 alt="The Roof Store licensed installation crew — truck and trailer wrap, South Florida"
                 className="rounded-2xl shadow-xl w-full object-cover"
               />
+              <figure className="rounded-2xl overflow-hidden border shadow-md">
+                <img
+                  src="/images/jobs/davie-shingle-in-progress.jpg"
+                  alt="Roof Shield System being applied to a shingle tile roof in Davie, FL"
+                  loading="lazy"
+                  className="w-full h-64 object-cover"
+                />
+                <figcaption className="bg-muted px-4 py-3 text-sm text-muted-foreground">
+                  Roof Shield System going on — a real Davie, FL job
+                </figcaption>
+              </figure>
+              <figure className="rounded-2xl overflow-hidden border shadow-md">
+                <img
+                  src="/images/jobs/davie-shingle-seam-detail.jpg"
+                  alt="One roof in Davie, FL: seams fully sealed on the right half, unsealed on the left half"
+                  loading="lazy"
+                  className="w-full h-64 object-cover"
+                />
+                <figcaption className="bg-muted px-4 py-3 text-sm text-muted-foreground">
+                  Same roof, one photo: seams sealed on the right, not yet on the left
+                </figcaption>
+              </figure>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}

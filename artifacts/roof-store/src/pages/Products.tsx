@@ -398,7 +398,7 @@ export default function Products() {
       <section className="py-24 bg-background">
         <div className="container px-4 max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-serif font-bold text-primary mb-4">The Three Systems</h2>
+            <h2 className="text-4xl font-serif font-bold text-primary mb-4">The Three Main Products</h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Each product addresses a specific roof protection need. Many installations combine systems — call us and we'll recommend the right combination for your roof.
             </p>

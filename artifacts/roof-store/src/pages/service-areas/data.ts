@@ -69,14 +69,14 @@ export const counties: CountyEntry[] = [
         image: "/api/storage/public-objects/cities/1553284965-83fd3e82fa5a.jpg",
         jobPhotos: [
           {
-            src: "/images/jobs/davie-shingle-before.jpg",
-            alt: "Shingle tile roof in Davie, FL before Roof Shield coating",
-            caption: "A real Davie job — shingle tile roof before coating",
-          },
-          {
             src: "/images/jobs/davie-shingle-in-progress.jpg",
             alt: "Roof Shield System being applied to a shingle tile roof in Davie, FL",
             caption: "Roof Shield System going on — production phase",
+          },
+          {
+            src: "/images/jobs/davie-shingle-before.jpg",
+            alt: "Shingle tile roof in Davie, FL before Roof Shield coating",
+            caption: "A real Davie job — shingle tile roof before coating",
           },
           {
             src: "/images/jobs/davie-shingle-seam-detail.jpg",

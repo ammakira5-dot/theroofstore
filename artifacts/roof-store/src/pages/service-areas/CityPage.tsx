@@ -7,6 +7,7 @@ import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 import { cityCoords } from "./coords";
 import { variantIndex, introVariants, serviceVariants, whyChooseVariants, paintVsCoatingVariants } from "./contentVariants";
 import { getCityFaqs } from "./cityFAQs";
+import { cityLocalContent } from "./localContent";
 import { cityMetaDescriptions } from "./metaDescriptions";
 
 interface CityPageProps {
@@ -31,7 +32,8 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
   const whyIdx = variantIndex(`${citySlug}-why`, whyChooseVariants.length);
   const paintIdx = variantIndex(`${citySlug}-paint`, paintVsCoatingVariants.length);
 
-  const introParagraphs = introVariants[introIdx](city, county);
+  const localContent = cityLocalContent[citySlug];
+  const introParagraphs = localContent?.intro ?? introVariants[introIdx](city, county);
   const services = serviceVariants[serviceIdx](city);
   const whyChoose = whyChooseVariants[whyIdx](city);
   const paintVsCoating = paintVsCoatingVariants[paintIdx](city);
@@ -200,6 +202,41 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
                   </p>
                 ))}
               </motion.div>
+
+              {localContent && (
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <div className="space-y-8">
+                    <div>
+                      <h3 className="text-2xl font-serif font-bold text-primary mb-4">{localContent.roofLandscape.heading}</h3>
+                      {localContent.roofLandscape.paragraphs.map((p, i) => (
+                        <p key={i} className="text-muted-foreground leading-relaxed mb-4 last:mb-0">{p}</p>
+                      ))}
+                    </div>
+                    <div className="bg-primary/5 border border-primary/15 rounded-xl p-6">
+                      <h3 className="text-2xl font-serif font-bold text-primary mb-4">{localContent.permitsAndRules.heading}</h3>
+                      {localContent.permitsAndRules.paragraphs.map((p, i) => (
+                        <p key={i} className="text-muted-foreground leading-relaxed mb-4 last:mb-0">{p}</p>
+                      ))}
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-serif font-bold text-primary mb-4">
+                        {city} neighborhoods &amp; communities we serve
+                      </h3>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {localContent.neighborhoods.map((n, i) => (
+                          <div key={i} className="flex items-start gap-3 p-4 bg-muted/50 border rounded-lg">
+                            <MapPin className="h-4 w-4 text-accent shrink-0 mt-1" />
+                            <div>
+                              <div className="font-bold text-foreground text-sm">{n.name}</div>
+                              <div className="text-muted-foreground text-sm">{n.note}</div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
 
               {blurb && (
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>

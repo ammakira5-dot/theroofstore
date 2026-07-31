@@ -1,0 +1,42 @@
+
+
+/
+
+
+
+
+ammakira5
+Started task
+Pilot: give 5–10 top city pages real local content so Google stops seeing copies
+Owner-confirmed step 1 of the city-page strategy (see .agents/memory/city-pages-seo-strategy.md). All ~157 city pages share one template with only the city name changing — a thin/duplicate-content pattern likely suppressing pages in Google's index. Both the owner's Google AI Mode test and an independent web check ranked this as the ONLY change with real ranking impact; the other two changes are capped until this is fixed.
+
+
+25 actions
+Weston looks great. Verifying a non-pilot city still renders with the standard template, and reading the follow-up-tasks skill:
+
+
+3 actions
+Both pilot and non-pilot pages render correctly. Proposing follow-ups now:
+
+Seeking required owner approval
+
+Seeking required owner approval
+The 10 pilot pages are done. Asking the owner to review before I close the task:
+
+
+Worked for 5 minutes
+
+Checkpoint made
+6 minutes ago
+
+Scroll to latest
+Agent has questions for you
+
+The 10 pilot city pages now have real local content — ready for your review
+Pembroke Pines, Miramar, Weston, Davie, Plantation, Coral Springs, Sunrise, Hialeah, Miami Lakes, and Miami Gardens each got a fully unique intro, a "roof landscape" section (that city's actual housing stock and roof types by neighborhood), a permits/HOA/insurance section specific to that city, a neighborhoods-we-serve grid, and city-specific FAQs (Weston, Hialeah, Miami Lakes, and Miami Gardens got new ones — Hialeah includes a Spanish-language FAQ). No two cities share sentences. All other city pages still use the previous template. You can check them in the preview under Service Areas → pick any pilot city, e.g. /service-areas/broward-county/weston or /service-areas/miami-dade-county/miami-gardens. Nothing is published — this is preview only.
+Do the pilot pages look good, or should anything change?
+
+Approved — looks good
+
+I want changes (tell you in comments)
+Additional comments

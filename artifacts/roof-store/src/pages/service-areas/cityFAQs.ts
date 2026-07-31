@@ -96,6 +96,62 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
       a: "Yes. Our SmartShield (RP2) and RoofShield (RP3) systems use BASF Cool Pigment Technology, which reflects solar infrared energy even in dark colors. Homeowners in Sunrise typically see attic temperatures drop 15–25°F on peak summer afternoons, reducing AC runtime and monthly energy costs.",
     },
   ],
+  "weston": [
+    {
+      q: "Will my Weston HOA approve a roof coating color change?",
+      a: "Weston's communities — Weston Hills, Savanna, The Ridges, and others — nearly all require architectural review board approval before roof work. Our SmartShield (RP2) system offers 3,000+ BASF Cool Pigment colors including exact matches to approved community palettes, and we prepare the full ARB package (product spec sheet, manufacturer color card, licensing and insurance proof) as part of every Weston quote.",
+    },
+    {
+      q: "Can I get a dark roof color in Weston without a hotter house?",
+      a: "Yes — this is Weston's most-requested upgrade. SmartShield's BASF Cool Pigment Technology reflects solar infrared energy even in deep charcoal and slate tones, so you get the modern dark-tile look without the attic heat penalty older dark coatings carried. Attic temperature drops of 15–25°F on peak afternoons are typical versus an aged, non-reflective surface.",
+    },
+    {
+      q: "How much does roof coating cost in Weston, FL?",
+      a: "Weston roof coating: SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Weston's barrel and S-tile roofs on pitched estates typically land at $2.35–$2.75/sq ft for RP2 — a 3,000 sq ft roof runs roughly $7,000–$8,250 all-in, versus $30,000+ to re-roof. Call 954-210-9614 for a free written estimate.",
+    },
+  ],
+  "hialeah": [
+    {
+      q: "Can you coat Hialeah's older flat roofs without a tear-off?",
+      a: "Yes — that's most of our Hialeah work. The city's 1950s–70s CBS homes typically have flat or low-slope roofs with layers of old built-up tar and silver coat. Our elastomeric membrane bonds directly over those surfaces, seals every penetration, and turns the deck into one waterproof surface — no tear-off, no dumpster, usually finished in one to two days.",
+    },
+    {
+      q: "¿Ofrecen servicio en español en Hialeah?",
+      a: "Sí — hablamos español. Ofrecemos inspección gratuita, presupuesto por escrito y toda la documentación del seguro (incluida la certificación Additional Roof Life) en Hialeah y sus alrededores. Llámenos al 954-210-9614.",
+    },
+    {
+      q: "How much does roof coating cost in Hialeah, FL?",
+      a: "Hialeah roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. A typical 1,600 sq ft Hialeah flat roof can be fully membraned for a fraction of the $16,000+ a tear-off would cost. All prices include labor and materials.",
+    },
+  ],
+  "miami-lakes": [
+    {
+      q: "Why do Miami Lakes roofs get so much algae and black streaking?",
+      a: "Miami Lakes was master-planned around its namesake lakes, so nearly every roof sits close to water — keeping humidity at roof level high year-round. Water-facing slopes consistently carry the heaviest biological growth. Our FungalShield (RP1) treatment eliminates it, and SmartShield (RP2) adds a sealed, algae-resistant surface so it doesn't come back.",
+    },
+    {
+      q: "Do Miami Lakes communities require approval for roof color changes?",
+      a: "Several do — Royal Oaks and the gated lakefront sections run architectural review. We supply the product specification sheet, BASF color card, and licensing documentation for your board as standard, and can match any approved palette from 3,000+ Cool Pigment colors.",
+    },
+    {
+      q: "How much does roof coating cost in Miami Lakes, FL?",
+      a: "Miami Lakes roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. The town's barrel and S-tile roofs typically fall in the $2.35–$2.75 range for RP2. Free onsite estimate — call 954-210-9614.",
+    },
+  ],
+  "miami-gardens": [
+    {
+      q: "My insurance company says my Miami Gardens roof is too old. Can coating help?",
+      a: "Often, yes. Miami Gardens' 1960s–70s homes draw age-based non-renewal letters even when the roof is structurally sound. Our coating systems restore and seal the roof, and an Additional Roof Life Certification documents the restored condition for your carrier — a fraction of the cost of the forced re-roof the letter implies. Bring the letter to your free inspection and we'll tell you honestly whether coating solves it for your roof.",
+    },
+    {
+      q: "Do you coat the original built-up gravel roofs common in Miami Gardens?",
+      a: "Yes. Neighborhoods like Norland, Bunche Park, and Scott Lake are full of original 1960s built-up roofs that have only ever had spot repairs. Our liquid-applied membrane bridges hairline cracking, seals drains and AC-stand penetrations, and its reflective surface noticeably drops attic temperatures on these low-slope designs.",
+    },
+    {
+      q: "How much does roof coating cost in Miami Gardens, FL?",
+      a: "Miami Gardens roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft — including labor and materials. A typical 1,500 sq ft flat roof is restored for 60–70% less than replacement. Call 954-210-9614 for a free written estimate.",
+    },
+  ],
   "pompano-beach": [
     {
       q: "Does salt air from the ocean damage tile roofs in Pompano Beach?",

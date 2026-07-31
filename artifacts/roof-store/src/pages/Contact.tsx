@@ -98,7 +98,7 @@ export default function Contact() {
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free Roof Evaluation &amp; Contractor Estimate</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free ROOF Evaluation &amp; Contractor Estimate</h1>
             <p className="text-xl text-white/80">
               It starts with a conversation — talk with our experts first, then we evaluate your roof and provide a detailed contractor estimate. No cost, no obligation.
             </p>

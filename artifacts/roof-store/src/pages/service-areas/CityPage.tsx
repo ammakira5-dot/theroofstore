@@ -7,6 +7,7 @@ import { LocalQuoteForm } from "@/components/LocalQuoteForm";
 import { cityCoords } from "./coords";
 import { variantIndex, introVariants, serviceVariants, whyChooseVariants, paintVsCoatingVariants } from "./contentVariants";
 import { getCityFaqs } from "./cityFAQs";
+import { cityMetaDescriptions } from "./metaDescriptions";
 
 interface CityPageProps {
   city: string;
@@ -143,11 +144,8 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
       <SEO
         title={`Roof Coating in ${city}, FL | The Roof Store`}
         description={
-          blurb
-            ? blurb.length > 155
-              ? blurb.slice(0, blurb.lastIndexOf(" ", 155)) + "…"
-              : blurb
-            : `Roof coating contractor in ${city}, ${county}, FL. Professional elastomeric tile, flat & metal roof systems — hurricane-rated, A+ BBB, est. 1994. Free inspection: 954-210-9614.`
+          cityMetaDescriptions[citySlug] ??
+          `Insurance flagging your ${city} roof's age? Our coating + Additional Roof Life Certification satisfies FL carriers for 60–70% less than re-roofing. A+ BBB since 1994.`
         }
         canonical={`/service-areas/${countySlug}/${citySlug}`}
         ogImage={image}

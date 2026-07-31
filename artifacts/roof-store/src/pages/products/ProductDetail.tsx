@@ -332,9 +332,9 @@ export function ProductDetail({ product }: { product: ProductData }) {
 
             <div className="space-y-6">
               <div className="bg-primary text-white rounded-xl p-8 sticky top-24">
-                <h3 className="text-xl font-serif font-bold mb-1">Get a Free Quote</h3>
+                <h3 className="text-xl font-serif font-bold mb-1">Free Evaluation &amp; Contractor Estimate</h3>
                 <p className="text-white/60 text-xs mb-5">
-                  Ask about {product.name} for your roof — no cost, no obligation.
+                  Want {product.name} professionally installed? No cost, no obligation.
                 </p>
                 <LocalQuoteForm location={product.name} source="product-page-form" />
               </div>
@@ -376,9 +376,12 @@ export function ProductDetail({ product }: { product: ProductData }) {
       <section className="py-20 bg-primary text-white text-center">
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-5">Ready to Protect Your Roof?</h2>
-          <p className="text-xl text-white/75 mb-8">Our certified technicians will inspect your roof and recommend the right system — at no cost.</p>
+          <p className="text-xl text-white/75 mb-8">Not sure this is the right product for your roof? Call us before you buy — we make it, so we know.</p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
-            <Link href="/contact">Schedule Free Inspection</Link>
+            <a href="tel:9542109614">
+              <Phone className="h-5 w-5 mr-2" />
+              Ask Before You Buy — 954-210-9614
+            </a>
           </Button>
         </div>
       </section>

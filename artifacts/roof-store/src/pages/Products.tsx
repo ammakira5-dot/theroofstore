@@ -509,7 +509,7 @@ export default function Products() {
                         <Button asChild variant="outline" className="flex-1">
                           <a href="tel:9542109614">
                             <Phone className="h-4 w-4 mr-2" />
-                            Get a Quote
+                            Call for Product Pricing
                           </a>
                         </Button>
                       </div>

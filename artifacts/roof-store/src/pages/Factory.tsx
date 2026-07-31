@@ -219,6 +219,30 @@ export default function Factory() {
                   Visit manufacturer site: roofprotectproducts.com →
                 </a>
               </div>
+              <div className="bg-card border rounded-xl p-6 shadow-sm space-y-3">
+                <div className="text-primary font-bold text-sm uppercase tracking-wide">Buying factory-direct?</div>
+                <div className="flex items-start gap-4">
+                  <img
+                    src="/images/products/smartshield-pail.png"
+                    alt="Smart Shield roof coating 5-gallon pail with Don't Reroof — Weatherproof label"
+                    className="w-20 shrink-0 rounded-lg border bg-white p-1"
+                  />
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Contractors and DIY — buy the same 100% liquid rubber coatings we install, at factory pricing. Shipped anywhere, or pick up at our Davie, FL facility. Custom colors tinted in-house.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3 pt-1">
+                  <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white">
+                    <Link href="/shop">Shop Factory-Direct</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/roof-systems">View Product Specs</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline">
+                    <Link href="/contact">Ask About Pickup</Link>
+                  </Button>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>

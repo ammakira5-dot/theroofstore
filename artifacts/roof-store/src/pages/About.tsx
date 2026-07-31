@@ -357,7 +357,7 @@ export default function About() {
                 step: "Option 1",
                 title: "Hire Us — Full Installation",
                 desc: "Our licensed crew handles everything end-to-end: manufacturer's inspection, surface prep, full product application, and warranty documentation. This is the path we guarantee with our Lifetime Warranty.",
-                cta: "Get a Free Quote",
+                cta: "Free Roof Evaluation & Estimate",
                 href: "/contact",
                 dark: true,
               },

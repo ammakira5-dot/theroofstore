@@ -211,7 +211,7 @@ export default function Videos() {
             The same system you just saw tested and certified — available for your roof today.
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
-            <Link href="/contact">Get a Free Quote</Link>
+            <Link href="/contact">Free Roof Evaluation & Estimate</Link>
           </Button>
         </div>
       </section>

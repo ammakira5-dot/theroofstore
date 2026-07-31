@@ -57,7 +57,7 @@ export default function Contact() {
       "@type": "ContactPage",
       name: "Contact The Roof Store — Free Roof Evaluation & Contractor Installation Estimate",
       url: "https://www.theroofstore.net/contact",
-      description: "Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida.",
+      description: "Schedule a free roof evaluation with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida.",
       mainEntity: {
         "@type": "RoofingContractor",
         name: "The Roof Store Waterproofing Products",
@@ -89,7 +89,7 @@ export default function Contact() {
     <div className="w-full">
       <SEO
         title="Contact Us — Free Roof Evaluation & Contractor Installation Estimate"
-        description="Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
+        description="Schedule a free roof evaluation with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
         canonical="/contact"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}
@@ -183,7 +183,7 @@ export default function Contact() {
                   <CheckCircle2 className="h-16 w-16 text-accent mb-6" />
                   <h3 className="text-2xl font-serif font-bold text-primary mb-4">Thank You!</h3>
                   <p className="text-muted-foreground text-lg">
-                    We've received your request and will contact you within 1 business day to schedule your free roof inspection.
+                    We've received your request and will contact you within 1 business day to schedule your free roof evaluation.
                   </p>
                   <p className="text-muted-foreground mt-4">
                     For faster service, call us directly at{" "}
@@ -308,7 +308,7 @@ export default function Contact() {
                   )}
 
                   <Button type="submit" size="lg" disabled={loading} className="w-full bg-accent hover:bg-accent/90 text-white h-14 text-lg">
-                    {loading ? <><Loader2 className="h-5 w-5 mr-2 animate-spin" />Sending…</> : "Request Free Consultation"}
+                    {loading ? <><Loader2 className="h-5 w-5 mr-2 animate-spin" />Sending…</> : "Free Roof Evaluation & Estimate"}
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">
                     By submitting this form, you agree to be contacted by The Roof Store regarding your roofing inquiry.

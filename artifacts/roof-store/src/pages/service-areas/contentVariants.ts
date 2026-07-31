@@ -95,7 +95,7 @@ export const whyChooseVariants: ((city: string) => { title: string; desc: string
     { title: "A+ BBB Accredited", desc: "Our Better Business Bureau A+ rating reflects nearly three decades of honest, high-quality work." },
     { title: "Save up to 60–70%", desc: "Our restoration and weatherproofing systems cost significantly less than a full roof replacement." },
     { title: "Hurricane Guaranteed", desc: "Our roof coating systems are tested and guaranteed to perform under Florida hurricane conditions." },
-    { title: "Free Roof Inspection", desc: `No-cost, no-obligation assessment by a certified technician — we come to your ${city} property.` },
+    { title: "Free Roof Evaluation", desc: `No-cost, no-obligation assessment by a certified technician — we come to your ${city} property.` },
   ],
   (city) => [
     { title: "Serving Florida Since 1994", desc: "Three decades of hands-on experience with Florida's climate, codes, and roofing quirks." },

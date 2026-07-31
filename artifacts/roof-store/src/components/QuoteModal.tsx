@@ -103,7 +103,7 @@ export function QuoteModal() {
                 </div>
                 <h3 className="text-xl font-serif font-bold text-primary mb-2">You're all set!</h3>
                 <p className="text-muted-foreground text-sm mb-6">
-                  We'll call you within 1 business day to schedule your free roof inspection.
+                  We'll call you within 1 business day to schedule your free roof evaluation.
                 </p>
                 <Button onClick={dismiss} className="w-full bg-accent hover:bg-accent/90 text-white" size="lg">
                   Close
@@ -154,7 +154,7 @@ export function QuoteModal() {
                 )}
 
                 <Button type="submit" size="lg" disabled={loading} className="w-full bg-accent hover:bg-accent/90 text-white h-12 text-base mt-2">
-                  {loading ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Sending…</> : "Request My Free Inspection"}
+                  {loading ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" />Sending…</> : "Free Roof Evaluation & Estimate"}
                 </Button>
 
                 <div className="flex items-center justify-center gap-2 pt-1">

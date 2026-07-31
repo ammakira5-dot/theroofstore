@@ -463,7 +463,7 @@ export default function Pricing() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
-              <Link href="/contact">Schedule Free Onsite Assessment</Link>
+              <Link href="/contact">Free Roof Evaluation & Estimate</Link>
             </Button>
             <a href="tel:954-210-9614" className="text-white/80 hover:text-white font-bold text-lg transition-colors">
               or call 954-210-9614

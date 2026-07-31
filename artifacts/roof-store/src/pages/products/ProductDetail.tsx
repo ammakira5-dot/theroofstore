@@ -151,7 +151,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 </a>
               ) : (
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-12 px-8">
-                  <Link href="/contact">Get a Free Quote</Link>
+                  <Link href="/contact">Free Roof Evaluation & Estimate</Link>
                 </Button>
               )}
               <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
@@ -162,7 +162,7 @@ export function ProductDetail({ product }: { product: ProductData }) {
               </Button>
               {product.shopUrl && product.shopAvailable !== false && (
                 <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-12 px-8">
-                  <Link href="/contact">Get a Free Quote</Link>
+                  <Link href="/contact">Free Roof Evaluation & Estimate</Link>
                 </Button>
               )}
               {product.pdfUrl && (

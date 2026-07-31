@@ -376,7 +376,7 @@ export default function Projects() {
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-6">Want Results Like These?</h2>
           <p className="text-xl text-white/80 mb-10">
-            Every project starts with a free roof inspection. Our certified technicians will assess your roof and show you exactly what's possible.
+            Every project starts with a free roof evaluation. Our certified technicians will assess your roof and show you exactly what's possible.
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
             <Link href="/contact">Schedule Free Consultation</Link>

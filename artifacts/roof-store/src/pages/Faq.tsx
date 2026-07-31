@@ -76,11 +76,11 @@ const faqs = [
   },
   {
     q: "How much does roof pressure cleaning or soft washing cost in South Florida?",
-    a: "Roof pressure cleaning and soft washing costs vary based on roof size, pitch, and condition. Most residential tile roofs in Broward, Miami-Dade, and Palm Beach County range from a few hundred to over a thousand dollars depending on square footage. We include a free roof inspection with every estimate — call us at 954-210-9614 or use our contact form for a no-obligation quote.",
+    a: "Roof pressure cleaning and soft washing costs vary based on roof size, pitch, and condition. Most residential tile roofs in Broward, Miami-Dade, and Palm Beach County range from a few hundred to over a thousand dollars depending on square footage. We include a free roof evaluation with every estimate — call us at 954-210-9614 or use our contact form for a no-obligation quote.",
   },
   {
     q: "How do I get started?",
-    a: "Simply call us at 954-210-9614 or use our online contact form to schedule a free roof inspection and consultation. One of our certified technicians will come to your property, assess your roof, and provide a detailed written proposal at no charge.",
+    a: "Simply call us at 954-210-9614 or use our online contact form to schedule a free roof evaluation and consultation. One of our certified technicians will come to your property, assess your roof, and provide a detailed written proposal at no charge.",
   },
 ];
 

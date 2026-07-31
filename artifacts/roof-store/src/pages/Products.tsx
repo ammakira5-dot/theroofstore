@@ -551,7 +551,7 @@ export default function Products() {
                 step: "Option 1",
                 title: "Hire Us — Full Installation",
                 desc: "Our licensed crew handles everything: inspection, surface prep, full application, and warranty documentation. The most common path — and the one we guarantee end-to-end.",
-                cta: "Get a Free Quote",
+                cta: "Free Roof Evaluation & Estimate",
                 href: "/contact",
                 dark: true,
               },

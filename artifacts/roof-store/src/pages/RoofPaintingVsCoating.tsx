@@ -385,7 +385,7 @@ export default function RoofPaintingVsCoating() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-serif font-bold mb-4">Ready to Stop Painting and Start Protecting?</h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Get a free roof inspection from a certified technician. We'll assess your roof, explain which system is
+              Get a free roof evaluation from a certified technician. We'll assess your roof, explain which system is
               right for you, and give you a no-obligation estimate — no pressure, no sales pitch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

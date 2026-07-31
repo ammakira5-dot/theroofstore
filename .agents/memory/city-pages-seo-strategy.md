@@ -15,6 +15,7 @@ Owner ran the three audit findings through Google AI Mode; agent ran an independ
 
 **How to apply / guardrails:**
 - Pilot on 5–10 representative cities before rolling to all 157.
+- **Owner-approved pilot list (July 31, 2026)** — the cities where their business actually comes from (western Broward + NW Miami-Dade): Pembroke Pines, Miramar, Weston, Davie, Plantation, Coral Springs, Sunrise (Broward); Hialeah, Miami Lakes, Miami Gardens (Miami-Dade). Refine round two with GSC impressions data (owner to pull Performance → Pages).
 - #1 risk: "spun content" — superficial variation doesn't count; needs real local proof (project photos, local roof styles/rules, city-specific FAQs). If a city page can't be filled without repeating, don't deep-localize it.
 - #2 risk: don't just swap the city name into one template sentence — descriptions must be genuinely varied, ~155 chars.
 - Related held ideas: Consideration A = "Why The Roof Store" authority page + small link-strips on index/factory/about/city pages (one home, many doorways). Consideration B label = the unique-local-content segment itself.

@@ -73,7 +73,7 @@ const BUSINESS_CORE = {
   legalName: "Storm Shield Paint Systems Inc.",
   url: BASE,
   telephone: "+19542109614",
-  email: "theroofstore@gmail.com",
+  email: "ammakira5@gmail.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "4801 S University Dr",

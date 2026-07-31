@@ -51,7 +51,7 @@ export default function Privacy() {
 
           <section>
             <h2 className="font-serif font-bold text-2xl text-primary mb-3">Your Rights</h2>
-            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:theroofstore@gmail.com" className="text-accent hover:underline">theroofstore@gmail.com</a>.</p>
+            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:ammakira5@gmail.com" className="text-accent hover:underline">ammakira5@gmail.com</a>.</p>
           </section>
 
           <section>
@@ -65,7 +65,7 @@ export default function Privacy() {
             <div className="mt-3 space-y-1">
               <p><strong>The Roof Store</strong> (Storm Shield Paint Systems Inc.)</p>
               <p>Phone: <a href="tel:954-210-9614" className="text-accent hover:underline">954-210-9614</a></p>
-              <p>Email: <a href="mailto:theroofstore@gmail.com" className="text-accent hover:underline">theroofstore@gmail.com</a></p>
+              <p>Email: <a href="mailto:ammakira5@gmail.com" className="text-accent hover:underline">ammakira5@gmail.com</a></p>
             </div>
           </section>
         </div>

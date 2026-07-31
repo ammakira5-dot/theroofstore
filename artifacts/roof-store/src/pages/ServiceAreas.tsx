@@ -24,7 +24,7 @@ export default function ServiceAreas() {
       alternateName: "The Roof Store",
       url: BASE,
       telephone: "+19542109614",
-      email: "theroofstore@gmail.com",
+      email: "ammakira5@gmail.com",
       address: { "@type": "PostalAddress", streetAddress: "4801 S University Dr", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       areaServed: areas.map((a) => ({ "@type": "Place", name: `${a}, FL` })),
       description: "The Roof Store serves South Florida homeowners across Broward, Miami-Dade, and Palm Beach counties. A+ BBB rated since 1994.",

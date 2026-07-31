@@ -165,7 +165,7 @@ const schema = [
         name: "How do I verify The Roof Store's TAS-106 certification?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com.",
+          text: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or ammakira5@gmail.com.",
         },
       },
       {
@@ -232,7 +232,7 @@ const faqs = [
   },
   {
     q: "How do I verify The Roof Store's TAS-106 certification?",
-    a: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or theroofstore@gmail.com and we will send the NOA documentation directly.",
+    a: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or ammakira5@gmail.com and we will send the NOA documentation directly.",
   },
   {
     q: "Can I install Roof Shield myself and still have TAS-106 certification?",
@@ -742,7 +742,7 @@ export default function Tas106Certification() {
             {[
               "Visit the Miami-Dade County NOA database — publicly accessible at miamidade.gov/building",
               "Search by manufacturer name (RoofProtect or Storm Shield Paint Systems) or by product name (Roof Shield, RP3)",
-              "Request the NOA reference number directly from The Roof Store — we provide the specific NOA document number upon request to any homeowner, inspector, or insurance representative. Call 954-210-9614 or email theroofstore@gmail.com",
+              "Request the NOA reference number directly from The Roof Store — we provide the specific NOA document number upon request to any homeowner, inspector, or insurance representative. Call 954-210-9614 or email ammakira5@gmail.com",
             ].map((step, i) => (
               <li key={i} className="flex gap-3 text-sm text-muted-foreground">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">{i + 1}</span>

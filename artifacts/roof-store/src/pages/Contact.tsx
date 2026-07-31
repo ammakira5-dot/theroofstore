@@ -64,7 +64,7 @@ export default function Contact() {
         alternateName: "The Roof Store",
         url: "https://www.theroofstore.net",
         telephone: "+19542109614",
-        email: "theroofstore@gmail.com",
+        email: "ammakira5@gmail.com",
         address: { "@type": "PostalAddress", streetAddress: "4801 S University Dr", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
         contactPoint: {
           "@type": "ContactPoint",

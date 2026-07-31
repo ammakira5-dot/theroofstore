@@ -33,7 +33,7 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
       alternateName: "The Roof Store",
       url: BASE,
       telephone: "+19542109614",
-      email: "theroofstore@gmail.com",
+      email: "ammakira5@gmail.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "4801 S University Dr",

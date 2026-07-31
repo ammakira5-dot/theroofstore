@@ -49,7 +49,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
       alternateName: "The Roof Store",
       url: BASE,
       telephone: "+19542109614",
-      email: "theroofstore@gmail.com",
+      email: "ammakira5@gmail.com",
       image,
       address: {
         "@type": "PostalAddress",

@@ -40,7 +40,7 @@ export default function About() {
         legalName: "Storm Shield Paint Systems Inc.",
         url: BASE,
         telephone: "+19542109614",
-        email: "theroofstore@gmail.com",
+        email: "ammakira5@gmail.com",
         foundingDate: "1994",
         address: {
           "@type": "PostalAddress",

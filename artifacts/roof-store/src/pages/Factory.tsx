@@ -117,9 +117,9 @@ export default function Factory() {
                 Through proprietary manufacturing technology, RoofProtect Products formulates every gallon of material used in the Fungal Shield, Smart Shield, and Roof Shield systems as 100% liquid rubber — no water, fillers, thickeners, or extenders. Engineered in South Florida for South Florida.
               </p>
               <img
-                src="/images/roof-replacement-alternative-truck.png"
-                alt="The Roof Store licensed installation crew — truck and trailer wrap"
-                className="rounded-lg shadow-lg border border-white/10 opacity-90 shrink-0"
+                src="/images/products/smartshield-pail.png"
+                alt="Smart Shield roof coating 5-gallon pail with Don't Reroof — Weatherproof label, made by RoofProtect Products in Davie Florida"
+                className="rounded-lg shadow-lg border border-white/10 bg-white p-2 shrink-0"
                 style={{ width: 280 }}
               />
             </div>
@@ -155,9 +155,9 @@ export default function Factory() {
               transition={{ duration: 0.6 }}
             >
               <img
-                src="/images/products/smartshield-pail.png"
-                alt="Smart Shield roof coating 5-gallon pail with Don't Reroof — Weatherproof label, made by RoofProtect Products in Davie Florida"
-                className="rounded-2xl shadow-xl w-full object-contain bg-white p-4"
+                src="/images/roof-replacement-alternative-truck.png"
+                alt="The Roof Store licensed installation crew — truck and trailer wrap, South Florida"
+                className="rounded-2xl shadow-xl w-full object-cover"
               />
             </motion.div>
             <motion.div

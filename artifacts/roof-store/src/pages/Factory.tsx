@@ -4,7 +4,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { Leaf, Sun, ShieldCheck, Award, Users, MapPin, Hammer, ShoppingCart } from "lucide-react";
-import { Lightbox, useLightbox } from "@/components/Lightbox";
 
 const BASE = "https://www.theroofstore.net";
 
@@ -72,7 +71,6 @@ function FactorySlideshow() {
 }
 
 export default function Factory() {
-  const lb = useLightbox(factoryPhotos);
   const schema = [
     {
       "@context": "https://schema.org",
@@ -314,35 +312,6 @@ export default function Factory() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-20">
-            {factoryPhotos.map((photo, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className={`overflow-hidden rounded-xl bg-muted cursor-zoom-in relative group ${i === 0 ? "col-span-2 row-span-2" : ""}`}
-                onClick={() => lb.open(i)}
-              >
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  title={photo.title}
-                  className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                  onError={e => {
-                    const el = e.currentTarget.closest(".overflow-hidden") as HTMLElement | null;
-                    if (el) el.style.display = "none";
-                  }}
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                  <span className="opacity-0 group-hover:opacity-100 text-white text-xs font-semibold bg-black/50 px-3 py-1 rounded-full transition-opacity duration-300">Click to enlarge</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -520,7 +489,6 @@ export default function Factory() {
         </div>
       </section>
     </div>
-    <Lightbox images={factoryPhotos} index={lb.activeIndex} onClose={lb.close} onPrev={lb.prev} onNext={lb.next} />
     </>
   );
 }

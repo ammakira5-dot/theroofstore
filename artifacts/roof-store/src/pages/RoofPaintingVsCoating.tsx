@@ -207,8 +207,31 @@ export default function RoofPaintingVsCoating() {
         </div>
       </section>
 
-      {/* What coating systems do instead */}
+      {/* Seam proof photo — real Davie job */}
       <section className="py-16 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <h2 className="text-3xl font-serif font-bold text-primary mb-3 text-center">See the Difference on a Real Roof</h2>
+            <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
+              This is one photo of one roof — a real job in Davie, FL. No staging, no stock imagery.
+            </p>
+            <figure className="rounded-2xl overflow-hidden border shadow-md">
+              <img
+                src="/images/jobs/davie-shingle-seam-detail.jpg"
+                alt="One roof in Davie, FL: seams fully sealed by roof coating on the right half, unsealed on the left half"
+                loading="lazy"
+                className="w-full object-cover"
+              />
+              <figcaption className="bg-muted p-5 text-sm text-muted-foreground leading-relaxed">
+                See it yourself on a real Davie job: seams fully sealed on the right half, not yet on the left. Paint can't do this.
+              </figcaption>
+            </figure>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* What coating systems do instead */}
+      <section className="py-16 bg-muted/50">
         <div className="container px-4 max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl font-serif font-bold text-primary mb-3">What a Roof Coating System Actually Does</h2>

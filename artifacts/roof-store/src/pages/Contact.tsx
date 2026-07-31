@@ -85,9 +85,9 @@ export default function Contact() {
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <h1 className="text-5xl font-serif font-bold mb-6">Free Consultation &amp; Contracting Estimate</h1>
+            <h1 className="text-5xl font-serif font-bold mb-6">Contact Us for Your Free Evaluation &amp; Contractor Estimate</h1>
             <p className="text-xl text-white/80">
-              It starts with a conversation — talk with our experts first, then we inspect your roof and provide a detailed contracting estimate. No cost, no obligation.
+              It starts with a conversation — talk with our experts first, then we evaluate your roof and provide a detailed contractor estimate. No cost, no obligation.
             </p>
           </motion.div>
         </div>
@@ -179,7 +179,7 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="bg-card border rounded-2xl p-8 shadow-sm space-y-6">
-                  <h3 className="text-2xl font-serif font-bold text-primary">Request Your Free Consultation &amp; Estimate</h3>
+                  <h3 className="text-2xl font-serif font-bold text-primary">Request Your Free Evaluation &amp; Contractor Estimate</h3>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">

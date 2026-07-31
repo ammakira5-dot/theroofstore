@@ -166,11 +166,20 @@ export default function Shop() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {products.map(p => (
-                <div key={p.code} className="bg-white/10 px-5 py-2.5 rounded-lg text-center">
+                <a
+                  key={p.code}
+                  href={`#product-${p.code}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById(`product-${p.code}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }}
+                  className="bg-white/10 hover:bg-white/20 transition-colors px-5 py-2.5 rounded-lg text-center cursor-pointer"
+                >
                   <div className="text-xs text-white/60 uppercase tracking-widest">{p.code}</div>
                   <div className="font-bold">{p.name}</div>
                   <div className="text-accent font-bold text-lg">{p.price}</div>
-                </div>
+                  <div className="text-[11px] text-white/70 underline mt-0.5">View &amp; buy ↓</div>
+                </a>
               ))}
             </div>
           </motion.div>
@@ -208,11 +217,12 @@ export default function Shop() {
             {products.map((product, i) => (
               <motion.div
                 key={i}
+                id={`product-${product.code}`}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`bg-card rounded-2xl border-2 ${product.borderClass} overflow-hidden shadow-sm`}
+                className={`bg-card rounded-2xl border-2 ${product.borderClass} overflow-hidden shadow-sm scroll-mt-24`}
               >
                 {product.featured && (
                   <div className="bg-primary text-white text-center text-xs font-bold uppercase tracking-widest py-2">

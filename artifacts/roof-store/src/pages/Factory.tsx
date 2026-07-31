@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -42,6 +43,33 @@ const stats = [
   { value: "5×", label: "Stronger Than a New Roof" },
   { value: "A+", label: "BBB Rating Since 1994" },
 ];
+
+function FactorySlideshow() {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setIdx((i) => (i + 1) % factoryPhotos.length), 3500);
+    return () => clearInterval(id);
+  }, []);
+  return (
+    <figure className="rounded-2xl overflow-hidden border shadow-xl bg-card">
+      <div className="relative w-full aspect-[4/3]">
+        {factoryPhotos.map((photo, i) => (
+          <img
+            key={photo.src}
+            src={photo.src}
+            alt={photo.alt}
+            loading={i === 0 ? "eager" : "lazy"}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === idx ? "opacity-100" : "opacity-0"}`}
+          />
+        ))}
+      </div>
+      <figcaption className="px-4 py-3 text-sm text-muted-foreground flex items-center justify-between gap-3">
+        <span className="truncate">{factoryPhotos[idx].title}</span>
+        <span className="text-xs text-muted-foreground/70 shrink-0">{idx + 1} / {factoryPhotos.length}</span>
+      </figcaption>
+    </figure>
+  );
+}
 
 export default function Factory() {
   const lb = useLightbox(factoryPhotos);
@@ -162,6 +190,9 @@ export default function Factory() {
                 alt="The Roof Store licensed installation crew — truck and trailer wrap, South Florida"
                 className="rounded-2xl shadow-xl w-full object-cover"
               />
+              <div className="mt-6">
+                <FactorySlideshow />
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}

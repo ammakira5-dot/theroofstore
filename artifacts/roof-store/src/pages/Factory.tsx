@@ -127,13 +127,13 @@ export default function Factory() {
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-14 px-8 text-lg w-full sm:w-auto font-bold">
                 <Link href="/shop">
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  Buy Factory-Direct Coatings
+                  Buy the Product — Ship or Pickup
                 </Link>
               </Button>
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
                 <Link href="/contact">
                   <Hammer className="h-5 w-5 mr-2" />
-                  Get a Free Installation Quote
+                  We Install It — Free Contracting Estimate
                 </Link>
               </Button>
             </div>
@@ -141,6 +141,9 @@ export default function Factory() {
               <span>Contractors &amp; DIY — factory pricing, shipped or picked up in Davie</span>
               <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
             </div>
+            <p className="mt-2 text-sm text-white/70 text-center">
+              Not sure yet? <Link href="/contact" className="underline hover:text-white">Get both quotes — product-only and installed — and decide later.</Link>
+            </p>
           </motion.div>
         </div>
       </section>
@@ -176,7 +179,7 @@ export default function Factory() {
                 </p>
                 <div className="flex flex-wrap gap-3 pt-1">
                   <Button asChild size="sm" className="bg-accent hover:bg-accent/90 text-white font-bold">
-                    <Link href="/contact">Get a Free Estimate</Link>
+                    <Link href="/contact">Get a Free Contracting Estimate</Link>
                   </Button>
                   <Button asChild size="sm" variant="outline">
                     <Link href="/projects">See Our Work</Link>

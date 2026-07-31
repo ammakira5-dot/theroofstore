@@ -243,13 +243,13 @@ export default function Home() {
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
                 <Link href="/contact">
                   <Hammer className="h-5 w-5 mr-2" />
-                  Get a Free Installation Quote
+                  We Install It — Free Contracting Estimate
                 </Link>
               </Button>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-14 px-8 text-lg w-full sm:w-auto font-bold">
                 <Link href="/shop">
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  Buy Factory-Direct Coatings
+                  Buy the Product — Ship or Pickup
                 </Link>
               </Button>
             </div>
@@ -257,6 +257,9 @@ export default function Home() {
               <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
               <span>Contractors &amp; DIY — factory pricing, shipped or picked up in Davie</span>
             </div>
+            <p className="mt-2 text-sm text-white/70">
+              Not sure yet? <Link href="/contact" className="underline hover:text-white">Get both quotes — product-only and installed — and decide later.</Link>
+            </p>
             <div className="grid grid-cols-3 gap-4 mt-6 max-w-2xl">
               <figure>
                 <img
@@ -430,7 +433,7 @@ export default function Home() {
                 step: "Option 1",
                 title: "Hire Us — Full Installation",
                 desc: "The most popular choice. Our licensed crew handles everything — inspection, surface prep, application, and warranty documentation. We guarantee the result.",
-                cta: "Get a Free Quote",
+                cta: "Get a Free Contracting Estimate",
                 href: "/contact",
                 highlight: true,
               },

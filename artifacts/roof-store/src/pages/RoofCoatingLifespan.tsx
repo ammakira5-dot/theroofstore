@@ -339,7 +339,7 @@ export default function RoofCoatingLifespan() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
-              <Link href="/contact">Schedule Free Inspection</Link>
+              <Link href="/contact">Free Evaluation &amp; Estimate</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-14 px-10 text-lg">
               <a href="tel:954-210-9614">Call 954-210-9614</a>

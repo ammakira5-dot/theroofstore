@@ -30,7 +30,7 @@ export function FloatingCTA() {
         href="/contact"
         className="pointer-events-auto flex items-center gap-2 bg-accent text-white font-bold px-5 py-3.5 rounded-full shadow-xl hover:bg-accent/90 transition-colors text-sm"
       >
-        Free Quote
+        Free Evaluation &amp; Estimate
       </Link>
     </div>
   );

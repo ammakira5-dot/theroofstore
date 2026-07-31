@@ -171,7 +171,7 @@ export function BlogPostPage({ params }: BlogPostRouteProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button asChild className="bg-accent hover:bg-accent/90 text-white">
-                  <Link href="/contact">Schedule Free Inspection</Link>
+                  <Link href="/contact">Free Evaluation &amp; Estimate</Link>
                 </Button>
                 <a
                   href="tel:9542109614"

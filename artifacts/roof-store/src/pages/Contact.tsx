@@ -42,7 +42,7 @@ export default function Contact() {
     {
       "@context": "https://schema.org",
       "@type": "ContactPage",
-      name: "Contact The Roof Store — Free Roof Inspection",
+      name: "Contact The Roof Store — Free Evaluation & Contractor Estimate",
       url: "https://www.theroofstore.net/contact",
       description: "Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida.",
       mainEntity: {
@@ -75,7 +75,7 @@ export default function Contact() {
   return (
     <div className="w-full">
       <SEO
-        title="Contact Us — Free Roof Inspection & Consultation"
+        title="Contact Us — Free Evaluation & Contractor Estimate"
         description="Schedule a free roof inspection with The Roof Store. Call 954-210-9614 or fill out the form. Serving South Florida — Broward, Miami-Dade & Palm Beach counties."
         canonical="/contact"
         schema={schema}

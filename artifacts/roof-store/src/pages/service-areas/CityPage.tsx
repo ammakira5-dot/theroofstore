@@ -387,7 +387,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
 
             <div className="space-y-6">
               <div className="bg-primary text-white rounded-xl p-8">
-                <h3 className="text-xl font-serif font-bold mb-1">Free Roof Inspection</h3>
+                <h3 className="text-xl font-serif font-bold mb-1">Free Evaluation &amp; Contractor Estimate</h3>
                 <p className="text-white/60 text-xs mb-5">Serving {city}, FL — no cost, no obligation</p>
                 <LocalQuoteForm location={`${city}, FL`} source="city-page-form" />
               </div>

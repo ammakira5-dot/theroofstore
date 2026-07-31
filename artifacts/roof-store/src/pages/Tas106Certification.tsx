@@ -808,7 +808,7 @@ export default function Tas106Certification() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-bold">
-                <Link href="/contact">Schedule Free Inspection</Link>
+                <Link href="/contact">Free Evaluation &amp; Estimate</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-white/50 text-white hover:bg-white/10 font-bold">
                 <a href="tel:+19542109614"><Phone className="h-4 w-4 mr-2" />Call 954-210-9614</a>

@@ -247,7 +247,7 @@ export function Navbar() {
               954-210-9614
             </a>
             <Button asChild className="bg-accent hover:bg-accent/90 text-white">
-              <Link href="/contact">Free Consultation</Link>
+              <Link href="/contact">Free Evaluation &amp; Estimate</Link>
             </Button>
           </div>
 
@@ -380,7 +380,7 @@ export function Navbar() {
             954-210-9614
           </a>
           <Button asChild className="w-full bg-accent hover:bg-accent/90 text-white" size="lg">
-            <Link href="/contact">Free Consultation</Link>
+            <Link href="/contact">Free Evaluation &amp; Estimate</Link>
           </Button>
         </div>
       </div>

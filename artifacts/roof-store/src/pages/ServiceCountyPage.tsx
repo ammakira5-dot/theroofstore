@@ -190,7 +190,7 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
 
             <div className="space-y-6">
               <div className="bg-primary text-white rounded-xl p-8">
-                <h3 className="text-xl font-serif font-bold mb-1">Free Roof Inspection</h3>
+                <h3 className="text-xl font-serif font-bold mb-1">Free Evaluation &amp; Contractor Estimate</h3>
                 <p className="text-white/60 text-xs mb-5">Serving {county}, FL — no cost, no obligation</p>
                 <LocalQuoteForm location={`${county}, FL`} source="service-county-page-form" />
               </div>

@@ -17,13 +17,14 @@ interface CityPageProps {
   citySlug: string;
   image: string;
   blurb?: string;
+  jobPhotos?: { src: string; alt: string; caption: string }[];
 }
 
 const BASE = "https://www.theroofstore.net";
 
 const serviceIcons = [Waves, Paintbrush, Droplets, ShieldCheck, Wind, Wrench];
 
-export function CityPage({ city, county, countySlug, citySlug, image, blurb }: CityPageProps) {
+export function CityPage({ city, county, countySlug, citySlug, image, blurb, jobPhotos }: CityPageProps) {
   const cityUrl = `${BASE}/service-areas/${countySlug}/${citySlug}`;
   const coords = cityCoords[citySlug];
 
@@ -187,6 +188,34 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb }: C
           </motion.div>
         </div>
       </section>
+
+      {jobPhotos && jobPhotos.length > 0 && (
+        <section className="py-16 bg-muted">
+          <div className="container px-4 max-w-5xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold text-primary text-center mb-2">
+              Our Work in {city}
+            </h2>
+            <p className="text-muted-foreground text-center mb-10">
+              Real photos from a real {city} job — no stock images.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {jobPhotos.map((photo, i) => (
+                <figure key={i} className="bg-card border rounded-xl overflow-hidden shadow-sm">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading="lazy"
+                    className="w-full h-56 object-cover"
+                  />
+                  <figcaption className="p-4 text-sm text-muted-foreground leading-relaxed">
+                    {photo.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 bg-background">
         <div className="container px-4">

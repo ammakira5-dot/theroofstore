@@ -3,6 +3,7 @@ export interface CityEntry {
   slug: string;
   image?: string;
   blurb?: string;
+  jobPhotos?: { src: string; alt: string; caption: string }[];
 }
 
 export interface CountyExtraSection {
@@ -66,6 +67,23 @@ export const counties: CountyEntry[] = [
         name: "Davie",
         slug: "davie",
         image: "/api/storage/public-objects/cities/1553284965-83fd3e82fa5a.jpg",
+        jobPhotos: [
+          {
+            src: "/images/jobs/davie-shingle-before.jpg",
+            alt: "Shingle tile roof in Davie, FL before Roof Shield coating",
+            caption: "A real Davie job — shingle tile roof before coating",
+          },
+          {
+            src: "/images/jobs/davie-shingle-in-progress.jpg",
+            alt: "Roof Shield System being applied to a shingle tile roof in Davie, FL",
+            caption: "Roof Shield System going on — production phase",
+          },
+          {
+            src: "/images/jobs/davie-shingle-seam-detail.jpg",
+            alt: "Close-up showing seams sealed on the right side and unsealed on the left of the same roof in Davie, FL",
+            caption: "One photo, two halves: seams fully sealed on the right, not yet on the left — the difference between painting and true coating",
+          },
+        ],
         blurb:
           "Our home base — The Roof Store has operated out of Davie since 1994, and we know the local roofing landscape better than anyone. As Davie's original elastomeric roof coating contractor, we work on everything from large flat-deck barn roofs to Spanish tile on residential homes throughout the town, serving Davie's unique mix of equestrian estates, suburban neighborhoods, and commercial properties. Darker tile roofs have become increasingly popular with Davie homeowners, and our Smart Shield system's BASF Cool Pigment Technology lets you go dark without sacrificing energy efficiency.",
       },

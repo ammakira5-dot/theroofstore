@@ -412,6 +412,19 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb, job
                   </Link>
                 </p>
               </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <div className="bg-muted/40 border rounded-lg px-5 py-4">
+                  <div className="text-xs font-bold text-primary uppercase tracking-wide mb-1.5">Contractors &amp; DIY — buy factory-direct</div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-2.5">
+                    Not looking for full-service installation? Buy the same 100% liquid rubber coatings we use in {city} at factory pricing — shipped anywhere, or picked up at our Davie, FL facility. Custom colors tinted in-house.
+                  </p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                    <Link href="/shop" className="text-accent font-semibold hover:underline">Shop factory-direct →</Link>
+                    <Link href="/roof-systems" className="text-accent font-semibold hover:underline">View product specs →</Link>
+                  </div>
+                </div>
+              </motion.div>
             </div>
 
             <div className="space-y-6">

@@ -124,22 +124,22 @@ export default function Factory() {
               />
             </div>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
-                <Link href="/contact">
-                  <Hammer className="h-5 w-5 mr-2" />
-                  Get a Free Installation Quote
-                </Link>
-              </Button>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 h-14 px-8 text-lg w-full sm:w-auto font-bold">
                 <Link href="/shop">
                   <ShoppingCart className="h-5 w-5 mr-2" />
                   Buy Factory-Direct Coatings
                 </Link>
               </Button>
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-8 text-lg w-full sm:w-auto">
+                <Link href="/contact">
+                  <Hammer className="h-5 w-5 mr-2" />
+                  Get a Free Installation Quote
+                </Link>
+              </Button>
             </div>
             <div className="mt-3 flex flex-col sm:flex-row justify-center gap-x-8 gap-y-1 text-sm text-white/60">
-              <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
               <span>Contractors &amp; DIY — factory pricing, shipped or picked up in Davie</span>
+              <span>Homeowners &amp; businesses — we install, you save vs. re-roofing</span>
             </div>
           </motion.div>
         </div>

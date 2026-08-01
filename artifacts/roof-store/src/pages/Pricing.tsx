@@ -132,6 +132,9 @@ export default function Pricing() {
               <Button asChild className="bg-accent hover:bg-accent/90 text-white">
                 <Link href="/contact">Fill Out the Contact Form →</Link>
               </Button>
+              <p className="text-white/60 text-xs mt-4">
+                All EagleView measurements and price projections are subjective until an onsite inspection is performed.
+              </p>
             </div>
             <p className="mt-4 text-sm text-white/60">
               Not sure which system is right for you?{" "}

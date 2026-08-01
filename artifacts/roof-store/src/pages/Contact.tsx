@@ -314,6 +314,9 @@ export default function Contact() {
                   <p className="text-xs text-center text-muted-foreground">
                     By submitting this form, you agree to be contacted by The Roof Store regarding your roofing inquiry.
                   </p>
+                  <p className="text-xs text-center text-muted-foreground">
+                    All EagleView measurements and price projections are subjective until an onsite inspection is performed.
+                  </p>
                 </form>
               )}
             </motion.div>

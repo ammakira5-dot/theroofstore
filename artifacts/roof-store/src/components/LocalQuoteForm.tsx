@@ -125,6 +125,10 @@ export function LocalQuoteForm({ location, source = "service-area-form" }: Local
         )}
       </Button>
 
+      <p className="text-white/50 text-xs text-center">
+        All EagleView measurements and price projections are subjective until an onsite inspection is performed.
+      </p>
+
       <div className="flex items-center justify-center gap-1.5 pt-1">
         <Phone className="h-3 w-3 text-white/50" />
         <a href="tel:954-210-9614" className="text-white/60 text-xs hover:text-white transition-colors">

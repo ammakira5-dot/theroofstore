@@ -609,4 +609,376 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       { name: "Dixie Highway corridor", note: "commercial flat decks — reflective cool-roof coating at scale" },
     ],
   },
+
+  /* ── BROWARD — ROUND 3: remaining cities (July 2026) ───────── */
+
+  "cooper-city": {
+    intro: [
+      "Cooper City is family-suburb Broward: quiet streets of 1970s–90s tile roofs in Rock Creek, Embassy Lakes, and the original Cooper Colony sections, plus the newer Monterra community's 2010s tile on the old Waldrep Dairy land. It's ten minutes from our Davie shop, which makes it one of our fastest-scheduled service areas.",
+      "The typical Cooper City call is a 25–35 year old concrete tile roof that's gone chalky and streaked but is structurally sound — exactly the roof that should be restored, not replaced. A SmartShield restoration brings back the color (HOA-approved), kills the algae, and re-waterproofs the field at 60–70% below replacement cost.",
+      "For Embassy Lakes, Rock Creek, and Monterra homeowners, we handle the HOA approval paperwork start to finish — product specs, color documentation from 3,000+ tintable options, and insurance certificates in one package.",
+    ],
+    roofLandscape: {
+      heading: "The Cooper City roof landscape",
+      paragraphs: [
+        "The original Cooper Colony and Flamingo Gardens-adjacent sections carry 1960s–70s ranches under shingle and early tile; Rock Creek and Embassy Lakes added waves of 1980s–90s concrete S-tile; and Monterra brought 2000s–2010s flat-profile tile built to modern code. Three eras, three different restoration timelines — all of them served from ten minutes away.",
+        "Cooper City's mature oak canopy keeps many roofs shaded and damp after summer storms, so algae and fungal streaking are the most common first complaint. FungalShield treatment handles it standalone; most owners bundle it into a full coating restoration.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Cooper City",
+      paragraphs: [
+        "Coating is surface restoration and generally requires no Cooper City building permit — we confirm with the city's Building Division when repair scope warrants. Rock Creek, Embassy Lakes, Monterra, and most newer sections require architectural approval for roof color changes; our submission package is built to pass first time.",
+        "Tile from the 80s and 90s is now drawing insurer age questions across Cooper City. A coating restoration plus Additional Roof Life Certification documents extended service life — the answer carriers accept.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Rock Creek", note: "1980s S-tile at the chalking stage — HOA palette matched" },
+      { name: "Embassy Lakes", note: "1990s gated tile communities, approval paperwork handled" },
+      { name: "Monterra", note: "2010s tile — proactive coating extends the factory finish" },
+      { name: "Cooper Colony", note: "original 1960s–70s ranches, classic restoration stock" },
+      { name: "Country Address / Flamingo corridor", note: "larger lots, mixed tile and shingle mains" },
+    ],
+  },
+
+  "dania-beach": {
+    intro: [
+      "Dania Beach is Broward's oldest city — incorporated 1904 — and its roofs show the whole century: pre-war cottages near the antique district, 1950s–60s CBS ranches in Melaleuca Gardens, and salt-battered beach-area homes and condos east of the Intracoastal.",
+      "Age plus salt is the Dania Beach combination: original and once-recovered roofs that are structurally serviceable but surface-failed, on homes whose owners are getting roof-age letters from insurers. A coating restoration with Additional Roof Life Certification answers the letter at a fraction of the re-roof price.",
+      "We're minutes away — our Davie shop sits just up Griffin Road — so Dania Beach evaluations are usually scheduled within days, and most projects finish inside two weeks.",
+    ],
+    roofLandscape: {
+      heading: "The Dania Beach roof landscape",
+      paragraphs: [
+        "West of US-1, Dania Beach is post-war Florida: CBS ranches under shingle, gravel built-up, and early tile, with flat additions over Florida rooms that leak first. The historic core near Federal Highway adds some of Broward's oldest housing stock, where careful restoration matters more than anywhere.",
+        "East of the Intracoastal, beach-area homes and low-rise condos take direct salt exposure, and the Griffin Road / airport-adjacent corridors carry a heavy inventory of commercial flat decks — marine businesses, warehouses, and hotels where reflective cool-roof coating cuts cooling loads while sealing the deck.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Dania Beach",
+      paragraphs: [
+        "Most Dania Beach coating projects proceed without a building permit — coating is restoration, not structural work — and we confirm with the city's Building Division when repairs are included. Beach-area condo associations require board approval; our documentation package covers it.",
+        "With so much pre-1975 housing, Dania Beach sees intense roof-age underwriting. Restoration plus Additional Roof Life Certification is the certified paper trail that keeps older homes insurable.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Melaleuca Gardens", note: "1950s–60s CBS ranches — prime restoration-vs-replace territory" },
+      { name: "Historic downtown / antique district", note: "some of Broward's oldest roofs, restored with care" },
+      { name: "Dania Beach oceanside", note: "salt-exposed homes and condos — sealing beats replacing" },
+      { name: "Griffin Road corridor", note: "commercial flat decks — cool-roof coating at scale" },
+      { name: "Estates of Fort Lauderdale area", note: "villa and townhome roof fields at volume pricing" },
+    ],
+  },
+
+  "hallandale-beach": {
+    intro: [
+      "Hallandale Beach packs two roofing worlds into four square miles: the condo canyon along A1A and Three Islands, and the 1950s–60s single-family core west of Federal Highway. We coat both — association decks by the acre and ranch roofs by the street.",
+      "For the Golden Isles and Three Islands waterfront homes, salt and sun are relentless: tile finishes chalk early and flat sections fail at the seams. Elastomeric restoration re-seals the whole surface as one membrane, with the Miami-Dade TAS-106 uplift-rated Roof Shield on flat decks this close to open water.",
+      "In the western neighborhoods, the story is roof-age insurance pressure on 60-year-old homes. A documented coating restoration with Additional Roof Life Certification keeps coverage in place without the five-figure tear-off the letter implies.",
+    ],
+    roofLandscape: {
+      heading: "The Hallandale Beach roof landscape",
+      paragraphs: [
+        "East Hallandale is dominated by condo and co-op buildings — from garden-style walk-ups to towers — whose low-slope decks age on maintenance-budget schedules. Golden Isles and Three Islands add waterfront single-family estates under tile, while the blocks west of US-1 hold the original 1950s–60s CBS ranch grid.",
+        "Hallandale's position on the Miami-Dade line means many of its buildings were built and re-roofed to Dade-influenced standards — and boards here ask for documented uplift ratings by name. Roof Shield's TAS-106 certification is that document.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Hallandale Beach",
+      paragraphs: [
+        "Coating restorations in Hallandale Beach generally require no building permit; we confirm with the city's Building Division when scope includes repairs. Nearly every east-side property runs through a board or association — our submission package (specs, colors, insurance, warranty, uplift documentation) is standard with every quote.",
+        "Coastal zip codes here draw some of South Florida's most aggressive roof-age underwriting. Coating plus Additional Roof Life Certification is the certified answer that keeps policies in force.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Golden Isles", note: "waterfront tile estates under direct salt exposure" },
+      { name: "Three Islands", note: "condo and townhome decks — board-ready documentation standard" },
+      { name: "A1A / beach corridor", note: "association buildings needing TAS-106 uplift-rated systems" },
+      { name: "West of Federal core", note: "1950s–60s ranches facing roof-age insurance letters" },
+      { name: "Golden Horn / Layne Blvd area", note: "mid-century waterfront homes, flat sections sealed as one membrane" },
+    ],
+  },
+
+  "hillsboro-beach": {
+    intro: [
+      "Hillsboro Beach is a three-mile barrier island — one road, ocean on one side, Intracoastal on the other — where every single roof lives in the most punishing salt environment Broward has. 'Millionaire's Mile' estates and oceanfront condos alike face the same physics: salt spray, relentless UV, and direct hurricane exposure.",
+      "Out here, roof surfaces fail years before their inland twins would. Coating restoration is how island owners stay ahead of it: re-sealing tile fields and flat decks into continuous membranes before salt intrusion becomes structural damage — with Roof Shield's Miami-Dade TAS-106 uplift rating providing the documented wind protection an open-ocean address demands.",
+      "We bring the full documentation package every Hillsboro Beach association and estate manager asks for: specs, warranty terms, insurance certificates, and the uplift certification itself.",
+    ],
+    roofLandscape: {
+      heading: "The Hillsboro Beach roof landscape",
+      paragraphs: [
+        "The Mile's estates carry large barrel-tile and flat-roof modern builds facing direct Atlantic exposure; the island's condo buildings — most from the 1960s–80s — hold acres of low-slope deck that boards maintain on recoat cycles rather than tear-offs. Both markets are documentation-driven: uplift ratings, warranties, and insurance paperwork decide who gets hired.",
+        "Salt is the constant. It chalks finishes, corrodes fasteners and flashings, and finds every seam. A monolithic elastomeric coating removes the seams from the equation entirely — which is why recoat-cycle maintenance is the island standard.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Hillsboro Beach",
+      paragraphs: [
+        "The Town of Hillsboro Beach is small and attentive — we confirm requirements with Town Hall before any project, though coating restorations generally proceed without a permit. Condo boards along the Mile require formal approval; our package is built for exactly that review.",
+        "Barrier-island underwriting is the strictest there is: carriers question any roof past 12–15 years this close to open water. A documented restoration with Additional Roof Life Certification is the answer that keeps island coverage in place.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Millionaire's Mile estates", note: "oceanfront tile and flat roofs under maximum salt exposure" },
+      { name: "Oceanfront condo corridor", note: "1960s–80s decks maintained on recoat cycles — board packages standard" },
+      { name: "Intracoastal-side properties", note: "dock-side homes where salt hits from both directions" },
+      { name: "Hillsboro Inlet area", note: "the island's most exposed roofs — TAS-106 documentation essential" },
+    ],
+  },
+
+  "lauderdale-by-the-sea": {
+    intro: [
+      "Lauderdale-by-the-Sea kept its low-rise beach-town character on purpose — which means its roofs are mostly 1950s–60s cottages, small condos, and mid-century homes rather than towers. Charming stock, but every square foot of it sits in the salt-spray zone.",
+      "The classic LBTS roof problem is surface failure ahead of structural failure: chalked tile, corroded flashings, and flat sections over Florida rooms that leak at the seams. Coating restoration re-seals it all as one membrane and preserves the original roof — often the right answer on older cottages where a tear-off would invite a cascade of code upgrades.",
+      "For the town's garden condos and co-ops, we quote whole roof fields with the board documentation included — and with Roof Shield's TAS-106 Miami-Dade uplift rating for decks a block from open ocean.",
+    ],
+    roofLandscape: {
+      heading: "The Lauderdale-by-the-Sea roof landscape",
+      paragraphs: [
+        "The town core and Bel-Air section carry 1950s–60s single-family homes — low-pitch shingle, gravel, white tile, and flat sections — while the beach blocks hold small condo and motel-era buildings from the same decades, nearly all low-slope. Silver Shores and the Terra Mar island area add waterfront homes with larger tile mains.",
+        "Nothing in LBTS is far from salt. Surfaces here age on coastal time, and the recoat cycle — clean, seal, coat every 10–15 years — is what keeps mid-century roofs serving decades past their design life.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Lauderdale-by-the-Sea",
+      paragraphs: [
+        "The town runs its own building department and takes exterior work seriously; coating restorations generally proceed without a permit, and we confirm before starting. Condo and co-op boards require approval — our documentation package covers specs, colors, insurance, and uplift ratings.",
+        "Coastal roof-age underwriting hits LBTS's mid-century stock hard. A coating restoration plus Additional Roof Life Certification keeps these homes insurable without replacing roofs that don't need it.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Bel-Air", note: "1950s–60s beach cottages — preservation-minded restoration" },
+      { name: "Silver Shores", note: "waterfront homes with salt-exposed tile mains" },
+      { name: "Terra Mar Island", note: "estate roofs between ocean and Intracoastal" },
+      { name: "Town core / El Mar Drive", note: "garden condos and motel-era low-slope decks — board packages standard" },
+    ],
+  },
+
+  "lauderdale-lakes": {
+    intro: [
+      "Lauderdale Lakes was built almost all at once — the 1960s and early 70s — so its roofs age together: CBS ranches in Oriole Estates and the original sections, and a large inventory of garden-condo decks in communities like Hawaiian Gardens. When roofs turn 55 on the same schedule, insurance letters arrive on the same schedule too.",
+      "Most Lauderdale Lakes roofs we evaluate are structurally fine but surface-failed: dried shingle, gravel built-ups past their cycle, flat sections leaking at seams. Restoration — not replacement — is the economical answer, and with the Additional Roof Life Certification it's also the documented answer insurers accept.",
+      "For the city's condo associations, we quote entire roof fields with board documentation included — turning a looming special assessment into a maintenance line item.",
+    ],
+    roofLandscape: {
+      heading: "The Lauderdale Lakes roof landscape",
+      paragraphs: [
+        "The single-family grid — Oriole Estates, the sections off Oakland Park Boulevard and 441 — is uniform 1960s–70s CBS construction under shingle, gravel, and early tile, with the flat Florida-room additions that always leak first. The condo side, led by Hawaiian Gardens' garden-style buildings, adds acres of low-slope deck maintained on association budgets.",
+        "Uniform stock means uniform economics: coating restoration typically runs 60–70% below replacement here, and neighboring owners frequently schedule together for volume pricing.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Lauderdale Lakes",
+      paragraphs: [
+        "Coating projects in Lauderdale Lakes generally require no building permit — restoration, not alteration — and we confirm with the city when repairs are bundled. Condo boards require formal approval; our package is built for it.",
+        "With nearly the whole city built before 1975, roof-age underwriting is constant. Restoration plus Additional Roof Life Certification is the certified paper trail that keeps coverage in force.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Hawaiian Gardens", note: "garden-condo roof fields — monolithic coating ends the patch cycle" },
+      { name: "Oriole Estates", note: "1960s–70s CBS ranches facing age-based insurance letters" },
+      { name: "Original city grid", note: "post-war shingle and gravel, restoration saves 60–70%" },
+      { name: "441 / State Road 7 corridor", note: "commercial flat decks coated at scale" },
+    ],
+  },
+
+  "lighthouse-point": {
+    intro: [
+      "Lighthouse Point is a city of canals — more than 18 miles of them — and nearly every home is a waterfront home. Its 1950s–70s ranches and remodeled estates sit under tile, shingle, and flat roofs that take Intracoastal salt air daily, a half-step gentler than the barrier island but relentless all the same.",
+      "The typical Lighthouse Point evaluation finds a sound structure with a tired surface: chalked barrel tile, streaked north slopes, corroding flashings at the flat sections. Elastomeric restoration re-seals it all — and preserves original mid-century roofs that fit the neighborhood's character far better than a builder-grade replacement would.",
+      "Owners here also carry some of Broward's highest coastal insurance premiums, so the Additional Roof Life Certification paired with a coating restoration does double duty: it answers the age question and documents the roof for the file.",
+    ],
+    roofLandscape: {
+      heading: "The Lighthouse Point roof landscape",
+      paragraphs: [
+        "The city built out between the early 1950s and mid-1970s: single-story CBS ranches and split-levels on canal lots, under barrel tile, white tile, shingle, and generous flat sections over Florida rooms and garages. Decades of remodels have added larger second-story homes, but the mid-century roof stock still dominates street by street.",
+        "Salt-side aging is the pattern — surfaces on the east and canal-facing slopes wear first. A full-field coating evens it out and buys 10–15 years per cycle, which is why many Lighthouse Point roofs are on their second or third professional recoat.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Lighthouse Point",
+      paragraphs: [
+        "Lighthouse Point's Building Department is thorough on structural work, but coating restorations are surface maintenance and generally proceed without a permit — we confirm before starting. There are few HOAs here; decisions are the homeowner's, which keeps projects moving fast.",
+        "Coastal underwriting flags LHP roofs on age routinely. Restoration plus Additional Roof Life Certification is the certified documentation that keeps waterfront coverage in place.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Coral Key Villas", note: "canal-front ranches with salt-worn tile — seal and restore" },
+      { name: "Lake Placid / Venetian Isles sections", note: "1950s–60s waterfront homes, flat sections membraned as one" },
+      { name: "Yacht Club area", note: "larger remodeled estates under barrel tile" },
+      { name: "Federal Highway corridor", note: "commercial and marina flat decks — cool-roof coating" },
+    ],
+  },
+
+  "north-lauderdale": {
+    intro: [
+      "North Lauderdale was built fast in the 1970s as starter-home Florida — compact CBS single-families, duplexes, and townhome communities that all turned 45–50 around the same time. That makes it one of the most restoration-ready cities in central Broward: sound structures, tired surfaces.",
+      "The most common call here is insurance-driven: a carrier flags the roof's age, and the owner faces a re-roof quote that doesn't fit a starter-home budget. A coating restoration with Additional Roof Life Certification answers the carrier at a fraction of the price — that's the exact scenario our systems were built for.",
+      "Townhome and villa associations along Kimberly Boulevard and Rock Island Road can quote whole roof fields at once; uniform 1970s construction means one system fits many buildings, and volume pricing follows.",
+    ],
+    roofLandscape: {
+      heading: "The North Lauderdale roof landscape",
+      paragraphs: [
+        "The city's core is 1970s construction nearly wall to wall: low-pitch shingle and gravel on single-families and duplexes, early tile on the later sections, and continuous townhome roof fields in the planned communities. Flat utility sections and porch roofs are the first leak points, and they respond best to a monolithic membrane rather than patching.",
+        "The 1980s filled in the western edges with tile that's now at the chalking-and-streaking stage — the same restoration timeline as neighboring Tamarac and Margate stock.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in North Lauderdale",
+      paragraphs: [
+        "Coating restorations in North Lauderdale generally proceed without a building permit — we confirm with the city's Building Department when repairs are included. Townhome associations require approval before exterior work; our documentation package handles it.",
+        "Uniform 1970s stock means age-based insurance letters arrive street by street. Restoration plus Additional Roof Life Certification is the certified answer that keeps starter-home coverage affordable.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Kimberly Boulevard corridor", note: "1970s townhome roof fields quoted at volume pricing" },
+      { name: "Broadview Park edge / Rock Island", note: "compact CBS single-families facing age letters" },
+      { name: "Silver Lakes area (North Lauderdale)", note: "1980s tile at the chalking stage" },
+      { name: "McNab Road corridor", note: "duplex and villa stock — one system fits many buildings" },
+    ],
+  },
+
+  "pembroke-park": {
+    intro: [
+      "Pembroke Park is small on the map but heavy on roof: alongside its residential streets sits one of south Broward's densest concentrations of warehouse and light-industrial flat roof, packed between Hallandale Beach Boulevard and Pembroke Road. We serve both sides of it.",
+      "For the commercial corridor, reflective cool-roof coating is the workhorse: it seals aging flat decks against leaks and cuts summer cooling loads on metal and built-up roofs measurably — often the fastest-payback maintenance a warehouse owner can buy.",
+      "On the residential side, the town's 1950s–70s homes and its large mobile-home communities need honest evaluation more than anything: what's coatable, what needs repair first, and what the insurance-ready documentation looks like. That evaluation is free.",
+    ],
+    roofLandscape: {
+      heading: "The Pembroke Park roof landscape",
+      paragraphs: [
+        "The commercial inventory dominates: built-up, modified bitumen, and metal warehouse roofs from the 1970s–90s, most now on their second or third maintenance cycle. Monolithic elastomeric coating over these decks stops seam leaks and adds reflectivity in one application.",
+        "Residentially, Pembroke Park mixes post-war CBS homes with established mobile-home communities like Park Lake Estates — where lightweight reflective coatings are one of the few practical ways to extend roof life without adding structural load.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Pembroke Park",
+      paragraphs: [
+        "The Town of Pembroke Park handles permitting locally; coating restorations are surface maintenance and generally proceed without one — we confirm scope with the town before starting commercial work. Community managers get our full documentation package.",
+        "Commercial carriers increasingly demand documented roof condition at renewal. A coating restoration with photographic documentation and warranty terms is the file they want to see.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Hallandale Beach Blvd corridor", note: "warehouse flat decks — cool-roof coating at scale" },
+      { name: "Park Lake Estates & mobile-home communities", note: "lightweight reflective systems, no structural load" },
+      { name: "Residential core off SW 40th Ave", note: "1950s–70s CBS homes, restoration-first evaluations" },
+      { name: "Pembroke Road industrial strip", note: "metal and built-up roofs sealed and reflectivity-coated" },
+    ],
+  },
+
+  "sea-ranch-lakes": {
+    intro: [
+      "Sea Ranch Lakes is one of Broward's smallest municipalities — a private, gated village of a few hundred homes tucked between A1A and the Intracoastal. Every roof in the village lives in full coastal exposure, and most sit on generous mid-century footprints that deserve preservation, not replacement.",
+      "Village homes are predominantly 1950s–60s builds — many carefully remodeled — under tile, white gravel, and flat-roof modern lines. Salt air ages those surfaces on coastal time; elastomeric restoration re-seals them and keeps original rooflines intact, which matters in a community that protects its character.",
+      "We work quietly and to schedule inside the gate, and every quote includes the documentation coastal insurers ask for — including the Additional Roof Life Certification that answers roof-age questions without a tear-off.",
+    ],
+    roofLandscape: {
+      heading: "The Sea Ranch Lakes roof landscape",
+      paragraphs: [
+        "The village's mid-century stock runs to low-slung ranches and Florida-modern homes with flat and low-slope sections — architecture worth preserving, with roof surfaces that need renewal every coastal decade. Barrel and white tile mains take the salt chalking first; flat sections fail at seams and flashings.",
+        "A monolithic coating treats the whole roof as one membrane — tile field, flat sections, and flashings sealed together — which is why recoat-cycle maintenance is the sensible standard a block from the ocean.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Sea Ranch Lakes",
+      paragraphs: [
+        "The Village of Sea Ranch Lakes reviews exterior work through its own processes, and we coordinate with the village and the homeowner before any project; coating restorations are surface maintenance and generally straightforward to approve. Color matching keeps the village's palette intact.",
+        "Barrier-adjacent underwriting flags these mid-century roofs constantly. Restoration plus Additional Roof Life Certification is the certified documentation that keeps village homes insured without replacing sound roofs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Lakefront homes", note: "mid-century ranches around the village lake — tile and flat sections restored as one" },
+      { name: "A1A-side properties", note: "maximum salt exposure — sealing on a strict recoat cycle" },
+      { name: "Intracoastal-side homes", note: "dock-side salt from the west, coated flashings and seams" },
+      { name: "Village core", note: "preserved 1950s–60s architecture — restoration over replacement" },
+    ],
+  },
+
+  "southwest-ranches": {
+    intro: [
+      "Southwest Ranches is acreage country — ranch estates, equestrian properties, and family compounds on lots the rest of Broward doesn't have. The roofs are bigger, the outbuildings are real (barns, stables, workshops), and the right answer usually covers all of them in one project.",
+      "A typical Ranches evaluation walks the whole property: a large tile or metal main residence, a guest house, a barn with a rusting metal roof, and a workshop with an aging flat deck. Our systems handle each — elastomeric restoration on tile, rust-sealing reflective coating on metal, monolithic membrane on flat — quoted together at property scale.",
+      "Metal roof coating earns its keep here: it stops corrosion at seams and fasteners, reflects heat off barns and stables (your animals feel the difference), and costs a fraction of re-sheeting.",
+    ],
+    roofLandscape: {
+      heading: "The Southwest Ranches roof landscape",
+      paragraphs: [
+        "Main residences run from 1970s–80s ranch homes in Rolling Oaks and Sunshine Ranches to 1990s–2000s estate builds under big concrete-tile fields in Landmark Ranch and the newer sections. Outbuildings multiply the roof inventory: metal barn and stable roofs, shingle guest houses, flat-deck workshops — most aging on no particular maintenance schedule until something leaks.",
+        "Tree cover and pasture humidity keep algae pressure high on shaded slopes, and well water staining adds its own marks. A property-wide clean-and-coat resets everything at once.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Southwest Ranches",
+      paragraphs: [
+        "The Town of Southwest Ranches contracts its building services and keeps rural flexibility in mind; coating restorations are surface maintenance and generally proceed without a permit — we confirm when outbuilding repairs are in scope. There are few HOAs; decisions are the owner's.",
+        "Insurers increasingly ask about every structure on an agricultural-residential policy, not just the house. Documented coating restorations across the property — with Additional Roof Life Certification on the main residence — keep the whole schedule insurable.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Sunshine Ranches", note: "estate homes and horse properties — whole-property quotes" },
+      { name: "Rolling Oaks", note: "1970s–80s ranch mains with metal outbuildings — rust-seal coating" },
+      { name: "Landmark Ranch Estates", note: "large 2000s tile fields at the fade stage" },
+      { name: "Green Meadows", note: "acreage compounds where barns and workshops join the project" },
+      { name: "Frontier Trails area", note: "equestrian facilities — reflective coating cools stables measurably" },
+    ],
+  },
+
+  "west-park": {
+    intro: [
+      "West Park is one of Florida's youngest cities (incorporated 2005) built on some of south Broward's oldest neighborhoods — Carver Ranches, Miami Gardens, Utopia, and Lake Forest date to the 1940s–60s. That means the city's roofs are among the county's most senior, and among the most flagged by insurers.",
+      "The West Park pattern is a structurally sound CBS home under an original or once-recovered roof — shingle, gravel, or early tile — whose owner has received the roof-age letter. A coating restoration plus Additional Roof Life Certification answers it for a fraction of the re-roof quote, which is exactly the math a working household needs.",
+      "We're a short drive up from our Davie shop, evaluations are free, and neighbors frequently schedule together — uniform housing stock makes volume pricing work street by street.",
+    ],
+    roofLandscape: {
+      heading: "The West Park roof landscape",
+      paragraphs: [
+        "Carver Ranches and Miami Gardens (the West Park neighborhood, not the Dade city) carry 1940s–60s CBS homes under low-pitch shingle and gravel, with flat additions that leak first. Utopia and Lake Forest add the same post-war stock, much of it recovered once in the 1980s–90s and now due again.",
+        "The State Road 7 corridor brings a strip of commercial flat decks — shops, churches, and small warehouses — where reflective cool-roof coating seals and cools in one application.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in West Park",
+      paragraphs: [
+        "Coating restorations in West Park generally require no building permit — we confirm with the city's building services when repair scope warrants. With few HOAs, projects move at the homeowner's pace, usually evaluation to finished roof inside two weeks.",
+        "This is one of the most age-flagged housing inventories in Broward. Restoration plus Additional Roof Life Certification is the certified documentation that keeps pre-1970 homes insured without tear-offs their owners shouldn't need.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Carver Ranches", note: "1940s–60s CBS homes — the county's classic restoration stock" },
+      { name: "Miami Gardens (West Park)", note: "post-war shingle and gravel due for their second renewal" },
+      { name: "Utopia", note: "compact mid-century homes facing age-based insurance letters" },
+      { name: "Lake Forest", note: "1950s–60s stock where neighbors schedule together for volume pricing" },
+      { name: "SR-7 corridor", note: "commercial flat decks — cool-roof coating at scale" },
+    ],
+  },
+
+  "wilton-manors": {
+    intro: [
+      "Wilton Manors is the Island City — ringed by the Middle River — and its mid-century character is the draw: 1950s–60s CBS ranches and Florida-modern homes with the low rooflines and flat sections that define the look. Preserving those roofs, not replacing them, is usually the right call.",
+      "The typical Wilton Manors roof is 60+ years old structurally and perfectly serviceable — but the surface is done: chalked white tile, dried shingle, flat sections patched too many times. An elastomeric restoration re-seals the whole roof as one membrane and keeps the original lines intact, at 60–70% below replacement.",
+      "River humidity feeds algae on shaded slopes across the island, and insurers flag these mid-century roofs on age alone. One project — clean, coat, certify — answers both.",
+    ],
+    roofLandscape: {
+      heading: "The Wilton Manors roof landscape",
+      paragraphs: [
+        "East and west of Wilton Drive, the housing stock is remarkably consistent: 1950s–60s single-story CBS homes under white tile, shingle, and gravel, with flat sections over carports and Florida rooms. The riverfront lots add larger remodeled homes, and the Drive itself carries a lively strip of low-slope commercial roofs.",
+        "Because the stock is so uniform, so is the fix: full-field elastomeric restoration with the flat sections membraned in — the island standard for keeping mid-century roofs alive decade after decade.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Wilton Manors",
+      paragraphs: [
+        "Coating restorations in Wilton Manors generally proceed without a building permit — surface maintenance, not structural change — and we confirm with the city's Building Department when repairs are included. Few HOAs here; homeowners decide, and projects move quickly.",
+        "Age-based underwriting hits the island's 1950s–60s stock constantly. Restoration plus Additional Roof Life Certification is the certified answer that keeps mid-century homes insured without erasing their character under a builder-grade re-roof.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Wilton Drive corridor", note: "commercial low-slope roofs — sealed and reflectivity-coated" },
+      { name: "Middle River riverfront", note: "remodeled mid-century homes with humidity-fed algae — cleaned and coated" },
+      { name: "Westside / Jenada Isles", note: "island lots with 1950s–60s tile and flat sections" },
+      { name: "East of the Drive", note: "classic CBS ranches facing age-based insurance letters" },
+      { name: "Highland Estates", note: "post-war stock where restoration preserves the original roofline" },
+    ],
+  },
 };

@@ -144,4 +144,8 @@ Finished items are archived in `docs/completed-work-log.md` — only open/action
 
 - See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details
 - Sister-site FTP details: see `.agents/memory/sister-site-ftp-creds.md` and `.agents/memory/all-sites.md`
+- **Sister-site FTP hosts/usernames (passwords in Secrets — never store here):**
+  - julius@ group (roofpaintmiami, ftlauderdale, bestroofpaint, flatroofsealants, theroofstore old PHP, roofprotectproducts): host `ftp.absolutecharters.com:21`, user `julius@absolutecharters.com`, secret `JULIUS_FTP_PASSWORD`
+  - windproofroofsystems.com: host `ftp.windproofroofsystems.com:21`, user `Fullstack2@windproofroofsystems.com`, secret `WINDPROOF_FTP_PASSWORD`
+  - roofrestorationsandwaterproofinginc.com: host `ftp.roofrestorationsandwaterproofinginc.com:21`, user `roofrestorationsandwaterproofinginc@roofrestorationsandwaterproofinginc.com`, secret `RRSW_FTP_PASSWORD`
 - USPTO trademark record: Serial 78903590, Reg 3633280 — filed Jun 8 2006, registered Jun 2 2009, cancelled Jan 11 2016 (Section 8 maintenance only — not abandonment). See Exhibit H-2 in TrademarkEvidenceFile.tsx.

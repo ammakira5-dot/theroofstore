@@ -13,7 +13,7 @@
 - [Prerender fresh page per route](prerender-fresh-page.md) — must create a new browser page per route inside the loop; reusing one page causes Helmet tag bleed across all 157 prerendered files.
 - [SEO to-do list](seo-todo-list.md) — master prioritized list from July 9 2026 audit: 6 codebase fixes + owner action items + sister site pending fixes.
 - [roofpaintmiami.com next steps](rpm-next-steps.md) — FTP secret + task queue: FAQ expand, dead footer links, commercial page, city pages, GMB setup. Host/user in replit.md.
-- [Sister-site FTP credentials](sister-site-ftp-creds.md) — roofprotectproducts.com FTP works but secret needs refresh; windproofroofsystems.com + roofrestorationsandwaterproofinginc.com passwords exist but host+username unknown.
+- [Sister-site FTP credentials](sister-site-ftp-creds.md) — all hosts/usernames now in replit.md Pointers section (recovered from git history July 2026); passwords in Secrets.
 - [GitHub backup push workaround](github-backup-push-workaround.md) — bash tool blocks all git writes; use code_execution's execSync instead, and check PAT has `workflow` scope if repo has `.github/workflows/`.
 - [GMB pivot strategy](gmb-pivot-strategy.md) — 12-point plan (A–L) to win coating JOBS despite locked "Roofing Supply Store" GMB category; distributor profiles carry service signals.
 - [City pages SEO strategy](city-pages-seo-strategy.md) — confirmed order: unique local content → insurance meta descriptions → buy-direct section; pilot 5–10 cities first.

@@ -298,6 +298,16 @@ export default function Factory() {
         </div>
       </section>
 
+      {/* Why The Roof Store — quiet link-strip */}
+      <div className="bg-background border-b border-border">
+        <div className="container px-4 py-2.5 text-center text-sm text-muted-foreground">
+          One factory. One store. One licensed installer.{" "}
+          <Link href="/why-the-roof-store" className="text-accent hover:underline font-medium">
+            The full story →
+          </Link>
+        </div>
+      </div>
+
       <section className="py-24 bg-background">
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">

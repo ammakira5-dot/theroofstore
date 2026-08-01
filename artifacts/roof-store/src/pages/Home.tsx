@@ -317,6 +317,16 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Why The Roof Store — quiet link-strip */}
+      <div className="bg-muted/50 border-b border-border">
+        <div className="container px-4 py-2.5 text-center text-sm text-muted-foreground">
+          Manufacturer. Retailer. Installer.{" "}
+          <Link href="/why-the-roof-store" className="text-accent hover:underline font-medium">
+            See why that matters →
+          </Link>
+        </div>
+      </div>
+
       {/* Value Prop Banner */}
       <section className="bg-primary text-white py-12">
         <div className="container px-4">

@@ -141,6 +141,16 @@ export default function About() {
         </div>
       </section>
 
+      {/* Why The Roof Store — quiet link-strip */}
+      <div className="bg-muted/50 border-b border-border">
+        <div className="container px-4 py-2.5 text-center text-sm text-muted-foreground">
+          Manufacturer. Retailer. Installer.{" "}
+          <Link href="/why-the-roof-store" className="text-accent hover:underline font-medium">
+            See why that matters →
+          </Link>
+        </div>
+      </div>
+
       {/* Identity + Credentials */}
       <section className="py-20 bg-background border-b">
         <div className="container px-4 max-w-4xl mx-auto">

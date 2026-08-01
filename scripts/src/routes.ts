@@ -46,6 +46,7 @@ export const staticRoutes: UrlEntry[] = [
   { loc: "/partner-network", changefreq: "monthly", priority: "0.7" },
   { loc: "/roof-pressure-cleaning", changefreq: "monthly", priority: "0.7" },
   { loc: "/the-original-roof-store-florida", changefreq: "yearly", priority: "0.6" },
+  { loc: "/why-the-roof-store", changefreq: "yearly", priority: "0.7" },
   { loc: "/manufacturers-report", changefreq: "yearly", priority: "0.5" },
   { loc: "/roof-coating-florida", changefreq: "monthly", priority: "0.9" },
   { loc: "/tas-106-certified-roof-coating", changefreq: "monthly", priority: "0.9" },

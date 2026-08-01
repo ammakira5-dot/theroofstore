@@ -53,6 +53,7 @@ import TrademarkEvidencePrint from "@/pages/TrademarkEvidencePrint";
 import GoogleComplaintSteps from "@/pages/GoogleComplaintSteps";
 import UdrpDraftGate from "@/pages/UdrpDraftGate";
 import Shop from "@/pages/Shop";
+import WhyTheRoofStore from "@/pages/WhyTheRoofStore";
 import { ProductDetail } from "@/pages/products/ProductDetail";
 import { productMap } from "@/pages/products/data";
 
@@ -154,6 +155,7 @@ function Router() {
       <Route path="/hurricane-roof-prep" component={HurricaneRoofPrep} />
       <Route path="/commercial-roof-coating-hoa" component={HoaRoofCoating} />
       <Route path="/the-original-roof-store-florida" component={OriginalRoofStore} />
+      <Route path="/why-the-roof-store" component={WhyTheRoofStore} />
       <Route path="/trademark-evidence-file" component={TrademarkEvidenceFile} />
       <Route path="/trademark-monitoring-log" component={TrademarkMonitoringLog} />
       <Route path="/redemption-evidence-google-1" component={RedemptionEvidenceGoogle1} />

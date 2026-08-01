@@ -317,4 +317,296 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       { name: "Stadium / Calder area", note: "commercial and light-industrial roof coating at scale" },
     ],
   },
+
+  /* ── BROWARD — ROUND 2 (July 2026 rollout) ─────────────────── */
+
+  "fort-lauderdale": {
+    intro: [
+      "Fort Lauderdale is the roofing stress-test of Broward County: salt air off the Atlantic, canal humidity through the Isles, and a housing stock that runs from 1920s Sailboat Bend cottages to brand-new flat-roof modern builds off Las Olas. No single roof system fits the whole city — which is exactly why an evaluation-first approach beats a one-size-fits-all quote.",
+      "East of Federal Highway, salt spray is the enemy: it chalks tile finishes and corrodes exposed fasteners years faster than inland. Our elastomeric systems seal the tile field against salt intrusion, and on the flat and low-slope roofs common in Victoria Park, Poinsettia Heights, and the beach area, Roof Shield — the only TAS-106 Miami-Dade uplift-rated monolithic coating — adds documented hurricane protection where it matters most: two miles from open water.",
+      "West of I-95, the calls change — 1950s–70s ranch homes in Riverland and Melrose Park with aging shingle and gravel roofs, where insurers are applying the heaviest roof-age pressure in the county. A coating restoration plus an Additional Roof Life Certification is very often the difference between keeping coverage and a five-figure re-roof.",
+    ],
+    roofLandscape: {
+      heading: "The Fort Lauderdale roof landscape",
+      paragraphs: [
+        "Coastal Fort Lauderdale — Harbor Beach, Rio Vista, the Las Olas Isles, Coral Ridge — mixes barrel tile estates with mid-century flat roofs, all under constant salt-air attack. Inland, Victoria Park and Wilton-adjacent neighborhoods carry 1940s–60s homes with flat additions and Florida rooms that need true waterproofing membranes, while the western neighborhoods are dominated by 1950s–70s CBS ranches on shingle and gravel built-up roofs.",
+        "Fort Lauderdale also has more residential flat roof per square mile than almost anywhere in Broward — mid-century moderns, new construction contemporaries, and thousands of condo and townhome decks. Flat roofs fail at seams and ponding areas first; a monolithic coating eliminates the seams entirely, which is why it's our most-requested system east of US-1.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Fort Lauderdale",
+      paragraphs: [
+        "Roof coating is surface restoration rather than structural work, so most Fort Lauderdale projects don't trigger a building permit — though the city's Development Services Department is stricter than most Broward municipalities about barrier-island and historic-district work, and we confirm requirements before starting in Sailboat Bend or the beach area. Condo and HOA buildings east of the Intracoastal almost always require board approval; we provide full product specs, color documentation, and proof of insurance for the package.",
+        "Fort Lauderdale homeowners are squarely in the crosshairs of roof-age underwriting — Citizens and private carriers routinely flag any roof over 15 years within a mile of the coast. Our coating systems paired with an Additional Roof Life Certification give you a documented, inspector-signed answer to that letter at a fraction of replacement cost.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Victoria Park", note: "1940s–60s homes with flat additions — classic membrane restoration territory" },
+      { name: "Coral Ridge", note: "barrel tile under direct salt exposure — sealing beats replacing" },
+      { name: "Rio Vista & Las Olas Isles", note: "waterfront estates, HOA-grade color matching from 3,000+ options" },
+      { name: "Poinsettia Heights & Middle River Terrace", note: "mid-century flat and low-slope roofs — Roof Shield candidates" },
+      { name: "Riverland & Melrose Park", note: "1950s–70s ranches facing the heaviest insurance roof-age pressure" },
+    ],
+  },
+
+  hollywood: {
+    intro: [
+      "Hollywood's roofs span a full century — Joseph Young's original 1920s Hollywood Lakes homes, the post-war ranches of Hollywood Hills, the 1970s tile of Emerald Hills, and miles of coastal condo decks along A1A. Each era fails differently, and we've coated all of them from our shop fifteen minutes away in Davie.",
+      "In Hollywood Lakes and the east side, the combination of age and salt air means many tile and flat roofs are on their second or third recoat cycle already — the question isn't whether to maintain them, it's whether the last contractor used real elastomeric coating or cheap roof paint. We see the difference on inspections every week: paint peels in sheets after three summers; a true coating system is still shedding water at year ten.",
+      "West of the Turnpike, Emerald Hills and the newer gated sections carry big tile roofs now hitting the 30–50 year window, where a SmartShield restoration saves 60–70% against replacement and satisfies both the HOA's appearance standards and the insurer's age concerns in one project.",
+    ],
+    roofLandscape: {
+      heading: "The Hollywood roof landscape",
+      paragraphs: [
+        "East Hollywood is flat-roof country: 1920s–50s homes in the Lakes with built-up and modified bitumen decks, plus the low-slope commercial corridor along Hollywood Boulevard and Federal Highway. Central Hollywood — the Hills, Boulevard Heights, Driftwood — is dominated by 1950s–60s CBS ranches under shingle and gravel, while Emerald Hills and the western sections run to 1970s–90s concrete tile on larger footprints.",
+        "The beach barrier island is its own market: high-rise and garden condo roofs where board approval, staging logistics, and documented wind-uplift ratings decide who gets the job. Roof Shield's TAS-106 certification — tested to Miami-Dade's uplift standard — is the credential coastal boards ask about by name.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Hollywood",
+      paragraphs: [
+        "Most Hollywood coating projects proceed without a building permit since coating is a maintenance restoration, not a structural change — but Hollywood Lakes sits partly in historic-district overlay zones where exterior changes get extra scrutiny, and we verify with the city's Building Division when a property is affected. Condo work east of the Intracoastal always goes through board review; we supply the full spec-sheet package.",
+        "Hollywood's older housing stock makes it one of the most insurance-pressured cities in southeast Broward. If your carrier has flagged roof age, a coating restoration plus Additional Roof Life Certification documents extended service life — the paper trail underwriters actually accept.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Hollywood Lakes", note: "1920s–50s flat and tile roofs, historic-overlay sensitivity — we handle the details" },
+      { name: "Hollywood Hills", note: "post-war CBS ranches under the heaviest roof-age insurance letters" },
+      { name: "Emerald Hills", note: "1970s–90s tile estates — HOA color approval and volume pricing" },
+      { name: "Boulevard Heights & Driftwood", note: "1950s–60s shingle and gravel — prime restoration-vs-replace territory" },
+      { name: "Hollywood Beach & North Beach", note: "condo decks needing documented TAS-106 uplift ratings" },
+    ],
+  },
+
+  "pompano-beach": {
+    intro: [
+      "Pompano Beach roofs live a hard life: direct Atlantic exposure on the barrier island, canal humidity through the Isles and Harbor Village, and a big inventory of 1950s–70s homes in Old Pompano, Cresthaven, and Kendall Green that are now 50+ years into service. Restoration — not replacement — is what most of these roofs actually need.",
+      "The east side's problem is salt: it dulls and chalks tile within a decade and eats at flat-roof seams and flashings. Our elastomeric systems re-seal the entire surface as one waterproof membrane, and on flat decks Roof Shield adds the Miami-Dade TAS-106 uplift rating that matters this close to open water.",
+      "Inland, Palm Aire's golf-course condo communities carry acres of low-slope roof where boards want one thing above all: a documented, warrantied system with a contractor who handles the approval paperwork. That package — spec sheets, color cards, insurance certificates — is standard with every Pompano quote we write.",
+    ],
+    roofLandscape: {
+      heading: "The Pompano Beach roof landscape",
+      paragraphs: [
+        "East of Federal Highway, Pompano mixes 1950s–60s beach cottages and flat-roof mid-centuries with waterfront tile estates in Harbor Village and the Isles — all under constant salt attack. The central city (Old Pompano, Cresthaven, Kendall Green) is classic post-war CBS ranch stock on shingle and gravel roofs, much of it now flagged by insurers purely on age.",
+        "West of I-95, Palm Aire and the Cypress Bend corridor bring large-scale condo and townhome roof fields — flat and low-slope decks where seam failure and ponding are the recurring issues, and where a monolithic coating over the whole field outperforms patch-after-patch maintenance.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Pompano Beach",
+      paragraphs: [
+        "Coating restorations in Pompano Beach generally don't require a building permit since no structural change is made — we confirm with the city's Development Services when a project includes repairs that might. Barrier-island condos and the Palm Aire associations all require board sign-off; we've built our documentation package around exactly what those boards ask for.",
+        "Pompano's coastal zip codes see some of the most aggressive roof-age underwriting in Broward. A coating system plus Additional Roof Life Certification gives homeowners a certified answer that keeps coverage in place at a fraction of what the insurer's letter implies you must spend.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Harbor Village & the Isles", note: "waterfront tile under direct salt exposure — seal and restore" },
+      { name: "Old Pompano & Cresthaven", note: "1950s–70s CBS ranches facing roof-age insurance letters" },
+      { name: "Palm Aire", note: "golf-course condo communities — board-ready documentation standard" },
+      { name: "Kendall Green & Collier City", note: "post-war shingle and gravel roofs, restoration saves 60–70%" },
+      { name: "Beach / A1A corridor", note: "condo decks where TAS-106 uplift documentation wins approvals" },
+    ],
+  },
+
+  "deerfield-beach": {
+    intro: [
+      "Deerfield Beach roofing splits into three very different jobs: salt-exposed cottages and condos near the beach and the Cove, the enormous flat-roof inventory of Century Village East, and 1970s–90s tile in Deer Creek and the western neighborhoods. We quote each one differently, because they fail differently.",
+      "Century Village East alone holds hundreds of low-slope condo buildings from the 1970s — roofs that have been patched, re-patched, and patched again. A monolithic elastomeric coating over the entire deck stops the leak-chase for a decade or more, and it's a fraction of the special assessment a tear-off would trigger.",
+      "In the Cove and east of Federal Highway, the story is salt and age together: 1950s–60s homes whose original roofs have been recovered once already and whose owners are now getting roof-age letters from their insurers. Restoration plus an Additional Roof Life Certification answers that letter without a re-roof.",
+    ],
+    roofLandscape: {
+      heading: "The Deerfield Beach roof landscape",
+      paragraphs: [
+        "East Deerfield — the Cove, the beach area, Little Harbor — carries 1950s–60s CBS homes with flat additions and tile mains, all in the salt-spray zone. Central Deerfield's post-war grid runs to shingle and gravel ranches, while Century Village East is one of the largest concentrations of low-slope condo roof in Broward County.",
+        "West of Powerline Road, Deer Creek's golf-course communities bring 1970s–90s concrete tile on larger homes — now deep into the age window where chalking, algae streaking, and HOA appearance notices arrive together. One SmartShield project resolves all three.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Deerfield Beach",
+      paragraphs: [
+        "Roof coating projects in Deerfield Beach typically proceed without a building permit — coating is restoration, not alteration — and we verify with the city's Building Department whenever repair scope could change that. Century Village and the Deer Creek associations require formal approval; our board package (specs, colors, insurance, warranty terms) is built for exactly that process.",
+        "With so much 1950s–70s housing stock, Deerfield homeowners see constant roof-age insurance pressure. A documented coating restoration with Additional Roof Life Certification is the accepted paper trail that keeps policies in force.",
+      ],
+    },
+    neighborhoods: [
+      { name: "The Cove", note: "1950s–60s waterfront homes — salt-sealed tile and flat-roof restoration" },
+      { name: "Century Village East", note: "massive low-slope condo inventory — monolithic coating beats patch cycles" },
+      { name: "Deer Creek", note: "1970s–90s golf-community tile with HOA color approval — we handle it" },
+      { name: "Little Harbor & east of Federal", note: "beach-zone roofs needing uplift-rated systems" },
+      { name: "Crystal Lake area", note: "townhome and villa roof fields quoted at volume pricing" },
+    ],
+  },
+
+  tamarac: {
+    intro: [
+      "Tamarac was built as Florida retirement country in the 1960s and 70s — Kings Point, Mainlands, the Woodlands — and its roofs are now the oldest large inventory in central Broward. The good news: most of them are structurally sound, which makes Tamarac one of the best restoration markets in the county.",
+      "The Mainlands sections and Kings Point carry thousands of near-identical low-slope and gravel roofs from the same construction waves, which means the same failures arrive on the same schedule: dried-out surfaces, seam leaks over Florida rooms, and insurance letters triggered purely by the roof's birth year. A coating restoration resets that clock for a fraction of replacement cost.",
+      "Because so many Tamarac communities are association-managed, we've standardized the whole approval package — product specs, color documentation, insurance certificates, and warranty terms — so your board or management company gets everything in one submission.",
+    ],
+    roofLandscape: {
+      heading: "The Tamarac roof landscape",
+      paragraphs: [
+        "East and central Tamarac are dominated by 1960s–70s single-story homes — the Mainlands' flat and low-slope roofs, Tamarac Lakes' gravel built-ups, and the Woodlands' larger golf-course homes under tile and shingle. Nearly all of it is now 45–60 years old, deep into the range where surfaces fail even when structures don't.",
+        "Western Tamarac, built out in the 1980s–90s along Nob Hill and Pine Island, runs to concrete tile in HOA communities like Westwood — younger roofs, but now hitting the 30-year chalking-and-algae stage where SmartShield restoration is the natural fix.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Tamarac",
+      paragraphs: [
+        "Coating work in Tamarac is surface restoration and generally requires no building permit — we confirm with the city's Building Department when repairs are included. The bigger process is association approval: Kings Point, the Mainlands sections, and most western HOAs require documented sign-off, and our board-ready package is designed to pass on the first submission.",
+        "Tamarac's roof ages make it ground zero for roof-age underwriting. Our coating systems plus an Additional Roof Life Certification give homeowners and associations the certified documentation that satisfies carriers without a tear-off.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Kings Point", note: "large 55+ condo and villa roof fields — association-scale pricing" },
+      { name: "The Mainlands", note: "1960s–70s flat and low-slope roofs, the county's classic restoration stock" },
+      { name: "The Woodlands", note: "golf-course homes with tile and shingle mains now past year 40" },
+      { name: "Westwood", note: "1980s tile communities hitting the chalking stage — HOA colors matched" },
+      { name: "Tamarac Lakes", note: "original gravel built-ups where coating beats another recover" },
+    ],
+  },
+
+  margate: {
+    intro: [
+      "Margate is 1960s–70s Florida in concentrated form: block after block of single-story CBS ranches under shingle, gravel, and early tile roofs, plus the villa-style communities of Paradise Gardens and Oriole. Almost none of it is new — which means almost all of it is in the restoration window right now.",
+      "The most common Margate call is a roof that isn't leaking yet but has been flagged anyway: an insurer's roof-age letter, or an appraisal that dinged the home for a 'weathered' roof. Both are appearance-and-documentation problems more than structural ones, and a coating restoration with certified documentation solves both for a fraction of a re-roof.",
+      "Margate's canal grid keeps humidity high street by street, so black algae streaking shows up early — often the first thing owners notice. FungalShield treatment kills it; most homeowners bundle it into a full SmartShield restoration so cleaning, color, and waterproofing happen in one project.",
+    ],
+    roofLandscape: {
+      heading: "The Margate roof landscape",
+      paragraphs: [
+        "Margate's core housing stock went up between 1958 and 1979 — CBS ranches with 3/12–4/12 pitches under shingle or gravel, plus flat sections over garages and Florida rooms that were never designed to last this long without a membrane. The Oriole communities and Paradise Gardens add thousands of villa and duplex roofs built on the same schedule, so entire streets age in unison.",
+        "Because the housing is so uniform, the economics are too: on a typical Margate ranch, a coating restoration runs 60–70% below replacement, and neighboring homeowners frequently schedule together — volume pricing that rarely applies in less uniform cities.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Margate",
+      paragraphs: [
+        "Coating projects in Margate are surface restorations and generally need no building permit; we confirm with the city's Building Department when repair scope warrants it. The Oriole and Paradise Gardens associations require approval before exterior work — our standard package covers the specs, colors, and insurance certificates they ask for.",
+        "With a housing stock this age-uniform, Margate sees waves of roof-age insurance letters. A coating restoration plus Additional Roof Life Certification is the documented answer that keeps coverage in place without a tear-off.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Paradise Gardens", note: "villa communities where whole sections restore together at volume pricing" },
+      { name: "Oriole sections", note: "1970s duplex and villa roofs, association approval handled" },
+      { name: "Original Margate grid", note: "1960s CBS ranches — the classic restoration-vs-replace decision" },
+      { name: "Coral Gate area", note: "canal-side homes with early algae streaking — FungalShield territory" },
+      { name: "Holiday Springs corridor", note: "later tile now hitting the 30-year chalking stage" },
+    ],
+  },
+
+  lauderhill: {
+    intro: [
+      "Lauderhill's roofs split cleanly at University Drive: east of it, 1960s ranches from the city's original build-out; west of it, Inverrary — the massive 1970s golf-course development whose condos, villas, and estates put more low-slope roof in one place than almost anywhere in central Broward.",
+      "Inverrary is where we do our biggest Lauderhill work: association buildings with flat and low-slope decks that have hit the patch-and-leak cycle. Coating the entire deck as one monolithic membrane stops the cycle — and costs a fraction of the special assessment a tear-off would force on residents.",
+      "East Lauderhill homeowners mostly call about the insurance letter: original or once-recovered roofs from the 1960s that carriers flag on age alone. A restoration plus Additional Roof Life Certification gives them the certified paperwork that answers it.",
+    ],
+    roofLandscape: {
+      heading: "The Lauderhill roof landscape",
+      paragraphs: [
+        "East Lauderhill (the original city, plotted in the early 1960s) is CBS ranch country — shingle and gravel mains with flat additions, now 55+ years old. Inverrary's 1970s build-out added everything at once: high-rise decks, garden condos, villa clusters, and larger single-family homes around the golf courses, most of it low-slope and all of it aging on the same clock.",
+        "The newer western strips along Nob Hill add 1980s–90s tile townhomes — younger roofs, but many now chalking and streaking on schedule. For associations, our quotes cover whole roof fields, not single buildings, which is where the real savings sit.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Lauderhill",
+      paragraphs: [
+        "Roof coating in Lauderhill is restoration work and typically requires no building permit — we verify with the city when repairs are bundled in. Inverrary's associations run formal approval processes; our board package (specs, color documentation, insurance, warranty) is built to clear them on first submission.",
+        "Lauderhill's 1960s–70s stock draws steady roof-age underwriting pressure. Coating plus Additional Roof Life Certification is the documented path that keeps policies in force at a fraction of replacement cost.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Inverrary", note: "1970s golf-course condos and villas — association-scale monolithic coating" },
+      { name: "Original east Lauderhill", note: "1960s CBS ranches facing age-based insurance letters" },
+      { name: "Boulevard Gardens & Broward Estates edge", note: "post-war shingle and gravel restoration stock" },
+      { name: "Nob Hill corridor", note: "1980s–90s tile townhomes at the chalking stage" },
+      { name: "City Hall / 441 corridor", note: "commercial flat decks coated at scale" },
+    ],
+  },
+
+  parkland: {
+    intro: [
+      "Parkland is the newest housing stock we serve in Broward — and its roofs are aging faster than owners expect. The big master-planned communities built from the 1990s through the 2010s (Heron Bay, Parkland Golf & Country Club, MiraLago, Parkland Isles) carry premium concrete tile that's now 15–30 years old: structurally excellent, cosmetically fading, and starting to draw both HOA notices and insurer questions.",
+      "Parkland's HOAs are among the strictest in the county — architectural review boards with defined color palettes and formal submission processes. That's our home turf: we color-match from 3,000+ tintable options including the community's approved palette, and we hand your board a complete documentation package with the application.",
+      "The math matters more here because the roofs are bigger: on a Parkland estate roof, restoring with SmartShield instead of replacing routinely saves tens of thousands of dollars while resetting both appearance and waterproofing for another 10–15 years.",
+    ],
+    roofLandscape: {
+      heading: "The Parkland roof landscape",
+      paragraphs: [
+        "Nearly all of Parkland is 1990s-or-newer concrete tile — S-tile and flat-profile tile on large 2-story footprints, built to post-Andrew code. The failure mode isn't structural: it's finish. By year 15–20 the factory slurry coat chalks off, colors fade unevenly, and algae takes hold on north slopes — exactly the surface problems an elastomeric restoration reverses.",
+        "The older Ranches section (east Parkland's acreage lots) adds a different roof population: 1970s–80s homes, some under shingle or early tile, on properties where owners want work done quietly and done once. Both markets end at the same place — restoration over replacement while the structure is still sound.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Parkland",
+      paragraphs: [
+        "Coating is surface restoration and generally doesn't require a Parkland building permit — we confirm with the city's Building Department when scope demands it. The real process is architectural review: Heron Bay, PGCC, MiraLago, and the other master-planned communities all require formal color and product approval, and our submission package is built to their standards.",
+        "Even Parkland's younger roofs are starting to see insurer age questions at the 15–20 year mark. A documented restoration with Additional Roof Life Certification settles the question before it becomes a non-renewal notice.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Heron Bay", note: "1990s–2000s tile at the fade-and-chalk stage — ARB palette matched" },
+      { name: "Parkland Golf & Country Club", note: "estate-scale tile roofs where restoration saves tens of thousands" },
+      { name: "MiraLago & Parkland Bay", note: "newest stock — proactive maintenance coating extends the factory finish" },
+      { name: "Parkland Isles & Cypress Head", note: "gated 90s communities with formal color approval — we handle it" },
+      { name: "The Ranches", note: "acreage properties with older mixed roofs — one-visit evaluation covers it all" },
+    ],
+  },
+
+  "coconut-creek": {
+    intro: [
+      "Coconut Creek roofing is a tale of two inventories: Wynmoor Village — one of the largest 55+ condo communities in Florida, with acres of 1970s low-slope roof — and the 1980s–2000s tile townhome communities of the Township and Winston Park. We work both, and they need completely different systems.",
+      "Wynmoor's buildings are on their third or fourth patch cycle in places. Coating an entire deck as one seamless membrane is the fix that actually holds — and for an association, it's the difference between a maintenance line item and a special assessment.",
+      "In the Township, Winston Park, and Regency Lakes, the tile is now 25–40 years old: chalky, streaked on the north slopes, and drawing HOA appearance notices. A SmartShield restoration answers the notice, kills the algae, and re-waterproofs the field in one project — with the HOA paperwork handled by us.",
+    ],
+    roofLandscape: {
+      heading: "The Coconut Creek roof landscape",
+      paragraphs: [
+        "South Coconut Creek is anchored by Wynmoor's garden-style condo buildings — 1970s low-slope decks in continuous roof fields, plus the surrounding villa communities built on the same schedule. Central and north Coconut Creek shifted to concrete tile: the Township's 1980s townhomes, Winston Park's 1990s single-family sections, and Regency Lakes' gated 90s stock.",
+        "The city's dense tree canopy and lake systems (it's the 'Butterfly Capital' for a reason) keep shade and humidity high, so algae and fungal streaking arrive earlier here than in more open cities — often the first visible sign a roof is due for restoration.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Coconut Creek",
+      paragraphs: [
+        "Coating restorations in Coconut Creek typically proceed without a building permit — we confirm with the city's Development Services when repairs are included. Almost every Creek address sits inside an association: Wynmoor, the Township's sub-associations, Winston Park, Regency Lakes. Our board-ready package (specs, colors, insurance, warranty) is standard with every quote.",
+        "Between Wynmoor's 1970s decks and the Township's aging tile, age-based insurance scrutiny is constant. A documented coating restoration with Additional Roof Life Certification keeps coverage in place without a tear-off.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Wynmoor Village", note: "1970s low-slope condo fields — monolithic coating ends the patch cycle" },
+      { name: "The Township", note: "1980s tile townhomes with sub-association approvals — we handle them" },
+      { name: "Winston Park", note: "1990s single-family tile at the chalking stage" },
+      { name: "Regency Lakes", note: "gated 90s community, HOA palette matched from 3,000+ colors" },
+      { name: "Banyan Trails area", note: "2000s tile — proactive coating extends the original finish" },
+    ],
+  },
+
+  "oakland-park": {
+    intro: [
+      "Oakland Park is one of Broward's best restoration markets: a compact city of 1950s–60s CBS homes — Coral Heights, Lloyd Estates, North Andrews Gardens — where the roofs are old enough to draw insurance letters but sound enough that replacement is usually the wrong answer.",
+      "The classic Oakland Park roof is a low-pitch shingle or gravel main with a flat addition over a Florida room or carport — and it's the flat section that leaks first. Our approach treats the whole roof as one system: repair, seal, and coat it into a single waterproof membrane instead of patching the flat section every other summer.",
+      "The city's east side and the Corals sit minutes from the Intracoastal, where salt air accelerates surface wear. Coating re-seals those surfaces for years at a fraction of replacement — and with the Additional Roof Life Certification, it answers the age question insurers keep asking about mid-century homes.",
+    ],
+    roofLandscape: {
+      heading: "The Oakland Park roof landscape",
+      paragraphs: [
+        "Oakland Park's housing stock is overwhelmingly 1950s–60s: CBS ranches under shingle, gravel built-up, and early tile, with flat and low-slope sections everywhere — the signature of Florida's post-war building boom. Coral Heights and the Corals add larger mid-century homes, many with full flat roofs that are prime monolithic-coating candidates.",
+        "The Dixie Highway and Powerline corridors carry a dense strip of commercial flat decks — warehouses, storefronts, and the city's growing brewery-district buildings — where reflective cool-roof coating cuts cooling costs while sealing the deck.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Oakland Park",
+      paragraphs: [
+        "Most Oakland Park coating projects need no building permit — coating is restoration, not structural alteration — and we confirm with the city's Building Division when repair scope could change that. HOA involvement is lighter here than in western Broward, so projects typically move from evaluation to finished roof faster.",
+        "With nearly the whole city built before 1970, roof-age underwriting hits Oakland Park hard. A coating restoration plus Additional Roof Life Certification is the certified documentation that keeps mid-century homes insurable without a five-figure tear-off.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Coral Heights", note: "mid-century homes with flat roofs — monolithic membrane territory" },
+      { name: "Lloyd Estates", note: "1950s–60s CBS ranches facing age-based insurance letters" },
+      { name: "North Andrews Gardens", note: "post-war shingle and gravel, restoration saves 60–70%" },
+      { name: "Corals of Oakland Park", note: "east-side salt exposure — sealing beats replacing" },
+      { name: "Dixie Highway corridor", note: "commercial flat decks — reflective cool-roof coating at scale" },
+    ],
+  },
 };

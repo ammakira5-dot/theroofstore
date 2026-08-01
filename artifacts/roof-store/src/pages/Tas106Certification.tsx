@@ -332,7 +332,7 @@ const techSpecs = [
   { label: "System Type", value: "Multi-layer, full-void-fill monolithic assembly" },
   { label: "Compatible Substrates", value: "Spanish tile, S-tile, barrel tile, flat cement tile, flat broom tile, metal, flat deck, foam, gravel" },
   { label: "Warranty", value: "Maintenance-free Lifetime Warranty (professionally installed) · Transferable · Renewable" },
-  { label: "Installed Cost (from)", value: "$2.70 / sq ft (includes labor and materials)" },
+  { label: "Installed Cost", value: "Factory Price Sheet emailed via our contact form (labor and materials included)" },
   { label: "Unit Retail Price", value: "$325 per 5-gallon pail (direct purchase)" },
   { label: "Coverage (retail)", value: "~50 sq ft per gallon (varies by substrate profile depth)" },
   { label: "Installation Time", value: "1–3 days (typical residential tile roof)" },

@@ -460,33 +460,24 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb, job
               <div className="bg-muted rounded-xl p-6">
                 <div className="text-sm font-bold text-foreground mb-4">Roof Coating Pricing</div>
                 <div className="space-y-3">
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <div className="text-xs font-bold text-green-700 uppercase tracking-wide">RP1 FungalShield</div>
-                      <div className="text-xs text-muted-foreground">Anti-fungal · 5–7 yr</div>
-                    </div>
-                    <div className="text-sm font-bold text-foreground shrink-0">From $0.50<span className="text-xs font-normal text-muted-foreground">/sq ft</span></div>
+                  <div>
+                    <div className="text-xs font-bold text-green-700 uppercase tracking-wide">RP1 FungalShield</div>
+                    <div className="text-xs text-muted-foreground">Anti-fungal · 5–7 yr</div>
                   </div>
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <div className="text-xs font-bold text-accent uppercase tracking-wide">RP2 SmartShield ★</div>
-                      <div className="text-xs text-muted-foreground">Energy-saving · 10–15 yr</div>
-                    </div>
-                    <div className="text-sm font-bold text-foreground shrink-0">From $1.90<span className="text-xs font-normal text-muted-foreground">/sq ft</span></div>
+                  <div>
+                    <div className="text-xs font-bold text-accent uppercase tracking-wide">RP2 SmartShield ★</div>
+                    <div className="text-xs text-muted-foreground">Energy-saving · 10–15 yr</div>
                   </div>
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <div className="text-xs font-bold text-primary uppercase tracking-wide">RP3 RoofShield</div>
-                      <div className="text-xs text-muted-foreground">Hurricane-rated · Lifetime</div>
-                    </div>
-                    <div className="text-sm font-bold text-foreground shrink-0">From $2.70<span className="text-xs font-normal text-muted-foreground">/sq ft</span></div>
+                  <div>
+                    <div className="text-xs font-bold text-primary uppercase tracking-wide">RP3 RoofShield</div>
+                    <div className="text-xs text-muted-foreground">Hurricane-rated · Lifetime</div>
                   </div>
                   <div className="border-t pt-3 text-xs text-muted-foreground leading-relaxed">
-                    vs. $10–$25/sq ft to re-roof · Includes labor &amp; materials
+                    Typically 60–70% less than re-roofing · Includes labor &amp; materials
                   </div>
                 </div>
                 <Link href="/pricing" className="block text-center text-xs text-accent font-semibold mt-4 hover:underline">
-                  See full pricing guide →
+                  Get the Factory Price Sheet →
                 </Link>
               </div>
 

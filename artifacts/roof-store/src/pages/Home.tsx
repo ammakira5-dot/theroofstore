@@ -61,7 +61,7 @@ const homeFaqs = [
   },
   {
     q: "How much does roof coating cost in Florida?",
-    a: "Cost depends on the system (Fungal Shield, Smart Shield, or Roof Shield), roof type, square footage, and current condition. As a guide, installed pricing starts from 50¢/sq ft for Fungal Shield through to $2.70+/sq ft for Roof Shield (labor and materials included), and factory-direct products run $190–$325 per 5-gallon pail — with most residential projects costing significantly less than a full roof replacement. We provide a free on-site inspection and written estimate at no charge. Call 954-210-9614 or use our contact form to schedule.",
+    a: "Cost depends on the system (Fungal Shield, Smart Shield, or Roof Shield), roof type, square footage, and current condition. Installed pricing includes labor and materials, and most residential projects cost 60–70% less than a full roof replacement — the complete Factory Price Sheet is emailed to you when you fill out our contact form. Factory-direct products run $190–$325 per 5-gallon pail. We provide a free on-site inspection and written estimate at no charge. Call 954-210-9614 or use our contact form to schedule.",
   },
 ];
 
@@ -287,9 +287,7 @@ export default function Home() {
               </figure>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/70">
-              <span className="font-semibold text-white">Roof coating from $0.50/sq ft</span>
-              <span className="text-white/30">·</span>
-              <span>vs. $10–$25/sq ft to re-roof</span>
+              <span className="font-semibold text-white">Roof coating — typically 60–70% less than re-roofing</span>
               <span className="text-white/30">·</span>
               <Link href="/pricing" className="text-accent font-semibold hover:underline">See pricing →</Link>
               <span className="text-white/30">·</span>

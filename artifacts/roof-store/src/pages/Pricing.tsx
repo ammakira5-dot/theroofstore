@@ -3,32 +3,11 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { Leaf, Sun, ShieldCheck, Info, Mail, ChevronDown } from "lucide-react";
+import { Leaf, Sun, ShieldCheck, Mail, ChevronDown } from "lucide-react";
 
 const BASE = "https://www.theroofstore.net";
 
-interface PriceRow {
-  type: string;
-  low: string;
-  high: string;
-  sameCol?: boolean;
-}
-
-interface PriceSystem {
-  id: string;
-  badge: string;
-  badgeColor: string;
-  icon: typeof Leaf;
-  name: string;
-  code: string;
-  tagline: string;
-  from: string;
-  flatNote?: string;
-  inspection?: boolean;
-  rows: PriceRow[];
-}
-
-const systems: PriceSystem[] = [
+const systems = [
   {
     id: "fungalshield",
     badge: "Entry Level",
@@ -37,12 +16,6 @@ const systems: PriceSystem[] = [
     name: "Fungal Shield",
     code: "RP1",
     tagline: "Clear anti-fungal & anti-algae coating — roofs or walls",
-    from: "from 50¢ / sq ft",
-    rows: [
-      { type: "Flat Smooth Tile",      low: "50¢ – 70¢",    high: "70¢ – 90¢" },
-      { type: "Flat Broom Swept Tile", low: "70¢ – 90¢",    high: "90¢ – $1.25" },
-      { type: "S-Tile (Barrel / Spanish)", low: "90¢ – $1.25", high: "$1.25 – $1.45" },
-    ],
   },
   {
     id: "smartshield",
@@ -52,13 +25,6 @@ const systems: PriceSystem[] = [
     name: "Smart Shield",
     code: "RP2",
     tagline: "Waterproofing — tile roofs, walls & flat decks · 3,000+ colors",
-    from: "from $1.90 / sq ft",
-    flatNote: "$2.35 – $2.75 (flat deck, any pitch)",
-    rows: [
-      { type: "Flat Smooth Tile",      low: "$1.90 – $2.25", high: "$2.25 – $2.50" },
-      { type: "Flat Broom Swept Tile", low: "$2.15 – $2.35", high: "$2.35 – $2.50" },
-      { type: "S-Tile (Barrel / Spanish)", low: "$2.35 – $2.50", high: "$2.50 – $2.75" },
-    ],
   },
   {
     id: "roofshield",
@@ -68,33 +34,25 @@ const systems: PriceSystem[] = [
     name: "Roof Shield",
     code: "RP3",
     tagline: "Full weatherproofing retrofit · World's only TAS-106 Dade County rated coating · Lifetime warranty",
-    from: "from $2.70 / sq ft",
-    flatNote: "$2.75 – $3.50 (flat deck, any pitch)",
-    inspection: true,
-    rows: [
-      { type: "Flat Smooth Tile",      low: "$2.70 – $3.00", high: "$2.70 – $3.00", sameCol: true },
-      { type: "Flat Broom Swept Tile", low: "$3.25 – $3.50", high: "$3.65 – $3.85" },
-      { type: "S-Tile (Barrel / Spanish)", low: "$4.00 – $4.20", high: "$4.45 – $4.75" },
-    ],
   },
 ];
 
 const pricingFaqs = [
   {
-    q: "How much does roof coating cost per square foot in South Florida?",
-    a: "Roof coating in South Florida ranges from $0.50/sq ft (FungalShield RP1, flat cement tile, low pitch) to $4.75/sq ft (RoofShield RP3, barrel tile, steep pitch). Our most popular system — SmartShield (RP2) — runs $1.90–$2.75/sq ft for most tile roofs. All prices include labor and materials.",
-  },
-  {
-    q: "What does a typical South Florida roof coating job cost in total?",
-    a: "A 2,000 sq ft tile roof typically costs $3,800–$5,500 with our SmartShield (RP2) system, and $5,400–$9,500 with our premium RoofShield (RP3) — compared to $20,000–$50,000 for a full roof replacement. Your exact figure depends on pitch, tile type, surface condition, and which warranty tier you select.",
-  },
-  {
-    q: "Do roof coating prices include labor and materials?",
-    a: "Yes — every price on our menu includes labor and materials with no hidden add-ons. Minor prep items such as cracked mortar, failed ridge caps, or open valleys are noted in your written estimate and quoted as a separate line item — never buried in the coating price.",
+    q: "How do I find out what roof coating costs in South Florida?",
+    a: "Fill out our contact form and the full Factory Price Sheet is emailed to you — every system, every roof type, every pitch range laid out clearly. Pricing depends on the system you choose, your roof type, pitch, and surface condition, so the price sheet plus a free onsite assessment gives you an accurate number instead of a guess.",
   },
   {
     q: "How does roof coating compare to a full re-roof in cost?",
-    a: "A full tear-off and re-roof in South Florida typically runs $10–$25 per square foot — five to ten times more than our coating systems. Coating also preserves your existing tile, avoids permit delays, generates no landfill waste, and qualifies structurally sound roofs for warranties and insurance documentation that a re-roof cannot match at the same price.",
+    a: "Coating restoration typically runs 60–70% less than a full tear-off and replacement. Coating also preserves your existing tile, avoids permit delays, generates no landfill waste, and qualifies structurally sound roofs for warranties and insurance documentation that a re-roof cannot match at the same cost.",
+  },
+  {
+    q: "Do roof coating prices include labor and materials?",
+    a: "Yes — every price on our factory sheet includes labor and materials with no hidden add-ons. Minor prep items such as cracked mortar, failed ridge caps, or open valleys are noted in your written estimate and quoted as a separate line item — never buried in the coating price.",
+  },
+  {
+    q: "What affects my roof coating price?",
+    a: "Four main factors: the system you select (RP1, RP2, or RP3), your roof type (flat tile, broom-swept tile, or barrel/S-tile), your roof's pitch, and its surface condition. Larger roofs benefit from economies of scale. Everything is spelled out on the Factory Price Sheet and confirmed at your free onsite assessment.",
   },
   {
     q: "Will roof coating help with my homeowners insurance?",
@@ -102,7 +60,7 @@ const pricingFaqs = [
   },
   {
     q: "How do I get an exact roof coating quote?",
-    a: "Submit a contact request on this page and our full factory price sheet is emailed to you instantly — every system, every roof type, every pitch range laid out clearly. For an exact project price we schedule a free onsite assessment where we measure your roof, note the tile type and pitch, and confirm surface condition. No sales pressure, no commitment required.",
+    a: "Submit a contact request and our full factory price sheet is emailed to you instantly. For an exact project price we schedule a free onsite assessment where we measure your roof, note the tile type and pitch, and confirm surface condition. No sales pressure, no commitment required.",
   },
 ];
 
@@ -134,45 +92,6 @@ export default function Pricing() {
         { "@type": "AdministrativeArea", name: "Miami-Dade County, Florida" },
         { "@type": "AdministrativeArea", name: "Palm Beach County, Florida" },
       ],
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Roof Coating Price Menu",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: { "@type": "Service", name: "Fungal Shield (RP1) — Clear Anti-Fungal Roof Coating" },
-            priceSpecification: {
-              "@type": "PriceSpecification",
-              priceCurrency: "USD",
-              minPrice: "0.50",
-              maxPrice: "1.45",
-              unitText: "SQF",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: { "@type": "Service", name: "Smart Shield (RP2) — Waterproofing Tile & Flat Roof Coating" },
-            priceSpecification: {
-              "@type": "PriceSpecification",
-              priceCurrency: "USD",
-              minPrice: "1.90",
-              maxPrice: "2.75",
-              unitText: "SQF",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: { "@type": "Service", name: "Roof Shield (RP3) — TAS-106 Certified Full Weatherproofing System" },
-            priceSpecification: {
-              "@type": "PriceSpecification",
-              priceCurrency: "USD",
-              minPrice: "2.70",
-              maxPrice: "4.75",
-              unitText: "SQF",
-            },
-          },
-        ],
-      },
     },
     {
       "@context": "https://schema.org",
@@ -188,8 +107,8 @@ export default function Pricing() {
   return (
     <div className="w-full">
       <SEO
-        title="Roof Coating Prices per Sq Ft | South Florida | The Roof Store"
-        description="Roof coating prices for South Florida: Fungal Shield from $0.50, Smart Shield from $1.90, Roof Shield from $2.70 /sq ft. Labor & materials included. Free estimate: 954-210-9614."
+        title="Roof Coating Pricing | Get the Factory Price Sheet | The Roof Store"
+        description="Get South Florida roof coating pricing for Fungal Shield, Smart Shield & Roof Shield. Fill out the form and the full Factory Price Sheet is emailed to you. Free estimate: 954-210-9614."
         canonical="/pricing"
         ogImage="/images/og/pricing.jpg"
         schema={schema}
@@ -198,10 +117,10 @@ export default function Pricing() {
       <section className="bg-primary text-white py-24">
         <div className="container px-4 max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-            <div className="inline-block bg-accent/20 border border-accent/30 text-accent px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6">Factory Price Menu</div>
-            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Prices (Included Products Installed) in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield</h1>
+            <div className="inline-block bg-accent/20 border border-accent/30 text-accent px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-widest mb-6">Factory Price Sheet</div>
+            <h1 className="text-5xl font-serif font-bold mb-6">Roof Coating Pricing in South Florida — Fungal Shield, Smart Shield &amp; Roof Shield</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Per-square-foot rates by system, roof type, and pitch. All prices include labor &amp; materials. Exact quotes are finalized after a free onsite visit.
+              Rates vary by system, roof type, and pitch — all prices include labor &amp; materials, and coating typically runs 60–70% less than a full roof replacement. The complete Factory Price Sheet is emailed to you when you fill out the contact form.
             </p>
             <div className="mt-8 bg-accent/15 border border-accent/40 rounded-2xl p-6 text-left max-w-2xl mx-auto">
               <p className="text-white font-bold mb-2">How to get your Factory Price Sheet:</p>
@@ -224,28 +143,15 @@ export default function Pricing() {
         </div>
       </section>
 
-      <section className="py-14 bg-muted">
-        <div className="container px-4 max-w-4xl mx-auto">
-          <div className="bg-card border rounded-2xl p-8 space-y-4">
-            <h2 className="text-2xl font-serif font-bold text-primary">Roof Coating Cost in Palm Beach County</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Roof coating cost in Palm Beach County typically runs between <strong className="text-foreground">$1.50 and $4.50 per square foot</strong> depending on the system, roof type, pitch, and surface condition — significantly less than the $10–$25 per square foot cost of a full roof replacement. Palm Beach County's large stock of barrel tile, S-tile, and flat-deck homes makes our three-system lineup especially well suited to the county's diverse roofing needs.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Our entry-level <strong className="text-foreground">FungalShield (RP1)</strong> system starts from $0.50/sq ft and targets algae, fungus, and UV fading — a common problem on tile roofs throughout Boca Raton, Delray Beach, and Boynton Beach. The mid-range <strong className="text-foreground">SmartShield (RP2)</strong> system from $1.90/sq ft adds BASF Cool Pigment energy-reflective technology, meeting HOA color standards while reducing cooling costs — particularly valuable in Palm Beach County's densely HOA-governed communities. Our premium <strong className="text-foreground">RoofShield (RP3)</strong> system from $2.70/sq ft delivers a seamless rubber membrane with TAS-106 hurricane wind-uplift certification — the strongest protection available for Palm Beach County's coastal and lakefront properties.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Exact pricing is finalized after a free onsite visit. Palm Beach County pricing may vary slightly from Broward due to travel distance — call us at <a href="tel:954-210-9614" className="text-accent font-bold hover:underline">954-210-9614</a> for a county-specific quote.
-            </p>
-            <Link href="/service-areas/palm-beach-county" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
-              Palm Beach County service area page →
-            </Link>
-          </div>
-        </div>
-      </section>
-
+      {/* The three systems — no rates shown; price sheet by email */}
       <section className="py-20 bg-background">
-        <div className="container px-4 max-w-5xl mx-auto space-y-10">
+        <div className="container px-4 max-w-5xl mx-auto space-y-8">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <h2 className="text-3xl font-serif font-bold text-primary">Three Systems, One Price Sheet</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Every system is priced per square foot by roof type and pitch, with labor and materials included. The full rate menu for all three systems arrives by email when you fill out the form.
+            </p>
+          </div>
           {systems.map((sys, i) => (
             <motion.div
               key={sys.id}
@@ -255,8 +161,7 @@ export default function Pricing() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-card border rounded-2xl shadow-sm overflow-hidden"
             >
-              {/* System header */}
-              <div className="flex items-start justify-between gap-4 px-8 pt-8 pb-5 border-b">
+              <div className="flex items-start justify-between gap-4 px-8 py-8">
                 <div className="flex items-start gap-4">
                   <div className="h-12 w-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
                     <sys.icon className="h-6 w-6 text-accent" />
@@ -274,53 +179,9 @@ export default function Pricing() {
                   </div>
                 </div>
                 <div className="text-right shrink-0">
-                  <span className="text-accent font-bold text-sm whitespace-nowrap">{sys.from}</span>
+                  <Link href="/contact" className="text-accent font-bold text-sm whitespace-nowrap hover:underline">Get rates by email →</Link>
                 </div>
               </div>
-
-              {/* Price table */}
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="bg-muted/50">
-                      <th className="text-left px-8 py-3 text-xs font-semibold text-muted-foreground uppercase tracking-wide">Roof Type</th>
-                      <th className="text-center px-6 py-3 text-xs font-semibold text-muted-foreground uppercase tracking-wide">2/12 – 4/12 Pitch</th>
-                      <th className="text-center px-6 py-3 text-xs font-semibold text-muted-foreground uppercase tracking-wide">5/12 Pitch</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {sys.flatNote && (
-                      <tr className="border-t border-border/50">
-                        <td className="px-8 py-3 text-foreground">Flat Deck</td>
-                        <td className="px-6 py-3 text-center font-bold text-primary" colSpan={2}>{sys.flatNote.replace(" (flat deck, any pitch)", "")}</td>
-                      </tr>
-                    )}
-                    {sys.rows.map((row, j) => (
-                      <tr key={j} className={`border-t border-border/50 ${j % 2 === 1 ? "bg-muted/20" : ""}`}>
-                        <td className="px-8 py-3 text-foreground">{row.type}</td>
-                        {row.sameCol ? (
-                          <td className="px-6 py-3 text-center font-bold text-primary" colSpan={2}>{row.low}</td>
-                        ) : (
-                          <>
-                            <td className="px-6 py-3 text-center font-bold text-primary">{row.low}</td>
-                            <td className="px-6 py-3 text-center font-bold text-primary">{row.high}</td>
-                          </>
-                        )}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              {/* Inspection note for Roof Shield */}
-              {sys.inspection && (
-                <div className="mx-6 mb-6 mt-4 bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 flex items-start gap-3">
-                  <Info className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                  <p className="text-sm text-amber-800 leading-relaxed">
-                    <strong>Manufacturer's Inspection Required:</strong> The Roof Shield warranty program requires a pre-application Manufacturer's Report — $150 per 5,000 sq ft, <strong>100% refunded</strong> when you proceed. <Link href="/manufacturers-report" className="underline font-semibold">Learn more →</Link>
-                  </p>
-                </div>
-              )}
             </motion.div>
           ))}
         </div>
@@ -342,7 +203,7 @@ export default function Pricing() {
         <div className="container px-4 max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl font-serif font-bold text-primary">What Affects Your Roof Coating Price?</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Four main factors determine where your project lands within our published ranges.
+            Four main factors determine where your project lands on the factory price sheet.
           </p>
           <div className="grid sm:grid-cols-2 gap-5">
             <div className="bg-card border rounded-xl p-5 space-y-2">
@@ -379,7 +240,7 @@ export default function Pricing() {
           <div className="bg-card border rounded-2xl p-8 space-y-4">
             <h2 className="text-3xl font-serif font-bold text-primary">Roof Coating vs. Full Replacement: A Cost Comparison</h2>
             <p className="text-muted-foreground leading-relaxed">
-              A full roof replacement in South Florida costs between <strong className="text-foreground">$10 and $25 per square foot</strong> — and that's before the permit fees, dumpster haul-away, and the weeks of scheduling lag with a roofing crew. Our coating systems start at <strong className="text-foreground">$1.90 per square foot for RP2</strong> and top out at <strong className="text-foreground">$4.75 per square foot for the heaviest RP3 barrel tile application</strong>. That puts a fully waterproofed, color-coated, warranty-backed tile roof at a fraction of replacement cost — typically 60–70% less.
+              A full roof replacement in South Florida comes with permit fees, dumpster haul-away, and weeks of scheduling lag with a roofing crew. Our coating systems deliver a fully waterproofed, color-coated, warranty-backed tile roof at a fraction of replacement cost — typically <strong className="text-foreground">60–70% less</strong>.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               The structural tile underneath a coated roof is also left intact. Tear-offs remove decades of good tile along with the bad. Coating restores, seals, and recolors the existing surface — nothing goes to the landfill, and there's no waiting on back-ordered tile to match an aging style. For roofs that are structurally sound but cosmetically aged or beginning to show water intrusion, coating is almost always the more cost-effective path.
@@ -459,7 +320,7 @@ export default function Pricing() {
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-6">Ready for an Exact Quote?</h2>
           <p className="text-xl text-white/80 mb-10">
-            These are factory guide prices. Your exact quote depends on your roof's size, pitch, type, and condition — all assessed for free at your property.
+            Your exact quote depends on your roof's size, pitch, type, and condition — all assessed for free at your property.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">

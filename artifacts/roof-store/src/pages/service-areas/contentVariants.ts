@@ -39,7 +39,7 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   (city, county) => [
     `Storm Shield Paint Systems Inc. — The Roof Store — has protected roofs across ${county}, including ${city}, since 1994. Every coating, restoration, and waterproofing project is handled by our own certified technicians from start to finish.`,
     `Hurricane season defines roofing requirements in ${city}. Between June and November, your roof's ability to shed wind-driven rain, resist uplift, and stay sealed is tested directly. Our Roof Shield system carries the world's only TAS-106 Dade County Uplift certification for a liquid coating — engineered specifically for this climate.`,
-    `Beyond hurricane protection, ${city} roofs face daily UV degradation, algae and fungal growth from the humidity, and the cumulative stress of heavy summer rainfall. Our three-system lineup addresses every level of those demands, starting from 50¢ per square foot.`,
+    `Beyond hurricane protection, ${city} roofs face daily UV degradation, algae and fungal growth from the humidity, and the cumulative stress of heavy summer rainfall. Our three-system lineup addresses every level of those demands — typically at 60–70% less than replacement.`,
   ],
   (city, county) => [
     `For nearly three decades, ${city} homeowners and property managers have relied on The Roof Store for professional roof coating, tile restoration, and waterproofing — work performed by the same licensed, insured team on every job since 1994.`,

@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     q: "How much does a roof coating cost in Florida?",
-    a: "Professional roof coating in Florida costs between $1.90 and $3.50 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). SmartShield (RP2) starts at $1.90/sq ft; RoofShield (RP3) starts at $2.70/sq ft. As a general rule, coating saves homeowners up to 60–70% vs. full roof replacement.",
+    a: "Roof coating pricing depends on the system (SmartShield RP2 or RoofShield RP3), your roof type, and pitch — installed, including labor and materials. As a general rule, coating saves homeowners up to 60–70% vs. full roof replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     link: { href: "/roof-coating-florida", label: "Complete Florida Roof Coating Cost Guide →" },
   },
   {

@@ -64,7 +64,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     roofLandscape: {
       heading: "The Miramar roof landscape",
       paragraphs: [
-        "West Miramar's dominant roof is concrete barrel tile on a 5/12 pitch — the steeper pitch and heavier tile profile put most SmartShield projects in the $2.35–$2.75/sq ft range and RoofShield in the $4.00–$4.75 range. Because these communities were built quickly in large phases, whole streets age together: when one roof on your block starts showing chalk and streaking, yours is usually next.",
+        "West Miramar's dominant roof is concrete barrel tile on a 5/12 pitch — the steeper pitch and heavier tile profile are reflected on the factory price sheet, still typically 60–70% below replacement. Because these communities were built quickly in large phases, whole streets age together: when one roof on your block starts showing chalk and streaking, yours is usually next.",
         "Historic Miramar east of University Drive is a different job entirely — smaller footprints, flat decks, parapet walls, and older penetrations that need sealing. These are some of the most cost-effective restorations we do: a 1,500 sq ft flat deck can often be fully membraned for less than a tenth of replacement cost.",
       ],
     },

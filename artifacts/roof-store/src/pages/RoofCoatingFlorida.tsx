@@ -56,7 +56,7 @@ const schema = [
         name: "How much does roof coating cost in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Professional roof coating in Florida costs between $1.90 and $4.75 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft. The full monolithic hurricane protection system (RP3 Roof Shield) starts at $2.70/sq ft. All prices at The Roof Store include labor and materials. Full replacement in Florida typically runs $10–$25 per square foot, making coating up to 60–70% less expensive.",
+          text: "Roof coating pricing in Florida depends on the system, roof type, and pitch — at The Roof Store all prices include labor and materials, and coating typically runs up to 60–70% less than full replacement. The complete Factory Price Sheet is emailed to you when you fill out the contact form at theroofstore.net.",
         },
       },
       {
@@ -161,7 +161,7 @@ const faqs = [
   },
   {
     q: "How much does roof coating cost in Florida?",
-    a: "Professional roof coating costs between $1.90 and $4.75 per square foot installed at The Roof Store, including labor and materials (5/12+ pitch is additional per sq ft). Waterproof color coating (RP2) starts at $1.90/sq ft; the full hurricane-rated monolithic system (RP3 Roof Shield) starts at $2.70/sq ft. All prices include labor and materials.",
+    a: "Roof coating pricing at The Roof Store depends on the system (RP2 waterproof color coating or RP3 Roof Shield hurricane-rated monolithic system), your roof type, and pitch — installed, including labor and materials. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     link: { href: "/pricing", label: "View the full price menu →" },
   },
   {
@@ -330,7 +330,7 @@ export default function RoofCoatingFlorida() {
                   ["Manufacturer Warranty", "✓ Yes (up to Lifetime on RP3)", "✗ No structural warranty"],
                   ["Wind Uplift Rating", "✓ TAS-106 on RP3 (135+ MPH)", "✗ None"],
                   ["Insurance Cert Eligible", "✓ Yes — ARLC available", "✗ Generally no"],
-                  ["Typical Cost (installed)*", "From $1.90/sq ft (RP2) · up to $4.75/sq ft (RP3)", "From $1.70/sq ft"],
+                  ["Typical Cost (installed)*", "60–70% less than replacement — Factory Price Sheet by email", "Comparable per-coat cost, far shorter life"],
                 ].map(([char, coating, paint], i) => (
                   <tr key={i} className="hover:bg-muted/30 transition-colors">
                     <td className="px-4 py-3 font-medium text-foreground">{char}</td>
@@ -533,34 +533,11 @@ export default function RoofCoatingFlorida() {
         <motion.section id="cost" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Roof Coating Cost in Florida</h2>
           <AnswerBlock>
-            Professional roof coating in Florida costs between $1.90 and $4.75 per square foot installed, including labor and materials (5/12+ pitch is additional per sq ft). At The Roof Store — as the direct manufacturer and contractor — pricing starts at $1.90/sq ft for waterproof color coating (RP2) and $2.70/sq ft for the full monolithic hurricane protection system (RP3 Roof Shield). Full tile roof replacement typically costs $10–$25/sq ft, making coating up to 60–70% less expensive.
+            Roof coating pricing in Florida depends on the system, roof type, and pitch. At The Roof Store — as the direct manufacturer and contractor — all prices include labor and materials, and coating typically runs up to 60–70% less than full tile roof replacement. The complete Factory Price Sheet is emailed to you when you fill out the contact form.
           </AnswerBlock>
-          <h3 className="text-xl font-serif font-bold text-primary mb-3">The Roof Store Factory Price Menu</h3>
-          <p className="text-sm text-muted-foreground mb-4">Because The Roof Store manufactures its own products and employs its own crew, there is no distributor markup, contractor markup, or materials middleman. All prices include labor and materials.</p>
-          <div className="overflow-x-auto rounded-xl border mb-4">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="bg-muted">
-                  <th className="px-4 py-3 text-left font-bold text-xs uppercase tracking-wide text-muted-foreground">System</th>
-                  <th className="px-4 py-3 text-left font-bold text-xs uppercase tracking-wide text-muted-foreground">Roof Type</th>
-                  <th className="px-4 py-3 text-left font-bold text-xs uppercase tracking-wide text-muted-foreground">2/12–4/12 Pitch</th>
-                  <th className="px-4 py-3 text-left font-bold text-xs uppercase tracking-wide text-muted-foreground">5/12 Pitch</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border">
-                <tr className="bg-green-50/50"><td className="px-4 py-3 font-bold text-green-800" rowSpan={3}>Fungal Shield (RP1)<br /><span className="text-xs font-normal text-muted-foreground">Clear anti-fungal</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$0.50–$0.70</td><td className="px-4 py-3 font-semibold text-foreground">$0.70–$0.90</td></tr>
-                <tr className="bg-green-50/50"><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$0.60–$0.80</td><td className="px-4 py-3 font-semibold text-foreground">$0.80–$1.00</td></tr>
-                <tr className="bg-green-50/50"><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$0.70–$0.90</td><td className="px-4 py-3 font-semibold text-foreground">$0.90–$1.10</td></tr>
-                <tr><td className="px-4 py-3 font-bold text-accent" rowSpan={3}>Smart Shield (RP2)<br /><span className="text-xs font-normal text-muted-foreground">Waterproof, 3,000+ colors</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$1.90–$2.20</td><td className="px-4 py-3 font-semibold text-foreground">$2.20–$2.50</td></tr>
-                <tr><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.10–$2.40</td><td className="px-4 py-3 font-semibold text-foreground">$2.40–$2.70</td></tr>
-                <tr><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$2.30–$2.70</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.10</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 font-bold text-primary" rowSpan={3}>Roof Shield (RP3)<br /><span className="text-xs font-normal text-muted-foreground">TAS-106, Lifetime Warranty</span></td><td className="px-4 py-3 text-muted-foreground">Flat Smooth Tile</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.00</td><td className="px-4 py-3 font-semibold text-foreground">$2.70–$3.00</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">Flat Broom Tile</td><td className="px-4 py-3 font-semibold text-foreground">$3.25–$3.50</td><td className="px-4 py-3 font-semibold text-foreground">$3.65–$3.85</td></tr>
-                <tr className="bg-primary/5"><td className="px-4 py-3 text-muted-foreground">S-Tile / Barrel / Spanish</td><td className="px-4 py-3 font-semibold text-foreground">$4.00–$4.20</td><td className="px-4 py-3 font-semibold text-foreground">$4.45–$4.75</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-muted-foreground italic mb-6">All prices include labor and materials. Barrel tile and S-tile roof area is calculated at 1.20× interior square footage; flat cement tile at 1.10×. <Link href="/pricing" className="text-accent hover:underline">See the full pricing page for complete details →</Link></p>
+          <h3 className="text-xl font-serif font-bold text-primary mb-3">The Roof Store Factory Price Sheet</h3>
+          <p className="text-sm text-muted-foreground mb-4">Because The Roof Store manufactures its own products and employs its own crew, there is no distributor markup, contractor markup, or materials middleman. All prices include labor and materials — the full rate menu for every system, roof type, and pitch is emailed to you when you fill out the contact form.</p>
+          <p className="text-xs text-muted-foreground italic mb-6">Barrel tile and S-tile roof area is calculated at 1.20× interior square footage; flat cement tile at 1.10×. <Link href="/pricing" className="text-accent hover:underline">See the pricing page for how to get the Factory Price Sheet →</Link></p>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3">Roof Coating vs. Replacement — True Cost Comparison</h3>
           <div className="overflow-x-auto rounded-xl border mb-4">
@@ -574,7 +551,7 @@ export default function RoofCoatingFlorida() {
               </thead>
               <tbody className="divide-y divide-border">
                 {[
-                  ["Installed Cost (2,000 sq ft tile)", "✓ $5,400–$7,000", "$20,000–$50,000"],
+                  ["Installed Cost", "✓ Typically 60–70% less than replacement", "Full tear-off cost plus permits & haul-away"],
                   ["Lifespan", "Lifetime (RP3), 10–25 yrs (RP1/RP2)", "20–30 years (new tile)"],
                   ["Hurricane Rating", "✓ TAS-106, 135+ MPH (RP3)", "~90 MPH (standard tile)"],
                   ["Insurance Certification", "✓ ARLC available from contractor", "✓ New roof inspection"],
@@ -694,7 +671,7 @@ export default function RoofCoatingFlorida() {
                 tag: "RP1 · Entry Level",
                 tagColor: "text-green-700 bg-green-50 border-green-200",
                 name: "Fungal Shield",
-                price: "From $0.50 / sq ft",
+                price: "Entry-level pricing — sheet by email",
                 desc: "Clear anti-fungal and anti-algae coating. Eliminates black streaking from Gloeocapsa magma. Applied as a standalone treatment or as the mandatory preparation step before RP2 or RP3. Does not alter roof appearance.",
                 href: "/products/fungalshield",
               },
@@ -702,7 +679,7 @@ export default function RoofCoatingFlorida() {
                 tag: "RP2 · Most Popular",
                 tagColor: "text-accent bg-accent/5 border-accent/20",
                 name: "Smart Shield",
-                price: "From $1.90 / sq ft",
+                price: "Mid-range pricing — sheet by email",
                 desc: "Waterproof color coating in 3,000+ colors. BASF Cool Pigment Technology. Fully waterproof elastomeric membrane. Reduces cooling costs 15–25%. 10–15 year warranty. The most popular system for tile roof restoration.",
                 href: "/products/smartshield",
               },
@@ -710,7 +687,7 @@ export default function RoofCoatingFlorida() {
                 tag: "RP3 · Hurricane-Rated",
                 tagColor: "text-primary bg-primary/5 border-primary/20",
                 name: "Roof Shield",
-                price: "From $2.70 / sq ft",
+                price: "Premium pricing — sheet by email",
                 desc: "The only TAS-106 Dade County certified liquid coating in the world. Multi-layer monolithic system. 135+ MPH verified. 5× stronger than new tile roof. Maintenance-free Lifetime Warranty.",
                 href: "/products/roofshield",
               },

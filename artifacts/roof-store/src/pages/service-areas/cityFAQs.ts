@@ -7,7 +7,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "fort-lauderdale": [
     {
       q: "How much does roof coating cost in Fort Lauderdale, FL?",
-      a: "Fort Lauderdale roof coating runs from $0.50/sq ft (FungalShield RP1, flat cement tile) to $4.75/sq ft (RoofShield RP3, barrel tile, steep pitch). Our most popular SmartShield (RP2) system costs $1.90–$2.75/sq ft. A typical 2,000 sq ft Fort Lauderdale tile roof runs $3,800–$5,500 all-in — versus $20,000+ to re-roof. Call 954-210-9614 for a free onsite estimate.",
+      a: "Fort Lauderdale roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
     {
       q: "Does roof coating work on Fort Lauderdale's older tile and flat-deck homes?",
@@ -25,7 +25,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "What is the average roof coating price in Hollywood, FL?",
-      a: "Hollywood roof coating follows our South Florida menu: SmartShield (RP2) from $1.90/sq ft (flat cement tile) to $2.75/sq ft (barrel tile, steeper pitch). A typical 2,000 sq ft Hollywood tile roof runs $3,800–$5,500 all-in — compared to $20,000+ for a full re-roof. All prices include labor and materials.",
+      a: "Hollywood roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
     {
       q: "How quickly can you start a Hollywood, FL roof coating project?",
@@ -43,7 +43,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Pembroke Pines?",
-      a: "Pembroke Pines roof coating ranges from $0.50/sq ft (FungalShield RP1) to $4.75/sq ft (RoofShield RP3, barrel tile). Most homeowners choose SmartShield (RP2) at $1.90–$2.75/sq ft — a 2,000 sq ft barrel tile roof comes to roughly $4,700–$5,500, all-in with labor and materials.",
+      a: "Pembroke Pines roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
   ],
   "miramar": [
@@ -53,7 +53,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Miramar, FL?",
-      a: "Miramar roof coating prices: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Miramar's prevalent barrel tile on 5/12 pitch roofs typically lands in the $2.35–$2.75 range for RP2 and $4.00–$4.75 for RP3. Call 954-210-9614 for a free written estimate.",
+      a: "Miramar roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — Miramar's prevalent barrel tile on 5/12 pitch roofs is priced accordingly on the factory sheet. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free written estimate.",
     },
   ],
   "coral-springs": [
@@ -63,7 +63,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Coral Springs?",
-      a: "Coral Springs roof coating runs $0.50/sq ft (FungalShield RP1) to $4.75/sq ft (RoofShield RP3, barrel tile, steep pitch). SmartShield (RP2) — our most popular system — costs $1.90–$2.75/sq ft for most Coral Springs tile roofs. Includes labor and materials. Free estimate: 954-210-9614.",
+      a: "Coral Springs roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
   ],
   "davie": [
@@ -73,7 +73,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Davie, FL?",
-      a: "Davie roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Davie's mix of flat-deck ranch homes and barrel tile estates means total project costs vary widely — submit a quote request and we'll email the full price sheet instantly.",
+      a: "Davie roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch. Davie's mix of flat-deck ranch homes and barrel tile estates means totals vary widely — submit a quote request and we'll email the full Factory Price Sheet instantly.",
     },
   ],
   "plantation": [
@@ -83,13 +83,13 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Plantation, FL?",
-      a: "Plantation roof coating follows our standard South Florida menu: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. All prices include labor and materials. Call 954-210-9614 or submit the form for a free onsite estimate.",
+      a: "Plantation roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
   ],
   "sunrise": [
     {
       q: "What is the average roof coating cost in Sunrise, FL?",
-      a: "Sunrise roof coating runs $0.50–$4.75/sq ft depending on the system and roof type. SmartShield (RP2), our most popular choice for Sunrise tile roofs, costs $1.90–$2.75/sq ft — a 2,000 sq ft tile roof typically comes to $3,800–$5,500 including labor and materials. That's a fraction of the $10–$25/sq ft cost to re-roof.",
+      a: "Sunrise roof coating pricing depends on the system and roof type — all prices include labor and materials and typically run 60–70% less than the cost to re-roof. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     },
     {
       q: "Can roof coating reduce my energy bills in Sunrise, FL?",
@@ -107,7 +107,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Weston, FL?",
-      a: "Weston roof coating: SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Weston's barrel and S-tile roofs on pitched estates typically land at $2.35–$2.75/sq ft for RP2 — a 3,000 sq ft roof runs roughly $7,000–$8,250 all-in, versus $30,000+ to re-roof. Call 954-210-9614 for a free written estimate.",
+      a: "Weston roof coating pricing depends on the system (SmartShield RP2 or RoofShield RP3), roof type, and pitch — Weston's barrel and S-tile estates are priced accordingly on the factory sheet, typically 60–70% less than re-roofing. Fill out our contact form for the full Factory Price Sheet, or call 954-210-9614 for a free written estimate.",
     },
   ],
   "hialeah": [
@@ -121,7 +121,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Hialeah, FL?",
-      a: "Hialeah roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. A typical 1,600 sq ft Hialeah flat roof can be fully membraned for a fraction of the $16,000+ a tear-off would cost. All prices include labor and materials.",
+      a: "Hialeah roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3) and roof type. A typical Hialeah flat roof can be fully membraned for a fraction of what a tear-off would cost — all prices include labor and materials. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     },
   ],
   "miami-lakes": [
@@ -135,7 +135,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Miami Lakes, FL?",
-      a: "Miami Lakes roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. The town's barrel and S-tile roofs typically fall in the $2.35–$2.75 range for RP2. Free onsite estimate — call 954-210-9614.",
+      a: "Miami Lakes roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), roof type, and pitch — the town's barrel and S-tile roofs are priced accordingly on the factory sheet. Free onsite estimate — call 954-210-9614 or fill out the form for the full Factory Price Sheet.",
     },
   ],
   "miami-gardens": [
@@ -149,7 +149,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Miami Gardens, FL?",
-      a: "Miami Gardens roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft — including labor and materials. A typical 1,500 sq ft flat roof is restored for 60–70% less than replacement. Call 954-210-9614 for a free written estimate.",
+      a: "Miami Gardens roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3) and roof type — including labor and materials. A typical flat roof is restored for 60–70% less than replacement. Fill out our contact form for the Factory Price Sheet, or call 954-210-9614 for a free written estimate.",
     },
   ],
   "pompano-beach": [
@@ -159,13 +159,13 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Pompano Beach?",
-      a: "Pompano Beach roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Coastal and waterfront properties may have higher surface prep needs due to salt damage — all prep costs are quoted transparently before work begins.",
+      a: "Pompano Beach roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), roof type, and pitch. Coastal and waterfront properties may have higher surface prep needs due to salt damage — all prep costs are quoted transparently before work begins. Fill out our contact form for the full Factory Price Sheet.",
     },
   ],
   "deerfield-beach": [
     {
       q: "How much does roof coating cost in Deerfield Beach, FL?",
-      a: "Deerfield Beach roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. All prices include labor and materials. Free onsite assessment with no obligation — call 954-210-9614.",
+      a: "Deerfield Beach roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.",
     },
     {
       q: "Does roof coating help with Deerfield Beach hurricane insurance?",
@@ -183,7 +183,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Coral Gables?",
-      a: "Coral Gables roof coating follows our South Florida menu: SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Coral Gables' prevalent Spanish barrel tile on pitched roofs typically falls in the $2.35–$2.75 range for RP2 — a 2,500 sq ft roof comes to approximately $5,875–$6,875, all-in.",
+      a: "Coral Gables roof coating pricing depends on the system (SmartShield RP2 or RoofShield RP3), roof type, and pitch — Coral Gables' prevalent Spanish barrel tile on pitched roofs is priced accordingly on the factory sheet. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     },
   ],
   "doral": [
@@ -193,7 +193,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Doral, FL?",
-      a: "Doral roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft for flat cement tile, RoofShield (RP3) from $2.70/sq ft. Doral's mix of flat-deck commercial and residential tile makes us a frequent choice for HOA communities throughout the city. All prices include labor and materials.",
+      a: "Doral roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3) and roof type. Doral's mix of flat-deck commercial and residential tile makes us a frequent choice for HOA communities throughout the city — all prices include labor and materials. Fill out our contact form for the full Factory Price Sheet.",
     },
   ],
   "aventura": [
@@ -203,7 +203,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Aventura?",
-      a: "Aventura roof coating follows our standard South Florida pricing: SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Aventura's condo and townhome buildings may qualify for commercial volume pricing — contact us at 954-210-9614 to discuss your building's needs.",
+      a: "Aventura roof coating pricing depends on the system (SmartShield RP2 or RoofShield RP3) and roof type. Aventura's condo and townhome buildings may qualify for commercial volume pricing — contact us at 954-210-9614 to discuss your building's needs, or fill out the form for the Factory Price Sheet.",
     },
   ],
   "miami-beach": [
@@ -213,7 +213,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Miami Beach?",
-      a: "Miami Beach roof coating: SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Coastal properties may have additional prep needs — all costs are quoted transparently before work begins. Call 954-210-9614 for a free onsite assessment.",
+      a: "Miami Beach roof coating pricing depends on the system (SmartShield RP2 or RoofShield RP3), roof type, and pitch. Coastal properties may have additional prep needs — all costs are quoted transparently before work begins. Call 954-210-9614 for a free onsite assessment or fill out the form for the Factory Price Sheet.",
     },
   ],
   "homestead": [
@@ -223,7 +223,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Homestead, FL?",
-      a: "Homestead roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Free onsite assessment — call 954-210-9614 or submit the form on this page.",
+      a: "Homestead roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), roof type, and pitch — all prices include labor and materials. Free onsite assessment — call 954-210-9614 or submit the form and the full Factory Price Sheet is emailed to you instantly.",
     },
   ],
   "boca-raton": [
@@ -233,7 +233,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "How much does roof coating cost in Boca Raton?",
-      a: "Boca Raton roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Boca Raton's Spanish barrel tile and larger estate homes often have 3,000–5,000 sq ft roofs where our volume pricing applies. Call 954-210-9614 for a free written estimate.",
+      a: "Boca Raton roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), roof type, and pitch. Boca Raton's Spanish barrel tile and larger estate homes often have 3,000–5,000 sq ft roofs where our volume pricing applies. Fill out our contact form for the full Factory Price Sheet, or call 954-210-9614 for a free written estimate.",
     },
     {
       q: "What roof coating system is best for Boca Raton's HOA communities?",
@@ -243,17 +243,17 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "west-palm-beach": [
     {
       q: "What roof coating systems do you offer in West Palm Beach?",
-      a: "We offer all three Storm Shield Paint Systems in West Palm Beach: FungalShield (RP1, anti-algae, from $0.50/sq ft), SmartShield (RP2, waterproofing + energy-reflective, from $1.90/sq ft), and RoofShield (RP3, TAS-106 hurricane-rated rubber membrane, from $2.70/sq ft). West Palm Beach's mix of older masonry homes and newer tile estates makes all three systems relevant.",
+      a: "We offer all three Storm Shield Paint Systems in West Palm Beach: FungalShield (RP1, anti-algae), SmartShield (RP2, waterproofing + energy-reflective), and RoofShield (RP3, TAS-106 hurricane-rated rubber membrane). West Palm Beach's mix of older masonry homes and newer tile estates makes all three systems relevant — fill out our contact form and the full Factory Price Sheet is emailed to you instantly.",
     },
     {
       q: "How much does roof coating cost in West Palm Beach, FL?",
-      a: "West Palm Beach roof coating follows our South Florida menu: from $0.50/sq ft (FungalShield RP1) to $4.75/sq ft (RoofShield RP3, barrel tile). SmartShield (RP2) for a 2,000 sq ft tile roof typically runs $3,800–$5,500 all-in. Note: Palm Beach County pricing may include a small travel surcharge — call 954-210-9614 for a county-specific quote.",
+      a: "West Palm Beach roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly. Palm Beach County projects may include a small travel surcharge — call 954-210-9614 for a county-specific quote.",
     },
   ],
   "boynton-beach": [
     {
       q: "How much does roof coating cost in Boynton Beach, FL?",
-      a: "Boynton Beach roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Palm Beach County pricing may include a modest travel surcharge versus Broward — call 954-210-9614 for an exact Boynton Beach quote.",
+      a: "Boynton Beach roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly. Palm Beach County projects may include a small travel surcharge — call 954-210-9614 for a county-specific quote.",
     },
     {
       q: "Is roof coating recommended for Boynton Beach's older tile roofs?",
@@ -263,7 +263,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "delray-beach": [
     {
       q: "How much does roof coating cost in Delray Beach, FL?",
-      a: "Delray Beach roof coating: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, RoofShield (RP3) from $2.70/sq ft. Includes labor and materials. Palm Beach County projects may include a small travel surcharge — call 954-210-9614 for a county-specific quote.",
+      a: "Delray Beach roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly. Palm Beach County projects may include a small travel surcharge — call 954-210-9614 for a county-specific quote.",
     },
     {
       q: "What roof problems are common in Delray Beach?",
@@ -283,7 +283,7 @@ export function getCityFaqs(
   return [
     {
       q: `How much does roof coating cost in ${city}, FL?`,
-      a: `${city} roof coating follows our South Florida menu: FungalShield (RP1) from $0.50/sq ft, SmartShield (RP2) from $1.90/sq ft, and RoofShield (RP3) from $2.70/sq ft. All prices include labor and materials. Call 954-210-9614 for a free onsite estimate.`,
+      a: `${city} roof coating pricing depends on the system (FungalShield RP1, SmartShield RP2, or RoofShield RP3), your roof type, and pitch — all prices include labor and materials and typically run 60–70% less than replacement. Fill out our contact form and the full Factory Price Sheet is emailed to you instantly, or call 954-210-9614 for a free onsite estimate.`,
     },
     {
       q: `Do you serve ${city}, ${county}?`,

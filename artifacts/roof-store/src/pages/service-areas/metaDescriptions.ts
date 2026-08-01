@@ -28,7 +28,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   "hollywood":
     "Hollywood FL insurers dropping older roofs? Our Additional Roof Life Certification meets Citizens' rules — restore, certify, and stay covered for far less.",
   "lauderdale-lakes":
-    "Nonrenewal notice over roof age in Lauderdale Lakes? Certify extra roof life with a professional coating instead of replacing — insurer-accepted, from $0.50/sq ft.",
+    "Nonrenewal notice over roof age in Lauderdale Lakes? Certify extra roof life with a professional coating instead of replacing — insurer-accepted and affordable.",
   "lauderhill":
     "Lauderhill roof flagged by your insurance company? An Additional Roof Life Certification after restoration meets FL age mandates for a fraction of re-roof cost.",
   "lauderdale-by-the-sea":
@@ -86,7 +86,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   "el-portal":
     "El Portal's older housing stock draws roof-age nonrenewals. Our insurer-accepted Roof Life Certification after coating keeps you covered without a $20K re-roof.",
   "florida-city":
-    "Florida City roof failing insurance inspection? Coating + Additional Roof Life Certification satisfies age mandates — hurricane-rated systems from $0.50/sq ft.",
+    "Florida City roof failing insurance inspection? Coating + Additional Roof Life Certification satisfies age mandates — hurricane-rated and affordable.",
   "golden-beach":
     "Golden Beach oceanfront roofs face double scrutiny: salt air and insurers. Certify added roof life with our coating systems and keep coverage without replacing.",
   hialeah:
@@ -134,7 +134,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   surfside:
     "Surfside carriers scrutinize building & roof age closely. A certified coating system proves added roof life — insurer-accepted, no tear-off, major savings.",
   sweetwater:
-    "Sweetwater roof failing an insurance age inspection? Coat & certify instead — our Roof Life Certification meets FL mandates from $0.50/sq ft, A+ BBB since 1994.",
+    "Sweetwater roof failing an insurance age inspection? Coat & certify instead — our Roof Life Certification meets FL mandates — A+ BBB since 1994.",
   "virginia-gardens":
     "Virginia Gardens' mid-century roofs draw insurer age flags. Restore & certify with our coating systems — keep coverage for a fraction of replacement cost.",
   "west-miami":
@@ -144,7 +144,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   atlantis:
     "Atlantis' gated-community roofs are reaching insurer age limits. Certify added roof life with a professional coating — carrier-accepted, 60–70% under re-roofing.",
   "belle-glade":
-    "Belle Glade roof flagged for age? Our coating + Additional Roof Life Certification satisfies Citizens' mandates — affordable protection from $0.50/sq ft.",
+    "Belle Glade roof flagged for age? Our coating + Additional Roof Life Certification satisfies Citizens' mandates — affordable certified protection.",
   "boca-raton":
     "Boca Raton insurers dropping roofs over 15? A certified coating documents extended roof life and keeps your policy — save 60–70% vs. replacing sound barrel tile.",
   "boynton-beach":
@@ -188,7 +188,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   manalapan:
     "Manalapan's oceanfront estates face relentless carrier age reviews. A certified coating proves extended roof life — protect coverage without disturbing luxury tile.",
   "mangonia-park":
-    "Mangonia Park roof failing insurance inspection? Our Roof Life Certification after coating meets age mandates — affordable systems from $0.50/sq ft, A+ BBB.",
+    "Mangonia Park roof failing insurance inspection? Our Roof Life Certification after coating meets age mandates — affordable certified systems, A+ BBB.",
   "north-palm-beach":
     "North Palm Beach roofs flagged at renewal? Certify added roof life with an elastomeric coating — accepted by Citizens & FL carriers, no $20K+ tear-off.",
   "ocean-ridge":
@@ -208,7 +208,7 @@ export const cityMetaDescriptions: Record<string, string> = {
   "royal-palm-beach":
     "Royal Palm Beach's planned-community roofs are aging out of coverage together. Coat & certify with our Additional Roof Life Certification — no forced re-roof.",
   "south-bay":
-    "South Bay homeowners facing roof-age insurance demands: our coating + Roof Life Certification satisfies FL carriers — affordable, durable, from $0.50/sq ft.",
+    "South Bay homeowners facing roof-age insurance demands: our coating + Roof Life Certification satisfies FL carriers — affordable and durable.",
   "south-palm-beach":
     "South Palm Beach's oceanfront condos face strict roof-age reviews. A certified coating documents added life for carriers — keep coverage without a tear-off.",
   tequesta:

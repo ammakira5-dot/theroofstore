@@ -981,4 +981,920 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       { name: "Highland Estates", note: "post-war stock where restoration preserves the original roofline" },
     ],
   },
+
+  /* ── MIAMI-DADE — ROUND 4 (July 2026 rollout) ──────────────── */
+
+  miami: {
+    intro: [
+      "Miami is where roof coating has to prove itself: the strictest wind code in America, a century of housing stock from Coconut Grove bungalows to Brickell-adjacent flat-roof moderns, and a climate that attacks every surface with UV, salt, and ten wet months a year. This is our home county's flagship market — and the reason our flagship product carries a Miami-Dade rating.",
+      "Roof Shield is the world's only monolithic roof coating with a TAS-106 Miami-Dade uplift rating — the county's own hurricane test standard. On the flat and low-slope roofs that define whole Miami neighborhoods (Shenandoah, Silver Bluff, the Upper Eastside's MiMo district), that rating is the difference between a coating and a certified hurricane system.",
+      "The other Miami constant is insurance pressure: carriers flag roof age across the city's 1920s–1970s neighborhoods relentlessly. A coating restoration plus an Additional Roof Life Certification gives Miami homeowners the documented answer — at 60–70% below the re-roof quote the letter implies you need.",
+    ],
+    roofLandscape: {
+      heading: "The Miami roof landscape",
+      paragraphs: [
+        "Miami's roof map reads by era: 1920s–40s Mediterranean barrel tile and Art Deco flat roofs in the Roads, Shenandoah, and the historic core; 1950s–60s CBS ranches with white tile and gravel across Flagami, Westchester-adjacent blocks, and Allapattah; MiMo-era flat and butterfly roofs along Biscayne Boulevard's Upper Eastside; and modern flat-roof construction everywhere infill happens. Flat and low-slope roof dominates this city like nowhere else in Florida.",
+        "Coconut Grove adds its own microclimate — dense canopy, heavy shade, constant algae and fungal pressure on tile and shingle alike. FungalShield treatment exists for exactly this; Grove homeowners typically bundle it into a full restoration.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Miami",
+      paragraphs: [
+        "The City of Miami and Miami-Dade County run some of the most rigorous building oversight in the country — but coating is surface restoration, and most projects proceed without a permit. Where historic districts apply (Morningside, the MiMo Biscayne corridor, parts of the Grove and Shenandoah), exterior changes get extra review, and we confirm requirements before starting. Our documentation package — NOA references, TAS-106 certification, product specs — is built for Miami-grade scrutiny.",
+        "Miami's roof-age insurance crisis is the worst in Florida: carriers non-renew on age alone across the city's older neighborhoods. A documented coating restoration with Additional Roof Life Certification is the certified path that keeps 50-year-old Miami homes insured without 50-thousand-dollar re-roofs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Coconut Grove", note: "canopy shade and algae pressure — clean, treat, and coat in one project" },
+      { name: "The Roads & Shenandoah", note: "1920s–40s barrel tile and flat roofs restored, not replaced" },
+      { name: "Upper Eastside / MiMo district", note: "mid-century flat and butterfly roofs — TAS-106 rated membrane" },
+      { name: "Flagami & Allapattah", note: "1950s–60s CBS stock facing the county's heaviest insurance letters" },
+      { name: "Coral Way corridor", note: "Mediterranean tile estates — color-matched from 3,000+ options" },
+    ],
+  },
+
+  "miami-beach": {
+    intro: [
+      "Miami Beach roofs work harder than any in Florida: barrier-island salt on every surface, the nation's most famous Art Deco flat-roof inventory, and building oversight to match. Coating restoration was practically invented for this island — sealing flat decks and tile fields as one membrane instead of tearing off roofs that historic rules protect.",
+      "From South Beach's Deco and MiMo apartment buildings to Mid-Beach's 1930s–50s single-family streets and North Beach's garden condos, the dominant roof is flat or low-slope — and flat roofs fail at seams, flashings, and ponding zones first. A monolithic elastomeric coating eliminates the seams; Roof Shield adds the Miami-Dade TAS-106 uplift rating that an open-ocean address demands.",
+      "For the island's condo boards and hotel operators, we bring the full documentation package — NOA references, uplift certification, specs, insurance — because on Miami Beach, the paperwork is half the project.",
+    ],
+    roofLandscape: {
+      heading: "The Miami Beach roof landscape",
+      paragraphs: [
+        "South Beach is Deco flat-roof territory — 1930s–40s apartment buildings whose parapet-walled decks have been recovered and recoated for ninety years. Mid-Beach mixes 1930s–50s Mediterranean tile homes on the Sunset Islands and La Gorce with flat-roof moderns; North Beach carries MiMo-era garden condos and post-war single families, nearly all low-slope. Salt exposure is total — there is no inland on this island.",
+        "Reflective cool-roof coating earns double duty here: it seals against salt intrusion and cuts cooling loads on buildings that air-condition year-round. On white-membrane historic decks, it's also the maintenance approach preservation boards prefer — restore, don't replace.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Miami Beach",
+      paragraphs: [
+        "Miami Beach layers city review on top of Miami-Dade code, and its historic districts (Flamingo Park, Collins Waterfront, North Shore) scrutinize exterior work closely — though coating is maintenance-grade restoration and generally proceeds without structural permitting. We confirm district requirements before starting and supply preservation-friendly documentation.",
+        "Island underwriting is merciless on roof age. A coating restoration with Additional Roof Life Certification — plus TAS-106 uplift documentation on flat decks — is the certified file that keeps Beach properties insured.",
+      ],
+    },
+    neighborhoods: [
+      { name: "South Beach / Flamingo Park district", note: "historic Deco flat decks — restore under preservation rules" },
+      { name: "Sunset Islands & La Gorce", note: "1930s–50s tile estates under total salt exposure" },
+      { name: "Mid-Beach", note: "Mediterranean and modern mix — whole-roof membrane systems" },
+      { name: "North Beach / Normandy Isles", note: "MiMo garden condos — board-ready documentation standard" },
+      { name: "Collins Avenue corridor", note: "hotel and condo decks where cool-roof coating cuts cooling loads" },
+    ],
+  },
+
+  "coral-gables": {
+    intro: [
+      "Coral Gables is the City Beautiful — George Merrick's 1920s Mediterranean vision, protected by the strictest aesthetic regulation in South Florida. Its barrel-tile roofs aren't just roofs; they're a regulated architectural feature. Restoring them correctly, in approved colors, with board-ready documentation, is a specialty — and it's ours.",
+      "The classic Gables project is a 1920s–1950s barrel tile roof that's structurally magnificent and cosmetically exhausted: faded, chalked, streaked with algae under the oak canopy. Our elastomeric restoration brings back the color (matched to Gables-approved palettes from 3,000+ tintable options), kills the algae, and seals the tile field — while preserving the original tile that gives the house its value.",
+      "Replacement on these homes is a last resort: original barrel tile is often irreplaceable, and a tear-off invites both cost and character loss. Coating restoration keeps the history on the roof.",
+    ],
+    roofLandscape: {
+      heading: "The Coral Gables roof landscape",
+      paragraphs: [
+        "The historic core — from the Granada entrance through the Country Club sections — is 1920s–40s Mediterranean barrel tile, much of it original clay. Post-war sections toward Riviera and south toward Sunset added 1950s–60s tile and white-gravel roofs, while Gables Estates and Cocoplum carry large waterfront tile fields under salt exposure. The oak canopy that defines the city also feeds constant algae and lichen pressure on shaded slopes.",
+        "Flat sections hide everywhere in the Gables — over loggias, Florida rooms, and garage wings — and they fail before the tile does. Our approach membranes those sections and seals the tile field in one project.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Coral Gables",
+      paragraphs: [
+        "Coral Gables regulates exterior appearance like nowhere else in Florida — roof color changes go through the city's Board of Architects review, and historic designations add another layer. We handle that process routinely: color submissions from approved palettes, product documentation, and the patience the Gables process requires. Coating itself is surface restoration and generally needs no structural permit.",
+        "Gables homes carry high insured values, and carriers question 60–90 year old roofs constantly. A documented restoration with Additional Roof Life Certification answers the age question while preserving the original roof — the outcome both the insurer and the Board of Architects prefer.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Historic core / Country Club sections", note: "1920s–40s original barrel tile — restoration preserves irreplaceable clay" },
+      { name: "Gables Estates & Cocoplum", note: "waterfront estate tile under salt exposure — sealed and color-matched" },
+      { name: "Riviera & South Gables", note: "1950s–60s tile and gravel at the restoration stage" },
+      { name: "Granada / Alhambra corridors", note: "canopy-shaded slopes with algae pressure — FungalShield territory" },
+      { name: "Miracle Mile / downtown Gables", note: "commercial flat decks behind Mediterranean facades" },
+    ],
+  },
+
+  doral: {
+    intro: [
+      "Doral is new-Miami: master-planned tile-roof communities built from the 1980s through the 2010s — Doral Park, Doral Isles, Islands at Doral, Grand Bay — alongside one of Florida's largest warehouse districts. Two completely different roof markets, one city, and we work both.",
+      "Doral's residential tile is hitting its first restoration cycle: 1980s–90s roofs past year 30, 2000s roofs chalking at year 20 under relentless UV. The HOAs here are active and appearance-driven — a SmartShield restoration in the community's approved palette answers the HOA notice, kills the streaking, and re-waterproofs the field at 60–70% below replacement.",
+      "On the industrial side, Doral's miles of warehouse flat roof are prime cool-roof coating territory: seal the seams, stop the leaks, and cut cooling loads on buildings that run air conditioning around the clock.",
+    ],
+    roofLandscape: {
+      heading: "The Doral roof landscape",
+      paragraphs: [
+        "Residential Doral is concrete tile nearly wall to wall: S-tile and flat-profile tile on 1980s–2010s homes across Doral Park, Doral Isles, The Islands, and the newer communities toward NW 107th. The city's lake systems keep humidity at roof level high, so algae streaking arrives early on north slopes.",
+        "West and south Doral carry the warehouse district — built-up, modified bitumen, and metal decks from the 1970s onward, many now decades into service. Monolithic elastomeric coating over these decks stops seam failure and adds reflectivity in one application, with documented warranties that commercial carriers ask for at renewal.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Doral",
+      paragraphs: [
+        "Coating restorations in Doral generally proceed without a building permit — surface maintenance under Miami-Dade code — and we confirm when repair scope warrants. Nearly every Doral home sits inside an HOA with architectural review; our submission package (specs, colors, insurance, warranty) is built to clear them first pass.",
+        "Even Doral's younger roofs now draw insurer age questions at 15–20 years. Restoration plus Additional Roof Life Certification documents extended service life before the question becomes a non-renewal.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Doral Park & Doral Estates", note: "1980s tile past year 30 — full restoration cycle" },
+      { name: "Doral Isles & The Islands", note: "1990s–2000s lakefront tile with early algae streaking" },
+      { name: "Grand Bay / NW 107th corridor", note: "newer tile — proactive coating extends the factory finish" },
+      { name: "Warehouse district (NW 25th–58th St)", note: "flat decks coated and cooled at industrial scale" },
+      { name: "Downtown Doral", note: "mixed-use flat roofs — reflective systems with documented warranties" },
+    ],
+  },
+
+  aventura: {
+    intro: [
+      "Aventura is association country: a city built almost entirely of condo towers, garden condos, and gated townhome communities between the Intracoastal and Biscayne Boulevard. Roof decisions here are board decisions — and boards buy documentation, warranties, and track record before they buy anything else.",
+      "The city's garden condos and townhome communities from the 1980s–90s carry acres of low-slope and tile roof now deep into the restoration window. Coating an entire roof field as one monolithic membrane turns a looming special assessment into a maintenance line item — the math every Aventura board meeting wants to hear.",
+      "Salt air off the Intracoastal accelerates everything east of Biscayne Boulevard, and Roof Shield's Miami-Dade TAS-106 uplift rating is the credential coastal boards ask about by name. Our quote package arrives board-ready: specs, colors, insurance, warranty, and the certification itself.",
+    ],
+    roofLandscape: {
+      heading: "The Aventura roof landscape",
+      paragraphs: [
+        "Beyond the towers, Aventura's coatable inventory is substantial: garden-condo buildings and townhome roof fields in communities like Del Vista, Aventura Lakes, and the country-club sections — 1980s–90s tile and low-slope decks aging on association schedules. The Turnberry and Waterways areas add waterfront buildings where salt exposure shortens every maintenance cycle.",
+        "Flat sections and walkway roofs fail at seams first; tile fields chalk and streak on schedule. A community-wide restoration handles both in one mobilization — which is also where the volume pricing lives.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Aventura",
+      paragraphs: [
+        "Aventura projects run through association governance more than city permitting — coating is surface restoration under Miami-Dade code and generally needs no permit, but every association requires formal board approval. Our package is built for Aventura boards: full specs, color documentation, insurance certificates, warranty terms, and TAS-106 uplift certification.",
+        "Since Surfside, South Florida associations face intense scrutiny on building maintenance documentation. A documented roof restoration program — with certified life-extension paperwork — is now standard due diligence, and we provide the full file.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Aventura Lakes", note: "1990s townhome roof fields — community-wide restoration pricing" },
+      { name: "Del Vista / country-club corridor", note: "1980s garden condos deep in the restoration window" },
+      { name: "The Waterways", note: "Intracoastal-side buildings on shortened salt-exposure cycles" },
+      { name: "Turnberry area", note: "association decks where TAS-106 documentation wins the board vote" },
+      { name: "Biscayne corridor", note: "commercial and retail flat decks — cool-roof coating at scale" },
+    ],
+  },
+
+  homestead: {
+    intro: [
+      "Homestead knows hurricanes like nowhere else in America — Andrew came ashore here in 1992 and rewrote Florida's building code on the way. Everything about roofing in Homestead traces back to that morning: the post-Andrew rebuild stock, the county's TAS uplift standards, and a community that takes wind protection personally.",
+      "That's why Roof Shield resonates here: it's the world's only monolithic roof coating rated under Miami-Dade's own TAS-106 uplift test — the standard Andrew created. On Homestead's post-Andrew tile and the older stock that survived, a coating restoration adds documented wind protection while sealing out the rain that ten wet months deliver.",
+      "Homestead's mix is broader than most cities: historic downtown homes, 1990s rebuild tile, big new communities toward the Turnpike, agricultural buildings with metal roofs, and working families for whom the 60–70% savings versus re-roofing isn't a preference — it's the budget.",
+    ],
+    roofLandscape: {
+      heading: "The Homestead roof landscape",
+      paragraphs: [
+        "Post-Andrew Homestead is concrete tile built to the code Andrew wrote — 1990s–2000s S-tile now hitting its first restoration cycle, chalked and streaked but structurally sound. The historic core around Krome Avenue keeps pre-war and mid-century homes under shingle and early tile, while the eastern and Turnpike-corridor communities (Malibu Bay, Waterstone, Oasis) add 2000s–2010s tile at the proactive-maintenance stage.",
+        "The Redland's agricultural edge brings metal — packing houses, barns, and equipment buildings where rust-sealing reflective coating stops corrosion and drops interior temperatures in one application.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Homestead",
+      paragraphs: [
+        "Homestead enforces Miami-Dade's post-Andrew code as a point of local pride; coating remains surface restoration and generally proceeds without a permit, and our NOA and TAS-106 documentation speaks the local building department's language. The newer gated communities require HOA color approval — handled in our standard package.",
+        "Insurance pressure hits Homestead from both ends: age flags on the surviving pre-Andrew stock and premium pressure on everything this far into the wind zone. Restoration plus Additional Roof Life Certification — with uplift-rated product documentation — is the certified answer on both counts.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Historic downtown / Krome corridor", note: "pre-war and mid-century survivors restored with care" },
+      { name: "Post-Andrew rebuild sections", note: "1990s tile at its first restoration cycle" },
+      { name: "Malibu Bay & Waterstone", note: "2000s HOA tile — proactive coating extends the finish" },
+      { name: "Oasis / Turnpike corridor", note: "newest stock, HOA palettes matched" },
+      { name: "The Redland edge", note: "agricultural metal roofs — rust-sealed and heat-reflective" },
+    ],
+  },
+
+  "north-miami": {
+    intro: [
+      "North Miami is mid-century Miami at scale: square mile after square mile of 1940s–60s CBS homes under white tile, gravel, and flat sections, from the Griffing Boulevard corridor to the Keystone Point waterfront. Most of these roofs are structurally sound at 60–80 years old — and almost all of them are surface-failed.",
+      "Keystone Point and Sans Souci add the salt factor: canal-front homes whose east-facing slopes chalk and corrode years ahead of inland twins. Elastomeric restoration re-seals the whole roof — tile field, flat sections, flashings — as one membrane, with Roof Shield's Miami-Dade TAS-106 uplift rating on the flat decks.",
+      "And everywhere in North Miami, the insurance letter is the trigger: carriers flag these mid-century roofs on age alone. A coating restoration plus Additional Roof Life Certification is the certified answer at a fraction of the re-roof quote.",
+    ],
+    roofLandscape: {
+      heading: "The North Miami roof landscape",
+      paragraphs: [
+        "The city's core grid is post-war CBS construction — low-pitch white tile, gravel built-ups, and the flat Florida-room additions that leak first. Keystone Point, Sans Souci, and the Bayshore sections carry larger waterfront homes under tile with generous flat wings, while the 125th Street and Biscayne corridors add a dense strip of commercial low-slope decks.",
+        "Uniform stock means uniform economics: restoration typically runs 60–70% below replacement here, and because whole streets age together, neighbors frequently schedule together for volume pricing.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in North Miami",
+      paragraphs: [
+        "Coating restorations in North Miami generally proceed without a building permit — surface maintenance under Miami-Dade code — and we confirm with the city's Building Department when repairs are bundled. Few HOAs; homeowners decide, and projects move from evaluation to finished roof quickly.",
+        "North Miami's mid-century inventory is squarely in the age-flag zone. Restoration plus Additional Roof Life Certification keeps 60-year-old homes insured without tear-offs they don't need.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Keystone Point", note: "canal-front tile and flat wings under salt exposure — sealed as one membrane" },
+      { name: "Sans Souci Estates", note: "waterfront mid-century homes on shortened maintenance cycles" },
+      { name: "Griffing / central grid", note: "1940s–60s CBS stock facing age-based insurance letters" },
+      { name: "Biscayne & 125th St corridors", note: "commercial flat decks — cool-roof coating at scale" },
+      { name: "Enchanted Place / NE sections", note: "post-war homes where restoration saves 60–70%" },
+    ],
+  },
+
+  "north-miami-beach": {
+    intro: [
+      "North Miami Beach — Uleta to Eastern Shores — is 1950s–60s Florida nearly wall to wall: CBS ranches under white tile and gravel inland, and canal-front homes taking daily salt air along the Intracoastal edge. The roofs are old enough to draw insurance letters and sound enough that most shouldn't be replaced.",
+      "Eastern Shores is the sharp end: waterfront homes minutes from the inlet whose roofs age on coastal time. Elastomeric restoration re-seals tile fields and flat sections into one membrane — with the Miami-Dade TAS-106 uplift rating on flat decks this close to open water.",
+      "Inland, the pattern is the classic one: a structurally sound 60-year-old roof, a carrier's age letter, and a re-roof quote that doesn't fit the budget. Restoration plus Additional Roof Life Certification answers the letter for a fraction of it.",
+    ],
+    roofLandscape: {
+      heading: "The North Miami Beach roof landscape",
+      paragraphs: [
+        "The city's core — Uleta, Sunray, the Washington Park sections — is uniform post-war CBS: low-pitch white tile, shingle, and gravel with flat additions over Florida rooms and carports. Eastern Shores and the Maule Lake waterfront add larger 1960s homes with big tile mains and flat wings under constant salt exposure.",
+        "The 163rd Street corridor carries one of north Dade's densest commercial strips — mall-era flat decks and storefront roofs where reflective cool-roof coating seals and cools in one application.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in North Miami Beach",
+      paragraphs: [
+        "Coating restorations in North Miami Beach generally require no building permit — we confirm with the city when repair scope warrants. Eastern Shores runs its own security district and association processes; our documentation package covers the approvals.",
+        "Between coastal underwriting on the east side and age flags across the core, NMB homeowners see constant insurance pressure. A documented restoration with Additional Roof Life Certification is the certified file that keeps coverage in place.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Eastern Shores", note: "inlet-adjacent waterfront tile — sealed on a strict recoat cycle" },
+      { name: "Uleta & Sunray", note: "1950s–60s CBS ranches facing age-based letters" },
+      { name: "Maule Lake / Intracoastal edge", note: "canal-front homes with salt-worn east slopes" },
+      { name: "Washington Park sections", note: "post-war stock where neighbors schedule together" },
+      { name: "163rd Street corridor", note: "commercial flat decks — cool-roof coating at scale" },
+    ],
+  },
+
+  "cutler-bay": {
+    intro: [
+      "Cutler Bay carries Andrew's memory in its bones — the storm's eyewall crossed here in 1992, flattening whole sections of what was then Cutler Ridge. The town that rebuilt is a mix of survivors, 1990s rebuild tile, and 2000s Lakes-by-the-Bay stock — three roof generations, all now due different kinds of care.",
+      "The post-Andrew rebuild tile is hitting year 30: chalked, streaked, structurally fine. The 1950s–70s survivors in the original Cutler Ridge and Saga Bay sections carry age-flagged roofs their insurers question annually. Both get the same answer — coating restoration with certified documentation, at 60–70% below replacement.",
+      "This far into the wind zone, Roof Shield's Miami-Dade TAS-106 uplift rating isn't a nice-to-have; it's the specification. It's the world's only monolithic coating rated under the county's own hurricane test — the test Andrew made necessary.",
+    ],
+    roofLandscape: {
+      heading: "The Cutler Bay roof landscape",
+      paragraphs: [
+        "Old Cutler Ridge and Saga Bay hold the pre-Andrew stock — 1950s–70s CBS homes under shingle, gravel, and early tile, many recovered post-storm and due again. The rebuild years added uniform 1990s S-tile across the town core, and Lakes by the Bay stretched 1990s–2000s tile communities toward the bay, where salt-tinged easterlies age the exposed slopes first.",
+        "The Old Cutler and US-1 corridors add commercial low-slope decks and townhome roof fields — association work where volume pricing and board documentation decide the job.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Cutler Bay",
+      paragraphs: [
+        "The Town of Cutler Bay enforces Miami-Dade code with post-Andrew seriousness; coating is surface restoration and generally proceeds without a permit, and our NOA and TAS-106 documentation is the language its building department speaks. Lakes by the Bay and the newer communities require HOA color approval — our package handles it.",
+        "Insurance pressure is double here: age flags on the survivors, premium pressure on everything in the wind zone. Restoration plus Additional Roof Life Certification — backed by uplift-rated product documentation — answers both.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Old Cutler Ridge", note: "pre-Andrew survivors — age-flagged and restoration-ready" },
+      { name: "Saga Bay", note: "1970s waterside stock on salt-shortened cycles" },
+      { name: "Post-Andrew core", note: "1990s rebuild tile at year 30 — full restoration cycle" },
+      { name: "Lakes by the Bay", note: "1990s–2000s HOA tile — palettes matched, paperwork handled" },
+      { name: "Old Cutler / US-1 corridors", note: "commercial decks and townhome fields at volume pricing" },
+    ],
+  },
+
+  "palmetto-bay": {
+    intro: [
+      "Palmetto Bay is the village of big canopies and big tile roofs — 1950s–80s ranch estates on generous lots from Coral Reef Drive down to the Deering Estate, shaded by some of Dade's oldest oaks. The shade is the character, and it's also the roofing problem: algae and lichen own these slopes.",
+      "The typical Palmetto Bay evaluation finds a large, structurally excellent tile roof wearing twenty years of canopy fallout: black streaking, moss at the valleys, chalked finish under it all. FungalShield treatment plus a SmartShield restoration cleans, kills, recolors, and re-seals the whole field — one project, 60–70% below what replacing that much tile would cost.",
+      "East of Old Cutler, the bayfront estates add salt to the mix, and Andrew's memory runs deep here too — Roof Shield's Miami-Dade TAS-106 uplift rating is the documented wind answer for a village that rebuilt once already.",
+    ],
+    roofLandscape: {
+      heading: "The Palmetto Bay roof landscape",
+      paragraphs: [
+        "The village's core is 1950s–80s single-story and split-level homes under concrete and clay tile, with the occasional white-gravel mid-century — nearly all on quarter-acre-plus lots beneath mature canopy. East Palmetto Bay's estate sections toward the Deering Estate carry larger tile fields with bayfront salt exposure; the western sections mix in post-Andrew rebuild tile from the 1990s.",
+        "Flat wings over Florida rooms and garages hide throughout this stock and fail before the tile does — membraned in as part of every full restoration.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Palmetto Bay",
+      paragraphs: [
+        "The Village of Palmetto Bay runs attentive local government; coating restorations are surface maintenance and generally proceed without a permit — we confirm when repair scope warrants. Few HOAs; owners decide, and estate-scale projects get estate-scale scheduling.",
+        "Large insured values plus 40–70 year old roofs equals constant carrier questions. A documented restoration with Additional Roof Life Certification keeps village homes insured while preserving original tile worth keeping.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Coral Reef Drive corridor", note: "canopy-shaded estate tile — clean, treat, coat in one project" },
+      { name: "East Palmetto Bay / Deering edge", note: "bayfront tile fields with salt-worn east slopes" },
+      { name: "The Falls-adjacent west side", note: "1990s rebuild tile at its first restoration cycle" },
+      { name: "Old Cutler corridor", note: "original 1950s–60s homes under irreplaceable early tile" },
+      { name: "Franjo / village core", note: "split-levels with hidden flat wings — membraned as one" },
+    ],
+  },
+
+  pinecrest: {
+    intro: [
+      "Pinecrest is estate-roof country: acre lots under some of the largest residential tile fields in Miami-Dade, from Red Road to the Ludlam corridor, all beneath a canopy that made the village famous and keeps its roofs permanently shaded. Big roofs, big trees, big restoration math.",
+      "On a Pinecrest-scale tile roof, the restoration-versus-replacement decision routinely swings tens of thousands of dollars. When the structure is sound — and on these 1950s–90s homes it usually is — a SmartShield restoration recolors, re-seals, and re-waterproofs the entire field for a fraction of the tear-off, without the months of disruption an estate re-roof brings.",
+      "The canopy feeds relentless algae, moss, and lichen on shaded slopes; FungalShield treatment is practically a Pinecrest standard. And on remodeled flat-roof moderns, Roof Shield brings the Miami-Dade TAS-106 uplift rating this wind zone expects.",
+    ],
+    roofLandscape: {
+      heading: "The Pinecrest roof landscape",
+      paragraphs: [
+        "Original Pinecrest is 1950s–70s ranch estates under clay and concrete tile with white-gravel flat wings — the classic 'North Pinecrest' stock around the Parrot Jungle-era streets. Decades of teardowns added 1990s–2010s builds: bigger footprints, S-tile and flat-profile tile, and a growing set of flat-roof contemporaries. All of it sits under canopy that shades slopes year-round.",
+        "The US-1 edge carries the village's commercial strip, but Pinecrest's real inventory is residential: some of the county's largest single-home roof fields, where per-square-foot economics make coating's 60–70% savings most dramatic.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Pinecrest",
+      paragraphs: [
+        "The Village of Pinecrest reviews construction carefully, but coating is surface restoration and generally proceeds without a permit — we confirm with the Building Division when scope includes repairs. No HOAs to speak of; owners decide, and we schedule estate projects to minimize disruption.",
+        "High insured values draw carrier attention to roof age across the village. A documented restoration with Additional Roof Life Certification settles the question — and preserves original tile that suits these streets better than anything new.",
+      ],
+    },
+    neighborhoods: [
+      { name: "North Pinecrest", note: "1950s–70s ranch estates under original tile — restoration preserves them" },
+      { name: "Red Road corridor", note: "large shaded tile fields — FungalShield plus full restoration" },
+      { name: "Ludlam / central village", note: "teardown-era 1990s–2000s tile at the chalking stage" },
+      { name: "US-1 edge", note: "commercial low-slope decks — cool-roof coating" },
+      { name: "SW 120th St sections", note: "flat-roof contemporaries — TAS-106 rated membrane" },
+    ],
+  },
+
+  "key-biscayne": {
+    intro: [
+      "Key Biscayne is an island village at the end of a causeway — ocean on one side, bay on the other, and not one roof beyond the reach of salt. Its 1950s–70s village core and its rebuilt estate stock share the same reality: surfaces here age on island time, and Andrew's landfall just north made wind documentation a way of life.",
+      "The Key's mid-century homes — the classic village ranches and Mackle-era cottages — carry tile and flat roofs that are structurally sound and perpetually salt-worn. Elastomeric restoration re-seals them as one membrane on a recoat cycle that island owners know by heart; Roof Shield adds the Miami-Dade TAS-106 uplift rating an open-Atlantic address demands.",
+      "For the island's condos and townhome associations, the documentation is the deal: uplift certification, specs, insurance, warranty — the package we bring to every board.",
+    ],
+    roofLandscape: {
+      heading: "The Key Biscayne roof landscape",
+      paragraphs: [
+        "The village core holds 1950s–70s single-story homes — Mackle-built cottages and expanded ranches under tile, white gravel, and flat sections — while decades of rebuilds added Mediterranean tile estates and flat-roof moderns, especially toward the ocean side. The condo corridor along the beach carries large low-slope decks maintained on association recoat cycles.",
+        "Salt is total and bidirectional — Atlantic east, bay west. Fasteners, flashings, and seams fail first; a monolithic coating removes the seams from the equation, which is why island roofs live on 10–15 year recoat cycles rather than replacement gambles.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Key Biscayne",
+      paragraphs: [
+        "The Village of Key Biscayne runs its own attentive building oversight; coating restorations are surface maintenance and generally proceed without a permit — we confirm before starting. Condo boards require formal approval, and our island package leads with the TAS-106 uplift certification they ask about first.",
+        "Island underwriting is the strictest in the county: any roof past 12–15 years draws questions. Restoration plus Additional Roof Life Certification is the certified answer that keeps Key homes and condos insured without tearing off sound roofs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Village core / Mackle sections", note: "1950s–70s island cottages — preserved by recoat cycles" },
+      { name: "Ocean-side estates", note: "rebuilt tile and flat-roof moderns under maximum salt exposure" },
+      { name: "Beach condo corridor", note: "association decks — TAS-106 documentation leads the package" },
+      { name: "Bay-side streets", note: "west-facing salt from the bay — flashings and seams sealed as one" },
+      { name: "Harbor Drive corridor", note: "estate tile fields on island maintenance schedules" },
+    ],
+  },
+
+  "south-miami": {
+    intro: [
+      "South Miami is the City of Pleasant Living — a walkable mid-century grid around Sunset Drive where 1930s–60s homes sit under original tile, shingle, and flat sections, shaded by the same canopy that runs through neighboring Coral Gables and Pinecrest. Old roofs, good bones, heavy shade: restoration country.",
+      "The typical South Miami roof is 50–80 years old structurally and surface-done: chalked tile, algae-owned north slopes, a flat Florida-room wing patched one time too many. Elastomeric restoration re-seals the whole roof as one membrane and keeps the original character — at 60–70% below what replacement costs.",
+      "And like everywhere in this band of mid-century Dade, the trigger is usually the insurance letter. Restoration plus Additional Roof Life Certification is the certified answer that keeps these homes covered.",
+    ],
+    roofLandscape: {
+      heading: "The South Miami roof landscape",
+      paragraphs: [
+        "North of Sunset, the streets toward the Gables carry 1930s–50s Mediterranean tile and early CBS homes; the core grid holds post-war ranches with white tile, shingle, and gravel; and the Cocoplum-adjacent southern sections mix in larger remodeled homes. Canopy shade is constant, and with it algae, moss, and lichen on every shaded slope.",
+        "The Sunset Drive / US-1 corridor adds downtown South Miami's commercial low-slope decks — restaurant rows and storefronts where cool-roof coating seals and cools in one pass.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in South Miami",
+      paragraphs: [
+        "Coating restorations in South Miami are surface maintenance and generally proceed without a permit — we confirm with the city's Building Department when repairs are included. Few HOAs; homeowners decide, and compact lots make for fast projects.",
+        "Age-based underwriting hits this mid-century stock constantly. A documented restoration with Additional Roof Life Certification keeps 60-year-old South Miami homes insured without erasing their character.",
+      ],
+    },
+    neighborhoods: [
+      { name: "North of Sunset / Gables edge", note: "1930s–50s tile restored, not replaced" },
+      { name: "Core grid off Sunset Drive", note: "post-war ranches facing age-based letters" },
+      { name: "Cambridge Lawns", note: "historic 1930s cottages — preservation-minded restoration" },
+      { name: "South of 72nd sections", note: "remodeled homes with hidden flat wings — membraned as one" },
+      { name: "Sunset / US-1 corridor", note: "downtown commercial decks — cool-roof coating" },
+    ],
+  },
+
+  "miami-shores": {
+    intro: [
+      "Miami Shores is one of Dade's great architectural time capsules: a 1920s–50s village of Mediterranean Revival, Art Deco, and mid-century homes east and west of Biscayne Boulevard, protected by an architectural review process that takes appearance seriously. These roofs deserve preservation — and that's exactly what coating restoration is.",
+      "The classic Shores project is original barrel tile or white tile, 60–90 years old, structurally sound and cosmetically spent. Restoration re-seals and recolors it — matched through the village's review from 3,000+ tintable options — while keeping original tile that literally cannot be bought new.",
+      "The bayfront streets add salt exposure, the canopy adds algae, and the insurers add age letters: one documented restoration answers all three.",
+    ],
+    roofLandscape: {
+      heading: "The Miami Shores roof landscape",
+      paragraphs: [
+        "East of Biscayne Boulevard toward the bay, the Shores carries its grandest stock — 1920s–40s Mediterranean tile and Deco flat roofs on estate lots, salt-exposed and canopy-shaded at once. The western grid holds 1940s–50s CBS homes under white tile, shingle, and gravel with the era's flat Florida-room wings.",
+        "Nearly every roof in the village is past 60; nearly all are structurally fine. Surface renewal on a cycle — clean, treat, coat — is what keeps this inventory alive, and it's the approach the village's aesthetic standards favor over tear-offs.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Miami Shores",
+      paragraphs: [
+        "Miami Shores Village reviews exterior changes through its architectural process — roof color changes included — and we handle those submissions routinely: approved-palette color documentation, product specs, and the patience village review deserves. Coating itself is surface restoration and generally needs no structural permit.",
+        "Carriers question 70-year-old roofs relentlessly. Restoration plus Additional Roof Life Certification is the certified documentation that keeps the Shores' historic homes insured — with their original roofs intact.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Bayfront estates", note: "1920s–40s Mediterranean tile under salt and canopy at once" },
+      { name: "East of Biscayne grid", note: "Deco and mid-century homes — village-approved color matching" },
+      { name: "Western sections", note: "1940s–50s CBS stock facing age letters" },
+      { name: "Grand Concourse corridor", note: "the village's signature streets — preservation-first restoration" },
+      { name: "Barry University area", note: "post-war homes with flat wings membraned in" },
+    ],
+  },
+
+  "miami-springs": {
+    intro: [
+      "Miami Springs is Glenn Curtiss's other planned city — a 1920s Pueblo Revival vision wrapped around a golf course, minutes from the airport. Its curved streets carry some of Dade's most distinctive old roofs: Pueblo parapets with flat decks, Mediterranean tile, and post-war CBS infill, all aging together inside the Circle.",
+      "Flat roofs behind parapet walls — the Pueblo signature — are coating's natural habitat: a monolithic elastomeric membrane over the deck, sealed at the parapets, ends the patch cycle these 90-year-old roofs have lived on. Tile mains get the same renewal through a SmartShield restoration.",
+      "Between airport-corridor commerce and mid-century homes, the Springs also carries a working inventory of low-slope commercial decks — and everywhere, the mid-century insurance-age letters that a certified restoration answers.",
+    ],
+    roofLandscape: {
+      heading: "The Miami Springs roof landscape",
+      paragraphs: [
+        "The historic core around the Circle and Curtiss Parkway holds 1920s–30s Pueblo Revival homes — flat decks, parapets, rounded stucco — alongside Mediterranean tile from the same boom. The rest of the Springs filled in through the 1940s–60s: CBS ranches under white tile, shingle, and gravel, with the flat additions of the era.",
+        "The NW 36th Street and airport-edge corridors add hotels, offices, and hangar-adjacent commercial decks — reflective cool-roof territory where sealing and cooling pay for themselves.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Miami Springs",
+      paragraphs: [
+        "Miami Springs values its historic character and reviews exterior work accordingly; coating is surface restoration and generally proceeds without a permit — we confirm with the city when historic properties are involved. Pueblo parapet details get the careful flashing work they need.",
+        "The Springs' 1920s–60s stock draws constant age-based underwriting. Restoration plus Additional Roof Life Certification keeps these irreplaceable homes insured without tearing off roofs that define them.",
+      ],
+    },
+    neighborhoods: [
+      { name: "The Circle / Curtiss Parkway", note: "1920s Pueblo flat decks — monolithic membrane behind the parapets" },
+      { name: "Country Club sections", note: "golf-course homes under Mediterranean and mid-century tile" },
+      { name: "Post-war grid", note: "1940s–60s CBS ranches facing age letters" },
+      { name: "NW 36th St corridor", note: "airport-edge commercial decks — cool-roof coating" },
+      { name: "Fairway sections", note: "mid-century homes with flat wings sealed as one" },
+    ],
+  },
+
+  "hialeah-gardens": {
+    intro: [
+      "Hialeah Gardens grew fast and recent — most of the city went up from the 1980s through the 2000s, which means its concrete-tile inventory is now hitting the first big restoration window all at once: chalked finishes at year 25, algae streaks off the lakes, HOA notices arriving street by street.",
+      "The math here is straightforward and family-budget-driven: a SmartShield restoration recolors and re-seals a Gardens tile roof at 60–70% below replacement, answers the HOA's appearance notice, and — paired with the Additional Roof Life Certification — answers the insurer's age question in the same project.",
+      "Along the Okeechobee Road corridor, the city's warehouse and light-industrial strip adds flat and metal decks where cool-roof coating seals seams and cuts cooling loads on hard-working buildings.",
+    ],
+    roofLandscape: {
+      heading: "The Hialeah Gardens roof landscape",
+      paragraphs: [
+        "Residential Hialeah Gardens is concrete S-tile nearly throughout — 1980s–2000s townhomes and single-families in gated and HOA communities around the lakes. The earliest sections are past year 35 and fully in the restoration window; the 2000s stock is chalking on schedule under relentless UV.",
+        "The Okeechobee corridor carries the commercial weight: warehouses, truck-serving businesses, and retail decks in built-up, modified bitumen, and metal — all candidates for monolithic sealing and reflectivity in one application.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Hialeah Gardens",
+      paragraphs: [
+        "Coating restorations in Hialeah Gardens generally proceed without a building permit — surface maintenance under Miami-Dade code — and we confirm when repairs are bundled. Most communities carry HOA color rules; our submission package handles the approvals in Spanish or English, whichever the board prefers.",
+        "Tile from the 80s and 90s is now squarely age-flagged. Restoration plus Additional Roof Life Certification documents extended life before the carrier's question becomes a non-renewal.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Lake communities", note: "1980s–90s S-tile with lakeside algae streaking — cleaned and coated" },
+      { name: "Gated townhome sections", note: "HOA roof fields quoted at community scale" },
+      { name: "2000s single-family stock", note: "first chalking cycle — proactive restoration" },
+      { name: "Okeechobee Road corridor", note: "warehouse flat and metal decks — sealed and cooled" },
+      { name: "NW 103rd St sections", note: "older Gardens stock facing age letters" },
+    ],
+  },
+
+  sweetwater: {
+    intro: [
+      "Sweetwater is one of Dade's hardest-working small cities — a compact 1960s–80s grid beside FIU and Dolphin Mall, where CBS homes and townhomes house working families and the roofs have carried decades without complaint. Now they're due, and the budget answer matters.",
+      "The Sweetwater pattern: a structurally sound roof from the city's build-out years, a carrier's age letter, and a replacement quote that doesn't fit. A coating restoration with Additional Roof Life Certification answers the letter at 60–70% less — that's the exact scenario our systems exist for.",
+      "The city's flood-conscious, storm-tested character fits our flagship too: Roof Shield's Miami-Dade TAS-106 uplift rating brings documented wind protection to a city that takes storms seriously.",
+    ],
+    roofLandscape: {
+      heading: "The Sweetwater roof landscape",
+      paragraphs: [
+        "The core grid between Flagler and the Tamiami Canal is 1960s–80s CBS — low-pitch shingle, gravel, and early tile with flat additions, on compact lots where whole blocks age together. The newer edges toward 109th Avenue add 1990s tile and townhome roof fields.",
+        "The Dolphin-adjacent commercial strips carry retail and light-industrial low-slope decks — cool-roof coating territory where sealing and cooling pay back fast.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Sweetwater",
+      paragraphs: [
+        "Coating restorations in Sweetwater generally require no building permit — we confirm with the city when repair scope warrants, and we work in Spanish or English throughout. Few HOAs in the core; projects move at the homeowner's pace.",
+        "Age flags arrive block by block in stock this uniform. Restoration plus Additional Roof Life Certification keeps Sweetwater homes insured on budgets that can't absorb tear-offs — and neighbors scheduling together earn volume pricing.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Core grid off Flagler", note: "1960s–80s CBS homes — the classic restoration case" },
+      { name: "Canal-side streets", note: "humidity-fed algae on north slopes — treated and coated" },
+      { name: "FIU-adjacent sections", note: "townhome and rental roofs maintained at field scale" },
+      { name: "109th Ave newer edge", note: "1990s tile at the chalking stage" },
+      { name: "Dolphin corridor", note: "retail flat decks — cool-roof coating at scale" },
+    ],
+  },
+
+  "west-miami": {
+    intro: [
+      "West Miami is barely a square mile of classic mid-Dade living: 1940s–60s CBS homes on tight, tidy blocks between Coral Way and Eighth Street, many in the same families for generations. The roofs match the story — original white tile, shingle, and gravel, sixty-plus years old and mostly sound underneath.",
+      "On these compact homes the restoration math is at its most persuasive: re-seal and recolor the existing roof for a fraction of replacement, answer the insurer's age letter with certified documentation, and skip the disruption a tear-off brings to a close-knit block.",
+      "We work these streets in Spanish or English, evaluations are free, and because West Miami's stock is so uniform, neighbors regularly schedule together for volume pricing.",
+    ],
+    roofLandscape: {
+      heading: "The West Miami roof landscape",
+      paragraphs: [
+        "The city is post-war CBS nearly wall to wall: low-pitch white tile and shingle mains, gravel built-ups, and the flat Florida-room additions of the era, on a grid that filled in between the 1940s and 1960s. Decades of family remodels added second stories and new wings — usually with flat sections that leak before anything else.",
+        "Coral Way and SW 8th Street frame the city with commercial strips whose low-slope decks take the same coating systems at storefront scale.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in West Miami",
+      paragraphs: [
+        "Coating restorations in West Miami generally proceed without a building permit — surface maintenance, confirmed with the city when repairs are included. No HOAs; the homeowner decides, and compact roofs mean fast projects.",
+        "This is exactly the mid-century stock carriers flag on age alone. Restoration plus Additional Roof Life Certification is the certified answer that keeps multi-generation family homes insured without five-figure tear-offs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Coral Way frontage", note: "1940s–50s homes under original white tile — restored, not replaced" },
+      { name: "Central grid", note: "post-war CBS blocks where neighbors schedule together" },
+      { name: "SW 8th St edge", note: "storefront low-slope decks — sealed and cooled" },
+      { name: "Remodeled two-story stock", note: "added flat wings membraned into one system" },
+    ],
+  },
+
+  "opa-locka": {
+    intro: [
+      "Opa-locka has the most distinctive skyline of any small city in Florida — Glenn Curtiss's 1926 Moorish Revival vision, domes and minarets included, over a working-class city whose 1940s–60s CBS homes have carried families for generations. History worth keeping, on budgets that need restoration math, not replacement math.",
+      "The typical Opa-locka roof is structurally serviceable and surface-spent: dried shingle, gravel past its cycle, flat sections patched for years. A coating restoration re-seals it for 60–70% less than a tear-off — and with the Additional Roof Life Certification, it answers the age letter that carriers send this housing stock relentlessly.",
+      "The city's industrial side — the airport-adjacent warehouse districts — adds serious flat-roof inventory where monolithic coating seals seams and reflective topcoats cut cooling loads on hard-working buildings.",
+    ],
+    roofLandscape: {
+      heading: "The Opa-locka roof landscape",
+      paragraphs: [
+        "The historic core around Ali Baba Avenue and the Moorish city hall holds 1920s–40s homes — including flat-parapet Moorish details found nowhere else — while the broader grid is 1940s–60s CBS under shingle, gravel, and early tile with the era's flat additions. Whole blocks age together, and whole blocks get flagged by insurers together.",
+        "Opa-locka Executive Airport anchors one of north Dade's largest warehouse belts: built-up, modified bitumen, and metal decks by the acre, most overdue for the seal-and-reflect treatment.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Opa-locka",
+      paragraphs: [
+        "Coating restorations in Opa-locka generally proceed without a building permit — we confirm with the city when scope includes repairs, and historic Moorish properties get the careful detail work their parapets deserve. No HOAs; owners decide.",
+        "This is among the most age-flagged housing in the county. Restoration plus Additional Roof Life Certification keeps Opa-locka's homes insured on working budgets — the certified alternative to tear-offs families shouldn't be forced into.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Historic Moorish core", note: "1920s–40s parapet roofs — careful membrane detail work" },
+      { name: "Ali Baba / Sharazad grid", note: "1940s–60s CBS homes facing age letters block by block" },
+      { name: "Magnolia North", note: "post-war stock where restoration saves 60–70%" },
+      { name: "Airport warehouse belt", note: "acres of flat and metal deck — sealed and cooled at scale" },
+      { name: "NW 135th St corridor", note: "commercial and civic low-slope roofs" },
+    ],
+  },
+
+  /* ── MIAMI-DADE — ROUND 5: coastal villages & small cities ── */
+
+  surfside: {
+    intro: [
+      "Surfside is a beach town that thinks like a village — nine blocks of 1930s–60s homes and low-rise buildings between the ocean and the bay, where every roof lives in full salt exposure and, since 2021, every association takes maintenance documentation more seriously than anywhere in Florida.",
+      "The town's single-family streets carry mid-century tile and flat-roof homes that age on coastal time: chalked finishes, corroded flashings, seam-failed flat wings. Elastomeric restoration re-seals each roof as one membrane — with Roof Shield's Miami-Dade TAS-106 uplift rating for an address this close to open Atlantic.",
+      "For Surfside's condo and co-op boards, the documented file is everything now: uplift certification, specs, warranty terms, insurance — the complete package, delivered before work begins.",
+    ],
+    roofLandscape: {
+      heading: "The Surfside roof landscape",
+      paragraphs: [
+        "West of Collins, the town grid holds 1930s–60s single-family homes — Mediterranean tile, white tile, and flat-roof moderns on compact lots, nearly all past 60 years old and nearly all salt-worn ahead of their inland twins. The Collins corridor carries the condo inventory: low-slope decks maintained on association recoat cycles under post-2021 scrutiny.",
+        "Harding and Abbott Avenue's town-center strip adds low-slope commercial decks — small-scale, but the same physics: seal the seams, reflect the heat, document everything.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Surfside",
+      paragraphs: [
+        "The Town of Surfside reviews building work carefully — understandably more than ever — though coating restorations are surface maintenance and generally proceed without structural permitting; we confirm with the Building Department before starting. Board approvals come with our full documentation file.",
+        "Coastal underwriting flags Surfside roofs early and often. Restoration plus Additional Roof Life Certification is the certified answer that keeps town homes and buildings insured without tearing off sound roofs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Town grid west of Collins", note: "1930s–60s tile and flat-roof homes on coastal recoat cycles" },
+      { name: "Collins condo corridor", note: "association decks — full documentation file standard" },
+      { name: "Bay-side streets", note: "salt from both directions — flashings and seams sealed as one" },
+      { name: "Harding town center", note: "low-slope commercial decks — sealed and cooled" },
+    ],
+  },
+
+  "bal-harbour": {
+    intro: [
+      "Bal Harbour is a third of a square mile of the most valuable coastal real estate in Florida — gated single-family streets, world-class oceanfront buildings, and not one roof outside the salt zone. Here, roof work is judged on documentation, discretion, and finish quality — in that order.",
+      "The village's residential section carries Mediterranean tile estates and flat-roof moderns whose surfaces age on open-Atlantic time. Elastomeric restoration re-seals them invisibly — original lines kept, colors matched exactly, salt sealed out — with Roof Shield's Miami-Dade TAS-106 uplift rating documented in the file.",
+      "For the Collins Avenue buildings, boards and managers get the complete package: uplift certification, NOA references, specs, warranties, insurance — before a single ladder goes up.",
+    ],
+    roofLandscape: {
+      heading: "The Bal Harbour roof landscape",
+      paragraphs: [
+        "The gated village section holds estate homes under barrel tile and flat-roof contemporary builds, most remodeled to high standards and all maintained on strict cycles — coastal ownership at this level runs on prevention, not repair. The oceanfront corridor carries the tower and low-rise deck inventory, association-managed and documentation-driven.",
+        "Salt exposure is total. Surfaces, fasteners, and flashings age on the Atlantic's schedule, and the recoat cycle — clean, seal, coat, document — is what keeps both estate tile and association decks ahead of it.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Bal Harbour",
+      paragraphs: [
+        "The Village of Bal Harbour maintains exacting standards; coating restorations are surface maintenance and generally proceed without structural permitting — we confirm with the village before starting, and we work to the discretion gated streets expect.",
+        "Underwriting at these insured values questions every aging surface. Restoration plus Additional Roof Life Certification — with TAS-106 uplift documentation — is the certified file that satisfies both carrier and board.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Gated village streets", note: "estate tile and flat-roof moderns — invisible restoration, exact color match" },
+      { name: "Collins oceanfront corridor", note: "association decks — complete documentation before work begins" },
+      { name: "Bal Harbour Shops area", note: "premium retail low-slope roofs maintained to match the address" },
+      { name: "Bay-side homes", note: "west-facing salt — flashings and seams sealed as one" },
+    ],
+  },
+
+  "bay-harbor-islands": {
+    intro: [
+      "Bay Harbor Islands is two islands with two personalities: the East Island's walkable grid of homes and boutique buildings, and the West Island's single-family streets — both surrounded entirely by Biscayne Bay, both aging on salt time.",
+      "The islands' mid-century homes and the East Island's low-rise buildings carry classic 1940s–60s roofs: tile mains, white gravel, flat decks behind parapets. Restoration re-seals them as monolithic membranes — the approach that preserves the islands' MiMo-era character instead of replacing it.",
+      "With redevelopment adding new flat-roof buildings beside 70-year-old originals, boards on the East Island run active maintenance programs — and our board package (specs, uplift certification, insurance, warranty) is built for exactly that review.",
+    ],
+    roofLandscape: {
+      heading: "The Bay Harbor Islands roof landscape",
+      paragraphs: [
+        "The West Island is single-family: 1940s–60s homes under tile and flat sections, many remodeled, all bay-exposed on at least one side. The East Island mixes original MiMo-era apartment buildings — flat parapet decks, some by South Florida's noted mid-century architects — with new construction whose flat roofs will live on the same recoat cycles.",
+        "Bay salt is gentler than open Atlantic but constant from every direction. Seams, flashings, and fasteners lead the failure list; monolithic coating removes the seams from it.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Bay Harbor Islands",
+      paragraphs: [
+        "The Town of Bay Harbor Islands reviews building work attentively; coating restorations are surface maintenance and generally proceed without structural permitting — confirmed with the town first. East Island boards get the full documentation file.",
+        "Island underwriting questions roof age early. Restoration plus Additional Roof Life Certification keeps both original MiMo buildings and family homes insured without tear-offs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "West Island streets", note: "1940s–60s family homes — bay-exposed tile and flat wings" },
+      { name: "East Island MiMo buildings", note: "original parapet decks — preservation by membrane" },
+      { name: "Kane Concourse corridor", note: "boutique commercial roofs — sealed and cooled" },
+      { name: "Broad Causeway edges", note: "maximum bay exposure — strict recoat cycles" },
+    ],
+  },
+
+  "sunny-isles-beach": {
+    intro: [
+      "Sunny Isles Beach transformed from Motel Row to a tower skyline in one generation — but between the towers, the city still carries its 1950s–60s bones: garden condos, co-ops, and the Golden Shores single-family enclave, all on a barrier strip with ocean on one side and the Intracoastal on the other.",
+      "That older low-rise inventory is where coating earns its keep: MiMo-era flat decks and tile roofs, association-maintained on tight budgets, decades into patch cycles that a monolithic elastomeric membrane finally ends — at maintenance-line-item cost, not special-assessment cost.",
+      "Every quote arrives board-ready: specs, insurance, warranty, and Roof Shield's Miami-Dade TAS-106 uplift certification — the document that matters most on a strip this exposed.",
+    ],
+    roofLandscape: {
+      heading: "The Sunny Isles Beach roof landscape",
+      paragraphs: [
+        "Between Collins and the Intracoastal, Sunny Isles keeps a substantial 1950s–60s inventory: garden-style condo buildings and co-ops with flat parapet decks, plus Golden Shores' single-family streets under tile and flat sections at the city's north end. All of it is salt-exposed from both directions and decades past its design life — alive because of surface renewal, not in spite of it.",
+        "The remaining low-rise commercial along Collins — the Motel Row survivors — carries the same flat-deck physics: seal the seams, reflect the heat, document the work.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Sunny Isles Beach",
+      paragraphs: [
+        "Sunny Isles Beach reviews building work through Miami-Dade code with coastal seriousness; coating restorations are surface maintenance and generally proceed without structural permitting — confirmed with the city first. Association boards get the complete documentation file.",
+        "Barrier-strip underwriting flags aging decks constantly. Restoration plus Additional Roof Life Certification is the certified answer that keeps garden condos and Golden Shores homes insured without replacement-scale spending.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Golden Shores", note: "1950s–60s single-family enclave — tile and flat wings on coastal cycles" },
+      { name: "Intracoastal-side garden condos", note: "MiMo decks — monolithic membrane ends the patch cycle" },
+      { name: "Collins low-rise survivors", note: "Motel Row-era flat roofs sealed and cooled" },
+      { name: "North Bay Road sections", note: "co-op buildings — board-ready documentation standard" },
+    ],
+  },
+
+  "golden-beach": {
+    intro: [
+      "Golden Beach is the only town on the barrier strip that stayed entirely single-family — a mile of gated oceanfront and bay-side estates with private beach, private police, and some of the most valuable residential roofs in Florida. Work here is judged on finish, discretion, and paperwork.",
+      "The town's estates carry large Mediterranean tile fields, flat-roof moderns, and remodeled mid-century homes — all in full Atlantic exposure. Restoration re-seals these roofs invisibly: original tile kept, colors matched exactly from 3,000+ options, salt sealed out for another decade-plus per cycle.",
+      "Roof Shield's Miami-Dade TAS-106 uplift rating goes in every Golden Beach file — documented wind protection for addresses where the ocean is the front yard.",
+    ],
+    roofLandscape: {
+      heading: "The Golden Beach roof landscape",
+      paragraphs: [
+        "Ocean Boulevard's estates face the Atlantic directly — big barrel-tile fields and contemporary flat roofs that age on the harshest schedule in the county. The bay-side streets (Center Island, the Massini and Terracina sections) carry equally substantial homes with salt from the west and canal humidity underneath.",
+        "Ownership here runs on prevention: strict maintenance cycles, exact color continuity, and complete documentation. That's precisely the discipline a professional recoat program provides.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Golden Beach",
+      paragraphs: [
+        "The Town of Golden Beach reviews all exterior work and controls access to its streets; we coordinate with the town and the household before any project, and coating restorations — surface maintenance — generally proceed without structural permitting.",
+        "At Golden Beach insured values, carriers scrutinize every aging surface. Restoration plus Additional Roof Life Certification, with uplift documentation, is the certified file that answers them.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Ocean Boulevard estates", note: "direct-Atlantic tile fields — restored on the strictest cycles" },
+      { name: "Center Island", note: "bay-side estates with salt from the west" },
+      { name: "Golden Beach Drive sections", note: "remodeled mid-century homes — original lines preserved" },
+      { name: "Strand-side streets", note: "flat-roof moderns — TAS-106 documented membranes" },
+    ],
+  },
+
+  "indian-creek-village": {
+    intro: [
+      "Indian Creek Village is a private island — a few dozen estates around a country club, with its own police force and a bridge you don't cross uninvited. Its roofs are among the largest and most valuable residential surfaces in America, and they live entirely surrounded by Biscayne Bay salt.",
+      "Estate roofs at this scale are maintained, never neglected: large barrel-tile fields, flat-roof contemporaries, and remodeled classics on strict prevention cycles. Elastomeric restoration is the discipline behind those cycles — re-sealing entire fields invisibly, matching colors exactly, and documenting everything for the household's file.",
+      "We work to island standards: coordinated access, discreet crews, exact scheduling, and complete paperwork including Roof Shield's Miami-Dade TAS-106 uplift certification.",
+    ],
+    roofLandscape: {
+      heading: "The Indian Creek Village roof landscape",
+      paragraphs: [
+        "The island's estates ring the golf course with bay frontage on every lot — Mediterranean tile, contemporary flat-roof builds, and comprehensive remodels, all with substantial roof area and all salt-exposed from every direction. Surfaces here are renewed before they fail; that's what estate management means.",
+        "Flat sections, loggia roofs, and parapet details get membrane treatment; tile fields get cleaned, treated, and coated in exact color continuity — one mobilization, whole-property scope.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Indian Creek Village",
+      paragraphs: [
+        "The Village coordinates all access and reviews exterior work; we schedule through the household and village administration, and coating restorations — surface maintenance — generally proceed without structural permitting.",
+        "Carriers underwriting island estates want documented maintenance programs. A certified restoration file — product specs, uplift rating, warranty, Additional Roof Life Certification — is exactly that documentation.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Bayfront estates", note: "the island's full perimeter — salt-sealed tile and membrane systems" },
+      { name: "Country club grounds", note: "club facilities maintained to member standards" },
+      { name: "Contemporary builds", note: "flat-roof estates — TAS-106 documented membranes" },
+    ],
+  },
+
+  "north-bay-village": {
+    intro: [
+      "North Bay Village is three islands in the middle of Biscayne Bay — Harbor Island, North Bay Island, and Treasure Island — strung along the 79th Street Causeway with water on every side. No roof in the village is more than a block from salt air.",
+      "The village's mid-century inventory — 1940s–60s island homes and MiMo-era apartment buildings — carries tile mains and flat parapet decks that have survived this exposure precisely because they've been resurfaced on cycles. Monolithic elastomeric coating is that cycle's modern form: seams eliminated, salt sealed out, decades added.",
+      "For the village's condo boards and the new buildings rising beside the originals, every quote arrives with the full file: specs, insurance, warranty, and Roof Shield's Miami-Dade TAS-106 uplift certification.",
+    ],
+    roofLandscape: {
+      heading: "The North Bay Village roof landscape",
+      paragraphs: [
+        "North Bay Island and the residential streets carry 1940s–60s single-family homes — tile, white gravel, flat wings — many remodeled but nearly all on original structures. Harbor Island and Treasure Island mix garden condos and MiMo apartment buildings with the causeway's commercial strip, almost all of it low-slope deck.",
+        "Bay salt arrives from every compass point, and seam-and-flashing failure leads every inspection list. One membrane over the whole deck is the island answer.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in North Bay Village",
+      paragraphs: [
+        "North Bay Village reviews building work under Miami-Dade code; coating restorations are surface maintenance and generally proceed without structural permitting — confirmed with the village first. Boards receive the complete documentation package.",
+        "All-sides salt exposure means early age flags from carriers. Restoration plus Additional Roof Life Certification keeps island homes and buildings insured without tear-offs.",
+      ],
+    },
+    neighborhoods: [
+      { name: "North Bay Island", note: "1940s–60s island homes — tile and flat wings sealed as one" },
+      { name: "Treasure Island residential", note: "mid-century stock on strict recoat cycles" },
+      { name: "Harbor Island buildings", note: "MiMo decks and garden condos — board packages standard" },
+      { name: "79th St Causeway strip", note: "commercial low-slope roofs — sealed and cooled" },
+    ],
+  },
+
+  "biscayne-park": {
+    intro: [
+      "Biscayne Park is a village built around its medians — a 1930s–50s enclave of Old Florida homes under mature oaks, with a log-cabin village hall and a protective attitude toward its character. The roofs are original-era tile, shingle, and flat sections, and preserving them is the point.",
+      "The classic Park project is a 70–90 year old roof that's structurally sound under decades of canopy fallout: algae-blackened slopes, moss in the valleys, chalked tile beneath. Clean, treat, coat — one restoration recovers the roof and keeps the village's period character intact at 60–70% below replacement.",
+      "And as everywhere in mid-century Dade, the insurance letter is the usual trigger; a documented restoration with Additional Roof Life Certification is the certified answer.",
+    ],
+    roofLandscape: {
+      heading: "The Biscayne Park roof landscape",
+      paragraphs: [
+        "The village grid holds 1930s–50s homes — Mediterranean and Deco-influenced tile, early CBS ranches under white tile and shingle, and the flat additions of the era — beneath one of the densest oak canopies in north Dade. Shade is constant, and so are algae, moss, and lichen on every north slope.",
+        "Nothing here is large-scale: it's house-by-house preservation work, which suits a restoration approach that keeps original materials on original homes.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Biscayne Park",
+      paragraphs: [
+        "The Village of Biscayne Park guards its character and reviews exterior work accordingly; coating restorations are surface maintenance and generally proceed without structural permitting — we confirm with the village first and match colors to the neighborhood's period palette.",
+        "Carriers flag 80-year-old roofs on sight. Restoration plus Additional Roof Life Certification keeps the Park's originals insured — with their original roofs still on them.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Griffing Boulevard medians", note: "the village's signature streets — period-correct restoration" },
+      { name: "1930s–40s originals", note: "irreplaceable early tile preserved by coating" },
+      { name: "Post-war CBS sections", note: "white tile and shingle facing age letters" },
+      { name: "Canopy-heavy blocks", note: "algae and moss treated, then sealed out" },
+    ],
+  },
+
+  "el-portal": {
+    intro: [
+      "El Portal is a half-square-mile village on the Little River — a 1920s–50s enclave known for its peacocks, its canopy, and one of the oldest housing inventories in north Dade. These are exactly the roofs restoration was made for: original, characterful, and structurally sound under exhausted surfaces.",
+      "Village roofs wear their history: Mediterranean tile from the 1920s boom, post-war white tile and shingle, flat wings added over generations — all beneath shade that feeds algae year-round. A clean-treat-coat restoration recovers them for a fraction of replacement and keeps original materials in place.",
+      "River humidity, canopy shade, and 70-year-old surfaces also mean insurers ask about these roofs constantly; certified restoration documentation is the answer that keeps them covered.",
+    ],
+    roofLandscape: {
+      heading: "The El Portal roof landscape",
+      paragraphs: [
+        "The village spans the Little River's north bank: 1920s–40s tile homes in the historic sections, 1950s CBS infill under white tile and shingle, and the flat Florida-room additions every era contributed. The canopy is village policy — and its shade keeps every north slope in the algae zone.",
+        "Riverside lots add humidity from below; nothing here is far from water or shade. Surface renewal on a cycle is what has kept this inventory alive for a century.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in El Portal",
+      paragraphs: [
+        "The Village of El Portal reviews exterior work with small-village attention; coating restorations are surface maintenance and generally proceed without structural permitting — confirmed with the village first, with color choices that respect the streetscape.",
+        "Age flags arrive village-wide on stock this old. Restoration plus Additional Roof Life Certification keeps El Portal's originals insured without tearing off history.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Little River frontage", note: "riverside humidity — treated slopes and sealed surfaces" },
+      { name: "Historic 1920s–40s sections", note: "boom-era tile preserved by restoration" },
+      { name: "Post-war infill", note: "white tile and shingle facing age letters" },
+      { name: "Sherwood Forest streets", note: "canopy-shaded originals — clean, treat, coat" },
+    ],
+  },
+
+  "virginia-gardens": {
+    intro: [
+      "Virginia Gardens is a third of a square mile of old-school Dade — a 1940s–60s village beside the airport that kept its small-town government and its original housing stock. The roofs are the era's classics: low-pitch white tile, shingle, gravel, and flat additions, most past year 60 and most structurally fine.",
+      "The village pattern is the familiar one at its most compact: sound roof, spent surface, insurance letter. A coating restoration answers all three — re-sealed, recolored, and certified with the Additional Roof Life Certification — at 60–70% below the replacement quote.",
+      "The NW 36th Street airport corridor next door adds hotel and commercial low-slope decks where reflective cool-roof coating seals and cools hard-working buildings.",
+    ],
+    roofLandscape: {
+      heading: "The Virginia Gardens roof landscape",
+      paragraphs: [
+        "The village grid filled in through the 1940s–60s: CBS homes under white tile, shingle, and gravel built-ups, with the flat Florida-room and carport additions of the period. Whole streets age together, and the compact lots make for fast, tidy projects.",
+        "Airport-corridor commerce frames the village with low-slope decks — the same coating systems at commercial scale, with documented warranties for business owners.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Virginia Gardens",
+      paragraphs: [
+        "Coating restorations in Virginia Gardens generally proceed without a building permit — surface maintenance, confirmed with the village's building services when repairs are included. No HOAs; homeowners decide, and neighbors frequently schedule together.",
+        "This is precisely the mid-century stock carriers flag on age. Restoration plus Additional Roof Life Certification keeps village homes insured on sensible budgets.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Village core grid", note: "1940s–60s CBS homes — the classic restoration case" },
+      { name: "Curtiss Parkway edge", note: "Springs-adjacent streets under original tile" },
+      { name: "NW 36th St corridor", note: "hotel and commercial decks — sealed and cooled" },
+      { name: "Compact interior blocks", note: "neighbors scheduling together for volume pricing" },
+    ],
+  },
+
+  medley: {
+    intro: [
+      "Medley is Dade's industrial engine — a town of a few hundred residents and tens of millions of square feet of warehouse, distribution, and manufacturing roof along the Miami River and the rail corridors. Here, roofing is a business decision measured in downtime avoided and cooling dollars saved.",
+      "Medley's flat and metal decks — built-up, modified bitumen, standing-seam and screw-down metal from the 1960s onward — live hard lives under UV, ponding, and vibration. Monolithic elastomeric coating seals the whole deck as one membrane without interrupting operations underneath: no tear-off, no exposure, no shutdown.",
+      "Reflective topcoats then cut roof-surface temperatures dramatically — real money in buildings that condition air or protect inventory — and the documented warranty satisfies the commercial carriers that ask for roof condition at every renewal.",
+    ],
+    roofLandscape: {
+      heading: "The Medley roof landscape",
+      paragraphs: [
+        "The inventory is industrial nearly wall to wall: distribution centers and manufacturers along Okeechobee Road and the river, truck-serving businesses off NW South River Drive, and rail-side warehouses by the acre — decks from every decade since the 1960s, most on their second or third maintenance cycle.",
+        "Metal roofs add their own failure modes — fastener back-out, seam corrosion, rust bloom — all arrested by rust-converting primers and elastomeric topcoats at a fraction of re-sheeting cost.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Medley",
+      paragraphs: [
+        "The Town of Medley processes commercial work efficiently; coating restorations are surface maintenance and generally proceed without structural permitting — we confirm scope with the town on larger projects and schedule around your operations, nights and weekends included.",
+        "Commercial property carriers now demand documented roof condition. A coating restoration with photographic documentation, specs, and warranty terms is the file that clears renewal — and defers capital replacement for years.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Okeechobee Road corridor", note: "distribution-scale flat decks — sealed without shutdown" },
+      { name: "Miami River industrial", note: "riverside warehouses on decades-old built-up roofs" },
+      { name: "NW South River Drive", note: "truck-serving businesses — metal roofs rust-sealed" },
+      { name: "Rail-corridor warehouses", note: "acres of deck coated and cooled at scale" },
+    ],
+  },
+
+  "florida-city": {
+    intro: [
+      "Florida City is the last town before the Keys and the Everglades — the southern gateway that took Hurricane Andrew's full force in 1992 and rebuilt. Its roofs tell that story: pre-Andrew survivors, 1990s rebuild stock, and the working agricultural buildings of the Redland's southern edge.",
+      "For the town's homes — post-war CBS survivors and post-Andrew rebuilds alike — the restoration math matters most: re-seal and recolor at 60–70% below replacement, with the Additional Roof Life Certification answering the age letters carriers send this far into the wind zone.",
+      "Roof Shield speaks Florida City's language: the world's only monolithic coating rated under Miami-Dade's TAS-106 uplift test — the standard written after the storm this town remembers best. And on the gateway's hotels, fruit stands, and packing houses, cool-roof coating seals decks while cutting the cooling bills of the hottest town in the county.",
+    ],
+    roofLandscape: {
+      heading: "The Florida City roof landscape",
+      paragraphs: [
+        "The residential core mixes pre-Andrew CBS homes under shingle and early tile with 1990s rebuild stock built to the code Andrew created — now itself 30 years old and due surface renewal. The US-1 and Palm Drive corridors carry the gateway economy's roofs: hotels, restaurants, and retail low-slope decks serving Keys and park traffic year-round.",
+        "The agricultural edge adds packing houses and equipment buildings under metal — rust-sealing reflective coating stops corrosion and drops interior temperatures where people actually work.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, HOA rules & insurance in Florida City",
+      paragraphs: [
+        "Florida City enforces Miami-Dade's post-Andrew code with local memory; coating restorations are surface maintenance and generally proceed without a permit — confirmed with the city when repairs are in scope. We work in Spanish or English throughout.",
+        "Wind-zone premiums and age flags squeeze this town from both sides. Restoration plus Additional Roof Life Certification — backed by TAS-106-rated product documentation — is the certified answer working budgets need.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Residential core", note: "pre-Andrew survivors and 90s rebuilds — both restoration-ready" },
+      { name: "US-1 gateway strip", note: "hotel and retail decks — sealed and cooled for Keys traffic" },
+      { name: "Palm Drive corridor", note: "commercial roofs serving the park gateway" },
+      { name: "Redland southern edge", note: "packing houses and farm metal — rust-sealed and reflective" },
+    ],
+  },
+
+  islandia: {
+    intro: [
+      "Islandia is Dade's ghost municipality — the island chain in Biscayne Bay that was planned as a city, became Biscayne National Park instead, and was formally dissolved in 2012. Almost no one lives there, and that's exactly why it appears here: we serve the boating community and park-adjacent property owners who keep structures in this corner of the bay.",
+      "The real roofing market 'in Islandia' is on the water's edge: Homestead Bayfront and Black Point marina buildings, park-adjacent structures, and the mainland homes of the boaters who know these islands best. Salt exposure here is total, and coating — not replacement — is how bayfront structures survive it.",
+      "If your property faces the bay anywhere along this stretch, the systems are the same ones we run island-wide: monolithic membranes on flat decks, elastomeric restoration on tile, and Roof Shield's Miami-Dade TAS-106 uplift rating documented in the file.",
+    ],
+    roofLandscape: {
+      heading: "The Islandia-area roof landscape",
+      paragraphs: [
+        "The historic Islandia islands themselves — Elliott Key, Totten Key, and their neighbors — now belong to Biscayne National Park, with only park structures remaining. The serviceable inventory sits on the mainland rim: marina buildings, bayfront homes from Cutler Bay down through Homestead's coastal edge, and the working structures of the bay's boating economy.",
+        "Everything here shares one condition: unbroken salt exposure off the bay. Surfaces, seams, and fasteners age on coastal time, and scheduled recoat cycles are what keep bayfront structures serviceable.",
+      ],
+    },
+    permitsAndRules: {
+      heading: "Permits, rules & insurance near Islandia",
+      paragraphs: [
+        "Work near the park boundary follows Miami-Dade code and, where applicable, park-adjacent rules — we confirm jurisdiction before any bayfront project. Marina and commercial structures get documented commercial packages.",
+        "Bayfront underwriting is as strict as it gets. Documented coating restoration with Additional Roof Life Certification is the certified file that keeps waterfront structures insured.",
+      ],
+    },
+    neighborhoods: [
+      { name: "Black Point marina area", note: "working waterfront structures — salt-sealed and documented" },
+      { name: "Homestead Bayfront edge", note: "park-adjacent buildings under total exposure" },
+      { name: "Bayfront mainland homes", note: "the boating community's own roofs, coated on coastal cycles" },
+    ],
+  },
 };

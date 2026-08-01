@@ -167,3 +167,11 @@ Interim decision: park/de-emphasize the connection on theroofstore.net until the
 
 ### ✅ Item 2 — Legacy .php URLs indexed, no 301 redirects — DONE July 10 2026
 `server.js` already had an extensive `EXACT_REDIRECTS` map plus `/fl/*.php`, `/services/*.php`, and generic `.php` catch-alls covering nearly all legacy paths from the audit (reviews, contact, factory, city pages, service pages, etc.) — turned out to be mostly already fixed in an earlier session. Added the 2 missing explicit mappings found during review: `/commercial.php` → `/commercial-roofs`, `/install-video.php` → `/videos` (previously fell into the generic catch-all → homepage, now redirect to their correct pages). Verified all 301s locally by running the production `server.js` directly. Typechecked clean. Not yet published — awaiting user go-ahead.
+
+## Added Aug 1 2026 (owner: "put on to-do list") — pending owner review/decisions
+1. Owner to test flatroofsealants.com form (all fields incl. evening phone) — fix verified server-side, awaiting his confirmation
+2. Windproof test result — owner never reported whether the test email arrived
+3. Rewrite flatroofsealants client auto-reply (old CF7 template in WP database has OLD PRICES: 50¢–$3.50/sq ft, $150 inspection) — conflicts with factory-price-sheet-only rule
+4. Decide: make evening-phone field optional on flatroofsealants contact form
+5. Decide: add EagleView disclaimer line to sister sites too
+6. Home FAQ pail prices ($190–$325) + blog replacement-cost figures — keep or remove (never answered)

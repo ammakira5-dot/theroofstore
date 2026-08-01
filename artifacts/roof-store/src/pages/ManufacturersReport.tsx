@@ -23,9 +23,7 @@ export default function ManufacturersReport() {
     url: `${BASE}/manufacturers-report`,
     offers: {
       "@type": "Offer",
-      price: "150.00",
-      priceCurrency: "USD",
-      description: "$150 per 5,000 sq ft — 100% refundable with warranty program",
+      description: "Fee listed on the Factory Price Sheet — 100% refundable with warranty program",
     },
   };
 
@@ -56,7 +54,7 @@ export default function ManufacturersReport() {
     <>
       <SEO
         title="Manufacturer's Inspection Report | Roof Shield Warranty | The Roof Store"
-        description="The Roof Store's Manufacturer's Report is required for all Roof Shield Monolithic warranty programs on flat and tile roofs in Florida. Includes infrared moisture scan, drawing legend, and rework scope. $150/5,000 sq ft — 100% refundable."
+        description="The Roof Store's Manufacturer's Report is required for all Roof Shield Monolithic warranty programs on flat and tile roofs in Florida. Includes infrared moisture scan, drawing legend, and rework scope. Fee on the Factory Price Sheet — 100% refundable."
         canonical={`${BASE}/manufacturers-report`}
         schema={schema}
       />
@@ -109,7 +107,7 @@ export default function ManufacturersReport() {
                 It is similar in concept to a wind mitigation report — an independent, documented evaluation of your roof's current condition — but its purpose is different: instead of satisfying an insurance requirement, it satisfies the <strong className="text-foreground">manufacturer's own minimum quality standards</strong> so that the warranty they issue is valid and enforceable.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                While exact pricing is determined after the report, our <strong className="text-foreground">factory price sheet does publish general per-sq-ft rates</strong> based on roof type (flat, tile, pitch) — so you can get a ballpark sense of cost before scheduling. The $150/5,000 sq ft report fee is <strong className="text-foreground">100% refunded</strong> when you proceed with the warranty program.
+                While exact pricing is determined after the report, our <strong className="text-foreground">factory price sheet does publish general per-sq-ft rates</strong> based on roof type (flat, tile, pitch) — so you can get a ballpark sense of cost before scheduling. The report fee — listed on the Factory Price Sheet — is <strong className="text-foreground">100% refunded</strong> when you proceed with the warranty program.
               </p>
             </div>
           </div>
@@ -251,12 +249,8 @@ export default function ManufacturersReport() {
               </div>
               <div className="mt-2">
                 <h3 className="text-xl font-bold text-primary mb-2">Manufacturer's Inspection Report</h3>
-                <div className="flex items-end gap-2 mb-4">
-                  <span className="text-4xl font-serif font-bold text-accent">$150</span>
-                  <span className="text-muted-foreground mb-1">per 5,000 sq ft</span>
-                </div>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                  Example: a 20,000 sq ft commercial flat roof = <strong className="text-foreground">$600</strong> — fully refunded when the warranty program is purchased.
+                  The report fee is listed on the Factory Price Sheet, emailed when you fill out our contact form — and is fully refunded when the warranty program is purchased.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {["Photo documentation of full roof surface", "Signed scaled drawing legend", "Infrared moisture scan", "Required rework scope (if any)", "100% refunded with warranty program"].map((item) => (

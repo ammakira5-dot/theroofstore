@@ -424,7 +424,7 @@ export default function RoofCoatingFlorida() {
             ))}
           </div>
           <Callout variant="blue" title="💡 How Formulation Is Determined">
-            The Roof Store does not sell a coating grade before inspecting the roof. The manufacturer's inspection ($150, fully refunded when you proceed) determines roof condition, substrate compatibility, drainage pattern, and the appropriate formulation — the same quality-control process used by commercial roofing engineers, applied to every project.
+            The Roof Store does not sell a coating grade before inspecting the roof. The manufacturer's inspection (fee on the Factory Price Sheet, fully refunded when you proceed) determines roof condition, substrate compatibility, drainage pattern, and the appropriate formulation — the same quality-control process used by commercial roofing engineers, applied to every project.
           </Callout>
         </motion.section>
 

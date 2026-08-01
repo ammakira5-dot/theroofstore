@@ -336,7 +336,7 @@ const techSpecs = [
   { label: "Unit Retail Price", value: "$325 per 5-gallon pail (direct purchase)" },
   { label: "Coverage (retail)", value: "~50 sq ft per gallon (varies by substrate profile depth)" },
   { label: "Installation Time", value: "1–3 days (typical residential tile roof)" },
-  { label: "Manufacturer Inspection", value: "Yes — $150 (refunded in full on project proceed)" },
+  { label: "Manufacturer Inspection", value: "Yes — fee on Factory Price Sheet (refunded in full on project proceed)" },
   { label: "Insurance Certification", value: "Additional Roof Life Certification (ARLC) available from The Roof Store upon installation" },
 ];
 

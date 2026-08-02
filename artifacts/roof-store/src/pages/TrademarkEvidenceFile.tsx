@@ -1014,6 +1014,20 @@ export default function TrademarkEvidenceFile() {
               </blockquote>
               <p className="text-xs text-gray-500 mt-2">Source: Live Google AI search session, captured August 2, 2026 (user in Miramar, FL). Full verbatim capture preserved in the case file.</p>
             </div>
+            <div className="border-2 border-gray-300 rounded overflow-hidden mb-3 max-w-md mx-auto">
+              <div className="bg-gray-100 px-4 py-2 text-xs font-sans flex justify-between items-center border-b border-gray-300">
+                <span className="font-semibold">EXHIBIT T-1 — Device Photograph of Live Google AI Answer</span>
+                <span className="text-gray-500">Captured: August 2, 2026</span>
+              </div>
+              <img
+                src="/images/evidence/exhibit-t-ai-answer-phone-capture.jpg"
+                alt="Exhibit T-1: photograph of a mobile device displaying the live Google AI answer attributing 'The Roof Store Synthetic Roofing Underlayment' to The Roof Store, alongside the genuine Fungal Shield Crystal Clear product"
+                className="w-full"
+              />
+              <p className="text-xs font-sans text-gray-500 px-4 py-2 italic border-t border-gray-300">
+                Photograph of the live Google AI answer as displayed on the prior rights holder's mobile device (google.com/search, AI Mode). Visible on screen: the genuine "Fungal Shield Crystal Clear" product entry, immediately followed by the misattributed "The Roof Store Synthetic Roofing Underlayment" entry citing ASTM D8257 and Florida Building Code approval — a product the complainant has never made or sold. The device photograph corroborates the verbatim text capture above and demonstrates the answer as actually presented to a consumer.
+              </p>
+            </div>
             <div className="border border-red-300 bg-red-50 rounded p-3 text-sm font-sans text-red-900 leading-relaxed mb-3">
               <strong>Factual record:</strong> The Roof Store / theroofstore.net has never manufactured, sold, or mentioned any synthetic roofing underlayment. No such product, and none of the cited certification numbers (ASTM D8257 / Florida Building Code approval #48228), appears anywhere on theroofstore.net. The two products the AI linked to www.theroofstore.net are genuine; the third — attributed to "The Roof Store" with no source link — is not a product of the complainant.
             </div>

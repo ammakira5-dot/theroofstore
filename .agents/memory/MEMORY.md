@@ -17,4 +17,5 @@
 - [GitHub backup push workaround](github-backup-push-workaround.md) — bash tool blocks all git writes; use code_execution's execSync instead, and check PAT has `workflow` scope if repo has `.github/workflows/`.
 - [GMB pivot strategy](gmb-pivot-strategy.md) — 12-point plan (A–L) to win coating JOBS despite locked "Roofing Supply Store" GMB category; distributor profiles carry service signals.
 - [City pages SEO strategy](city-pages-seo-strategy.md) — confirmed order: unique local content → insurance meta descriptions → buy-direct section; pilot 5–10 cities first.
+- [Performance claims policy](performance-claims-policy.md) — publish certified figures and raw measurements only; never extrapolated numbers (e.g. pull-force → implied MPH).
 - [Legacy URLs: 301 not 404](legacy-url-404-vs-301.md) — when adding real 404 handling, redirect legacy indexed URL formats (even undocumented ones) to preserve years of SEO value; 404 only true garbage.

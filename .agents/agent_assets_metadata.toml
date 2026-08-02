@@ -377,3 +377,10 @@ id = "ogj_UBrOcHg5BU3LCYSBZ"
 uri = "file://screenshots/old-store-index-htm-2000.jpg"
 type = "image"
 title = "Circa-2000 store homepage (index.htm) as rendered"
+
+[[outputs]]
+id = "cEZUh4yRoWUIbFXduuTA8"
+uri = "file://docs/Manufacturers-Inspection-Report-Template.docx"
+type = "word_document"
+title = "Manufacturer's Inspection Report — Clean Template"
+description = "Reusable Word template: typos corrected, blank fill-in fields, photo/drawing placeholders, S-Tile and Flat Deck specs, corrected disclaimer, company block."

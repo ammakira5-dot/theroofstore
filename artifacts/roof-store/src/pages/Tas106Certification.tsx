@@ -638,6 +638,14 @@ export default function Tas106Certification() {
             By filling every inter-tile gap and joint with a bonded rubber membrane, the Roof Shield (RP3) system removes the physical pathway through which wind enters the tile assembly. There are no individual tiles that can lift independently. There are no exposed gaps that wind pressure can exploit. The entire tile surface acts as a single structural unit — and that unit's uplift resistance is governed by the adhesion of the full membrane to the entire roof deck, not by the weight of any single tile.
           </p>
 
+          <h3 className="text-xl font-serif font-bold text-primary mb-3">A Retrofit That Changes What Your Tiles Are</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            Think about what tiles on a conventional roof actually do: they are there for architectural character and looks, with some overlapping protection for the paper layer underneath them — but it is that paper, not the tiles, doing the real waterproofing. The Roof Shield (RP3) system is an interlocking retrofit that changes the tiles' job entirely. Once the system is complete, the wind and the water shed across the surface with no spaces between the tiles — nothing for wind to get under, nowhere for water to work in. What were once decorative, individually resting pieces are now incorporated into a solid cement-and-clay top layer bonded into one continuous shell.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            And here is the part homeowners appreciate most: the roof still looks nearly the same as it did before the system was applied. The tile profile, the barrel shapes, the character of a Spanish tile roof — all preserved. The transformation is structural, not cosmetic: same look from the street, fundamentally different roof underneath.
+          </p>
+
           {/* Compare grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
             <div className="border border-border rounded-xl p-5">

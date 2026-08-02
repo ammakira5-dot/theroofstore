@@ -52,6 +52,7 @@ export default function RedemptionEvidenceGoogle1() {
                 <li><strong>Google Search:</strong> theroofstore.net currently ranks at position 20.1 for its own exact brand name — a domain with 24 years of operation and 207 linking root domains should appear at position 1. The 9× keyword ranking gap between the two domains (139 vs. 1,300 ranking keywords) constitutes measurable SEO authority suppression attributable to the brand conflict.</li>
                 <li><strong>Google Merchant Center / Shopping:</strong> The complainant's Google Shopping account was removed without explanation approximately 2022–2023 — within 12–18 months of theroof.store's launch. The complainant received no notice of reason, no remedy, and no reinstatement path through standard support channels. This removal eliminated a primary e-commerce revenue channel and is consistent with Google's automated systems incorrectly identifying the legitimate prior-rights holder as a duplicate or impersonation of the newer infringing domain.</li>
                 <li><strong>Google Brand Authority:</strong> Independent third-party domain analysis (Moz, July 22, 2026) confirms that a 4-year-old domain with fewer backlinks now holds higher domain authority than a 24-year-old domain with more backlinks — a result consistent with Google's brand authority signals being split between two entities operating under the same name simultaneously.</li>
+                <li><strong>Google AI Answers:</strong> On August 2, 2026, a live Google AI search session captured in Miramar, FL correctly cited two of the complainant's genuine products to www.theroofstore.net but attributed a third product — "The Roof Store Synthetic Roofing Underlayment," which the complainant has never made or sold — to "The Roof Store" with no source link. This misattribution of a competitor/infringer product to the complainant is consistent with the same brand confusion now propagating into Google's AI answer layer (see Exhibit T).</li>
               </ol>
             </div>
             <p className="text-sm font-sans leading-relaxed">
@@ -181,6 +182,49 @@ export default function RedemptionEvidenceGoogle1() {
             </div>
             <p className="text-xs font-sans text-gray-600">
               <strong>Source:</strong> Google Search Console, verified property theroofstore.net, full 16-month window (March 2025 – July 23, 2026). Raw .xlsx export on file. Full export available upon request in discovery.
+            </p>
+          </section>
+
+          {/* Exhibit T — Google AI Answer: Brand Misattribution */}
+          <section className="mb-10">
+            <h3 className="text-base font-bold uppercase tracking-wide border-b border-gray-300 pb-1 mb-4">Exhibit T — Google AI Answer: Brand Misattribution of Third-Party "Synthetic Roofing Underlayment" Product</h3>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              On <strong>August 2, 2026</strong>, the prior rights holder captured a live Google AI search session from a user located in <strong>Miramar, Florida</strong> — within the complainant's core South Florida market. The session was a multi-turn thread that began with the query <em>"paint Spanish tile roof..."</em>, continued to <em>"active roof leaks,"</em> and then asked <em>"what about theroof store products."</em> In response to that final query, Google's AI generated a company profile of <strong>The Roof Store (Davie, FL)</strong> and its product line. The verbatim AI response was preserved in full in the case file.
+            </p>
+            <p className="text-sm font-sans mb-4 leading-relaxed">
+              The AI answer correctly described <strong>two genuine products</strong> — <strong>Smart Shield RP2</strong> and <strong>Fungal Shield Crystal Clear</strong> — each cited to <span className="font-mono text-xs">www.theroofstore.net</span>. The same answer then attributed a <strong>third product</strong> that does not exist in the complainant's catalog: <strong>"The Roof Store Synthetic Roofing Underlayment"</strong> (described as a woven polypropylene underlayment passing ASTM D8257 and carrying Florida Building Code approval #48228), cited only to <strong>"The Roof Store"</strong> with <strong>no website link</strong> — in contrast to the two genuine products, which were each linked to www.theroofstore.net.
+            </p>
+
+            <div className="border border-gray-300 rounded p-4 bg-gray-50 font-sans text-sm mb-4">
+              <p className="font-semibold mb-1">Verbatim excerpt from the captured Google AI answer (case-file source lines 168–172):</p>
+              <blockquote className="border-l-4 border-gray-400 pl-4 italic text-gray-700 leading-relaxed">
+                "The Roof Store Synthetic Roofing Underlayment<br />
+                Relevance for Spanish Tile: If your active leak requires a &lsquo;lift and reset&rsquo; patch or a full re-roof, this is the heavy-duty water barrier that goes under the tiles.<br />
+                Standout features: A high-strength, woven polypropylene underlayment that passes rigorous ASTM D8257 waterproofing standards and carries Florida Building Code approval (#48228).<br />
+                The Roof Store"
+              </blockquote>
+              <p className="text-xs text-gray-500 mt-2">Source: Live Google AI search session, captured August 2, 2026 (user in Miramar, FL). Full verbatim capture preserved in the case file.</p>
+            </div>
+
+            <div className="border border-red-300 bg-red-50 rounded p-4 text-sm font-sans text-red-900 leading-relaxed mb-4">
+              <strong>Factual record:</strong> The Roof Store / theroofstore.net has <strong>never manufactured, sold, or mentioned any synthetic roofing underlayment</strong>. No such product, and none of the cited certification numbers (ASTM D8257 / Florida Building Code approval #48228), appears anywhere on theroofstore.net. The two products the AI cited to www.theroofstore.net are genuine; the third — attributed to "The Roof Store" with no source link — is not a product of the complainant.
+            </div>
+
+            <div className="border border-amber-300 bg-amber-50 rounded p-4 text-sm font-sans text-amber-900 leading-relaxed mb-4">
+              <strong>Analysis:</strong> This misattribution is consistent with Google's knowledge systems conflating the infringing <span className="font-mono text-xs">theroof.store</span> entity's product line with the prior rights holder's brand. The same brand confusion documented throughout this file — in Search rankings (Exhibit P, Exhibit R) and Merchant Center (Exhibit Q) — has now propagated into Google's AI answer layer, where it misrepresents the complainant's own product catalog to consumers in the complainant's home market. The AI's own presentation reinforces this reading: it linked the two authentic products directly to www.theroofstore.net, but supplied no source link for the non-existent underlayment product it nonetheless attributed to "The Roof Store."
+            </div>
+
+            <div className="border border-red-400 bg-red-50 rounded p-4 text-sm font-sans text-red-900 leading-relaxed mb-4">
+              <strong>Significance for the record:</strong>
+              <ol className="list-decimal pl-5 space-y-1 mt-2">
+                <li><strong>Direct evidence of ongoing consumer-facing brand confusion in Google's newest surface (AI answers)</strong> — the confusion is no longer confined to organic rankings and shopping; it now appears in the generative answer presented above the traditional results.</li>
+                <li><strong>Misattribution of a competitor/infringer product to the complainant</strong> — a new category of harm: product-line misrepresentation. Consumers are being told the complainant sells a product it does not make, with third-party certification claims the complainant has never asserted.</li>
+                <li><strong>Customer diversion in the same answer</strong> — while presenting the conflated profile, the AI directed the leak-repair customer to <strong>three competing roofing contractors</strong> (Earl W. Johnston Roofing; Istueta Roofing; T&amp;S Roofing Systems), compounding the loss of a South Florida prospect.</li>
+              </ol>
+            </div>
+
+            <p className="text-xs font-sans text-gray-600">
+              <strong>Source:</strong> Live Google AI search session captured August 2, 2026 by the prior rights holder (user located in Miramar, FL; query thread "paint Spanish tile roof..." → "active roof leaks" → "what about theroof store products"). Full verbatim text preserved in the case file. Available upon request.
             </p>
           </section>
 

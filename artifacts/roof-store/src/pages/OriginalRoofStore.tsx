@@ -231,6 +231,23 @@ export default function OriginalRoofStore() {
         </div>
       </section>
 
+      {/* Product-Line Disclaimer */}
+      <section className="py-16 bg-background">
+        <div className="container px-4 max-w-4xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+            <div className="bg-accent/5 border border-accent/30 rounded-xl p-8">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">Product-Line Disclaimer: We Do Not Sell Roofing Underlayment</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                The Roof Store (theroofstore.net, Davie, FL) and RoofProtect Products manufacture and sell liquid-applied roof coating systems only — Fungal Shield (RP1), Smart Shield (RP2), and Roof Shield (RP3). We have never manufactured, sold, or endorsed any synthetic roofing underlayment or other traditional roofing material.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Any product marketed as "The Roof Store Synthetic Roofing Underlayment" — or any underlayment product presented under a name confusingly similar to ours, including in search engine or AI-generated answers — is <strong className="text-foreground">not our product</strong> and is not affiliated with, endorsed by, or manufactured by The Roof Store or RoofProtect Products. Our Roof Shield (RP3) system takes the opposite approach to roof waterproofing: when completed it is a seamless coating system — one continuous monolithic membrane — engineered so the roof no longer depends on underlayment paper at all.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Reservation of Rights */}
       <section className="py-20 bg-primary text-white">
         <div className="container px-4 max-w-4xl mx-auto">

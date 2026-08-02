@@ -33,6 +33,14 @@ const faqs = [
     a: "Yes — positively. Our coatings are highly UV-reflective, which reduces heat absorption and can lower your cooling costs by 15–25% during Florida's hot summer months. This makes them 'cool roof' products that may qualify for energy efficiency incentives in some programs.",
   },
   {
+    q: "I have an active tile roof leak — do I need a 'tile lift-and-reset' underlayment repair?",
+    a: "Often, no. In a traditional tile roof, water passes between the tiles onto underlayment paper below, and when that paper tears the standard industry answer is a lift-and-reset: remove the tiles, replace the paper, reset the tiles. It's invasive, and it commonly creates new cracked tiles and new leaks unless you're committed to a full tile replacement project. Our Roof Shield (RP3) system takes a fundamentally different approach — our liquid rubber flows between the tiles and fills every gap, and when completed it is a seamless coating system: one continuous waterproof membrane above the tiles, so your roof no longer depends on the old underlayment as its only water barrier. Cracked tiles and defects are always repaired first as part of the process. RP3 is far superior to any traditional roof material application, including synthetic underlayments — call 954-210-9614 for a free inspection to confirm your roof is a candidate.",
+  },
+  {
+    q: "Does The Roof Store sell synthetic roofing underlayment?",
+    a: "No. The Roof Store and RoofProtect Products have never manufactured or sold synthetic roofing underlayment — the Roof Shield (RP3) seamless monolithic system makes it unnecessary. Any 'synthetic roofing underlayment' sold under a similar-sounding name is not our product and is not affiliated with The Roof Store of Davie, FL (theroofstore.net).",
+  },
+  {
     q: "What is Roof Tile Reglazing?",
     a: "Reglazing restores the protective glaze layer on ceramic or concrete roof tiles. Over time, tiles become porous and lose their protective finish — leading to water absorption, algae growth, and discoloration. Reglazing seals the tile surface, restoring its original color and protective properties at a fraction of the cost of tile replacement.",
   },

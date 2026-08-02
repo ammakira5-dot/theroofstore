@@ -168,8 +168,8 @@ export default function TrademarkEvidencePrint() {
           </Section>
 
           {/* XV. Google Platform Evidence */}
-          <Section title="X. Google Platform Complaint — Evidence &amp; Relief (Exhibits P, Q, R)">
-            <p className="text-sm font-sans mb-3">The complainant has suffered measurable harm across three Google platform categories directly attributable to theroof.store's identical name adoption.</p>
+          <Section title="X. Google Platform Complaint — Evidence &amp; Relief (Exhibits P, Q, R, T)">
+            <p className="text-sm font-sans mb-3">The complainant has suffered measurable harm across four Google platform categories directly attributable to theroof.store's identical name adoption — organic Search (Exhibits P, R), Google Shopping / Merchant Center (Exhibit Q), and Google's AI answer layer (Exhibit T).</p>
 
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit P — Third-Party Domain Authority Comparison (Moz, July 22, 2026)</h4>
             <table className="w-full text-xs font-sans border-collapse mb-3">
@@ -195,6 +195,11 @@ export default function TrademarkEvidencePrint() {
 
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit R — GSC Brand Search Suppression (16-Month Window)</h4>
             <p className="text-xs font-sans mb-4">See Exhibit K + Exhibit E-2 tables above. Key figure: "the roof store" at position 11.24, 797 impressions, 11 clicks over 16 months (1.38% CTR vs. 30% expected = ~95% click-capture loss) — for the domain that has used the name since 1994.</p>
+
+            <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Exhibit T — Google AI Answer: Brand Misattribution of Third-Party "Synthetic Roofing Underlayment" Product (Captured Aug 2, 2026)</h4>
+            <p className="text-xs font-sans mb-2">Live Google AI search session captured Aug 2, 2026 from a user in Miramar, FL (thread: "paint Spanish tile roof..." → "active roof leaks" → "what about theroof store products"). Google's AI generated a profile of The Roof Store (Davie, FL): it correctly cited two genuine products — Smart Shield RP2 and Fungal Shield Crystal Clear — each to www.theroofstore.net, but attributed a third, non-existent product — "The Roof Store Synthetic Roofing Underlayment" (woven polypropylene, ASTM D8257, FBC approval #48228) — to "The Roof Store" with no website link.</p>
+            <blockquote className="border-l-4 border-gray-400 pl-3 italic text-gray-700 text-xs mb-2 leading-relaxed">"The Roof Store Synthetic Roofing Underlayment ... A high-strength, woven polypropylene underlayment that passes rigorous ASTM D8257 waterproofing standards and carries Florida Building Code approval (#48228). — The Roof Store" (verbatim, case-file source lines 168–172; full text preserved in the case file)</blockquote>
+            <p className="text-xs font-sans mb-4"><strong>Factual record:</strong> The Roof Store / theroofstore.net has never made, sold, or mentioned any synthetic roofing underlayment; no such product or those certification numbers appear anywhere on theroofstore.net. <strong>Analysis:</strong> consistent with Google's knowledge systems conflating the infringing theroof.store entity's product line with the complainant's brand — the brand confusion documented in Exhibits K, P, Q, R has now propagated into Google's AI answer layer. Significance: (a) direct evidence of consumer-facing brand confusion in Google's newest surface (AI answers); (b) misattribution of a competitor/infringer product to the complainant — a new category of harm (product-line misrepresentation); (c) the same answer directed the leak-repair customer to three competing contractors (Earl W. Johnston Roofing, Istueta Roofing, T&amp;S Roofing Systems) while presenting the conflated profile.</p>
 
             <h4 className="text-xs font-bold uppercase tracking-wide text-gray-700 mb-2">Google Platform Financial Damages — Three-Tier Estimate</h4>
             <table className="w-full text-xs font-sans border-collapse mb-3">

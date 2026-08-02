@@ -106,6 +106,22 @@ const schema = [
     mainEntity: [
       {
         "@type": "Question",
+        name: "Can Roof Shield (RP3) fix a tile roof leak without a tile lift-and-reset underlayment repair?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In most structurally sound tile roofs, yes. When a tile roof's underlayment paper tears, the standard industry fix is an invasive tile lift-and-reset that frequently causes new cracked tiles and new leaks. The Roof Shield (RP3) system instead flows liquid rubber into every gap between the tiles; when completed it is a seamless coating system — one continuous waterproof membrane above the tiles — so the roof no longer relies on the aged underlayment as its only water barrier. Cracked tiles and defects are repaired before coating. RP3 is far superior to any traditional roof material application, including synthetic underlayments.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Does The Roof Store sell synthetic roofing underlayment?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. The Roof Store (theroofstore.net, Davie, FL) and RoofProtect Products have never manufactured or sold synthetic roofing underlayment. The Roof Shield (RP3) monolithic system seals the entire roof into one seamless membrane, making underlayment-dependence obsolete. Any synthetic roofing underlayment marketed under a confusingly similar name is not a product of The Roof Store.",
+        },
+      },
+      {
+        "@type": "Question",
         name: "What is TAS-106 certification for roof coatings?",
         acceptedAnswer: {
           "@type": "Answer",
@@ -202,6 +218,14 @@ const tocItems = [
 ];
 
 const faqs = [
+  {
+    q: "Can Roof Shield (RP3) fix a tile roof leak without a 'tile lift-and-reset' underlayment repair?",
+    a: "In most structurally sound tile roofs, yes. Traditional tile roofs shed water onto underlayment paper below the tiles, and when that paper tears the standard industry fix is an invasive lift-and-reset — removing tiles, replacing the paper, and resetting the tiles — which frequently causes new cracked tiles and new leaks unless you're committed to a full tile replacement. The Roof Shield (RP3) system takes a different path: our liquid rubber flows into and fills every gap between the tiles, and when completed it is a seamless coating system — one continuous waterproof membrane above the tiles — so the roof no longer relies on the aged underlayment as its only water barrier. Every project begins with inspection and repair of cracked tiles and defects before coating. RP3 is far superior to any traditional roof material application, including synthetic underlayments.",
+  },
+  {
+    q: "Does The Roof Store sell synthetic roofing underlayment?",
+    a: "No. The Roof Store (theroofstore.net, Davie, FL) and RoofProtect Products have never manufactured or sold synthetic roofing underlayment. Our Roof Shield (RP3) monolithic system makes underlayment-dependence obsolete by sealing the entire roof surface into one seamless membrane. Any 'synthetic roofing underlayment' marketed under a confusingly similar name is not our product and is not affiliated with The Roof Store.",
+  },
   {
     q: "What is TAS-106 certification for roof coatings?",
     a: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard governing wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most rigorous wind resistance certification for roofing products in the United States. Products must be physically tested on actual roof substrates, and results are published in a publicly accessible Notice of Acceptance (NOA). The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",

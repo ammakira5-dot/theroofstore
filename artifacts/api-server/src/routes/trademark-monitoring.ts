@@ -4,6 +4,7 @@ import { createReadStream, existsSync } from "node:fs";
 import { join } from "node:path";
 import { CASE_FILE_HTML } from "./case-file-content";
 import { COMPLAINT_HTML } from "./complaint-content";
+import { UDRP_HTML } from "./udrp-content";
 import { z } from "zod";
 import { db, trademarkMonitoringLogTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
@@ -179,6 +180,16 @@ router.get("/trademark-monitoring/case-file/complaint", (req, res) => {
     return;
   }
   res.json({ ok: true, role, html: COMPLAINT_HTML });
+});
+
+// CONFIDENTIAL draft UDRP (ICANN/WIPO) complaint — served only after password verification.
+router.get("/trademark-monitoring/case-file/udrp", (req, res) => {
+  const role = checkAuth(req);
+  if (!role) {
+    res.status(401).json({ ok: false, error: "Unauthorized" });
+    return;
+  }
+  res.json({ ok: true, role, html: UDRP_HTML });
 });
 
 // CONFIDENTIAL brief download — served only after password verification.

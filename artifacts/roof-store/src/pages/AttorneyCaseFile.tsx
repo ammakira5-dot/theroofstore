@@ -7,21 +7,24 @@ export default function AttorneyCaseFile() {
   const [authState, setAuthState] = useState<AuthState>("idle");
   const [contentHtml, setContentHtml] = useState<string>("");
   const [complaintHtml, setComplaintHtml] = useState<string>("");
-  const [activeTab, setActiveTab] = useState<"casefile" | "complaint">("casefile");
+  const [udrpHtml, setUdrpHtml] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<"casefile" | "complaint" | "udrp">("casefile");
   const [password, setPassword] = useState<string>("");
   const [downloading, setDownloading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  async function openComplaintTab(pw: string) {
-    setActiveTab("complaint");
-    if (complaintHtml) return;
+  async function openDocTab(tab: "complaint" | "udrp", pw: string) {
+    setActiveTab(tab);
+    const already = tab === "complaint" ? complaintHtml : udrpHtml;
+    if (already) return;
     try {
-      const res = await fetch("/api/trademark-monitoring/case-file/complaint", {
+      const res = await fetch(`/api/trademark-monitoring/case-file/${tab}`, {
         headers: { "x-admin-password": pw },
       });
       if (res.ok) {
         const data = await res.json();
-        setComplaintHtml(data.html ?? "");
+        if (tab === "complaint") setComplaintHtml(data.html ?? "");
+        else setUdrpHtml(data.html ?? "");
       }
     } catch {
       // keep tab open; content stays empty with fallback text
@@ -105,7 +108,7 @@ export default function AttorneyCaseFile() {
                 📄 Case File &amp; Rebuttals
               </button>
               <button
-                onClick={() => openComplaintTab(password)}
+                onClick={() => openDocTab("complaint", password)}
                 className={
                   activeTab === "complaint"
                     ? "rounded-t-md border border-b-0 border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-blue-800"
@@ -113,6 +116,16 @@ export default function AttorneyCaseFile() {
                 }
               >
                 ⚖️ Draft Federal Complaint
+              </button>
+              <button
+                onClick={() => openDocTab("udrp", password)}
+                className={
+                  activeTab === "udrp"
+                    ? "rounded-t-md border border-b-0 border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-blue-800"
+                    : "rounded-t-md px-5 py-2.5 text-sm font-semibold text-gray-500 hover:text-gray-800"
+                }
+              >
+                🌐 UDRP / ICANN Domain Complaint
               </button>
             </div>
 
@@ -138,10 +151,16 @@ export default function AttorneyCaseFile() {
 
             {activeTab === "casefile" ? (
               <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-            ) : complaintHtml ? (
-              <div dangerouslySetInnerHTML={{ __html: complaintHtml }} />
+            ) : activeTab === "complaint" ? (
+              complaintHtml ? (
+                <div dangerouslySetInnerHTML={{ __html: complaintHtml }} />
+              ) : (
+                <p className="text-sm text-gray-500">Loading draft complaint…</p>
+              )
+            ) : udrpHtml ? (
+              <div dangerouslySetInnerHTML={{ __html: udrpHtml }} />
             ) : (
-              <p className="text-sm text-gray-500">Loading draft complaint…</p>
+              <p className="text-sm text-gray-500">Loading UDRP complaint…</p>
             )}
 
             <p className="mt-12 border-t pt-4 text-xs text-gray-500">

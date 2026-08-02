@@ -49,11 +49,11 @@ const PAGE_META = {
   },
   "/products/roofshield": {
     title: "RoofShield (RP3) — The Original Liquid Applied Rubber Roof Shield System | The Roof Store Florida",
-    description: "RoofShield — The Original Liquid Applied Rubber Roof Shield System — fills every gap between tiles with multiple product layers making your roof monolithic. TAS-106 Dade County rated, hurricane-proof, lifetime warranty. Silicone base for all roof types including flat roofs. 954-210-9614.",
+    description: "RoofShield — The Original Liquid Applied Rubber Roof Shield System — fills every gap between tiles with multiple product layers making your roof monolithic. TAS-106 Dade County rated, hurricane test-verified, lifetime warranty. Silicone base for all roof types including flat roofs. 954-210-9614.",
   },
   "/commercial-roofs": {
     title: "Commercial Flat Deck, BUR, Modified Bitumen & Metal Roof Waterproofing | The Roof Store Florida",
-    description: "Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. TAS-106 certified. Call 954-210-9614.",
+    description: "Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. Passed the Dade County Certified TAS-106 Uplift Test. Call 954-210-9614.",
   },
   "/commercial-roof-coating-hoa": {
     title: "Commercial Roof Coating for HOA & Condo Properties in Florida | The Roof Store",

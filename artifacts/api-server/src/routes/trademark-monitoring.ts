@@ -1,5 +1,8 @@
 import { Router, type Request } from "express";
 import { createHash } from "node:crypto";
+import { createReadStream, existsSync } from "node:fs";
+import { join } from "node:path";
+import { CASE_FILE_HTML } from "./case-file-content";
 import { z } from "zod";
 import { db, trademarkMonitoringLogTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
@@ -155,6 +158,34 @@ router.get("/trademark-monitoring/verify", (req, res) => {
     return;
   }
   res.json({ ok: true, role });
+});
+
+// CONFIDENTIAL case-file content — served only after password verification.
+router.get("/trademark-monitoring/case-file", (req, res) => {
+  const role = checkAuth(req);
+  if (!role) {
+    res.status(401).json({ ok: false, error: "Unauthorized" });
+    return;
+  }
+  res.json({ ok: true, role, html: CASE_FILE_HTML });
+});
+
+// CONFIDENTIAL brief download — served only after password verification.
+router.get("/trademark-monitoring/case-file/brief", (req, res) => {
+  const role = checkAuth(req);
+  if (!role) {
+    res.status(401).json({ ok: false, error: "Unauthorized" });
+    return;
+  }
+  const briefPath = join(process.cwd(), "private", "bcf-77419-x.docx");
+  if (!existsSync(briefPath)) {
+    res.status(404).json({ ok: false, error: "Brief not found" });
+    return;
+  }
+  res.setHeader("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+  res.setHeader("Content-Disposition", 'attachment; filename="Brief of Claimant - The Roof Store.docx"');
+  res.setHeader("Cache-Control", "no-store");
+  createReadStream(briefPath).pipe(res);
 });
 
 export default router;

@@ -115,6 +115,14 @@ Finished items are archived in `docs/completed-work-log.md` — only open/action
 - **Review automation workflow** — Was in progress. Restart: confirm post-job contact channel (text, email, or both) and agent sets it up.
 - **Factory page — partner decision** — Decide: add roofrestorationsandwaterproofinginc.com and bestroofpaint.com to /factory page directly, or leave as /partner-network only.
 
+**Forensic investigation — 2021–2022 spam wave (trace to theroof.store, opened Aug 2, 2026):**
+- **Owner: query the EmailPortal database** — cPanel → phpMyAdmin → database `roofstore` → table `email`. Sort by ID/date, look for 2021–2022 rows (form submissions logged with `data` + `web` columns; may include sender IPs). If rows exist from that window, export the table AS-IS (phpMyAdmin Export → SQL and CSV) before touching anything.
+- **Owner: search all site mailboxes for surviving 2021–2022 form spam** — info@ boxes for theroofstore.net, bestroofpaint, roofpaintmiami, ftlauderdale, flatroofsealants (webmail: inbox, spam, trash, archive). Export any hits whole (with headers) — do NOT forward, forwarding strips the originating-IP headers. Agent already found 23 era messages in info@theroofstore.net (mostly WP notices + generic spam, not the form flood).
+- **Agent: if DB rows found** — compare submission IPs against theroof.store hosting IPs (GoDaddy; domain registered Aug 13, 2021) and build a dated timeline exhibit. Frame as timing correlation unless IPs actually match.
+- **Ask host what they retain from 2021–2022** — support ticket to the hosting company: archived access logs, mail logs, or account backups from that period (current logs only go back to ~Jul 2026; but `backup_18_dec_2020.tar` and 2024 site zips exist on the server).
+- **Owner already logs the recollection** — add a manual entry to /trademark-monitoring-log dating the spam wave to 2021–2022, coinciding with theroof.store registration (Aug 13, 2021) and store launch (2022). Wording drafted in chat Aug 2, 2026.
+- **Security: rotate the `roofstore` MySQL password** — it sits in plain text inside old PHP files (EmailPortal/dbConnection.php etc.) on the server. Not urgent; do after the forensic export so nothing breaks mid-investigation.
+
 **Sister sites (FTP):**
 - **flatroofsealants.com SEO plugin** — mu-plugin drafted at `/tmp/frs-seo.php`. Adds Port St. Lucie / Treasure Coast title, meta description, schema, and removes BBB/1994 footer claim. Preview shown — say "push it" to upload.
 - **roofpaintmiami.com — Replace Broward commercial photos** — 8 photos on commercial.php still show Broward job sites. Replace with real Miami-Dade photos (user to provide). FTP: julius@absolutecharters.com / JULIUS_FTP_PASSWORD.

@@ -470,6 +470,7 @@ const SERVE_ONLY_ROUTES = new Set([
   "/redemption-evidence-google-1",
   "/google-complaint-steps",
   "/ref/8f3k-2m9x-771q",
+  "/ref/9w4t-6r2k-583p",
 ]);
 
 function isKnownRoute(path) {

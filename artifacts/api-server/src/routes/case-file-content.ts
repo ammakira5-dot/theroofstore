@@ -36,6 +36,97 @@ export const CASE_FILE_HTML = `
 <h2>Known gap to strengthen (Point 1)</h2>
 <p class="gap">Secondary-meaning proof would hit harder with countable specifics: years of advertising spend, invoice volume, review counts, media mentions, historical ads. This evidence pile is being assembled.</p>
 
+<h2>Appendix A — Full Case-Law Research Printout (owner&rsquo;s search, August 2, 2026)</h2>
+<p class="auth">Complete, deduplicated results as pasted by the Complainant from the legal-research tool (duplicate pastes merged). Relevance % = how closely the tool matched each case to this matter&rsquo;s facts — not a prediction of outcome. Analyses below are the tool&rsquo;s own summaries, reproduced for counsel.</p>
+
+<h3 style="font-size:1.05rem;font-weight:700;margin:1.5rem 0 .5rem;">Cases with full analyses (in relevance order)</h3>
+
+<p><strong>Lion-Aire Corp. v. Lion Air Installation, Inc.</strong> — 93.9% · E.D.N.Y., filed 2024-08-27<br/>
+Analyzes the exact types of &ldquo;actual confusion&rdquo; evidence this case relies on (erroneous customer calls, misdirected complaints, negative online reviews). The court validated that a misdirected negative review can constitute actual confusion capable of inflicting commercial injury: confusion evidence &ldquo;could inflict commercial injury in the form of either a diversion of sales, damage to goodwill, or loss of control over reputation&rdquo; — sufficient to raise a disputed issue of fact. Directly counters any argument that misdirected digital interactions are insufficient, supporting the AI-misattribution claim.</p>
+
+<p><strong>Sunenblick v. Harrell</strong>, 895 F. Supp. 616 — 93.8% · S.D.N.Y. 1995 · 46 citing cases<br/>
+⚠ Defense-side caution: the court rejected anecdotal misdirected calls and store-clerk errors as insufficient unless they impact a <em>purchasing decision</em>: &ldquo;there is no evidence&hellip; that a customer ever made a purchasing decision under the mistaken impression&hellip;&rdquo; Establishes the high bar Exhibit T&rsquo;s purchase-decision framing is built to clear.</p>
+
+<p><strong>RVC Floor Decor, Ltd. v. Floor &amp; Decor Holdings, Inc.</strong> — 90.5% · E.D.N.Y., filed 2023-03-07<br/>
+⚠ Same caution: evidence of people merely contacting the plaintiff looking for the defendant is excluded as irrelevant — but evidence of purchasers &ldquo;who made purchasing decisions based upon the mistaken belief&rdquo; IS relevant and admissible. Confirms the required framing for Exhibit T.</p>
+
+<p><strong>Trouble v. Wet Seal, Inc.</strong>, 179 F. Supp. 2d 291 — 89.8% · S.D.N.Y. 2001 · 36 citing cases<br/>
+Customer statements of confusion are admissible as state-of-mind evidence (not hearsay), but &ldquo;confusion logs&rdquo; created by employees specifically for litigation are inadmissible for lack of trustworthiness. Validates the monitoring log&rsquo;s ordinary-course, append-only design.</p>
+
+<p><strong>51 West 51st Corp. v. Roland</strong>, 50 A.2d 369 — 88.1% · N.J. Ch. 1946 · 13 citing cases<br/>
+Fraudulent intent to pass off suffices for injunctive relief even without direct market competition: &ldquo;Likelihood of reliance upon the trade name of the junior user&hellip; without actual reliance, is sufficient&hellip; particularly&hellip; where the use of the simulated trade name is unnecessary to the honest prosecution of the junior&rsquo;s business.&rdquo; Validates the Exhibit U product-title claim.</p>
+
+<p><strong>Dudley v. HealthSource Chiropractic</strong>, 585 F. Supp. 2d 433 — 87.1% · W.D.N.Y. 2008 · 4 citing cases<br/>
+The framework case: six factors for secondary meaning (advertising expenditures, length of use, consumer sophistication, etc.) and the ACPA &ldquo;confusingly similar&rdquo; standard. Note: that plaintiff LOST on bad faith and confusion — cited for the framework, and as the roadmap of what must be proven.</p>
+
+<p><strong>Weiss v. The Stork Gift Shop</strong>, 45 A.2d 688 — 86.4% · N.J. Ch. 1946 · 10 citing cases<br/>
+Even generic words are protected where use is calculated to deceive: &ldquo;One may not lawfully use a trade name as near the established name of another as to lead customers and the public to suppose&hellip; that the product sold is the product of the other.&rdquo; Supports enjoining &ldquo;The Roof Store Synthetic Roofing Underlayment.&rdquo;</p>
+
+<p><strong>Beech-Nut Packing Co. v. P. Lorillard Co.</strong>, 299 F. 834 — 86.1% · D.N.J. 1924 · 3 citing cases<br/>
+(Returned with citation and treatment flag; no analysis paragraph provided by the tool.)</p>
+
+<p><strong>Impulse Communications, Inc. v. Uplift Games, LLC</strong> — 85.6% · D.R.I., filed 2024-12-23<br/>
+Closest fact pattern: an unregistered senior mark (&ldquo;Adopt Me,&rdquo; used since 1998) with secondary meaning plausibly prevailed against a later user of a nearly identical name where consumer confusion was shown at the point of purchase.</p>
+
+<p><strong>Stout v. Laws</strong>, 37 Haw. 382 — 84.0% · Haw. 1946 · 2 citing cases<br/>
+Roofing-trade trade-name case: names &ldquo;belong to the one who first uses them and gives them value,&rdquo; without any registration; a junior adopter of a similar name is presumed to be seeking &ldquo;the trade which belongs to the established concern.&rdquo;</p>
+
+<p><strong>American Chicle Co. v. Topps Chewing Gum, Inc.</strong>, 210 F.2d 680 — 83.9% · 2d Cir. 1954 · 13 citing cases<br/>
+Distinguishes lawful use of words from fraudulent passing off via product titling: &ldquo;The use dissociated from the fraud is entirely lawful, and it is against the fraud that the injunction lies.&rdquo; Supports the claim even if &ldquo;The Roof Store&rdquo; were deemed descriptive.</p>
+
+<p><strong>Ready Capital Corp. v. READY CAPITAL CORPORATION</strong> — 81.1% · E.D. Mich., filed 2020-05-18<br/>
+Adopting &ldquo;the same trade name — letter for letter&rdquo; as a senior user in a nearly identical business states a viable infringement and unfair-competition claim.</p>
+
+<p><strong>Bates Mfg. Co. v. Bates Numbering Mach. Co.</strong>, 172 F. 892 — 80.4% · C.C.D.N.J. 1909 · 2 citing cases<br/>
+Junior use of a senior&rsquo;s trade name in advertising/product designation is unfair competition regardless of descriptiveness — deceiving purchasers and &ldquo;the gradual appropriation to itself of the favorable reputation which the complainant had built up&hellip; through years of toil and at considerable expense.&rdquo;</p>
+
+<p><strong>Mira Holdings, Inc. v. ZoomerMedia, Ltd.</strong> — 77.4% · D. Colo., filed 2023-06-07<br/>
+Lists the nine non-exhaustive ACPA bad-faith factors, including registration of domains known to be confusingly similar to distinctive marks, and &ldquo;intent to divert consumers&rdquo; (Factor V); requires specific facts, not conclusory allegations — which Exhibits S and U supply.</p>
+
+<p><strong>Jenzabar, Inc. v. Long Bow Group, Inc.</strong>, 82 Mass. App. Ct. 648 — 71.7% · Mass. App. 2012<br/>
+Initial-interest confusion in search results is actionable even if later dispelled: &ldquo;that second step-away does not dispel the first step-in.&rdquo; The bridge from search-engine doctrine to AI-answer misattribution.</p>
+
+<p><strong>In re Seats, Inc.</strong>, 757 F.2d 274 — 68.7% · Fed. Cir. 1985 · 10 citing cases<br/>
+A descriptive mark is not inherently incapable of acquiring distinctiveness; where the evidence establishes acquired distinctiveness, descriptiveness arguments are &ldquo;irrelevant.&rdquo;</p>
+
+<p><strong>In re Bush Brothers &amp; Co.</strong>, 884 F.2d 569 — 66.0% · Fed. Cir. 1989 · 10 citing cases<br/>
+Whether a term can acquire secondary meaning is a factual inquiry based on specific evidence, not policy — validating reliance on decades of concrete usage evidence.</p>
+
+<p><strong>Application of the Chesapeake Corp. of Virginia</strong>, 420 F.2d 754 — 66.0% · C.C.P.A. 1970<br/>
+A composite descriptive designation viewed as a whole (&ldquo;SUPERWATERFINISH&rdquo;) can become distinctive through trade recognition — long-term exclusive use can transform a descriptive phrase into a protectable mark.</p>
+
+<h3 style="font-size:1.05rem;font-weight:700;margin:1.5rem 0 .5rem;">Returned without analysis (title + score only)</h3>
+<ul>
+  <li>Simpson Strong-Tie Co. v. MiTek Inc. — 81.5% (N.D. Cal. 2021)</li>
+  <li>State v. Stout — 81.1% (Or. App. 2009) — criminal case, name-match noise; discarded</li>
+  <li>W. R. Lynn Shoe Co. v. Auburn-Lynn Shoe Co., 62 A. 499 — 80.9% (Me. 1905)</li>
+  <li>Stout v. State — 80.7% (Ala. Crim. App. 1969) — criminal case, name-match noise; discarded</li>
+  <li>Bulbs 4 East Side, Inc. v. Ricks, 199 F. Supp. 3d 1151 — 80.2% (S.D. Tex. 2016)</li>
+  <li>Smith v. Airbnb Incorporated — 78.1% (D. Ariz. 2024)</li>
+  <li>Lane Capital Management v. Lane Capital Management, 15 F. Supp. 2d 389 — 78.0% (S.D.N.Y. 1998)</li>
+  <li>Monster v. Creatd Inc — 77.7% (W.D. Wash. 2022)</li>
+  <li>AAA Alarm &amp; Security Inc. v. A3 Smart Home LP — 73.5% (D. Ariz. 2021)</li>
+  <li>Multi Time Machine, Inc. v. Amazon.com, Inc., 792 F.3d 1070 — 73.4% / 73.1% (9th Cir. 2015; two entries)</li>
+  <li>Mira Holdings Inc. v. UHS of Delaware Inc. — 72.0% (D. Ariz. 2023)</li>
+</ul>
+
+<h3 style="font-size:1.05rem;font-weight:700;margin:1.5rem 0 .5rem;">Companion search — supporting web documents (same session)</h3>
+<ul>
+  <li>&ldquo;The Original Roof Store Florida — Established 1994&rdquo; (Complainant&rsquo;s own site) — 89.5%: timeline of use, Florida geographic overlap, and willful-blindness grounds</li>
+  <li>&ldquo;Common Law Rights vs. Federal Trademark Registration&rdquo; — 85.5%: prior use (even intrastate) supports opposition/cancellation against a later registrant</li>
+  <li>&ldquo;Trademark Infringement — ICANN&rdquo; — 70.5%: formal complaint channel for domain-name infringement</li>
+</ul>
+
+<h2>Appendix B — Independent Review&rsquo;s Overall Assessment (verbatim conclusions)</h2>
+<p class="auth">From the confirmatory case-law review pasted the same day:</p>
+<ul>
+  <li>Rebuttal 1 (secondary meaning): &ldquo;your strongest point&rdquo; — decades of exclusive use plus the respondent&rsquo;s own conduct make secondary meaning &ldquo;highly probable.&rdquo;</li>
+  <li>Rebuttal 2 (geography): &ldquo;a textbook rebuttal&rdquo; — geographic limitation is no defense when the junior user markets into the senior&rsquo;s territory; &ldquo;it is the very location of the injury.&rdquo;</li>
+  <li>Rebuttal 3 (bad faith): &ldquo;devastating if the exhibits are authenticated&rdquo; — actual knowledge (Exhibit S) + willful blindness + product-title embedding (Exhibit U) create &ldquo;a near-irrebuttable showing of bad faith under both UDRP and ACPA standards.&rdquo;</li>
+  <li>Rebuttal 4 (AI confusion): &ldquo;novel but well-grounded&rdquo; in initial-interest-confusion doctrine; the critical strength is Exhibit U proving the confusion derives from Respondent&rsquo;s own commercial content.</li>
+  <li>Overall: &ldquo;The Roof Store has a strong case&rdquo; — the case law &ldquo;strongly supports both an injunction and a UDRP transfer.&rdquo; The one area to watch: present Exhibit T as a purchase-decision misattribution (per RVC Floor Decor), never a mere misdirected inquiry.</li>
+</ul>
+
 <h2>Related evidence (this site)</h2>
 <ul>
   <li><a href="/trademark-evidence-file">Trademark Evidence File</a> — Exhibits A–U</li>

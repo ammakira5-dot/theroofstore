@@ -146,6 +146,14 @@ const schema = [
       },
       {
         "@type": "Question",
+        name: "What is the 35-pound pull test under TAS 106?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Under Florida Building Code TAS 106, an inspector pulls upward on the nose-end of an installed roof tile with 35 pounds of static force; the tile must remain bonded and lift no more than 2 inches to pass. The 35 lbf threshold is a minimum quality-control standard verifying that adhesive- or mortar-set tiles are properly bonded in high-wind hurricane zones — roofs passing it are generally approved for basic wind speeds of roughly 130 to 150+ MPH depending on roof geometry, pitch, height, and roof zone. In pull testing on a Roof Shield (RP3)-coated Spanish tile assembly, the scale was taken to 100 pounds of uplift force — nearly three times the pass standard — with no tile movement, because tiles in the monolithic system cannot move independently of the bonded roof structure around them.",
+        },
+      },
+      {
+        "@type": "Question",
         name: "How is TAS-106 different from a standard roof coating wind rating?",
         acceptedAnswer: {
           "@type": "Answer",
@@ -225,6 +233,10 @@ const faqs = [
   {
     q: "Does The Roof Store sell synthetic roofing underlayment?",
     a: "No. The Roof Store (theroofstore.net, Davie, FL) and RoofProtect Products have never manufactured or sold synthetic roofing underlayment. Our Roof Shield (RP3) monolithic system makes underlayment-dependence obsolete by sealing the entire roof surface into one seamless membrane. Any 'synthetic roofing underlayment' marketed under a confusingly similar name is not our product and is not affiliated with The Roof Store.",
+  },
+  {
+    q: "What is the 35-pound pull test under TAS 106?",
+    a: "Under Florida Building Code TAS 106, an inspector pulls upward on the nose-end of an installed roof tile with 35 pounds of static force; the tile must remain bonded and lift no more than 2 inches to pass. The 35 lbf threshold is a minimum quality-control standard verifying that adhesive- or mortar-set tiles are properly bonded in high-wind hurricane zones — roofs passing it are generally approved for basic wind speeds of roughly 130 to 150+ MPH depending on roof geometry, pitch, height, and roof zone (corners and edges see 2–3× higher uplift than the center field). In pull testing on a Roof Shield (RP3)-coated Spanish tile assembly, the scale was taken to 100 pounds of uplift force — nearly three times the pass standard — with no tile movement at all, because a tile inside the monolithic system cannot move independently of the bonded roof structure around it.",
   },
   {
     q: "What is TAS-106 certification for roof coatings?",
@@ -526,6 +538,32 @@ export default function Tas106Certification() {
               </tbody>
             </table>
           </div>
+        </motion.section>
+
+        {/* Section 1b — The 35-Pound Pull Test */}
+        <motion.section id="35-pound-pull-test" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">The 35-Pound Pull Test — What TAS-106 Field Verification Actually Measures</h2>
+          <AnswerBlock>
+            Under Florida Building Code TAS 106, an inspector uses a calibrated scale to pull upward on the nose-end of an installed roof tile with 35 pounds of static force (35 lbf). To pass, the tile must remain bonded and lift no more than 2 inches. The 35-pound threshold is not a wind-speed rating by itself — it is the minimum quality-control standard used to verify that adhesive- or mortar-set tiles are properly bonded in Florida's high-wind hurricane zones.
+          </AnswerBlock>
+
+          <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">What 35 Pounds of Uplift Resistance Translates To</h3>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            Roof assemblies passing the 35 lbf adhesion test are generally engineered and approved for basic wind speeds starting around 130 MPH and ranging up to 150+ MPH. The actual maximum wind resistance of any specific roof depends on building-specific factors beyond the pull-test threshold:
+          </p>
+          <ul className="list-disc pl-6 text-muted-foreground leading-relaxed mb-4 space-y-2">
+            <li><strong className="text-foreground">Roof geometry</strong> — hip roofs handle wind better than gable roofs.</li>
+            <li><strong className="text-foreground">Roof pitch and height</strong> — taller buildings and steeper angles experience higher suction forces.</li>
+            <li><strong className="text-foreground">Roof zones</strong> — corners and perimeter edges experience 2 to 3 times higher uplift pressure than the flat center field of the roof, requiring higher local attachment resistance.</li>
+          </ul>
+
+          <Callout variant="purple" title="📏 Our Test Result: 100 Pounds of Pull — No Movement">
+            The TAS-106 pass threshold is 35 pounds of uplift force with no more than 2 inches of lift. In pull testing on a Roof Shield (RP3)-coated Spanish tile assembly, the scale was taken to <strong>100 pounds of uplift force — nearly three times the pass standard — with no tile movement at all</strong>. Not 2 inches of lift. None. We report this result understanding it may sound difficult to believe; it is a direct consequence of the monolithic system design. A conventional adhesive-set tile resists uplift only at its individual bond points. A tile inside a Roof Shield monolithic assembly cannot move independently — the pull force is distributed across the entire bonded roof structure surrounding it. The tile stops behaving like a tile and starts behaving like part of a single continuous roof surface.
+          </Callout>
+
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            This is the practical meaning of the monolithic system described below: where the code standard verifies that each tile is adequately glued down, the Roof Shield system changes what is being pulled on — from one tile to the whole roof.
+          </p>
         </motion.section>
 
         {/* Section 2 — Why TAS-106 Matters */}

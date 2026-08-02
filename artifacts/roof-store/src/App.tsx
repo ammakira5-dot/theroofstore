@@ -69,7 +69,18 @@ const queryClient = new QueryClient();
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Give the destination page a moment to render, then scroll to the anchor.
+      const t = setTimeout(() => {
+        const el = document.getElementById(hash.slice(1));
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        else window.scrollTo(0, 0);
+      }, 100);
+      return () => clearTimeout(t);
+    }
     window.scrollTo(0, 0);
+    return undefined;
   }, [location]);
   return null;
 }

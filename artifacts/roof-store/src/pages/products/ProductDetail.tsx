@@ -36,6 +36,7 @@ export interface ProductData {
   pdfLabel?: string;
   certificationUrl?: string;
   certificationLabel?: string;
+  learnMoreLinks?: { title: string; desc: string; href: string }[];
   beforeAfterImages?: { before: string; beforeAlt: string; after: string; afterAlt: string; label: string }[];
   galleryImages?: { src: string; alt: string; caption: string }[];
 }
@@ -174,6 +175,13 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 </a>
               )}
             </div>
+            {product.certificationUrl && (
+              <Link href={product.certificationUrl} className="mt-6 inline-flex items-center gap-2 bg-amber-400/15 border border-amber-300/40 text-amber-200 rounded-full px-5 py-2.5 text-sm font-bold hover:bg-amber-400/25 transition-colors group">
+                <span className="text-base leading-none">🏅</span>
+                Passed the Dade County Certified TAS-106 Uplift Test — read the full story
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            )}
           </motion.div>
         </div>
       </section>
@@ -287,6 +295,24 @@ export function ProductDetail({ product }: { product: ProductData }) {
                 Every {product.name} installation begins with professional pressure cleaning and surface preparation — explore our full range of{" "}
                 <Link href="/roof-services" className="text-accent font-semibold hover:underline">roof coating and restoration services</Link>.
               </p>
+
+              {product.learnMoreLinks && product.learnMoreLinks.length > 0 && (
+                <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                  <h2 className="text-3xl font-serif font-bold text-primary mb-2">Go Deeper</h2>
+                  <p className="text-muted-foreground mb-6">Every claim on this page has a full page of proof behind it. Click any topic to read the complete story.</p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {product.learnMoreLinks.map((l, i) => (
+                      <Link key={i} href={l.href} className="flex items-start justify-between gap-3 bg-card border rounded-xl p-5 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group">
+                        <div>
+                          <div className="font-bold text-foreground mb-1 group-hover:text-accent transition-colors">{l.title}</div>
+                          <p className="text-sm text-muted-foreground leading-snug">{l.desc}</p>
+                        </div>
+                        <ArrowRight className="h-4 w-4 text-accent shrink-0 mt-1 group-hover:translate-x-0.5 transition-transform" />
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h2 className="text-3xl font-serif font-bold text-primary mb-6">Key Benefits</h2>

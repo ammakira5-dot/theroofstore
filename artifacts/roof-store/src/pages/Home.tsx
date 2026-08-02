@@ -202,8 +202,13 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl text-white"
           >
-            <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase mb-6">
-              A+ BBB Rated Since 1994
+            <div className="flex flex-wrap gap-3 mb-6">
+              <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
+                A+ BBB Rated Since 1994
+              </div>
+              <Link href="/tas-106-certified-roof-coating" className="inline-block bg-white text-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-white/90 transition-colors">
+                🏅 TAS-106 Hurricane Certified →
+              </Link>
             </div>
             <div className="relative min-h-[260px] md:min-h-[320px] mb-6">
               <AnimatePresence mode="wait">
@@ -340,11 +345,12 @@ export default function Home() {
               <h3 className="font-serif font-bold text-xl mb-2">Nearly 30 Years Experience</h3>
               <p className="text-white/80 text-sm">Pioneers in high-strength elastomeric roof coating systems. Licensed &amp; insured, A+ BBB since 1994.</p>
             </div>
-            <div className="flex flex-col items-center p-4">
+            <Link href="/tas-106-certified-roof-coating" className="flex flex-col items-center p-4 group">
               <Wind className="h-12 w-12 text-accent mb-4" />
-              <h3 className="font-serif font-bold text-xl mb-2">World's Only TAS-106 Rated</h3>
+              <h3 className="font-serif font-bold text-xl mb-2 group-hover:text-accent transition-colors">World's Only TAS-106 Rated</h3>
               <p className="text-white/80 text-sm">Roof Shield is the only liquid coating on earth with Dade County TAS-106 Uplift certification — tested on Spanish tile roofs.</p>
-            </div>
+              <span className="text-accent text-sm font-bold mt-2 group-hover:underline">See the certification →</span>
+            </Link>
             <div className="flex flex-col items-center p-4">
               <ShieldCheck className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2">100% Weatherproof</h3>

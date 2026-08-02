@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "/about", label: "About Us" },
+  { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified" },
   { href: "/roof-systems", label: "Roof Systems" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/reviews", label: "Reviews" },
@@ -14,7 +15,6 @@ const navLinks = [
 const moreLinks = [
   { href: "/roof-services", label: "Services" },
   { href: "/roof-coating-florida", label: "Roof Coating Guide" },
-  { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certification" },
   { href: "/projects", label: "Projects" },
   { href: "/faq", label: "FAQ" },
   { href: "/pricing", label: "Pricing" },

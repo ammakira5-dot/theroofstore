@@ -203,9 +203,9 @@ export default function Home() {
             className="max-w-3xl text-white"
           >
             <div className="flex flex-wrap gap-3 mb-6">
-              <div className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
-                A+ BBB Rated Since 1994
-              </div>
+              <a href="https://www.bbb.org/us/fl/hollywood/profile/painting-contractors/storm-shield-paint-systems-inc-0633-90131779" target="_blank" rel="noopener noreferrer" className="inline-block bg-accent px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-accent/90 transition-colors">
+                A+ BBB Rated Since 1994 →
+              </a>
               <Link href="/tas-106-certified-roof-coating" className="inline-block bg-white text-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-white/90 transition-colors">
                 🏅 TAS-106 Hurricane Test-Verified →
               </Link>

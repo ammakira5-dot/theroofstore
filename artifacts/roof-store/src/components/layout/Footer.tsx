@@ -58,7 +58,7 @@ export function Footer() {
               The pioneer of high-strength weatherproof elastomeric roof coating systems. Don't Re-Roof — Weatherproof at 1/2 the cost. South Florida's original coating manufacturer at <span className="text-accent font-semibold">theroofstore.net</span>. Products are manufactured in-house under our RoofProtect factory license, with professional installation available through Storm Shield Paint Systems Inc., our exclusive licensed contracting division.
             </p>
             <div className="flex items-center flex-wrap gap-2 mb-5">
-              <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">A+ BBB Rated Since 1994</div>
+              <a href="https://www.bbb.org/us/fl/hollywood/profile/painting-contractors/storm-shield-paint-systems-inc-0633-90131779" target="_blank" rel="noopener noreferrer" className="bg-accent text-white text-xs font-bold px-3 py-1 rounded hover:bg-accent/90 transition-colors">A+ BBB Rated Since 1994</a>
               <div className="bg-accent text-white text-xs font-bold px-3 py-1 rounded">Licensed &amp; Insured</div>
             </div>
             <div>

@@ -84,7 +84,7 @@ export function QuoteModal() {
               <div className="h-8 w-8 rounded-full bg-accent flex items-center justify-center shrink-0">
                 <ShieldCheck className="h-4 w-4 text-white" />
               </div>
-              <span className="text-xs font-bold uppercase tracking-wider text-accent">A+ BBB Rated Since 1994</span>
+              <a href="https://www.bbb.org/us/fl/hollywood/profile/painting-contractors/storm-shield-paint-systems-inc-0633-90131779" target="_blank" rel="noopener noreferrer" className="text-xs font-bold uppercase tracking-wider text-accent hover:underline">A+ BBB Rated Since 1994</a>
             </div>
 
             <h2 className="text-2xl font-serif font-bold leading-tight mb-2">

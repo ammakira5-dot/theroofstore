@@ -121,6 +121,7 @@ Finished items are archived in `docs/completed-work-log.md` — only open/action
 - **Agent: if DB rows found** — compare submission IPs against theroof.store hosting IPs (GoDaddy; domain registered Aug 13, 2021) and build a dated timeline exhibit. Frame as timing correlation unless IPs actually match.
 - **Ask host what they retain from 2021–2022** — support ticket to the hosting company: archived access logs, mail logs, or account backups from that period (current logs only go back to ~Jul 2026; but `backup_18_dec_2020.tar` and 2024 site zips exist on the server).
 - **Owner already logs the recollection** — add a manual entry to /trademark-monitoring-log dating the spam wave to 2021–2022, coinciding with theroof.store registration (Aug 13, 2021) and store launch (2022). Wording drafted in chat Aug 2, 2026.
+- **Owner: run "Check Treatment" on load-bearing cases** — verify none of the key rebuttal authorities are overruled/reversed/criticized. Priority list: Sunenblick v. Harrell, American Chicle v. Topps, Jenzabar v. Long Bow, Lion-Aire, In re Seats, In re Bush Brothers, Trouble v. Wet Seal (then the older common-law ones: Stout 1946, Weiss, 51 West 51st, Bates 1909). Only red/negative flags matter — report those to agent. Full case list in `docs/rebuttal-substantial-arguments.md`.
 - **Security: rotate the `roofstore` MySQL password** — it sits in plain text inside old PHP files (EmailPortal/dbConnection.php etc.) on the server. Not urgent; do after the forensic export so nothing breaks mid-investigation.
 
 **Sister sites (FTP):**

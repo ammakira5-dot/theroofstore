@@ -136,7 +136,6 @@ const schema = [
     },
     geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
     foundingDate: "1994",
-    priceRange: "$$",
   },
 ];
 

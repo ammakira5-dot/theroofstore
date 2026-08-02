@@ -75,7 +75,6 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb, job
           name: `${county}, Florida`,
         },
       },
-      priceRange: "$$",
       hasPOS: {
         "@type": "Place",
         name: "The Roof Store — Factory-Direct Coating Store, Davie FL",

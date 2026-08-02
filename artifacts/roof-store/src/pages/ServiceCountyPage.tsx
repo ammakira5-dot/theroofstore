@@ -87,7 +87,6 @@ export function ServiceCountyPage({ county, slug, cities }: ServiceCountyPagePro
         "@type": "AdministrativeArea",
         name: `${county}, Florida`,
       },
-      priceRange: "$$",
       description: `Elastomeric, acrylic, and reflective cool roof coating services throughout ${county}, FL. A+ BBB Rated since 1994.`,
       hasOfferCatalog: {
         "@type": "OfferCatalog",

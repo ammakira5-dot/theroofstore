@@ -1,3 +1,5 @@
+import { entries as pbEntries1 } from "./localContentPB1";
+import { entries as pbEntries2 } from "./localContentPB2";
 /**
  * Pilot: deep-localized content for the 10 highest-value city pages
  * (owner-approved list, July 2026 — western Broward + NW Miami-Dade).
@@ -23,7 +25,11 @@ export interface CityLocalContent {
   neighborhoods: { name: string; note: string }[];
 }
 
+
 export const cityLocalContent: Record<string, CityLocalContent> = {
+  ...pbEntries1,
+  ...pbEntries2,
+
   /* ── BROWARD ─────────────────────────────────────────────── */
 
   "pembroke-pines": {

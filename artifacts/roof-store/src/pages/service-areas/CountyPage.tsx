@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { MapPin, Phone, ArrowRight, ShieldCheck } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { LocalQuoteForm } from "@/components/LocalQuoteForm";
+import { countyLocalContent } from "./countyContent";
 
 interface CountyExtraSection {
   heading: string;
@@ -24,6 +25,7 @@ const BASE = "https://www.theroofstore.net";
 
 export function CountyPage({ county, slug, description, image, cities, extraSections }: CountyPageProps) {
   const countyUrl = `${BASE}/service-areas/${slug}`;
+  const local = countyLocalContent[slug];
 
   const schema = [
     {
@@ -46,7 +48,6 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
         "@type": "AdministrativeArea",
         name: `${county}, Florida`,
       },
-      priceRange: "$$",
       description: `Professional roof coating, tile restoration, and weatherproofing throughout ${county}, FL. A+ BBB Rated since 1994.`,
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -110,7 +111,7 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
     <div className="w-full">
       <SEO
         title={`Roof Coating Contractor in ${county}, FL — The Roof Store`}
-        description={`Looking for a roof coating contractor in ${county}? The Roof Store provides professional elastomeric roof coating systems for tile, flat, shingle, and metal roofs that outperform standard paint — waterproof, hurricane-rated, licensed & insured, A+ BBB since 1994. Free inspection: 954-210-9614.`}
+        description={local?.metaDescription ?? `Looking for a roof coating contractor in ${county}? The Roof Store provides professional elastomeric roof coating systems for tile, flat, shingle, and metal roofs that outperform standard paint — waterproof, hurricane-rated, licensed & insured, A+ BBB since 1994. Free inspection: 954-210-9614.`}
         canonical={`/service-areas/${slug}`}
         ogImage={
           slug === "broward-county" ? "/images/og/broward-county.jpg"
@@ -155,15 +156,13 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
                 <h2 className="text-3xl font-serif font-bold text-primary mb-4">
                   The Roof Store in {county}
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  The Roof Store has been protecting homes and commercial properties throughout {county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                  We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to 60–70% less than the cost of replacement. All work is performed by our licensed and insured team, backed by our A+ BBB rating and comprehensive performance warranties.
-                </p>
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right roof coating system for your specific needs.
-                </p>
+                {(local?.intro ?? [
+                  `The Roof Store has been protecting homes and commercial properties throughout ${county} for nearly 30 years. Our team of certified technicians provides expert rubber roof coating, tile restoration, and weatherproofing services to homeowners across the county.`,
+                  `We offer a proven alternative to costly roof replacement — our liquid-applied rubber roof shield system can restore and weatherproof your existing roof at up to 60–70% less than the cost of replacement. All work is performed by our licensed and insured team, backed by our A+ BBB rating and comprehensive performance warranties.`,
+                  `Whether you have a tile roof, flat deck, or metal roof, our certified technicians will provide a thorough inspection and recommend the right roof coating system for your specific needs.`,
+                ]).map((p, i) => (
+                  <p key={i} className="text-muted-foreground text-lg leading-relaxed mb-4">{p}</p>
+                ))}
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
@@ -228,6 +227,19 @@ export function CountyPage({ county, slug, description, image, cities, extraSect
                   </div>
                 </motion.div>
               ))}
+
+              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+                <div className="bg-muted/40 border rounded-lg px-5 py-4">
+                  <div className="text-xs font-bold text-primary uppercase tracking-wide mb-1.5">Contractors &amp; DIY — buy factory-direct</div>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-2.5">
+                    Not looking for full-service installation? Buy the same 100% liquid rubber coatings we use across {county} at factory pricing — shipped anywhere, or picked up at our Davie, FL facility. Custom colors tinted in-house.
+                  </p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                    <Link href="/shop" className="text-accent font-semibold hover:underline">Shop factory-direct →</Link>
+                    <Link href="/roof-systems" className="text-accent font-semibold hover:underline">View product specs →</Link>
+                  </div>
+                </div>
+              </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-6">Cities We Serve in {county}</h3>

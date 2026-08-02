@@ -83,7 +83,6 @@ const BUSINESS_CORE = {
     addressCountry: "US",
   },
   geo: { "@type": "GeoCoordinates", latitude: 26.0765, longitude: -80.2521 },
-  priceRange: "$$",
   image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
   logo: `${BASE}/assets/images/logo.png`,
   foundingDate: "1994",

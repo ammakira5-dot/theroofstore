@@ -1,9 +1,17 @@
+import { entries as browardFaqs } from "./cityFaqsBroward";
+import { entries as miamiDadeFaqs } from "./cityFaqsMiamiDade";
+import { entries as palmBeachFaqs } from "./cityFaqsPalmBeach";
 export interface CityFaq {
   q: string;
   a: string;
 }
 
+
 export const cityFaqOverrides: Record<string, CityFaq[]> = {
+  ...browardFaqs,
+  ...miamiDadeFaqs,
+  ...palmBeachFaqs,
+
   "fort-lauderdale": [
     {
       q: "How much does roof coating cost in Fort Lauderdale, FL?",

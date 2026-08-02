@@ -27,3 +27,11 @@ Owner ran the three audit findings through Google AI Mode; agent ran an independ
 - **Pending: RoofShield Strength Data Sheet PDF (noted July 31, 2026, NOT actioned yet):** owner wants a second PDF button added on the Roof Shield product detail page (/products/roofshield) alongside the existing product presentation PDF, labeled "RoofShield Strength Data Sheet (PDF)". Owner will supply the file / say when. Do not add until he asks.
 - **Image-context rule (owner-requested July 31, 2026):** photos must match the roof type the surrounding text references. "Flat cement tile roof" ≠ "flat roof" — showing the wrong one confuses buyers; Spanish tile copy must show a Spanish tile roof, flat/low-slope copy must show a flat roof, etc. Applies to all city-page content, pilot pages, and any photo tasks.
 - **CTA scheme (owner-decided July 31, 2026):** two buttons + one line. Button 1 installation with "contracting" language (e.g. "We Install It — Free Contracting Estimate"); Button 2 product-only (e.g. "Buy the Product — Ship or Pickup"); small line beneath: "Not sure yet? Get both quotes — product-only and installed — and decide later." Captures undecided buyers comparing installers. Wording only — no layout/nav changes. Any task touching CTAs must apply this scheme.
+
+## Status Aug 1 2026 (evening batch) — CONTENT LAYER COMPLETE
+- Deep write-ups (localContent): all 105 cities done — PB 39 + Key West added via per-county files (localContentPB1/PB2.ts) spread-merged into localContent.ts.
+- FAQs (cityFaqOverrides): all 105 cities done via cityFaqsBroward/MiamiDade/PalmBeach.ts merges.
+- County hubs: countyContent.ts adds unique intros + custom meta descriptions to all 4; factory-direct lane added to CountyPage (project task "county hub buy-direct lane" is now satisfied).
+- priceRange "$$" schema removed site-wide per price lockdown.
+- STILL PENDING OWNER: existing hand-written meta descriptions cite replacement costs ("$20K+ tear-off", "$18–25K") — competitor-cost figures, not our prices; owner never ruled on these (same class as blog figures).
+- Counting lesson: content keys may be bare (unquoted) — count with a regex that accepts both, or numbers come out wrong (owner caught this twice).

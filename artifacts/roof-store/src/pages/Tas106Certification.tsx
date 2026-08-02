@@ -208,7 +208,7 @@ const tocItems = [
   { href: "#how-roof-shield-passed", label: "How Roof Shield (RP3) Passed the Test" },
   { href: "#monolithic", label: "The Monolithic System — Why It Works" },
   { href: "#five-times-stronger", label: "5× Stronger Than a New Tile Roof — Explained" },
-  { href: "#why-no-others", label: "Why No Other Liquid Coating Has Passed" },
+  { href: "#why-no-others", label: "Why No Other Liquid Coating System Has Passed" },
   { href: "#insurance", label: "What TAS-106 Means for Your Insurance" },
   { href: "#specs", label: "Technical Specifications" },
   { href: "#verify", label: "How to Verify the Test Result" },
@@ -710,9 +710,9 @@ export default function Tas106Certification() {
 
         {/* Section 6 — Why No Others */}
         <motion.section id="why-no-others" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Why No Other Liquid Coating Has Passed the TAS-106 Test</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Why No Other Liquid Coating System Has Passed the TAS-106 Test</h2>
           <AnswerBlock>
-            No other liquid-applied roof coating in the world has passed the Dade County Certified TAS-106 Uplift Test because standard coating products are not designed to bond individual roof tiles into a monolithic structure. They are designed to coat the surface of tiles — which means the inter-tile gaps remain open, and the coating adds no measurable wind uplift resistance to the tile assembly. Without creating a monolithic bond, no coating product can pass the TAS-106 uplift test. The Roof Shield (RP3) formulation and application protocol were specifically engineered to fill those gaps and achieve the structural bond required to pass the Dade County Certified TAS-106 Uplift Test.
+            No other liquid-applied roof coating in the world has passed the Dade County Certified TAS-106 Uplift Test because standard coating products are not designed to bond individual roof tiles into a monolithic structure. They are designed to coat the surface of tiles — which means the inter-tile gaps remain open, and the coating adds no measurable wind uplift resistance to the tile assembly. Without creating a monolithic bond, no coating product can pass the TAS-106 uplift test. The Roof Shield (RP3) formulation and application protocol were specifically engineered to fill those gaps and achieve the structural bond required to pass the Dade County Certified TAS-106 Uplift Test. And it achieved these uplift pressures not on a brand-new laboratory mock-up, but on a 30+ year old existing tile roof — an aged, real-world roof assembly, which makes the result even harder for any other product to match.
           </AnswerBlock>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">The Technical Barrier Other Products Cannot Clear</h3>

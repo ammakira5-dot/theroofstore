@@ -1046,6 +1046,24 @@ export default function TrademarkEvidenceFile() {
               </ol>
             </div>
 
+            {/* Exhibit U — Respondent's Own Product Listing Confirms Source of AI Misattribution */}
+            <h4 className="text-sm font-bold uppercase tracking-wide text-gray-700 mt-6 mb-3">Exhibit U — Respondent's Own Live Product Listing Confirms the Source of the AI Misattribution (Verified August 2, 2026)</h4>
+            <p className="text-sm font-sans mb-3 leading-relaxed">
+              On August 2, 2026, the product described in the Google AI answer (Exhibit T) was located <strong>for sale on the respondent's own website</strong>, at <span className="font-mono text-xs">https://www.theroof.store/product/the-roof-store-synthetic-roofing-underlayment</span>. The live listing is titled <strong>"The Roof Store Synthetic Roofing Underlayment ASTM D8257"</strong> and its product description states verbatim: <em>"Florida Approval # 48228. Intertek CCRR 0401. 100 GSM. Passes ASTM D8257. The Roof Store Synthetic Roofing Underlayment is coated, woven polypropylene mechanically attached underlayment."</em>
+            </p>
+            <div className="border border-red-300 bg-red-50 rounded p-3 text-sm font-sans text-red-900 leading-relaxed mb-3">
+              <strong>This closes the loop on Exhibit T.</strong> Every identifying detail the Google AI attributed to "The Roof Store" — the product name, "woven polypropylene," ASTM D8257, and Florida Building Code approval #48228 — matches, word for word, the respondent's own product listing on theroof.store. The AI misattribution is not a hallucination of a non-existent product: it is the respondent's actual product, branded with the words "The Roof Store" in its product name, being presented to consumers under the complainant's identity.
+            </div>
+            <p className="text-sm font-sans mb-2 leading-relaxed"><strong>Domain and priority timeline (public records, retrieved August 2, 2026):</strong></p>
+            <ul className="list-disc pl-5 text-sm font-sans space-y-1 mb-3">
+              <li><strong>theroofstore.net</strong> (complainant): first archived by the Internet Archive on <strong>April 28, 2001</strong> — continuous public use of the trade name for over 25 years, with company use dating to 1994.</li>
+              <li><strong>theroof.store</strong> (respondent): registered <strong>August 13, 2021</strong> (registry RDAP record, Tucows Registry; registrar GoDaddy.com, LLC), first archived December 27, 2021, operating as an online roofing-materials store by December 2022.</li>
+              <li>The respondent therefore entered the market approximately <strong>27 years after</strong> the complainant's first use and <strong>20 years after</strong> the complainant's domain was publicly archived — naming its house-brand underlayment product "The Roof Store Synthetic Roofing Underlayment."</li>
+            </ul>
+            <div className="border border-amber-300 bg-amber-50 rounded p-3 text-sm font-sans text-amber-900 leading-relaxed mb-4">
+              <strong>Relevance to bad faith:</strong> The respondent did not merely register a confusingly similar domain — it placed the complainant's exact trade name inside a product title ("The Roof Store Synthetic Roofing Underlayment") for a product category (roofing underlayment, the core material of tile lift-off/re-roofing) that is the direct commercial antithesis of the complainant's publicly established "Don't Re-Roof" market position. Search and AI systems indexing that product title now attribute the respondent's re-roofing product to the complainant, as documented in Exhibit T.
+            </div>
+
             {/* Google Damages */}
             <h4 className="text-sm font-bold uppercase tracking-wide text-gray-700 mt-6 mb-3">Google Platform Financial Damages — Three-Tier Estimate</h4>
             <p className="text-xs font-sans text-gray-500 italic mb-3">Preliminary estimates only. All figures should be reviewed by counsel and/or a forensic economic expert before use in any proceeding or demand letter.</p>

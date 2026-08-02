@@ -83,7 +83,7 @@ const credentials = [
   "State-of-the-Art Roof Waterproofing System",
   "Online References with Verifiable Phone Numbers",
   "A+ BBB Rated Since 1994",
-  "TAS-106 Uplift Pull Test Certified",
+  "Passed the Dade County Certified TAS-106 Uplift Pull Test",
 ];
 
 const steps = [

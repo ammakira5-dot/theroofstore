@@ -40,12 +40,12 @@ const systems = [
   {
     name: "RoofShield (RP3)",
     lifespan: "Lifetime (Renewable)",
-    sub: "Flagship system — TAS-106 certified, 135+ MPH rated",
+    sub: "Flagship system — passed the Dade County Certified TAS-106 Uplift Test, 135+ MPH test-verified",
     icon: Wind,
     color: "bg-primary/5 border-primary/20",
     badge: "bg-primary/10 text-primary",
     details: [
-      "World's only liquid roof coating with Dade County TAS-106 Uplift certification",
+      "World's only liquid roof coating to pass the Dade County Certified TAS-106 Uplift Test",
       "Documented 135+ MPH wind resistance on real hurricane events",
       "Fills all gaps between tiles — creates monolithic surface",
       "Lifetime Transferable & Renewable Warranty",
@@ -68,7 +68,7 @@ const factors = [
   {
     icon: Wind,
     title: "Hurricane-Force Winds",
-    desc: "A roof coating that hasn't been properly adhered and built up in layers will fail under wind pressure. Our systems are applied in multiple coats with proper surface preparation — and RoofShield is the only coating ever independently tested and certified to Dade County's TAS-106 Uplift standard.",
+    desc: "A roof coating that hasn't been properly adhered and built up in layers will fail under wind pressure. Our systems are applied in multiple coats with proper surface preparation — and RoofShield is the only coating ever independently tested to, and to pass, Dade County's TAS-106 Certified Uplift Test.",
   },
   {
     icon: Clock,

@@ -38,7 +38,7 @@ const roofTypes = [
       "Reinforced polyester membrane bonded to the substrate",
       "Self-leveling — fills low spots and eliminates ponding zones",
       "Extends roof life 15–25 years from application date",
-      "Passes Dade County TAS-106 uplift pull-test certification",
+      "Passed the Dade County Certified TAS-106 Uplift Pull Test",
     ],
     systems: ["Multi-ply built-up roofing", "Modified bitumen cap sheets", "Gravel-ballasted BUR", "Torchdown mod-bit systems"],
   },
@@ -136,7 +136,7 @@ export default function CommercialRoofs() {
         address: { "@type": "PostalAddress", addressLocality: "Davie", addressRegion: "FL", postalCode: "33328", addressCountry: "US" },
       },
       areaServed: ["Broward County, FL", "Miami-Dade County, FL", "Palm Beach County, FL"],
-      description: "Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. TAS-106 certified.",
+      description: "Commercial flat deck, built-up roofing (BUR), modified bitumen, and metal roof waterproofing in South Florida. No tear-off. Seamless rubber membrane systems. Passed the Dade County Certified TAS-106 Uplift Test.",
       serviceType: "Commercial Roof Waterproofing",
     },
     {
@@ -154,7 +154,7 @@ export default function CommercialRoofs() {
     <div className="w-full">
       <SEO
         title="Commercial Flat Roof & Metal Waterproofing | The Roof Store FL"
-        description="Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. TAS-106 certified. Call 954-210-9614."
+        description="Commercial flat deck, BUR, modified bitumen, and metal roof waterproofing in South Florida. Silicone-grade coatings rated for ponding water and negative-pitch roofs. No tear-off. Seamless membrane systems. Passed the Dade County Certified TAS-106 Uplift Test. Call 954-210-9614."
         canonical="/commercial-roofs"
         schema={schema}
       />
@@ -169,7 +169,7 @@ export default function CommercialRoofs() {
               Flat Decks, Built-Up Roofs, Modified Bitumen & Metal Roofs
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              Waterproofed. Rubber membrane sealed. No tear-off required. The same TAS-106 Dade County certified system used on residential roofs — engineered for commercial performance.
+              Waterproofed. Rubber membrane sealed. No tear-off required. The same system that passed the Dade County Certified TAS-106 Uplift Test, used on residential roofs — engineered for commercial performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
@@ -188,7 +188,7 @@ export default function CommercialRoofs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
             {[
               { stat: "30+", label: "Years Waterproofing Commercial Roofs" },
-              { stat: "TAS-106", label: "Dade County Uplift Certified" },
+              { stat: "TAS-106", label: "Dade County Uplift Certified Test" },
               { stat: "No Tear-Off", label: "Apply Over Existing System" },
               { stat: "A+", label: "BBB Rating Since 1994" },
             ].map((item, i) => (
@@ -370,10 +370,10 @@ export default function CommercialRoofs() {
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="h-6 w-6 text-accent" />
-                <span className="font-bold text-primary text-lg">TAS-106 Dade County Certified</span>
+                <span className="font-bold text-primary text-lg">Passed the Dade County Certified TAS-106 Uplift Test</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Our rubber membrane system is the only liquid-applied roof coating in the world to pass the Dade County TAS-106 Uplift Pull Test on an existing tile roof system. That same certification backs every commercial flat deck, BUR, mod-bit, and metal roof we apply it to.
+                Our rubber membrane system is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Pull Test on an existing tile roof system. That same test-verified performance backs every commercial flat deck, BUR, mod-bit, and metal roof we apply it to.
               </p>
             </div>
             <div className="shrink-0">

@@ -16,8 +16,8 @@ const diyRisks = [
     desc: "In Florida, applying a roof coating system to a residential or commercial structure typically requires a licensed roofing contractor (CCC or CC license class). DIY on your own home is not prohibited, but if you later sell or refinance, an unlicensed installation may create disclosure and title issues.",
   },
   {
-    title: "TAS-106 Certification Requires Licensed Application",
-    desc: "The world's only liquid roof coating with Dade County TAS-106 Uplift certification is our Roof Shield (RP3) system. That certification is tied to our licensed installation process. A DIY application of the same coating materials would not carry TAS-106 certification — the system's hurricane performance documentation only applies to professionally installed work.",
+    title: "TAS-106 Certified Test Result Requires Licensed Application",
+    desc: "The world's only liquid roof coating to pass the Dade County Certified TAS-106 Uplift Test is our Roof Shield (RP3) system. That test result is tied to our licensed installation process. A DIY application of the same coating materials would not carry the TAS-106 Certified Test result — the system's hurricane performance documentation only applies to professionally installed work.",
   },
   {
     title: "Insurance Certification Requires a Licensed Contractor",
@@ -45,7 +45,7 @@ const whatProsDo = [
 const diyFaqs = [
   {
     q: "Can I apply roof coating myself in Florida?",
-    a: "On your own residence, DIY application is not legally prohibited. However, it comes with significant limitations: no TAS-106 certification on the installed system, no Additional Roof Life Certification for insurance purposes, voided product warranty, and — frankly — results that rarely match a professional installation. Florida's climate demands multi-coat systems with proper surface prep, and cutting corners on either shortens lifespan dramatically.",
+    a: "On your own residence, DIY application is not legally prohibited. However, it comes with significant limitations: no TAS-106 Certified Test result on the installed system, no Additional Roof Life Certification for insurance purposes, voided product warranty, and — frankly — results that rarely match a professional installation. Florida's climate demands multi-coat systems with proper surface prep, and cutting corners on either shortens lifespan dramatically.",
   },
   {
     q: "What equipment would I need to DIY a roof coating in Florida?",
@@ -70,7 +70,7 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "DIY vs. Professional Roof Coating in Florida: What You Need to Know",
-    description: "Honest comparison of DIY vs. professional roof coating in Florida — covering licensing requirements, TAS-106 certification, insurance implications, surface prep, and true cost of each approach.",
+    description: "Honest comparison of DIY vs. professional roof coating in Florida — covering licensing requirements, the Dade County Certified TAS-106 Uplift Test, insurance implications, surface prep, and true cost of each approach.",
     author: { "@type": "Organization", name: "The Roof Store", url: BASE },
     publisher: {
       "@type": "Organization",
@@ -106,7 +106,7 @@ export default function DiyVsPro() {
     <div className="w-full">
       <SEO
         title="DIY vs. Professional Roof Coating in Florida | The Roof Store"
-        description="Honest comparison of DIY vs. professional roof coating in Florida — TAS-106 certification, insurance certification, surface prep, product warranty, and true cost breakdown. From South Florida's original coating contractor."
+        description="Honest comparison of DIY vs. professional roof coating in Florida — the Dade County Certified TAS-106 Uplift Test, insurance certification, surface prep, product warranty, and true cost breakdown. From South Florida's original coating contractor."
         canonical="/diy-vs-pro-roof-coating"
         schema={schema}
       />
@@ -143,7 +143,7 @@ export default function DiyVsPro() {
               </div>
               <ul className="space-y-3">
                 {[
-                  "No TAS-106 hurricane certification on installed system",
+                  "No TAS-106 hurricane test-verified result on installed system",
                   "No Additional Roof Life Certification for insurance",
                   "Product warranty voided",
                   "Equipment cost: $1,500–$3,000 before materials",
@@ -166,7 +166,7 @@ export default function DiyVsPro() {
               </div>
               <ul className="space-y-3">
                 {[
-                  "TAS-106 certified on RoofShield (RP3) — 135+ MPH rated",
+                  "TAS-106 Certified Test verified on RoofShield (RP3) — 135+ MPH rated",
                   "Additional Roof Life Certification available for insurance",
                   "Written product warranty (5 yr / 10 yr / Lifetime)",
                   "Commercial-grade equipment included in price",

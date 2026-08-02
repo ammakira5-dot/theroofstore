@@ -102,7 +102,7 @@ export function Footer() {
               <li><Link href="/blog" className="text-primary-foreground/80 hover:text-accent transition-colors">Blog</Link></li>
               <li><Link href="/faq" className="text-primary-foreground/80 hover:text-accent transition-colors">FAQ</Link></li>
               <li><Link href="/manufacturers-report" className="text-primary-foreground/80 hover:text-accent transition-colors">Inspection Report</Link></li>
-              <li><Link href="/tas-106-certified-roof-coating" className="text-primary-foreground/80 hover:text-accent transition-colors">TAS-106 Certification</Link></li>
+              <li><Link href="/tas-106-certified-roof-coating" className="text-primary-foreground/80 hover:text-accent transition-colors">TAS-106 Certified Test</Link></li>
             </ul>
           </div>
           

@@ -369,7 +369,7 @@ export const tileServicePages: TileServicePageData[] = [
       { href: "/spanish-tile-roof-coating", label: "Spanish Tile Roof Coating" },
       { href: "/spanish-tile-roof-painting", label: "Spanish Tile Roof Painting" },
       { href: "/products/roofshield", label: "RoofShield (RP3) Product Page" },
-      { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified Roof Coating" },
+      { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified Test Roof Coating" },
       { href: "/roof-services", label: "All Roof Coating & Restoration Services" },
     ],
   },

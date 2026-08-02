@@ -39,7 +39,7 @@ const videos: VideoEntry[] = [
     customer: null,
     location: null,
     quote: null,
-    desc: "Watch the independent Dade County TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Certified, documented, and still standing 16 years later.",
+    desc: "Watch the independent Dade County Certified TAS-106 Uplift Pull Test — the only test of its kind performed on a liquid roof coating system in the world. Passed, documented, and still standing 16 years later.",
     uploadDate: "2020-12-31T11:22:54-08:00",
   },
 ];
@@ -100,7 +100,7 @@ export default function Videos() {
             </div>
             <h1 className="text-5xl font-serif font-bold mb-6">Videos</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Real customers, real tests, real results. Watch the TAS-106 Dade County uplift certification and hear from homeowners who've been through hurricane season with our systems on their roof.
+              Real customers, real tests, real results. Watch the Dade County Certified TAS-106 Uplift Test and hear from homeowners who've been through hurricane season with our systems on their roof.
             </p>
           </motion.div>
         </div>
@@ -208,7 +208,7 @@ export default function Videos() {
         <div className="container px-4 max-w-3xl mx-auto">
           <h2 className="text-4xl font-serif font-bold mb-5">Ready to Protect Your Roof?</h2>
           <p className="text-xl text-white/75 mb-8">
-            The same system you just saw tested and certified — available for your roof today.
+            The same system you just saw tested and test-verified — available for your roof today.
           </p>
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white h-14 px-10 text-lg">
             <Link href="/contact">Free Roof Evaluation & Estimate</Link>

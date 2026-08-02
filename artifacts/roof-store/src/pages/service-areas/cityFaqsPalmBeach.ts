@@ -88,7 +88,7 @@ export const entries: Record<string, CityFaq[]> = {
   "greenacres": [
     {
       q: "What roof coating system is best for Greenacres tile homes?",
-      a: "Greenacres grew heavily through the 1980s and 90s, so there's a large stock of barrel and S-tile homes in communities like Original Greenacres, Pine Ridge, and the many west-side subdivisions. Most are structurally sound but showing algae, UV fading, and cracked mortar — exactly what SmartShield (RP2) corrects, with a 10-year warranty. For homeowners focused on insurance, RoofShield (RP3) adds TAS-106 hurricane wind-uplift certification.",
+      a: "Greenacres grew heavily through the 1980s and 90s, so there's a large stock of barrel and S-tile homes in communities like Original Greenacres, Pine Ridge, and the many west-side subdivisions. Most are structurally sound but showing algae, UV fading, and cracked mortar — exactly what SmartShield (RP2) corrects, with a 10-year warranty. For homeowners focused on insurance, RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will my Greenacres HOA approve a roof coating?",
@@ -158,7 +158,7 @@ export const entries: Record<string, CityFaq[]> = {
   "juno-beach": [
     {
       q: "Can roof coating stand up to the coastal exposure in Juno Beach, FL?",
-      a: "Yes. Juno Beach sits right on the Atlantic north of Palm Beach Gardens, so its tile-roofed homes and low-rise oceanfront condos face steady salt spray and intense sun. Our SmartShield (RP2) system seals barrel and S-tile against moisture and uses BASF Cool Pigment Technology to reflect heat, and RoofShield (RP3) adds TAS-106 wind-uplift certification for this exposed stretch of coast.",
+      a: "Yes. Juno Beach sits right on the Atlantic north of Palm Beach Gardens, so its tile-roofed homes and low-rise oceanfront condos face steady salt spray and intense sun. Our SmartShield (RP2) system seals barrel and S-tile against moisture and uses BASF Cool Pigment Technology to reflect heat, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for this exposed stretch of coast.",
     },
     {
       q: "Will my Juno Beach HOA or condo board approve a roof coating?",
@@ -172,7 +172,7 @@ export const entries: Record<string, CityFaq[]> = {
   "jupiter": [
     {
       q: "What roof coating system is best for Jupiter, FL tile homes?",
-      a: "Jupiter has a huge stock of barrel and S-tile roofs across communities like Abacoa, Jupiter Farms, Egret Landing, and the Loxahatchee-area neighborhoods, many built from the 1980s onward. Most are structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. Coastal and Intracoastal-adjacent homes near the inlet benefit from RoofShield (RP3), which adds TAS-106 hurricane wind-uplift certification.",
+      a: "Jupiter has a huge stock of barrel and S-tile roofs across communities like Abacoa, Jupiter Farms, Egret Landing, and the Loxahatchee-area neighborhoods, many built from the 1980s onward. Most are structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. Coastal and Intracoastal-adjacent homes near the inlet benefit from RoofShield (RP3), which is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will my Jupiter HOA approve a roof coating and color change?",
@@ -232,7 +232,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "How does being near the ocean and Intracoastal affect roofs in Lake Worth Beach?",
-      a: "Lake Worth Beach sits between the Atlantic and the Intracoastal, so salt air and high humidity accelerate algae growth, mortar breakdown, and corrosion on metal roofs. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, monolithic barrier, and RoofShield (RP3) adds TAS-106 wind-uplift certification for the exposed east-side neighborhoods.",
+      a: "Lake Worth Beach sits between the Atlantic and the Intracoastal, so salt air and high humidity accelerate algae growth, mortar breakdown, and corrosion on metal roofs. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, monolithic barrier, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for the exposed east-side neighborhoods.",
     },
     {
       q: "How much does roof coating cost in Lake Worth Beach, FL?",
@@ -298,7 +298,7 @@ export const entries: Record<string, CityFaq[]> = {
   "north-palm-beach": [
     {
       q: "What roof coating system is best for North Palm Beach, FL homes?",
-      a: "North Palm Beach has a large stock of barrel and S-tile roofs across its waterfront and golf-course neighborhoods near the Village Country Club, many built from the 1960s onward. Most are structurally sound but show algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. Intracoastal-adjacent homes benefit from RoofShield (RP3), which adds TAS-106 hurricane wind-uplift certification.",
+      a: "North Palm Beach has a large stock of barrel and S-tile roofs across its waterfront and golf-course neighborhoods near the Village Country Club, many built from the 1960s onward. Most are structurally sound but show algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. Intracoastal-adjacent homes benefit from RoofShield (RP3), which is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will my North Palm Beach HOA or condo board approve a roof coating?",
@@ -312,7 +312,7 @@ export const entries: Record<string, CityFaq[]> = {
   "ocean-ridge": [
     {
       q: "How does barrier-island salt exposure affect roofs in Ocean Ridge, FL?",
-      a: "Ocean Ridge is a barrier-island town between the Atlantic and the Intracoastal, so its tile-roofed homes and low-rise condos take heavy salt spray from both sides. That accelerates tile staining, mortar breakdown, and corrosion. Our SmartShield (RP2) system seals barrel and flat tile with a salt-resistant, waterproof barrier, and RoofShield (RP3) adds TAS-106 wind-uplift certification for this exposed coastline.",
+      a: "Ocean Ridge is a barrier-island town between the Atlantic and the Intracoastal, so its tile-roofed homes and low-rise condos take heavy salt spray from both sides. That accelerates tile staining, mortar breakdown, and corrosion. Our SmartShield (RP2) system seals barrel and flat tile with a salt-resistant, waterproof barrier, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for this exposed coastline.",
     },
     {
       q: "Do you provide documentation for Ocean Ridge town review and insurers?",
@@ -354,7 +354,7 @@ export const entries: Record<string, CityFaq[]> = {
   "palm-beach-gardens": [
     {
       q: "What roof coating system is best for Palm Beach Gardens, FL tile homes?",
-      a: "Palm Beach Gardens has an enormous stock of barrel and S-tile roofs across PGA National, BallenIsles, Frenchman's Creek, Mirasol, and the many gated golf communities, most built from the 1980s on. They're typically structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. For insurance-focused homeowners, RoofShield (RP3) adds TAS-106 hurricane wind-uplift certification.",
+      a: "Palm Beach Gardens has an enormous stock of barrel and S-tile roofs across PGA National, BallenIsles, Frenchman's Creek, Mirasol, and the many gated golf communities, most built from the 1980s on. They're typically structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2) with a 10-year warranty. For insurance-focused homeowners, RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will my Palm Beach Gardens HOA approve a roof coating and color change?",
@@ -400,7 +400,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "How does coastal and Intracoastal salt affect roofs in Riviera Beach?",
-      a: "Riviera Beach stretches from the mainland out to Singer Island, so salt air and humidity accelerate algae, mortar breakdown, and metal corrosion. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, waterproof barrier, and RoofShield (RP3) adds TAS-106 wind-uplift certification for the exposed island and waterfront neighborhoods.",
+      a: "Riviera Beach stretches from the mainland out to Singer Island, so salt air and humidity accelerate algae, mortar breakdown, and metal corrosion. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, waterproof barrier, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for the exposed island and waterfront neighborhoods.",
     },
     {
       q: "How much does roof coating cost in Riviera Beach, FL?",
@@ -410,7 +410,7 @@ export const entries: Record<string, CityFaq[]> = {
   "royal-palm-beach": [
     {
       q: "What roof coating system is best for Royal Palm Beach, FL tile homes?",
-      a: "Royal Palm Beach expanded rapidly through the 1980s and 90s, so its neighborhoods — Madison Green, Counterpoint Estates, La Mancha, and the many western subdivisions — are full of barrel and S-tile roofs now reaching prime restoration age. Most are structurally sound but showing algae, UV fading, and cracked mortar, ideal for SmartShield (RP2) with a 10-year warranty. RoofShield (RP3) adds TAS-106 wind-uplift certification for insurance documentation.",
+      a: "Royal Palm Beach expanded rapidly through the 1980s and 90s, so its neighborhoods — Madison Green, Counterpoint Estates, La Mancha, and the many western subdivisions — are full of barrel and S-tile roofs now reaching prime restoration age. Most are structurally sound but showing algae, UV fading, and cracked mortar, ideal for SmartShield (RP2) with a 10-year warranty. RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for insurance documentation.",
     },
     {
       q: "Will my Royal Palm Beach HOA approve a roof coating?",
@@ -452,7 +452,7 @@ export const entries: Record<string, CityFaq[]> = {
   "tequesta": [
     {
       q: "What roof coating system is best for Tequesta, FL tile homes?",
-      a: "The Village of Tequesta, tucked along the Loxahatchee River at the county's northern edge, has many barrel and S-tile roofs across communities like Tequesta Country Club and the riverfront neighborhoods, plus older homes from the village's mid-century growth. Most are structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2). Riverfront and coastal-adjacent homes benefit from RoofShield (RP3) with TAS-106 wind-uplift certification.",
+      a: "The Village of Tequesta, tucked along the Loxahatchee River at the county's northern edge, has many barrel and S-tile roofs across communities like Tequesta Country Club and the riverfront neighborhoods, plus older homes from the village's mid-century growth. Most are structurally sound but showing algae, UV fading, and cracked mortar — ideal for SmartShield (RP2). Riverfront and coastal-adjacent homes benefit from RoofShield (RP3) verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will my Tequesta HOA approve a roof coating and color change?",
@@ -466,7 +466,7 @@ export const entries: Record<string, CityFaq[]> = {
   "wellington": [
     {
       q: "What roof coating system is best for Wellington, FL tile homes?",
-      a: "Wellington's master-planned communities — the equestrian preserve, Olympia, Versailles, Binks Forest, and the many gated neighborhoods — are dominated by 1990s and 2000s barrel and S-tile roofs now reaching prime restoration age. Most are structurally sound but showing algae, UV fading, and cracked mortar, ideal for SmartShield (RP2) with a 10-year warranty. RoofShield (RP3) adds TAS-106 hurricane wind-uplift certification for insurance-focused homeowners.",
+      a: "Wellington's master-planned communities — the equestrian preserve, Olympia, Versailles, Binks Forest, and the many gated neighborhoods — are dominated by 1990s and 2000s barrel and S-tile roofs now reaching prime restoration age. Most are structurally sound but showing algae, UV fading, and cracked mortar, ideal for SmartShield (RP2) with a 10-year warranty. RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for insurance-focused homeowners.",
     },
     {
       q: "Will my Wellington HOA approve a roof coating and color change?",
@@ -498,7 +498,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "How does Key West's extreme salt and storm exposure affect roof choices?",
-      a: "Sitting at the end of the Keys, Key West takes some of the harshest salt exposure and hurricane risk in Florida. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, monolithic waterproof barrier, and RoofShield (RP3) adds TAS-106 wind-uplift certification, the highest hurricane resistance standard in the US, which matters greatly on the island. Any historic-district work is coordinated with the appropriate review requirements.",
+      a: "Sitting at the end of the Keys, Key West takes some of the harshest salt exposure and hurricane risk in Florida. Our RoofProtect Products coatings — manufactured in-house and applied through SmartShield (RP2) — form a salt-resistant, monolithic waterproof barrier, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test, the highest hurricane resistance standard in the US, which matters greatly on the island. Any historic-district work is coordinated with the appropriate review requirements.",
     },
     {
       q: "How much does roof coating cost in Key West, FL?",

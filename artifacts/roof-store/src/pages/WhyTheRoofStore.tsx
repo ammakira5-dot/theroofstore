@@ -40,22 +40,22 @@ const tiers = [
 const proofPoints = [
   {
     Icon: Wind,
-    title: "TAS-106 Hurricane Certification",
-    desc: "Roof Shield (RP3) is the only liquid-applied roof coating in the world to hold Dade County TAS-106 Uplift certification (2006) — with documented 135+ MPH performance in real hurricane events.",
+    title: "TAS-106 Hurricane Uplift Test",
+    desc: "Roof Shield (RP3) is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test (2006) — with documented 135+ MPH performance in real hurricane events.",
     href: "/tas-106-certified-roof-coating",
-    linkLabel: "See the TAS-106 certification",
+    linkLabel: "See the TAS-106 test results",
   },
   {
     Icon: FileCheck2,
     title: "Additional Roof Life Certification",
-    desc: "Under Florida SB 2-D, an independent Useful Life Exam can document additional useful life for an aging roof — documentation that matters when your insurance carrier questions your roof's age. Our TAS-106-certified system and complete manufacturing records support that independent inspection.",
+    desc: "Under Florida SB 2-D, an independent Useful Life Exam can document additional useful life for an aging roof — documentation that matters when your insurance carrier questions your roof's age. Our system — which passed the Dade County Certified TAS-106 Uplift Test — and complete manufacturing records support that independent inspection.",
     href: "/roof-life-certification",
     linkLabel: "How the certification works",
   },
   {
     Icon: ShieldCheck,
     title: "Three Systems, One Source",
-    desc: "Fungal Shield (RP1) for mold and biological growth. Smart Shield (RP2) with 3,000+ cool-pigment colors that reflect UV. Roof Shield (RP3), the premium TAS-106-certified monolithic system. Every one built from materials made in our own Davie factory.",
+    desc: "Fungal Shield (RP1) for mold and biological growth. Smart Shield (RP2) with 3,000+ cool-pigment colors that reflect UV. Roof Shield (RP3), the premium monolithic system that passed the Dade County Certified TAS-106 Uplift Test. Every one built from materials made in our own Davie factory.",
     href: "/roof-systems",
     linkLabel: "Compare the three systems",
   },
@@ -76,7 +76,7 @@ export default function WhyTheRoofStore() {
       name: "Why The Roof Store — Manufacturer, Retailer & Licensed Installer",
       url: `${BASE}/why-the-roof-store`,
       description:
-        "Why The Roof Store stands apart: one connected organization that manufactures (RoofProtect Products), retails (The Roof Store), and installs (Storm Shield Paint Systems Inc.) its own TAS-106-certified roof coating systems in Davie, Florida.",
+        "Why The Roof Store stands apart: one connected organization that manufactures (RoofProtect Products), retails (The Roof Store), and installs (Storm Shield Paint Systems Inc.) its own roof coating systems — one of which passed the Dade County Certified TAS-106 Uplift Test — in Davie, Florida.",
     },
     {
       "@context": "https://schema.org",
@@ -92,7 +92,7 @@ export default function WhyTheRoofStore() {
     <div className="w-full">
       <SEO
         title="Why The Roof Store — Manufacturer, Retailer & Licensed Installer in One"
-        description="One organization makes it, sells it, and installs it: RoofProtect Products manufactures, The Roof Store retails, Storm Shield Paint Systems installs. TAS-106 certified, factory-direct pricing, Davie FL since 1994."
+        description="One organization makes it, sells it, and installs it: RoofProtect Products manufactures, The Roof Store retails, Storm Shield Paint Systems installs. Passed the Dade County Certified TAS-106 Uplift Test, factory-direct pricing, Davie FL since 1994."
         canonical="/why-the-roof-store"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}
@@ -193,7 +193,7 @@ export default function WhyTheRoofStore() {
               {[
                 { label: "Licensed in Florida", value: "Since 1994" },
                 { label: "BBB Rating", value: "A+" },
-                { label: "TAS-106 Certified", value: "Since 2006" },
+                { label: "TAS-106 Certified Test", value: "Passed 2006" },
                 { label: "Homes Protected", value: "10,000+" },
               ].map((stat, i) => (
                 <div key={i} className="bg-card rounded-xl p-6 text-center border">

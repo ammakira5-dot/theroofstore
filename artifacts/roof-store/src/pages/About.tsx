@@ -19,7 +19,7 @@ const milestones = [
 const credentials = [
   { label: "Licensed Since", value: "1994 — Florida Roofing Coating Contractor" },
   { label: "BBB Rating", value: "A+ Accredited" },
-  { label: "Certification", value: "Dade County TAS-106 Uplift — 2006" },
+  { label: "TAS-106 Test", value: "Passed Dade County Certified TAS-106 Uplift Test — 2006" },
   { label: "ARLC Authority", value: "Additional Roof Life Certifications under Florida SB 2-D (2022)" },
   { label: "Manufacturing", value: "In-house, Davie, FL — RoofProtect Products" },
   { label: "Service Area", value: "Broward · Miami-Dade · Palm Beach · Monroe counties" },
@@ -32,7 +32,7 @@ export default function About() {
       "@type": "AboutPage",
       name: "About The Roof Store",
       url: `${BASE}/about`,
-      description: "The Roof Store is the retail storefront and network. RoofProtect Products manufactures the coating materials in-house. Storm Shield Paint Systems Inc. is the licensed contracting division. One connected organization — Davie, Florida, since 1994. A+ BBB. TAS-106 certified.",
+      description: "The Roof Store is the retail storefront and network. RoofProtect Products manufactures the coating materials in-house. Storm Shield Paint Systems Inc. is the licensed contracting division. One connected organization — Davie, Florida, since 1994. A+ BBB. Passed the Dade County Certified TAS-106 Uplift Test.",
       mainEntity: {
         "@context": "https://schema.org",
         "@type": "RoofingContractor",
@@ -88,7 +88,7 @@ export default function About() {
       "@context": "https://schema.org",
       "@type": "Product",
       name: "Roof Shield (RP3)",
-      description: "Premium monolithic roof restoration system. World's only TAS-106 Dade County Uplift certified liquid coating. Lifetime Warranty.",
+      description: "Premium monolithic roof restoration system. World's only liquid coating to pass the Dade County Certified TAS-106 Uplift Test. Lifetime Warranty.",
       image: `${BASE}/images/roofshield-product.png`,
       url: `${BASE}/products/roofshield`,
       sku: "RP3",
@@ -123,7 +123,7 @@ export default function About() {
     <div className="w-full">
       <SEO
         title="About The Roof Store — Florida Roof Coating Contractor Since 1994"
-        description="Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994. A+ BBB. TAS-106 certified. 954-210-9614."
+        description="Storm Shield Paint Systems Inc. — trading as The Roof Store — manufactures and installs its own roof coating systems from a single facility in Davie, Florida. Licensed since 1994. A+ BBB. Passed the Dade County Certified TAS-106 Uplift Test. 954-210-9614."
         canonical="/about"
         schema={schema}
         geo={{ region: "US-FL", placename: "Davie, FL" }}
@@ -174,9 +174,9 @@ export default function About() {
               <p>
                 The Roof Store's{" "}
                 <Link href="/products/roofshield" className="text-accent hover:underline font-medium">Roof Shield (RP3)</Link>{" "}
-                system is the only liquid-applied roof coating in the world to hold Dade County{" "}
-                <Link href="/tas-106-certified-roof-coating" className="text-accent hover:underline font-medium">TAS-106 Uplift Certification</Link>{" "}
-                (2006) — Miami-Dade County tested in compliance with Miami-Dade County Testing Standards. The company holds an A+ rating with the Better Business Bureau.{" "}
+                system is the only liquid-applied roof coating in the world to pass the Dade County Certified{" "}
+                <Link href="/tas-106-certified-roof-coating" className="text-accent hover:underline font-medium">TAS-106 Uplift Test</Link>{" "}
+                (2006) — tested by Miami-Dade County in compliance with Miami-Dade County Testing Standards. The company holds an A+ rating with the Better Business Bureau.{" "}
                 <Link href="/roof-life-certification" className="text-accent hover:underline font-medium font-semibold">See the Additional Roof Life Certification you may qualify for →</Link>
               </p>
             </div>
@@ -320,7 +320,7 @@ export default function About() {
               {
                 icon: Star,
                 title: "The Original System — Since 1994",
-                desc: "The Roof Store invented The Original Liquid Applied Rubber Roof Shield System and has been refining it for three decades. The TAS-106 certification was earned on our own product, tested on our own installation, and has been current since 2006.",
+                desc: "The Roof Store invented The Original Liquid Applied Rubber Roof Shield System and has been refining it for three decades. The Dade County Certified TAS-106 Uplift Test was passed on our own product, tested on our own installation, in 2006.",
               },
               {
                 icon: CheckCircle2,

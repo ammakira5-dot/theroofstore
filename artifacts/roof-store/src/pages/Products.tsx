@@ -100,12 +100,12 @@ const products = [
     iconColor: "text-primary",
     coverageSqFt: 50,
     summary:
-      "Not a coating — a complete multi-layer system that physically fills every gap, void, and space between your tiles with several of our proprietary products. The result: a monolithic roof where wind cannot lift individual tiles and rain has no spaces to enter through. The world's only TAS-106 Dade County Uplift Pull Test Rated liquid roof coating. 5× stronger than a new roof. ½ the cost. Lifetime warranty.",
+      "Not a coating — a complete multi-layer system that physically fills every gap, void, and space between your tiles with several of our proprietary products. The result: a monolithic roof where wind cannot lift individual tiles and rain has no spaces to enter through. The world's only liquid roof coating to pass the Dade County Certified TAS-106 Uplift Pull Test. 5× stronger than a new roof. ½ the cost. Lifetime warranty.",
     highlights: [
       "Fills every gap and void between tiles — multiple products, multiple layers",
       "Creates a monolithic roof: one continuous sealed structure, not individual tiles",
       "Wind cannot lift tiles — rain cannot enter — no gaps remain after installation",
-      "World's ONLY TAS-106 Dade County Uplift Pull Test Rated liquid coating",
+      "World's ONLY liquid coating to pass the Dade County Certified TAS-106 Uplift Pull Test",
       "135+ MPH documented real hurricane wind resistance — 5× stronger than a new roof",
       "½ the cost of full roof replacement — Lifetime Warranty, transferable & renewable",
       "Proactive maintenance puts homeowner in strongest position for an independent Useful Life Exam",
@@ -117,7 +117,7 @@ const products = [
       { label: "System Type", value: "Multi-layer — several proprietary products applied in sequence" },
       { label: "Key Mechanism", value: "Fills every tile gap and void → creates one monolithic sealed roof" },
       { label: "Coverage Rate", value: "~50 sq ft per gallon (multi-layer full system)" },
-      { label: "Certification", value: "TAS-106 Dade County Uplift Pull Test — only rated liquid coating worldwide" },
+      { label: "TAS-106 Test", value: "Passed the Dade County Certified TAS-106 Uplift Pull Test — only liquid coating worldwide to do so" },
       { label: "Wind Rating", value: "135+ MPH — documented real hurricane performance" },
       { label: "Wind Strength vs. New Roof", value: "5× stronger in wind uplift resistance" },
       { label: "Warranty", value: "Lifetime — Maintenance-Free, Transferable & Renewable" },
@@ -142,10 +142,10 @@ const comparisonRows = [
     note: "Most generic brands state \"not for use in ponding water\" on their label.",
   },
   {
-    feature: "TAS-106 Dade County Wind Uplift Certification",
+    feature: "Passed Dade County Certified TAS-106 Wind Uplift Test",
     ours: "passes",
     generic: "fails",
-    note: "No other coating in the world holds this certification.",
+    note: "No other coating in the world has passed this test.",
   },
   {
     feature: "Engineered base chemistry matched to your roof",
@@ -188,7 +188,7 @@ const comparisonRows = [
 const questions = [
   {
     q: "Does the product pass TAS-106 Dade County Wind Uplift?",
-    a: "This is the gold standard test for tile roof wind resistance in Florida. A new tile roof must pass minimum 35 lbs uplift in the field and 55 lbs at the ridge caps (≈120–130 MPH). Our Roof Shield (RP3) is the only liquid coating in the world that has received an independent TAS-106 certification. Ask any competitor to provide their TAS-106 documentation. Most cannot.",
+    a: "This is the gold standard test for tile roof wind resistance in Florida. A new tile roof must pass minimum 35 lbs uplift in the field and 55 lbs at the ridge caps (≈120–130 MPH). Our Roof Shield (RP3) is the only liquid coating in the world to pass the independent Dade County Certified TAS-106 Uplift Test. Ask any competitor to provide their TAS-106 test documentation. Most cannot.",
   },
   {
     q: "Is the product rated for ponding water and flat roofs?",
@@ -306,7 +306,7 @@ export default function Products() {
       "@context": "https://schema.org",
       "@type": "Product",
       name: "Roof Shield (RP3)",
-      description: "Premium monolithic roof restoration system. World's only TAS-106 Dade County Uplift certified liquid coating. Creates a seamless, gap-free surface over tile and flat roofs. Lifetime Warranty.",
+      description: "Premium monolithic roof restoration system. World's only liquid coating to pass the Dade County Certified TAS-106 Uplift Test. Creates a seamless, gap-free surface over tile and flat roofs. Lifetime Warranty.",
       image: `${BASE}/images/roofshield-bucket.webp`,
       url: `${BASE}/products/roofshield`,
       sku: "RP3",

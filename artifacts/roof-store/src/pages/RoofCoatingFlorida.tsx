@@ -48,7 +48,7 @@ const schema = [
         name: "What is roof coating and how does it work in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered rubber layer that waterproofs, reflects UV heat, and — in certified systems — provides wind uplift resistance. In Florida's climate, roof coating extends the life of tile, flat, metal, and shingle roofs by 10–25 years at up to 60–70% less than the cost of full replacement.",
+          text: "Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered rubber layer that waterproofs, reflects UV heat, and — in test-verified systems — provides wind uplift resistance. In Florida's climate, roof coating extends the life of tile, flat, metal, and shingle roofs by 10–25 years at up to 60–70% less than the cost of full replacement.",
         },
       },
       {
@@ -72,7 +72,7 @@ const schema = [
         name: "What is the difference between roof coating and roof paint in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Roof paint is a thin decorative coating (2–5 mils) that lasts 2–3 years with minimal waterproofing. Roof coating is a thick liquid-applied rubber membrane (20–40+ mils) that cures into a seamless, fully-adhered waterproof surface lasting 10–25 years, with manufacturer warranties and — in The Roof Store's RP3 system — hurricane wind uplift certification.",
+          text: "Roof paint is a thin decorative coating (2–5 mils) that lasts 2–3 years with minimal waterproofing. Roof coating is a thick liquid-applied rubber membrane (20–40+ mils) that cures into a seamless, fully-adhered waterproof surface lasting 10–25 years, with manufacturer warranties and — in The Roof Store's RP3 system — hurricane wind uplift performance verified by the Dade County Certified TAS-106 Uplift Test.",
         },
       },
       {
@@ -88,7 +88,7 @@ const schema = [
         name: "Is roof coating hurricane-rated in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold Dade County TAS-106 Uplift Certification (2023). The system has been validated at 135+ MPH and creates a monolithic roof structure with five times the wind uplift resistance of a standard new tile roof.",
+          text: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test. The system has been validated at 135+ MPH and creates a monolithic roof structure with five times the wind uplift resistance of a standard new tile roof.",
         },
       },
       {
@@ -146,7 +146,7 @@ const tocItems = [
   { href: "#residential", label: "Residential Roof Coating" },
   { href: "#commercial", label: "Commercial Roof Coating" },
   { href: "#insurance", label: "How Roof Coating Affects Homeowners Insurance" },
-  { href: "#hurricane", label: "TAS-106 — The Only Hurricane-Certified Liquid Coating" },
+  { href: "#hurricane", label: "TAS-106 — The Only Hurricane Test-Verified Liquid Coating" },
   { href: "#cost", label: "Roof Coating Cost in Florida" },
   { href: "#how-to-choose", label: "How to Choose a Contractor" },
   { href: "#service-areas", label: "Service Areas" },
@@ -156,7 +156,7 @@ const tocItems = [
 const faqs = [
   {
     q: "What is roof coating and how does it work in Florida?",
-    a: "Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered waterproof layer that protects against water infiltration, UV degradation, mold, and — in certified systems — wind uplift. In Florida's climate, it extends roof life by 10–25 years at up to 60–70% less than the cost of full replacement.",
+    a: "Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered waterproof layer that protects against water infiltration, UV degradation, mold, and — in test-verified systems — wind uplift. In Florida's climate, it extends roof life by 10–25 years at up to 60–70% less than the cost of full replacement.",
   },
   {
     q: "How much does roof coating cost in Florida?",
@@ -169,7 +169,7 @@ const faqs = [
   },
   {
     q: "What is the difference between roof coating and roof paint?",
-    a: "Roof paint is a thin decorative product (2–5 mils dry film thickness) that lasts 2–3 years with minimal waterproofing. Professional roof coating is a thick rubber membrane (20–40+ mils) that cures into a seamless, fully-adhered waterproof surface lasting 10–25 years, with manufacturer warranties and — in The Roof Store's RP3 system — hurricane wind uplift certification.",
+    a: "Roof paint is a thin decorative product (2–5 mils dry film thickness) that lasts 2–3 years with minimal waterproofing. Professional roof coating is a thick rubber membrane (20–40+ mils) that cures into a seamless, fully-adhered waterproof surface lasting 10–25 years, with manufacturer warranties and — in The Roof Store's RP3 system — hurricane wind uplift performance verified by the Dade County Certified TAS-106 Uplift Test.",
   },
   {
     q: "How long does roof coating last in Florida?",
@@ -177,7 +177,7 @@ const faqs = [
   },
   {
     q: "Is roof coating hurricane-rated in Florida?",
-    a: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating in the world with Dade County TAS-106 Uplift Certification — originally certified in 2006, with current NOA renewal in 2023. It has been validated at 135+ MPH sustained wind and creates a monolithic roof structure with 5× the uplift resistance of a standard new tile roof.",
+    a: "Most roof coatings are not hurricane-rated. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating in the world to pass the Dade County Certified TAS-106 Uplift Test — first passed in 2006. It has been validated at 135+ MPH sustained wind and creates a monolithic roof structure with 5× the uplift resistance of a standard new tile roof.",
   },
   {
     q: "Can commercial properties use roof coating in Florida?",
@@ -247,7 +247,7 @@ export default function RoofCoatingFlorida() {
               Everything Florida homeowners and property managers need to know about professional roof coating — from system types and hurricane ratings to insurance requirements, real costs, and how to choose a licensed contractor.
             </p>
             <div className="flex flex-wrap gap-2 text-xs">
-              {["Updated July 2026", "Broward · Miami-Dade · Palm Beach · Monroe", "Residential & Commercial", "TAS-106 Certified Contractor"].map((chip) => (
+              {["Updated July 2026", "Broward · Miami-Dade · Palm Beach · Monroe", "Residential & Commercial", "TAS-106 Certified Test"].map((chip) => (
                 <span key={chip} className="bg-white/10 border border-white/20 rounded-full px-3 py-1">{chip}</span>
               ))}
             </div>
@@ -297,7 +297,7 @@ export default function RoofCoatingFlorida() {
         <motion.section id="what-is" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">What Is Roof Coating?</h2>
           <AnswerBlock>
-            Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane that is sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered waterproof layer that protects against water infiltration, UV degradation, mold, and — in certified systems — wind uplift. Unlike roof paint, professional roof coating is formulated to roofing-grade specifications and is designed to last 10–25 years.
+            Roof coating is a liquid-applied elastomeric, polyurethane, or silicone membrane that is sprayed or rolled directly onto an existing roof surface. It cures into a seamless, fully-adhered waterproof layer that protects against water infiltration, UV degradation, mold, and — in test-verified systems — wind uplift. Unlike roof paint, professional roof coating is formulated to roofing-grade specifications and is designed to last 10–25 years.
           </AnswerBlock>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Professional roof coating systems are manufactured to standards fundamentally different from decorative roof paint. A roofing-grade coating cures into a thick, flexible rubber membrane — typically 20–40 mils of dry film thickness — that bonds directly to the roof substrate. Because there are no seams or joints in a liquid-applied system, it eliminates the primary failure point of conventional roofing: the gaps between materials where water enters.
@@ -377,7 +377,7 @@ export default function RoofCoatingFlorida() {
               {
                 num: "4",
                 title: "Hurricane Wind Uplift",
-                body: "Standard tile roofs can lose individual tiles at sustained winds above 90 MPH. The Roof Shield (RP3) monolithic system bonds all tiles together into a single continuous surface, achieving 5× the wind uplift resistance of a standard new tile roof — validated by Dade County TAS-106 testing at 135+ MPH.",
+                body: "Standard tile roofs can lose individual tiles at sustained winds above 90 MPH. The Roof Shield (RP3) monolithic system bonds all tiles together into a single continuous surface, achieving 5× the wind uplift resistance of a standard new tile roof — validated by the Dade County Certified TAS-106 Uplift Test at 135+ MPH.",
               },
             ].map((item) => (
               <div key={item.num} className="flex gap-4 p-5 bg-muted/50 rounded-xl border">
@@ -441,7 +441,7 @@ export default function RoofCoatingFlorida() {
               },
               {
                 title: "Full Monolithic Hurricane Protection (Roof Shield RP3)",
-                body: "For homeowners whose primary concern is hurricane performance, the Roof Shield (RP3) system builds multiple product layers into the roof, filling every gap between tiles and creating a continuous sealed structure. This system is the only liquid-applied roof coating in the world certified under Dade County TAS-106 Uplift standards.",
+                body: "For homeowners whose primary concern is hurricane performance, the Roof Shield (RP3) system builds multiple product layers into the roof, filling every gap between tiles and creating a continuous sealed structure. This system is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test.",
               },
               {
                 title: "Anti-Fungal Treatment (Fungal Shield RP1)",
@@ -504,18 +504,18 @@ export default function RoofCoatingFlorida() {
 
         {/* Section 7 — TAS-106 */}
         <motion.section id="hurricane" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">TAS-106 — The Only Hurricane-Certified Liquid Coating in the World</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">TAS-106 — The Only Hurricane Test-Verified Liquid Coating in the World</h2>
           <AnswerBlock>
-            The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating system in the world to hold Dade County TAS-106 Uplift Certification. TAS-106 is Florida's highest wind resistance standard for roofing products. The Roof Shield system was originally certified in 2006 — the only liquid coating to ever achieve this standard — with current NOA renewal in 2023, and has been validated at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates.
+            The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating system in the world to pass the Dade County Certified TAS-106 Uplift Test. TAS-106 is Florida's highest wind resistance standard for roofing products. The Roof Shield system first passed the test in 2006 — the only liquid coating to ever do so — and has been validated at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates.
           </AnswerBlock>
           <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-300 rounded-xl px-4 py-3 mb-4 text-sm font-bold text-amber-800">
             <Medal className="h-5 w-5 text-amber-600" />
-            Dade County TAS-106 Uplift Certified — Roof Shield (RP3) — Originally 2006 · Current NOA 2023
+            Passed the Dade County Certified TAS-106 Uplift Test — Roof Shield (RP3) — First Passed 2006
           </div>
           <div className="space-y-3 text-sm text-muted-foreground">
             <p><strong className="text-foreground">What TAS-106 Means:</strong> TAS-106 (Test Application Standard 106) is the Florida Building Code's standard for measuring wind uplift resistance of roof assemblies. Products must be physically tested on actual roof substrates under controlled conditions.</p>
             <p>The Roof Store's Roof Shield system achieves this by filling every gap, void, and overlapping joint between tiles with multiple product layers — binding the entire tile surface into a monolithic structure. A standard Spanish tile roof held down only by its own weight can lose individual tiles at sustained winds of 80–100 MPH. The Roof Shield monolithic system resists uplift at more than five times that force.</p>
-            <p><strong className="text-foreground">Why No Other Coating Has TAS-106:</strong> TAS-106 testing costs tens of thousands of dollars to conduct and requires the product to be applied by the manufacturer's own licensed applicators. Generic elastomeric paints cannot bond tiles into a monolithic surface and therefore cannot pass the uplift test. The Roof Store invested in this certification because the company is both the product manufacturer and the contractor — giving full control over formulation, application protocol, and test compliance.</p>
+            <p><strong className="text-foreground">Why No Other Coating Has Passed TAS-106:</strong> The Dade County Certified TAS-106 Uplift Test costs tens of thousands of dollars to conduct and requires the product to be applied by the manufacturer's own licensed applicators. Generic elastomeric paints cannot bond tiles into a monolithic surface and therefore cannot pass the uplift test. The Roof Store invested in passing this test because the company is both the product manufacturer and the contractor — giving full control over formulation, application protocol, and test compliance.</p>
           </div>
           <div className="flex flex-wrap gap-3 mt-4">
             <Link href="/products/roofshield" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">
@@ -523,7 +523,7 @@ export default function RoofCoatingFlorida() {
             </Link>
             <span className="text-muted-foreground text-sm">·</span>
             <Link href="/tas-106-certified-roof-coating" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline text-sm">
-              Full TAS-106 Certification Reference <ArrowRight className="h-3.5 w-3.5" />
+              Full TAS-106 Certified Test Reference <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </motion.section>
@@ -581,7 +581,7 @@ export default function RoofCoatingFlorida() {
               "<strong>What is your Florida roofing contractor license number?</strong> — A licensed Florida roofing contractor can be verified instantly at the Florida DBPR website. Any contractor who refuses to provide their license number should not be hired.",
               "<strong>Are your coating products manufactured to roofing-grade specifications?</strong> — Ask for the product data sheet (PDS). If the product is paint-grade rather than roofing-grade, the warranty and performance claims will not hold up.",
               "<strong>Do you carry the product warranty, or does the manufacturer?</strong> — A manufacturer-backed warranty remains valid regardless of whether the contractor remains in business.",
-              "<strong>Is your product TAS-106 certified?</strong> — Only The Roof Store's Roof Shield (RP3) holds this certification. If a competitor claims TAS-106 compliance, request the actual test report number from the Miami-Dade BCCO.",
+              "<strong>Has your product passed the Dade County Certified TAS-106 Uplift Test?</strong> — Only The Roof Store's Roof Shield (RP3) has passed this test. If a competitor claims TAS-106 compliance, request the actual test report number from the Miami-Dade BCCO.",
               "<strong>Can you issue an Additional Roof Life Certification for insurance purposes?</strong> — This requires that the contractor be licensed and that the product meet the quality threshold an insurance inspector will accept.",
               "<strong>What does your inspection and preparation process include?</strong> — A professional system requires cleaning, fungal treatment, tile repairs, primer application, and coating application in specified layers. Any contractor skipping preparation steps is cutting corners.",
             ].map((item, i) => (
@@ -597,7 +597,7 @@ export default function RoofCoatingFlorida() {
               {[
                 "🏭 <strong>Manufacturer + Contractor</strong> — We make our own products and apply them. No distributor markup. Full quality control from formulation to application.",
                 "📋 <strong>A+ BBB Rated since 1994</strong> — Over 30 years of verified track record in South Florida's roofing market.",
-                "🏅 <strong>World's Only TAS-106 Certified Liquid Coating</strong> — The Roof Shield (RP3) is the only liquid-applied system in the world with Dade County TAS-106 Uplift Certification.",
+                "🏅 <strong>World's Only Liquid Coating to Pass the TAS-106 Certified Test</strong> — The Roof Shield (RP3) is the only liquid-applied system in the world to pass the Dade County Certified TAS-106 Uplift Test.",
                 "📝 <strong>ARLC Eligible</strong> — We provide the installation documentation that supports your independent Useful Life Exam and ARLC affidavit for insurance policy retention.",
                 "🔍 <strong>Manufacturer's Inspection First</strong> — We inspect before specifying. Every project starts with an on-site evaluation — not a sales call.",
               ].map((item, i) => (
@@ -687,7 +687,7 @@ export default function RoofCoatingFlorida() {
                 tagColor: "text-primary bg-primary/5 border-primary/20",
                 name: "Roof Shield",
                 price: "Premium pricing — sheet by email",
-                desc: "The only TAS-106 Dade County certified liquid coating in the world. Multi-layer monolithic system. 135+ MPH verified. 5× stronger than new tile roof. Maintenance-free Lifetime Warranty.",
+                desc: "The only liquid coating in the world to pass the Dade County Certified TAS-106 Uplift Test. Multi-layer monolithic system. 135+ MPH verified. 5× stronger than new tile roof. Maintenance-free Lifetime Warranty.",
                 href: "/products/roofshield",
               },
             ].map((card) => (

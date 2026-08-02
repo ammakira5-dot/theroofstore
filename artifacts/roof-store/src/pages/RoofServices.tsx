@@ -88,7 +88,7 @@ const services = [
     benefits: ["Ridge and hip reinforcement", "Edge sealing and flashing", "Wind uplift resistance", "Pre-season inspections available"],
     links: [
       { label: "Fits this need: Roof Shield (RP3) — TAS-106 uplift rated", href: "/products/roofshield" },
-      { label: "About the TAS-106 certification", href: "/tas-106-certified-roof-coating" },
+      { label: "About the TAS-106 Certified Test", href: "/tas-106-certified-roof-coating" },
     ],
   },
   {

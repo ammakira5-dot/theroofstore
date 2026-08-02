@@ -10,9 +10,9 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "TAS-106 Dade County Uplift Certification — The Only Certified Liquid Roof Coating in the World",
+    headline: "Dade County Certified TAS-106 Uplift Test — The Only Liquid Roof Coating to Pass It in the World",
     description:
-      "Comprehensive reference on Dade County TAS-106 Uplift Certification for liquid-applied roof coatings, including what the standard tests, why Roof Shield (RP3) is the only liquid coating to hold it, and what it means for Florida homeowners.",
+      "Comprehensive reference on the Dade County Certified TAS-106 Uplift Test for liquid-applied roof coatings, including what the standard tests, why Roof Shield (RP3) is the only liquid coating to pass it, and what it means for Florida homeowners.",
     url: `${BASE}/tas-106-certified-roof-coating`,
     datePublished: "2026-07-18",
     dateModified: "2026-07-28",
@@ -34,7 +34,7 @@ const schema = [
         "@type": "Thing",
         name: "Roof Shield (RP3)",
         description:
-          "The Roof Store's Roof Shield (RP3) is a multi-layer liquid-applied rubber roof coating system and the only liquid coating in the world to hold Dade County TAS-106 Uplift Certification.",
+          "The Roof Store's Roof Shield (RP3) is a multi-layer liquid-applied rubber roof coating system and the only liquid coating in the world to pass the Dade County Certified TAS-106 Uplift Test.",
       },
     ],
     image: `${BASE}/assets/images/Waterproofing-Technology.jpg`,
@@ -50,7 +50,7 @@ const schema = [
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE },
       { "@type": "ListItem", position: 2, name: "Roof Coating Florida", item: `${BASE}/roof-coating-florida` },
-      { "@type": "ListItem", position: 3, name: "TAS-106 Certification", item: `${BASE}/tas-106-certified-roof-coating` },
+      { "@type": "ListItem", position: 3, name: "TAS-106 Certified Test", item: `${BASE}/tas-106-certified-roof-coating` },
     ],
   },
   {
@@ -58,7 +58,7 @@ const schema = [
     "@type": "Product",
     name: "Roof Shield (RP3)",
     description:
-      "The world's only liquid-applied roof coating system certified under Dade County TAS-106 Uplift Standard. Multi-layer monolithic system. 135+ MPH wind resistance. Lifetime Warranty.",
+      "The world's only liquid-applied roof coating system to pass the Dade County Certified TAS-106 Uplift Test. Multi-layer monolithic system. 135+ MPH wind resistance. Lifetime Warranty.",
     image: "https://www.theroofstore.net/images/roofshield-bucket.webp",
     sku: "RP3",
     brand: { "@type": "Brand", name: "RoofProtect" },
@@ -81,16 +81,6 @@ const schema = [
       price: "325",
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: "The Roof Store", url: BASE },
-    },
-    hasCertification: {
-      "@type": "Certification",
-      name: "Dade County TAS-106 Uplift Certification",
-      certificationIdentification: "TAS-106",
-      issuedBy: {
-        "@type": "Organization",
-        name: "Miami-Dade County — Dade County Testing Standards",
-      },
-      validFrom: "2006",
     },
     aggregateRating: {
       "@type": "AggregateRating",
@@ -122,26 +112,26 @@ const schema = [
       },
       {
         "@type": "Question",
-        name: "What is TAS-106 certification for roof coatings?",
+        name: "What is the TAS-106 test for roof coatings?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard that measures the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most stringent wind uplift certification for roofing products in the United States. Products must be physically tested on actual roof substrates under laboratory conditions. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
+          text: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard that measures the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most stringent wind uplift test for roofing products in the United States. Products must be physically tested on actual roof substrates under laboratory conditions. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to pass the Dade County Certified TAS-106 Uplift Test.",
         },
       },
       {
         "@type": "Question",
-        name: "Is Roof Shield (RP3) the only liquid coating with TAS-106 certification?",
+        name: "Is Roof Shield (RP3) the only liquid coating to pass the TAS-106 test?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold Dade County TAS-106 Uplift Certification. The certification was originally issued in 2006. No other liquid coating, elastomeric coating, or roof paint product holds TAS-106 certification, because standard coating products are not designed to bond roof tiles into a monolithic structure — the physical requirement for passing the TAS-106 uplift test.",
+          text: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test. It first passed the test in 2006. No other liquid coating, elastomeric coating, or roof paint product has passed the Dade County Certified TAS-106 Uplift Test, because standard coating products are not designed to bond roof tiles into a monolithic structure — the physical requirement for passing the TAS-106 uplift test.",
         },
       },
       {
         "@type": "Question",
-        name: "What wind speed does TAS-106 certified Roof Shield resist?",
+        name: "What wind speed does TAS-106 test-verified Roof Shield resist?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Roof Shield (RP3) system has been field-verified at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates. This exceeds the sustained wind speed of a Category 4 hurricane (130–156 MPH sustained winds per the Saffir-Simpson scale). The TAS-106 certification confirms the system meets Miami-Dade County's highest wind pressure resistance requirements for roofing assemblies.",
+          text: "The Roof Shield (RP3) system has been field-verified at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates. This exceeds the sustained wind speed of a Category 4 hurricane (130–156 MPH sustained winds per the Saffir-Simpson scale). Passing the Dade County Certified TAS-106 Uplift Test confirms the system meets Miami-Dade County's highest wind pressure resistance requirements for roofing assemblies.",
         },
       },
       {
@@ -157,7 +147,7 @@ const schema = [
         name: "How is TAS-106 different from a standard roof coating wind rating?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Most roof coatings and paints carry no wind uplift rating whatsoever. TAS-106 certification requires physical laboratory testing on an actual roof assembly by an independent accredited testing laboratory, with results reviewed and published as a public Notice of Acceptance (NOA) under Dade County Testing Standards. It is a regulatory certification backed by a government document — not a marketing claim.",
+          text: "Most roof coatings and paints carry no wind uplift rating whatsoever. The Dade County Certified TAS-106 Uplift Test requires physical laboratory testing on an actual roof assembly by an independent accredited testing laboratory, under Dade County Testing Standards. It is a rigorous, independently documented test — not a marketing claim.",
         },
       },
       {
@@ -170,34 +160,34 @@ const schema = [
       },
       {
         "@type": "Question",
-        name: "Does TAS-106 certification help with homeowners insurance in Florida?",
+        name: "Does passing the TAS-106 test help with homeowners insurance in Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. TAS-106 certification provides government-documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates compliance with Miami-Dade and Broward County HVHZ requirements.",
+          text: "Yes. The Dade County Certified TAS-106 Uplift Test provides independently documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates the system's wind performance for Miami-Dade and Broward County HVHZ conditions.",
         },
       },
       {
         "@type": "Question",
-        name: "What roof types can receive TAS-106 certified Roof Shield installation?",
+        name: "What roof types can receive TAS-106 test-verified Roof Shield installation?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The TAS-106 certification was tested on Spanish tile (S-tile and barrel tile) substrates — the dominant residential roof type in South Florida. The system is also applicable to flat cement tile, flat broom tile, metal, flat deck, foam, and gravel roofs. Formulation is confirmed after a manufacturer's inspection.",
+          text: "The Dade County Certified TAS-106 Uplift Test was performed on Spanish tile (S-tile and barrel tile) substrates — the dominant residential roof type in South Florida. The system is also applicable to flat cement tile, flat broom tile, metal, flat deck, foam, and gravel roofs. Formulation is confirmed after a manufacturer's inspection.",
         },
       },
       {
         "@type": "Question",
-        name: "How do I verify The Roof Store's TAS-106 certification?",
+        name: "How do I verify The Roof Store's TAS-106 test result?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or ammakira5@gmail.com.",
+          text: "The Roof Store provides the documented Dade County Certified TAS-106 Uplift Test report upon request, including the pull-test results for the Roof Shield (RP3) system. Contact us at 954-210-9614 or ammakira5@gmail.com.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I install Roof Shield myself and still have TAS-106 certification?",
+        name: "Can I install Roof Shield myself and still have the TAS-106 test result?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. The TAS-106 certification applies to the Roof Shield (RP3) system as installed by The Roof Store's licensed crew under the manufacturer's tested protocol. DIY or third-party contractor installation does not carry TAS-106 certification, because the certification is tied to the tested assembly and applicator qualification.",
+          text: "No. The Dade County Certified TAS-106 Uplift Test result applies to the Roof Shield (RP3) system as installed by The Roof Store's licensed crew under the manufacturer's tested protocol. DIY or third-party contractor installation does not carry the TAS-106 test result, because the result is tied to the tested assembly and applicator qualification.",
         },
       },
       {
@@ -215,13 +205,13 @@ const schema = [
 const tocItems = [
   { href: "#what-is-tas106", label: "What Is TAS-106?" },
   { href: "#why-tas106-matters", label: "Why TAS-106 Is Florida's Highest Roofing Standard" },
-  { href: "#how-roof-shield-passed", label: "How Roof Shield (RP3) Achieved Certification" },
+  { href: "#how-roof-shield-passed", label: "How Roof Shield (RP3) Passed the Test" },
   { href: "#monolithic", label: "The Monolithic System — Why It Works" },
   { href: "#five-times-stronger", label: "5× Stronger Than a New Tile Roof — Explained" },
-  { href: "#why-no-others", label: "Why No Other Liquid Coating Is Certified" },
+  { href: "#why-no-others", label: "Why No Other Liquid Coating Has Passed" },
   { href: "#insurance", label: "What TAS-106 Means for Your Insurance" },
   { href: "#specs", label: "Technical Specifications" },
-  { href: "#verify", label: "How to Verify the Certification" },
+  { href: "#verify", label: "How to Verify the Test Result" },
   { href: "#faq", label: "Frequently Asked Questions" },
 ];
 
@@ -239,40 +229,40 @@ const faqs = [
     a: "Under Florida Building Code TAS 106, an inspector pulls upward on the nose-end of an installed roof tile with 35 pounds of static force; the tile must remain bonded and lift no more than 2 inches to pass. The 35 lbf threshold is a minimum quality-control standard verifying that adhesive- or mortar-set tiles are properly bonded in high-wind hurricane zones — roofs passing it are generally approved for basic wind speeds of roughly 130 to 150+ MPH depending on roof geometry, pitch, height, and roof zone (corners and edges see 2–3× higher uplift than the center field). In pull testing on a Roof Shield (RP3)-coated Spanish tile assembly, the scale was taken to 100 pounds of uplift force — nearly three times the pass standard — with no tile movement at all, because a tile inside the monolithic system cannot move independently of the bonded roof structure around it.",
   },
   {
-    q: "What is TAS-106 certification for roof coatings?",
-    a: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard governing wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most rigorous wind resistance certification for roofing products in the United States. Products must be physically tested on actual roof substrates, and results are published in a publicly accessible Notice of Acceptance (NOA). The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to hold this certification.",
+    q: "What is the TAS-106 test for roof coatings?",
+    a: "TAS-106 (Test Application Standard 106) is the Miami-Dade County standard governing wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is the most rigorous wind resistance test for roofing products in the United States. Products must be physically tested on actual roof substrates. The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system in the world to pass the Dade County Certified TAS-106 Uplift Test.",
   },
   {
-    q: "Is Roof Shield (RP3) the only liquid coating with TAS-106 certification?",
-    a: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to hold a Dade County TAS-106 Uplift Certification (NOA), originally issued in 2006. No other coating product — elastomeric, polyurethane, acrylic, or silicone — holds this certification, because no other coating is formulated and applied to create a full monolithic bond between roof tiles.",
+    q: "Is Roof Shield (RP3) the only liquid coating to pass the TAS-106 test?",
+    a: "Yes. The Roof Store's Roof Shield (RP3) system is the only liquid-applied roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test, first passed in 2006. No other coating product — elastomeric, polyurethane, acrylic, or silicone — has passed this test, because no other coating is formulated and applied to create a full monolithic bond between roof tiles.",
   },
   {
-    q: "What wind speed does TAS-106 certified Roof Shield resist?",
-    a: "The Roof Shield (RP3) system has been field-verified at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates — exceeding the lower bound of Category 4 hurricane wind speed (130 MPH per the Saffir-Simpson Hurricane Wind Scale). This is a certified test result, not a manufacturer estimate.",
+    q: "What wind speed does TAS-106 test-verified Roof Shield resist?",
+    a: "The Roof Shield (RP3) system has been field-verified at sustained wind resistance exceeding 135 MPH on Spanish tile roof substrates — exceeding the lower bound of Category 4 hurricane wind speed (130 MPH per the Saffir-Simpson Hurricane Wind Scale). This is a test-verified result from the Dade County Certified TAS-106 Uplift Test, not a manufacturer estimate.",
   },
   {
     q: "How is TAS-106 different from a standard roof coating wind rating?",
-    a: "Most roof coatings carry no independent wind rating at all. Those that do carry wind resistance claims generally do so through manufacturer statements without independent government testing. TAS-106 requires physical laboratory testing on a real roof assembly by an accredited testing laboratory, with results published as a public Notice of Acceptance under Dade County Testing Standards. It is a regulatory certification — not a marketing claim.",
+    a: "Most roof coatings carry no independent wind rating at all. Those that do carry wind resistance claims generally do so through manufacturer statements without independent government testing. The Dade County Certified TAS-106 Uplift Test requires physical laboratory testing on a real roof assembly by an accredited testing laboratory, under Dade County Testing Standards. It is a rigorous, independently documented test — not a marketing claim.",
   },
   {
     q: "Why does making a roof monolithic increase wind resistance so dramatically?",
     a: "A standard tile roof's wind failure begins when wind pressure enters through gaps between tiles and lifts individual tiles independently. Once one tile lifts, the exposed area grows rapidly and adjacent tiles fail in cascade. The Roof Shield (RP3) monolithic system fills every inter-tile gap, eliminating wind entry points and bonding all tiles into a single continuous assembly. Wind uplift must overcome the resistance of the entire bonded assembly simultaneously — approximately five times more force than is needed to lift individual tiles on a standard roof.",
   },
   {
-    q: "Does TAS-106 certification help with homeowners insurance in Florida?",
-    a: "Yes. TAS-106 certification provides government-documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates compliance with Miami-Dade and Broward County HVHZ requirements. The Roof Store provides the installation records and system documentation that support a homeowner's ARLC request from an independent licensed inspector or engineer.",
+    q: "Does passing the TAS-106 test help with homeowners insurance in Florida?",
+    a: "Yes. The Dade County Certified TAS-106 Uplift Test provides independently documented wind resistance data that insurance underwriters, inspectors, and adjusters recognize. It strengthens the foundation for an Additional Roof Life Certification (ARLC) under Florida SB 2-D (2022), supports policy retention arguments with insurers questioning roof age, and demonstrates the system's wind performance for Miami-Dade and Broward County HVHZ conditions. The Roof Store provides the installation records and system documentation that support a homeowner's ARLC request from an independent licensed inspector or engineer.",
   },
   {
-    q: "What roof types can receive TAS-106 certified Roof Shield installation?",
-    a: "The TAS-106 certification was tested on Spanish tile (S-tile and barrel tile) substrates — the dominant residential roof type in South Florida. The system is also applicable to flat cement tile, flat broom tile, metal, flat deck, foam, and gravel roofs. Formulation is confirmed after a manufacturer's inspection. The certified wind performance rating applies specifically to the tile roof assembly configuration that was physically tested.",
+    q: "What roof types can receive TAS-106 test-verified Roof Shield installation?",
+    a: "The Dade County Certified TAS-106 Uplift Test was performed on Spanish tile (S-tile and barrel tile) substrates — the dominant residential roof type in South Florida. The system is also applicable to flat cement tile, flat broom tile, metal, flat deck, foam, and gravel roofs. Formulation is confirmed after a manufacturer's inspection. The test-verified wind performance applies specifically to the tile roof assembly configuration that was physically tested.",
   },
   {
-    q: "How do I verify The Roof Store's TAS-106 certification?",
-    a: "The certification is recorded in Miami-Dade County's public Notice of Acceptance (NOA) database at miamidade.gov/building. The Roof Store provides the specific NOA reference number upon request. Contact us at 954-210-9614 or ammakira5@gmail.com and we will send the NOA documentation directly.",
+    q: "How do I verify The Roof Store's TAS-106 test result?",
+    a: "The Roof Store provides the documented Dade County Certified TAS-106 Uplift Test report upon request, including the pull-test results for the Roof Shield (RP3) system. Contact us at 954-210-9614 or ammakira5@gmail.com and we will send the test documentation directly.",
   },
   {
-    q: "Can I install Roof Shield myself and still have TAS-106 certification?",
-    a: "No. The TAS-106 certification applies to the Roof Shield (RP3) system as installed by The Roof Store's licensed crew under the manufacturer's tested protocol — including surface preparation, specific product layer sequence, and dry film thickness verification. DIY or third-party contractor installation of RP3 product does not carry TAS-106 certification, because the certification is tied to the tested assembly and applicator qualification. Only professionally installed Roof Shield projects by The Roof Store qualify for the certified wind rating and the associated Lifetime Warranty.",
+    q: "Can I install Roof Shield myself and still have the TAS-106 test result?",
+    a: "No. The Dade County Certified TAS-106 Uplift Test result applies to the Roof Shield (RP3) system as installed by The Roof Store's licensed crew under the manufacturer's tested protocol — including surface preparation, specific product layer sequence, and dry film thickness verification. DIY or third-party contractor installation of RP3 product does not carry the TAS-106 test result, because the result is tied to the tested assembly and applicator qualification. Only professionally installed Roof Shield projects by The Roof Store qualify for the test-verified wind performance and the associated Lifetime Warranty.",
   },
   {
     q: "Does Roof Shield RP3 require a permit in Florida?",
@@ -360,7 +350,7 @@ const techSpecs = [
   { label: "Product Name", value: "Roof Shield — The Original Liquid Applied Rubber Roof Shield System" },
   { label: "Product Code", value: "RP3" },
   { label: "Manufacturer", value: "RoofProtect (Storm Shield Paint Systems Inc., Davie FL 33328)" },
-  { label: "Wind Certification", value: "Dade County TAS-106 Uplift Certification (NOA) — originally issued 2006" },
+  { label: "Wind Test", value: "Passed the Dade County Certified TAS-106 Uplift Test — first passed 2006" },
   { label: "Testing Authority", value: "Miami-Dade County — Dade County Testing Standards" },
   { label: "Verified Wind Resistance", value: "135+ MPH sustained (Spanish tile substrate)" },
   { label: "Relative Wind Performance", value: "5× the wind uplift resistance of a code-compliant standard new tile roof" },
@@ -411,8 +401,8 @@ export default function Tas106Certification() {
   return (
     <div className="w-full">
       <SEO
-        title="TAS-106 Dade County Uplift Certification — The Only Certified Liquid Roof Coating in the World | The Roof Store"
-        description="The Roof Store's Roof Shield (RP3) is the world's only liquid-applied roof coating with Dade County TAS-106 Uplift Certification — tested at 135+ MPH, 5× stronger than a new tile roof. Learn what TAS-106 means and why it matters for Florida homeowners."
+        title="Dade County Certified TAS-106 Uplift Test — The Only Liquid Roof Coating to Pass It in the World | The Roof Store"
+        description="The Roof Store's Roof Shield (RP3) is the world's only liquid-applied roof coating to pass the Dade County Certified TAS-106 Uplift Test — tested at 135+ MPH, 5× stronger than a new tile roof. Learn what TAS-106 means and why it matters for Florida homeowners."
         canonical="/tas-106-certified-roof-coating"
         ogImage={`${BASE}/assets/images/Waterproofing-Technology.jpg`}
         schema={schema}
@@ -427,17 +417,17 @@ export default function Tas106Certification() {
             <span className="mx-2">›</span>
             <Link href="/roof-coating-florida" className="hover:text-white transition-colors text-indigo-300">Roof Coating Florida</Link>
             <span className="mx-2">›</span>
-            <span className="text-white/80">TAS-106 Certification</span>
+            <span className="text-white/80">TAS-106 Certified Test</span>
           </nav>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-400/50 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-300 mb-4">
-              🏅 Dade County TAS-106 Uplift Certified · Since 2006
+              🏅 Passed the Dade County Certified TAS-106 Uplift Test · Since 2006
             </div>
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 leading-tight text-white">
-              TAS-106 Dade County Uplift Certification —<br className="hidden md:block" /> The Only Certified Liquid Roof Coating in the World
+              Dade County Certified TAS-106 Uplift Test —<br className="hidden md:block" /> The Only Liquid Roof Coating to Pass It in the World
             </h1>
             <p className="text-lg text-white/85 max-w-2xl mb-6">
-              The Roof Store's Roof Shield (RP3) is the only liquid-applied roof coating system on earth to hold Dade County TAS-106 Uplift Certification — the most rigorous wind resistance standard for roofing products in the United States.
+              The Roof Store's Roof Shield (RP3) is the only liquid-applied roof coating system on earth to pass the Dade County Certified TAS-106 Uplift Test — the most rigorous wind resistance standard for roofing products in the United States.
             </p>
           </motion.div>
         </div>
@@ -446,11 +436,11 @@ export default function Tas106Certification() {
         <div className="container max-w-4xl mx-auto mt-2">
           <div className="grid grid-cols-2 md:grid-cols-5 bg-white/5 border border-white/10 rounded-xl overflow-hidden divide-x divide-white/10">
             {[
-              { val: "TAS-106", lbl: "Dade County Certified" },
+              { val: "TAS-106", lbl: "Dade County Certified Test" },
               { val: "135+ MPH", lbl: "Verified wind resistance" },
               { val: "5×", lbl: "Stronger than new tile roof" },
-              { val: "2006", lbl: "Certification issued" },
-              { val: "Worldwide", lbl: "Only liquid coating certified" },
+              { val: "2006", lbl: "Test first passed" },
+              { val: "Worldwide", lbl: "Only liquid coating to pass" },
             ].map((s, i) => (
               <div key={i} className="flex flex-col items-center px-4 py-4 text-center">
                 <div className="text-xl font-bold text-indigo-300 leading-tight">{s.val}</div>
@@ -469,11 +459,11 @@ export default function Tas106Certification() {
           <div className="border-2 border-amber-300 rounded-2xl bg-gradient-to-br from-amber-50 to-yellow-100 p-6 mb-6 flex gap-4 items-start">
             <div className="text-4xl leading-none">🏅</div>
             <div>
-              <div className="font-extrabold text-amber-900 mb-1">Dade County TAS-106 Uplift Certification — Roof Shield (RP3)</div>
+              <div className="font-extrabold text-amber-900 mb-1">Passed the Dade County Certified TAS-106 Uplift Test — Roof Shield (RP3)</div>
               <div className="text-sm text-amber-800 flex flex-wrap gap-x-4 gap-y-1">
                 <span>📋 Standard: TAS-106</span>
                 <span>🏛️ Testing Authority: Miami-Dade County</span>
-                <span>📅 Issued: 2006</span>
+                <span>📅 Passed: 2006</span>
                 <span>🌀 Wind Speed: 135+ MPH</span>
               </div>
             </div>
@@ -500,7 +490,7 @@ export default function Tas106Certification() {
         <motion.section id="what-is-tas106" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">What Is TAS-106?</h2>
           <AnswerBlock>
-            TAS-106 (Test Application Standard 106) is the Miami-Dade County standard for measuring the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is recognized as the most stringent roofing wind resistance certification in the United States. A product or system holding TAS-106 certification has been physically tested on an actual roof structure under controlled laboratory conditions and demonstrated that it resists the wind uplift forces generated by a major hurricane.
+            TAS-106 (Test Application Standard 106) is the Miami-Dade County standard for measuring the wind uplift resistance of roofing assemblies, tested in compliance with Dade County Testing Standards. It is recognized as the most stringent roofing wind resistance test in the United States. A product or system that passes the Dade County Certified TAS-106 Uplift Test has been physically tested on an actual roof structure under controlled laboratory conditions and demonstrated that it resists the wind uplift forces generated by a major hurricane.
           </AnswerBlock>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">Miami-Dade County Testing Standards</h3>
@@ -508,7 +498,7 @@ export default function Tas106Certification() {
             Miami-Dade County developed its own enhanced testing standards after Hurricane Andrew devastated South Florida in August 1992, causing $27.3 billion in insured losses — at the time the most costly natural disaster in U.S. history. The destruction revealed catastrophic failures in existing roofing standards, and Miami-Dade County responded by developing the most rigorous local building code in the country.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            When Miami-Dade County approves a roofing product under TAS-106, it issues a Notice of Acceptance (NOA) — a public document that records the tested assembly, the testing laboratory, the results, and the product specifications. The NOA system ensures that every TAS-certified product can be independently verified by homeowners, inspectors, insurers, and building officials.
+            When Miami-Dade County approves a roofing product under TAS-106, it issues a Notice of Acceptance (NOA) — a public document that records the tested assembly, the testing laboratory, the results, and the product specifications. The NOA system ensures that every product approved this way can be independently verified by homeowners, inspectors, insurers, and building officials.
           </p>
 
           <GeoFact label="Verified Fact">
@@ -582,7 +572,7 @@ export default function Tas106Certification() {
             The TAS-106 test procedure requires the manufacturer to build a full-scale roof assembly on a test structure using their specified product and installation protocol. An independent accredited testing laboratory — not the manufacturer — conducts the test. Chambers beneath the test assembly apply increasing negative air pressure (simulating wind uplift) in controlled increments. The test records the pressure at which the assembly first shows distress and the pressure at which it fails structurally.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            The results must demonstrate that the roofing assembly can resist the wind pressure design loads specified by Miami-Dade County's code for the applicable wind speed zone. A product that fails to meet the required uplift resistance cannot receive an NOA and cannot be certified to TAS-106.
+            The results must demonstrate that the roofing assembly can resist the wind pressure design loads specified by Miami-Dade County's code for the applicable wind speed zone. A product that fails to meet the required uplift resistance cannot receive an NOA and cannot pass the TAS-106 uplift test.
           </p>
 
           <Callout variant="purple" title="🔬 Why Physical Testing Matters More Than Computer Modeling">
@@ -592,9 +582,9 @@ export default function Tas106Certification() {
 
         {/* Section 3 — How Roof Shield Passed */}
         <motion.section id="how-roof-shield-passed" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">How Roof Shield (RP3) Achieved TAS-106 Certification</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">How Roof Shield (RP3) Passed the Dade County Certified TAS-106 Uplift Test</h2>
           <AnswerBlock>
-            Roof Shield (RP3) achieved TAS-106 certification by creating a fundamentally different roof assembly: instead of a surface coating applied over individual tiles, the Roof Shield system is applied in multiple layers that fill every gap, void, and overlapping joint between tiles — bonding the entire tile surface into a single continuous monolithic structure. This monolithic structure resists wind uplift as a unified assembly, not as individual tiles. The test assembly demonstrated resistance exceeding 135 MPH sustained wind loads on a Spanish tile substrate, meeting Miami-Dade County's HVHZ requirements.
+            Roof Shield (RP3) passed the Dade County Certified TAS-106 Uplift Test by creating a fundamentally different roof assembly: instead of a surface coating applied over individual tiles, the Roof Shield system is applied in multiple layers that fill every gap, void, and overlapping joint between tiles — bonding the entire tile surface into a single continuous monolithic structure. This monolithic structure resists wind uplift as a unified assembly, not as individual tiles. The test assembly demonstrated resistance exceeding 135 MPH sustained wind loads on a Spanish tile substrate, meeting Miami-Dade County's HVHZ requirements.
           </AnswerBlock>
 
           {/* Pull test video embed */}
@@ -610,12 +600,12 @@ export default function Tas106Certification() {
             </div>
             <div className="flex items-center gap-2 mt-2 text-xs text-muted-foreground">
               <span className="inline-flex items-center gap-1 bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">▶ VIDEO</span>
-              The independent Dade County TAS-106 Uplift Pull Test — watch the actual certification test being performed on the Roof Shield (RP3) system.{" "}
+              The Dade County Certified TAS-106 Uplift Pull Test — watch the actual test being performed on the Roof Shield (RP3) system.{" "}
               <Link href="/videos" className="text-accent hover:underline">See all videos →</Link>
             </div>
           </div>
 
-          <h3 className="text-xl font-serif font-bold text-primary mb-4 mt-6">The Application Protocol That Makes Certification Possible</h3>
+          <h3 className="text-xl font-serif font-bold text-primary mb-4 mt-6">The Application Protocol That Makes Passing the Test Possible</h3>
           <div className="space-y-4">
             {steps.map((step, i) => (
               <div key={i} className="flex gap-4 items-start">
@@ -668,8 +658,8 @@ export default function Tas106Certification() {
                 <li>✓ No gaps — wind has no entry point</li>
                 <li>✓ Uplift acts on entire bonded assembly</li>
                 <li>✓ No cascade failure mode possible</li>
-                <li>✓ Certified resistance: 135+ MPH</li>
-                <li>✓ TAS-106 Dade County certified assembly</li>
+                <li>✓ Test-verified resistance: 135+ MPH</li>
+                <li>✓ Passed the Dade County Certified TAS-106 Uplift Test</li>
               </ul>
             </div>
           </div>
@@ -688,7 +678,7 @@ export default function Tas106Certification() {
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-4">What "5× Stronger" Means in a Hurricane</h3>
           <p className="text-muted-foreground leading-relaxed mb-5">
-            Category 4 hurricanes produce sustained winds of 130–156 MPH. At these wind speeds, standard tile roofs that meet minimum Florida Building Code requirements can — and do — suffer tile loss. The Roof Shield monolithic system's 135+ MPH certified resistance means the system has been tested to maintain structural integrity at sustained wind speeds that exceed the lower bound of Category 4. This is not absolute protection — no roofing system can guarantee zero damage from a direct major hurricane strike. But it places the Roof Shield system in a materially different wind performance category from any standard tile roof and from any other liquid coating product.
+            Category 4 hurricanes produce sustained winds of 130–156 MPH. At these wind speeds, standard tile roofs that meet minimum Florida Building Code requirements can — and do — suffer tile loss. The Roof Shield monolithic system's 135+ MPH test-verified resistance means the system has been tested to maintain structural integrity at sustained wind speeds that exceed the lower bound of Category 4. This is not absolute protection — no roofing system can guarantee zero damage from a direct major hurricane strike. But it places the Roof Shield system in a materially different wind performance category from any standard tile roof and from any other liquid coating product.
           </p>
 
           {/* Don Godshall real-world testimonial */}
@@ -712,14 +702,14 @@ export default function Tas106Certification() {
 
         {/* Section 6 — Why No Others */}
         <motion.section id="why-no-others" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Why No Other Liquid Coating Has TAS-106 Certification</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">Why No Other Liquid Coating Has Passed the TAS-106 Test</h2>
           <AnswerBlock>
-            No other liquid-applied roof coating in the world holds Dade County TAS-106 Uplift Certification because standard coating products are not designed to bond individual roof tiles into a monolithic structure. They are designed to coat the surface of tiles — which means the inter-tile gaps remain open, and the coating adds no measurable wind uplift resistance to the tile assembly. Without creating a monolithic bond, no coating product can pass the TAS-106 uplift test. The Roof Shield (RP3) formulation and application protocol were specifically engineered to fill those gaps and achieve the structural bond required for TAS-106 certification.
+            No other liquid-applied roof coating in the world has passed the Dade County Certified TAS-106 Uplift Test because standard coating products are not designed to bond individual roof tiles into a monolithic structure. They are designed to coat the surface of tiles — which means the inter-tile gaps remain open, and the coating adds no measurable wind uplift resistance to the tile assembly. Without creating a monolithic bond, no coating product can pass the TAS-106 uplift test. The Roof Shield (RP3) formulation and application protocol were specifically engineered to fill those gaps and achieve the structural bond required to pass the Dade County Certified TAS-106 Uplift Test.
           </AnswerBlock>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3 mt-6">The Technical Barrier Other Products Cannot Clear</h3>
           <p className="text-muted-foreground leading-relaxed mb-3">
-            For a liquid coating to receive TAS-106 certification, the tested assembly must demonstrate that the coating system — not just the underlying tiles — contributes materially to wind uplift resistance. This requires:
+            For a liquid coating to pass the Dade County Certified TAS-106 Uplift Test, the tested assembly must demonstrate that the coating system — not just the underlying tiles — contributes materially to wind uplift resistance. This requires:
           </p>
           <ul className="space-y-2 mb-4 text-sm text-muted-foreground">
             <li className="flex gap-2"><span className="text-primary font-bold mt-0.5">•</span><span><strong>A formulation with sufficient body</strong> to fill the three-dimensional voids between tile profiles, not just coat the tile surface</span></li>
@@ -732,34 +722,34 @@ export default function Tas106Certification() {
           </p>
 
           <Callout variant="red" title="⚠️ Warning: False TAS-106 Claims in the Marketplace">
-            Some Florida roofing contractors claim their coating products are "TAS-106 compliant" or "hurricane rated" without holding an actual Miami-Dade County Notice of Acceptance. These claims are either referring to the underlying tile product (which has its own NOA separate from the coating), referring to a different TAS standard, or are unsupported marketing language. <strong>Ask any contractor claiming TAS-106 certification to provide the specific NOA number from the Miami-Dade County NOA database.</strong> Only The Roof Store's Roof Shield (RP3) system has a valid NOA for a liquid-applied coating assembly.
+            Some Florida roofing contractors claim their coating products are "TAS-106 compliant" or "hurricane rated" without any documented test to back it up. These claims are either referring to the underlying tile product (which has its own approval separate from the coating), referring to a different TAS standard, or are unsupported marketing language. <strong>Ask any contractor claiming TAS-106 performance to provide their documented Dade County Certified TAS-106 Uplift Test report.</strong> The Roof Store's Roof Shield (RP3) is the only liquid-applied coating system with a documented result from the Dade County Certified TAS-106 Uplift Test.
           </Callout>
         </motion.section>
 
         {/* Section 7 — Insurance */}
         <motion.section id="insurance" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">What TAS-106 Certification Means for Your Florida Insurance</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">What the TAS-106 Test Result Means for Your Florida Insurance</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            TAS-106 certification directly strengthens your position with Florida homeowners insurance providers in three distinct ways.
+            Passing the Dade County Certified TAS-106 Uplift Test directly strengthens your position with Florida homeowners insurance providers in three distinct ways.
           </p>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-2 mt-4">1. Documented Wind Resistance for Underwriting</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Florida insurance underwriters assess roof wind resistance when setting premiums and when evaluating policy renewals. A roof system with a government-issued Notice of Acceptance that includes a verified wind uplift rating provides the kind of objective, third-party documentation that underwriters can act on — reducing uncertainty about the roof's performance in a hurricane event.
+            Florida insurance underwriters assess roof wind resistance when setting premiums and when evaluating policy renewals. A roof system with an independently documented Dade County Certified TAS-106 Uplift Test result provides the kind of objective, third-party documentation that underwriters can act on — reducing uncertainty about the roof's performance in a hurricane event.
           </p>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-2">2. Stronger Foundation for Additional Roof Life Certification</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Under Florida Senate Bill 2-D (2022), an Additional Roof Life Certification (ARLC) protects homeowners' insurance coverage when insurers question roof age. A roof coated with the TAS-106 certified Roof Shield (RP3) system supports a materially stronger ARLC than a non-certified coating — because the installation records include certified wind performance data, not just cosmetic condition. The Roof Store provides complete installation documentation to support the homeowner's independent ARLC inspection.
+            Under Florida Senate Bill 2-D (2022), an Additional Roof Life Certification (ARLC) protects homeowners' insurance coverage when insurers question roof age. A roof coated with the Roof Shield (RP3) system — which passed the Dade County Certified TAS-106 Uplift Test — supports a materially stronger ARLC than an untested coating, because the installation records include test-verified wind performance data, not just cosmetic condition. The Roof Store provides complete installation documentation to support the homeowner's independent ARLC inspection.
           </p>
 
-          <h3 className="text-xl font-serif font-bold text-primary mb-2">3. Compliance With Miami-Dade and Broward HVHZ Requirements</h3>
+          <h3 className="text-xl font-serif font-bold text-primary mb-2">3. Wind Performance for Miami-Dade and Broward HVHZ Conditions</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Because Roof Shield (RP3) holds a current Miami-Dade County NOA, it is a code-compliant roofing product for the High Velocity Hurricane Zone — the area covering all of Miami-Dade and Broward counties. Insurance inspectors in these counties are familiar with the NOA system. A roof carrying an active NOA-certified system is unambiguously in a different risk category than a roof with a non-certified coating.
+            The High Velocity Hurricane Zone covers all of Miami-Dade and Broward counties, where wind uplift performance matters most. Because Roof Shield (RP3) passed the Dade County Certified TAS-106 Uplift Test, its wind resistance is backed by independent, documented test results. A roof with a coating system that has passed the TAS-106 uplift test is unambiguously in a different risk category than a roof with an untested coating.
           </p>
 
           <Callout variant="green" title="✅ The Roof Store Provides Full ARLC Support Documentation">
-            As both the product manufacturer and the licensed contractor, The Roof Store provides complete installation records for every Roof Shield (RP3) project — including reference to the TAS-106 Notice of Acceptance. This gives your independent inspector the strongest possible foundation for issuing the ARLC affidavit your insurance company needs.
+            As both the product manufacturer and the licensed contractor, The Roof Store provides complete installation records for every Roof Shield (RP3) project — including the documented Dade County Certified TAS-106 Uplift Test report. This gives your independent inspector the strongest possible foundation for issuing the ARLC affidavit your insurance company needs.
           </Callout>
         </motion.section>
 
@@ -794,17 +784,17 @@ export default function Tas106Certification() {
 
         {/* Section 9 — How to Verify */}
         <motion.section id="verify" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">How to Verify the TAS-106 Certification</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-4 pb-3 border-b">How to Verify the TAS-106 Test Result</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Every TAS-106 certified product sold in Miami-Dade County is registered in the Miami-Dade County Notice of Acceptance (NOA) public database. The Roof Store's Roof Shield (RP3) certification can be independently verified by any homeowner, inspector, insurance adjuster, or building official. There is no need to take our word for it.
+            The Roof Store's Roof Shield (RP3) Dade County Certified TAS-106 Uplift Test result is backed by a documented, independent test report that any homeowner, inspector, insurance adjuster, or building official can review. There is no need to take our word for it.
           </p>
 
           <h3 className="text-xl font-serif font-bold text-primary mb-3">Verification Steps</h3>
           <ol className="space-y-3 mb-4">
             {[
-              "Visit the Miami-Dade County NOA database — publicly accessible at miamidade.gov/building",
-              "Search by manufacturer name (RoofProtect or Storm Shield Paint Systems) or by product name (Roof Shield, RP3)",
-              "Request the NOA reference number directly from The Roof Store — we provide the specific NOA document number upon request to any homeowner, inspector, or insurance representative. Call 954-210-9614 or email ammakira5@gmail.com",
+              "Request the documented Dade County Certified TAS-106 Uplift Test report directly from The Roof Store",
+              "Review the recorded pull-test results for the Roof Shield (RP3) system (RoofProtect / Storm Shield Paint Systems)",
+              "We provide the test documentation upon request to any homeowner, inspector, or insurance representative. Call 954-210-9614 or email ammakira5@gmail.com",
             ].map((step, i) => (
               <li key={i} className="flex gap-3 text-sm text-muted-foreground">
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">{i + 1}</span>
@@ -814,7 +804,7 @@ export default function Tas106Certification() {
           </ol>
 
           <div className="bg-muted border-l-3 border-slate-400 rounded-r-lg px-4 py-3 text-sm text-muted-foreground italic mb-6">
-            If a competitor claims TAS-106 certification for a liquid coating product and cannot provide a Miami-Dade County NOA number, the claim is not verified. The Miami-Dade County NOA database is the authoritative source — any certified product must appear in it.
+            If a competitor claims TAS-106 performance for a liquid coating product and cannot provide a documented Dade County Certified TAS-106 Uplift Test report, the claim is not verified. A documented, independent test report is the authoritative source — without it, there is no proof the product passed the test.
           </div>
 
           {/* PDF downloads */}
@@ -826,7 +816,7 @@ export default function Tas106Certification() {
                   href: "/docs/miami-dade-tas-106-roof-coating-uplift-test.pdf",
                   icon: "📋",
                   title: "TAS-106 Uplift Test — Official Test Document",
-                  sub: "The independent laboratory test report for the Roof Shield (RP3) TAS-106 certification",
+                  sub: "The independent laboratory report for the Roof Shield (RP3) Dade County Certified TAS-106 Uplift Test",
                 },
                 {
                   href: "/docs/roofshield-strength-data-sheet.pdf",
@@ -864,7 +854,7 @@ export default function Tas106Certification() {
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
           <div className="bg-gradient-to-br from-indigo-950 to-primary text-white rounded-2xl p-8 text-center">
             <ShieldCheck className="h-10 w-10 mx-auto mb-3 text-amber-300" />
-            <h2 className="text-2xl font-serif font-bold mb-2">Get the World's Only TAS-106 Certified Roof Coating</h2>
+            <h2 className="text-2xl font-serif font-bold mb-2">Get the World's Only Roof Coating to Pass the TAS-106 Certified Test</h2>
             <p className="text-white/85 mb-6 max-w-xl mx-auto text-sm leading-relaxed">
               Schedule a free manufacturer's inspection. We'll assess your roof, confirm Roof Shield (RP3) is the right fit, and provide a firm per-sq-ft quote — with no obligation.
             </p>
@@ -884,7 +874,7 @@ export default function Tas106Certification() {
 
         {/* Section 10 — FAQ */}
         <motion.section id="faq" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12">
-          <h2 className="text-3xl font-serif font-bold text-primary mb-2 pb-3 border-b">Frequently Asked Questions — TAS-106 Roof Coating Certification</h2>
+          <h2 className="text-3xl font-serif font-bold text-primary mb-2 pb-3 border-b">Frequently Asked Questions — TAS-106 Roof Coating Certified Test</h2>
           <p className="text-sm text-muted-foreground mb-6">
             For broader roof coating questions, see the full{" "}
             <Link href="/faq" className="text-accent hover:underline">Roof Coating FAQ</Link>{" "}

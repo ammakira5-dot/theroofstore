@@ -44,7 +44,7 @@ const preSeasonChecklist = [
     icon: Shield,
     items: [
       "Apply or renew your coating system before storm season begins — not after",
-      "Roof Shield (RP3): TAS-106 certified, fills all gaps between tiles, creates monolithic hurricane-rated surface",
+      "Roof Shield (RP3): passed the Dade County Certified TAS-106 Uplift Test, fills all gaps between tiles, creates monolithic hurricane test-verified surface",
       "SmartShield (RP2): Full tile-surface waterproofing, works with Citizens Insurance certification",
       "FungalShield (RP1): Anti-fungal renewal coat if existing coating is still sound but showing surface wear",
       "Request Additional Roof Life Certification to satisfy Citizens or private insurer requirements",
@@ -68,7 +68,7 @@ const hurricaneFaqs = [
   },
   {
     q: "Does roof coating actually help in a hurricane?",
-    a: "Yes — specifically our Roof Shield (RP3) system. It is the world's only liquid roof coating with an independent Dade County TAS-106 Uplift Pull Test certification. The system fills all gaps between tiles and bonds them into a monolithic surface — so wind cannot get under individual tiles and lift them. We have documented real hurricane events where neighboring roofs lost tiles while RoofShield-treated roofs held completely intact.",
+    a: "Yes — specifically our Roof Shield (RP3) system. It is the world's only liquid roof coating to pass an independent Dade County Certified TAS-106 Uplift Pull Test. The system fills all gaps between tiles and bonds them into a monolithic surface — so wind cannot get under individual tiles and lift them. We have documented real hurricane events where neighboring roofs lost tiles while RoofShield-treated roofs held completely intact.",
   },
   {
     q: "Will a roof coating help my Citizens Insurance situation?",
@@ -89,7 +89,7 @@ const schema = [
     "@context": "https://schema.org",
     "@type": "Article",
     headline: "Hurricane Season Roof Prep for South Florida Homeowners (May–October)",
-    description: "Complete pre-season and post-storm roof checklist for South Florida homeowners. Covers inspection, cleaning, repair, coating, Citizens Insurance, and TAS-106 certification — from The Roof Store.",
+    description: "Complete pre-season and post-storm roof checklist for South Florida homeowners. Covers inspection, cleaning, repair, coating, Citizens Insurance, and the Dade County Certified TAS-106 Uplift Test — from The Roof Store.",
     author: { "@type": "Organization", name: "The Roof Store", url: BASE },
     publisher: {
       "@type": "Organization",
@@ -125,7 +125,7 @@ export default function HurricaneRoofPrep() {
     <div className="w-full">
       <SEO
         title="Hurricane Season Roof Prep Checklist — South Florida Homeowners | The Roof Store"
-        description="Complete May–October hurricane roof prep checklist: inspection, cleaning, repair, and coating. TAS-106 certified Roof Shield system — the only liquid coating tested to 135+ MPH. Serving Broward, Miami-Dade & Palm Beach."
+        description="Complete May–October hurricane roof prep checklist: inspection, cleaning, repair, and coating. Roof Shield system passed the Dade County Certified TAS-106 Uplift Test — the only liquid coating tested to 135+ MPH. Serving Broward, Miami-Dade & Palm Beach."
         canonical="/hurricane-roof-prep"
         schema={schema}
       />
@@ -172,7 +172,7 @@ export default function HurricaneRoofPrep() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm font-bold">
             <Shield className="h-6 w-6 shrink-0" />
             <span>
-              The Roof Store's Roof Shield (RP3) is the world's only liquid roof coating with Dade County TAS-106 Uplift certification —
+              The Roof Store's Roof Shield (RP3) is the world's only liquid roof coating to pass the Dade County Certified TAS-106 Uplift Test —
               independently tested and documented at 135+ MPH on real hurricane events.
             </span>
           </div>
@@ -310,7 +310,7 @@ export default function HurricaneRoofPrep() {
             {[
               { href: "/roof-coating-lifespan-florida", label: "How Long Does Roof Coating Last in Florida?" },
               { href: "/roof-life-certification", label: "Additional Roof Life Certification Guide" },
-              { href: "/products/roofshield", label: "Roof Shield (RP3) — TAS-106 Certified System" },
+              { href: "/products/roofshield", label: "Roof Shield (RP3) — TAS-106 Certified Test System" },
               { href: "/pricing", label: "Roof Coating Pricing Guide" },
               { href: "/roof-services", label: "Professional Roof Coating Services" },
             ].map((link, i) => (

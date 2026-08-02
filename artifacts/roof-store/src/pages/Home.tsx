@@ -45,7 +45,7 @@ const homeFaqs = [
   },
   {
     q: "Will an elastomeric roof coating hold up to Florida hurricanes?",
-    a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to hold Dade County TAS-106 Uplift Pull Test certification, with documented 135+ MPH performance on real hurricane events (per independent Dade County TAS-106 uplift certification testing). The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
+    a: "Yes — and it outperforms new tile. Our Roof Shield (RP3) system is the world's only liquid roof coating to pass the Dade County Certified TAS-106 Uplift Pull Test, with documented 135+ MPH performance on real hurricane events (per independent Dade County Certified TAS-106 Uplift Test results). The multi-layer system fills every gap between tiles, making your roof monolithic — individual tiles cannot be lifted by wind because they are bonded into one continuous structure.",
   },
   {
     q: "How long does an elastomeric roof coating last in Florida's climate?",
@@ -207,7 +207,7 @@ export default function Home() {
                 A+ BBB Rated Since 1994
               </div>
               <Link href="/tas-106-certified-roof-coating" className="inline-block bg-white text-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase hover:bg-white/90 transition-colors">
-                🏅 TAS-106 Hurricane Certified →
+                🏅 TAS-106 Hurricane Test-Verified →
               </Link>
             </div>
             <div className="relative min-h-[260px] md:min-h-[320px] mb-6">
@@ -308,7 +308,7 @@ export default function Home() {
             {[
               { val: "30+", lbl: "Years Licensed in FL" },
               { val: "A+", lbl: "BBB Accredited" },
-              { val: "TAS-106", lbl: "Hurricane Certified" },
+              { val: "TAS-106", lbl: "Hurricane Test-Verified" },
               { val: "3,000+", lbl: "Color Options" },
               { val: "111+", lbl: "Cities Served" },
             ].map((stat, i) => (
@@ -348,8 +348,8 @@ export default function Home() {
             <Link href="/tas-106-certified-roof-coating" className="flex flex-col items-center p-4 group">
               <Wind className="h-12 w-12 text-accent mb-4" />
               <h3 className="font-serif font-bold text-xl mb-2 group-hover:text-accent transition-colors">World's Only TAS-106 Rated</h3>
-              <p className="text-white/80 text-sm">Roof Shield is the only liquid coating on earth with Dade County TAS-106 Uplift certification — tested on Spanish tile roofs.</p>
-              <span className="text-accent text-sm font-bold mt-2 group-hover:underline">See the certification →</span>
+              <p className="text-white/80 text-sm">Roof Shield is the only liquid coating on earth to pass the Dade County Certified TAS-106 Uplift Test — tested on Spanish tile roofs.</p>
+              <span className="text-accent text-sm font-bold mt-2 group-hover:underline">See the test results →</span>
             </Link>
             <div className="flex flex-col items-center p-4">
               <ShieldCheck className="h-12 w-12 text-accent mb-4" />

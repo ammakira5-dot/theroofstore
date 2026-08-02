@@ -317,7 +317,7 @@ export default function Factory() {
             </div>
             <h2 className="text-4xl font-serif font-bold text-primary mb-4">Inside the Facility</h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              "The Original Liquid Applied Rubber Roof Shield System" — trademarked, with all underlying materials manufactured exclusively by RoofProtect Products at this South Florida facility. The only Dade County TAS-106 Uplift Pull Test Rated roof coating system in the world. Certified, documented, and proven through real hurricane conditions.
+              "The Original Liquid Applied Rubber Roof Shield System" — trademarked, with all underlying materials manufactured exclusively by RoofProtect Products at this South Florida facility. The only roof coating system in the world to pass the Dade County Certified TAS-106 Uplift Pull Test. Test-verified, documented, and proven through real hurricane conditions.
             </p>
           </div>
 
@@ -374,7 +374,7 @@ export default function Factory() {
             <div className="space-y-4">
               <div className="bg-white/10 rounded-xl p-5">
                 <div className="text-accent font-bold text-sm uppercase tracking-wide mb-1">TAS-106 Pull Test</div>
-                <div className="text-white font-bold text-lg">Dade County Approved — Only Rated Coating Worldwide</div>
+                <div className="text-white font-bold text-lg">Passed the Dade County Certified Test — Only Rated Coating Worldwide</div>
                 <a
                   href="/docs/miami-dade-tas-106-roof-coating-uplift-test.pdf"
                   target="_blank"

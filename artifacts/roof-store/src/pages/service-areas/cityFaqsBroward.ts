@@ -46,7 +46,7 @@ export const entries: Record<string, CityFaq[]> = {
   "hillsboro-beach": [
     {
       q: "Is roof coating suitable for the oceanfront estates and condos in Hillsboro Beach?",
-      a: "Yes. Hillsboro Beach — the narrow barrier strip known as the 'Millionaire's Mile' along A1A — has luxury oceanfront estates and mid-rise condos exposed to some of the harshest salt and wind in Broward. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification, the highest hurricane resistance standard in the US, and seals barrel tile and flat decks against relentless salt-air weathering.",
+      a: "Yes. Hillsboro Beach — the narrow barrier strip known as the 'Millionaire's Mile' along A1A — has luxury oceanfront estates and mid-rise condos exposed to some of the harshest salt and wind in Broward. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test, verified to the highest hurricane resistance standard in the US, and seals barrel tile and flat decks against relentless salt-air weathering.",
     },
     {
       q: "Will a Hillsboro Beach condo board or the town approve coating instead of replacement?",
@@ -64,7 +64,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "Does salt air on the barrier island near Hallandale Beach affect roof coating choice?",
-      a: "It does. Properties east of Federal Highway toward the Golden Isles and beachfront take heavy salt exposure that degrades flat decks and tile faster. We recommend SmartShield (RP2) for its elastomeric waterproofing on flat decks, or RoofShield (RP3) for older roofs needing reinforcement and TAS-106 wind-uplift certification. All coatings are manufactured in-house by RoofProtect Products.",
+      a: "It does. Properties east of Federal Highway toward the Golden Isles and beachfront take heavy salt exposure that degrades flat decks and tile faster. We recommend SmartShield (RP2) for its elastomeric waterproofing on flat decks, or RoofShield (RP3) for older roofs needing reinforcement, verified under the Dade County Certified TAS-106 Uplift Test. All coatings are manufactured in-house by RoofProtect Products.",
     },
     {
       q: "How much does roof coating cost in Hallandale Beach, FL?",
@@ -102,7 +102,7 @@ export const entries: Record<string, CityFaq[]> = {
   "lauderdale-by-the-sea": [
     {
       q: "Does the oceanfront salt exposure in Lauderdale-by-the-Sea require a special coating?",
-      a: "Yes. Lauderdale-by-the-Sea is a compact beach town where nearly every home and low-rise condo sits within a few blocks of the Atlantic, so salt air constantly attacks barrel tile, flat decks, and metal roofs. We recommend SmartShield (RP2) for its elastomeric, waterproof membrane on flat decks and tile, and RoofShield (RP3) for older roofs needing TAS-106 wind-uplift certification against coastal storms.",
+      a: "Yes. Lauderdale-by-the-Sea is a compact beach town where nearly every home and low-rise condo sits within a few blocks of the Atlantic, so salt air constantly attacks barrel tile, flat decks, and metal roofs. We recommend SmartShield (RP2) for its elastomeric, waterproof membrane on flat decks and tile, and RoofShield (RP3) for older roofs verified under the Dade County Certified TAS-106 Uplift Test against coastal storms.",
     },
     {
       q: "Can roof coating restore the older cottages and low-rise condos here?",
@@ -116,7 +116,7 @@ export const entries: Record<string, CityFaq[]> = {
   "lighthouse-point": [
     {
       q: "Is roof coating suitable for Lighthouse Point's waterfront tile homes?",
-      a: "Yes. Lighthouse Point is a boating community of upscale single-family homes lining the Intracoastal canals, most with barrel or S-tile roofs from the 1970s through 1990s exposed to constant salt air off the water. SmartShield (RP2) waterproofs and refreshes tile that has faded or grown algae, and RoofShield (RP3) reinforces older roofs while adding TAS-106 hurricane wind-uplift certification.",
+      a: "Yes. Lighthouse Point is a boating community of upscale single-family homes lining the Intracoastal canals, most with barrel or S-tile roofs from the 1970s through 1990s exposed to constant salt air off the water. SmartShield (RP2) waterproofs and refreshes tile that has faded or grown algae, and RoofShield (RP3) reinforces older roofs while adding verification under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Will roof coating satisfy my insurer on an older Lighthouse Point roof?",
@@ -172,7 +172,7 @@ export const entries: Record<string, CityFaq[]> = {
   "parkland": [
     {
       q: "What roof coating system is best for Parkland's large tile estates?",
-      a: "Parkland's gated communities — Heron Bay, Parkland Golf & Country Club, and Cascata — feature large single-family homes with concrete and S-tile roofs, many now 15–25 years old and showing UV fading and algae. SmartShield (RP2) restores and waterproofs these roofs with a full color refresh, and RoofShield (RP3) adds TAS-106 hurricane wind-uplift certification for the highest wind resistance standard in the US.",
+      a: "Parkland's gated communities — Heron Bay, Parkland Golf & Country Club, and Cascata — feature large single-family homes with concrete and S-tile roofs, many now 15–25 years old and showing UV fading and algae. SmartShield (RP2) restores and waterproofs these roofs with a full color refresh, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for the highest wind resistance standard in the US.",
     },
     {
       q: "Will my Parkland HOA approve a roof coating instead of replacement?",
@@ -200,7 +200,7 @@ export const entries: Record<string, CityFaq[]> = {
   "sea-ranch-lakes": [
     {
       q: "Does the oceanfront location of Sea Ranch Lakes call for a specialized roof coating?",
-      a: "Yes. Sea Ranch Lakes is a tiny gated village directly on the Atlantic, so its custom single-family homes take intense salt air and wind that break down tile, flat decks, and metal roofs faster than inland areas. We recommend RoofShield (RP3) for its TAS-106 Dade County Wind Uplift Certification and reinforcement, or SmartShield (RP2) for elastomeric waterproofing on tile and flat decks.",
+      a: "Yes. Sea Ranch Lakes is a tiny gated village directly on the Atlantic, so its custom single-family homes take intense salt air and wind that break down tile, flat decks, and metal roofs faster than inland areas. We recommend RoofShield (RP3) verified under the Dade County Certified TAS-106 Wind Uplift Test, plus reinforcement, or SmartShield (RP2) for elastomeric waterproofing on tile and flat decks.",
     },
     {
       q: "Will the Sea Ranch Lakes village and homeowners' association approve roof coating?",
@@ -214,7 +214,7 @@ export const entries: Record<string, CityFaq[]> = {
   "southwest-ranches": [
     {
       q: "Is roof coating suitable for Southwest Ranches' large acreage estates and metal roofs?",
-      a: "Yes. Southwest Ranches is a rural equestrian community of large-acreage estates, many with expansive tile roofs, barns, and metal-roofed outbuildings that see full-day sun exposure. SmartShield (RP2) restores and waterproofs large tile and metal surfaces with a reflective color refresh, while RoofShield (RP3) reinforces older roofs and adds TAS-106 hurricane wind-uplift certification.",
+      a: "Yes. Southwest Ranches is a rural equestrian community of large-acreage estates, many with expansive tile roofs, barns, and metal-roofed outbuildings that see full-day sun exposure. SmartShield (RP2) restores and waterproofs large tile and metal surfaces with a reflective color refresh, while RoofShield (RP3) reinforces older roofs and is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
     {
       q: "Does Southwest Ranches require a permit for roof coating?",

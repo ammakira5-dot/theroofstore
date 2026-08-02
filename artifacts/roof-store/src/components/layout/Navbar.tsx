@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { href: "/about", label: "About Us" },
-  { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified" },
+  { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified Test" },
   { href: "/roof-systems", label: "Roof Systems" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/reviews", label: "Reviews" },
@@ -42,7 +42,7 @@ const productDropdown = {
     {
       group: "Resources",
       links: [
-        { href: "/tas-106-certified-roof-coating", label: "TAS-106 Uplift Certification", icon: ShieldCheck, desc: "The hurricane wind test we passed" },
+        { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certified Test", icon: ShieldCheck, desc: "The hurricane wind test we passed" },
         { href: "/questions", label: "Questions to Ask", icon: HelpCircle, desc: "What every buyer should know" },
         { href: "/shop", label: "Buy Online", icon: ShoppingCart, desc: "Order direct — RP1 · RP2 · RP3" },
       ],

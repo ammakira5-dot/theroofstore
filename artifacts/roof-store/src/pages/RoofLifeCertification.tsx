@@ -421,13 +421,13 @@ export default function RoofLifeCertification() {
           </div>
           <h2 className="font-serif font-bold text-3xl md:text-4xl text-primary mb-4">TAS-106: The Test That Proves It</h2>
           <p className="text-lg text-foreground/70 mb-10 leading-relaxed">
-            TAS-106 is the Florida Dade County standard for tile roof wind uplift — the same pull-test tool used to certify new tile roof installations. No liquid roof coating in the world has passed this test. Ours has.
+            TAS-106 is the Florida Dade County standard for tile roof wind uplift — the same pull-test tool used to qualify new tile roof installations. No liquid roof coating in the world has passed this test. Ours has.
           </p>
 
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-7 border border-border shadow-sm">
               <p className="text-sm font-bold uppercase tracking-wide text-accent mb-1">Our position</p>
-              <p className="font-serif font-bold text-lg text-primary mb-3">Our RoofShield system was pull-tested using the same TAS-106 equipment used to certify new tile roofs. The result was documented and on record.</p>
+              <p className="font-serif font-bold text-lg text-primary mb-3">Our RoofShield system was pull-tested using the same TAS-106 equipment used to qualify new tile roofs. The result was documented and on record.</p>
               <p className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-1">The facts</p>
               <div className="text-foreground/70 leading-relaxed">
                 <p className="mb-4">Using the standard TAS-106 tile uplift pull-test tool, three installation methods were tested side-by-side:</p>
@@ -471,7 +471,7 @@ export default function RoofLifeCertification() {
               <p className="text-sm font-bold uppercase tracking-wide text-accent mb-1">Our position</p>
               <p className="font-serif font-bold text-lg text-primary mb-3">Ask any competitor for their TAS-106 documentation. Most cannot produce it.</p>
               <p className="text-sm font-bold uppercase tracking-wide text-muted-foreground mb-1">The facts</p>
-              <p className="text-foreground/70 leading-relaxed">TAS-106 Dade County Uplift Pull Test certification is the gold standard for tile roof wind resistance in Florida. It is the test the Florida Building Code uses to approve new tile roof systems. Obtaining this certification for a liquid coating system requires independent third-party testing and documented results. We have it. It is the reason we are the only TAS-106 rated liquid roof coating in the world — and why we say so.</p>
+              <p className="text-foreground/70 leading-relaxed">The Dade County Certified TAS-106 Uplift Pull Test is the gold standard for tile roof wind resistance in Florida. It is the test the Florida Building Code uses to approve new tile roof systems. Passing this test with a liquid coating system requires independent third-party testing and documented results. We have it. It is the reason we are the only liquid roof coating in the world to pass the Dade County Certified TAS-106 Uplift Test — and why we say so.</p>
             </div>
           </div>
         </div>

@@ -69,7 +69,7 @@ const schema = [
         name: "Who installs silicone roof coating in South Florida?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Roof Store installs silicone roof coating systems throughout Broward, Miami-Dade, Palm Beach, and Monroe Counties, using Roof Shield (RP3) — a proprietary silicone-based system manufactured in-house by RoofProtect and independently TAS-106 Dade County Uplift rated.",
+          text: "The Roof Store installs silicone roof coating systems throughout Broward, Miami-Dade, Palm Beach, and Monroe Counties, using Roof Shield (RP3) — a proprietary silicone-based system manufactured in-house by RoofProtect and independently verified under the Dade County Certified TAS-106 Uplift Test.",
         },
       },
     ],

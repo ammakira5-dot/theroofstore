@@ -58,7 +58,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Loxahatchee Groves roof landscape",
       paragraphs: [
         "Metal is common here — standing-seam and 5V-crimp panels on homes and agricultural buildings alike. Over time the factory finish chalks, fasteners back out, and seams open; a properly prepped elastomeric coating re-seals the whole roof and reflects heat off the structures below. Concrete tile on the larger custom homes ages the way it does everywhere in the county: sound tile, exhausted surface, black streaking on shaded slopes.",
-        "The lack of tree canopy means intense UV, so chalking and fading run fast on both metal and tile. Our FungalShield (RP1) treatment handles biological growth on shaded north faces, while RoofShield (RP3) — carrying TAS-106 Dade County Wind Uplift Certification — is popular on the exposed, wind-swept roofs out here where uplift resistance matters most. All coating materials are manufactured by RoofProtect Products.",
+        "The lack of tree canopy means intense UV, so chalking and fading run fast on both metal and tile. Our FungalShield (RP1) treatment handles biological growth on shaded north faces, while RoofShield (RP3) — verified under the Dade County Certified TAS-106 Wind Uplift Test — is popular on the exposed, wind-swept roofs out here where uplift resistance matters most. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -87,7 +87,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Manalapan roof landscape",
       paragraphs: [
         "Barrel and flat clay tile dominate the Mediterranean-style estates, with standing-seam metal on more contemporary homes and low-slope membrane on the flat terraces and loggias that these floor plans favor. Every one of these surfaces is fighting constant salt load; even structurally perfect tile goes chalky and streaked years faster here than it would inland.",
-        "Because the homes are so large, we frequently combine systems on a single roof — SmartShield on the main tile fields, elastomeric membrane on the terraces, and targeted flashing and penetration sealing where salt has attacked the metal details. RoofShield (RP3) with its TAS-106 Dade County Wind Uplift Certification is the most-requested system for oceanfront exposure. All coating materials are manufactured by RoofProtect Products.",
+        "Because the homes are so large, we frequently combine systems on a single roof — SmartShield on the main tile fields, elastomeric membrane on the terraces, and targeted flashing and penetration sealing where salt has attacked the metal details. RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, is the most-requested system for oceanfront exposure. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -174,7 +174,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Ocean Ridge roof landscape",
       paragraphs: [
         "Mediterranean-style homes with barrel and flat clay tile are common, alongside contemporary homes with standing-seam metal and flat terraces. Each surface fights constant salt load; even sound tile chalks and streaks faster here than a few miles inland, and metal flashings show corrosion at fasteners and valleys.",
-        "We often blend systems on one roof — SmartShield on the tile fields, elastomeric membrane on the flat terraces, and focused sealing on the salt-attacked metal details. RoofShield (RP3), carrying TAS-106 Dade County Wind Uplift Certification, is the go-to for direct oceanfront exposure. All coating materials are manufactured by RoofProtect Products.",
+        "We often blend systems on one roof — SmartShield on the tile fields, elastomeric membrane on the flat terraces, and focused sealing on the salt-attacked metal details. RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, is the go-to for direct oceanfront exposure. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -232,7 +232,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Palm Beach roof landscape",
       paragraphs: [
         "Mizner-era and later Mediterranean estates carry barrel and flat clay tile that is often original and effectively irreplaceable — which is exactly why restoration matters here. Contemporary homes and additions add standing-seam and flat-lock metal, and nearly every estate has low-slope terraces and loggias that need true waterproofing membranes.",
-        "The dual salt load from ocean and Intracoastal accelerates chalking, corrosion, and biological growth in shaded courtyards. We routinely combine systems on a single estate — SmartShield on the tile, elastomeric membrane on the terraces, targeted sealing on salt-attacked metal — with RoofShield (RP3) and its TAS-106 Dade County Wind Uplift Certification for the most exposed elevations. All coating materials are manufactured by RoofProtect Products.",
+        "The dual salt load from ocean and Intracoastal accelerates chalking, corrosion, and biological growth in shaded courtyards. We routinely combine systems on a single estate — SmartShield on the tile, elastomeric membrane on the terraces, targeted sealing on salt-attacked metal — with RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, for the most exposed elevations. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -291,7 +291,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Palm Beach Shores roof landscape",
       paragraphs: [
         "The single-family stock runs to mid-century CBS homes and beach cottages with a mix of gable tile and low-slope decks, while the condo and resort buildings carry large flat roofs ideal for reflective membrane coating. Salt from both the ocean and the inlet means even sound tile chalks and streaks faster here than inland.",
-        "Constant humidity and salt load also attack metal details and encourage algae in shaded areas. FungalShield (RP1) clears the growth; SmartShield (RP2) handles the full clean-seal-recolor on tile, and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification is available for the most wind-exposed oceanfront roofs. All coating materials are manufactured by RoofProtect Products.",
+        "Constant humidity and salt load also attack metal details and encourage algae in shaded areas. FungalShield (RP1) clears the growth; SmartShield (RP2) handles the full clean-seal-recolor on tile, and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, is available for the most wind-exposed oceanfront roofs. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -349,7 +349,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Riviera Beach roof landscape",
       paragraphs: [
         "Mainland Riviera Beach runs to postwar CBS homes with low-slope, gravel, and gable roofs, plus commercial and marina-district buildings with large flat decks ideal for reflective membrane restoration. Singer Island carries oceanfront condos and homes with barrel tile, metal, and expansive flat roofs — all fighting constant salt load.",
-        "The coastal exposure on the island accelerates chalking, corrosion, and algae, while inland humidity keeps biological growth active on shaded mainland slopes. FungalShield (RP1) clears the growth, SmartShield (RP2) restores tile, and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification serves the wind-exposed oceanfront. All coating materials are manufactured by RoofProtect Products.",
+        "The coastal exposure on the island accelerates chalking, corrosion, and algae, while inland humidity keeps biological growth active on shaded mainland slopes. FungalShield (RP1) clears the growth, SmartShield (RP2) restores tile, and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, serves the wind-exposed oceanfront. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -465,7 +465,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Tequesta roof landscape",
       paragraphs: [
         "The village runs to 1960s–80s single-family homes with barrel and S-tile plus flat and low-slope sections, and a share of metal roofs on riverside and newer homes. Country Club communities like Tequesta Country Club add larger tile roofs on golf and waterfront lots, all in the prime restoration window.",
-        "The Loxahatchee River corridor keeps humidity high and the mature tree canopy shades many roof planes, so algae is relentless. FungalShield (RP1) handles the growth; most homeowners step up to SmartShield (RP2) for a full clean, seal, and recolor, and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification is available near the coast. All materials are manufactured by RoofProtect Products.",
+        "The Loxahatchee River corridor keeps humidity high and the mature tree canopy shades many roof planes, so algae is relentless. FungalShield (RP1) handles the growth; most homeowners step up to SmartShield (RP2) for a full clean, seal, and recolor, and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, is available near the coast. All materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -494,7 +494,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Wellington roof landscape",
       paragraphs: [
         "The dominant residential roof is concrete barrel and S-tile on 1980s–2000s homes, built in phases so neighborhoods age together. The equestrian corridors — around Pierson Road, South Shore, and the Aero Club and Palm Beach Point areas — add estate homes with large tile fields plus barns and stables carrying flat and metal roofs that need true waterproofing and reflective coating.",
-        "Wellington's extensive lakes, canals, and irrigation keep humidity high and drive fast biological growth on shaded slopes. FungalShield (RP1) clears the growth; SmartShield (RP2) is the popular one-project clean-seal-recolor, and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification serves the exposed estate roofs. All coating materials are manufactured by RoofProtect Products.",
+        "Wellington's extensive lakes, canals, and irrigation keep humidity high and drive fast biological growth on shaded slopes. FungalShield (RP1) clears the growth; SmartShield (RP2) is the popular one-project clean-seal-recolor, and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, serves the exposed estate roofs. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -524,7 +524,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The West Palm Beach roof landscape",
       paragraphs: [
         "The historic core is defined by 1920s clay barrel tile on Mediterranean-revival homes, plus flat and low-slope sections that need genuine waterproofing membranes. Downtown and the waterfront add condo and commercial flat roofs ideal for reflective coating, while the western suburbs run to 1970s–2000s concrete barrel and S-tile aging on a predictable, neighborhood-by-neighborhood schedule.",
-        "Coastal salt near the Intracoastal, high inland humidity, and mature canopy across the historic districts all drive aggressive biological growth. FungalShield (RP1) clears it; SmartShield (RP2) restores tile in one project; and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification serves the most exposed roofs. All coating materials are manufactured by RoofProtect Products.",
+        "Coastal salt near the Intracoastal, high inland humidity, and mature canopy across the historic districts all drive aggressive biological growth. FungalShield (RP1) clears it; SmartShield (RP2) restores tile in one project; and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, serves the most exposed roofs. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {
@@ -583,7 +583,7 @@ export const entries: Record<string, CityLocalContent> = {
       heading: "The Key West roof landscape",
       paragraphs: [
         "Old Town's historic conch houses wear steep standing-seam and V-crimp metal roofs — many original or period-correct — where preservation, not replacement, is the goal. A coating that re-seals and restores the metal keeps the character intact while stopping the corrosion and leaks that constant salt spray drives. New Town and outlying areas add concrete tile, metal, and flat/low-slope roofs on mid-century and newer homes.",
-        "The extreme salt load, unbroken tropical sun, and high humidity make Key West roofs age faster than almost anywhere on the mainland — corrosion at fasteners and flashings and biological growth in shaded lanes are constant. FungalShield (RP1) clears the growth, our elastomeric metal and membrane coatings re-seal the surfaces, and RoofShield (RP3) with TAS-106 Dade County Wind Uplift Certification suits the hurricane-exposed island. All coating materials are manufactured by RoofProtect Products.",
+        "The extreme salt load, unbroken tropical sun, and high humidity make Key West roofs age faster than almost anywhere on the mainland — corrosion at fasteners and flashings and biological growth in shaded lanes are constant. FungalShield (RP1) clears the growth, our elastomeric metal and membrane coatings re-seal the surfaces, and RoofShield (RP3), verified under the Dade County Certified TAS-106 Wind Uplift Test, suits the hurricane-exposed island. All coating materials are manufactured by RoofProtect Products.",
       ],
     },
     permitsAndRules: {

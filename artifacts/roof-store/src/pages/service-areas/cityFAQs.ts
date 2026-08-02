@@ -47,7 +47,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "What roof coating system is best for Pembroke Pines tile homes?",
-      a: "Pembroke Pines has a large stock of 1990s barrel and S-tile homes that are ideal for SmartShield (RP2). These roofs are structurally sound but typically show algae, UV fading, and cracked mortar — exactly what RP2 corrects, with a 10-year warranty. For homeowners focused on insurance documentation, RoofShield (RP3) adds TAS-106 hurricane wind-uplift certification — the highest wind resistance standard in the US.",
+      a: "Pembroke Pines has a large stock of 1990s barrel and S-tile homes that are ideal for SmartShield (RP2). These roofs are structurally sound but typically show algae, UV fading, and cracked mortar — exactly what RP2 corrects, with a 10-year warranty. For homeowners focused on insurance documentation, RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test — the highest wind resistance standard in the US.",
     },
     {
       q: "How much does roof coating cost in Pembroke Pines?",
@@ -57,7 +57,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "miramar": [
     {
       q: "Does roof coating qualify for a Miramar homeowners insurance discount?",
-      a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the United States. Under Florida SB 2-D, insurers must offer credits for certified roof systems, and an Additional Roof Life Certification (ARLC) documenting the restored condition can help retain coverage on aging Miramar roofs.",
+      a: "Yes. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the United States. Under Florida SB 2-D, insurers must offer credits for certified roof systems, and an Additional Roof Life Certification (ARLC) documenting the restored condition can help retain coverage on aging Miramar roofs.",
     },
     {
       q: "How much does roof coating cost in Miramar, FL?",
@@ -177,7 +177,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "Does roof coating help with Deerfield Beach hurricane insurance?",
-      a: "Our RoofShield (RP3) system carries TAS-106 Dade County Uplift Certification, qualifying Deerfield Beach homeowners for Florida SB 2-D insurance credits and supporting Additional Roof Life Certification (ARLC) documentation. Ask about our manufacturer inspection report package during your free estimate.",
+      a: "Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Uplift Test, qualifying Deerfield Beach homeowners for Florida SB 2-D insurance credits and supporting Additional Roof Life Certification (ARLC) documentation. Ask about our manufacturer inspection report package during your free estimate.",
     },
   ],
   "coral-gables": [
@@ -217,7 +217,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "miami-beach": [
     {
       q: "Can roof coating protect Miami Beach homes from salt and humidity damage?",
-      a: "Miami Beach's oceanfront climate is one of the most demanding in the US — high salt content, extreme UV, and year-round humidity. Our RoofShield (RP3) system creates a TAS-106 certified rubber membrane that seals out salt moisture, while our SmartShield (RP2) BASF pigments resist UV and salt fade. Both systems are designed specifically for South Florida coastal conditions.",
+      a: "Miami Beach's oceanfront climate is one of the most demanding in the US — high salt content, extreme UV, and year-round humidity. Our RoofShield (RP3) system creates a rubber membrane that passed the Dade County Certified TAS-106 Uplift Test and seals out salt moisture, while our SmartShield (RP2) BASF pigments resist UV and salt fade. Both systems are designed specifically for South Florida coastal conditions.",
     },
     {
       q: "How much does roof coating cost in Miami Beach?",
@@ -227,7 +227,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
   "homestead": [
     {
       q: "Why is RoofShield (RP3) especially important in Homestead, FL?",
-      a: "Homestead sits in the direct path of South Florida's hurricane corridor — the same track that brought Hurricane Andrew in 1992. Our RoofShield (RP3) system carries TAS-106 Dade County Uplift Certification, the highest wind resistance rating available for a coating system in the US. For Homestead homeowners, this certification supports Florida SB 2-D insurance credits and provides documented storm protection.",
+      a: "Homestead sits in the direct path of South Florida's hurricane corridor — the same track that brought Hurricane Andrew in 1992. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Uplift Test, the highest wind resistance rating available for a coating system in the US. For Homestead homeowners, this test result supports Florida SB 2-D insurance credits and provides documented storm protection.",
     },
     {
       q: "How much does roof coating cost in Homestead, FL?",
@@ -245,7 +245,7 @@ export const cityFaqOverrides: Record<string, CityFaq[]> = {
     },
     {
       q: "What roof coating system is best for Boca Raton's HOA communities?",
-      a: "SmartShield (RP2) is the go-to system for Boca Raton HOA communities — it provides full waterproofing, HOA-approvable color restoration, and a 10-year warranty, all without structural alteration that would trigger permit requirements. For homes with documented wind insurance concerns, RoofShield (RP3) adds TAS-106 hurricane certification.",
+      a: "SmartShield (RP2) is the go-to system for Boca Raton HOA communities — it provides full waterproofing, HOA-approvable color restoration, and a 10-year warranty, all without structural alteration that would trigger permit requirements. For homes with documented wind insurance concerns, RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test.",
     },
   ],
   "west-palm-beach": [

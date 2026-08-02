@@ -78,7 +78,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, HOA rules & insurance in Miramar",
       paragraphs: [
         "Coating projects in Miramar generally don't trigger a building permit because no structural work is performed — but west Miramar's HOAs (Sunset Lakes, Riviera Isles, Silver Falls, and others) almost all require architectural review board approval for roof color. We provide the spec sheets and color documentation your board needs, and BASF Cool Pigment Technology means even a dark color choice stays energy-compliant.",
-        "Under Florida SB 2-D, insurers must offer credits for certified roof systems. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification — the strongest wind rating available for a liquid coating — which is why it's our most-requested system among Miramar homeowners fighting carrier non-renewal letters.",
+        "Under Florida SB 2-D, insurers must offer credits for certified roof systems. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test — the strongest wind result available for a liquid coating — which is why it's our most-requested system among Miramar homeowners fighting carrier non-renewal letters.",
       ],
     },
     neighborhoods: [
@@ -107,7 +107,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, HOA rules & insurance in Weston",
       paragraphs: [
         "Weston contracts its building department services, and surface restoration generally does not require a permit — but virtually every Weston project requires HOA architectural review. Boards here typically want a product specification sheet, a manufacturer color card, and proof of licensing and insurance before approving. We prepare that package as a standard part of every Weston quote, and we can color-match any approved tile sample in your community's palette.",
-        "For insurance-driven projects, RoofShield (RP3) with its TAS-106 Dade County Uplift Certification plus an Additional Roof Life Certification is the strongest documentation package we can put in front of a carrier questioning a 25-year-old Weston roof.",
+        "For insurance-driven projects, RoofShield (RP3), verified under the Dade County Certified TAS-106 Uplift Test, plus an Additional Roof Life Certification is the strongest documentation package we can put in front of a carrier questioning a 25-year-old Weston roof.",
       ],
     },
     neighborhoods: [
@@ -254,7 +254,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, local rules & insurance in Hialeah",
       paragraphs: [
         "Roof coating is surface restoration and generally does not require a City of Hialeah permit — though for RoofShield installations we provide the full manufacturer inspection report and warranty paperwork, which many Hialeah homeowners want on file for insurance purposes anyway. Most Hialeah neighborhoods have no HOA, so projects move fast: free inspection, written quote, and typically application within two weeks.",
-        "Miami-Dade is the birthplace of the TAS-106 uplift standard, and our RoofShield (RP3) system is the only liquid coating in the world certified to it — a meaningful credential on Hialeah's older roofs when a carrier questions wind resistance.",
+        "Miami-Dade is the birthplace of the TAS-106 uplift standard, and our RoofShield (RP3) system is the only liquid coating in the world to pass the Dade County Certified TAS-106 Uplift Test — a meaningful credential on Hialeah's older roofs when a carrier questions wind resistance.",
       ],
     },
     neighborhoods: [
@@ -311,7 +311,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, local rules & insurance in Miami Gardens",
       paragraphs: [
-        "Surface roof restoration generally does not require a City of Miami Gardens permit, and most of the city's neighborhoods have no HOA — so the path from inspection to finished roof is one of the fastest in our service area. Where documentation matters most here is insurance: we provide the manufacturer warranty paperwork and, with RoofShield (RP3), the TAS-106 Dade County Uplift Certification — the strongest wind credential a liquid coating can carry, created by this county's own building code.",
+        "Surface roof restoration generally does not require a City of Miami Gardens permit, and most of the city's neighborhoods have no HOA — so the path from inspection to finished roof is one of the fastest in our service area. Where documentation matters most here is insurance: we provide the manufacturer warranty paperwork and, with RoofShield (RP3), documentation that it passed the Dade County Certified TAS-106 Uplift Test — the strongest wind credential a liquid coating can carry, created by this county's own building code.",
         "If you've received a non-renewal or roof-age letter, bring it to the free inspection. We'll tell you honestly whether coating plus certification solves it for your roof — and if the roof genuinely needs structural repair first, we'll tell you that too.",
       ],
     },
@@ -365,7 +365,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "The Hollywood roof landscape",
       paragraphs: [
         "East Hollywood is flat-roof country: 1920s–50s homes in the Lakes with built-up and modified bitumen decks, plus the low-slope commercial corridor along Hollywood Boulevard and Federal Highway. Central Hollywood — the Hills, Boulevard Heights, Driftwood — is dominated by 1950s–60s CBS ranches under shingle and gravel, while Emerald Hills and the western sections run to 1970s–90s concrete tile on larger footprints.",
-        "The beach barrier island is its own market: high-rise and garden condo roofs where board approval, staging logistics, and documented wind-uplift ratings decide who gets the job. Roof Shield's TAS-106 certification — tested to Miami-Dade's uplift standard — is the credential coastal boards ask about by name.",
+        "The beach barrier island is its own market: high-rise and garden condo roofs where board approval, staging logistics, and documented wind-uplift ratings decide who gets the job. Roof Shield's pass of the Dade County Certified TAS-106 Uplift Test — tested to Miami-Dade's uplift standard — is the credential coastal boards ask about by name.",
       ],
     },
     permitsAndRules: {
@@ -686,7 +686,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "The Hallandale Beach roof landscape",
       paragraphs: [
         "East Hallandale is dominated by condo and co-op buildings — from garden-style walk-ups to towers — whose low-slope decks age on maintenance-budget schedules. Golden Isles and Three Islands add waterfront single-family estates under tile, while the blocks west of US-1 hold the original 1950s–60s CBS ranch grid.",
-        "Hallandale's position on the Miami-Dade line means many of its buildings were built and re-roofed to Dade-influenced standards — and boards here ask for documented uplift ratings by name. Roof Shield's TAS-106 certification is that document.",
+        "Hallandale's position on the Miami-Dade line means many of its buildings were built and re-roofed to Dade-influenced standards — and boards here ask for documented uplift ratings by name. Roof Shield's pass of the Dade County Certified TAS-106 Uplift Test is that document.",
       ],
     },
     permitsAndRules: {
@@ -993,7 +993,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
   miami: {
     intro: [
       "Miami is where roof coating has to prove itself: the strictest wind code in America, a century of housing stock from Coconut Grove bungalows to Brickell-adjacent flat-roof moderns, and a climate that attacks every surface with UV, salt, and ten wet months a year. This is our home county's flagship market — and the reason our flagship product carries a Miami-Dade rating.",
-      "Roof Shield is the world's only monolithic roof coating with a TAS-106 Miami-Dade uplift rating — the county's own hurricane test standard. On the flat and low-slope roofs that define whole Miami neighborhoods (Shenandoah, Silver Bluff, the Upper Eastside's MiMo district), that rating is the difference between a coating and a certified hurricane system.",
+      "Roof Shield is the world's only monolithic roof coating with a TAS-106 Miami-Dade uplift rating — the county's own hurricane test standard. On the flat and low-slope roofs that define whole Miami neighborhoods (Shenandoah, Silver Bluff, the Upper Eastside's MiMo district), that rating is the difference between a coating and a hurricane system verified under the county's own Certified Test.",
       "The other Miami constant is insurance pressure: carriers flag roof age across the city's 1920s–1970s neighborhoods relentlessly. A coating restoration plus an Additional Roof Life Certification gives Miami homeowners the documented answer — at 60–70% below the re-roof quote the letter implies you need.",
     ],
     roofLandscape: {
@@ -1006,7 +1006,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, HOA rules & insurance in Miami",
       paragraphs: [
-        "The City of Miami and Miami-Dade County run some of the most rigorous building oversight in the country — but coating is surface restoration, and most projects proceed without a permit. Where historic districts apply (Morningside, the MiMo Biscayne corridor, parts of the Grove and Shenandoah), exterior changes get extra review, and we confirm requirements before starting. Our documentation package — NOA references, TAS-106 certification, product specs — is built for Miami-grade scrutiny.",
+        "The City of Miami and Miami-Dade County run some of the most rigorous building oversight in the country — but coating is surface restoration, and most projects proceed without a permit. Where historic districts apply (Morningside, the MiMo Biscayne corridor, parts of the Grove and Shenandoah), exterior changes get extra review, and we confirm requirements before starting. Our documentation package — Dade County Certified TAS-106 Uplift Test results, product specs, warranty terms — is built for Miami-grade scrutiny.",
         "Miami's roof-age insurance crisis is the worst in Florida: carriers non-renew on age alone across the city's older neighborhoods. A documented coating restoration with Additional Roof Life Certification is the certified path that keeps 50-year-old Miami homes insured without 50-thousand-dollar re-roofs.",
       ],
     },
@@ -1023,7 +1023,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "Miami Beach roofs work harder than any in Florida: barrier-island salt on every surface, the nation's most famous Art Deco flat-roof inventory, and building oversight to match. Coating restoration was practically invented for this island — sealing flat decks and tile fields as one membrane instead of tearing off roofs that historic rules protect.",
       "From South Beach's Deco and MiMo apartment buildings to Mid-Beach's 1930s–50s single-family streets and North Beach's garden condos, the dominant roof is flat or low-slope — and flat roofs fail at seams, flashings, and ponding zones first. A monolithic elastomeric coating eliminates the seams; Roof Shield adds the Miami-Dade TAS-106 uplift rating that an open-ocean address demands.",
-      "For the island's condo boards and hotel operators, we bring the full documentation package — NOA references, uplift certification, specs, insurance — because on Miami Beach, the paperwork is half the project.",
+      "For the island's condo boards and hotel operators, we bring the full documentation package — Dade County Certified TAS-106 Uplift Test results, specs, insurance — because on Miami Beach, the paperwork is half the project.",
     ],
     roofLandscape: {
       heading: "The Miami Beach roof landscape",
@@ -1036,7 +1036,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, HOA rules & insurance in Miami Beach",
       paragraphs: [
         "Miami Beach layers city review on top of Miami-Dade code, and its historic districts (Flamingo Park, Collins Waterfront, North Shore) scrutinize exterior work closely — though coating is maintenance-grade restoration and generally proceeds without structural permitting. We confirm district requirements before starting and supply preservation-friendly documentation.",
-        "Island underwriting is merciless on roof age. A coating restoration with Additional Roof Life Certification — plus TAS-106 uplift documentation on flat decks — is the certified file that keeps Beach properties insured.",
+        "Island underwriting is merciless on roof age. A coating restoration with Additional Roof Life Certification — plus TAS-106 uplift documentation on flat decks — is the documented file that keeps Beach properties insured.",
       ],
     },
     neighborhoods: [
@@ -1110,7 +1110,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "Aventura is association country: a city built almost entirely of condo towers, garden condos, and gated townhome communities between the Intracoastal and Biscayne Boulevard. Roof decisions here are board decisions — and boards buy documentation, warranties, and track record before they buy anything else.",
       "The city's garden condos and townhome communities from the 1980s–90s carry acres of low-slope and tile roof now deep into the restoration window. Coating an entire roof field as one monolithic membrane turns a looming special assessment into a maintenance line item — the math every Aventura board meeting wants to hear.",
-      "Salt air off the Intracoastal accelerates everything east of Biscayne Boulevard, and Roof Shield's Miami-Dade TAS-106 uplift rating is the credential coastal boards ask about by name. Our quote package arrives board-ready: specs, colors, insurance, warranty, and the certification itself.",
+      "Salt air off the Intracoastal accelerates everything east of Biscayne Boulevard, and Roof Shield's Miami-Dade TAS-106 uplift rating is the credential coastal boards ask about by name. Our quote package arrives board-ready: specs, colors, insurance, warranty, and the Certified Test documentation itself.",
     ],
     roofLandscape: {
       heading: "The Aventura roof landscape",
@@ -1122,7 +1122,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, HOA rules & insurance in Aventura",
       paragraphs: [
-        "Aventura projects run through association governance more than city permitting — coating is surface restoration under Miami-Dade code and generally needs no permit, but every association requires formal board approval. Our package is built for Aventura boards: full specs, color documentation, insurance certificates, warranty terms, and TAS-106 uplift certification.",
+        "Aventura projects run through association governance more than city permitting — coating is surface restoration under Miami-Dade code and generally needs no permit, but every association requires formal board approval. Our package is built for Aventura boards: full specs, color documentation, insurance certificates, warranty terms, and Dade County Certified TAS-106 Uplift Test results.",
         "Since Surfside, South Florida associations face intense scrutiny on building maintenance documentation. A documented roof restoration program — with certified life-extension paperwork — is now standard due diligence, and we provide the full file.",
       ],
     },
@@ -1151,7 +1151,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, HOA rules & insurance in Homestead",
       paragraphs: [
-        "Homestead enforces Miami-Dade's post-Andrew code as a point of local pride; coating remains surface restoration and generally proceeds without a permit, and our NOA and TAS-106 documentation speaks the local building department's language. The newer gated communities require HOA color approval — handled in our standard package.",
+        "Homestead enforces Miami-Dade's post-Andrew code as a point of local pride; coating remains surface restoration and generally proceeds without a permit, and our Dade County Certified TAS-106 Uplift Test documentation speaks the local building department's language. The newer gated communities require HOA color approval — handled in our standard package.",
         "Insurance pressure hits Homestead from both ends: age flags on the surviving pre-Andrew stock and premium pressure on everything this far into the wind zone. Restoration plus Additional Roof Life Certification — with uplift-rated product documentation — is the certified answer on both counts.",
       ],
     },
@@ -1238,7 +1238,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, HOA rules & insurance in Cutler Bay",
       paragraphs: [
-        "The Town of Cutler Bay enforces Miami-Dade code with post-Andrew seriousness; coating is surface restoration and generally proceeds without a permit, and our NOA and TAS-106 documentation is the language its building department speaks. Lakes by the Bay and the newer communities require HOA color approval — our package handles it.",
+        "The Town of Cutler Bay enforces Miami-Dade code with post-Andrew seriousness; coating is surface restoration and generally proceeds without a permit, and our Dade County Certified TAS-106 Uplift Test documentation is the language its building department speaks. Lakes by the Bay and the newer communities require HOA color approval — our package handles it.",
         "Insurance pressure is double here: age flags on the survivors, premium pressure on everything in the wind zone. Restoration plus Additional Roof Life Certification — backed by uplift-rated product documentation — answers both.",
       ],
     },
@@ -1325,7 +1325,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     permitsAndRules: {
       heading: "Permits, HOA rules & insurance in Key Biscayne",
       paragraphs: [
-        "The Village of Key Biscayne runs its own attentive building oversight; coating restorations are surface maintenance and generally proceed without a permit — we confirm before starting. Condo boards require formal approval, and our island package leads with the TAS-106 uplift certification they ask about first.",
+        "The Village of Key Biscayne runs its own attentive building oversight; coating restorations are surface maintenance and generally proceed without a permit — we confirm before starting. Condo boards require formal approval, and our island package leads with the Dade County Certified TAS-106 Uplift Test result they ask about first.",
         "Island underwriting is the strictest in the county: any roof past 12–15 years draws questions. Restoration plus Additional Roof Life Certification is the certified answer that keeps Key homes and condos insured without tearing off sound roofs.",
       ],
     },
@@ -1574,7 +1574,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "Bal Harbour is a third of a square mile of the most valuable coastal real estate in Florida — gated single-family streets, world-class oceanfront buildings, and not one roof outside the salt zone. Here, roof work is judged on documentation, discretion, and finish quality — in that order.",
       "The village's residential section carries Mediterranean tile estates and flat-roof moderns whose surfaces age on open-Atlantic time. Elastomeric restoration re-seals them invisibly — original lines kept, colors matched exactly, salt sealed out — with Roof Shield's Miami-Dade TAS-106 uplift rating documented in the file.",
-      "For the Collins Avenue buildings, boards and managers get the complete package: uplift certification, NOA references, specs, warranties, insurance — before a single ladder goes up.",
+      "For the Collins Avenue buildings, boards and managers get the complete package: Dade County Certified TAS-106 Uplift Test results, specs, warranties, insurance — before a single ladder goes up.",
     ],
     roofLandscape: {
       heading: "The Bal Harbour roof landscape",
@@ -1587,7 +1587,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, HOA rules & insurance in Bal Harbour",
       paragraphs: [
         "The Village of Bal Harbour maintains exacting standards; coating restorations are surface maintenance and generally proceed without structural permitting — we confirm with the village before starting, and we work to the discretion gated streets expect.",
-        "Underwriting at these insured values questions every aging surface. Restoration plus Additional Roof Life Certification — with TAS-106 uplift documentation — is the certified file that satisfies both carrier and board.",
+        "Underwriting at these insured values questions every aging surface. Restoration plus Additional Roof Life Certification — with TAS-106 uplift documentation — is the documented file that satisfies both carrier and board.",
       ],
     },
     neighborhoods: [
@@ -1630,7 +1630,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "Sunny Isles Beach transformed from Motel Row to a tower skyline in one generation — but between the towers, the city still carries its 1950s–60s bones: garden condos, co-ops, and the Golden Shores single-family enclave, all on a barrier strip with ocean on one side and the Intracoastal on the other.",
       "That older low-rise inventory is where coating earns its keep: MiMo-era flat decks and tile roofs, association-maintained on tight budgets, decades into patch cycles that a monolithic elastomeric membrane finally ends — at maintenance-line-item cost, not special-assessment cost.",
-      "Every quote arrives board-ready: specs, insurance, warranty, and Roof Shield's Miami-Dade TAS-106 uplift certification — the document that matters most on a strip this exposed.",
+      "Every quote arrives board-ready: specs, insurance, warranty, and Roof Shield's pass of the Miami-Dade Certified TAS-106 Uplift Test — the document that matters most on a strip this exposed.",
     ],
     roofLandscape: {
       heading: "The Sunny Isles Beach roof landscape",
@@ -1686,7 +1686,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "Indian Creek Village is a private island — a few dozen estates around a country club, with its own police force and a bridge you don't cross uninvited. Its roofs are among the largest and most valuable residential surfaces in America, and they live entirely surrounded by Biscayne Bay salt.",
       "Estate roofs at this scale are maintained, never neglected: large barrel-tile fields, flat-roof contemporaries, and remodeled classics on strict prevention cycles. Elastomeric restoration is the discipline behind those cycles — re-sealing entire fields invisibly, matching colors exactly, and documenting everything for the household's file.",
-      "We work to island standards: coordinated access, discreet crews, exact scheduling, and complete paperwork including Roof Shield's Miami-Dade TAS-106 uplift certification.",
+      "We work to island standards: coordinated access, discreet crews, exact scheduling, and complete paperwork including Roof Shield's pass of the Miami-Dade Certified TAS-106 Uplift Test.",
     ],
     roofLandscape: {
       heading: "The Indian Creek Village roof landscape",
@@ -1713,7 +1713,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
     intro: [
       "North Bay Village is three islands in the middle of Biscayne Bay — Harbor Island, North Bay Island, and Treasure Island — strung along the 79th Street Causeway with water on every side. No roof in the village is more than a block from salt air.",
       "The village's mid-century inventory — 1940s–60s island homes and MiMo-era apartment buildings — carries tile mains and flat parapet decks that have survived this exposure precisely because they've been resurfaced on cycles. Monolithic elastomeric coating is that cycle's modern form: seams eliminated, salt sealed out, decades added.",
-      "For the village's condo boards and the new buildings rising beside the originals, every quote arrives with the full file: specs, insurance, warranty, and Roof Shield's Miami-Dade TAS-106 uplift certification.",
+      "For the village's condo boards and the new buildings rising beside the originals, every quote arrives with the full file: specs, insurance, warranty, and Roof Shield's pass of the Miami-Dade Certified TAS-106 Uplift Test.",
     ],
     roofLandscape: {
       heading: "The North Bay Village roof landscape",
@@ -1866,7 +1866,7 @@ export const cityLocalContent: Record<string, CityLocalContent> = {
       heading: "Permits, HOA rules & insurance in Florida City",
       paragraphs: [
         "Florida City enforces Miami-Dade's post-Andrew code with local memory; coating restorations are surface maintenance and generally proceed without a permit — confirmed with the city when repairs are in scope. We work in Spanish or English throughout.",
-        "Wind-zone premiums and age flags squeeze this town from both sides. Restoration plus Additional Roof Life Certification — backed by TAS-106-rated product documentation — is the certified answer working budgets need.",
+        "Wind-zone premiums and age flags squeeze this town from both sides. Restoration plus Additional Roof Life Certification — backed by TAS-106 test documentation — is the documented answer working budgets need.",
       ],
     },
     neighborhoods: [

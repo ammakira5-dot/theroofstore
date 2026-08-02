@@ -38,7 +38,7 @@ const comparisonRows = [
   { label: "Ponding water resistance", silicone: "Excellent — best-in-class", elastomeric: "Good, not recommended for standing water" },
   { label: "Flexibility across temperature swings", silicone: "Good", elastomeric: "Excellent — engineered for wide swings" },
   { label: "Color options", silicone: "Limited — white, gray, tan", elastomeric: "3,000+ colors, fully custom" },
-  { label: "Hurricane wind-uplift testing", silicone: "Not independently rated", elastomeric: "TAS-106 Dade County rated (Roof Shield)" },
+  { label: "Hurricane wind-uplift testing", silicone: "Not independently tested", elastomeric: "Passed the Dade County Certified TAS-106 Uplift Test (Roof Shield)" },
   { label: "Dirt pickup over time", silicone: "Higher — surface stays tacky", elastomeric: "Lower — cures to a firmer, cleaner finish" },
   { label: "Recoat / recoatability", silicone: "Difficult — needs full solvent-wash prep", elastomeric: "Straightforward maintenance recoats" },
   { label: "Best application", silicone: "Commercial flat roofs w/ ponding water", elastomeric: "Tile, metal & flat residential/commercial roofs" },
@@ -59,7 +59,7 @@ const elastomericBenefits = [
   {
     benefit: "Independently hurricane-tested",
     detail:
-      "Our Roof Shield system holds the world's only TAS-106 Dade County Uplift Pull Test certification for a liquid-applied roof coating — the same wind-uplift standard required for new tile roof installations in Florida.",
+      "Our Roof Shield system is the world's only liquid-applied roof coating to pass the Dade County Certified TAS-106 Uplift Pull Test — the same wind-uplift standard required for new tile roof installations in Florida.",
   },
   {
     benefit: "Lower dirt pickup, cleaner over time",
@@ -81,7 +81,7 @@ const elastomericBenefits = [
 const faqs = [
   {
     q: "Is silicone or elastomeric roof coating better?",
-    a: "It depends on the roof. For most Florida homes and standard commercial roofs, elastomeric or polyurethane coatings outperform silicone — they flex better across our extreme temperature swings, come in far more colors, and (in our Roof Shield system) carry independent hurricane wind-uplift certification that silicone products don't have. Silicone's one clear advantage is ponding water resistance, so we reserve it for commercial flat roofs that hold standing water.",
+    a: "It depends on the roof. For most Florida homes and standard commercial roofs, elastomeric or polyurethane coatings outperform silicone — they flex better across our extreme temperature swings, come in far more colors, and (in our Roof Shield system) have passed the Dade County Certified TAS-106 Uplift Test, which silicone products haven't. Silicone's one clear advantage is ponding water resistance, so we reserve it for commercial flat roofs that hold standing water.",
   },
   {
     q: "Why doesn't The Roof Store recommend silicone for most roofs?",

@@ -70,7 +70,7 @@ const products = [
     description:
       "Roof Shield Premium Roof Coating is our most advanced high-impact weatherproof liquid rubber roof coating. Designed for permanent water and wind protection of roof tiles and flat roof systems. Stops existing roof leaks and increases roof life expectancy even on 50-year-old roofs. The only Dade County TAS-106 Uplift-tested roof coating in the world. Bright white energy-efficient formula.",
     highlights: [
-      "World's ONLY TAS-106 Dade County Uplift Pull Test certified coating",
+      "World's ONLY coating to pass the Dade County Certified TAS-106 Uplift Pull Test",
       "5× stronger than a new tile roof at ½ the cost",
       "100% seamless waterproof rubber membrane",
       "Lifetime Warranty — transferable & renewable",

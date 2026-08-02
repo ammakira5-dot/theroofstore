@@ -38,7 +38,7 @@ export const introVariants: ((city: string, county: string) => string[])[] = [
   ],
   (city, county) => [
     `Storm Shield Paint Systems Inc. — The Roof Store — has protected roofs across ${county}, including ${city}, since 1994. Every coating, restoration, and waterproofing project is handled by our own certified technicians from start to finish.`,
-    `Hurricane season defines roofing requirements in ${city}. Between June and November, your roof's ability to shed wind-driven rain, resist uplift, and stay sealed is tested directly. Our Roof Shield system carries the world's only TAS-106 Dade County Uplift certification for a liquid coating — engineered specifically for this climate.`,
+    `Hurricane season defines roofing requirements in ${city}. Between June and November, your roof's ability to shed wind-driven rain, resist uplift, and stay sealed is tested directly. Our Roof Shield system is the world's only liquid coating to pass the Dade County Certified TAS-106 Uplift Test — engineered specifically for this climate.`,
     `Beyond hurricane protection, ${city} roofs face daily UV degradation, algae and fungal growth from the humidity, and the cumulative stress of heavy summer rainfall. Our three-system lineup addresses every level of those demands — typically at 60–70% less than replacement.`,
   ],
   (city, county) => [
@@ -75,7 +75,7 @@ export const serviceVariants: ((city: string) => { title: string; desc: string }
     { title: "Elastomeric Tile Painting", desc: `We bring faded or discolored ${city} tile roofs back to life with elastomeric coatings in a 3,000+ color range, a favorite among homeowners focused on curb appeal.` },
     { title: "Tile Roof Sealing", desc: `Tile roofs are built to let water pass between tiles onto underlayment paper below — paper that tears over time as the roof moves, causing leaks. Smart Shield seals the tile surface over Spanish tile, flat cement tile, and clay barrel tile throughout ${city}, while Roof Shield retrofits the whole roof into one monolithic, gap-filled surface so water never reaches that aging paper.` },
     { title: "Flat Roof Waterproofing", desc: `${city} flat decks — residential or commercial — get a seamless rubber membrane with no seams to fail.` },
-    { title: "Wind & Hurricane Coating", desc: `Roof Shield holds the only TAS-106 Dade County Uplift certification of any liquid coating, giving ${city} roofs proven hurricane protection. Clients have the option to add Smart Shield as a top coat over Roof Shield for extra cooling on a dark color choice.` },
+    { title: "Wind & Hurricane Coating", desc: `Roof Shield is the only liquid coating to pass the Dade County Certified TAS-106 Uplift Test, giving ${city} roofs proven hurricane protection. Clients have the option to add Smart Shield as a top coat over Roof Shield for extra cooling on a dark color choice.` },
     { title: "Structural Repair", desc: `Before we coat anything, we resolve cracked tiles, ridge cap failures, and eave wood rot so every ${city} roof is sound underneath its new system.` },
   ],
   (city) => [
@@ -83,7 +83,7 @@ export const serviceVariants: ((city: string) => { title: string; desc: string }
     { title: "Tile Color Restoration", desc: `${city} homeowners refresh faded, chalky tile with elastomeric coatings offered in more than 3,000 colors, boosting both curb appeal and resale value.` },
     { title: "Tile Leak Sealing", desc: `Traditional tile roofs let water pass between tiles onto underlayment paper below — paper that tears over time as the roof moves, causing leaks. Our Smart Shield system seals the tile surface across Spanish tile, flat cement tile, and barrel tile roofs in ${city}, while our Roof Shield system retrofits the roof into one monolithic, gap-filled surface so water never reaches that paper at all.` },
     { title: "Flat Roof Membrane Coating", desc: `Commercial and residential flat decks in ${city} get a seamless elastomeric rubber coating with no vulnerable seams.` },
-    { title: "Hurricane Wind-Uplift Coating", desc: `Our Roof Shield system is the only liquid coating worldwide with TAS-106 Dade County Uplift certification — real hurricane protection for ${city} properties. Clients have the option to add Smart Shield as a top coat over Roof Shield for maximum reflectivity and cooling on a dark color choice.` },
+    { title: "Hurricane Wind-Uplift Coating", desc: `Our Roof Shield system is the only liquid coating worldwide to pass the Dade County Certified TAS-106 Uplift Test — real hurricane protection for ${city} properties. Clients have the option to add Smart Shield as a top coat over Roof Shield for maximum reflectivity and cooling on a dark color choice.` },
     { title: "Pre-Coating Repairs", desc: `We handle cracked tile, ridge cap damage, and eave wood repair on ${city} roofs first, ensuring a solid base before any coating or warranty applies.` },
   ],
 ];

@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "How long does a professional roof coating last in South Florida?",
-    a: "Professional liquid-applied roof coating systems applied by licensed contractors typically last 15–25 years in South Florida's climate, depending on the product system and roof type. Roof Shield (RP3), our TAS-106 Dade County rated system, carries a lifetime warranty when professionally installed. Smart Shield (RP2), our elastomeric tile roof coating, is warranted for the life of the roof under normal conditions. South Florida's UV exposure, heat, and hurricane-season rainfall are factored into the formulation of both systems — they're manufactured specifically for this climate.",
+    a: "Professional liquid-applied roof coating systems applied by licensed contractors typically last 15–25 years in South Florida's climate, depending on the product system and roof type. Roof Shield (RP3), the system that passed the Dade County Certified TAS-106 Uplift Test, carries a lifetime warranty when professionally installed. Smart Shield (RP2), our elastomeric tile roof coating, is warranted for the life of the roof under normal conditions. South Florida's UV exposure, heat, and hurricane-season rainfall are factored into the formulation of both systems — they're manufactured specifically for this climate.",
   },
   {
     q: "Who is legally qualified to assess my roof's condition in Florida?",
@@ -33,11 +33,11 @@ const faqs = [
   },
   {
     q: "What's the difference between a roof coating and a roof replacement?",
-    a: "A roof replacement removes all existing materials down to the decking and installs a completely new roof system — tile, membrane, underlayment, and all. It costs $25,000–$60,000+ in South Florida and disrupts the home for days or weeks. A professional roof coating system applies liquid-applied waterproofing layers over the existing roof — sealing all gaps, voids, and seams — without removing the existing materials. It costs a fraction of replacement, is completed in 1–3 days, and when done with a certified system like Roof Shield (RP3), delivers the same waterproofing protection with a lifetime warranty. For structurally sound roofs, coating is almost always the superior financial choice.",
+    a: "A roof replacement removes all existing materials down to the decking and installs a completely new roof system — tile, membrane, underlayment, and all. It costs $25,000–$60,000+ in South Florida and disrupts the home for days or weeks. A professional roof coating system applies liquid-applied waterproofing layers over the existing roof — sealing all gaps, voids, and seams — without removing the existing materials. It costs a fraction of replacement, is completed in 1–3 days, and when done with a test-verified system like Roof Shield (RP3) — which passed the Dade County Certified TAS-106 Uplift Test — delivers the same waterproofing protection with a lifetime warranty. For structurally sound roofs, coating is almost always the superior financial choice.",
   },
   {
     q: "Does roof coating help with Florida's hurricane wind and water requirements?",
-    a: "Yes — especially Roof Shield (RP3), which is TAS-106 Dade County rated, the highest hurricane-resistance certification available in Florida. TAS-106 rating means the system has been independently tested to withstand hurricane-force wind uplift and wind-driven rain intrusion. The Roof Shield system fills every gap and void between tiles with multiple layers of liquid-applied material, making the roof essentially monolithic — a single continuous waterproof surface with no spaces for wind or water to penetrate. This is the only liquid-applied system of its kind with this specific Dade County certification.",
+    a: "Yes — especially Roof Shield (RP3), which passed the Dade County Certified TAS-106 Uplift Test, the highest hurricane-resistance test standard used in Florida. Passing the TAS-106 Test means the system was independently tested to withstand hurricane-force wind uplift and wind-driven rain intrusion. The Roof Shield system fills every gap and void between tiles with multiple layers of liquid-applied material, making the roof essentially monolithic — a single continuous waterproof surface with no spaces for wind or water to penetrate. This is the only liquid-applied system of its kind to pass this specific Dade County Certified Test.",
   },
   {
     q: "How do I know if my tile roof qualifies for coating instead of replacement?",

@@ -339,7 +339,7 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb, job
                     <Link href="/products/roofshield" className="block bg-background border rounded-lg p-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
                       <div className="text-xs font-bold text-primary uppercase tracking-wide mb-1">RP3</div>
                       <div className="font-bold text-foreground group-hover:text-accent transition-colors">Roof Shield</div>
-                      <div className="text-xs text-muted-foreground mt-1">Hurricane-rated · TAS-106 certified</div>
+                      <div className="text-xs text-muted-foreground mt-1">Hurricane-rated · TAS-106 Certified Test</div>
                     </Link>
                   </div>
                   <div className="flex flex-wrap gap-x-4 gap-y-1 mt-4">
@@ -414,13 +414,13 @@ export function CityPage({ city, county, countySlug, citySlug, image, blurb, job
 
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                 <div className="bg-primary/5 border border-primary/15 rounded-xl p-6 space-y-3">
-                  <div className="text-xs font-bold text-accent uppercase tracking-wide">Dade County TAS-106 Uplift Certified · Since 2006</div>
+                  <div className="text-xs font-bold text-accent uppercase tracking-wide">Dade County Certified TAS-106 Uplift Test · Since 2006</div>
                   <h3 className="text-2xl font-serif font-bold text-primary">The Hurricane Wind Test Behind Every {city} Roof We Coat</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Our Roof Shield (RP3) system is the only liquid-applied roof coating in the world to pass Dade County's TAS-106 Uplift Pull Test — the same wind-uplift standard required for brand-new tile roof installations in Florida. Independently verified to 135+ MPH, it bonds every tile to the substrate for 5× the wind uplift resistance of a new tile roof.
                   </p>
                   <Link href="/tas-106-certified-roof-coating" className="inline-flex items-center gap-2 text-accent font-bold hover:underline text-sm">
-                    See the TAS-106 certification and what it means for your {city} home →
+                    See the Dade County Certified TAS-106 Test and what it means for your {city} home →
                   </Link>
                 </div>
               </motion.div>

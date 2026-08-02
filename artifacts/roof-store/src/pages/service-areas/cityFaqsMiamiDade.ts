@@ -46,7 +46,7 @@ export const entries: Record<string, CityFaq[]> = {
   "cutler-bay": [
     {
       q: "What roof coating system works best for Cutler Bay's post-Andrew tile homes?",
-      a: "Cutler Bay's Lakes by the Bay, Saga Bay, and Cutler Ridge neighborhoods are dominated by 1990s and early-2000s concrete S-tile and barrel tile rebuilt or built after Hurricane Andrew. SmartShield (RP2) is the sweet spot — these roofs are structurally sound but show UV fading, algae, and cracked mortar. RoofShield (RP3) adds TAS-106 wind-uplift certification for homeowners focused on storm hardening. Fill out the contact form for the Factory Price Sheet.",
+      a: "Cutler Bay's Lakes by the Bay, Saga Bay, and Cutler Ridge neighborhoods are dominated by 1990s and early-2000s concrete S-tile and barrel tile rebuilt or built after Hurricane Andrew. SmartShield (RP2) is the sweet spot — these roofs are structurally sound but show UV fading, algae, and cracked mortar. RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for homeowners focused on storm hardening. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Will my Cutler Bay HOA approve a roof restoration?",
@@ -54,7 +54,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "Can roof coating earn a hurricane insurance credit in Cutler Bay?",
-      a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the US. Under Florida law insurers must offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging roofs. Certified restoration typically runs 60–70% less than replacement.",
+      a: "Yes. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the US. Under Florida law insurers must offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging roofs. Test-verified restoration typically runs 60–70% less than replacement.",
     },
   ],
   "el-portal": [
@@ -78,7 +78,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "Does roof coating in Florida City help with hurricane wind resistance?",
-      a: "Yes, and it matters here. As the southernmost mainland city in Miami-Dade, Florida City sits in one of the most wind-exposed corridors in the country. RoofShield (RP3) carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the US — and can qualify for insurance credits under Florida law. Call 954-210-9614 for details.",
+      a: "Yes, and it matters here. As the southernmost mainland city in Miami-Dade, Florida City sits in one of the most wind-exposed corridors in the country. RoofShield (RP3) passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the US — and can qualify for insurance credits under Florida law. Call 954-210-9614 for details.",
     },
     {
       q: "Can coating extend the life of an aging Florida City roof for insurance?",
@@ -102,7 +102,7 @@ export const entries: Record<string, CityFaq[]> = {
   "hialeah-gardens": [
     {
       q: "What roof coating system fits Hialeah Gardens' concrete tile homes?",
-      a: "Hialeah Gardens is largely 1980s–2000s CBS single-family homes and townhomes with concrete barrel and S-tile roofs. Most are structurally sound but show UV fading, algae, and cracked mortar under the relentless West Miami-Dade sun — a perfect match for SmartShield (RP2). For homeowners wanting storm and insurance benefits, RoofShield (RP3) adds TAS-106 wind-uplift certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "Hialeah Gardens is largely 1980s–2000s CBS single-family homes and townhomes with concrete barrel and S-tile roofs. Most are structurally sound but show UV fading, algae, and cracked mortar under the relentless West Miami-Dade sun — a perfect match for SmartShield (RP2). For homeowners wanting storm and insurance benefits, RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Will my Hialeah Gardens HOA or townhome association approve a coating?",
@@ -134,7 +134,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "How does coating handle the extreme marine exposure near Islandia?",
-      a: "The islands off Islandia see nonstop salt spray, wind, and sun that destroy conventional roofing fast. Our RoofShield (RP3) system provides the heaviest waterproofing and carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the US — with RoofProtect Products materials formulated for high-salt coastal use.",
+      a: "The islands off Islandia see nonstop salt spray, wind, and sun that destroy conventional roofing fast. Our RoofShield (RP3) system provides the heaviest waterproofing and passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the US — with RoofProtect Products materials formulated for high-salt coastal use.",
     },
     {
       q: "Can coating avoid a full re-roof on a remote Islandia structure?",
@@ -144,7 +144,7 @@ export const entries: Record<string, CityFaq[]> = {
   "key-biscayne": [
     {
       q: "Can roof coating survive Key Biscayne's island salt and hurricane exposure?",
-      a: "Yes, and it's built for it. Key Biscayne sits fully exposed on a barrier island, with everything from oceanfront condos at the Ocean Club to single-family estates in the Village greens taking direct salt spray and wind. Our SmartShield (RP2) seals barrel tile and flat decks against chloride intrusion, while RoofShield (RP3) adds TAS-106 wind-uplift certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "Yes, and it's built for it. Key Biscayne sits fully exposed on a barrier island, with everything from oceanfront condos at the Ocean Club to single-family estates in the Village greens taking direct salt spray and wind. Our SmartShield (RP2) seals barrel tile and flat decks against chloride intrusion, while RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Will my Key Biscayne condo board or Village review approve a coating?",
@@ -172,7 +172,7 @@ export const entries: Record<string, CityFaq[]> = {
   "miami": [
     {
       q: "What roof coating system is best for Miami's mix of housing?",
-      a: "The City of Miami spans everything — 1920s Mediterranean Revival in Coral Gables-adjacent Shenandoah, MiMo flat-deck buildings on Biscayne Boulevard, 1950s bungalows in the Roads and Coconut Grove, and modern condos downtown and in Brickell. FungalShield (RP1) clears algae on shaded Grove roofs, SmartShield (RP2) waterproofs tile and flat decks, and RoofShield (RP3) adds TAS-106 wind certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "The City of Miami spans everything — 1920s Mediterranean Revival in Coral Gables-adjacent Shenandoah, MiMo flat-deck buildings on Biscayne Boulevard, 1950s bungalows in the Roads and Coconut Grove, and modern condos downtown and in Brickell. FungalShield (RP1) clears algae on shaded Grove roofs, SmartShield (RP2) waterproofs tile and flat decks, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Does Miami require a permit for roof coating?",
@@ -180,7 +180,7 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "Can roof coating qualify a Miami home for a hurricane insurance credit?",
-      a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the US. Florida law requires insurers to offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging roofs at 60–70% less than replacement.",
+      a: "Yes. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the US. Florida law requires insurers to offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging roofs at 60–70% less than replacement.",
     },
   ],
   "miami-shores": [
@@ -228,7 +228,7 @@ export const entries: Record<string, CityFaq[]> = {
   "north-miami": [
     {
       q: "What roof coating system suits North Miami's mid-century housing?",
-      a: "North Miami is largely 1950s–1970s CBS single-family homes and low-slope apartment buildings across Keystone Point, Sans Souci, and the Cagni area, with a mix of barrel tile and flat decks. SmartShield (RP2) waterproofs tile and flat roofs, FungalShield (RP1) clears algae on shaded lots, and RoofShield (RP3) adds TAS-106 wind certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "North Miami is largely 1950s–1970s CBS single-family homes and low-slope apartment buildings across Keystone Point, Sans Souci, and the Cagni area, with a mix of barrel tile and flat decks. SmartShield (RP2) waterproofs tile and flat roofs, FungalShield (RP1) clears algae on shaded lots, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Can coating protect the waterfront roofs at Keystone Point in North Miami?",
@@ -242,7 +242,7 @@ export const entries: Record<string, CityFaq[]> = {
   "north-miami-beach": [
     {
       q: "What roofs does coating work best on in North Miami Beach?",
-      a: "North Miami Beach mixes 1950s–1970s single-family homes in Eastern Shores and Fulford-by-the-Sea with mid-rise condos and apartment buildings, running the gamut of barrel tile and low-slope flat decks. SmartShield (RP2) waterproofs both, FungalShield (RP1) clears algae, and RoofShield (RP3) adds TAS-106 wind-uplift certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "North Miami Beach mixes 1950s–1970s single-family homes in Eastern Shores and Fulford-by-the-Sea with mid-rise condos and apartment buildings, running the gamut of barrel tile and low-slope flat decks. SmartShield (RP2) waterproofs both, FungalShield (RP1) clears algae, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Can coating protect the salt-exposed roofs in Eastern Shores?",
@@ -270,7 +270,7 @@ export const entries: Record<string, CityFaq[]> = {
   "palmetto-bay": [
     {
       q: "What roof coating system fits Palmetto Bay's tile-roof estates?",
-      a: "Palmetto Bay is a leafy, low-density village of large single-family homes and estates along Old Cutler Road, mostly 1980s–2000s concrete barrel and S-tile rebuilt or reinforced after Hurricane Andrew. SmartShield (RP2) restores these sound-but-faded roofs, and RoofShield (RP3) adds TAS-106 wind-uplift certification for storm hardening. Fill out the contact form for the Factory Price Sheet.",
+      a: "Palmetto Bay is a leafy, low-density village of large single-family homes and estates along Old Cutler Road, mostly 1980s–2000s concrete barrel and S-tile rebuilt or reinforced after Hurricane Andrew. SmartShield (RP2) restores these sound-but-faded roofs, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for storm hardening. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "How does coating handle Palmetto Bay's heavily shaded, algae-prone tile?",
@@ -278,13 +278,13 @@ export const entries: Record<string, CityFaq[]> = {
     },
     {
       q: "Can coating earn a hurricane insurance credit in Palmetto Bay?",
-      a: "Yes. Our RoofShield (RP3) system carries TAS-106 Dade County Wind Uplift Certification — the highest hurricane resistance standard in the US. Florida law requires insurers to offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging estate roofs at 60–70% less than replacement.",
+      a: "Yes. Our RoofShield (RP3) system passed the Dade County Certified TAS-106 Wind Uplift Test — verified to the highest hurricane resistance standard in the US. Florida law requires insurers to offer credits for certified roof systems, and our Additional Roof Life Certification (ARLC) documents the restored condition to help retain coverage on aging estate roofs at 60–70% less than replacement.",
     },
   ],
   "pinecrest": [
     {
       q: "What roof coating system is best for Pinecrest's large tile-roof estates?",
-      a: "Pinecrest is an affluent, low-density village of oversized single-family estates on acre-plus lots along Red Road and Old Cutler, dominated by concrete and clay barrel and S-tile. These large roofs are structurally sound but show UV fading, algae, and cracked mortar — ideal for SmartShield (RP2). RoofShield (RP3) adds TAS-106 wind certification for storm and insurance benefits. Fill out the contact form for the Factory Price Sheet.",
+      a: "Pinecrest is an affluent, low-density village of oversized single-family estates on acre-plus lots along Red Road and Old Cutler, dominated by concrete and clay barrel and S-tile. These large roofs are structurally sound but show UV fading, algae, and cracked mortar — ideal for SmartShield (RP2). RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for storm and insurance benefits. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "How does coating handle Pinecrest's tree-canopied, algae-streaked roofs?",
@@ -340,7 +340,7 @@ export const entries: Record<string, CityFaq[]> = {
   "sweetwater": [
     {
       q: "What roof coating system fits Sweetwater's concrete tile homes?",
-      a: "Sweetwater, in West Miami-Dade near FIU, is largely 1970s–2000s CBS single-family homes and townhomes with concrete barrel and S-tile roofs. Most are structurally sound but faded and algae-stained under the inland sun — a perfect match for SmartShield (RP2). RoofShield (RP3) adds TAS-106 wind-uplift certification for storm and insurance benefits. Fill out the contact form for the Factory Price Sheet.",
+      a: "Sweetwater, in West Miami-Dade near FIU, is largely 1970s–2000s CBS single-family homes and townhomes with concrete barrel and S-tile roofs. Most are structurally sound but faded and algae-stained under the inland sun — a perfect match for SmartShield (RP2). RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test for storm and insurance benefits. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "Will my Sweetwater HOA or townhome association approve a coating?",
@@ -368,7 +368,7 @@ export const entries: Record<string, CityFaq[]> = {
   "west-miami": [
     {
       q: "What roofs does coating work best on in West Miami?",
-      a: "West Miami is a compact, established city of 1940s–1970s CBS single-family homes off SW 8th Street and Coral Way, with a mix of barrel tile and flat or low-slope roofs. SmartShield (RP2) waterproofs both, FungalShield (RP1) clears algae on shaded lots, and RoofShield (RP3) adds TAS-106 wind-uplift certification. Fill out the contact form for the Factory Price Sheet.",
+      a: "West Miami is a compact, established city of 1940s–1970s CBS single-family homes off SW 8th Street and Coral Way, with a mix of barrel tile and flat or low-slope roofs. SmartShield (RP2) waterproofs both, FungalShield (RP1) clears algae on shaded lots, and RoofShield (RP3) is verified under the Dade County Certified TAS-106 Uplift Test. Fill out the contact form for the Factory Price Sheet.",
     },
     {
       q: "How does coating handle the older tile roofs in West Miami?",

@@ -30,7 +30,7 @@ const sections = [
       {
         type: "highlight",
         title: "What \"Hurricane Proof\" or \"High Velocity Wind Zone Rated\" Really Means",
-        text: "The TAS-106 Dade County Approved tile pull test is required on all new tile roof replacements in Florida after tiles are set. New tile roof replacement requires a minimum of 35 lbs of lift in the field and 55 lbs at the ridge caps — equal to about 120–130 MPH. Miami Dade High Velocity Wind Zone Rated means the structure has been tested to the minimum wind resistance standard at 130 MPH within its own strength design criteria before any mastic, caulk, or elastomeric is applied. If you Google \"hurricane coatings,\" companies will show videos where you can see the gaps between the tiles — obviously painting alone adds no uplift resistance whatsoever. Our Roof Shield (RP3) is the only liquid coating in the world that has received an independent TAS-106 Uplift Pull Test certification.",
+        text: "The TAS-106 Dade County Approved tile pull test is required on all new tile roof replacements in Florida after tiles are set. New tile roof replacement requires a minimum of 35 lbs of lift in the field and 55 lbs at the ridge caps — equal to about 120–130 MPH. Miami Dade High Velocity Wind Zone Rated means the structure has been tested to the minimum wind resistance standard at 130 MPH within its own strength design criteria before any mastic, caulk, or elastomeric is applied. If you Google \"hurricane coatings,\" companies will show videos where you can see the gaps between the tiles — obviously painting alone adds no uplift resistance whatsoever. Our Roof Shield (RP3) is the only liquid coating in the world that has passed the Dade County Certified TAS-106 Uplift Pull Test.",
       },
       {
         type: "fact",
@@ -145,7 +145,7 @@ const pdfs = [
     name: "Roof Shield (RP3) — Strength Data Sheet",
     url: "/docs/roofshield-strength-data-sheet.pdf",
     product: "RP3",
-    desc: "Roof Shield waterproofing system strength data — TAS-106 certification, wind uplift performance, and technical details.",
+    desc: "Roof Shield waterproofing system strength data — TAS-106 Certified Test results, wind uplift performance, and technical details.",
   },
 ];
 
@@ -319,7 +319,7 @@ export default function Questions() {
             <div className="divide-y">
               {[
                 { feature: "Can be used in ponding water (flat roofs)", ours: true, generic: false },
-                { feature: "TAS-106 Dade County Wind Uplift certified", ours: true, generic: false },
+                { feature: "Passed the Dade County Certified TAS-106 Wind Uplift Test", ours: true, generic: false },
                 { feature: "True 100% liquid rubber acrylic (no fillers or thickeners)", ours: true, generic: null },
                 { feature: "Lifetime maintenance-free warranty", ours: true, generic: false },
                 { feature: "Warranty is transferable to new buyer", ours: true, generic: false },

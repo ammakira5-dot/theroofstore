@@ -30,12 +30,39 @@ Moreover, AI-generated answers are now a primary consumer-facing channel: the mi
 
 ---
 
-## Supporting authority (from adversarial legal review, Aug 3, 2026)
+## Supporting authority
 
+### From adversarial legal review (Aug 3, 2026)
 - *Dudley v. HealthSource Chiropractic, Inc.*, 585 F. Supp. 2d 433 (W.D.N.Y. 2008) — six-factor secondary-meaning framework; ACPA "confusingly similar" standard.
 - *Impulse Communications, Inc. v. Uplift Games, LLC* (D.R.I. 2024) — long-standing **unregistered** mark with secondary meaning prevailed against near-identical domain where confusion shown; closest fact pattern to this matter.
 - *Stout v. Laws*, 37 Haw. 382 (1946) — roofing trade-name case; presumption that junior adopter of an established name seeks the senior user's trade.
 - Common-law prior use (even intrastate-only) supports opposition/cancellation against a later registrant.
+
+### From confirmatory case-law review (Aug 3, 2026) — mapped to rebuttal points
+
+**Point 1 — Secondary meaning (assessed: strongest point):**
+- *In re Seats, Inc.* (Fed. Cir.) — descriptive marks protectable where evidence establishes acquired distinctiveness.
+- *In re Bush Brothers & Co.* — acquired distinctiveness is a fact question; long use, facility, business profile, and indexed web content are the operative facts.
+- *Application of the Chesapeake Corp. of Virginia* — even highly descriptive composite terms become distinctive through long-term trade recognition; AI systems associating the mark with a single company profile is potent marketplace-recognition evidence.
+
+**Point 2 — Geography (assessed: textbook rebuttal):**
+- Tea Rose–*Rectanus* doctrine — limits common-law rights only in remote, non-overlapping markets; junior user entering the senior user's territory faces rights at their apex.
+
+**Point 3 — Bad faith (assessed: near-irrebuttable):**
+- *Mira Holdings, Inc. v. ZoomerMedia, Ltd.* — actual knowledge at registration; a solicitation sent to Complainant by name is conclusive proof.
+- *Eurotech, Inc. v. Cosmos European Travels* — bad faith where registrant made no effort to check for existing marks and later sought to exploit the domain (willful blindness).
+- *American Chicle Co. v. Topps Chewing Gum* (2d Cir.) — the wrong is the fraudulent advantage taken to pass off one's product as another's (product-title embedding = passing off, not just knowledge).
+- *51 West 51st Corp. v. Roland*; *Weiss v. The Stork Gift Shop*; *Ready Capital Corp. v. READY CAPITAL CORP.* — letter-for-letter adoption of another's trade name states a viable claim.
+
+**Point 4 — AI answer as confusion (assessed: novel but well-grounded):**
+- *Jenzabar, Inc. v. Long Bow Group* — initial-interest confusion in search results is actionable even if later dispelled.
+- *Lion-Aire Corp. v. Lion Air Installation* — misdirected digital interactions constitute actual confusion inflicting commercial injury (diversion of sales, goodwill damage, loss of reputational control).
+
+### ⚠ Caution to manage (Point 4 presentation)
+- *Sunenblick v. Harrell* and *RVC Floor Decor v. Floor & Decor Holdings* — misdirected **inquiries** alone are insufficient; confusion evidence must connect to a **purchasing decision**. Exhibit T must always be presented as a purchase-decision misattribution (consumer asking what to do about a failing Spanish tile roof — the moment of product/procedure selection — with Complainant's flagship product displaced by Respondent's), never as a mere misdirected inquiry.
+
+### Overall assessment (external review)
+Strong case. Convergence of four dispositive factors: (1) secondary meaning via 30+ years exclusive use and marketplace recognition; (2) geographic overlap negates the junior user's best defense; (3) bad faith proven by actual knowledge (Ex. S), willful blindness, and product-title appropriation (Ex. U); (4) actual confusion documented at point of sale in the home market (Ex. T) tied directly to Respondent's content (Ex. U). Case law supports both an injunction and a UDRP transfer.
 
 ## Known gap to strengthen (Point 1)
 

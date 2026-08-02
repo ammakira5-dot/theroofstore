@@ -6,9 +6,27 @@ type AuthState = "idle" | "checking" | "granted" | "denied";
 export default function AttorneyCaseFile() {
   const [authState, setAuthState] = useState<AuthState>("idle");
   const [contentHtml, setContentHtml] = useState<string>("");
+  const [complaintHtml, setComplaintHtml] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<"casefile" | "complaint">("casefile");
   const [password, setPassword] = useState<string>("");
   const [downloading, setDownloading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  async function openComplaintTab(pw: string) {
+    setActiveTab("complaint");
+    if (complaintHtml) return;
+    try {
+      const res = await fetch("/api/trademark-monitoring/case-file/complaint", {
+        headers: { "x-admin-password": pw },
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setComplaintHtml(data.html ?? "");
+      }
+    } catch {
+      // keep tab open; content stays empty with fallback text
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -75,14 +93,39 @@ export default function AttorneyCaseFile() {
               Matter: The Roof Store (theroofstore.net, use in commerce since 1994) adv. theroof.store (registered August 13, 2021) · Prepared August 3, 2026
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3 print:hidden">
+            <div className="mt-6 flex gap-1 border-b border-gray-300 print:hidden">
               <button
-                onClick={handleDownloadBrief}
-                disabled={downloading}
-                className="inline-block rounded-md bg-blue-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-800 disabled:opacity-60"
+                onClick={() => setActiveTab("casefile")}
+                className={
+                  activeTab === "casefile"
+                    ? "rounded-t-md border border-b-0 border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-blue-800"
+                    : "rounded-t-md px-5 py-2.5 text-sm font-semibold text-gray-500 hover:text-gray-800"
+                }
               >
-                {downloading ? "Preparing…" : "⬇ Download: Brief of Claimant (.docx)"}
+                📄 Case File &amp; Rebuttals
               </button>
+              <button
+                onClick={() => openComplaintTab(password)}
+                className={
+                  activeTab === "complaint"
+                    ? "rounded-t-md border border-b-0 border-gray-300 bg-white px-5 py-2.5 text-sm font-bold text-blue-800"
+                    : "rounded-t-md px-5 py-2.5 text-sm font-semibold text-gray-500 hover:text-gray-800"
+                }
+              >
+                ⚖️ Draft Federal Complaint
+              </button>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-3 print:hidden">
+              {activeTab === "casefile" && (
+                <button
+                  onClick={handleDownloadBrief}
+                  disabled={downloading}
+                  className="inline-block rounded-md bg-blue-700 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-800 disabled:opacity-60"
+                >
+                  {downloading ? "Preparing…" : "⬇ Download: Brief of Claimant (.docx)"}
+                </button>
+              )}
               <button
                 onClick={() => window.print()}
                 className="inline-block rounded-md border border-gray-400 px-5 py-2.5 text-sm font-bold text-gray-700 hover:bg-gray-100"
@@ -93,7 +136,13 @@ export default function AttorneyCaseFile() {
 
             <hr className="my-8" />
 
-            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            {activeTab === "casefile" ? (
+              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            ) : complaintHtml ? (
+              <div dangerouslySetInnerHTML={{ __html: complaintHtml }} />
+            ) : (
+              <p className="text-sm text-gray-500">Loading draft complaint…</p>
+            )}
 
             <p className="mt-12 border-t pt-4 text-xs text-gray-500">
               Confidential attorney work product · Prepared August 3, 2026 · The Roof Store, Broward County, Florida

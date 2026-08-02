@@ -14,6 +14,7 @@ const navLinks = [
 const moreLinks = [
   { href: "/roof-services", label: "Services" },
   { href: "/roof-coating-florida", label: "Roof Coating Guide" },
+  { href: "/tas-106-certified-roof-coating", label: "TAS-106 Certification" },
   { href: "/projects", label: "Projects" },
   { href: "/faq", label: "FAQ" },
   { href: "/pricing", label: "Pricing" },
@@ -41,6 +42,7 @@ const productDropdown = {
     {
       group: "Resources",
       links: [
+        { href: "/tas-106-certified-roof-coating", label: "TAS-106 Uplift Certification", icon: ShieldCheck, desc: "The hurricane wind test we passed" },
         { href: "/questions", label: "Questions to Ask", icon: HelpCircle, desc: "What every buyer should know" },
         { href: "/shop", label: "Buy Online", icon: ShoppingCart, desc: "Order direct — RP1 · RP2 · RP3" },
       ],

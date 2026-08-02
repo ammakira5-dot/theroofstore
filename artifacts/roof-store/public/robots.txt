@@ -4,6 +4,8 @@ Disallow: /admin
 Disallow: /trademark-monitoring-log
 Disallow: /rpt-88291-b.html
 Disallow: /ref/8f3k-2m9x-771q
+Disallow: /ref/9w4t-6r2k-583p
+Disallow: /bcf-77419-x.docx
 Disallow: /trademark-evidence
 Disallow: /trademark-evidence-print
 Disallow: /google-complaint-steps

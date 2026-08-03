@@ -122,15 +122,15 @@ export function Navbar() {
     <>
       <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 shrink-0">
+          <Link href="/" className="flex items-center gap-3 shrink-0 mr-4">
             <img src="/images/logo-badge.png" alt="The Roof Store" className="h-12 xl:h-14 w-auto" />
             <div className="hidden sm:flex flex-col items-center">
               <span className="font-serif font-bold text-xl leading-none text-primary">The Roof Store</span>
-              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">Fungal Shield · Smart Shield · Roof Shield</span>
+              <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold xl:hidden min-[1700px]:block">Fungal Shield · Smart Shield · Roof Shield</span>
             </div>
           </Link>
 
-          <nav className="hidden xl:flex items-center gap-3 text-sm font-medium text-foreground">
+          <nav className="hidden xl:flex items-center gap-2 min-[1700px]:gap-3 text-sm font-medium text-foreground">
             {/* Products dropdown */}
             <div
               ref={dropdownRef}
@@ -243,13 +243,16 @@ export function Navbar() {
             </div>
           </nav>
 
-          <div className="hidden xl:flex items-center gap-3 ml-2 pl-4 border-l shrink-0">
-            <a href="tel:954-210-9614" className="flex items-center gap-2 text-primary font-bold hover:text-accent transition-colors">
-              <Phone className="h-4 w-4" />
-              954-210-9614
+          <div className="hidden xl:flex items-center gap-2 min-[1700px]:gap-3 ml-2 pl-3 min-[1700px]:pl-4 border-l shrink-0">
+            <a href="tel:954-210-9614" aria-label="Call 954-210-9614" className="flex items-center gap-1.5 text-primary font-bold hover:text-accent transition-colors whitespace-nowrap">
+              <Phone className="h-4 w-4 shrink-0" />
+              <span className="hidden min-[1700px]:inline">954-210-9614</span>
             </a>
-            <Button asChild className="bg-accent hover:bg-accent/90 text-white">
-              <Link href="/contact">Free Roof Evaluation &amp; Estimate</Link>
+            <Button asChild className="bg-accent hover:bg-accent/90 text-white whitespace-nowrap">
+              <Link href="/contact">
+                <span className="min-[1700px]:hidden">Free Estimate</span>
+                <span className="hidden min-[1700px]:inline">Free Roof Evaluation &amp; Estimate</span>
+              </Link>
             </Button>
           </div>
 

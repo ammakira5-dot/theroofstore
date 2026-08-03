@@ -202,7 +202,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`hover:text-accent transition-colors whitespace-nowrap ${location === link.href ? "text-accent font-semibold" : ""}`}
+                className={`hover:text-accent transition-colors whitespace-nowrap ${link.href === "/reviews" || link.href === "/contact" ? "hidden min-[1700px]:block" : ""} ${location === link.href ? "text-accent font-semibold" : ""}`}
               >
                 {link.label}
               </Link>
@@ -228,6 +228,18 @@ export function Navbar() {
                   onMouseLeave={handleMoreLeave}
                 >
                   <div className="bg-white rounded-2xl shadow-xl border min-w-[200px] overflow-hidden py-2">
+                    <Link
+                      href="/reviews"
+                      className={`min-[1700px]:hidden block px-4 py-2.5 text-sm hover:bg-muted hover:text-accent transition-colors ${location === "/reviews" ? "text-accent font-semibold bg-muted" : ""}`}
+                    >
+                      Reviews
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className={`min-[1700px]:hidden block px-4 py-2.5 text-sm hover:bg-muted hover:text-accent transition-colors ${location === "/contact" ? "text-accent font-semibold bg-muted" : ""}`}
+                    >
+                      Contact Us
+                    </Link>
                     {moreLinks.map((link) => (
                       <Link
                         key={link.href}
@@ -246,7 +258,7 @@ export function Navbar() {
           <div className="hidden xl:flex items-center gap-2 min-[1700px]:gap-3 ml-2 pl-3 min-[1700px]:pl-4 border-l shrink-0">
             <a href="tel:954-210-9614" aria-label="Call 954-210-9614" className="flex items-center gap-1.5 text-primary font-bold hover:text-accent transition-colors whitespace-nowrap">
               <Phone className="h-4 w-4 shrink-0" />
-              <span className="hidden min-[1700px]:inline">954-210-9614</span>
+              954-210-9614
             </a>
             <Button asChild className="bg-accent hover:bg-accent/90 text-white whitespace-nowrap">
               <Link href="/contact">

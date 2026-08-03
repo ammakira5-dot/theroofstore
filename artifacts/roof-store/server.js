@@ -975,6 +975,14 @@ app.use((req, res, next) => {
   // (Prerendered pages are extensionless dirs and "/index.html" is excluded
   // by the exact-match table above mapping it to "/".)
   if (/\.(html?|swf)$/i.test(req.path)) {
+    // But never redirect a real file that exists in the static dir
+    // (e.g. gated confidential documents, Google verification files).
+    try {
+      const candidate = join(staticDir, req.path.replace(/^\/+/, ""));
+      if (candidate.startsWith(staticDir) && fs.existsSync(candidate)) {
+        return next();
+      }
+    } catch {}
     return res.redirect(301, "/");
   }
 
